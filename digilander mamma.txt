@@ -1,0 +1,48 @@
+FTP
+Per pubblicare il tuo sito puoi utilizzare il traferimento tramite FTP.
+
+
+FTP è l'acronimo di File Transfer Protocol, un protocollo che si utilizza per trasferire file tra computer collegati ad internet. Con l'FTP puoi connetterti al sistema remoto,server, dove risiede il tuo sito, visualizzare i suoi archivi di file e trasferire file dal tuo computer e viceversa.
+
+
+Crea subito il tuo Sito Personale, da oggi hai a disposizione 150 MB* di spazio web gratis.
+
+
+Per trasferire files con FTP devi installare sul tuo computer un programma ad-hoc. 
+
+
+I parametri principali per configurare il tuo programma sono:
+
+Nome (Profile Name): ftp.digiland.it
+Nome Host (hostname): ftp.digiland.it
+Tipo Host (host-type): auto-detect
+User-ID: <il tuo nickname>
+Password: <la tua password>
+Directory Locale Iniziale (Initial Local Directory): <la cartella del PC dove risiedono i file da trasferire>
+Directory Remota Iniziale (Initial Remote Directory): <lasciare vuoto>
+Modalità di trasferimento (Transfer Type): binary
+Sito WEB (Publishing WEB): http://digilander.libero.it 
+
+
+PUBBLICAZIONE VIA FTP PER GLI UTENTI CHE HANNO UN SITO PERSONALE SU USERS.LIBERO.IT
+
+
+
+
+Quando ti colleghi la prima volta via ftp con i dati forniti più avanti, sul nostro server viene creata una directory a te riservata, utilizzando lo username con cui ti sei registrato. In qualsiasi momento puoi mandare il materiale per il tuo Sito tramite ftp sul sito users.libero.it, seguendo questa procedura:
+
+Costruisci la pagina tenendo tutto il materiale nella stessa directory: è un consiglio per evitare che i link non funzionino.
+Username e Password sono gli stessi che usi per collegarti a Infostrada.
+Utilizza uno dei client ftp disponibili in rete.
+Non utilizzate per il trasferimento dei file Microsoft Frontpage, Netscape Composer o la Pubblicazione guidata sul Web contenuta in Windows 95/98, perché non sono completamente compatibili con il nostro server. Potete usare i primi due come editor HTML, ma anche in questo caso senza usufruire dei cgi proprietari. Salvate sul vostro computer le pagine realizzate e trasferitele col client ftp.
+Compila nelle impostazioni solo i campi: 
+Host Name (Host Address): users.libero.it 
+User ID: il tuo username 
+Password: la tua password 
+Ricordatevi di deselezionare la voce Anonymous Login. 
+In questo modo vi troverete già sulla directory a voi riservata (non usate la directory bin). Selezionate i file e il bottone appropriato per l'upload. Caricando un file con lo stesso nome di uno già esistente, questo viene sovrascritto.
+Il file contenente la homepage deve chiamarsi index.html oppure index.htm. Vi consigliamo di utilizzare un client ftp che permette di decidere il nome di destinazione del file.
+Disabilitate la connessione in modo passivo (passive mode) del vostro client ftp.
+Scrivete i nomi dei file tutti in minuscolo, onde evitare problemi con il server, che discrimina le maiuscole dalle minuscole.
+Controllate preventivamente l'occupazione di spazio dei vostri file, poiché il server non permetterà di utilizzare più spazio disco di quanto il vostro tipo di abbonamento permetta. Facciamo presente che i file verranno controllati, per evitare di lasciare online materiale in contrasto con le leggi vigenti, ma comunque il sito è subito visibile all'indirizzo: http://users.libero.it/username (scritto tutto in minuscolo e sostituendo il vostro username).
+
