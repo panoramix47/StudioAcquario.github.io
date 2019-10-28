@@ -1,0 +1,919 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+<meta http-equiv="Page-Enter" content="blendTrans(Duration=4.0)">
+ 
+<!--  End blend transition code  -->
+
+<meta http-equiv="Page-Exit" content="blendTrans(Duration=4.0)">
+ 
+<!--  End blend transition code  -->
+
+
+
+<style>
+all.clsMenuItemNS, .clsMenuItemIE{text-decoration: none; font: bold 12px Arial; color: cyan 
+; cursor: hand; z-index:100}
+#MainTable A:hover {color: white 
+;} 
+
+ 
+
+</style>
+
+<script language="JavaScript">
+
+//Top Nav Bar I v2.1- By Constantin Kuznetsov Jr.
+//Modified by Dynamic Drive for various improvements
+//Visit http://www.dynamicdrive.com for this script
+
+var keepstatic=1 //specify whether menu should stay static (works only in IE4+)
+var menucolor="#2e5256" //specify menu color
+var submenuwidth=150 //specify sub menus' width
+
+</script>
+
+
+
+
+<title>ASC DEL TOPO</title>
+
+<style type="text/css">
+<!--
+html{
+scrollbar-face-color:#cceaf0;
+scrollbar-arrow-color:#2e5256;
+scrollbar-track-color:#cceaf0;
+scrollbar-shadow-color:#2e5256;
+scrollbar-highlight-color:#2e5256;
+scrollbar-3dlight-color:#2e5256;
+scrollbar-darkshadow-color:#2e5256;
+}
+.style1 {
+				border-style: solid;
+				border-width: 3px;
+}
+.style2 {
+				border-style: solid;
+}
+.style3 {
+				font-size: x-small;
+}
+.style7 {
+				text-align: left;
+}
+.style14 {
+				font-family: Verdana;
+				font-size: x-small;
+}
+      .style6 {
+				text-align: left;
+				font-size: x-small;
+				font-family: Verdana;
+				color: black;
+				margin-left: 0cm;
+				margin-right: 0cm;
+				margin-top: 0cm;
+				margin-bottom: .0001pt;
+}
+      body {
+      scrollbar-arrow-color: #7C6676;
+      scrollbar-base-color: #A08E9B;
+      scrollbar-dark-shadow-color: #A08E9B;
+      scrollbar-track-color: #A08E9B;
+      }
+      .style22 {
+				font-family: Verdana;
+}
+.style23 {
+				font-family: Verdana;
+				font-weight: bold;
+}
+.style25 {
+				color: #1E3C8C;
+}
+.style27 {
+				font-family: Verdana;
+				color: #000080;
+}
+.style29 {
+				font-size: x-small;
+				color: #000080;
+}
+.style30 {
+				color: #000080;
+}
+.style31 {
+				font-size: small;
+				font-family: Verdana;
+}
+.style32 {
+				font-family: Verdana;
+				font-size: x-small;
+				color: #000080;
+}
+.style33 {
+				font-family: Verdana;
+				font-size: x-small;
+				color: #000080;
+				font-weight: bold;
+}
+.style34 {
+				font-family: Verdana;
+				text-align: left;
+}
+a {
+				color: #57919C;
+}
+a:visited {
+				color: #57919C;
+}
+a:active {
+				color: #800080;
+}
+a:hover {
+				color: #800080;
+}
+.style35 {
+				font-family: Verdana;
+				font-size: x-small;
+				color: #FF0000;
+}
+.style36 {
+				text-align: center;
+}
+.style38 {
+				font-family: Verdana;
+				color: #FF0000;
+}
+.style39 {
+				text-align: left;
+				font-family: Verdana;
+				font-size: x-small;
+				color: #000080;
+}
+.style40 {
+				text-align: left;
+				font-family: Verdana;
+				font-size: x-small;
+}
+.style41 {
+				text-align: center;
+				font-family: Verdana;
+				color: #000080;
+}
+.style42 {
+				text-align: center;
+				font-family: Verdana;
+				font-size: x-small;
+				color: #000080;
+}
+.style43 {
+				border-style: solid;
+				border-width: 1px;
+}
+.style44 {
+				border-style: solid;
+				text-align: left;
+}
+.style45 {
+				text-align: center;
+				font-size: 10.0pt;
+				font-family: Verdana, sans-serif;
+				color: #000080;
+}
+.style46 {
+				color: #FF0000;
+}
+.style47 {
+				font-size: large;
+				font-family: Verdana;
+}
+.style48 {
+				font-size: xx-small;
+}
+.style50 {
+				border-style: solid;
+				border-width: 2px;
+}
+.style51 {
+				font-size: x-small;
+				color: #FF0000;
+}
+.style263 {
+				text-align: center;
+				font-size: x-small;
+				font-family: Verdana;
+				color: #5F0192;
+}
+.style170 {
+				font-family: Verdana;
+}
+.style348 {
+				font-size: x-small;
+				color: #FFFFAA;
+}
+.style349 {
+				font-size: x-small;
+				color: #000080;
+				text-align: left;
+}
+.style350 {
+				text-decoration: none;
+}
+-->
+</style>
+
+
+
+
+
+
+<script language="JavaScript" src="menu.js"></script>
+<script language="JavaScript" src="menucontext.js"></script>
+<script language="JavaScript">
+showToolbar();
+</script>
+<script language="JavaScript">
+function UpdateIt(){
+if (ie&&keepstatic&&!opr6)
+document.all["MainTable"].style.top = document.body.scrollTop;
+setTimeout("UpdateIt()", 200);
+}
+UpdateIt();
+</script>
+</head>
+<body background="CIbg2.jpg" style="color: #1E3C8C">
+
+<div class="style36">
+<table align="center" cellpadding="30" cellspacing="0"
+bordercolor="#82c9db" background="CIbg1.jpg" style="width: 70%" class="style50"> 
+<tr>
+<td style="width: 93%" class="style2">
+<table width="100%" cellpadding="20" cellspacing="0"  bordercolor="#82c9db" background="CIbg2.jpg" class="style1">
+<tr>
+<td width="100%">
+<p>
+
+<table align="center" width="100%" border="5" cellpadding="30" cellspacing="0"  bordercolor="#82c9db" background="CIbg1.jpg">  
+<tr>
+<td width="100%">
+
+<table align="center" cellpadding="10" cellspacing="0" bordercolor="#82c9db" background="CIbg3.jpg" class="style43" style="width: 950px">  
+<tr>
+<td class="style44" style="width: 1000px">
+<div style="width: 1108px" class="style36">
+				<font size="6" color="#57919c" face="verdana">
+				<strong>
+				<span class="style31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<img src="AnimCinesi1x470E5.gif" width="471" height="104">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font size="3" color="#57919c" face="verdana">
+
+				<font size="3" color="#57919c" face="verdana" class="style3">
+<img src="CIdivider.png" border="0" alt="divider"></font></font></span><span class="style14"><br>
+				</span><span class="style31">
+				<font size="3" color="#57919c" face="verdana">
+
+				<font size="3" color="#57919c" face="verdana" class="style3">
+<img src="CIdivider.png" border="0" alt="divider"> </font></font>
+				<img src="AnimCinesi1x87233.gif" width="684" height="134"><br>
+				</span><span class="style3">
+				<font size="3" color="#57919c" face="verdana">
+
+				<span class="style47"><span class="style46">ASCENDENTI </span><span class="style25">DEL</span><span class="style46">
+				</span><span class="style25">TOPO</span></span></div>
+</font></span></strong><font size="3" color="#57919c" face="verdana">
+
+<span class="style3">
+<p class="style45" style="width: 1106px"><strong><span class="style14">TOPO
+<span class="style46">ASC</span> TOPO</span></strong></p>
+<p class="MsoNormal" style="width: 1109px"><span class="style22">
+<span class="style30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; È 
+rafforzata la componente di fascino e l'attenzione rispetto alla propria 
+immagine. È possibile<span style="mso-spacerun:yes"> </span>un certo 
+egocentrismo che</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp; </span></font><span class="style22">
+<span class="style30">&nbsp;&nbsp;&nbsp;&nbsp; in certe situazioni può limitare 
+il rapporto con gli altri. Si intensifica il bisogno di acquisire beni 
+materiali, come una casa</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style22"><span class="style30">&nbsp;nella quale potersi rifugiare 
+ma anche invitare gli amici. Questo </span><span class="style46"><strong>ASC</strong></span><span class="style30"> 
+può amplificare anche la propensione agli scritti e di</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style22"><span class="style30">&nbsp;spingere 
+il <strong>Topo</strong> verso professioni attinenti. Spesso manifesta una 
+grossa presunzione</span></span></span><span class="style22"><span class="style30"><span class="style3">. Eleganza e diplomazia sono le sue</span></span></span><span class="style3"><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font></span>
+<span class="style22"><span class="style30"><span class="style3">&nbsp;armi 
+vincenti</span></span></span><span class="style3"><span class="style22"><span class="style30"> 
+e consentono di raggiungere le mete desiderate nel lavoro e nella vita privata. 
+I rapporti affettivi rimangono</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font><span class="style22"><span class="style30">&nbsp;importanti 
+ma perde in 
+spontaneità perché si può evidenziare la tendenza a voler essere a tutti i costi 
+la parte dominante</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font><span class="style22"><span class="style30">&nbsp;della 
+coppia.</span></span><font size="6" color="#57919c" face="verdana"><span class="style14">
+</span></font><span class="style22"><span class="style30">Se riesce a 
+tenere a freno l'impulsività e l'aggressività, può essere un eccellente 
+diplomatico, circondato da</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font><span class="style22"><span class="style30">&nbsp;amici 
+pronti a schierarsi al 
+tuo fianco. Si veste con raffinatezza e cura di ogni particolare. In ogni 
+situazioni brilla da vera</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font><span class="style22"><span class="style30">&nbsp;star.</span></span><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;">
+<![if !supportLineBreakNewLine]><![endif]><b><o:p></o:p></b></span></p>
+<p class="style36" style="width: 1108px">
+<span style="mso-bidi-font-family: Arial" class="style33">
+TOPO</span><span class="style14"><span class="style30">&nbsp;
+</span></span><b><span style="mso-bidi-font-family: Arial;" class="style35">
+ASC</span><span class="style32"> </span>
+<span style="mso-bidi-font-family: Arial" class="style32">BUE/BUFALO</span></b></p>
+<p class="style39" style="width: 1106px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; È un 
+<strong>Topo</strong> più 
+pacato e riflessivo, l'impazienza è frenata. Darà il meglio di sé se gli sono 
+assegnati importanti compiti in<font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>&nbsp;ambito 
+finanziario. L'<span class="style46"><strong>ASC</strong></span> <strong>Bue</strong> lo rende molto 
+più prudente, sono bandite le speculazioni, ma anche la disponibilità verso<font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>&nbsp;gli 
+altri e l'irrequietezza sono più contenute. 
+
+Assume molta importanza la dimensione lavorativa, la 
+necessità di giungere<font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+
+&nbsp;delle posizioni economiche che garantiscano stabilità 
+e sicurezza. Introverso, ma è un ottimo amico, in 
+grado di risolvere<font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>&nbsp;ogni problema. Lealtà e comprensione, unite al forte senso di 
+giustizia, lo spingono a prendere le difese dei più deboli.<font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>&nbsp;È 
+alquanto concentrato 
+sulla sua attività, è coraggioso e non indietreggia davanti ad alcun ostacolo. 
+Ha bisogno di brevi<font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>&nbsp;intervalli di riposo per recuperare l'energia spesa nella 
+sua frenetica attività professionale. Amante tenero, appassionato<font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>&nbsp;e fedele. 
+È un buon amico sempre pronto a difendere i deboli. Con il partner è ancor più 
+possessivo e può avere qualche<font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>&nbsp;problema perché raramente si rende conto di 
+essere eccessivo.<o:p></o:p></p>
+<p class="style36" style="width: 1109px">
+
+<span style="mso-bidi-font-family: Arial" class="style33">
+TOPO</span><span class="style14"><span class="style30">&nbsp;
+</span></span><b>
+<span style="mso-bidi-font-family: Arial; " class="style35">ASC</span><span class="style30"><span class="style14">
+</span><span style="mso-bidi-font-family: Arial" class="style14">TIGRE</span></span></b><span class="style30"><span class="style14"> 
+</span>
+</span></p>
+<p class="style7" style="width: 1105px"><span class="style30">
+<span class="style14"> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Ottimo abbinamento: il <strong>Topo</strong> vede aumentare la propria irruenza e la propria 
+aggressività. Questo lo rende meno critico</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30">
+<span class="style14"> 
+&nbsp;e interessato rispetto a tutto. Ne 
+guadagna in spontaneità e ciò l'aiuta soprattutto nei rapporti d'amicizia 
+che diventano</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30">
+<span class="style14"> 
+&nbsp;più fluidi e soddisfacenti. Si rafforza l'interesse per tutto ciò 
+che può rendere la vita più comoda ed agevole, e una certa</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30">
+<span class="style14"> 
+&nbsp;apprensione per la 
+propria situazione economica. Pieno di energia, è esigente, intransigente, usa 
+ogni mezzo per arrivare</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp; </span></font>
+<span class="style30">
+<span class="style14"> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; al successo. Al calcolo razionale s'aggiunge una 
+carica di rapace aggressività. La <strong>Tigre</strong> porta a spendere senza attenzione</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30">
+<span class="style14"> 
+&nbsp;o nei 
+momenti meno opportuni. Possiede un fiuto eccezionale, che lo aiuta a 
+concludere, con ottimi risultati, </span>
+<span class="style22"> 
+anche </span>
+</span>
+</span><span class="style30">
+<span class="style14">
+affari</span></span><span class="style3"><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+</span><span class="style30">
+<span class="style14">
+&nbsp;rischiosi. Personalità carismatica destinata a rivestire cariche di 
+comando. Attrazione per il lusso e le comodità. Sempre</span></span><span class="style3"><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+</span><span class="style30">
+<span class="style14">
+&nbsp;in movimento e ama il 
+rischio e la speculazione che guidato dall'intelligenza permette di concludere 
+affari che per gli altri</span></span><span class="style3"><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+</span><span class="style30">
+<span class="style14">
+&nbsp;sembrano impossibili. In amore se saprà rischiare di 
+più, avrà molte più gratificazioni dal partner.<o:p></o:p></span></p>
+</span>
+
+<span class="style3">
+<p class="style36" style="width: 1106px">
+
+<span style="mso-bidi-font-family: Arial" class="style33">
+TOPO</span><span class="style14"><span class="style30">
+</span></span><b>
+<span style="mso-bidi-font-family: Arial; " class="style38">
+ASC</span><span class="style30"><span style="mso-bidi-font-family: Arial" class="style22"> 
+LEPRE/GATTO</span></span></b><span class="style22"><span class="style30"> 
+</span></span></p>
+<p class="style34" style="width: 1108px"><span class="style30"> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+La gentilezza della Lepre rende molto più morbido e suadente il <strong>Topo</strong>. La 
+componente Lepre spinge a essere conciliante</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;il <strong>Topo</strong> non permette mai che 
+qualcuno strumentalizzi le sue attitudini per fini diversi dai suoi, sembra 
+esitare di fronte</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;alle scelte, ma sta solamente valutando con molta accortezza 
+tutti i pro e i contro. È un insieme vincente soprattutto sul</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;lavoro, ancor più 
+se ci sono affari importanti in corso. Maggiori timori, maggiori esitazioni, ma 
+con cautela ed una furbizia</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;moltiplicate per due. È un <strong>Topo</strong> tranquillo e poco 
+amante dei rischi. Raffinato ed elegante, riveste un ruolo primario nella</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;vita 
+sociale e brilla tra gli amici per il suo garbato modo di presentarsi, senza 
+invadere gli spazi altrui. L'affiatamento con</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;il partner è sicuro e sarà la base 
+per un rapporto duraturo.  
+Poco battagliero odia il rischio e le discussioni. Il suo motto è:</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font><span class="style30"> 
+&nbsp;&quot;vivi e lascia vivere&quot;. 
+Non disdegna la vita sociale ma alle scatenate notti 
+brave preferisce la comodità della sua adorata</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;</span></font><span class="style30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; poltrona, della buona musica e TV.&nbsp; L'amore è vissuto con serenità.</span><o:p></o:p></p>
+<p class="style36" style="width: 1106px">
+
+<span style="mso-bidi-font-family: Arial" class="style33">
+TOPO</span><span class="style14"><span class="style30">
+</span></span><b>
+<span style="mso-bidi-font-family: Arial; " class="style38">
+ASC</span><span style="mso-bidi-font-family: Arial; " class="style27">
+</span>
+<span class="style30">
+<span style="mso-bidi-font-family: Arial" class="style22">
+DRAGO</span><span class="style22">
+</span></span></b>
+</p>
+<p class="style7" style="width: 1110px"><span class="style30">
+<span style="mso-bidi-font-weight: bold" class="style22">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+È</span><span style="mso-bidi-font-weight: bold" class="style23"> </span>
+<span class="style22">
+un <strong>Topo</strong> più espansivo, generoso e ottimista. Indubbi i suoi successi economici, ma 
+non sono più così determinanti per</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30">
+<span class="style22">
+&nbsp;il raggiungimento della felicità. C'è la 
+capacità di godere delle piccole cose e di saper donare agli altri in 
+tutti i sensi. La</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30">
+<span class="style22">
+&nbsp;vitalità del <strong>Drago</strong> unita al bisogno di concretizzare del 
+<strong>Topo</strong> 
+portano a risultati soddisfacenti sia in campo lavorativo che</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30">
+<span class="style22">
+&nbsp;in ambito 
+affettivo. Individuo solare, in cui non trovano posto né menzogna né intrigo. 
+Generoso, sempre pronto a portare</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30">
+<span class="style22">
+&nbsp;aiuto a chi lo chiede. In cambio chiede 
+adulazione e ammirazione. È un affascinante e brillante parlatore. Non ci si 
+stanca</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30">
+<span class="style22">
+&nbsp;a ascoltarlo, anche perché è altrettanto </span></span>
+<span class="style14">
+<font size="3">
+
+<span class="style29">difficile è possibile farlo smettere. Generoso e disponibile è pronto a 
+soccorrere gli</span></font></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style14">
+<font size="3">
+
+<span class="style29">&nbsp;amici in difficoltà, che però devono propinargli le quotidiane 
+adulazioni di cui è ghiotto! In amore l'</span><span class="style51"><strong>ASC</strong></span><span class="style29"><strong> Drago 
+</strong>lo spinge</span></font></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+</span></font>
+<span class="style14">
+<font size="3">
+
+<span class="style29">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; verso la 
+libertà si attenua e ciò porta il <strong>Topo</strong> ad essere molto rispettoso delle esigenze 
+del partner e di tutti i familiari.</span></font></span></p>
+<p class="style36" style="width: 1112px"><span class="style14">
+<font size="3">
+
+<span class="style29">&nbsp;</span></font></span><span style="mso-bidi-font-family: Arial" class="style33">TOPO</span><span class="style14"><span class="style30">
+</span></span><b>
+<span style="mso-bidi-font-family: Arial; " class="style35">
+ASC</span><span class="style30"><span style="mso-bidi-font-family: Arial" class="style14"> 
+SERPENTE</span></span></b><span class="style14"><span class="style30"> 
+</span></span></p>
+<center>
+<p class="style6" style="width: 1110px"><span class="style30"> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Molto acuto ed attento, è sempre in stato di allerta. Ha un intelligenza e una 
+saggezza fuori dal comune. Riesce sempre a</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;capire cosa sta succedendo intorno a 
+lui e ad agire con prontezza in modo da ottenere vantaggi per se stesso. 
+Entrambe</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+</span></font>
+<span class="style30"> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; le componenti sono molto attente al lato economico così come non 
+tollerano le speculazioni. Astutissimo e spesso subdolo</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;il <strong>Topo</strong> può 
+affascinare ottenendo quello che vuole dagli altri. Sul lavoro è la persona più 
+idonea per incarichi difficili ma</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;deve avere la più ampia autonomia. 
+Intelligenza acutissima e fascino irresistibile sono le armi vincenti, è ponderato come</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;un vecchio saggio. Dietro a una maschera di 
+disponibilità, nasconde un animo diffidente: è difficile ingannarlo.  
+Diffidente</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+</span></font>
+<span class="style30"> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e attento seleziona accuratamente chi incontra. Non accetta di 
+sprecare il suo prezioso tempo in attività poco stimolanti.</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+La vita affettiva è 
+un rebus non ama confidarsi con gli amici preferisce tenere separata la sfera 
+pubblica da quella privata. </span> <o:p></o:p>
+</p>
+</center>
+<p class="style36" style="width: 1107px">
+
+<span style="mso-bidi-font-family: Arial" class="style33">
+TOPO</span><span class="style14"><span class="style30">
+</span></span><b>
+<span style="mso-bidi-font-family: Arial; " class="style38">
+ASC</span><span class="style30"><span style="mso-bidi-font-family: Arial" class="style22"> 
+CAVALLO</span></span></b><span class="style14"><span class="style30"> 
+</span></span></p>
+<p class="style14" style="width: 1112px"><span class="style30"> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+L'</span><span class="style46"><strong>ASC</strong></span><span class="style30"> 
+<strong>Cavallo</strong> dona al <strong>Topo</strong> una inconsueta attrazione verso l'ignoto. È 
+ancor di più irrequieto e curioso e può arrivare a</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;correre dei rischi che, a 
+lungo andare, possono essere causa di malesseri o, cosa ben peggiore per un 
+<strong>Topo</strong>, di situazioni</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;critiche a livello economico. Incostante e bizzarro, 
+avventuroso e capriccioso. Fortunatamente l'ottimismo del <strong>Cavallo</strong> lo</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;aiuta ad 
+individuare le possibili soluzioni nei momenti di crisi. L'energia e la voglia 
+di vivere in eccesso impediscono alla</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;personalità di mantenere a lungo i 
+rapporti. Certamente è simpatico, ma manca completamente di tatto e di 
+diplomazia.</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;Esplosivo scontro di energie! Deve trovare il modo di equilibrare la 
+forza che possiede, così vivrà meglio lui e farai vivere</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;più serenamente chi lo 
+circonda. Il partner inizialmente sarà stregato dal suo fascino, ma nel 
+tempo non potrà reggere i</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;suoi ritmi. La sua vita affettiva è vivace, si fa 
+distrarre con facilità e questo non l'aiuta a stabilizzare i rapporti. Il  
+partner</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;dovrà essere molto determinato se vorrà costruire qualcosa di 
+importante. <b><span style="mso-spacerun: yes">&nbsp;</span></b></span><o:p></o:p></p>
+<p class="style36" style="width: 1108px"><font color="#57919c">
+
+<span class="style27"><strong>TOPO </strong></span></font><b>
+<span style="mso-bidi-font-family: Arial; " class="style38">
+ASC</span><span class="style30"><span style="mso-bidi-font-family: Arial" class="style22"> 
+CAPRA</span></span></b></p>
+<p class="style7" style="width: 1111px"><span class="style30">
+<span class="style14"> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; È un <strong>Topo</strong> piuttosto scontroso, 
+e un po' ombroso può cedere ai ricatti 
+sentimentali. Quando si apre riesce facilmente a</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30">
+<span class="style14"> 
+&nbsp;conquistare gli altri. È 
+consapevole che la dimensione affettiva è il suo vero punto debole e mette una 
+serie di barriere tra</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30">
+<span class="style14"> 
+&nbsp;se stesso e gli altri. È abilissimo nei suoi progetti 
+ancor di più nel conquistare i favori di collaboratori o superiori. La bontà</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+</span></font>
+<span class="style30">
+<span class="style14"> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+della <strong>Capra</strong> frenerà alcuni atteggiamenti disinvolti del <strong>Topo</strong>, ma l'amalgama di 
+queste due caratteristiche sa conquistare</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30">
+<span class="style14"> 
+&nbsp;la fiducia di tutti. Tuttavia ci sono barriere di pasta frolla che si 
+sbriciolano di fronte ad un sorriso seducente, uno sguardo</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30">
+<span class="style14"> 
+&nbsp;smarrito. L'entusiasmo del <strong>Topo</strong> si fiacca a contatto 
+della natura melanconica della Capra. Un'ambivalente convivenza di</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30">
+<span class="style14"> 
+&nbsp;ottimismo e 
+pessimismo.<span style="mso-spacerun: yes"> </span>Alti e bassi 
+emozionali costituiscono il delicato ordito della fragile e delicata personalità. Vive in</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30">
+<span class="style14"> 
+&nbsp; altalena e alterna momenti di 
+frenetica e spericolata attività a periodi di mistica 
+solitudine. Preferisce le pareti domestiche</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30">
+<span class="style14"> 
+&nbsp;al duro e infido mondo esterno. 
+Tanto è fragile nella dimensione affettiva quanto è granitico sul lavoro.<span style="mso-spacerun: yes">&nbsp;
+</span><o:p></o:p></span></p>
+</span>
+<p class="style36" style="width: 1109px">
+<font size="3" color="#57919c" class="style3">
+
+<strong>
+<span class="style27">TOPO </span>
+<span class="style38">ASC</span><span class="style27"> SCIMMIA </span> </strong>
+<span class="style27">&nbsp;</span></font></p>
+<p class="style39" style="width: 1108px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L'umorismo è una caratteristica comune ai due segni. È un 
+<strong>Topo</strong> molto diverso, 
+più socievole, raffinato e di sicuro effetto<font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+&nbsp;in qualsiasi ambiente. Sa indossare 
+maschere diverse assecondando la situazione in cui viene a trovarsi, è un 
+abilissimo<font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+</span></font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; manipolatore, ma è piacevole perché non scade né nel ridicolo né 
+nella grettezza. È il classico &quot;Pierino delle barzellette&quot;,<font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+&nbsp;l'amico che tutti si 
+contendono. È un abilissimo Arlecchino, intraprendente, trafficone, che spesso 
+comanda fingendo di<font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+&nbsp;servire. Brillante, dinamico e simpatico, miete 
+consensi ovunque vada. La sua vivissima curiosità lo spinge ad interessarsi<font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+&nbsp;di 
+mille cose, e, solitamente, riesce a condurle tutte a buon termine. Nel lavoro 
+non avrà mai problemi,<span style="mso-spacerun: yes">&nbsp; </span>soprattutto 
+se ha<font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+&nbsp;la possibilità di utilizzare in modo professionale queste prerogative. 
+Trova sempre il bandolo della matassa con destrezza<font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+&nbsp;può svolgere diverse 
+attività. Sagace e ironico punzecchia tutti con simpatica ironia ed è il primo a 
+ridere di se stesso.<font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+&nbsp;Meno facile la vita affettiva perché è poco sentimentale, è 
+comunque geloso e vuole un partner brillante ed estroverso.<span class="style25"><o:p></o:p></span></p>
+</span>
+<p class="style42" style="width: 1107px"><strong>TOPO <span class="style46">ASC</span> GALLO</strong></p>
+
+<span class="style3">
+<p class="style40" style="width: 1110px"><span class="style30"> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; È una combinazione molto positiva per il 
+<strong>Topo</strong> perché lo spinge ad uscire dagli 
+schemi abituali. Non si chiude ma accetta</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;di buon grado sia di confrontarsi con 
+gli altri sia i riconoscimenti al proprio operato. L'unico vero neo sta nella 
+propensione</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;allo spendere dell'</span><strong><span class="style46">ASC </span>
+<span class="style30"> 
+Gallo</span></strong><span class="style30">, mentre il <strong>Topo</strong> 
+vorrebbe tesaurizzare. L'intelligenza è notevole,<span style="mso-spacerun: yes"> </span>
+ha il costante bisogno di</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;vedersi circondato da un pubblico plaudente ed 
+allegro. Piuttosto nervoso, non riesce mai a stare fermo un attimo, non</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;fosse 
+altro che con la sua mobilissima lingua. Il suo sistema nervoso sempre al limite 
+del corto circuito lo spinge a vivere</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;in modo frenetico e sconsiderato. Il 
+terrore della solitudine lo costringe a cercare compagnia e adulazioni che 
+compensino</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;l'insicurezza che lo pervade. Nel campo affettivo<span style="mso-spacerun: yes">&nbsp;</span>rimane molto forte il bisogno di soddisfare i desideri del partner, ma 
+non</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;sarà molto disponibile a cedere o a condividere la posizione di leadership 
+in casa.</span><o:p></o:p></p>
+<p class="style41" style="width: 1108px"><strong>TOPO <span class="style46">ASC</span> CANE</strong></p>
+<p class="style40" style="width: 1108px"><span class="style30"> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+La natura cristallina dell'</span><span class="style46"><strong>ASC </strong></span> <span class="style30"> 
+<strong>Cane</strong> pone non pochi freni alle mete lavorative del 
+<strong>Topo</strong>. Sobrietà e rigore, meno proteso al</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;conseguimento di risultati economici 
+importanti perché si fa troppi scrupoli. È molto attratto dalle materie 
+umanistiche e</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;dall'arte in genere sono consigliabili professioni collegate 
+all'insegnamento<span class="style48">. </span>Pur essendo dotato di savoir faire 
+e umorismo</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+</span></font>
+<span class="style30"> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; difficilmente 
+brilla in società. Il timore di non essere compreso lo porta a vivere ogni 
+situazione con apparente freddezza</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;e distacco emotivo. Solo chi lo conosce bene 
+sa quanto, invece sia calda e generosa la sua personalità. Pratico  
+intelligente</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;è apprezzato per l'immensa mole di lavoro che sbriga. Sentimentale 
+e affettuoso, mantiene un atteggiamento distaccato,</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;per non coinvolgersi troppo e soffrire. In amore il<strong> Topo</strong> è restio a legarsi, la sua titubanza fa sì che 
+le occasioni sfumino.</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;Chi s'innamora di lui dovrà avere molta pazienza ed 
+rispettare i suoi tempi. Quando finalmente si lascia andare, il partner</span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"> 
+&nbsp;potrà 
+dormire tra due guanciali perché avrà un compagno fedelissimo.</span> <o:p></o:p>
+</p>
+</span>
+<p class="style42" style="width: 1109px">
+<strong>TOPO <span class="style46">ASC</span> CINGHIALE</strong></p>
+
+<span class="style3">
+<p class="style34" style="width: 1107px">
+<span class="style30"><span class="style14"> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Un <strong>Topo</strong> indeciso, pieno di dubbi e di domande. L'intelligenza è vivace e 
+rafforzata, ma non è proiettata verso interessi</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"><span class="style14"> 
+&nbsp;economici e lavorativi. 
+L'idealismo del <strong>Cinghiale</strong> smorza la concretezza del <strong>Topo</strong>, il 
+suo bisogno di 
+agevolare le persone</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"><span class="style14"> 
+&nbsp;diventa un fattore predominante e tutto si muove con ritmi 
+a misura di uomo. Questo <strong>Topo</strong> è interessato ai movimenti</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"><span class="style14"> 
+d'opinione e si 
+muove sempre in prima persona per raggiungere importanti traguardi. Bonarietà 
+e curiosità intellettuale.</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"><span class="style14"> 
+&nbsp;Intelligente e saggio, può emergere in qualsiasi 
+attività lavorativa e raggiungere un'ottima posizione socio-economica, a</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"><span class="style14"> 
+patto 
+che riesca a vincere la sua inguaribile pigrizia, che rischia di bloccarlo. 
+Ottimista, è sempre circondato da gente cui</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"><span class="style14"> 
+&nbsp;&nbsp; non esita ad aprire casa, cuore e 
+portafoglio, ahimè con tale ingenuità che paga con cocenti delusioni. La  
+vita affettiva è</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"><span class="style14"> 
+&nbsp;molto serena. Si lascia trascinare dal partner soprattutto se è 
+romantico e capace di tanti piccoli gesti affettuosi. Spesso</span></span><font size="6" color="#57919c" face="verdana"><span class="style14"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font>
+<span class="style30"><span class="style14"> 
+&nbsp;rinuncia ad 
+appuntamenti importanti per gli attacchi di pigrizia che lo colpiscono 
+all'improvviso. </span></span> <o:p></o:p>
+</p>
+<p class="style34" style="width: 1107px">
+<o:p></o:p></p>
+</span><strong><center>
+
+
+
+
+<center style="width: 1100px"><span class="style3"><img src="CIdivider.png" border="0" alt="divider"></span><font size="3" color="#57919c" face="verdana" class="style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="3" color="#57919c" face="verdana"><strong><font size="3" color="#57919c" face="verdana" class="style3"><img src="AA1Topo.jpg" width="159" height="151"></font></strong></font>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
+<img src="CIdivider.png" border="0" alt="divider"></font></center>
+</strong>
+<div class="style349" style="width: 1101px">
+<div class="style36">
+				<br>
+				<strong>
+				<span class="style30">
+				<a class="style350" href="../../../../../AcquarioA/ASC.2CineseBue.htm">
+				<span class="style25">Clicca per 
+l'ASC del BUE/BUFALO</span></a></span></strong><span class="style25"><strong><br>
+				</strong></span></div>
+<P class="style263" style="width: 1099px">
+<font size="1"
+                        face="Verdana">  <span class="style170">
+<span class="style348"><strong>  &nbsp;<!--webbot
+                        bot="HTMLMarkup" startspan --><a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1393244699-xke74q" border=0></a>
+ <!--webbot
+                        bot="HTMLMarkup" endspan --> </strong>
+</span></span>
+ </font>
+                                                        
+ 
+</div>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+</table>
+
+<br>
+</div>
+
+</body>
+</html>
+
+
