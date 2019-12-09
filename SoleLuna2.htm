@@ -1,0 +1,2283 @@
+<html>
+
+<head>
+	<style>
+	#lh_header_top #lh_other, #lh_header_top #lh_options {
+		top: 23px;
+	}
+	#lh_header_top #lh_nicknames {
+		top: 22px;
+	}
+	#lh_header_top #lh_area04 a.lh_nicknames_arrow {
+		/*height: 16px;*/
+	}
+	#lh_header #lh_area03 .lh_pos { 
+		padding-top: 4px;
+	}
+	#lh_header #lh_area03 table td input {
+		margin-top: -1px !important;
+		margin-top: -2px;
+	}
+	#lh_header #lh_close_me { 
+		margin-top: 0;
+	}
+	#lh_header.lite, #lh_header.liquid, #lh_header.liquid800, #lf_footer.lite, #lf_footer.liquid {
+		width: expression(document.body.clientWidth < 800 ? '760px': 'auto' );
+	}
+	#lh_header #lh_area02.lite {
+		width: expression(document.body.clientWidth < 1024 ? '636px': 'auto' );
+	}
+	#l_maincont {
+		width: expression(document.body.clientWidth < 800 ? '760px': 'auto' );
+	}
+	#lh_header_top.lh_liquid {
+		width: expression(document.body.clientWidth < 800 ? '760px': 'auto' );
+	}
+	#lh_header_top { 
+		height: 33px;
+	}
+	#lh_header_top #lh_area05 a.lh_on, #lh_header_top #lh_area04 a.lh_on {
+		height: 22px;
+	}
+	#lh_header_top #lh_area04 a.lh_options { 
+		margin-left: -5px;
+	}
+	#lh_header_top {
+		margin-top: 0px;
+	}	
+	</style>
+	<style>
+	#lh_header_top #HF_login_l, #lh_header_top #HF_login_r { 
+		float: none;
+	}
+	#lh_header_top {
+		left: 0px;
+	}
+	
+	#l_header_topbar #l_header_topbar_popup_altro, #l_header_topbar #l_header_topbar_popup_opzioni {
+    	margin-top: 33px;
+	}
+	#l_header_topbar #l_header_topbar_popup_nicknames {
+    	margin-top: 25px;
+	}
+
+	</style>
+<style>
+	#lh_header #lh_area02a{
+		position:relative;
+		overflow: visible;
+		height: 30px;
+	}
+	
+	#lh_header #lh_area02b{
+		z-index: -1;
+	}
+	#lh_header #lh_area02a .lh_pos {
+		position: absolute;
+		margin-bottom: 0;
+	}
+	
+	#lh_header #lh_area02a .lh_on {
+	}
+	#lh_header .lh_finput_area input {
+		height: 27px;
+		padding-top: 0;
+		padding-bottom: 0;
+		line-height: 27px !important;
+		font-size: 15px !important;
+	}
+	#lh_altro{
+		position: relative !important;
+	}
+	#lh_header_top .lh_popup {
+	}
+	#lf_footer .lf_finput_area input {
+		font-size: 12px !important;
+		line-height: 25px !important;
+		vertical-align: middle;
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+	
+</style>
+	<style>
+	
+	#lh_header_top #lh_area05 a.lh_altro, #lh_header_top #lh_area04 a.lh_opzioni {
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+	#lh_header_top #lh_area05 a.lh_altro { 
+		background-position: -67px -10px;
+	}
+	#lh_header_top #lh_area05 a.lh_altro_selected { 
+		background-position: -67px -36px;
+	}
+	#lh_header_top #lh_area04 a.lh_opzioni {
+		background-position: -56px -10px;
+	}
+	#lh_header_top #lh_area04 a.lh_nicknames_arrow_selected, #lh_header_top #lh_area05 a.lh_altro_selected, #lh_header_top #lh_area04 a.lh_opzioni_selected {
+		height: 23px;		
+	}
+	#lh_header_top #lh_nicknames {
+		left: -195px;
+	}
+	#lh_header_top #lh_other, #lh_header_top #lh_options {
+		top: 22px;
+	}
+	#lh_header_top #lh_nicknames {
+		top: 22px;
+	}
+	
+	#lh_header .lh_finput_area .lh_pos { 
+		padding-top: 4px;
+	}
+	#lf_footer .lf_finput_area {
+		height: 27px;
+		max-height: 27px;
+		overflow: hidden;
+	}
+	</style>
+	<style>
+	#l_header_topbar #l_header_topbar_popup_altro, #l_header_topbar #l_header_topbar_popup_opzioni {
+    	margin-top: 35px;
+	}
+	#l_header_topbar #l_header_topbar_popup_nicknames {
+    	margin-top: 28px;
+	}
+	#l_header_topbar #l_header_topbar_left #l_header_topbar_popup_altro a, 
+	#l_header_topbar #l_header_topbar_right #l_header_topbar_popup_opzioni a,
+	#l_header_topbar #l_header_topbar_right #l_header_topbar_popup_nicknames a {
+    	padding: 0px 0px 0px 4px;
+	}
+	#l_header_topbar #l_header_topbar_right #l_header_topbar_nicknames_lk {
+		display: inline-block;
+	}
+	#l_header_topbar #l_header_topbar_right #l_header_topbar_filter_family {
+		line-height: 14px;
+	}
+	#l_header_topbar li {
+	    margin-top: 12px;
+	    line-height: 14px;
+    }
+	#l_header_topbar #l_header_topbar_right a.plus_selected {
+	    border-left: 1px solid #ffffff;
+	    color: #000000;
+	    margin-bottom: 0px;
+	    padding: 0px 17px 0px 8px;
+	    display: inline-block;
+	    background-position-y: -286px;
+	}
+	</style>
+
+
+<style>
+#l_header_topbar,#l_header_fixed_topbar_placeholder{height:98px}
+</style>
+
+<title>Sole Luna </title>
+<style>
+BODY{
+scrollbar-face-color:#e1dfd0;
+scrollbar-arrow-color:#736552;
+scrollbar-track-color:#cec3b5;
+scrollbar-shadow-color:#232D22;
+scrollbar-highlight-color:#fff7e7;
+scrollbar-3dlight-color:#736552;
+scrollbar-darkshadow-Color:#736552;
+}
+.style778 {
+				border-style: solid;
+				border-width: 1px;
+				background-image: url('ACtile.gif');
+}
+.style777 {
+				background-image: url('ACtile.gif');
+}
+.style5 {
+				font-family: Verdana;
+}
+.style6 {
+				text-align: center;
+}
+.style54 {
+				font-size: x-small;
+				font-family: Verdana;
+}
+.style638 {
+				color: #FFFF99;
+}
+.style754 {
+				font-family: Verdana;
+				text-align: center;
+}
+.style9 {
+				font-size: x-small;
+}
+.style751 {
+				color: #330000;
+}
+.style2 {
+				font-family: Verdana;
+}
+.style3 {
+				text-align: center;
+}
+.style674 {
+				text-align: center;
+				font-size: x-large;
+}
+.style758 {
+				color: #FF0000;
+}
+.style677 {
+				font-family: Verdana;
+				font-size: medium;
+}
+.style676 {
+				font-family: Verdana;
+				font-size: medium;
+				color: #330000;
+}
+.style51 {
+				font-size: small;
+}
+.style367 {
+				color: #FFFF99;
+				font-family: Galant;
+				font-size: small;
+				text-align: left;
+}
+.style36 {
+				font-family: "Verdana";
+}
+.style52 {
+				font-family: "Verdana";
+				font-size: small;
+}
+.style598 {
+				font-family: Verdana;
+				font-size: x-small;
+				color: #330000;
+}
+.style591 {
+				color: #330000;
+				font-weight: normal;
+}
+.style373 {
+				font-size: x-small;
+				font-family: Verdana;
+				color: #404040;
+}
+.style263 {
+				font-size: x-small;
+				font-weight: normal;
+				font-family: Verdana;
+				color: #330000;
+}
+.style11 {
+				font-family: Verdana;
+				font-size: x-small;
+}
+.style136 {
+				font-family: Verdana;
+				font-size: small;
+}
+.style64 {
+				color: #FFFF99;
+				font-family: Galant;
+				font-size: small;
+				text-align: center;
+}
+.style189 {
+				font-weight: normal;
+}
+.style138 {
+				font-weight: bold;
+}
+.style278 {
+				font-family: Verdana;
+				font-weight: bold;
+}
+.style735 {
+				color: #330000;
+				font-weight: bold;
+}
+.style555 {
+				font-family: Verdana;
+				font-size: x-small;
+				color: #FFFFCC;
+}
+.style641 {
+				text-align: center;
+				font-size: x-small;
+				color: #330000;
+}
+.style630 {
+				font-weight: bold;
+				font-size: x-small;
+				color: #330000;
+}
+.style637 {
+				text-align: center;
+				font-size: x-small;
+}
+.style552 {
+				color: #FFFFCC;
+}
+.style271 {
+				font-family: Galant;
+}
+.style276 {
+				font-family: Galant;
+				font-size: small;
+}
+.style750 {
+				font-size: x-small;
+				color: #330000;
+}
+.style728 {
+				color: #FFFF99;
+				font-family: Galant;
+				font-size: small;
+}
+.style347 {
+				text-align: left;
+}
+A:link {color: #F6DCDC;text-decoration:none;}
+A {text-decoration:none;
+				color: #FF0000;
+}
+.style60 {
+				font-size: xx-large;
+}
+.style503 {
+				color: #FFFF80;
+				font-size: x-small;
+				font-family: Verdana;
+}
+.style507 {
+				color: #FFFF80;
+}
+.style452 {
+				font-size: x-small;
+				font-weight: bold;
+}
+.style441 {
+				font-size: x-small;
+				color: #202421;
+}
+.style442 {
+				font-size: 12.0pt;
+				font-family: "Times New Roman", serif;
+				text-align: left;
+				margin-left: 0cm;
+				margin-right: 0cm;
+				margin-top: 0cm;
+				margin-bottom: .0001pt;
+}
+.style742 {
+				font-family: Verdana;
+				font-weight: bold;
+				font-size: x-small;
+				color: #330000;
+}
+.style478 {
+				font-family: Verdana;
+				font-weight: bold;
+				font-size: x-small;
+}
+.style734 {
+				text-align: left;
+				font-family: Vani;
+}
+.style779 {
+				color: #330000;
+				font-weight: bold;
+				text-align: left;
+}
+.style782 {
+				color: #330000;
+				font-family: Verdana;
+				font-weight: normal;
+}
+.style783 {
+				color: #330000;
+				font-family: Verdana;
+}
+.style786 {
+				font-size: x-small;
+				font-weight: normal;
+}
+.style787 {
+				font-family: Verdana;
+				font-weight: normal;
+}
+.style788 {
+				color: #FF0000;
+				font-weight: bold;
+}
+.style789 {
+				font-size: x-small;
+				color: #FF0000;
+}
+.style790 {
+				font-weight: bold;
+				font-size: x-small;
+				color: #FF0000;
+}
+.style791 {
+				font-family: Verdana;
+				font-weight: bold;
+				font-size: x-small;
+				color: #FF0000;
+}
+.style792 {
+				color: #FF0000;
+				font-weight: normal;
+}
+.style793 {
+				font-weight: bold;
+				font-size: x-small;
+				color: #0000FF;
+}
+.style795 {
+				color: #0000FF;
+				font-weight: bold;
+}
+.style796 {
+				color: #0000FF;
+}
+.style797 {
+				font-family: Verdana;
+				font-weight: bold;
+				font-size: x-small;
+				color: #0000FF;
+}
+.style798 {
+				font-size: x-small;
+				font-weight: normal;
+				color: #0000FF;
+}
+.style799 {
+				font-weight: normal;
+				font-size: x-small;
+				color: #FF0000;
+}
+.style801 {
+				font-weight: bold;
+				font-size: x-small;
+				color: #008000;
+}
+.style802 {
+				color: #008000;
+}
+.style803 {
+				font-family: Verdana;
+				font-weight: bold;
+				font-size: x-small;
+				color: #008000;
+}
+.style804 {
+				color: #008000;
+				font-weight: bold;
+}
+.style805 {
+				color: #800000;
+				font-weight: bold;
+}
+.style806 {
+				color: #800000;
+}
+.style807 {
+				font-size: x-small;
+				color: #800000;
+}
+.style808 {
+				font-size: 12.0pt;
+				font-family: "Times New Roman", serif;
+				text-align: center;
+				margin-left: 0cm;
+				margin-right: 0cm;
+				margin-top: 0cm;
+				margin-bottom: .0001pt;
+}
+.style78 {
+				color: #FFFF99;
+				font-family: Verdana;
+				font-size: x-large;
+}
+.style316 {
+				color: #FFFF99;
+				font-size: small;
+}
+.style692 {
+				font-family: Verdana;
+				font-weight: bold;
+				color: #000064;
+}
+.style752 {
+				font-family: Verdana;
+				font-size: x-large;
+}
+.style753 {
+				font-family: Verdana;
+				font-weight: bold;
+				color: #330000;
+}
+.style810 {
+				color: #000000;
+}
+.style811 {
+				font-size: x-small;
+				color: #000000;
+}
+.style812 {
+				color: #000000;
+				font-weight: normal;
+}
+.style813 {
+				font-weight: bold;
+				font-size: x-small;
+				color: #000000;
+}
+.style814 {
+				color: #000000;
+				font-family: Verdana;
+}
+.style784 {
+				font-weight: normal;
+				font-size: x-small;
+				color: #000000;
+}
+.style815 {
+				color: #000000;
+				font-family: Verdana;
+				font-weight: normal;
+}
+.style816 {
+				border-style: solid;
+				border-width: 1px;
+				background-color: #FFFFCC;
+}
+.style817 {
+				font-family: Verdana;
+				text-align: center;
+				font-size: small;
+}
+.style818 {
+				color: #202421;
+}
+.style819 {
+				color: #800000;
+				font-size: small;
+}
+.style820 {
+				font-size: small;
+				color: #330000;
+}
+.style821 {
+				color: #202421;
+				font-weight: bold;
+}
+.style822 {
+				font-size: small;
+				color: #202421;
+}
+.style823 {
+				font-size: small;
+				color: #FF0000;
+}
+-->
+</style>
+<meta name="description" content=" ">
+<meta name="keywords" content=" ">
+<meta name="author" content="www.webdesigns.it">
+</head>
+
+<body bgproperties="fixed" bgcolor="white" text="#7E726C" link="#666666" vlink="#B19986" alink="#C6A284" leftmargin="0" marginwidth="0" style="background-image: url('A.SoleLunaStelle.jpg')">
+
+<table align="center" border="1" cellpadding="20" cellspacing="4" width="760" background="ACstripleo6.jpg" bordercolorlight="#FFF7E7">
+ <tr>
+  <td background="ACstripleo7.jpg">
+   <table border="1" cellpadding="8" cellspacing="4" width="100%" background="ACstripleo6.jpg" bordercolorlight="#FFF9EE">
+    <tr>
+     <td background="ACstripleo8.jpg">
+      <table border="1" cellpadding="20" cellspacing="4" width="100%" background="ACstripleo6.jpg">
+       <tr>
+        <td background="ACstripleo4.jpg">
+         <table border="1" cellpadding="4" cellspacing="2" background="ACstripleo6.jpg" width="100%" bordercolorlight="#FFFBEF">
+          <tr>
+           <td background="ACstripleo7.jpg">
+            <table cellspacing="2" background="ACstripleo6.jpg" width="100%" style="font-family:Georgia; font-size:12pt;" class="style816">
+             <tr>
+              <td background="ACtile.gif">
+               <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                 <td>
+            <table style="font-family:Georgia; font-size:12pt; width: 85%;" class="style778">
+             <tr>
+              <td class="style777">
+
+<span style="mso-bidi-font-size: 10.0pt; mso-fareast-font-family: Times New Roman; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA">
+
+
+<font face="comic sans ms" size="1">
+<span style="mso-bidi-font-size: 10.0pt">
+
+
+				<span class="style5"><span class="style6">
+
+
+<font size="1" class="style54">
+				<span class="style638"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="COlunastar.gif" width="462" height="46"><font face="comic sans ms" size="1"><font size="1" class="style54">&nbsp;&nbsp;&nbsp;&nbsp; <img src="COlunastar.gif" width="462" height="46"></font></font></strong></span></font></span></span></span></font></span><p align="center" style="width: 1096px" class="style754"><span style="mso-bidi-font-size: 10.0pt; mso-fareast-font-family: Times New Roman; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA"><font face="comic sans ms" size="1"><span style="mso-bidi-font-size: 10.0pt"><font face="Verdana" size="1" class="style9"><span class="style5"><span lang="it"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"> <font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<font face="comic sans ms" size="1">
+<font face="Verdana" size="1" class="style9">
+<font face="comic sans ms" size="1">
+<font face="Verdana" size="1" class="style9"> 
+<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<span class="style751">
+&nbsp;&nbsp;&nbsp;&nbsp;  
+</span> </font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font> 
+				</font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font>
+<span class="style751">
+
+
+<font face="comic sans ms" size="1">
+
+
+				<font face="Verdana" size="1" class="style9">
+				&nbsp;
+				</font></font></span><font face="comic sans ms" size="1">
+<font face="Verdana" size="1" class="style9">
+<font face="comic sans ms" size="1">
+<font face="Verdana" size="1" class="style9"> 
+<font face="comic sans ms" size="1">
+<font face="Verdana" size="1" class="style9">
+<font face="comic sans ms" size="1">
+<font face="Verdana" size="1" class="style9">
+<font face="comic sans ms" size="1">
+<font face="Verdana" size="1" class="style9">
+<font face="comic sans ms" size="1">
+<font face="Verdana" size="1" class="style9"> 
+<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<span class="style751">
+<img src="AC.LunaB.jpg" width="236" height="335">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+</span> </font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font> 
+				</font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font>
+<span class="style751">
+
+
+<font face="comic sans ms" size="1">
+
+
+				<font face="Verdana" size="1" class="style9">
+				<img src="AC.SoleLunaA.jpg" width="272" height="288">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></font></span>
+<font face="comic sans ms" size="1">
+<font face="Verdana" size="1" class="style9">
+<font face="comic sans ms" size="1">
+<font face="Verdana" size="1" class="style9"> 
+<font face="comic sans ms" size="1">
+<font face="Verdana" size="1" class="style9">
+<font face="comic sans ms" size="1">
+<font face="Verdana" size="1" class="style9">
+<font face="comic sans ms" size="1">
+<font face="Verdana" size="1" class="style9">
+<font face="comic sans ms" size="1">
+<font face="Verdana" size="1" class="style9"> 
+<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<font face="comic sans ms" size="1">
+				<font face="Verdana" size="1" class="style9">
+				<span class="style751">
+<img src="AC.Luna9.jpg" width="239" height="335"></span></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font><span class="style751"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9">&nbsp; </font></font>&nbsp; 
+				&nbsp;&nbsp;</span><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><span class="style751">&nbsp;&nbsp;&nbsp;&nbsp;  
+</span> </font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font> 
+				</font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font>
+<span class="style751">
+
+
+&nbsp;<font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9"><font face="comic sans ms" size="1"><font face="Verdana" size="1" class="style9">&nbsp;&nbsp;&nbsp; </font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font> 
+				</font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></span></font></font></span></span></font></span></font></span></p>
+               <span class="style2"><span class="style3">
+
+<span style="mso-bidi-font-size: 10.0pt; mso-fareast-font-family: Times New Roman; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA">
+
+
+<font face="comic sans ms" size="1">
+<span style="mso-bidi-font-size: 10.0pt">
+
+
+				<p class="style674" align="center" style="width: 1087px;">
+				<span class="style5"><span lang="it"><strong>
+				<span class="style751">IL</span> 
+				<span class="style758">SOLE</span> <span class="style751">E LA</span> 
+				<span class="style758">LUNA</span></strong></span></p>
+											<div class="style3" style="width: 1087px">
+															<strong>
+															<span class="style677">
+															<span class="style751">COMBINAZIONE DEI SEGNI 
+															</span> </span>
+<span class="style676">SOLARI E LUNARI</span></strong><span class="style51"><span class="style6"></div>
+											<P class="style367" style="width: 1084px">
+								<font face="Arial Rounded MT Bold" size="2" color="#000080">
+								<font class="style36">
+								<span class="style52">
+								<span class="style598">
+								&nbsp;</span><strong><span class="style54"><span class="style591">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span class="style373">
+								<span class="style598">Vi sono ben <b>144</b> diverse combinazioni tra 
+								i 
+		<b>12</b> segni solari e <b>12 </b>lunari</span></span></strong></span></font><strong><span class="style263">. 
+		</span>
+								<span class="style52">
+								<font class="style36">
+								<span class="style751">
+				<span class="style54">
+								E</span><span class="style11">siste un'interpretazione</span></span><span class="style136"><span class="style54"><span class="style751"> 
+								per</span></span></span></font></span></strong></font><span class="style598"> 
+								</span>
+								<strong>
+								<span class="style751">
+								<font face="Verdana" size="2">
+								<font class="style36">
+								<span class="style52">
+								<span class="style54">
+								ognuna</span></span></font></font></span></strong><span class="style598"><BR>
+ 
+								</span>
+								<span class="style751">
+								<span class="style11">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><strong><span class="style64"><font face="Verdana" size="2" color="#000080"><font class="style36"><span class="style52"><span class="style54"><span style="mso-bidi-font-size: 10.0pt" class="style751">di esse<span class="style189">.</span>&nbsp;La fase 
+								lunare della nascita </span>
+		</span>
+
+								<span class="style751">
+
+				<span class="style11">
+								indica quanto</span><font class="style138"><span class="style278"><span class="style138"><span class="style11">
+		</span>
+				</span>
+        </span>
+		</font>
+
+								</span>
+
+		<span class="style11">
+
+								<span class="style751">
+
+								sono lontani l'uno dall'altro </span>
+		</span>
+								</span></font>
+				<span class="style791">
+								Sole</span><span class="style52"><font class="style36"><span class="style11"><span class="style751"> e</span></span><font class="style138"><span class="style278"><span class="style138"><span class="style598">
+		</span>
+
+				</span>
+
+        </span>
+		</font><span class="style54"><span class="style138">
+								<span class="style758">Luna</span><span class="style751">.</span></span></span></font></span></font></span></strong><span class="style598"><BR>
+ 
+								</span>
+								<strong>
+								<span class="style64">
+
+								<font face="Verdana" size="2" color="#000080">
+								<font class="style36"><span class="style52">
+								<span class="style54">&nbsp;<span class="style591">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</span><span class="style751">Il </span> 
+				</span>
+
+		<font size="2" class="style54"> 
+
+								<span class="style751">
+
+								segno </span><span class="style735">
+								Solare</span><span class="style751"> e</span></font><font size="2" class="style555"><span class="style751"> 
+								quello</span> 
+		<span class="style735">Lunare</span> <span class="style751">però non</span></font><font class="style138"><span class="style278"><span class="style138"><span class="style598">
+		</span>
+				</span>
+        </span>
+		</font>
+
+		<font size="2" class="style555">
+								<span class="style751">dice quale segno</span> 
+		<span class="style735">Solare</span><span class="style751"> </span>  
+        </font> 
+		<font class="style5">
+		<span class="style641">e </span>
+        </font> 
+								<span class="style11"> 
+								<span class="style751"> 
+								quale </span>
+        </span>
+        <font class="style5"> 
+ 		<span class="style630">Lunare</span><span class="style637"><span class="style751"> 
+								si tratti.</span></span></font></span></font></font></span></strong><span class="style598"><BR>
+ 
+								</span>
+								<font face="Verdana" size="2" class="style552">
+								<font class="style36"><span class="style52">
+								<span class="style271"><font class="style5">
+								<span class="style637"><span class="style751">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></font></span><strong><span class="style11"><span class="style751">Ogni mese prendo in esame 
+								il segno</span></span></strong></span></font></font><strong><span class="style276"><font
+								face="Verdana" size="2"><font class="style36"><span class="style52"><span class="style750"> </span></span></font></font></span>
+								<font face="Verdana" size="2" class="style552">
+								<font class="style36"><span class="style52">
+
+        						<span class="style598">corrispondente al mese 
+								stesso</span><span class="style276"><span class="style598">.</span></span></span></font></font></strong><P class="style728" style="width: 1094px">
+
+
+<font size="1" class="style54">
+								<strong> 
+				<span class="style751"> <img src="COlunastar.gif" width="462" height="46">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="COlunastar.gif" width="462" height="46"></span></strong></font></span></span></span></span><P class="style728" style="width: 1094px">
+
+
+<span class="style5"><span style="mso-bidi-font-size: 10.0pt">
+<span class="style6"><span class="style51">
+<table style="width: 1070px" align="center" cellspacing="3">
+				<tr>
+								<td style="width: 1070px">
+<div class="style6" style="width: 1096px">
+               <p>
+				<span style="mso-bidi-font-size: 10.0pt; mso-fareast-font-family: Times New Roman; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA">
+
+
+				<font face="comic sans ms" size="1">
+				<span style="mso-bidi-font-size: 10.0pt">
+				<span class="style5">
+               	<span class="style2"><span class="style3">
+
+								<span class="style6">
+				<span class="style51">
+								<span class="style818">
+				<span class="style788">SOLE</span></span><b><span class="style751"> 
+				in
+								</span>
+								<span class="style818">
+<strong>
+<span class="style802">TORO</span><o:p></o:p></strong></span></b><span class="style818"><span class="style751">&nbsp;</span></span><b><span class="style818"><span class="style751">e 
+								</span>
+<span class="style758">LUNA</span><span class="style751"> in<span class="style441">
+								</span>
+								</span>
+								</span>
+				</b>
+								<span class="style138"><span class="style788"> ARIETE</span></span></span></span></span></span></p>
+</div>
+<p style="width: 1096px"><span class="style750">&nbsp;</span></span><span class="style750"><span class="style5">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</span>
+</span>
+
+
+<span class="style5">
+
+
+<span class="style54"><span class="style810">Combinazione molto materialista, 
+piuttosto rigida e testarda, poco capace di accostarsi alle verità altrui.</span><span style="mso-spacerun:yes" class="style810">&nbsp;</span></span><span class="style811">Il 
+Fuoco della</span></span><span class="style51"><span class="style60"><span class="style6"><span class="style9"><span class="style5"><span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
+								</span>
+								</span>
+</span></span></span></span>
+
+
+<span class="style5">
+
+
+<span class="style811"> 
+&nbsp;</span><span class="style789"><strong>Luna</strong></span><span style="font-size:10.0pt;"><span class="style811"> 
+tende ad essere spento dalla </span> </span>
+<span class="style811">Terra</span><span class="style813">
+</span>
+<span class="style811">
+del</span><span class="style750">
+</span>
+<span class="style801">Toro</span><span class="style811">.</span><span style="mso-spacerun:yes" class="style811"> </span>
+
+
+<span class="style811">
+La concretezza un po' massiccia del</span><span class="style750">
+</span>
+<span class="style801">Toro</span><span class="style750"> 
+</span><span class="style811"> 
+è ravvivata e infiammata</span><span class="style51"><span class="style60"><span class="style6"><span class="style9"><span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+</span></span></span></span></span>
+
+
+                    <span class="style811"> 
+&nbsp;da questa </span>
+<span class="style790">Luna</span><span class="style750"> c</span><span class="style811">osì 
+esuberante e reattiva, che fa</span><span class="style51"><span class="style60"><span class="style6"><span class="style9"><span class="style812">
+</span></span></span></span></span>
+
+
+<span class="style811"> 
+inseguire idee e ideali. Conflitti tra pigrizia 
+e desiderio di azione, tra</span><span class="style51"><span class="style60"><span class="style6"><span class="style9"><span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></span></span>
+
+
+                    <span class="style811"> 
+&nbsp;&nbsp; 
+&nbsp;istinto e raziocinio. Il 
+nato del </span>
+<span class="style801">Toro</span><span class="style811"> viene smosso dalla tranquilla placidità da questa</span><span class="style750"> </span>
+<span class="style790">
+Luna</span><span class="style750"> 
+</span><span class="style811"> 
+dinamica e passionale che</span><span class="style51"><span class="style60"><span class="style6"><span class="style9"><span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></span></span>
+
+
+                    <span class="style811"> 
+&nbsp;&nbsp; &nbsp;lo accende e fa scoccare dentro di lui scintille di 
+desiderio. A volte è candido e fin troppo ottimista, a volte ostinato e</span><span class="style51"><span class="style60"><span class="style6"><span class="style9"><span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+</span></span></span></span></span>
+
+
+                    <span class="style811"> 
+&nbsp; 
+&nbsp;un po' 
+dogmatico. Raggiunge sempre gli obiettivi senza scosse. Se è contrastato  
+diventa pericoloso, con esplosioni di</span><span class="style51"><span class="style60"><span class="style6"><span class="style9"><span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+</span></span></span></span></span>
+
+
+                    <span class="style811"> 
+&nbsp;&nbsp; energie poco controllabili. Il risultato è 
+un carattere caldo e sensuale, possessivo, accogliente, con entusiasmo 
+e vigore</span><span class="style51"><span class="style60"><span class="style6"><span class="style9"><span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></span></span>
+
+
+                    <span class="style811"> 
+&nbsp;&nbsp;&nbsp;&nbsp; che non guastano.</span><span class="style51"><span class="style60"><span class="style6"><span class="style9"><span class="style812"><br>
+</span></span></span></span></span>
+
+
+<span class="style811">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; L'</span><span class="style793">uomo</span><span class="style750"> 
+</span><span class="style811"> 
+ricerca una donna dal temperamento marziale, forte e vigorosa, autonoma, vivace 
+e pronta a condividere con</span><span class="style51"><span class="style60"><span class="style6"><span class="style9"><span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+</span></span></span></span></span>
+
+
+                    <span class="style811"> 
+&nbsp;&nbsp; lui le battaglie della vita. <o:p></o:p>
+</span>
+
+
+<span class="style51"><span class="style60"><span class="style6"><span class="style9">
+<span class="style812"><br>
+</span></span></span></span></span>
+
+
+<span class="style811">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; La</span><span class="style750"> </span>
+<span class="style790">donna</span><span class="style630"> </span>
+<span class="style811">
+cerca un uomo forte e virile, una specie di leader di cui essere fiera e una 
+fedele compagna. La passione è</span><span class="style51"><span class="style60"><span class="style6"><span class="style9"><span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></span></span>
+
+
+                    <span class="style811">
+&nbsp;&nbsp; ovviamente sempre in primo piano e non si deve mai spegnere.</span><span class="style51"><span class="style60"><span class="style6"><span class="style9"><span class="style812"><br>
+</span></span></span></span></span>
+
+
+<span class="style811">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; In</span><span class="style630"> 
+</span><span class="style790"> 
+amore</span><span class="style811">: la sessualità è forte, ma più controllata, 
+meno istinti e più romanticismo. Vuole tutto e subito, poi si vedrà.</span><o:p></o:p><span class="style51"><span class="style60"><span class="style6"><span class="style9"><span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></span></span>
+
+
+<span class="style811">&nbsp;&nbsp; Cerca il piacere immediato, i sentimenti 
+gratificanti ma non ha pazienza per le verifiche.&nbsp; </span>
+</p>
+								<span class="style6">
+								<p class="style817" style="width: 1095px">
+			                
+								<span class="style818">
+								<span class="style788">SOLE</span></span><b><span class="style751"> 
+in
+								</span>
+								<span class="style818">
+<strong>
+<span class="style802">TORO</span><o:p></o:p></strong></span></b><span class="style818"><span class="style751">&nbsp;</span></span><b><span class="style818"><span class="style751">e 
+								</span>
+								</span>
+								<span class="style822"><span class="style818">
+<span class="style758">LUNA</span><span class="style751"> in
+								</span>
+								</span>
+								</span>
+								</b>
+								<span class="style138"><span class="style804"> 
+								TORO</span></span></p>
+<p class="style347" style="width: 1095px">
+								<span class="style750">&nbsp;&nbsp; </span></span>
+								</span>
+								<span class="style6">
+								<span class="style5">
+								<span class="style750">&nbsp;&nbsp;&nbsp; </span>
+								<span class="style811">&nbsp;&nbsp;&nbsp; È una 
+								combinazione socievole e dolce, direi riposante. 
+								Ricettività, senso di continuità, bisogno di 
+								sicurezza e stabilità</span></span><span class="style51"><span class="style60"><span class="style9"><span class="style5"><span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</span>
+								</span>
+								</span></span></span>
+
+
+                    			<span class="style5">
+
+
+                    			<span class="style811">&nbsp;&nbsp;&nbsp; interiore ed 
+								emotiva sono tratti fondamentali. Al primo posto 
+								nella sua vita sta il lavoro e subito dopo gli 
+								affetti. È un</span><span class="style51"><span class="style60"><span class="style9"><span class="style591"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+</span></span></span></span>
+                    			<span class="style750">&nbsp; &nbsp;</span><span class="style452"><span class="style802">Toro</span><span class="style751"> </span>
+								</span>
+								<span class="style9"><span class="style811">a</span><span class="style810">l 
+								quadrato e la sua vita è come un cerchio chiuso 
+								in cui incasellare le gioie, i sentimenti e le 
+								esperienze ognuna</span></span><span class="style51"><span class="style60"><span class="style9"><span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></span>
+                    			<span class="style811">&nbsp; &nbsp;al posto giusto, 
+								senza intrusioni esterne. Nessuno sa gustare 
+								come lui le divine finezze dei piaceri 
+								materiali, sublimati</span><span class="style51"><span class="style60"><span class="style9"><span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></span>
+                    			<span class="style9">
+                    			<span class="style811">&nbsp; &nbsp;&nbsp; 
+								dalla</span><span class="style750">
+								</span>
+								<span class="style790">Luna</span><span class="style750">.</span><span class="style811"> Le capacità lavorative 
+								sono grandi, unico neo è l'ostinazione. Ha la 
+								necessità di sicurezza sia affettiva che</span></span><span class="style51"><span class="style60"><span class="style9"><span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></span>
+                    			<span class="style9"><span class="style54">
+								<span class="style810">&nbsp;&nbsp; 
+								&nbsp;materiale, senza la quale si sente privo di una 
+								parte di sé.<o:p> </o:p>
+								</span>
+								</span>
+								</span>
+
+
+								<span class="style811"><span class="style9">
+								Favorite le attività 
+								legate alla campagna, l'attrazione per la</span></span><span class="style51"><span class="style60"><span class="style9"><span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></span><span class="style811"><span class="style9">
+								&nbsp;&nbsp; natura, il verde, 
+								gli animali, l'ecologia ha una</span></span><span class="style51"><span class="style60"><span class="style9"><span class="style812">
+</span></span></span></span><span class="style9"><span class="style811">parte 
+								importante nei suoi interessi.</span></span><span class="style51"><span class="style60"><span class="style9"><span class="style812"><br>
+</span></span></span></span>
+								<span class="style811">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 
+								L'</span><span class="style9"><span class="style795">uomo</span></span><span class="style441"><span class="style735">
+</span></span><span class="style811">cerca una donna 
+								femminile e sensuale, materna, un po' invadente, 
+								che si prende cura di lui come se fosse più</span><span class="style51"><span class="style60"><span class="style9"><span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></span>
+                    			<span class="style811">&nbsp;&nbsp; &nbsp;un figlio che un 
+								partner. Una donna anche molto tradizionale, che 
+								gli dia un senso di serenità e di tranquillità.<o:p></o:p></span><span class="style51"><span class="style60"><span class="style9"><span class="style812"><br>
+</span></span></span></span>
+								<span class="style811">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; La</span><span class="style441"> 
+<span class="style788">donna</span></span><span class="style9"><span class="style750"> 
+								c</span><span class="style811">erca la sicurezza 
+								(economica, emotiva ecc..). Gelosa e possessiva, 
+								considera il partner come sua proprietà.</span></span><span class="style51"><span class="style60"><span class="style9"><span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></span>
+                    			<span class="style9"> 
+								<span class="style811">&nbsp;La sua sensualità potrà 
+								essere un problema all'inizio, ma saprà viverla 
+								con bravura e come madre sarà eccezionale ed</span></span><span class="style51"><span class="style60"><span class="style9"><span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></span>
+                    			<span class="style9"> 
+								<span class="style811">&nbsp;&nbsp;equilibrata e capace di 
+								dare.</span></span><span class="style51"><span class="style60"><span class="style9"><span class="style812"><br>
+</span></span></span></span>
+								<o:p></o:p><span class="style811">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In</span><span class="style441"><span class="style735"> 
+								</span></span><span class="style9">
+								<span class="style788"> 
+								amore</span><span class="style811">: 
+								è fedele e possessivo, con una sessualità molto 
+								intensa. Ama i sani piaceri della vita, cibo 
+								sesso in primo</span></span><span class="style51"><span class="style60"><span class="style9"><span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></span>
+                    			<span class="style9">
+								<span class="style810">&nbsp;&nbsp;&nbsp; luogo. Il suo punto di forza sta nel senso di 
+								calma e serenità che sprigiona e nella 
+								sensualità terrena e voluttuosa<span class="style11">. </span>
+</span>
+								<span class="style11">
+<span style="mso-spacerun:yes" class="style751">&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span><b><span style="font-size:10.0pt;
+font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:Arial"><o:p></o:p></span></b></p>
+<p class="style6" style="width: 1091px">
+								</span>
+               <span class="style2"><span class="style3">
+
+<span class="style5">
+<span class="style51">
+								<span class="style818">
+<span class="style788">SOLE</span></span><b><span class="style751"> 
+in
+								</span>
+								<span class="style818">
+<strong>
+<span class="style802">TORO</span><o:p></o:p></strong></span></b><span class="style818"><span class="style751">&nbsp;</span></span><span class="style821"><span class="style735">e 
+								</span>
+								</span>
+								<b>
+<span class="style758">LUNA</span><span class="style751"><span class="style818">
+								</span>
+</span></b></span></span></span></span><b>
+<span class="style5">
+								<span class="style818">
+<span class="style820"> in
+								</span>
+<span class="style819">GEMELLI</span></span></span><span class="style441"><span style="font-size:11.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;;color:maroon"><o:p></o:p></span></span></b><span class="style441"></p>
+								<span class="style503">
+<p class="style779" style="width: 1093px">&nbsp;&nbsp;
+								</span>
+								</span>
+<span class="style5">
+<span class="style9">
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <span class="style810"> <span class="style189">La naturale tendenza alla placida, sonnacchiosa, 
+tranquilla serenità del </span> </span> </span>
+<span class="style810">
+<span class="style786">
+Toro</span></span></span><span class="style810"><span class="style189"><span class="style54"> 
+è ravvivata da un animo curioso, allegro</span><span class="style51"><span class="style60"><span class="style9"><span class="style5"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+</span></span></span></span>
+                    <span class="style5">
+                    <span class="style9"> 
+&nbsp;e fascinoso dei </span>
+								</span>
+								</span></span><span class="style5">
+<span class="style810">
+<span class="style786">Ge</span></span><span class="style784">m</span><span class="style810"><span class="style786">elli</span><span class="style189"><span class="style9">. 
+È pratico, laborioso e assennato, ma ha 
+momenti un po' bizzarri che deve vivere a modo suo,</span></span></span></span><span class="style810"><span class="style189"><span class="style51"><span class="style60"><span class="style9"><span class="style5"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</span>
+								</span></span></span>
+                    <span class="style5">
+                    <span class="style9">&nbsp; &nbsp;inseguendo impulsi estrosi e 
+concedendosi piccole follie. Questa
+</span>
+								</span>
+								</span></span><span class="style5">
+<span class="style784">
+Luna</span><span class="style189"><span class="style810"><span class="style9"> 
+apporta vivacità, un maggiore intellettualismo e</span><span class="style51"><span class="style60"><span class="style9"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span>
+                    <span class="style9"> 
+&nbsp;&nbsp; minore ipersensibilità, rende molto affascinante, divertente, 
+affidabile, serio, un po' frivolo. Comunicare è la sua parola</span><span class="style51"><span class="style60"><span class="style9"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span>
+                    <span class="style9"> 
+&nbsp;&nbsp; &nbsp; d'ordine, che significa conoscere tanta gente, stare sempre al 
+passo con i tempi e le mode. Sul piano del lavoro e&nbsp;dello</span><span class="style51"><span class="style60"><span class="style9"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+</span></span></span>
+                    <span class="style9"> 
+&nbsp;studio la personalità è eccezionale, in grado di unire alle facoltà 
+strategiche, energia e abilità. Ama stare in mezzo&nbsp;alla</span></span><span class="style51"><span class="style60"><span class="style9"><span class="style814">&nbsp; <br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></span>
+                    <span class="style810">
+                    <span class="style9"> 
+&nbsp;gente e brillare in società.<o:p></o:p></span><span class="style51"><span class="style60"><span class="style9"><br>
+</span></span></span>
+								<span class="style9">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+L'</span></span></span><span class="style798"><strong>uomo</strong></span><span class="style189"><span class="style9"> 
+<span class="style810">cerca una donna spensierata, adolescenziale, estroversa, per ritrovarsi quella 
+parte di sé che non sa accettare</span></span><span class="style810"><span class="style51"><span class="style60"><span class="style9"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+</span></span></span>
+                    <span class="style9"> 
+&nbsp;o rifiutare. Vuole una donna brillante, carina e divertente, da esibire con 
+orgoglio in pubblico.<o:p></o:p></span><span class="style51"><span class="style60"><span class="style9"><br>
+</span></span></span>
+								<span class="style9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 
+La </span>
+</span>
+</span>
+<span class="style799"><strong>donna</strong></span><span class="style189"><span class="style9"> 
+<span class="style810">ricerca la solidità e la fedeltà, non è molto materna ma certo sa far divertire 
+i suoi figli. È attratta dall'uomo</span></span><span class="style810"><span class="style51"><span class="style60"><span class="style9"><br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span>
+                    <span class="style9"> 
+&nbsp;più giovane, visto che lei mantiene a lungo un aspetto giovanile.</span><span class="style51"><span class="style60"><span class="style9"><br>
+</span></span></span>
+								<span class="style9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+In</span></span></span><span class="style786"> 
+</span><span class="style799"> 
+<strong>amore</strong></span><span class="style812"><span class="style9">: cerca la fedeltà e la sicurezza. Ma con tanta 
+voglia di scherzare, di flirtare, di divertirsi. La sua vita amorosa</span><span class="style51"><span class="style60"><span class="style9"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span>
+                    <span class="style9">&nbsp; &nbsp;&nbsp;oscilla tra il bisogno di solide 
+radici e affetti sicuri e il desiderio di sfarfalleggiare e flirtare qua e là. </span>
+</span><o:p></o:p>
+								</p>
+								<p class="style6">
+<span class="style751"><strong><span class="style51">&nbsp;
+</span>
+</strong>
+</span>
+               <span class="style2"><span class="style3">
+
+								<span class="style51">
+								<span class="style818">
+								<span class="style788">SOLE</span></span></span><b><span class="style751"><span class="style51"> 
+in
+								</span>
+								</span>
+
+								<span class="style51">
+								<span class="style818">
+<strong>
+<span class="style802">TORO</span><o:p></o:p></strong></span></span></b><span class="style51"><span class="style818"><span class="style751">&nbsp;</span></span><b><span class="style818"><span class="style751">e 
+								</span>
+								</span><span class="style822">
+								<span class="style818">
+<span class="style758">LUNA</span><span class="style751"> in</span></span></span></b></span></span></span><strong><span class="style138"><span class="style753"><span class="style51">
+								</span> </span></span><span class="style51">
+								<span class="style796">CANCRO</span></span><span class="style751"><span class="style51">&nbsp;&nbsp;&nbsp;&nbsp; 
+								</span> 
+</span> </strong></p>
+								<span class="style9">
+								<p class="style347" style="width: 1094px">
+<span class="style751">&nbsp;</span></span></span><span class="style9"><span class="style751"><span class="style5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span> 
+<span class="style814">Il</span> 
+								</span>
+<span class="style5">
+<span class="style801">Toro</span><span class="style810"> è una solida pianta che mette radici e non si 
+schioda. Al carattere concreto s'accosta un animo fluido, sensibile</span><span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</span>
+<span class="style810">&nbsp; &nbsp; e delicato della</span><span class="style751"> </span> <b>
+<span class="style758">Luna</span> <span class="style796">Cancro</span></b><span class="style810">. È 
+orientato intorno ai valori della semplicità e naturalezza, con un piglio 
+pratico che&nbsp;lo</span><span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span class="style810">&nbsp;porta alla tranquillità economica. La
+</span>
+<span class="style811">donna</span><span class="style810"> è la vera madre di famiglia, fedele, amante 
+della natura, degli animali dei</span><span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span class="style810">&nbsp; &nbsp;bambini, è un'ottima cuoca e padrona di casa, può correre il rischio 
+di essere forse un po' noiosa, iperprotettiva verso</span></span></span><span class="style2"><span class="style3"><span class="style5"><span class="style51"><span class="style9"><span class="style812"><br>
+</span></span>
+								</span></span>
+			                
+						</span></span><span class="style9"><span class="style5">
+<span class="style810">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tutti e tutto, e se non si 
+realizza nel matrimonio può essere un'ottima insegnante o sviluppare doti&nbsp;artistiche. Il suo</span></span></span><span class="style2"><span class="style3"><span class="style5"><span class="style51"><span class="style9"><span class="style812"><br>
+</span></span>
+								</span></span>
+			                
+						</span></span><span class="style9"><span class="style5">
+<span class="style810">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ideale sarebbe una casa in campagna con tanti 
+animali. Alle grandi imprese preferisce la nicchia delle&nbsp;sue sicurezze.</span><span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+</span><span class="style810">&nbsp;L'</span><span class="style793">uomo</span><span class="style751"> 
+</span>
+<span class="style810"> 
+cerca una donna che sia affettuosa, tenera, sensuale, forte e attaccata ai 
+valori tradizionali.
+</span>
+<span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span class="style810">La
+</span>
+<span class="style790">donna</span><span class="style750"> 
+</span><span class="style811"> 
+cerca un uomo che sappia appagare il suo desiderio di maternità, di sentirsi 
+amata e rassicurata.</span></span></span><span class="style5"><span class="style51"><span class="style60"><span class="style9"><span class="style812"><br>
+</span></span></span></span>
+								<span class="style9"><span class="style810">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+In</span><span class="style452"><span class="style750"> </span>
+<span class="style789"> amore</span></span><span class="style811">: 
+la sessualità è 
+forte, ma controllata e desiderosa di garanzie di legalità. Alto tasso di 
+sensualità e dolcezza.</span></span></span><span class="style51"><span class="style60"><span class="style9"><span class="style5"><span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</span>
+								</span>
+</span></span></span>
+                    <span class="style5">
+                    <span class="style9"><span class="style811">&nbsp;&nbsp; &nbsp;&nbsp;Nella 
+vita amorosa ha bisogno di tutte le delicatezze romantiche e della lealtà del 
+suo partner e di qualcuno che non</span></span><span class="style51"><span class="style60"><span class="style9"><span class="style812"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></span>
+                    <span class="style9"><span class="style54">
+<span class="style810">&nbsp; &nbsp;&nbsp; cessi di 
+ripetergli quanto è fantastico.</span><span style="mso-spacerun:yes" class="style810">&nbsp;
+</span></span>
+<o:p></o:p>
+								</span></p>
+<p class="style6" style="width: 1094px">
+<o:p></o:p>
+               <span class="style2"><span class="style3">
+
+<span class="style51">
+								<span class="style818">
+<span class="style788">SOLE</span></span><b><span class="style751"> 
+in
+								</span>
+								<span class="style818">
+<strong>
+<span class="style802">TORO</span><o:p></o:p></strong></span></b><span class="style818"><span class="style751">&nbsp;</span></span><span class="style821"><span class="style735">e 
+								</span>
+</span></span><b><span class="style818">
+<span class="style823">LUNA</span></span><span class="style441"><span class="style51"><span class="style751"> in</span></span></span></b></span></span><o:p>
+<span class="style823"><strong>LEONE</strong></span></o:p></p>
+								<span class="style441">
+
+
+                    <span class="style9"> 
+								</span>
+
+
+<p class="style347" style="width: 1096px">
+<span style="mso-bidi-font-size: 10.0pt; " class="style810"><o:p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; </o:p></span>
+								</span>
+								<span class="style9"> 
+<span class="style810">Il 
+</span> 
+<span class="style811">Fuoco</span><span class="style810"> 
+interiore generato dalla 
+</span> 
+<span class="style452"><span class="style758">Luna</span><span class="style810"> </span> 
+								</span><span class="style810">viene un po' spento da questo segno che fa 
+del risparmio di energie una regola</span></span><span class="style51"><span class="style60"><span class="style9"><span class="style815"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></span>
+                    <span class="style811"> 
+&nbsp; 
+&nbsp;&nbsp;di vita. La combinazione crea dei conflitti terribili tra il desiderio 
+d'autonomia e il vincolo matrimoniale, tra la fedeltà e</span><span class="style51"><span class="style60"><span class="style9"><span class="style815"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; la</span></span></span></span><span class="style811"> 
+curiosità nel campo sentimentale, tra la generosità e l'avarizia, tra 
+introversione ed esibizionismo. L'orgoglio è la sua</span><span class="style51"><span class="style60"><span class="style9"><span class="style815"><br>
+&nbsp;&nbsp;
+</span></span></span></span>
+                    <span class="style811"> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; principale caratteristica, ed è quello che gli fa 
+lavorare per gli ideali e le soddisfazioni spirituali oltre che il guadagno, e</span><span class="style51"><span class="style60"><span class="style9"><span class="style815"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></span>
+                    <span class="style811"> 
+&nbsp; 
+&nbsp; ciò impedisce di aprirsi fino in fondo agli altri, perciò non è sempre 
+facile capirlo. Scontro intimo tra due Titani forti e</span><span class="style51"><span class="style60"><span class="style9"><span class="style782"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></span>
+                    <span class="style750"> 
+&nbsp; 
+&nbsp;&nbsp; resistenti che si esprime in un temperamento ambiguo che alterna 
+impennate di passioni a periodi di monotonia.<o:p></o:p></span><span class="style51"><span class="style60"><span class="style9"><span class="style782"><br>
+</span></span></span></span>
+								<span class="style9"> 
+<span class="style751">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> 
+<span class="style810">L'</span><span class="style452"><span class="style796">uomo </span>
+								</span><span class="style751">c</span><span class="style810">erca 
+la donna generosamente passionale, solare, sensuale, appariscente, magari ricca.</span><o:p></o:p></span><span class="style51"><span class="style60"><span class="style9"><span class="style782"><br>
+</span></span></span></span>
+								<span class="style9"> 
+<span class="style751">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>
+<span class="style810">La
+</span>
+<span class="style790">donna</span><span class="style751"> 
+</span> <span class="style810"> 
+ha bisogno di avere un uomo ambizioso e deciso, che sappia valorizzare e 
+apprezzare le sue doti. </span> <o:p></o:p>
+								</span>
+
+
+								<span class="style51"><span class="style60"><span class="style9">
+<span class="style782"><br>
+</span></span></span></span>
+								<span class="style9"> 
+<span class="style751">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> 
+<span class="style810">In</span><span class="style452"> 
+<span class="style758">amore</span></span><span class="style598">: la sessualità 
+è forte e prorompente ha bisogno di dolcezza e di una giustificazione legale o 
+sociale. É tenero</span></span><span class="style51"><span class="style60"><span class="style9"><span class="style782"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></span>
+                    <span class="style9"> 
+<span class="style598">&nbsp; &nbsp; ma esigente, ed esercita uno stimolo costante sulle 
+ambizioni del partner. La vita amorosa è guidata dalla necessità di</span></span><span class="style51"><span class="style60"><span class="style9"><span class="style782"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></span>
+                    <span class="style9"> 
+<span class="style11"><span class="style751">&nbsp;&nbsp;&nbsp;&nbsp; dominare.</span><span class="style750"><span style="mso-spacerun:yes">&nbsp;&nbsp; </span>
+								</span></span>
+								</span></p>
+<p class="style6" style="width: 1096px">
+<o:p></o:p>
+               <span class="style2"><span class="style3">
+
+<span class="style51">
+<span class="style818">
+<span class="style788">SOLE</span></span><b><span class="style751"> 
+in
+								</span>
+<span class="style818">
+<strong>
+<span class="style802">TORO</span><o:p></o:p></strong></span></b><span class="style818"><span class="style751">&nbsp;</span></span><b><span class="style818"><span class="style751">e 
+								</span>
+</span><span class="style822"><span class="style818">
+<span class="style758">LUNA</span><span class="style751"> in
+								</span>
+<span class="style802">VERGINE<o:p></o:p></span></span></span></b></span></span></span><o:p></o:p></p>
+<span class="style441">
+<p class="style347" style="width: 1096px"><span class="style788">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>
+<span class="style9">
+								<span class="style751">&nbsp;</span><span class="style810">Accoppiata 
+tutta di 
+								</span> 
+								<span class="style811">Terra</span><span class="style810"> che dà 
+								carattere equilibrato, concreto e realista. La 
+								personalità molto accogliente e affettuosa</span><span class="style815"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="style810">&nbsp;&nbsp;&nbsp; del
+								</span>
+<span class="style801">Toro</span><span class="style810"> potrebbe sentirsi frenata da un cuore un po' freddo. Accumulare, selezionare 
+								e ordinare 
+								sono le azioni alle</span><span class="style815"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; </span><span class="style810">&nbsp;quali dedica le maggiori 
+								energie e lo fa con diligenza e precisione. In 
+								genere, nonostante lo spirito critico, è 
+								soddisfatto</span><span class="style815"><br>
+&nbsp;&nbsp;&nbsp; </span><span class="style810">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; dei risultati. Sul lavoro 
+								queste qualità lo rendono prezioso in alcuni 
+								campi, ma possono creargli delle difficoltà in 
+								altri</span><span class="style815"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; </span>
+								<span class="style810">dove occorrerebbe una 
+								maggiore libertà creativa. I<o:p></o:p>l primo 
+								posto nella sua vita sta il bisogno di sicurezza 
+								materiale e i</span><span class="style815"><br>
+								</span><span class="style810">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+rapporti ruotano attorno a questo obiettivo.</span><o:p></o:p><span class="style782"><br>
+								</span><span class="style751">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+<span class="style810">&nbsp;L'</span><span class="style793">uomo</span><span class="style751"> 
+								</span><span class="style810"> 
+								cerca la donna sobria e intelligente, con cui 
+								dividere il gusto dell’ordine e della 
+								semplicità.</span><span class="style815"><br>
+								</span><span class="style810">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 
+								La 
+								</span> 
+								<span class="style790">donna</span><span class="style11"><span class="style750"> </span>
+<span class="style811">cerca un uomo serio, ordinato, che le dia 
+								sicurezza.<span style="mso-spacerun:yes">&nbsp;</span></span></span><span class="style815"><br>
+								</span>
+								<span class="style11"> 
+								<span style="mso-spacerun:yes" class="style810">&nbsp;</span></span><span class="style811">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								In</span><span class="style750"><b><span style="mso-bidi-font-size: 10.0pt;">
+								</span></b>
+								</span>
+								<span style="mso-bidi-font-size: 10.0pt;">
+								<span class="style790">
+								amore</span></span><span class="style811"><span style="mso-bidi-font-size: 10.0pt" class="style9">: 
+								sessualmente l'amore si tinge di romanticismo, 
+								dopo aver valutato i pro e i contro delle 
+								opportunità della</span></span><span class="style815"><br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </span>
+                    			<span class="style811">
+								<span style="mso-bidi-font-size: 10.0pt" class="style9">&nbsp; 
+								scelta. Ha sentimenti profondi, con stinti 
+								frenati dalla ragione.<span style="mso-spacerun: yes">
+								</span>Nelle questioni amorose è un partner 
+								ideale; ardente</span></span><span class="style815"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+                    			<span class="style811">
+								<span style="mso-bidi-font-size: 10.0pt" class="style9">&nbsp;&nbsp; 
+								e fidato, fin troppo.</span></span></p>
+<p class="style817" style="width: 1096px">
+
+								<b><span class="style818">
+<span class="style758">
+SOLE</span></span><span class="style751"> 
+in
+</span><span class="style818">
+<strong>
+<span class="style802">TORO</span><o:p></o:p></strong></span></b><span class="style818"><span class="style751">
+                    </span>
+                    			</span>
+                    <b><span class="style818"><span class="style751">e </span> </span>
+								<span class="style822"><span class="style818"> <span class="style758">LUNA</span><span class="style751"> 
+in </span> <span class="style806">BILANCIA<o:p></o:p></span></span></span></b></p>
+								</span>
+<span class="style441"><span class="style3">
+
+<span class="style2">
+<p class="style347" style="width: 1096px">
+<span class="style750"><span style="mso-bidi-font-weight:normal">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; </span></span>
+<span class="style9"><span class="style789"><b style="mso-bidi-font-weight:normal">
+V</b></span></span><span class="style51"><b style="mso-bidi-font-weight:normal"><span class="style789">enere</span></b><span class="style9"><span class="style751"> 
+governa i due segni, evidenzia un carattere pacifico, affettuoso e attento alle 
+altrui esigenze. Il suo bisogno di</span></span></span></span></span></span><span class="style3"><span class="style51"><span class="style2"><span class="style9"><span class="style787"><span class="style750"><br>
+</span>
+</span><span class="style441"><span class="style787"><span class="style750">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </span>
+</span><span class="style751">&nbsp;continuità e sicurezza 
+affettiva è ben sorretto da questa </span> <span class="style790">Luna</span>
+<span class="style807"><strong>Bilancia</strong></span><span class="style751"> 
+che con la sua visione critica e distaccata, ne</span><span class="style787"><span class="style750"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; </span>
+</span><span class="style751">&nbsp;mitiga i lati troppo 
+possessivi e materialisti e dà ai rapporti un po' di leggerezza che non guasta. 
+Molti lo considerano</span><span class="style787"><span class="style750"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+</span><span class="style751">&nbsp;una persona adorabile e 
+infatti è circondato di amici, perché è schietto e semplice, conciliante e 
+affettuoso. Equilibrato</span><span class="style787"><span class="style750"><br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+</span><span class="style751">&nbsp;e capace di dire la verità 
+anche sgradevoli senza ferire, e con una raffinatezza interiore e una 
+delicatezza che quando</span><span class="style787"><span class="style750"><br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </span>
+</span><span class="style751">&nbsp;affiorano conquistano.</span><o:p></o:p><span class="style782"><br>
+</span><span class="style751">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; L'</span><span class="style793">uomo</span><span class="style751"> 
+ha bisogno di una partner dalle indubbie doti umane morali. Ha un ideale di 
+donna molto elevato. È attratto</span><span class="style787"><span class="style750"><br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+</span><span class="style751">&nbsp;dalla donna bella, 
+intelligente ed equilibrata.</span><span class="style782"><br>
+</span><span class="style751">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; La 
+</span> <span class="style452">
+<span class="style789">donna</span><span class="style751"> </span> </span>
+<span class="style598">cerca un uomo affettuoso, dolce, simpatico, elegante, con 
+una certa classe.</span><span class="style782"><br>
+</span><span class="style751">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; In</span><span class="style452"> 
+<span class="style758">amore</span></span><span class="style751">: la sessualità è prepotente, l'amore 
+è fatto di sostegno e comprensione, oltre che di attrazione fisica. Nella</span><span class="style787"><span class="style750"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+</span><span class="style751">&nbsp;vita 
+sentimentale necessita di un 
+partner sensibile che sia in grado di riservargli quelle attenzioni e 
+delicatezze di cui</span><span class="style782"><br>
+</span>
+<span class="style751">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ha&nbsp;bisogno</span></span></span><span class="style441"><span class="style750">. <o:p></o:p>
+</span></span></span></span></span></p>
+<p class="style6" style="width: 1096px">
+<o:p></o:p>
+               <span class="style2"><span class="style3">
+
+<span class="style51"><span class="style818"><span class="style788">SOLE</span></span><b><span class="style751"> 
+in
+</span>
+								<span class="style818">
+<strong>
+<span class="style802">TORO</span><o:p></o:p></strong></span></b><span class="style818"><span class="style751">&nbsp;</span></span><b><span class="style818"><span class="style751">e </span> 
+</span><span class="style822"><span class="style818"> 
+<span class="style758">LUNA</span><span class="style751"> in
+</span>
+<span class="style796">SCORPIONE<o:p></o:p></span></span></span></b></span></span></span><o:p></o:p></p>
+								<span class="style441">
+								<span class="style9">
+<p class="style442" style="width: 1098px"><span class="style598">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;</span></span></span><span class="style598">Questa
+</span>
+<span class="style791">Luna</span><span class="style11"><span class="style751"> 
+aumenta positivamente i valori </span><span class="style802"> 
+Taurini</span><span class="style751">, apporta una maggiore volontà, 
+intelligenza più profonda e sottile.</span></span><span class="style9"><span class="style782"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>
+                    <span class="style598"> 
+&nbsp; 
+&nbsp;La tranquilla paciosità interiore e la serenità del </span>
+<span class="style803">Toro</span><span class="style598"> 
+vengono messe in discussione da un'anima </span>
+<span class="style791">Luna</span><span class="style598"> 
+così tortuosa,</span><span class="style9"><span class="style782"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; </span></span>
+                    <span class="style598"> 
+&nbsp;nomade e sovversiva, che non si fida delle evidenze e scava dentro le cose.</span><span class="style742">
+</span>
+<span class="style598">
+Può raggiungere delle mete ambiziose sul</span><span class="style9"><span class="style782"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>
+                    <span class="style598">
+&nbsp;piano professionale, data la capacità strategica e l'ambizione. Il </span>
+<span class="style478"><span class="style758">Sole</span> 
+<span class="style802">
+Toro</span></span><span class="style598">
+desidera fortemente possedere, trattenere,</span><span class="style9"><span class="style782"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>
+                    <span class="style598">
+&nbsp;&nbsp; raggiungere concretamente. La </span>
+<span class="style478">
+<span class="style758">Luna</span><span class="style751"> </span> </span>
+<span class="style797">
+Scorpione</span><span class="style598"> 
+accende la fantasia, con immagini che turbano. L'avidità e la gelosia</span><span class="style9"><span class="style782"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; </span></span>
+                    <span class="style598"> 
+&nbsp;sono comuni in questa combinazione passionale 
+incerta tra tradizionalismo e rivolta.<o:p></o:p></span><span class="style9"><span class="style782"> </span></span>
+<span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:IT;mso-fareast-language:IT;mso-bidi-language:AR-SA" class="style598">
+Affettivamente è forte il contrasto</span><span class="style9"><span class="style782"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>
+								<span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:IT;mso-fareast-language:IT;mso-bidi-language:AR-SA" class="style598">
+&nbsp;
+&nbsp;tra bisogno d'un legame porto sicuro in cui ancorarsi e l'istinto 
+trasgressivo,
+la sfida al rischio il brivido dell'imprevisto.</span><span class="style9"><span class="style782"><br>
+</span></span>
+								<span class="style5">
+								<span style="mso-spacerun:yes">
+<span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-ansi-language:IT;mso-fareast-language:IT;
+mso-bidi-language:AR-SA" class="style750">&nbsp;</span></span><span class="style750">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; L'</span><span class="style793">uomo</span></span><span class="style9"><span class="style783"> 
+cerca la donna inquietante, sensuale, che lo liberi dai suoi desideri violenti.</span><o:p></o:p><span class="style782"><br>
+</span><span class="style783">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; La </span></span>
+<span class="style791">donna</span><span class="style9"><span class="style783"> 
+sceglie un uomo in funzione del prestigio che riversa su lei, ha bisogno di un 
+partner alla pari, eroticamente</span><span class="style782"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </span><span class="style783">&nbsp;intenso.
+</span> <o:p></o:p>
+								<span class="style782"><br>
+</span></span><span class="style5">
+<span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:IT;mso-fareast-language:IT;mso-bidi-language:AR-SA" class="style750">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 
+In</span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:
+IT;mso-fareast-language:IT;mso-bidi-language:AR-SA" class="style452"> 
+<span class="style758">amore</span></span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:IT;mso-fareast-language:IT;mso-bidi-language:AR-SA" class="style750">: 
+				</span></span>
+<span style="mso-bidi-font-size: 10.0pt" class="style598">la carica erotica molto 
+forte è alimentata dal narcisismo. Nella vita amorosa 
+sceglie il partner in funzione</span><span class="style9"><span class="style782"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>
+                    <span style="mso-bidi-font-size: 10.0pt" class="style11">
+<span class="style751">&nbsp; &nbsp;</span><span style="mso-spacerun:yes" class="style751">&nbsp;</span><span class="style751">del 
+prestigio che riversa su di lui.</span></span></p>
+<p class="style442" style="width: 1090px">&nbsp;</p>
+<p class="style808" style="width: 1089px">
+               <span class="style2"><span class="style3">
+
+				<span class="style51">
+								<span class="style818">
+
+
+<span class="style788">SOLE</span></span><b><span class="style751"> 
+in
+								</span>
+								<span class="style818">
+
+
+<strong>
+<span class="style802">TORO</span><o:p></o:p></strong></span></b><span class="style818"><span class="style751">&nbsp;</span></span><b><span class="style818"><span class="style751">e 
+								</span> </span><span class="style822">
+				<span class="style818"> <span class="style758">LUNA</span><span class="style751"> in
+								</span>
+<span class="style758">SAGITTARIO<o:p></o:p></span></span></span></b></span></span></span><span style="mso-bidi-font-size: 10.0pt" class="style5"><span class="style820"> </span> </span><o:p></o:p>
+								</p>
+								<span class="style441">
+
+
+<p class="style347" style="width: 1096px"><span class="style788">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span class="style9"><span class="style751">Questa 
+</span> 
+<span class="style790"> 
+Luna</span><span class="style751"> 
+dà fantasia che il </span> <span class="style801"> 
+Toro</span><span class="style598"> 
+da solo non avrebbe.</span><span class="style751"> Il </span> 
+<span class="style801"> 
+Toro</span><span class="style751"> 
+ha un carattere tranquillo, amante della quiete e dei</span><span class="style782"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+<span class="style751">&nbsp;piaceri della vita, questa 
+</span> <span class="style790"> 
+Luna</span> <span class="style790"> 
+Sagittario</span><span class="style751"> 
+anima espansiva ed entusiasta, aperta a mille suggestioni, lo smuove dalla</span><span class="style782"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="style751">&nbsp;&nbsp; staticità e inserire nella 
+sua vita un pizzico di pepe. 
+</span> 
+<span class="style598"> 
+Spesso si costruisce le occasioni per lasciare il lavoro sedentario e</span><span class="style782"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> 
+<span class="style11"> 
+<span class="style751">&nbsp; &nbsp;avventurarsi fuori: magari solo dietro l'angolo ma lontana dalla routine, 
+oppure in capo al mondo. La </span>  
+<span class="style758"> <strong>Luna</strong></span><span class="style507"><span class="style758"> </span> </span> </span>
+<span class="style790"> 
+Sagittario</span><span class="style782"><br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </span><span class="style751">&nbsp;rende il 
+</span> <span class="style801"> 
+Toro</span><span class="style751"> 
+tradizionalista e fedele, più vivace e più comprensivo verso i valori moderni. 
+</span> </span>
+<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style598">
+I suoi interessi spaziano in</span><span class="style9"><span class="style782"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; </span></span>
+                    <span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style598">
+&nbsp;tutti i campi dal materiale a quello</span><span class="style9"><span class="style782"> </span></span>
+<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style598">
+spirituale. </span>
+                    <span class="style9"> 
+
+
+<span class="style751"> 
+
+
+<font size="1" class="style9">Ha molta fiducia in te stesso e l'abilità 
+necessaria per tradurre in pratica</font></span><span class="style782"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> 
+<font face="comic sans ms" size="1" class="style9"><span class="style783">&nbsp;quanto 
+sogna.</span><o:p></o:p><span class="style782">
+</span>
+
+				</font>
+                    <span class="style751">Possiede una particolare capacità di prevedere gli</span></span><span class="style750"> 
+
+
+avvenimenti&nbsp;futuri e sa come trarne profitto. 
+
+
+<font size="1" class="style9">Così</font> </span>
+                    <span class="style9"> 
+
+
+<span class="style751"> 
+
+
+<font size="1" class="style9">il</font></span></span><span class="style2"><span class="style3"><span class="style51"><span class="style9"><span class="style782"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span>
+				</span></span><span class="style9"> 
+
+
+<span class="style751"> 
+
+
+<font size="1" class="style9">&nbsp;suo&nbsp;bisogno di sicurezza si attenua e ciò permette 
+una vita sentimentale più varia.</font></span>
+                    <span class="style782"><br>
+</span><span class="style751">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L'</span><span class="style793">uomo</span><span class="style630"> </span>
+<span class="style751">desidera una donna dal corpo di puledra, 
+sempre in movimento, generosa e sensuale, che lo infiammi senza</span><span class="style782"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="style751">&nbsp; &nbsp;turbare il bisogno di pace.
+								</span>
+								<span class="style782"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; </span>
+<span class="style751">La 
+</span> <span class="style790"> 
+donna</span><span class="style751"> ricerca un uomo allegro, passionale, sincero, semplice, pulito, con 
+un animo sportivo.</span><o:p></o:p><span class="style782"><br>
+&nbsp;</span><span class="style751">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In</span><span class="style452"> 
+<span class="style758">amore</span></span><span class="style751">: è generoso e leale, con cariche 
+affettive e sessuali equivalenti. La sessualità diventa più raffinata ma anche</span><span class="style782"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+<span class="style751">&nbsp;più desiderosa di variazioni 
+affettive. La sua vita sentimentale è varia e prodiga.</span></span></p>
+<p class="style6" style="width: 1096px">
+               <span class="style2"><span class="style3">
+
+<span class="style51"><span class="style818"><span class="style788">SOLE</span></span><b><span class="style751"> 
+in
+</span>
+								<span class="style818">
+<strong>
+<span class="style802">TORO</span><o:p></o:p></strong></span></b><span class="style818"><span class="style751">&nbsp;</span></span><b><span class="style818"><span class="style751">e </span> 
+				</span><span class="style822"><span class="style818"> 
+<span class="style758">LUNA</span><span class="style751"> in
+</span>
+<span class="style802">CAPRICORNO</span></span></span></b></span></span></span><span class="style820"> </span> <span class="style441"> 
+<b>
+<span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Arial"><o:p></o:p></span></b></p>
+</span>
+								</span>
+								</span><span class="style5">
+<center>
+
+
+<center>
+
+
+<span class="style9">
+<p class="style347" style="width: 1099px">
+<span class="style751">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span><span class="style9"><span class="style751"><span class="style5">&nbsp;&nbsp;&nbsp;
+Si accorda bene questa 
+								</span>
+</span> 
+<span class="style5">
+<span class="style788">Luna</span><span class="style735"> </span> 
+<span class="style751">con il tranquillo e pacifico 
+</span> 
+<span class="style804">Toro</span><span class="style751">. La combinazione è assai favorita, in quanto 
+dà un senso</span><span class="style591"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+<span class="style751">&nbsp;di appagamento interiore e 
+nel comportamento, pacatezza di giudizio e ponderatezza nell'agire. Il carattere 
+è molto</span><span class="style591"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+<span class="style751">&nbsp;stabile e fermo,</span></span></span><span class="style5"><span class="style750">
+poco è lo spazio per la fantasia e l'immaginazione,
+gli obiettivi sono chiari e molto concreti.
+
+
+</span>
+<span class="style9">
+<span class="style751">Il senso</span><span class="style591"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; </span><span class="style751">&nbsp;pratico unito alla prudenza e 
+alla diffidenza del 
+</span> 
+<span class="style804">Capricorno</span><span class="style751"> lo rendono un po' pesante e 
+ingombrante, radicato su delle</span><span class="style591"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+<span class="style751">&nbsp;posizioni prevedibili, 
+inamovibili. Ma la natura bonaria ed edonistica del
+</span>
+<span class="style804">Toro</span><span class="style751"> 
+sfugge alla presa severa del 
+</span> 
+<span class="style804">Capricorno</span><span class="style591"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; </span><span class="style751">&nbsp;quando si tratta di piaceri e 
+soddisfazioni materiali. E si scatena, con qualche cautela, la gioia di vivere.</span><span class="style591"> </span>
+<span class="style751">Non fa salti nel</span><span class="style591"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="style751">&nbsp; &nbsp;buio, non s'impegna se non ha 
+garanzie</span><span class="style591"> </span><span class="style751">di ordine economico.
+</span>
+<span class="style591"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; </span>
+<span class="style751">L'</span><span class="style795">uomo</span><span class="style751"> 
+cerca una donna pratica, austera, con cui lavorare e collaborare. </span> <o:p></o:p>
+
+
+								<span class="style591"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="style751">&nbsp; La 
+</span>
+<span class="style788">donna</span><span class="style750"> 
+cerca un uomo ambizioso, sicuro di sé, serio e intelligente.</span><span class="style591"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="style751">&nbsp; In</span><span class="style735"> 
+</span><span class="style788"> 
+amore</span><span class="style751">: è legato ai valori della famiglia; serio, poco emotivo. Nella 
+vita affettiva cerca rapporti sicuri e duraturi, che</span><span class="style591"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+
+
+<span class="style751">&nbsp; &nbsp;garantiscono stabilità e serenità interiore. </span>
+
+
+</span>
+</p>
+<p class="style6" style="width: 1099px">
+<o:p></o:p>
+               <span class="style2"><span class="style3">
+
+								<span class="style6">
+<span class="style51">
+								<span class="style818">
+<span class="style788">SOLE</span></span><b><span class="style751"> 
+in
+								</span>
+								<span class="style818">
+<strong>
+<span class="style802">TORO</span><o:p></o:p></strong></span></b><span class="style818"><span class="style751">&nbsp;</span></span><b><span class="style818"><span class="style751">e 
+								</span>
+								</span>
+<span class="style822"><span class="style818">
+<span class="style758">LUNA</span><span class="style751"> in
+								</span>
+								</span>
+								</span>
+</b>
+								<span class="style805"> ACQUARIO</span></span></span></span></span><o:p></o:p></p>
+
+
+<center>
+
+
+<center>
+
+
+<p class="style734" style="width: 1097px">
+								<span class="style598">&nbsp; </span>
+								<span class="style751"><span class="style54">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp; Tradizione e innovazione, solidità e leggerezza, senso pratico e principi 
+teorici: 
+</span> 
+</span>
+								<span class="style54">
+<span class="style788">
+Sole</span><span class="style751">
+e 
+</span>
+<span class="style788">
+Luna</span><span class="style751"> 
+sono in antitesi e la sua</span></span><span class="style2"><span class="style3"><span class="style6"><span class="style51"><span class="style9"><span class="style591"><br>
+								</span></span>
+								</span></span>
+
+								</span></span><span class="style5">
+								<span class="style9">
+								<span class="style591">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; </span>
+								<span class="style751">personalità è il crogiolo 
+dove si amalgamano tutti questi elementi.</span></span><span class="style750">
+								</span>
+
+
+<span class="style9">
+<span class="style751">Questa </span>
+<span class="style788">Luna</span><span class="style751"> 
+così anticonformista,</span></span><span class="style750">
+								</span>
+
+
+<span class="style9">
+<span class="style751">libera e originale</span><span class="style591"><br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="style751">&nbsp;non si concilia col carattere 
+tradizionalista e pacifico del
+</span>
+<span class="style804">Toro</span><span class="style751">. La personalità apparentemente molto solida, 
+concreta,</span><span class="style591"><br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </span>
+								<span class="style751">&nbsp;materialista, possessiva, con un cuore 
+ballerino e anticonvenzionale che viene in luce soprattutto nei rapporti amorosi</span><span class="style591"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </span>
+								<span class="style751">che sono molti, vari e quasi mai tranquilli. 
+Ha notevoli doti intellettuali e scientifiche, perché proprio sul piano dello</span><span class="style591"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+								<span class="style751">&nbsp;spirito si fondono le diverse 
+qualità e la forza motrice del </span>
+<span class="style788">
+Sole</span><span class="style751"> 
+segue le intuizioni astratte della </span>
+<span class="style788">Luna</span><span class="style751">. La combinazione</span><span class="style591"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+								<span class="style751">&nbsp;comunque è favorevole perché ha un certo 
+equilibrio tra originalità e normalità, tra tempo da dedicare alla famiglia e</span><span class="style591"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+								<span class="style751">&nbsp; &nbsp; quello da dedicare al lavoro.</span><o:p></o:p><span class="style591"><br>
+&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </span>
+								<span class="style751">L'</span><span class="style795">uomo</span><span class="style735">
+</span><span class="style751">cerca una donna amica-compagna, emancipata e libera, che lavora, sa sbrigarsela 
+in tutte le circostanze della</span><span class="style591"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; </span>
+								<span class="style751">&nbsp;vita, e non si appoggia a lui.</span><o:p></o:p><span class="style591"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; </span>
+								<span class="style751">La </span>
+<span class="style788">donna</span><span class="style751"> 
+cerca l'uomo che le garantisca l'autonomia di pensiero e di azione di cui ha 
+bisogno.</span></span><span class="style591"><span class="style9"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+								</span>
+								</span>
+
+
+								</span>
+
+
+<span class="style9">
+								<span class="style5">
+								<span class="style751">In</span><span class="style735"> 
+</span><span class="style788"> 
+amore</span><span class="style751">: è capriccioso e un po' bizzarro; pronto 
+alla dedizione e perfino al sacrificio, ma senza darlo a vedere. La sua</span><span class="style591"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+								<span class="style751">&nbsp;&nbsp; &nbsp;vita amorosa è sorretta dalla sua 
+fantasia ed è condizionata dall'accettazione delle novità.</span><span style="mso-spacerun:yes" class="style751">&nbsp;&nbsp;
+</span></span><b>
+<span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:
+Arial"><o:p></o:p></span></b></p>
+								</span>
+								</span>
+								<span class="style6">
+
+
+<center>
+
+
+<center>
+
+
+								<span class="style5">
+<span class="style750">
+<p class="style754" style="width: 1098px">
+			                
+<span class="style51">
+								<span class="style818">
+<span class="style788">SOLE</span></span><b> 
+</b> 
+</span>
+			                
+</span>
+			                
+<b> 
+			                
+<span class="style820">
+			                
+in</span><span class="style750"><span class="style51">
+								<span class="style818">
+<strong>
+<span class="style802">TORO</span><o:p></o:p></strong></span></span></span></b><span class="style750"><span class="style51"><span class="style818">&nbsp;</span><span class="style821">e 
+								<span class="style758">LUNA</span> in
+								</span>
+</span>
+			                
+</span>
+			                
+<span class="style51"><span class="style138"><span class="style795"> PESCI</span></span></span></p>
+<span class="style750">
+<p class="style347" style="width: 1098px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+</span><span class="style750">
+<span class="style5">
+&nbsp; Combinazione morbida, cedevole, aperta all'amicizia e alla comprensione. </span> </span>
+<span class="style791">
+Luna</span><span class="style742"> </span>
+<span class="style9">
+<span class="style783">affettiva e sentimentale sta a pennello</span><span class="style5"><span class="style591"><br>
+&nbsp;&nbsp; </span>
+</span> 
+								<span class="style783">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; al 
+</span> </span>
+<span class="style803">Toro</span><span class="style9"><span class="style751"><span class="style5">
+che riesce così a mettere da parte un po' dell'innato materialismo e lasciarsi 
+andare di più a sentimenti puri</span></span><span class="style5"><span class="style591"> 
+e<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </span>
+								<span class="style751">&nbsp;autentici. Dolcezza e romanticismo correggono 
+la pesantezza dei suoi passi misurati che lo spingono a correre verso la</span><span class="style591"><br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; </span>
+								<span class="style751">&nbsp;fantasia. Sarà una corsa al rallentatore ma 
+gratificante per se e per gli altri. Infatti tra i nebulosi programmi della 
+</span> </span> </span>
+<span class="style5">
+<span class="style790">Luna</span><span class="style9"><span class="style591"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; </span>
+								<span class="style751">&nbsp;&nbsp;
+								</span>
+								</span><span class="style750"> 
+che il </span>
+<span class="style790">
+Sole</span><span class="style750"> 
+traduce 
+in 
+realtà, 
+c'è l'interesse per il prossimo e le azioni di solidarietà. 
+<o:p>
+Alle 
+volte c'é il rischio</span></o:p><span class="style9"><span class="style591"> di un certo</span></span></span><span class="style2"><span class="style3"><span class="style5"><span class="style51"><span class="style9"><span class="style782"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></span>
+				</span></span><span class="style5">
+<span class="style9"><span class="style591">&nbsp;fanatismo, se la </span>
+<span class="style792"> <strong>Luna</strong></span><span class="style591"> è 
+troppo mistica e il </span>
+<span class="style792"> <strong>Sole</strong></span><span class="style591"> 
+troppo ostinato.</span></span><span class="style750"><o:p> </o:p>
+Nei rapporti sentimentali c'è&nbsp;meno ossessione&nbsp;per&nbsp;la</span></span><span class="style2"><span class="style3"><span class="style5"><span class="style51"><span class="style9"><span class="style782"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></span>
+				</span></span><span class="style5">
+<span class="style750"> 
+&nbsp;sicurezza e più spazio all'improvvisazione e alla fantasia.</span><o:p></o:p><span class="style9"><span class="style591"><br>
+</span>
+								</span>
+								<span class="style750">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L'</span><span class="style793">uomo</span><span class="style630"> </span>
+<span class="style9">
+<span class="style751">cerca la donna femminile, affettuosa, svagata, con un fascino diverso, magico e 
+sfuggente.</span><span class="style591"><br>
+</span>
+								</span><span class="style750">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+La 
+</span>
+<span class="style790">donna</span><span class="style9"><span class="style751"> 
+cerca un uomo che la protegga, ha bisogno di essere amata con dolcezza e 
+tenerezza.</span><span class="style591"><br>
+</span>
+								<span class="style751">&nbsp;&nbsp; </span> </span>
+<span class="style750">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;In</span><span class="style630"> 
+</span><span class="style790"> 
+amore</span><span class="style750">: il sano edonismo  
+si accresce di una sensualità più focosa e passionale. Nella vita amorosa non 
+vuole essere </span>
+
+
+								<span class="style9">
+<span class="style591"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+								</span>
+                    <span class="style750"> 
+&nbsp;&nbsp;&nbsp;&nbsp; vittima del partner. 
+</span>
+								</span>
+</p>
+								</span></span></font></span></td>
+				</tr>
+</table>
+								</span></span>
+
+</span></span>
+<span style="mso-bidi-font-size: 10.0pt">
+
+
+				<span class="style5"><span class="style6">
+
+
+<font face="Verdana" size="1"><p align="center" style="width: 1085px; height: 20px;">
+						&nbsp;<font face="comic sans ms" size="1"><font size="1" class="style54"><span class="style638"><strong><img src="COlunastar.gif" width="462" height="46">&nbsp;&nbsp;&nbsp;&nbsp; <img src="COlunastar.gif" width="462" height="46"></strong></span></font></font><p align="center" style="width: 1085px; height: 20px;">
+						<strong><span class="style692"><span class="style637">
+						<span lang="it">&nbsp;</span></span></span><span lang="it"><span class="style752"><span class="style9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style751"> 
+V</span></span></span></span></strong><span class="style9"><span class="style753"><strong>isitatore n°
+						</strong>
+						</span>
+						</span><strong>
+						<span class="style78">
+						<span class="style316">
+<span class="style64"><span class="style598">
+
+						&nbsp;
+
+<!--webbot bot="HTMLMarkup" startspan --><a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1322750635-hf8yr2y7" border=0></a>
+
+
+
+<!--webbot bot="HTMLMarkup" endspan i-checksum="10956" --></span></span></span></span></strong><p align="center" style="width: 1085px; height: 20px;">
+						</font></span></span></span></font></span>
+			                
+						</span></span></td>
+             </tr>
+            </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+         </table>
+        </td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+</body>
+
+</html>
