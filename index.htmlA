@@ -1,7 +1,17 @@
-﻿<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+﻿<!DOCTYPE html>
+
+<html>
 
 <head>
-	<style>
+<title>Studio Acquario</title>
+<link rel="icon" type="image/gif" href="https://www.studioacquario.it/favicon32.gif">
+<META name="description" content="Studio Acquario - Coppia del Mese">
+<meta name="keywords" content="astrologia">
+<meta name="author" content="Laura Lencia">
+<meta http-equiv="imagetoolbar" CONTENT="no">
+<meta charset="UTF-8">
+
+<style>
 	#lh_header_top #lh_other, #lh_header_top #lh_options {
 		top: 23px;
 	}
@@ -45,8 +55,8 @@
 	#lh_header_top {
 		margin-top: 0px;
 	}	
-	</style>
-	<style>
+</style>
+<style>
 	#lh_header_top #HF_login_l, #lh_header_top #HF_login_r { 
 		float: none;
 	}
@@ -60,8 +70,7 @@
 	#l_header_topbar #l_header_topbar_popup_nicknames {
     	margin-top: 25px;
 	}
-
-	</style>
+</style>
 <style>
 	#lh_header #lh_area02a{
 		position:relative;
@@ -98,10 +107,8 @@
 		padding: 0 !important;
 		margin: 0 !important;
 	}
-	
 </style>
-	<style>
-	
+<style>
 	#lh_header_top #lh_area05 a.lh_altro, #lh_header_top #lh_area04 a.lh_opzioni {
 		margin-top: 0px;
 		padding-top: 0px;
@@ -136,8 +143,8 @@
 		max-height: 27px;
 		overflow: hidden;
 	}
-	</style>
-	<style>
+</style>
+<style>
 	#l_header_topbar #l_header_topbar_popup_altro, #l_header_topbar #l_header_topbar_popup_opzioni {
     	margin-top: 35px;
 	}
@@ -167,14 +174,10 @@
 	    display: inline-block;
 	    background-position-y: -286px;
 	}
-	</style>
-
-
+</style>
 <style>
 #l_header_topbar,#l_header_fixed_topbar_placeholder{height:98px}
 </style>
-
-<meta http-equiv="imagetoolbar" CONTENT="no">
 <style type="text/css">
 body {
 scrollbar-arrow-color: #D9C671;
@@ -184,7 +187,6 @@ scrollbar-track-color: #1A3862;
 }
 </style>
 <style>
-
 A:link {color: #CEC26C;text-decoration:none;}
 A:visited {color: #DFD08A;
 text-decoration:none;
@@ -565,12 +567,6 @@ a:active {
 				font-size: large;
 }
 </style>
-<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
-<meta charset="utf-8">
-<title>Studio Acquario</title>
-    <link rel="icon" 
-      type="image/gif" 
-      href="https://www.studioacquario.it/favicon32.gif">
 <script type="text/JavaScript">
 //courtesy of BoogieJack.com
 function killCopy(e){
@@ -585,6 +581,7 @@ document.onmousedown=killCopy
 document.onclick=reEnable
 }
 </script>
+
 </head>
 
 <body background="http://www.studioacquario.it/ACfondexteranime.gif" topmargin="25"
