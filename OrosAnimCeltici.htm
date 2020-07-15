@@ -1,985 +1,308 @@
 <!DOCTYPE html>
-<HTML>
-<HEAD>
- 
-<TITLE>Oroscopo Animali Celtici</TITLE>
-<link rel="icon" type="image/gif" href="https://www.studioacquario.it/favicon32.gif">
-<META name="description" content="Studio Acquario - Oroscopo Animali Celtici">
-<meta name="keywords" content="astrologia">
-<meta name="author" content="Laura Lencia">
+<html lang="it">
+<head>
+<meta charset="UTF-8"> 
+<title>Oroscopo Animali Celtici</title>
+<link rel="icon" type="image/gif" href="favicon32.gif">
+<meta name="description" content="Studio Acquario: Oroscopo Animali Celtici">
+<meta name="keywords" lang="it" content="astrologia, oroscopo, celtico, animali">
+<meta name="author" content="Laura Lencia, studio.acquario@libero.it">
+<meta name="owner" content="Laura Lencia">
+<meta name="language" content="it">
 <meta http-equiv="imagetoolbar" CONTENT="no">
-<meta charset="UTF-8">
+<meta name="content_updated" content="05/07/2019">
+<meta name="revised" content="15/07/2020">
 
-<style>
-	#lh_header_top #lh_other, #lh_header_top #lh_options {
-		top: 23px;
-	}
-	#lh_header_top #lh_nicknames {
-		top: 22px;
-	}
-	#lh_header_top #lh_area04 a.lh_nicknames_arrow {
-		/*height: 16px;*/
-	}
-	#lh_header #lh_area03 .lh_pos { 
-		padding-top: 4px;
-	}
-	#lh_header #lh_area03 table td input {
-		margin-top: -1px !important;
-		margin-top: -2px;
-	}
-	#lh_header #lh_close_me { 
-		margin-top: 0;
-	}
-	#lh_header.lite, #lh_header.liquid, #lh_header.liquid800, #lf_footer.lite, #lf_footer.liquid {
-		width: expression(document.body.clientWidth < 800 ? '760px': 'auto' );
-	}
-	#lh_header #lh_area02.lite {
-		width: expression(document.body.clientWidth < 1024 ? '636px': 'auto' );
-	}
-	#l_maincont {
-		width: expression(document.body.clientWidth < 800 ? '760px': 'auto' );
-	}
-	#lh_header_top.lh_liquid {
-		width: expression(document.body.clientWidth < 800 ? '760px': 'auto' );
-	}
-	#lh_header_top { 
-		height: 33px;
-	}
-	#lh_header_top #lh_area05 a.lh_on, #lh_header_top #lh_area04 a.lh_on {
-		height: 22px;
-	}
-	#lh_header_top #lh_area04 a.lh_options { 
-		margin-left: -5px;
-	}
-	#lh_header_top {
-		margin-top: 0px;
-	}	
-</style>
-<style>
-	#lh_header_top #HF_login_l, #lh_header_top #HF_login_r { 
-		float: none;
-	}
-	#lh_header_top {
-		left: 0px;
-	}
-	
-	#l_header_topbar #l_header_topbar_popup_altro, #l_header_topbar #l_header_topbar_popup_opzioni {
-    	margin-top: 33px;
-	}
-	#l_header_topbar #l_header_topbar_popup_nicknames {
-    	margin-top: 25px;
-	}
-</style>
-<style>
-	#lh_header #lh_area02a{
-		position:relative;
-		overflow: visible;
-		height: 30px;
-	}
-	
-	#lh_header #lh_area02b{
-		z-index: -1;
-	}
-	#lh_header #lh_area02a .lh_pos {
-		position: absolute;
-		margin-bottom: 0;
-	}
-	
-	#lh_header #lh_area02a .lh_on {
-	}
-	#lh_header .lh_finput_area input {
-		height: 27px;
-		padding-top: 0;
-		padding-bottom: 0;
-		line-height: 27px !important;
-		font-size: 15px !important;
-	}
-	#lh_altro{
-		position: relative !important;
-	}
-	#lh_header_top .lh_popup {
-	}
-	#lf_footer .lf_finput_area input {
-		font-size: 12px !important;
-		line-height: 25px !important;
-		vertical-align: middle;
-		padding: 0 !important;
-		margin: 0 !important;
-	}
-</style>
-<style>
-	#lh_header_top #lh_area05 a.lh_altro, #lh_header_top #lh_area04 a.lh_opzioni {
-		margin-top: 0px;
-		padding-top: 0px;
-	}
-	#lh_header_top #lh_area05 a.lh_altro { 
-		background-position: -67px -10px;
-	}
-	#lh_header_top #lh_area05 a.lh_altro_selected { 
-		background-position: -67px -36px;
-	}
-	#lh_header_top #lh_area04 a.lh_opzioni {
-		background-position: -56px -10px;
-	}
-	#lh_header_top #lh_area04 a.lh_nicknames_arrow_selected, #lh_header_top #lh_area05 a.lh_altro_selected, #lh_header_top #lh_area04 a.lh_opzioni_selected {
-		height: 23px;		
-	}
-	#lh_header_top #lh_nicknames {
-		left: -195px;
-	}
-	#lh_header_top #lh_other, #lh_header_top #lh_options {
-		top: 22px;
-	}
-	#lh_header_top #lh_nicknames {
-		top: 22px;
-	}
-	
-	#lh_header .lh_finput_area .lh_pos { 
-		padding-top: 4px;
-	}
-	#lf_footer .lf_finput_area {
-		height: 27px;
-		max-height: 27px;
-		overflow: hidden;
-	}
-</style>
-<style>
-	#l_header_topbar #l_header_topbar_popup_altro, #l_header_topbar #l_header_topbar_popup_opzioni {
-    	margin-top: 35px;
-	}
-	#l_header_topbar #l_header_topbar_popup_nicknames {
-    	margin-top: 28px;
-	}
-	#l_header_topbar #l_header_topbar_left #l_header_topbar_popup_altro a, 
-	#l_header_topbar #l_header_topbar_right #l_header_topbar_popup_opzioni a,
-	#l_header_topbar #l_header_topbar_right #l_header_topbar_popup_nicknames a {
-    	padding: 0px 0px 0px 4px;
-	}
-	#l_header_topbar #l_header_topbar_right #l_header_topbar_nicknames_lk {
-		display: inline-block;
-	}
-	#l_header_topbar #l_header_topbar_right #l_header_topbar_filter_family {
-		line-height: 14px;
-	}
-	#l_header_topbar li {
-	    margin-top: 12px;
-	    line-height: 14px;
-    }
-	#l_header_topbar #l_header_topbar_right a.plus_selected {
-	    border-left: 1px solid #ffffff;
-	    color: #000000;
-	    margin-bottom: 0px;
-	    padding: 0px 17px 0px 8px;
-	    display: inline-block;
-	    background-position-y: -286px;
-	}
-</style>
-<style>
-	#l_header_topbar,#l_header_fixed_topbar_placeholder{height:98px}
-</style>
 <style type="text/css"> 
 body {
-scrollbar-arrow-color: #E7EFFB;
-scrollbar-base-color: #447FDB;
-scrollbar-dark-shadow-color: #447FDB;
-scrollbar-track-color: #447FDB;
+	scrollbar-arrow-color: #E7EFFB;
+	scrollbar-base-color: #447FDB;
+	scrollbar-dark-shadow-color: #447FDB;
+	scrollbar-track-color: #447FDB;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #1167DB; /* Navy Blue */
+	background-image: url("Wnature9bk1.jpg");
 }
-.style33 {
-				text-align: left;
+.sLogoBanner {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	text-shadow: 1px 1px 5px #0000FF; /* Blue */
+	text-align: center;
 }
-.style77 {
-				border-width: 0;
+h1 {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #000080; /* Navy */
+	text-shadow: 2px 2px 10px #FFFFFF; /* White */	
+	text-align: center;
 }
-p.MsoNoSpacing
-	{margin-bottom:.0001pt;
-	font-size:12.0pt;
-	font-family:"Times New Roman","serif";
-					margin-left: 0cm;
-				margin-right: 0cm;
-				margin-top: 0cm;
+h2 {
+	font-size: medium;
+	font-weight: bold;
+	color: #000080; /* Navy */
+	text-align: center;
 }
-a:link
-	{color:blue;
-	text-decoration:underline;
-	text-underline:single;
-}
- p.MsoNormal
-	{margin-bottom:.0001pt;
-	font-size:12.0pt;
-	font-family:"Times New Roman","serif";
-	color:black;
-					margin-left: 0cm;
-				margin-right: 0cm;
-				margin-top: 0cm;
-}
-.style78 {
-				background-color: #FFFFFF;
-}
-.style79 {
-				font-size: x-large;
-				font-family: Verdana;
-				color: #000080;
-}
-.style81 {
-				color: #0000FF;
-}
-.style86 {
-				color: #000080;
-}
-.style88 {
-				font-family: Verdana;
-}
-.style89 {
-				color: #000080;
-				font-family: Verdana;
-				font-size: x-small;
-}
-.style92 {
-				color: #000080;
-				font-size: x-small;
-}
-.style93 {
-				font-size: x-small;
-}
-.style94 {
-				font-family: Verdana;
-				font-size: x-small;
-}
-.style95 {
-				color: #000080;
-				font-family: Verdana;
-				font-size: small;
-}
-.style96 {
-				font-family: Verdana;
-				text-align: left;
-}
-.style98 {
-				color: #000080;
-				text-align: left;
-}
-.style99 {
+.sBorder1s {
 				border-style: solid;
 				border-width: 1px;
 }
-.style101 {
-				font-family: Verdana;
+.sAqua {
+				color: #00FFFF;
+}
+.sNavy {
+				color: #000080;
+}
+.sWhite {
+				color: #FFFFFF;
+}
+.sCenter {
+				text-align: center;
+}
+.sJustify {
+				text-align: justify;
+}
+.sPadding {
+				padding-left: 10px;
+				padding-right: 10px;
+}
+.sBold {
+				font-weight: bold;
+}
+.sXXSmall {
+				font-size: xx-small;
+}
+.sXSmall {
+				font-size: x-small;
+}
+.sSmall {
 				font-size: small;
 }
-.style102 {
-				text-align: center;
-}
-.style103 {
-				text-align: center;
-				font-size: x-small;
-				color: #000080;
-				font-family: Verdana;
-}
-.style104 {
-				text-align: left;
-				font-size: x-small;
-				color: #000080;
-				font-family: Verdana;
-}
-.style74 {
-				font-family: Verdana;
-}
-.style57 {
-				font-size: x-small;
-}
-.style106 {
-				font-family: Verdana;
-				text-align: center;
-}
-.style107 {
-				font-family: Verdana;
-				font-size: x-small;
-				color: #000000;
-}
-.style108 {
-				font-family: Verdana;
-				text-align: center;
-				font-size: xx-small;
-}
-.style109 {
-				font-family: Verdana;
-				font-size: xx-small;
+.sMedium {
+				font-size: x-large;
 }
 </style>
+</head>
  
-</HEAD>
- 
-<BODY BACKGROUND="Wnature9bk1.jpg" BGCOLOR="#B0CFFB" TEXT="#1167DB" LINK="#1167DB"  ALINK="#1167DB"  VLINK="#1167DB">
- 
-<CENTER>
-<TABLE CELLSPACING="0" CELLPADDING="0" BACKGROUND="Wnature9bk4.jpg" BORDERCOLOR="#85ABE3" BORDERCOLORDARK="#316ABF" style="width: 67%" class="style77">
- 
-<TR><TD style="width: 70%">
-<CENTER>
-<TABLE CELLSPACING="0" CELLPADDING="15" BACKGROUND="Wnature9bk2.jpg" BORDERCOLOR="#CADFFF" BORDERCOLORDARK="#3E82E8" style="width: 75%" class="style99">
- 
-<TR><TD style="width: 65%">
-<CENTER>
-<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" class="style78" style="width: 65%">
- 
-<TR>
-				<TD WIDTH="100%" class="style33">
-<CENTER>
-<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" BACKGROUND="Wnature9bk4.jpg" style="width: 65%">
-				<TR>
-				<TD class="style102" style="width: 65%"><span class="style109">&nbsp;
-				</span>
-				<p class="style108" style="width: 1177px;">
-				<o:p><img src="ColorLinea.gif" width="588" height="10"></o:p></p>
-				<br>
-				<img src="A.CeltiCerchio.png" width="339" height="311"><p class="MsoNoSpacing" align="center" style="text-align:center; width: 1171px;">
-				&nbsp;</p>
-				<p class="MsoNoSpacing" align="center" style="text-align:center; width: 1171px;">
-				<b style="mso-bidi-font-weight:normal"><span class="style79">
-				OROSCOPO ANIMALI CELTICI<o:p></o:p></span></b></p>
-				<span class="style81"><br>
-				&nbsp;
-				<o:p><img src="ColorLinea.gif" width="588" height="10"></o:p></span><p class="style102" style="width: 1173px">
-				<b style="mso-bidi-font-weight:normal">
-				<span style="mso-fareast-language: IT" class="style95">
-				&nbsp; </span></b><span class="style89"><strong>
-				<img src="B.cervo1.jpg" width="208" height="156"></strong></span><b style="mso-bidi-font-weight:normal"><span style="mso-fareast-language: IT" class="style95">CERVO</span><span style="mso-fareast-language: IT" class="style89">
-				</span></b><span class="style89"><strong>24 Dicembre - 20 
-				Gennaio</strong></span><o:p></o:p></p>
-				<p class="style96" style="width: 1179px">
-				<span style="mso-fareast-language:
-IT"><span class="style92">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-				Il <strong>Cervo</strong> Celtico ha alti ideali e aspirazioni, </span></span>
-				<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style92">
-				è coraggioso, orgoglioso, intelligente, veloce di mente e di 
-				azione; ama prendersi cura</span><span class="style92"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span>
-				<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style92">&nbsp;degli 
-				altri. </span><span style="mso-fareast-language:
-IT"><span class="style86"><span class="style88"><span class="style93"> 
-				È </span></span></span><span class="style92">profondo, paziente e la 
-				sua persistenza e 
-				determinazione assicura il trionfo, quando</span></span><span class="style92">
-				</span><span style="mso-fareast-language:
-IT"><span class="style92">gli altri hanno da 
-				tempo rinunciato</span></span><span class="style92"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span>
-				<span style="mso-fareast-language:
-IT"><span class="style92">&nbsp;il <strong>Cervo</strong> prosegue. </span><span class="style86"><span class="style88"><span class="style93"> 
-				È</span></span></span><span class="style92"> altero e 
-				giustamente ha modi regali. </span></span>
-				<span style="mso-bidi-font-size: 11.0pt; line-height: 115%; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style92">
-				Sa dare splendidi consigli agli</span><span class="style92"> 
-				altri, </span>
-				<span style="mso-bidi-font-size: 11.0pt; line-height: 115%; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style92">
-				ma per quanto concerne se stesso, è</span><span class="style92"> 
-				<BR>
- 
-				</span>
-				<span style="mso-bidi-font-size: 11.0pt; line-height: 115%; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style92">
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; spesso superficiale. </span>
-				<span style="mso-fareast-language:
-IT"><span class="style86"><span class="style88"><span class="style93"> È</span></span></span><span class="style92"> per natura 
-				nobile, questo non vuol dire che sia arrogante o presuntuoso,</span></span><span style="mso-fareast-language:
-IT"><span class="style92">&nbsp;niente di più falso, crede nel duro</span></span><span class="style92"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span>
-				<span style="mso-fareast-language:
-IT"><span class="style92">&nbsp;lavoro e l&#39;integrità è il 
-				suo marchio di fabbrica.</span><o:p></o:p></span></p>
-				<p class="style103" style="mso-fareast-language: IT; width: 1166px;"><o:p>&nbsp;</o:p><span class="style94"><span style="mso-spacerun:yes" class="style86">&nbsp;&nbsp;</span></span><span style="mso-spacerun:yes" class="style86"><span class="style101">&nbsp;&nbsp;&nbsp;&nbsp;
-				<img src="B.Gatto.jpg" width="208" height="118">&nbsp;&nbsp; </span>
-				</span><b style="mso-bidi-font-weight:normal">
-				<span style="mso-fareast-language: IT" class="style95">GATTO</span></b><span style="mso-fareast-language:IT"><o:p>
-				<span class="style89">&nbsp;</span></o:p></span><span class="style89"><strong>21 Gennaio - 
-				17 Febbraio</strong></span><o:p></o:p></p>
-				<p class="style96" style="width: 1180px">
-				<span style="mso-fareast-language:
-IT"><span class="style86"><span class="style93">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mentalità rapida e ancor più 
-				veloce l&#39;ingegno, il </span>
-				<b style="mso-bidi-font-weight:
-normal"><span class="style93">Gatto</span></b><span class="style93"> Celtico fa 
-				un balzo nel regno dell&#39;intelletto, ha una capacità 
-				di ragionamento</span></span></span><span class="style92"><BR>
- 
-&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-language:
-IT"><span class="style86"><span class="style93"> &nbsp; impeccabile, e un talento per vedere la 
-				parte oscura delle cose, un sesto senso mentale. Il <strong>Gatto</strong> ha 
-				una visione diversa e dovrebbe</span></span></span><span class="style92"><BR>
- 
-&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-language:
-IT"><span class="style86"><span class="style93"> &nbsp; essere chiamato quando è 
-				necessario a nuove prospettive fresche in un progetto, ha anche 
-				qualità umanitarie che lo rende amabile.</span></span></span><span class="style92"><BR>
- 
-&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-language:
-IT"><span class="style86"><span class="style93"> &nbsp; Spesso schivo, perché 
-				gli piace stare ai margini, sempre osservando, ma possiede 
-				le migliori intenzioni nel cuore. </span></span></span>
-				<span class="style92">È potente, ha una<BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; vista eccellente, è un ottimo custode di segreti, 
-				è saggio ed è il simbolo di crescita spirituale.</span><span style="mso-fareast-language:
-IT"><span class="style86"><span class="style93"> Il <strong>Gatto</strong> è anche molto 
-				creativo, e ha</span></span></span><span class="style92"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
-				<span style="mso-fareast-language:
-IT"><span class="style86"><span class="style93"> bisogno di uno sbocco artistico per 
-				esprimersi.</span></span><span style="mso-spacerun:yes" class="style92">&nbsp;
-				</span><o:p></o:p></span></p>
-				<p class="style103" style="width: 1172px"><span class="style94">
-				<span style="mso-spacerun:yes" class="style86">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<img src="B.Serpente.jpg" width="184" height="140">&nbsp;</span></span><span style="mso-fareast-language: IT" class="style95"><b style="mso-bidi-font-weight:normal">&nbsp; SERPENTE</b></span><span style="mso-fareast-language: IT" class="style89"><span style="mso-bidi-font-weight:normal">
-				</span></span><span class="style89"><strong>18 Febbraio - 17 
-				Marzo</strong></span><o:p></o:p></p>
-				<p class="style33"><span class="style88">
-				<span style="mso-fareast-language: IT"><span class="style86">
-				<span class="style93">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Il
-				<b style="mso-bidi-font-weight: normal">Serpente</b> ha un 
-				design bellissimo, è infinitamente vivace, curioso e sempre 
-				colmo di domande su come funziona il mondo e come</span></span></span><span class="style86"><span class="style93"><br style="mso-special-character: line-break">
-&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="mso-fareast-language: IT">
-				<span class="style86"><span class="style93">&nbsp;le persone 
-				intorno a lui agiscono. Il
-				<b style="mso-bidi-font-weight: normal">Serpente</b> è un 
-				comunicatore naturali, e può essere veramente convincente. Se è 
-				appassionato a</span></span></span><span class="style86"><span class="style93"><br style="mso-special-character: line-break">
-&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="mso-fareast-language: IT">
-				<span class="style86"><span class="style93">&nbsp;una causa, 
-				coinvolge molte persone con il suo entusiasmo. </span></span>
-				<span class="style93"><span class="style86">È spontaneo ma anche 
-				imprevedibile, anche se è abbastanza flessibile, a</span></span></span><span class="style86"><span class="style93"><br style="mso-special-character: line-break">
-&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="mso-fareast-language: IT">
-				<span class="style93"><span class="style86">&nbsp;lui piace che 
-				le cose vadano come desidera (chi non lo fa?), e si rivelerà 
-				poco collaborativo se messo da parte. È il Portatore di Vita,</span></span></span><span class="style86"><span class="style93"><br style="mso-special-character: line-break">
-&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="mso-fareast-language: IT">
-				<span class="style93"><span class="style86">&nbsp;l&#39;essere che 
-				meglio incarna e rappresenta la forza vitale che scorre sinuosa 
-				sotto e sopra la superficie. </span></span></span>
-				<span class="style86"><span class="style93">È associato a tutte 
-				le qualità<br style="mso-special-character: line-break">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mistiche dell’acqua, è dotato di pazienza, e 
-				intraprendenza; il suo ambiente ideale è la casa e la famiglia. 
-				È simbolo di crescita e di<br style="mso-special-character: line-break">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; rigenerazione; molto amichevole ed attraente, 
-				conosce il potere della seduzione.<br style="mso-special-character: line-break">
-				</span></span></span><![if !supportLineBreakNewLine]>&nbsp;&nbsp;
-				<![endif]>&nbsp;<span style="font-size: 5.0pt; mso-fareast-language: IT"><o:p></o:p></span></p>
-				<p class="style104" style="mso-fareast-language: IT; width: 1176px;"><o:p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<img src="AH.4Volpe.jpg" width="191" height="131">&nbsp;</o:p><span class="style94"><span style="mso-spacerun:yes" class="style86">&nbsp; &nbsp;</span></span><b style="mso-bidi-font-weight:normal"><span style="mso-fareast-language: IT" class="style95">VOLPE</span></b><span style="mso-fareast-language:IT"><o:p> </o:p>
-				</span><strong>18 Marzo - 14 
-				Aprile</strong></p>
-				<p class="style96" style="width: 1181px;">
-				<span style="mso-fareast-language:
-IT"><span class="style86"><span class="style93">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; La </span>
-				<b style="mso-bidi-font-weight:normal"><span class="style93">
-				Volpe</span></b><span class="style93"> è incredibilmente furba, 
-				lo sappiamo bene, sa come muoversi con sornione e sensuale 
-				umorismo.</span></span></span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style92"> 
-				Energica e coraggiosa,</span><span class="style92"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span>
-				<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style92">&nbsp;s</span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style92">aggia, 
-				astuta e scaltra negli affari, è una grande seduttrice, molto 
-				ricercata in compagnia ed amante dell&#39;avventura. L</span><span style="mso-fareast-language: IT"><span class="style89">a <strong>Volpe</strong></span></span><span style="mso-fareast-language: IT"><span class="style89">&nbsp;sa</span></span><span class="style92"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-language: IT">
-				<span class="style89">&nbsp;come divertirsi ma è anche leale, 
-				spesso e volentieri indomabile, ma è un amico/a fidato.</span></span><span style="mso-fareast-language:
-IT"><span class="style86"><span class="style93"> Forza e intelligenza brillanti rendono la</span></span></span><span class="style92"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-language:
-IT"><span class="style86"><span class="style93"> &nbsp;</span><b style="mso-bidi-font-weight:
-normal"><span class="style93">Volpe</span></b><span class="style93"> indomita. </span></span>
-				<span class="style92">Ha 
-				talento per la narrazione, ogni esperienza è foraggio per i suoi 
-				racconti e ha un cuore tenero anche se non lo</span></span><span class="style92"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-language:
-IT"><span class="style92">&nbsp;mostra, perché troppo occupata a intrattenere, e a 
-				giocare. Non è timida nel mostrare la sua lealtà. Se hai</span><span style="mso-spacerun:yes" class="style92">
-				</span><span class="style86"><span class="style93">un amico/a 
-				della </span><b style="mso-bidi-font-weight:
-normal"><span class="style93">Volpe</span></b><span class="style93">,</span></span></span><span class="style92"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-language:
-IT"><span class="style86"><span class="style93">&nbsp;l&#39;avrai 
-				per tutta la vita. </span></span></span></p>
-				<p class="style104" style="mso-fareast-language: IT; width: 1178px;">
-				<span style="mso-fareast-language: IT" class="style95"><b style="mso-bidi-font-weight:normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<img src="B.Toro.jpg" width="202" height="156">&nbsp; TORO</b></span><span style="mso-fareast-language: IT" class="style89"><span style="mso-bidi-font-weight:normal">
-				</span></span><strong>15 Aprile - 
-				12 Maggio</strong><o:p></o:p></p>
-				<p class="style96" style="width: 1185px;">
-				<span style="mso-fareast-language:
-IT"><span class="style86"><span class="style93">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Forte, amorevole, stabile e 
-				sicuro sono le parole d&#39;ordine del </span>
-				<b style="mso-bidi-font-weight:normal"><span class="style93">
-				Toro</span></b></span> <span class="style86">
-				<span style="mso-bidi-font-weight:
-normal"><span class="style93">Celtico</span></span><span class="style93">. È o</span></span></span><span style="mso-fareast-language: IT" class="style92">nesto 
-				e testardo, ma pronto ad aiutare tutti, riesce a</span><span class="style92"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span>
-				<span style="mso-fareast-language: IT" class="style92">&nbsp;smascherare 
-				qualsiasi persona con un cattivo intento, essendo un animale 
-				forte e saggio. Un esempio e una guida per gli altri, non</span><span class="style92"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span>
-				<span style="mso-fareast-language: IT" class="style92">&nbsp;si 
-				tira mai indietro davanti alle sfide, a costo di farsi del male.<o:p> </o:p>
-				</span><span style="mso-fareast-language:
-IT"><span class="style86">
-				<span class="style93">Ha un&#39;intuizione innata e può individuare un bugiardo a 
-				chilometri di</span></span></span><span class="style92"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-language:
-IT"><span class="style86">
-				<span class="style93">&nbsp;distanza. Essendo appunto molto intuitivo, è 
-				spesso frainteso e catalogato come lunatico o troppo emotivo. Il
-				</span><b style="mso-bidi-font-weight:normal">
-				<span class="style93">Toro</span></b><span class="style93"> è 
-				inoltre dotato</span></span></span><span class="style92"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-language:
-IT"><span class="style86">
-				<span class="style93"> &nbsp;di grande onestà ma anche di grande 
-				ostinazione. Ha buon 
-				gusto, ed è attratto dall&#39;eleganza nella moda 
-				e&nbsp;nell&#39;arredamento.</span></span><span class="style92"> </span> <span class="style86">
-				<span class="style93">È
-				</span></span><span class="style92">molto</span></span><span class="style92"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-language:
-IT"><span class="style92">&nbsp;affidabile e</span></span><span style="mso-fareast-language:
-IT"><span class="style92"> 
-				sa come mantenere un segreto.</span></span></p>
-				<p class="style103" style="width: 1176px">
-				<span style="mso-fareast-language:IT" class="style95"><b style="mso-bidi-font-weight:normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<img src="B.CavallucioMarino.jpg" width="161" height="180">&nbsp;&nbsp; CAVALLUCCIO 
-				MARINO</b></span><span style="mso-fareast-language:IT" class="style89"><span style="mso-bidi-font-weight:normal">
-				</span></span><strong>13 Maggio - 9 
-				Giugno</strong><o:p></o:p></p>
-				<p class="style33" style="width: 1185px;">
-				<span style="mso-fareast-language:
-IT" class="style94"><span class="style86">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</span></span><span style="mso-fareast-language: IT"><span class="style86"><span class="style94">Il
-				</span><b style="mso-bidi-font-weight: normal">
-				<span class="style94">Cavalluccio</span></b></span>
-				<span class="style86"><b style="mso-bidi-font-weight: normal">
-				<span class="style94">marino</span></b><span class="style94"> è 
-				enormemente flessibile e pieno di risorse, è la persona che ama 
-				gestire le finanze o manipolare questioni</span></span></span><span class="style92"><span class="style88"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="mso-fareast-language: IT">
-				<span class="style86"><span class="style94">&nbsp;legali perché 
-				infinitamente intelligente, (se c&#39;è una scappatoia</span></span><span style="mso-spacerun: yes" class="style89">
-				</span><span class="style86"><span class="style94">la trovano o 
-				la inventano). </span></span></span><span class="style89">Questa 
-				creatura quasi mitica già di suo ha</span><span class="style92"><span class="style88"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span class="style89">&nbsp;una presenza piacevole, è 
-				molto intelligente ma</span><span class="style89">&nbsp;spesso 
-				lunatico e difficile da seguire, ma una volta entrati nel suo 
-				cuore è difficile</span><span class="style92"><span class="style88"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span class="style89">&nbsp;trovarsi da 
-				soli e in difficoltà. </span>
-				<span style="mso-fareast-language: IT"><span class="style86">
-				<span class="style94">Ha anche una sorprendente memoria, è a 
-				volte, difficile da seguire perché ha una mente parecchio</span></span></span><span class="style92"><span class="style88"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="mso-fareast-language: IT">
-				<span class="style86"><span class="style94">&nbsp;acuta. Può 
-				anche cambiare umore improvvisamente, ma mantiene sempre un alto 
-				carisma. È incredibilmente versatile e si adatta</span></span></span><span class="style92"><span class="style88"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="mso-fareast-language: IT">
-				<span class="style86"><span class="style94">&nbsp;molto bene in 
-				qualsiasi ambiente. Il </span>
-				<b style="mso-bidi-font-weight: normal"><span class="style94">
-				Cavalluccio marino </span></b><span class="style94">è davvero 
-				molto piacevole, ama essere adorato, e ricambia facilmente</span></span></span><span class="style92"><span class="style88"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="mso-fareast-language: IT">
-				<span class="style86"><span class="style94">&nbsp;l&#39;affetto che 
-				riceve.</span></span></span><span class="style89"> È dotato di 
-				pazienza, flessibilità ed intraprendenza; il suo ambiente ideale 
-				è la casa e la famiglia.</span></p>
-				<p class="style102" style="width: 1185px;">
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<span style="mso-fareast-language:
-IT" class="style95"><b style="mso-bidi-font-weight:normal">&nbsp;<img src="B.Scricciolo.png" width="193" height="132">&nbsp;&nbsp; SCRICCIOLO<o:p> </b></span>
-				<span style="mso-bidi-font-weight:normal">
-				<span style="mso-fareast-language:
-IT" class="style89">&nbsp;</span></span></o:p><span class="style89"><strong>10 Giugno -7 
-				Luglio</strong></span><o:p></o:p></p>
-				<p class="style98" style="width: 1180px">
-				<span style="mso-fareast-language:
-IT"><span class="style88"><span class="style93">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lo </span> <b style="mso-bidi-font-weight:normal">
-				<span class="style93">Scricciolo</span></b><span class="style93"> </span></span>
-				<span class="style94">rappresenta la freschezza e la 
-				versatilità, è affiatato con i suoi simili, un viaggiatore ma 
-				sempre alla ricerca di pace e</span></span><span class="style92"><span class="style88"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>
-				<span style="mso-fareast-language:
-IT"><span class="style94">di equilibrio, con un forte senso di protezione verso 
-				i suoi amici, si adatta sia ad essere seguito che a seguire.</span><span class="style88"><span class="style93"> </span></span> <span class="style86">
-				<span class="style94">È
-				</span></span><span class="style88"><span class="style93"> solare e 
-				materno,</span></span></span><span class="style92"><span class="style88"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>
-				<span style="mso-fareast-language:
-IT"><span class="style88"><span class="style93"> firmerà dolci melodie per allietare amici e 
-				familiari, inoltre rimane calmo in mezzo alla tempesta.</span></span></span><span style="mso-fareast-language: IT"><span class="style107">
-				</span></span><span class="style94">I</span><span style="mso-fareast-language:
-IT"><span class="style88"><span class="style93">ncarna forze di guarigione, ispira</span></span></span><span class="style92"><span class="style88"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>
-				<span style="mso-fareast-language:
-IT"><span class="style88"><span class="style93"> gioia, semplicità, 
-				profezia, combattività per giustizia, saggezza e benevolenza. 
-				Ha un alto senso di responsabilità e integrità morale.</span></span></span><span class="style92"><span class="style88"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>
-				<span style="mso-fareast-language:
-IT"><span class="style88"><span class="style93"> Cerca l&#39;equilibrio nella sua vita e di essere leader sul 
-				lavoro e nella comunità, ma di nascosto preferirebbe vivere 
-				viaggiando come</span></span></span><span class="style89"><BR>
- 
-				</span><span style="mso-fareast-language:
-IT"><span class="style88"><span class="style93"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-				uno zingaro. È auto motivato (sa come ottenere quello che 
-				vuole), e lavora meglio da solo.</span></span><o:p></o:p></span></p>
-				<p class="style103" style="mso-fareast-language: IT; width: 1172px;"><b style="mso-bidi-font-weight:normal">
-				<span style="mso-fareast-language:
-IT" class="style95"><img src="B.Cavallo.png" width="196" height="154">&nbsp; CAVALLO</span></b><span style="mso-fareast-language:IT"><o:p> </o:p>
-				</span><strong>8 Luglio - 4 
-				Agosto</strong><o:p></o:p></p>
-				<p class="style33" style="width: 1183px">
-				<span style="mso-fareast-language:
-IT"><span class="style86"><span class="style88"><span class="style93">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-				</span></span></span></span>
-				<span style="mso-fareast-language: IT">
-				<span class="style86"><span class="style94">Esuberante, espansivo e potente, il </span>
-				<b style="mso-bidi-font-weight: normal"><span class="style94">
-				Cavallo</span></b><span class="style94"> ti dà un immenso input 
-				nel fare soldi, è naturalmente competitivo, ed è giusto sia 
-				così.</span></span></span><br style="mso-special-character: line-break">
-				<span style="mso-fareast-language: IT"><span class="style86">
-				<span class="style94">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; È 
-				socievole, apertamente affascinante anche nel flirtare. Fa 
-				grandi apparizioni, e sa come porsi con stile e autorità. Ha 
-				molto talento</span></span></span><br style="mso-special-character: line-break">
-				<span style="mso-fareast-language: IT"><span class="style86">
-				<span class="style94">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e fiducia 
-				in particolare negli affari, ha un sesto senso quando si tratta 
-				di strategie e direzioni da prendere. È ottimo come leader, ma</span></span></span><br style="mso-special-character: line-break">
-				<span style="mso-fareast-language: IT"><span class="style86">
-				<span class="style94">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; altrettanto 
-				felice di essere l&#39;aiutante in un team. Ha molteplici 
-				manifestazioni sia nel suo aspetto luminoso, sia in quello 
-				tenebroso e</span></span></span><br style="mso-special-character: line-break">
-				<span style="mso-fareast-language: IT"><span class="style86">
-				<span class="style94">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-				sotterraneo. </span></span></span>
-				<span style="mso-fareast-language: IT" class="style89">Si fa 
-				notare e lascia sempre un buon segno. Grande lavoratore e 
-				amante, è sempre in movimento ma non annoia mai</span><span style="mso-fareast-language: IT"><span class="style86"><span class="style94">,</span></span></span><span class="style94"><br style="mso-special-character: line-break">
-				</span><span style="mso-fareast-language: IT">
-				<span class="style86"><span class="style94">&nbsp;</span></span></span><span class="style89">&nbsp;&nbsp;&nbsp;&nbsp; 
-				è simbolo di purezza, forza e resistenza; ama la libertà e il 
-				viaggio. Ha uno spirito profondo, ed è estremamente intelligente 
-				e leale.</span><span class="style86">&nbsp; </span><![if !supportLineBreakNewLine]>
-				<![endif]>
-				<span style="font-size: 5.0pt; mso-fareast-language: IT"><o:p></o:p>
-				</span></p>
-				<p class="style102" style="width: 1183px">
-				<strong><span class="style89">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<img src="B.Salmone.jpg" width="243" height="136">&nbsp;&nbsp;
-				</strong><b style="mso-bidi-font-weight:normal">
-				<span style="mso-fareast-language:
-IT" class="style95">SALMONE</span></b><span style="mso-fareast-language:IT"><o:p>&nbsp; </o:p>
-				</span><span class="style89"><strong>5 Agosto - 1 
-				Settembre</strong></span><o:p></o:p></p>
-				<p class="style98" style="width: 1178px">
-				<span style="mso-fareast-language:
-IT"><span class="style88"><span class="style93">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Il </span>
-				<b style="mso-bidi-font-weight:normal"><span class="style93">Salmone </span></b></span></span>
-				<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style94">
-				rappresenta il coraggio, lo spirito indomito, la fermezza nel 
-				raggiungere la meta, la costanza, la volontà umana tesa a</span><span class="style94"><br style="mso-special-character: line-break">
-&nbsp;&nbsp;&nbsp;&nbsp; </span>
-				<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style94">&nbsp;uscire 
-				dalle tenebre dell&#39;ignoranza e acquisire conoscenza e saggezza 
-				tramite lo sforzo, l&#39;impegno e la ricerca. </span>
-				<span style="mso-fareast-language:
-IT"><span class="style94">È </span></span>
-				<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style89">
-				molto saggio e ha</span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style94"><![if !supportLineBreakNewLine]><br style="mso-special-character: line-break">
-&nbsp;&nbsp;&nbsp;&nbsp; <![endif]></span>
-				<span style="mso-fareast-language:
-IT"><span class="style88"><span class="style93">&nbsp;</span></span></span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style89">una 
-				profonda conoscenza della vita e supera agevolmente le sfide,</span><span style="mso-fareast-language:
-IT"><span class="style88"><b style="mso-bidi-font-weight:normal"><span class="style93"> </span></b>
-				<span class="style93">è naturalmente 
-				intuitivo ma, non fa dei grandi affari. </span></span>
-				<span class="style94">Ha talento</span></span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style94"><![if !supportLineBreakNewLine]><br style="mso-special-character: line-break">
-&nbsp;&nbsp;&nbsp;&nbsp; <![endif]></span>
-				<span style="mso-fareast-language:
-IT"><span class="style94">&nbsp;artistico e ama il 
-				suo spazio e la solitudine. </span></span><span style="mso-fareast-language:
-IT"><span class="style88"><span class="style93">Ha</span></span></span><span style="mso-fareast-language:
-IT"><span class="style88"><span class="style93"> una vista unica 
-				del mondo che lo rende tra i migliori artisti, poeti e 
-				visionari.</span></span></span><span style="mso-fareast-language:
-IT"><span class="style88"><span class="style93"> </span></span><span class="style94">È 
-				un</span></span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style94"><br style="mso-special-character: line-break">
-&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-language:
-IT"><span class="style94">&nbsp;gran</span></span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style94"><![if !supportLineBreakNewLine]>de<![endif]></span><span style="mso-fareast-language: IT"><span class="style94"> sognatore sempre alla ricerca di stimoli ed ispirazione, va&nbsp;spesso controcorrente con il suo 
-				pensiero sovente incompreso. </span></span>
-				<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style94">
-				<br style="mso-special-character: line-break">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-language:
-IT"><span class="style88"><span class="style93">Il
-				</span>
-				<b style="mso-bidi-font-weight:normal"><span class="style93">Salmone</span></b><span class="style93"> bisogno 
-				di profondità, isolamento e di introspezione, perché 
-				quando torna su a prendere aria, il mondo è estasiato di</span></span></span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style94"><br style="mso-special-character: line-break">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-language:
-IT"><span class="style88"><span class="style93"> fronte alla sua genialità, intuizione e creatività. </span></span></span></p>
-				<p class="style102" style="width: 1169px">
-				<b style="mso-bidi-font-weight:normal">
-				<span style="mso-fareast-language:
-IT" class="style95">&nbsp;&nbsp;&nbsp;&nbsp;
-				</span></b><o:p><img src="B.Cigno.jpg" width="206" height="135"></o:p><b style="mso-bidi-font-weight:normal"><span style="mso-fareast-language:
-IT" class="style95">&nbsp; CIGNO</span></b><span style="mso-fareast-language:IT"><o:p>&nbsp; </o:p>
-				</span><span class="style89"><strong>2 Settembre 
-				- 29 Settembre</strong></span><o:p></o:p></p>
-				<p class="style33" style="width: 1180px">
-				<o:p></o:p>
-				<span style="mso-fareast-language:
-IT"><span class="style86"><span class="style88"><span class="style93">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-				Spiritualmente evoluto ed eloquente nell&#39;esprimersi, il
-				</span>
-				<b style="mso-bidi-font-weight:
-normal"><span class="style93">Cigno</span></b><span class="style93"> nuota in una&nbsp;classe a parte. Ha standard elevati, i gusti 
-				infinitamente</span></span></span></span><span class="style89"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-language:
-IT"><span class="style86"><span class="style88"><span class="style93"> &nbsp;discriminanti e un occhio acuto per la bellezza. 
-				</span></span></span></span><span class="style89">Maestoso ed 
-				elegante, con un occhio per il dettaglio e i piaceri della vita, 
-				è forse il<BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; più nobile tra i segni. Sembra distaccato ma è 
-				solamente molto selettivo, cerca sempre il meglio per sé.</span><o:p></o:p><span style="mso-fareast-language:
-IT"><span class="style86"><span class="style88"><span class="style93"> Molto raffinato e nobile, a</span></span></span></span><span class="style89"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-language:
-IT"><span class="style86"><span class="style88"><span class="style93"> &nbsp;volte il
-				</span>
-				<b style="mso-bidi-font-weight:normal"><span class="style93">Cigno</span></b></span></span>
-				<span class="style89">sa essere anche un amante che può 
-				rivelarsi molto passionale nelle relazioni. La freddezza deriva 
-				dalla comprensione</span></span><span class="style89"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-language:
-IT"><span class="style89">&nbsp;della sua compostezza, poiché è un 
-				aristocratico naturale.</span><span class="style86"><span class="style88"><span class="style93">
-				</span></span></span></span><span style="mso-fareast-language:IT" class="style89">È 
-				il simbolo di saggezza, fedeltà e innocenza, 
-				purezza, forza e coraggio,</span><span class="style89"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span>
-				<span style="mso-fareast-language:IT" class="style89">&nbsp;amicizia 
-				e longevità. Il<strong> Cigno</strong> dona la capacità di 
-				interpretare i sogni e rappresenta l&#39;evoluzione spirituale.<o:p></o:p></span><o:p></o:p></p>
-				<p class="style103" style="mso-fareast-language: IT; width: 1180px;">
-				<b style="mso-bidi-font-weight:normal">
-				<span style="mso-fareast-language:
-IT" class="style95">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
-				<img src="B.Farfalla.jpg" width="207" height="132">&nbsp; FARFALLA</span></b><span style="mso-fareast-language:IT"><o:p>&nbsp; </o:p>
-				</span><span class="style89"><strong>30 Settembre 
-				- 27 Ottobre</strong></span><o:p></o:p></p>
-				<p class="style33" style="width: 1179px">
-				<span style="mso-fareast-language:
-IT"><span class="style86"><span class="style88"><span class="style93">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-				La </span> <b style="mso-bidi-font-weight:normal">
-				<span class="style93">Farfalla</span></b><span class="style93"> 
-				porta un senso di meraviglia e di giovinezza nel nostro mondo. </span></span></span></span><span style="mso-fareast-language:IT" class="style89">
-				È</span><span style="mso-fareast-language:
-IT"><span class="style86"><span class="style88"><span class="style93"> 
-				di animo 
-				gentile che non può essere legata per molto</span></span></span></span><span class="style89"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-language:
-IT"><span class="style86"><span class="style88"><span class="style93"> 
-				&nbsp;tempo, se si 
-				sente con le ali tarpate. Ama sognare, esprimere nuove idee 
-				e parlare di progetti con i suoi amici, è molto creativa, ma</span></span></span></span><span class="style89"><BR>
- 
-				</span><span style="mso-fareast-language:
-IT"><span class="style86"><span class="style93"> 
-				<span class="style88">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nonostante la 
-				sua aria leggera, è molto sensibile e amica 
-				fedele, fintanto che non viene amaramente delusa, tradita e 
-				usata.</span></span> <span class="style94">G</span></span></span><span class="style89">entile<BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ma libera, alla <strong>Farfalla</strong> piace 
-				cambiare ambiente e tende a non avere duraturi legami 
-				sentimentali.</span><o:p><span class="style94"> </span></o:p>
-				<span style="mso-fareast-language:
-IT"><span class="style86"><span class="style88"><span class="style93"> 
-				Osserva tutto e fa finta d&#39;essere</span></span></span></span><span class="style89"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-language:
-IT"><span class="style86"><span class="style88"><span class="style93"> 
-				&nbsp;all&#39;oscuro di 
-				molte cose, illumina i giorni bui con la sua allegria e 
-				personalità luminosa. </span></span></span></span><span style="mso-fareast-language:IT" class="style89">
-				È</span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style89"> 
-				molto socievole, carismatica, affascinante<br style="mso-special-character: line-break">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ed ottimista; grande sognatrice, ama vivere nuove 
-				esperienze.</span><![if !supportLineBreakNewLine]><![endif]><span style="mso-fareast-language:
-IT"><span class="style86"><span class="style88"><span class="style93"> 
-				Naturalmente empatica, non fa mai male 
-				a</span></span></span></span><span style="mso-fareast-language:
-IT"><span class="style86"><span class="style88"><span class="style93">&nbsp;nessuno 
-				di proposito, ma</span></span></span></span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style89"><br style="mso-special-character: line-break">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-language:
-IT"><span class="style86"><span class="style88"><span class="style93"> 
-				anzi cerca di rendere gli amici 
-				più leggeri, e piace confortare e vedere gli altri 
-				sollevati.&nbsp; </span></span></span></span></p>
-				<p class="style102" style="width: 1179px">
-				<span style="mso-fareast-language:
-IT"><span class="style86"><span class="style88"><span class="style93"> 
-				&nbsp;&nbsp;</span></span></span></span><b style="mso-bidi-font-weight:
-normal"><span style="mso-fareast-language:IT" class="style95"><img src="B.Lupo.jpg" width="192" height="163">&nbsp;&nbsp; LUPO</span></b><span style="mso-fareast-language:IT"><o:p> </o:p>
-				<span class="style92"><span class="style88">&nbsp;<strong>28 Ottobre 
-				</strong></span> </span>
-				<span class="style88">
-				<span style="mso-spacerun:yes" class="style92"><strong>&nbsp;</strong></span><span class="style92"><strong>- 
-				24 Novembre</strong></span></span><o:p></o:p></span></p>
-				<p class="style33" style="width: 1179px">
-				<span style="mso-bidi-font-size:
-12.0pt;mso-fareast-language:IT" class="style89">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-				Nella cultura Celtica è un simbolo di benessere, cura, lealtà, 
-				capacità di amare e proteggere i propri cari. È una guida per 
-				coloro che</span><span class="style89"><BR>
- 
-&nbsp;&nbsp;&nbsp; </span>
-				<span style="mso-bidi-font-size:
-12.0pt;mso-fareast-language:IT" class="style89">&nbsp; s&#39;avventurano nei mondi 
-				spirituali, un animale di potere che viene in aiuto di chi ne ha 
-				bisogno. </span><span class="style89">Il <strong>Lupo</strong> 
-				ha un carattere forte e non<BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; s&#39;arrende mai, trovando l&#39;energia anche nei 
-				momenti più bui della sua vita, non scende mai a compromessi.
-				</span><span style="mso-fareast-language:
-IT"><span class="style86"><span class="style88"><span class="style93"> Ha 
-				un forte</span></span></span></span><span style="mso-fareast-language:
-IT"><span class="style86"><span class="style88"><span class="style93"> senso degli</span></span></span></span><span class="style89"><BR>
- 
-&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-language:
-IT"><span class="style86"><span class="style88"><span class="style93"> &nbsp; obiettivi, e fa di tutto per raggiungerli. 
-				</span></span></span><span class="style89">Ha un carattere impeccabile con una forte volontà, 
-				onore è il loro secondo nome, a volte vive</span></span><span class="style89"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-language:
-IT"><span class="style89">&nbsp;da lupo 
-				solitario. </span><span class="style86"><span class="style88">
-				<span class="style93"> Impavido e coraggioso, di rado</span></span></span><span style="mso-spacerun:yes" class="style89">
-				</span><span class="style89">scende a compromessi. Dove trova 
-				l&#39;energia e i mezzi per andare avanti? Prospera</span></span><span class="style89"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-language:
-IT"><span class="style89">&nbsp;nella sfida, questo è quello che dà la capacità 
-				di resistenza. Sarà un grande alleato fino a quando condividi la 
-				sua causa, </span></span><span class="style89">è leale ed<BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; un ottimo mediatore; può dedicarsi 
-				all&#39;insegnamento o alla professione medica.</span></p>
-				<p class="style103" style="mso-fareast-language: IT; width: 1161px;"><b style="mso-bidi-font-weight:normal">
-				<span style="mso-fareast-language:
-IT" class="style95"><img src="A.4.Falco.jpg" width="174" height="174">&nbsp;&nbsp; FALCO</span></b><span style="mso-fareast-language:IT"><o:p>&nbsp; </o:p>
-				</span><strong>25 Novembre 
-				- 23 Dicembre</strong><o:p></o:p></p>
-				<p class="style96" style="width: 1180px;">
-				<span style="mso-fareast-language:
-IT"><span class="style86"><span class="style93">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span>
-				<span class="style92">È saggio e da maestro condivide tutta la 
-				sua sapienza, ma senza essere arrogante né insolente, il <strong>
-				Falco</strong> è molto generoso e sembra</span><span class="style89"><BR>
- 
-&nbsp;&nbsp;&nbsp; </span><span class="style92">&nbsp; avere un innato senso di 
-				giustizia e onestà. </span><o:p></o:p>
-				<span style="mso-fareast-language:
-IT"><span class="style86"><span class="style93">Quando questo segno vede qualcosa che vuole, ha una forza che è 
-				notevole, se, invece</span></span></span><span class="style89"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-language:
-IT"><span class="style86"><span class="style93">&nbsp;non è interessato, volerà via verso altre 
-				prospettive più allettanti. </span></span></span>
-				<span class="style92">È </span>
-				<span style="mso-fareast-language:
-IT"><span class="style86"><span class="style93">di mentalità aperta e 
-				filosofica. Può essere molto filantropico e</span></span></span><span class="style89"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-language:
-IT"><span class="style86"><span class="style93">&nbsp;prodigo, 
-				ha un acuto senso dell&#39;equilibrio. Sebbene s&#39;intrattenga in ogni 
-				sorta di ipotesi, è presuntuoso, non significa però che non</span></span></span><span class="style89"><BR>
- 
-&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-language:
-IT"><span class="style86"><span class="style93">&nbsp;possa essere persuaso.</span></span></span><span style="font-size: 12.0pt; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">
-				</span>
-				<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style89">
-				È sempre vigile per cogliere i cambiamenti e l&#39;insieme delle 
-				cose, e può raggiungere la vetta e il successo.</span><span class="style89"><BR>
- 
-				</span>
-				<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style89">&nbsp;<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; 
-				S</span>imboleggia un leader nato, forte, resistente; può 
-				eccellere come militare o come atleta.</span><span style="font-size: 12.0pt; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><![if !supportLineBreakNewLine]><br style="mso-special-character: line-break">
-				<![endif]></span>
-				<o:p></o:p></p>
-				<p class="style106" style="width: 1177px;">
-				<o:p><img src="ColorLinea.gif" width="588" height="10"></o:p></p>
-				<p class="style106" style="width: 1177px;">
-				<img src="LauraAB2016..jpg" width="148" height="238">&nbsp;&nbsp;<span class="style92"><strong>Laura 
-				è</strong></span>
-				<img src="A.gatto...gif" width="211" height="140"></p>
-				<p class="style103" style="width: 1177px;">
-				<strong>Tel. 0125 631175 ---- Cell. 347 0417409</strong></p>
-				<p class="style103" style="width: 1177px;">
-				<o:p><strong>E-mail: laura371@libero.it&nbsp; ---- 
-				studio.acquario@libero.it </strong> </o:p>
-				</p>
-				<p class="style106" style="width: 1177px;">
-				<o:p><strong><span class="style92">Visitatore 
-				n° </span></strong> </o:p>
-<span class="style74">  
-<span class="style57"><strong> <!--webbot bot="HTMLMarkup" startspan --><a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1510069824-34w6algx" border=0></a>
- 
-<!--webbot bot="HTMLMarkup" endspan i-checksum="19139" --></strong></span></span><span class="style81">&nbsp;&nbsp;&nbsp; </span>
-				<o:p>&nbsp;&nbsp;</o:p></p>
-				<o:p><img src="ColorLinea.gif" width="588" height="10"><br>
-				<br>
-				</o:p>
-				</TD></TR></TABLE></CENTER>
-</TD></TR></TABLE></CENTER>
-</TD></TR></TABLE></CENTER>
-</TD></TR></TABLE></CENTER>
+<BODY BGCOLOR="#B0CFFB" LINK="#1167DB"  ALINK="#1167DB"  VLINK="#1167DB">
+<p class="sLogoBanner">Studio di Astrologia "Acquario"</span></p>
+
+<TABLE BACKGROUND="Wnature9bk2.jpg" CELLSPACING="0" CELLPADDING="15" BORDERCOLOR="#CADFFF" BORDERCOLORDARK="#3E82E8" width="90%" class="sBorder1s" align="center">
+<TR><TD>
+	<div align="center">
+		<h1>OROSCOPO ANIMALI CELTICI</h1>
+		<img src="A.CeltiCerchio.png" width="339" height="311"><br><br>
+		<img src="ColorLinea.gif"     width="588" height="10"><br><br>
+	</div>
+	
+<TABLE BACKGROUND="Wnature9bk4.jpg" CELLSPACING="10" CELLPADDING="5" width="100%" BORDER="0">
+  <TR>
+	<TD width="20%" align="center"><img src="B.cervo1.jpg" width="208" height="156"></td>
+	<TD>
+		<h2>CERVO<br>24 Dicembre - 20 Gennaio</h2>
+		<p class="sNavy sSmall sJustify sPadding">
+			Il <strong>Cervo</strong> Celtico ha alti ideali e aspirazioni, è coraggioso, orgoglioso, intelligente, veloce di mente e di azione; ama 
+			prendersi cura degli altri. È profondo, paziente e la sua persistenza e determinazione assicura il trionfo, quando gli altri hanno da tempo 
+			rinunciato il <strong>Cervo</strong> prosegue. È altero e giustamente ha modi regali. Sa dare splendidi consigli agli altri, ma per quanto 
+			concerne se stesso, è spesso superficiale. È per natura nobile, questo non vuol dire che sia arrogante o presuntuoso, niente di più falso, 
+			crede nel duro lavoro e l&#39;integrità è il suo marchio di fabbrica.
+		</p>
+	</td>
+  </tr>
+  <TR>
+	<td align="center"><img src="B.Gatto.jpg" width="208" height="118"></td>
+	<TD>
+		<h2>GATTO<br>21 Gennaio - 17 Febbraio</h2>
+		<p class="sNavy sSmall sJustify sPadding">
+			Mentalità rapida e ancor più veloce l&#39;ingegno, il <strong>Gatto</strong> Celtico fa un balzo nel regno dell&#39;intelletto, ha una 
+			capacità di ragionamento impeccabile, e un talento per vedere la parte oscura delle cose, un sesto senso mentale. Il <strong>Gatto</strong>
+			ha una visione diversa e dovrebbe essere chiamato quando è necessario a nuove prospettive fresche in un progetto, ha anche qualità umanitarie
+			che lo rende amabile. Spesso schivo, perché gli piace stare ai margini, sempre osservando, ma possiede le migliori intenzioni nel cuore. 
+			È potente, ha un a vista eccellente, è un ottimo custode di segreti, è saggio ed è il simbolo di crescita spirituale. 
+			Il <strong>Gatto</strong> è anche molto creativo, e ha bisogno di uno sbocco artistico per esprimersi.
+		</p>
+	</td>
+  </tr>
+  <TR>
+	<td align="center"><img src="B.Serpente.jpg" width="184" height="140"></td>
+	<TD>
+		<h2>SERPENTE<br>18 Febbraio - 17 Marzo</h2>
+		<p class="sNavy sSmall sJustify sPadding">
+			Il <strong>Serpente</strong> ha un design bellissimo, è infinitamente vivace, curioso e sempre colmo di domande su come funziona il mondo e 
+			come le persone intorno a lui agiscono. Il <strong>Serpente</strong> è un comunicatore naturale, e può essere veramente convincente. Se è
+			appassionato ad una causa, coinvolge molte persone con il suo entusiasmo. È spontaneo ma anche imprevedibile, anche se è abbastanza flessibile,
+			a lui piace che le cose vadano come desidera (chi non lo fa?), e si rivelerà poco collaborativo se messo da parte. 
+			È il <em>Portatore di Vita</em>, l&#39;essere che meglio incarna e rappresenta la forza vitale che scorre sinuosa sotto e sopra la superficie.
+			È associato a tutte le qualità mistiche dell’acqua, è dotato di pazienza, e intraprendenza; il suo ambiente ideale è la casa e la famiglia. 
+			È simbolo di crescita e di rigenerazione; molto amichevole ed attraente, conosce il potere della seduzione.
+		</p>
+	</td>
+  </tr>
+  <TR>
+	<td align="center"><img src="AH.4Volpe.jpg" width="191" height="131"></td>
+	<TD>
+		<h2>VOLPE<br>18 Marzo - 14 Aprile</h2>
+		<p class="sNavy sSmall sJustify sPadding">
+			La <strong>Volpe</strong> è incredibilmente furba, lo sappiamo bene, sa come muoversi con sornione e sensuale umorismo. Energica e coraggiosa,
+			saggia, astuta e scaltra negli affari, è una grande seduttrice, molto ricercata in compagnia ed amante dell&#39;avventura. 
+			La <strong>Volpe</strong> sa come divertirsi ma è anche leale, spesso e volentieri indomabile, ma è un amico/a fidato. Forza e intelligenza 
+			brillanti rendono la <strong>Volpe</strong> indomita. Ha talento per la narrazione, ogni esperienza è foraggio per i suoi racconti e ha un 
+			cuore tenero anche se non lo mostra, perché troppo occupata a intrattenere, e a giocare. Non è timida nel mostrare la sua lealtà. 
+			Se hai un amico/a della <strong>Volpe</strong>, l&#39;avrai per tutta la vita.
+		</p>
+	</td>
+  </tr>
+  <TR>
+	<td align="center"><img src="B.Toro.jpg" width="202" height="156"></td>
+	<TD>
+		<h2>TORO<br>15 Aprile - 12 Maggio</h2>
+		<p class="sNavy sSmall sJustify sPadding">
+			Forte, amorevole, stabile e sicuro sono le parole d&#39;ordine del <strong>Toro</strong> Celtico. È onesto e testardo, ma pronto ad aiutare
+			tutti, riesce a smascherare qualsiasi persona con un cattivo intento, essendo un animale forte e saggio. Un esempio e una guida per gli altri,
+			non si tira mai indietro davanti alle sfide, a costo di farsi del male. Ha un&#39;intuizione innata e può individuare un bugiardo a chilometri
+			di distanza. Essendo appunto molto intuitivo, è spesso frainteso e catalogato come lunatico o troppo emotivo. Il <strong>Toro</strong> è 
+			inoltre dotato di grande onestà ma anche di grande ostinazione. Ha buon gusto, ed è attratto dall&#39;eleganza nella moda e 
+			nell&#39;arredamento. È molto affidabile e sa come mantenere un segreto.
+		</p>
+	</td>
+  </tr>
+  <TR>
+	<td align="center"><img src="B.CavallucioMarino.jpg" width="161" height="180"></td>
+	<TD>
+		<h2>CAVALLUCCIO MARINO<br>13 Maggio - 9 Giugno</h2>
+		<p class="sNavy sSmall sJustify sPadding">
+			Il <strong>Cavalluccio Marino</strong> è enormemente flessibile e pieno di risorse, è la persona che ama gestire le finanze o manipolare
+			questioni legali perché infinitamente intelligente (se c&#39;è una scappatoia la trovano o la inventano). Questa creatura quasi mitica già 
+			di suo ha una presenza piacevole, è molto intelligente ma spesso lunatico e difficile da seguire, ma una volta entrati nel suo cuore è 
+			difficile trovarsi da soli e in difficoltà. Ha anche una sorprendente memoria, è a volte, difficile da seguire perché ha una mente parecchio
+			acuta. Può anche cambiare umore improvvisamente, ma mantiene sempre un alto carisma. È incredibilmente versatile e si adatta molto bene in
+			qualsiasi ambiente. Il <strong>Cavalluccio Marino</strong> è davvero molto piacevole, ama essere adorato, e ricambia facilmente 
+			l&#39;affetto che riceve. È dotato di pazienza, flessibilità ed intraprendenza; il suo ambiente ideale è la casa e la famiglia.
+		</p>
+	</td>
+  </tr>
+  <TR>
+	<td align="center"><img src="B.Scricciolo.png" width="193" height="132"></td>
+	<TD>
+		<h2>SCRICCIOLO<br>10 Giugno - 7 Luglio</h2>
+		<p class="sNavy sSmall sJustify sPadding">
+			Lo <strong>Scricciolo</strong> rappresenta la freschezza e la versatilità, è affiatato con i suoi simili, un viaggiatore ma sempre alla ricerca 
+			di pace e di equilibrio, con un forte senso di protezione verso i suoi amici, si adatta sia ad essere seguito che a seguire. È solare e materno,
+			firmerà dolci melodie per allietare amici e familiari, inoltre rimane calmo in mezzo alla tempesta. Incarna forze di guarigione, ispira gioia,
+			semplicità, profezia, combattività per giustizia, saggezza e benevolenza. Ha un alto senso di responsabilità e integrità morale. 
+			Cerca l&#39;equilibrio nella sua vita e di essere leader sul lavoro e nella comunità, ma di nascosto preferirebbe vivere viaggiando come uno 
+			zingaro. È auto motivato (sa come ottenere quello che vuole), e lavora meglio da solo.
+		</p>
+	</td>
+  </tr>
+  <TR>
+	<td align="center"><img src="B.Cavallo.png" width="196" height="154"></td>
+	<TD>
+		<h2>CAVALLO<br>8 Luglio - 4 Agosto</h2>
+		<p class="sNavy sSmall sJustify sPadding">
+			Esuberante, espansivo e potente, il <strong>Cavallo</strong> ti dà un immenso input nel fare soldi, è naturalmente competitivo, ed è giusto 
+			sia così. È socievole, apertamente affascinante anche nel flirtare. Fa grandi apparizioni, e sa come porsi con stile e autorità. Ha molto 
+			talento e fiducia in particolare negli affari, ha un sesto senso quando si tratta di strategie e direzioni da prendere. È ottimo come leader, 
+			ma altrettanto felice di essere l&#39;aiutante in un team. Ha molteplici manifestazioni sia nel suo aspetto luminoso, sia in quello tenebroso 
+			e sotterraneo. Si fa notare e lascia sempre un buon segno. Grande lavoratore e amante, è sempre in movimento ma non annoia mai, è simbolo di 
+			purezza, forza e resistenza; ama la libertà e il viaggio. Ha uno spirito profondo, ed è estremamente intelligente e leale.
+		</p>
+	</td>
+  </tr>
+  <TR>
+	<td align="center"><img src="B.Salmone.jpg" width="243" height="136"></td>
+	<TD>
+		<h2>SALMONE<br>5 Agosto - 1 Settembre</h2>
+		<p class="sNavy sSmall sJustify sPadding">
+			Il <strong>Salmone</strong> rappresenta il coraggio, lo spirito indomito, la fermezza nel raggiungere la meta, la costanza, la volontà umana 
+			tesa a uscire dalle tenebre dell&#39;ignoranza e acquisire conoscenza e saggezza tramite lo sforzo, l&#39;impegno e la ricerca. È molto saggio
+			ed ha una profonda conoscenza della vita e supera agevolmente le sfide, è naturalmente intuitivo ma, non fa dei grandi affari. Ha talento
+			artistico e ama il suo spazio e la solitudine. Ha una vista unica del mondo che lo rende tra i migliori artisti, poeti e visionari. È un gran 
+			sognatore sempre alla ricerca di stimoli ed ispirazione, va spesso controcorrente con il suo pensiero sovente incompreso. 
+			Il <strong>Salmone</strong> ha bisogno di profondità, isolamento e di introspezione, perché quando torna su a prendere aria, il mondo è 
+			estasiato di fronte alla sua genialità, intuizione e creatività.
+		</p>
+	</td>
+  </tr>
+  <TR>
+	<td align="center"><img src="B.Cigno.jpg" width="206" height="135"></td>
+	<TD>
+		<h2>CIGNO<br>2 Settembre - 29 Settembre</h2>
+		<p class="sNavy sSmall sJustify sPadding">
+			Spiritualmente evoluto ed eloquente nell&#39;esprimersi, il <strong>Cigno</strong> nuota in una classe a parte. Ha standard elevati, i gusti
+			infinitamente discriminanti e un occhio acuto per la bellezza. Maestoso ed elegante, con un occhio per il dettaglio e i piaceri della vita, 
+			è forse il più nobile tra i segni. Sembra distaccato ma è solamente molto selettivo, cerca sempre il meglio per sé. Molto raffinato e nobile,
+			a volte il <strong>Cigno</strong> sa essere anche un amante che può rivelarsi molto passionale nelle relazioni. La freddezza deriva dalla 
+			comprensione della sua compostezza, poiché è un aristocratico naturale. È il simbolo di saggezza, fedeltà e innocenza, purezza, forza e 
+			coraggio, amicizia e longevità. Il <strong>Cigno</strong> dona la capacità di interpretare i sogni e rappresenta l&#39;evoluzione spirituale.
+		</p>
+	</td>
+  </tr>
+  <TR>
+	<td align="center"><img src="B.Farfalla.jpg" width="207" height="132"></td>
+	<TD>
+		<h2>FARFALLA<br>30 Settembre - 27 Ottobre</h2>
+		<p class="sNavy sSmall sJustify sPadding">
+			La <strong>Farfalla</strong> porta un senso di meraviglia e di giovinezza nel nostro mondo. È di animo gentile che non può essere legata per
+			molto tempo, se si sente con le ali tarpate. Ama sognare, esprimere nuove idee e parlare di progetti con i suoi amici, è molto creativa, 
+			ma nonostante la sua aria leggera, è molto sensibile e amica fedele, fintanto che non viene amaramente delusa, tradita e usata. Gentile ma 
+			libera, alla <strong>Farfalla</strong> piace cambiare ambiente e tende a non avere duraturi legami sentimentali. Osserva tutto e fa finta 
+			d&#39;essere all&#39;oscuro di molte cose, illumina i giorni bui con la sua allegria e personalità luminosa. È molto socievole, carismatica, 
+			affascinante ed ottimista; grande sognatrice, ama vivere nuove esperienze. Naturalmente empatica, non fa mai male a nessuno di proposito, 
+			ma anzi cerca di rendere gli amici più leggeri, e piace confortare e vedere gli altri sollevati.
+		</p>
+	</td>
+  </tr>
+  <TR>
+	<td align="center"><img src="B.Lupo.jpg" width="192" height="163"></td>
+	<TD>
+		<h2>LUPO<br>28 Ottobre - 24 Novembre</h2>
+		<p class="sNavy sSmall sJustify sPadding">
+			Nella cultura Celtica è un simbolo di benessere, cura, lealtà, capacità di amare e proteggere i propri cari. È una guida per coloro che 
+			s&#39;avventurano nei mondi spirituali, un animale di potere che viene in aiuto di chi ne ha bisogno. Il <strong>Lupo</strong> ha un carattere 
+			forte e non s&#39;arrende mai, trovando l&#39;energia anche nei momenti più bui della sua vita, non scende mai a compromessi. Ha un forte senso 
+			degli obiettivi, e fa di tutto per raggiungerli. Ha un carattere impeccabile con una forte volontà, onore è il loro secondo nome, a volte vive
+			da <em>lupo solitario</em>. Impavido e coraggioso, di rado scende a compromessi. Dove trova l&#39;energia e i mezzi per andare avanti? 
+			Prospera nella sfida, questo è quello che dà la capacità di resistenza. Sarà un grande alleato fino a quando condividi la sua causa, è leale
+			ed un ottimo mediatore; può dedicarsi all&#39;insegnamento o alla professione medica.
+		</p>
+	</td>
+  </tr>
+  <TR>
+	<td align="center"><img src="A.4.Falco.jpg" width="174" height="174"></td>
+	<TD>
+		<h2>FALCO<br>25 Novembre - 23 Dicembre</h2>
+		<p class="sNavy sSmall sJustify sPadding">
+			È saggio e da maestro condivide tutta la sua sapienza, ma senza essere arrogante né insolente, il <strong>Falco</strong> è molto generoso e 
+			sembra avere un innato senso di giustizia e onestà. Quando questo segno vede qualcosa che vuole, ha una forza che è notevole, se, invece non 
+			è interessato, volerà via verso altre prospettive più allettanti. È di mentalità aperta e filosofica. Può essere molto filantropico e prodigo,
+			ha un acuto senso dell&#39;equilibrio. Sebbene s&#39;intrattenga in ogni sorta di ipotesi, è presuntuoso, non significa però che non possa 
+			essere persuaso. È sempre vigile per cogliere i cambiamenti e l&#39;insieme delle cose, e può raggiungere la vetta e il successo. 
+			Simboleggia un leader nato, forte, resistente; può eccellere come militare o come atleta.
+		</p>
+	</TD>
+</TR></TABLE>
+
+	<p class="sSmall sWhite sCenter">
+		<img src="ColorLinea.gif" width="588" height="10"><br><br>
+		<img src="LauraAB2016..jpg" width="148" height="238">&nbsp;&nbsp;<strong>Laura è</strong>&nbsp;
+		<img src="A.gatto...gif" width="211" height="140"><br><br>
+		
+		<img src="email-box.gif"    width="35" height="35">
+		<strong>Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sTxtDecNo sBold sAqua">studio.acquario@libero.it</a><br><br>
+		<img src="TelefonoC164.gif"  width="35" height="35">
+		&nbsp;Oppure Telefona: 0125 631175 - Cell. 347 0417409<br><br>
+		
+		Sei il visitatore n°</strong>&nbsp;
+		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1510069824-34w6algx" border=0></a>
+		&nbsp;(Contenuto Aggiornato 05/07/2019)</br></br> 
+		<img src="ColorLinea.gif" width="588" height="10">
+	</p>
+
+</TD></TR></TABLE>
+<p class="sCenter sXXSmall sWhite">
+	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati. 
+	Senza il consenso dell&#39;autrice, è vietata ogni riproduzione parziale o totale dei contenuti.</span>
+</p>
 </BODY>
 </HTML>
- 
- 
-
