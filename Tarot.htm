@@ -1,3495 +1,649 @@
 <!DOCTYPE html>
-<HTML>
+<html lang="it">
 <head>
-
-<title>Tarocchi</title>
-<link rel="icon" type="image/gif" href="https://www.studioacquario.it/favicon32.gif">
-<META name="description" content="Studio Acquario - Tarocchi">
-<meta name="keywords" content="astrologia">
-<meta name="author" content="Laura Lencia">
-<meta http-equiv="imagetoolbar" CONTENT="no">
 <meta charset="UTF-8">
+<title>Tarocchi</title>
+<link rel="icon" type="image/gif" href="favicon32.gif">
+<meta name="description" content="Studio Acquario: Tarocchi">
+<meta name="keywords" lang="it" content="astrologia, divinazione, tarocchi, astrologici">
+<meta name="author" content="Laura Lencia, studio.acquario@libero.it">
+<meta name="owner" content="Laura Lencia">
+<meta name="language" content="it">
+<meta http-equiv="imagetoolbar" CONTENT="no">
+<meta name="content_updated" content="18/12/2017">
+<meta name="revised" content="16/07/2020">
 
 <style type="text/css">
 body {
-scrollbar-arrow-color: #35260E;
-scrollbar-base-color: #E4D7B9;
-scrollbar-dark-shadow-color: #E4D7B9;
-scrollbar-track-color: #E4D7B9;
+	scrollbar-arrow-color: #35260E;
+	scrollbar-base-color: #E4D7B9;
+	scrollbar-dark-shadow-color: #E4D7B9;
+	scrollbar-track-color: #E4D7B9;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #35260E; /* Black Magic */
+	background-image: url("TAfondexter.gif");
 }
-</style>
-<style type="text/css">
-A {COLOR:#665C30; TEXT-DECORATION:none}
- A:hover { COLOR:#594B0D; TEXT-DECORATION:none; border-bottom-style:dotted; 
-border-bottom-width:1 px;
-border-top-style:dotted; 
-border-top-width:1 px;
-background:"#E4D7B9";
+A {
+	COLOR:#665C30;
+	TEXT-DECORATION:none;
 }
-.style1 {
-				border-style: solid;
+A:hover {
+	COLOR:#594B0D;
+	TEXT-DECORATION:none;
+	border-bottom-style:dotted;
+	border-bottom-width:1 px;
+	border-top-style:dotted;
+	border-top-width:1 px;
+	background:"#E4D7B9";
+}
+.sLogoBanner {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	text-shadow: 1px 1px 5px #0000FF; /* Blue */
+	text-align: center;
+}
+.sBorder1 {
 				border-width: 1px;
 }
-.style2 {
-				text-align: left;
+.sBorder1s {
+				border-width: 1px;
+				border-style: solid;
 }
-.style24 {
-				font-family: Verdana;
-				font-weight: bold;
-				font-size: xx-large;
-				color: #5F3030;
+.sBorder2sTP {
+				border: 2px solid #800040;
 }
-.style63 {
-				font-family: Verdana;
-				color: #5F3030;
-				font-size: medium;
+.sBorder2sRR {
+				border: 2px solid #804040;
 }
-.style21 {
-				font-family: Verdana;
-				font-size: small;
+.sBGLinen {
+				background-color: #FFF0E1;
 }
-.style25 {
-				font-family: Verdana;
-				font-size: x-small;
-}
-.style20 {
-				font-family: Verdana;
-}
-.style66 {
-				color: #5F3030;
-				font-size: small;
-}
-.style26 {
-				color: #804040;
-				font-size: small;
-}
-.style67 {
-				font-family: Verdana;
-				font-size: x-small;
-				color: #5F3030;
-}
-.style5 {
-	border: 2px solid #804040;
+.sBGWhite {
 				background-color: #FFFFFF;
 }
-.style27 {
-				border: 2px solid #804040;
-				background-color: #FFF0E1;
-}
-.style8 {
-	font-size: x-small;
-}
-.style28 {
+.sBlack {
 				color: #000000;
-				font-family: Verdana;
-				font-size: x-small;
 }
-.style50 {
-				font-family: Verdana;
-				font-size: xx-small;
+.sBlue {
+				color: #0000FF;
 }
-.style47 {
-				text-decoration: underline;
+.sGreen {
+				color: #008000;
 }
-.style57 {
-				font-family: Verdana;
-				font-size: x-small;
-				text-decoration: underline;
-}
-.style54 {
-				font-size: xx-small;
-}
-.style32 {
-				color: #000000;
-				font-size: x-small;
-}
-.style58 {
-				color: #000000;
-				font-size: xx-small;
-}
-.style7 {
-	color: #000000;
-}
-.style31 {
-				border: 2px solid #804040;
-}
-.style55 {
-				font-family: Verdana;
-				font-size: x-small;
-				color: #800040;
-}
-.style56 {
-				color: #800040;
-}
-.style9 {
-				font-family: Verdana;
-				color: #804040;
-}
-.style65 {
+.sPersianPlum {
 				color: #5F3030;
 }
-.style22 {
+.sMaroon {
+				color: #800000;
+}
+.sTyrianPurple {
+				color: #800040;
+}
+.sRedRobin {
+				color: #804040;
+}
+.sRed {
 				color: #FF0000;
 }
-.style52 {
-				font-size: medium;
+.sWhite {
+				color: #FFFFFF;
 }
-.style23 {
-				border: 2px solid #800040;
-				background-color: #FFF0E1;
+.sPadding10 {
+				padding-left: 10px;
+				padding-right: 10px;
 }
-.style11 {
-				border: 2px solid #804040;
+.sPadding20 {
+				padding-left: 20px;
+				padding-right: 20px;
+}
+.sJustify {
+				text-align: justify;
+}
+.sLeft {
 				text-align: left;
-								background-color: #FFF0E1;
 }
-.style10 {
-				font-size: small;
-}
-.style29 {
-				color: #800040;
-				font-size: x-small;
-}
-.style49 {
-				font-family: "Arial Rounded MT Bold";
-				color: #804040;
-}
-.style34 {
-				font-family: Verdana;
-				font-size: small;
-				color: #804040;
+.sCenter {
 				text-align: center;
 }
-.style53 {
-				color: #FF0000;
+.sUnderline {
+				text-decoration: underline;
+}
+.sBold {
+				font-weight: bold;
+}
+.sVerdana {
+				font-family: Verdana;
+}
+.sXXSmall {
+				font-size: xx-small;
+}
+.sXSmall {
+				font-size: x-small;
+}
+.sSmall {
+				font-size: small;
+}
+.sMedium {
 				font-size: medium;
 }
-.style46 {
-				font-family: Verdana;
-				font-weight: bold;
-				font-size: x-small;
+.sLarge {
+				font-size: large;
 }
-.style61 {
-				font-family: Verdana;
-				font-size: small;
-				color: #5F3030;
+.sXLarge {
+				font-size: x-large;
 }
-.style64 {
-				font-family: Verdana;
-				font-size: x-small;
-				color: #5F3030;
+.sXXLarge {
+				font-size: xx-large;
 }
-.style69 {
-				border: 2px solid #804040;
-				background-color: #FFF0E1;
-				text-align: center;
-}
-.style70 {
-				text-align: center;
-}
-.style71 {
-				color: #FF0000;
-				font-size: small;
-}
-.style115 {
-				font-family: Verdana;
-}
-.style116 {
-				border-width: 1px;
+.sLarger {
+				font-size: larger;
 }
 </style>
-
 </head>
 
-<body background="TAfondexter.gif" bgcolor="#E4D7B9" link="#808080" vlink="#433E3A"
-alink="#FFFFFF" topmargin="30" text="#35260E">
-<div align="center"><center>
+<body bgcolor="#E4D7B9" link="#808080" vlink="#433E3A" alink="#FFFFFF">
+<p class="sLogoBanner">Studio di Astrologia "Acquario"</span></p>
 
-<table cellSpacing="5" borderColorDark="#9E8F6F" cellPadding="0"
-borderColorLight="#F4E5C5" background="TArubanfonce.jpg" style="width: 60%" class="style1">
-  <tr>
-    <td style="width: 64%"><div align="center"><center>
-					<table cellPadding="0"
-    background="TArubanmetal.jpg" border="0" cellspacing="1" style="width: 85%">
-      <tr>
-        <td style="width: 85%"><div align="center"><center>
-						<table cellSpacing="5"
-        borderColorDark="#9E8F6F" cellPadding="0" borderColorLight="#F4E5C5"
-        background="TArubanfonce.jpg" style="width: 85%" class="style1">
-          <tr>
-            <td width="100%"><div align="center"><center>
-							<table cellSpacing="1" cellPadding="0" background="TArubanmetal.jpg" border="0" style="width: 85%">
-              <tr>
-                <td style="width: 85%"><div align="center"><center>
-								<table borderColorDark="#9E8F6F"
-                cellPadding="0" borderColorLight="#F4E5C5" background="TArubanfonce.jpg" cellspacing="5" style="width: 85%" class="style1">
-                  <tr>
-                    <td style="width: 85%"><div align="center"><center>
-									<table cellSpacing="1" cellPadding="0" background="TArubanmetal.jpg" border="0" style="width: 85%">
-                      <tr>
-                        <td width="100%"><div align="center"><center>
-										<table
-                        borderColorDark="#9E8F6F" cellPadding="0" borderColorLight="#F4E5C5"
-                        background="TArubanfonce.jpg" style="width: 85%" class="style1">
-                        <tr>
-                        <td style="width: 80%" class="style116"><div align="center"><center>
-										<table cellSpacing="0" cellPadding="0"
-                        width="100%" background="TArubanmetal.jpg" border="0">
-                        <tr>
-                        <td width="100%"><div align="center"><center>
-										<table cellSpacing="5" cellPadding="0" width="100%"
-                        background="TArubanclair.jpg" border="0">
-                        <tr>
-                        <td style="width: 100%"><div align="center"><center>
-										<table borderColorDark="#9E8F6F" cellPadding="15" borderColorLight="#F4E5C5" background="TArubanfonce.jpg" style="width: 85%" class="style1">
-<TBODY>
-                        <tr>
-                        <td background="TAfondmilieu02.gif" align="center" bgcolor="#E4D7B9" style="width: 85%">
-						<p class="style2" style="width: 1157px">&nbsp;&nbsp;&nbsp;&nbsp;
-						<img width="390" height="44" src="TAligne04.gif"><img width="331" height="46" src="TAligne02.gif">
-						<img width="390" height="44" src="TAligne04.gif"></p>
-						<div align="center" style="width: 1096px;">
-										<img width="387" height="528" src="ATarocchi.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="170" height="296" src="TACartaLuna.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										<img width="356" height="486" src="TATarotA.jpg"><br>
-										<p align="center" class="style24">I 
-										TAROCCHI</p>
-										<p align="center" class="style63">
-										<strong>COME FARE UNA DIVINAZIONE CON I 
-										TAROCCHI ASTROLOGICI</strong></p>
-						</div>
-						<p align="center" style="width: 1113px;">
-						<img width="331" height="46" src="TAligne02.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<img width="331" height="46" src="TAligne02.gif"></p>
-						<p align="center" style="width: 1113px;">
-						<font color="#ff0000"><span class="style21"><strong>
-						ATTENZIONE!</strong></span></font><strong><span class="style67">
-						</span><span class="style20"><span class="style66">le 
-						carte segnate in</span><span class="style26"> </span>
-						</span></strong><font color="#0000ff">
-						<span class="style21"><strong>BLU</strong></span></font><strong><span class="style25">
-						</span><span class="style20"><span class="style66">sono 
-						positive, quelle</span></span><span class="style25"><span class="style21">
-						</span></span></strong><font color="#ff0000">
-						<span class="style21"><strong>ROSSE</strong></span></font><strong><span class="style25">
-						</span><span class="style20"><span class="style66">
-						negative.</span></span></strong></p>
-						<p align="center" class="style20" style="width: 1142px">
-						<strong><span class="style65">
-						<a href="OroscTarot.htm">
-						<span class="style71">Visita la pagina</span><span class="style66">
-						</span></a></span><span class="style66">per fare una 
-						previsione dell'anno corrente</span></strong></p>
-						<table class="style5" cellspacing="1" cellpadding="5">
-										<tr>
-														<td class="style69" rowspan="5">
-														<div class="style2">
-																		<span class="style25">
-																		<strong>
-																		&nbsp; 1</strong></span><span class="style20"><font color="#ff0000"><span class="style8">
-																		</span>
-																		</font>
-																		<span class="style8">
-																		- </span>
-																		</span>
-																		<font color="#0000ff">
-																		<span class="style25">
-																		<strong>
-																		IL 
-																		BAGATTO</strong></span></font><span class="style25"> 
-																		=</span><font face="Arial Rounded MT Bold" size="2"><strong><span class="style25">
-																		</span>
-																		</strong>
-																		<span class="style20">
-																		<u>
-																		<span class="style8">
-																		Volontà 
-																		- 
-																		iniziativa</span></u><span class="style8">.
-																		</span>
-																		</span>
-																		</font>
-																		<font color="#ff0000">
-																		<span class="style25">
-																		<strong>
-																		ARIETE</strong></span></font><span class="style25">
-																		<strong>
-																		1</strong>° 
-																		casa - 
-																		Aprile - 
-																		Martedì
-																		</span>
-																		<font color="#800040">
-																		<span class="style25">
-																		<br>
-																		</span>
-																		</font>
-																		<font class="style8" face="Arial Rounded MT Bold" size="2">
-																		<span class="style20">
-																		&nbsp; <u>
-																		Libero 
-																		arbitrio.</u> 
-																		Conquista,
-																		<span class="style25">
-																		potere,
-																		</span>
-																		riuscita 
-																		completa,
-																		</span>
-																		</font>
-																		<font color="#800040" face="Arial Rounded MT Bold" size="1">
-																		<span class="style28">
-																		progresso,
-																		</span>
-																		</font>
-																		<font color="#000000">
-																		<span class="style25">
-																		un buon 
-																		esito,
-																		</span>
-																		</font>
-																		<span class="style25">
-																		cambiamenti, 
-																		azione,<font color="#800040"><br>
-																		&nbsp; </font>
-																		miglioramenti,
-																		<font class="style8" face="Arial Rounded MT Bold" size="2">
-																		<span class="style20">
-																		una 
-																		nuova 
-																		direzione 
-																		da 
-																		seguire.</span></font> 
-																		Intelligenza, 
-																		abilità 
-																		manuale, 
-																		audacia,
-																		</span>
-																		<font color="#000000" face="Arial Rounded MT Bold" size="2">
-																		<font class="style8" face="Arial Rounded MT Bold" size="2">
-																		<span class="style20">
-																		energia, 
-																		studi<font color="#000000" face="Arial Rounded MT Bold" size="2"><span class="style25"><br>
-																		&nbsp;</span></font> 
-																		concreti,<font color="#800040"><span class="style25">
-																		</span>
-																		</font>e</span></font><span class="style25">ntusiasmo, 
-																		creatività. 
-																		Necessità 
-																		di 
-																		convincere, 
-																		agire 
-																		con le 
-																		proprie 
-																		forze. 
-																		Promozione.&nbsp;
-																		<br>
-																		&nbsp; </span>
-																		</font>
-																		<font color="#ff0000">
-																		<u>
-																		<span class="style25">
-																		<strong>
-																		AMORE</strong></span></u></font><span class="style25">: 
-																		inizio 
-																		d'una 
-																		nuova 
-																		relazione, 
-																		amore 
-																		sincero, 
-																		conquista 
-																		della 
-																		libertà</span><font color="#000000"><span class="style25">.</span></font><font color="#800040"><span class="style25">
-																		</span>
-																		</font>
-																		<font class="style25" color="#000000" size="2">
-																		Persona 
-																		un po' 
-																		ingenua,<font color="#800040"><span class="style25"><br>
-																		&nbsp; </span>
-																		</font>
-																		marito, 
-																		fidanzato, 
-																		figlio. 
-																		Ripresa 
-																		di un 
-																		rapporto.
-																		</font>
-																		<span class="style25">
-																		Uomo dai 
-																		20/30 
-																		anni, 
-																		sveglio, 
-																		vivace e 
-																		giovanile.
-																		<br>
-																		&nbsp; </span>
-																		<font color="#008000">
-																		<u>
-																		<span class="style25">
-																		<strong>
-																		SALUTE</strong></span></u></font><span class="style25">: 
-																		cure 
-																		efficaci, 
-																		ottima 
-																		ripresa, 
-																		buona 
-																		salute, 
-																		energia 
-																		e grande 
-																		benessere, 
-																		miglioramento.
-																		<font color="#800040">
-																		<br>
-																		</font>
-																		</span>
-																		<font color="#ff0000">
-																		<span class="style25">
-																		<strong>
-																		&nbsp; 
-																		Negativa</strong></span></font><font face="Arial Rounded MT Bold" size="2"><span class="style25">: 
-																		febbre,</span><font color="#000000"><span class="style25">
-																		</span>
-																		</font>
-																		<span class="style25">
-																		occhi, 
-																		agitazione, 
-																		crisi 
-																		cardiaca, 
-																		nervosismo, 
-																		infortunio 
-																		al capo, 
-																		poca 
-																		vitalità.</span></font></div>
-														<p class="style2">
-														<span class="style25">
-														<strong>&nbsp; 2</strong> 
-														- </span>
-														<font color="#0000ff">
-														<span class="style25">
-														<strong>LA PAPESSA</strong></span></font><span class="style20"><span class="style8"> 
-														= </span></span>
-														<font class="style8" size="2">
-														<u>
-														<span class="style20">
-														Scienza - attesa.</span></u><span class="style20">
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>LUNA</strong></span></font><span class="style25"> 
-														- <strong>2</strong>° 
-														casa - Maggio Giugno - 
-														Lunedì</span><font color="#800040"><span class="style25"><br>
-&nbsp; </span></font><font class="style8" face="Arial Rounded MT Bold" size="2">
-														<u>
-														<span class="style20">
-														Casa, coppia</span></u><span class="style20">. 
-														Buon senso, attendere 
-														con fede, cautela e 
-														fede, serenità, denaro</span></font><font color="#800040"><span class="style25">
-														</span></font>
-														<span class="style25">
-														che entra in</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														casa. La</span><font class="style25" color="#000000" size="2"><br>
-														</font>
-														<span class="style25">&nbsp; 
-														verità trionfa, non 
-														rivelare le proprie 
-														intenzioni. Pazienza</span><font color="#000000"><span class="style25">,
-														</span></font>
-														<font class="style25" color="#000000" size="2">
-														riserbo, saggezza, 
-														memoria, comprensione,<br>
-&nbsp; Immaginazione, ispirazione, desiderio che viene esaudito. La fortuna 
-														aiuta in modo 
-														inaspettato. <br>
-&nbsp; </font><font color="#ff0000"><u><span class="style25"><strong>AMORE</strong></span></u></font><span class="style25">: 
-														unione duratura, totale 
-														dedizione, incertezze 
-														presto superate. Amore</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														materno, coniugale,</span><font color="#000000" face="Arial Rounded MT Bold" size="2"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														amicizia senza intimità, 
-														figli. Una donna dai 
-														40/45 anni, comprensiva, 
-														saggia e intuitiva.
-														</span>
-														<font color="#800040">
-														<span class="style25">
-														<br>
-&nbsp; </span></font><font color="#008000"><u><span class="style25"><strong>
-														SALUTE</strong></span></u></font><span class="style25">:
-														<span class="style47">
-														occhio destro</span>, 
-														buona salute, 
-														gravidanza, il figlio 
-														atteso è femmina,</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														aumento di peso.</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>&nbsp; Negativa</strong></span></font><font color="#000000"><span class="style25">:</span></font><span class="style25"> 
-														nevrosi, reni, seno, 
-														esami e controlli, la 
-														vitalità è un po' 
-														scarsa. </span></p>
-														<p class="style2">
-														<span class="style25">
-														<strong>&nbsp; 3</strong></span><span class="style20"><span class="style8"> 
-														-</span></span><font color="#0000ff"><span class="style25">
-														<strong>L'IMPERATRICE</strong></span></font><span class="style20"><span class="style8"> 
-														= </span></span>
-														<font class="style8" face="Arial Rounded MT Bold" size="2">
-														<u>
-														<span class="style20">
-														Azione e mente</span></u><span class="style20">.
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>VENERE</strong></span></font><font color="#000000"><span class="style25">/</span></font><font color="#ff0000"><span class="style25"><strong>SOLE</strong></span></font><span class="style25"> 
-														- <strong>3</strong>° 
-														casa -Venerdì - Domenica</span><font color="#800040"><span class="style25">
-														</span></font>
-														<font color="#000000">
-														<span class="style25">
-														<br>
-&nbsp; </span></font><span class="style47"><span class="style25">Progetti 
-														realizzabili.</span></span><span class="style57">
-														</span>
-														<span class="style25">
-														Intelligenza, vicinanza, 
-														arrivo di notizie e</span><font color="#800040"><span class="style25">
-														</span></font>
-														<span class="style25">
-														lettere, una promozione, 
-														dialogo.</span><font color="#000000"><span class="style25"> 
-														Uscita<br>
-&nbsp; dai dubbi, un aiuto risolutore, u</span></font><span class="style25">sare</span><font color="#000000"><span class="style25"> 
-														la mente, fortuna e 
-														abbondanza.</span></font><font color="#800040"><span class="style25"></span></font><span class="style25">
-														</span>
-														<font color="#000000">
-														<span class="style25">
-														Progresso, avanzamento, 
-														buoni<br>
-&nbsp; affari, maggior guadagno, riuscita, </span></font><span class="style25">
-														breve viaggio</span><font color="#000000"><span class="style25">.</span></font><font color="#800040"><span class="style25">
-														</span></font>
-														<font color="#000000">
-														<span class="style25">
-														Successo femminile, 
-														fascino, ricchezza, 
-														creatività. </span>
-														</font>
-														<font color="#800040">
-														<span class="style25">
-														<br>
-&nbsp; </span></font><font color="#ff0000"><u><span class="style25"><strong>
-														AMORE</strong></span></u></font><span class="style25">: 
-														incontro con una persona 
-														molto importante, 
-														relazione concreta, una</span><font color="#800040"><span class="style25">&nbsp;</span></font><span class="style25">buona 
-														amica</span><font color="#800040"><span class="style25">
-														</span></font>
-														<span class="style25">
-														socievole,</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														tenera, autoritaria ma 
-														gentile. Svolta 
-														sentimentale decisiva,</span><font color="#800040"><span class="style25">
-														</span></font>
-														<span class="style25">
-														matrimonio, la donna 
-														guida il rapporto.</span><font color="#800040"><span class="style25"><br>
-&nbsp; </span></font><font color="#008000"><u><span class="style25"><strong>
-														SALUTE</strong></span></u></font><span class="style25">:
-														<span class="style47">
-														orecchio destro</span>, 
-														ottima salute, energia, 
-														fecondità, maternità 
-														voluta, scomparsa 
-														dell'ansia. </span>
-														<font color="#800040">
-														<span class="style25">
-														<br>
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>&nbsp; Negativa</strong></span></font><font color="#000000"><span class="style25">:</span></font><span class="style25"> 
-														disturbi al cuore e</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														alle arterie, gravidanza 
-														con problemi, aborto, 
-														esaurimento nervoso.
-														</span></p>
-														<p class="style2">
-														<span class="style25">
-														<strong>&nbsp; 4</strong></span><span class="style20"><font color="#ff0000"><span class="style8">
-														</span></font>
-														<font color="#000000">
-														<span class="style8">-</span></font></span><font color="#0000ff"><span class="style25">
-														<strong>L'IMPERATORE</strong></span></font><span class="style20"><span class="style8"> 
-														= </span></span>
-														<font class="style25" size="2">
-														<u>Realizzazione e 
-														potere</u>. </font>
-														<font class="style25" color="#ff0000" size="2">
-														<strong>GIOVE</strong>
-														</font>
-														<span class="style25">
-														<strong>4</strong>°,
-														<strong>7</strong>°<strong>, 
-														12</strong>° casa - 
-														Marzo, Luglio, Dicembre,</span><font color="#800040"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														Giovedì.</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														Inizio primavera, 
-														Estate, fine Autunno.</span><font color="#000000"><span class="style25"><br>
-&nbsp; </span></font><font class="style25" size="2"><u>Certezza,</u> </font>
-														<span class="style25">
-														qualcosa di buono in 
-														vista,</span><font color="#800040"><span class="style25">
-														</span></font>
-														<span class="style25">
-														azione vittoriosa, 
-														apporto di di beni e di 
-														denaro, sforzi</span><font color="#800040"><span class="style25">
-														</span></font>
-														<span class="style25">
-														coronati</span><font color="#800040"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														da successo, </span>
-														<font class="style25" size="2">
-														protezione </font>
-														<span class="style25">di 
-														qualcuno potente, 
-														appoggio, esito 
-														positivo. Accordo con 
-														soci, firma di un</span><font color="#800040"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														contratto, fermezza,</span><font color="#800040"><span class="style25">
-														</span></font>
-														<span class="style25">
-														persuasione, autorità, 
-														cose concrete, 
-														soddisfazione, cose 
-														legali, lunghi viaggi.
-														</span>
-														<font color="#800040">
-														<span class="style25">
-														<br>
-&nbsp; </span></font><font color="#ff0000"><u><span class="style25"><strong>
-														AMORE</strong></span></u></font><span class="style25">: 
-														serenità in famiglia, 
-														pace stima e rispetto. 
-														Uomo virile e potente. 
-														Dominio sulle</span><font color="#800040"><span class="style25">
-														</span></font>
-														<span class="style25">
-														emozioni,</span><font color="#800040"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														conciliazione dei 
-														sentimenti, Una persona 
-														dai 40/45 ai 60 anni 
-														circa, uno zio o zia, 
-														onesta, generosa,</span><font color="#800040"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														abile e colta. Un uomo 
-														virile e potente, 
-														affidabile e credibile, 
-														vuole il vostro bene, la 
-														vostra felicità.<font color="#800040"><br>
-&nbsp; </font></span><font color="#008000"><u><span class="style25"><strong>
-														SALUTE</strong></span></u></font><font class="style20"><span class="style8">: 
-														dottore, infermiere, 
-														volontario, professore 
-														capace, buona salute, 
-														virilità.</span></font><font color="#000000"><span class="style25"> 
-														Eccessi alimentari.<br>
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>&nbsp; Negativa</strong></span></font><font color="#000000"><span class="style25">:</span></font><span class="style25"> 
-														mancanza di forze,</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														ripresa di una malattia. 
-														Disturbi del ricambio, 
-														circolazione, 
-														cistifellea,</span><font color="#800040"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														fegato, pancreas.&nbsp;
-														</span></p>
-														<p class="style2">
-														<span class="style25">
-														<strong>&nbsp; 5
-														</strong>-<strong>
-														</strong></span>
-														<font color="#0000ff">
-														<span class="style25">
-														<strong>IL PAPA</strong></span></font><span class="style20"><span class="style8"> 
-														= </span></span>
-														<font class="style8" face="Arial Rounded MT Bold" size="2">
-														<u>
-														<span class="style20">
-														Ispirazione e dovere</span></u><span class="style20">.
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>MERCURIO</strong></span></font><span class="style25">
-														<strong>5</strong>° casa 
-														- Giugno, Settembre - 
-														Mercoledì -</span><font color="#800040"><span class="style25">
-														</span></font>
-														<span class="style25">
-														<font color="#000000">
-														Estate</font></span><font color="#000000"><span class="style25"><br>
-&nbsp; </span></font><font class="style8" face="Arial Rounded MT Bold" size="2">
-														<u>
-														<span class="style20">
-														Protezione divina</span></u><span class="style20">, 
-														aiuto morale,</span></font><font class="style20" color="#000000" size="2"><span class="style8"> 
-														conoscenza</span></font><font color="#000000"><span class="style25">, 
-														bisogno di comprensione, 
-														una </span></font>
-														<font face="Arial Rounded MT Bold" size="2">
-														<span class="style25">
-														persona che dà dei buoni</span></font><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<font face="Arial Rounded MT Bold" size="2">
-														<span class="style25">&nbsp; 
-														consigli, degna</span></font><font color="#800040"><span class="style25">
-														</span></font>
-														<span class="style25">di 
-														fiducia. Studi 
-														superiori, protezione 
-														intellettuale, 
-														affermazione. Punto di 
-														riferimento,</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														situazioni che devono 
-														essere analizzate in 
-														profondità. Brevi 
-														viaggi, visite, notizie, 
-														lettere, scritti, libri.</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														Trionfo della verità, 
-														consolidamento e 
-														riconoscimento.</span><font color="#000000"><span class="style25"> 
-														Alleanza e sicurezza 
-														materiale, pazienza.<br>
-&nbsp; </span></font><font color="#ff0000"><u><span class="style25"><strong>
-														AMORE</strong></span></u></font><span class="style25">: 
-														incontro importante con 
-														un uomo maturo, buono e 
-														leale. Persona degna di 
-														fiducia, generosa</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														e mansueta che sa dare 
-														buoni consigli. Periodo 
-														molto bello, sereno</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">e 
-														godibile,</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														affetto solido e felice.</span><font color="#000000"><span class="style25"><br>
-&nbsp; </span></font><font color="#008000"><u><span class="style25"><strong>
-														SALUTE</strong></span></u></font><span class="style25">:
-														<span class="style47">
-														gamba destra, </span>
-														braccia, bronchi, 
-														polmoni. Ottimo stato 
-														fisico,</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														superamento di</span><font color="#000000"><span class="style25">
-														</span></font>
-														<font class="style8" face="Arial Rounded MT Bold" size="2">
-														<span class="style20">
-														una malattia</span></font><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<font class="style8" face="Arial Rounded MT Bold" size="2">
-														<span class="style20">&nbsp; 
-														con la volontà.</span></font><font color="#800040"><span class="style25"><br>
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>&nbsp; Negativa</strong></span></font><font color="#000000"><span class="style25">:</span></font><span class="style25"> 
-														poca energia fisica, 
-														sistema nervoso e 
-														agitazione,</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														respirazione, tendenza 
-														ad ingrassare,</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														calcoli, reumatismi.</span></p>
-														<p class="style2">
-														<span class="style25">
-														<strong>&nbsp; 6
-														</strong>- </span>
-														<font color="#0000ff">
-														<span class="style25">
-														<strong>GLI AMANTI</strong></span></font><span class="style20"><span class="style8"> 
-														= </span></span>
-														<font class="style8" face="Arial Rounded MT Bold" size="2">
-														<u>
-														<span class="style20">
-														Scelta e prova</span></u><span class="style20">.
-														</span></font>
-														<span class="style25">
-														<font color="#800000">
-														<strong>GEMELLI </strong>
-														</font>/<font color="#800000">
-														</font></span>
-														<font color="#008000">
-														<span class="style25">
-														<strong>VERGINE</strong></span></font><font class="style8" face="Arial Rounded MT Bold" size="2"><span class="style20">
-														<strong>6</strong>° casa 
-														- Mercoledì - Giugno - 
-														Settembre</span></font><font color="#000000"><span class="style25"><br>
-&nbsp; </span></font><font class="style8" face="Arial Rounded MT Bold" size="2">
-														<u>
-														<span class="style20">
-														Libero arbitrio</span></u><span class="style20">, 
-														due possibilità,</span></font><span class="style25"> 
-														usare il cervello, 
-														bluff, dialogo, onestà, 
-														dubbio,</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														vicinanza,</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														incertezza,</span><font color="#000000" face="Arial Rounded MT Bold" size="2"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														oscurità. </span>
-														<font class="style25" color="#000000" size="2">
-														Figli, hobby, tempo 
-														libero, piccoli animali. 
-														Un affare da vagliare 
-														con cautela.</font><font color="#000000"><span class="style25">
-														</span></font>
-														<font class="style25" color="#000000" size="2">
-														Sdoppiamento,</font><font color="#000000" face="Arial Rounded MT Bold" size="2"><span class="style25"><br>
-														</span></font>
-														<font class="style25" color="#000000" size="2">&nbsp; 
-														tentazione, timore di 
-														sbagliare. Fidarsi più 
-														del proprio cuore che 
-														della mente razionale, 
-														scelta cruciale.</font><font color="#000000"><span class="style25"><br>
-&nbsp; </span></font><font color="#ff0000"><u><span class="style25"><strong>
-														AMORE</strong></span></u></font><span class="style25">: 
-														tormento, passione, 
-														gelosia, dubbi ed 
-														esitazione fra due 
-														amori, amore</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														lontano.</span><font class="style25" color="#000000" size="2"> 
-														Incertezza e</font><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<font class="style25" color="#000000" size="2">&nbsp; 
-														superficialità.</font><font color="#000000"><span class="style25"> 
-														Uomo/donna dai 20/30 
-														anni, i bambini i 
-														parenti. Una persona 
-														duplice, indecisa, 
-														gelosa.<br>
-&nbsp; </span></font><font color="#008000"><u><span class="style25"><strong>
-														SALUTE</strong></span></u></font><span class="style25">:
-														<span class="style47">
-														occhi e orecchi,</span> 
-														piccoli malanni, 
-														problemi ai reni, 
-														ventre, intestino. 
-														Assistenza di parenti.
-														</span>
-														<font color="#000000">
-														<span class="style25">
-														<br>
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>&nbsp; Negativa</strong></span></font><font color="#000000"><span class="style25">:</span></font><span class="style25"> 
-														Fegato, alti e</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														bassi, crisi depressive, 
-														esaurimento nervoso, 
-														bisogno di aiuto</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														morale. </span></p>
-														<div class="style2">
-																		<span class="style25">
-																		<strong>
-																		&nbsp; 7</strong></span><span class="style20"><font color="#ff0000"><span class="style8">
-																		</span>
-																		</font>
-																		<span class="style8">
-																		- </span>
-																		</span>
-																		<font color="#0000ff">
-																		<span class="style25">
-																		<strong>
-																		IL CARRO</strong></span></font><span class="style20"><span class="style8"> 
-																		= </span>
-																		</span>
-																		<font class="style8" face="Arial Rounded MT Bold" size="2">
-																		<u>
-																		<span class="style20">
-																		Vittoria 
-																		e 
-																		trionfo.</span></u><span class="style20">
-																		</span>
-																		</font>
-																		<font color="#ff0000">
-																		<span class="style25">
-																		<strong>
-																		SAGITTARIO</strong></span></font><span class="style25"> 
-																		-
-																		<strong>
-																		9</strong>° 
-																		casa - 
-																		Dicembre 
-																		- 
-																		Giovedì.</span><font color="#000000"><span class="style25"> 
-																		Fine 
-																		Autunno<br>
-																		&nbsp; </span>
-																		</font>
-																		<font class="style8" face="Arial Rounded MT Bold" size="2">
-																		<u>
-																		<span class="style20">
-																		Aiuto 
-																		divino,</span></u><span class="style20"> 
-																		conquista, 
-																		riuscita, 
-																		progresso, 
-																		intensa 
-																		attività. 
-																		Una 
-																		questione 
-																		si</span></font><font color="#000000"><span class="style25">
-																		</span>
-																		</font>
-																		<font face="Arial Rounded MT Bold" size="2">
-																		<span class="style25">
-																		risolve 
-																		nel</span><font color="#000000"><span class="style25">
-																		</span>
-																		</font>
-																		<span class="style25">
-																		migliore 
-																		dei<font color="#000000"><br>
-																		&nbsp; </font>
-																		modi, 
-																		superamento 
-																		delle 
-																		difficoltà. 
-																		Ambizione, 
-																		entusiasmo, 
-																		viaggio</span></font><font color="#000000"><span class="style25"> 
-																		per</span></font><span class="style25"> 
-																		lavoro, 
-																		onori,
-																		<font class="style25" color="#000000" size="2">
-																		talento,
-																		</font>
-																		meriti<font class="style25" color="#000000" size="2"><br>
-																		&nbsp; </font>
-																		riconosciuti, 
-																		successo.
-																		</span>
-																		<font class="style20" color="#000000" size="2">
-																		<span class="style8">
-																		Laurea a 
-																		pieni 
-																		voti, 
-																		piena
-																		</span>
-																		</font>
-																		<font face="Arial Rounded MT Bold" size="2">
-																		<span class="style25">
-																		affermazione 
-																		delle 
-																		proprie</span><font color="#000000"><span class="style25">
-																		</span>
-																		</font>
-																		<span class="style25">
-																		capacità,</span></font><font class="style25" color="#000000" size="2"> 
-																		promozione.<br>
-																		&nbsp; </font>
-																		<font color="#ff0000">
-																		<u>
-																		<span class="style25">
-																		<strong>
-																		AMORE</strong></span></u></font><font face="Arial Rounded MT Bold" size="2"><span class="style25">: 
-																		unione 
-																		favorevole, 
-																		incontro 
-																		durante 
-																		un 
-																		viaggio, 
-																		un amico 
-																		intimo, 
-																		una 
-																		nuova 
-																		conoscenza. 
-																		I<font class="style25" color="#000000" size="2"><br>
-																		&nbsp; </font>
-																		flirt 
-																		danno 
-																		vita a 
-																		nuovi 
-																		amori.
-																		</span>
-																		</font>
-																		<font class="style25" color="#000000" size="2">
-																		Trionfo 
-																		di un 
-																		amore 
-																		impossibile 
-																		anche 
-																		contro 
-																		il 
-																		destino.
-																		<span class="style54">
-																		<font face="Arial Rounded MT Bold" size="2">
-																		<span class="style25">
-																		Rapporto 
-																		a due<font class="style25" color="#000000" size="2"><br>
-																		&nbsp; </font>
-																		stabile, 
-																		una 
-																		persona</span></font><font color="#800040"><span class="style25">
-																		</span>
-																		</font>
-																		<span class="style25">
-																		che vive</span><font color="#000000"><span class="style25">
-																		</span>
-																		</font>
-																		<span class="style25">
-																		lontano 
-																		o che 
-																		viaggia.
-																		</span>
-																		</span>
-																		Persona 
-																		di età 
-																		matura 
-																		di 40/60 
-																		anni, 
-																		attraente 
-																		e<br>
-																		&nbsp; 
-																		virile, 
-																		diplomatica, 
-																		ambiziosa 
-																		e 
-																		giusta.
-																		<br>
-																		</font>
-																		<font color="#008000">
-																		<span class="style25">
-																		<strong>
-																		&nbsp; <u>
-																		SALUTE</u></strong></span></font><font face="Arial Rounded MT Bold" size="2"><span class="style25">:
-																		<span class="style47">
-																		gamba 
-																		sinistra</span>, 
-																		ottima 
-																		forma, 
-																		guarigione, 
-																		malattia 
-																		superata. 
-																		Bronchi, 
-																		polmoni, 
-																		fegato.<font class="style25" color="#000000" size="2"><br>
-																		</font>
-																		</span>
-																		</font>
-																		<font color="#ff0000">
-																		<span class="style25">
-																		<strong>
-																		&nbsp; 
-																		Negativa</strong></span></font><font color="#000000"><span class="style25">:</span></font><font face="Arial Rounded MT Bold" size="2"><span class="style25"> 
-																		incidenti, 
-																		squilibri, 
-																		umore 
-																		instabile, 
-																		spreco 
-																		d'energie. 
-																		Panico, 
-																		impotenza 
-																		sessuale.
-																		</span>
-																		</font>
-														</div>
-														<p class="style2">
-														<span class="style25">
-														<strong>&nbsp; 8 -
-														</strong></span>
-														<font color="#0000ff">
-														<span class="style25">
-														<strong>LA GIUSTIZIA</strong></span></font><span class="style20"><span class="style8"> 
-														= </span></span>
-														<font class="style8" face="Arial Rounded MT Bold" size="2">
-														<u>
-														<span class="style20">
-														Equilibrio e rigore.</span></u><span class="style20">
-														</span></font>
-														<font color="#800000">
-														<span class="style25">
-														<strong>BILANCIA</strong></span></font><span class="style25"> 
-														- <strong>7</strong>° 
-														casa Ottobre - Venerdì.</span><font color="#000000"><span class="style25"> 
-														Autunno<br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														Accordo, contratto 
-														d'ogni genere, esito 
-														favorevole di una 
-														contestazione, causa 
-														vinta,</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">la 
-														cosa richiesta</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														è giusta, diploma di</span><font color="#000000"><span class="style25">
-														</span></font>
-														<font face="Arial Rounded MT Bold">
-														<span class="style25">
-														studio. </span></font>
-														<font color="#000000">
-														<span class="style25">
-														Fermezza di opinioni e 
-														di propositi, </span>
-														</font>
-														<span class="style25">
-														giuste scelte nel</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														lavoro, </span>
-														<font face="Arial Rounded MT Bold">
-														<span class="style25">
-														assunzione,</span></font><font color="#000000"><span class="style25"><br>
-&nbsp; acquisti fortunati.</span></font><span class="style25"> R</span><font face="Arial Rounded MT Bold"><span class="style25">iuscita,</span></font><span class="style25"> 
-														concorso pubblico, 
-														correttezza, </span>
-														<font color="#000000">
-														<span class="style25">
-														cose ufficiali&nbsp; e 
-														legali.</span></font><span class="style25"> 
-														Ricerca d'armonia.</span><font color="#000000"><span class="style25"><br>
-&nbsp; </span></font><font color="#ff0000"><u><span class="style25"><strong>
-														AMORE</strong></span></u></font><span class="style25">: 
-														matrimonio raggiunto 
-														dopo molte lotte e 
-														avversità, gioie e 
-														problemi che vengono</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">da 
-														una</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														donna, sposata o 
-														associata, armonia e 
-														buon'intesa. Persona 
-														d'età matura oltre i 50 
-														anni, ragionevole,</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														pratica, 
-														cortese,delicata. 
-														Affidamento dei figli, 
-														alimenti, eredità.
-														</span>
-														<font color="#800040">
-														<span class="style25">
-														<br>
-&nbsp; </span></font><font color="#008000"><u><span class="style25"><strong>
-														SALUTE</strong></span></u></font><span class="style25">:
-														<span class="style47">
-														braccio destro</span>, 
-														visita medica, diagnosi, 
-														analisi, recupero forze, 
-														salute stabile. 
-														Ecografia, tac.</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>&nbsp; Negativa</strong></span></font><font color="#000000"><span class="style25">:</span></font><span class="style25"> 
-														disturbi reni, vescica, 
-														prostata, febbre, 
-														obesità, bronchite.
-														</span></p>
-														<p class="style2">
-														<span class="style25">
-														<strong>&nbsp; 9</strong> 
-														- </span>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>L'EREMITA</strong></span></font><span class="style20"><span class="style8"> 
-														= </span></span>
-														<font class="style8" face="Arial Rounded MT Bold" size="2">
-														<u>
-														<span class="style20">
-														Tempo e prudenza</span></u><span class="style20">.
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>SATURNO</strong></span></font><span class="style25"> 
-														- Dicembre - Sabato.<font color="#800040">
-														</font>Inverno<font color="#800040"><br>
-														</font></span>
-														<font color="#000000" face="Arial Rounded MT Bold">
-														<span class="style25">&nbsp; 
-														Pazienza, discrezione, 
-														riservatezza, s</span></font><span class="style25">aper 
-														aspettare, parlare di 
-														meno, impedimento, 
-														difficoltà, cautela<font color="#800040"><br>
-&nbsp; </font>e riflessione, progetto</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														che va portato</span><font color="#800040"><span class="style25">
-														</span></font>
-														<span class="style25">
-														avanti.</span><font color="#000000" face="Arial Rounded MT Bold"><span class="style25"> 
-														Solitudine, isolamento, 
-														lentezza e rinuncia, 
-														esperienza,</span></font><span class="style25"><font color="#800040"><br>
-														</font></span>
-														<font color="#000000" face="Arial Rounded MT Bold">
-														<span class="style25">&nbsp; 
-														è meglio</span></font><font color="#000000"><span class="style25"> 
-														fidarsi di se stesso che 
-														degli altri, intravedere 
-														il peggio e prevenirlo. 
-														Progetto che va portato</span></font><span class="style25"><font color="#800040"><br>
-														</font></span>
-														<font color="#000000">
-														<span class="style25">&nbsp; 
-														avanti, approfondimento 
-														necessario, sentiero 
-														giusto, meditazione. 
-														Ricerca vana di un altro 
-														lavoro. <br>
-&nbsp; </span></font><font color="#ff0000"><u><span class="style25"><strong>
-														AMORE</strong></span></u></font><span class="style25">: 
-														amore discreto, freddo e 
-														incapace di manifestare 
-														i propri sentimenti.</span><font color="#000000"><span class="style25"> 
-														Periodo di riflessione,</span></font><span class="style25"><font color="#800040"><br>
-														</font></span>
-														<font color="#000000">
-														<span class="style25">&nbsp; 
-														segretezza, bisogna 
-														capire cosa si vuole. Un 
-														uomo o donna dai 60 anni 
-														in su, padre, madre, 
-														nonni.<br>
-&nbsp; </span></font><font color="#008000"><u><span class="style25"><strong>
-														SALUTE</strong></span></u></font><span class="style25">: 
-														cure metodiche che 
-														richiedono del tempo per 
-														dare un esito, fare 
-														degli esami per 
-														conoscere</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														lo stato di salute</span><span class="style50">.
-														</span>
-														<span class="style25">
-														Malattia cronica o lunga 
-														e dolorosa</span><span class="style50">.
-														</span>
-														<span class="style25">
-														Crisi depressive</span><span class="style50">,
-														</span>
-														<span class="style25">
-														problemi alle ginocchia</span><span class="style50">,
-														</span>
-														<span class="style25">
-														denti,</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														orecchi, pelle.<font color="#800040"><br>
-														</font></span>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>&nbsp; Negativa</strong></span></font><font color="#000000"><span class="style25">:</span></font><span class="style25"> 
-														disturbi cardiaci, 
-														circolazione, fratture 
-														ossa, artrite, 
-														pressione,</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														reni, reumatismi. </span>
-														</p>
-														<p class="style2">
-														<span class="style25">
-														<strong>&nbsp; 10</strong></span><span class="style20"><span class="style8"> 
-														-</span><font color="#0000ff"><span class="style8">
-														</span></font></span>
-														<font color="#0000ff">
-														<span class="style25">
-														<strong>RUOTA della 
-														FORTUNA</strong></span></font><span class="style20"><span class="style8"> 
-														= </span></span>
-														<font class="style8" face="Arial Rounded MT Bold" size="2">
-														<u>
-														<span class="style20">
-														Buona sorte</span></u><span class="style20">.
-														</span></font>
-														<font color="#008000">
-														<span class="style25">
-														<strong>CAPRICORNO</strong></span></font><span class="style25">
-														<strong>10</strong>° 
-														casa - Gennaio - Sabato.<font color="#800040">
-														</font>Inverno<font color="#800040"><br>
-														</font></span>
-														<span class="style8">
-														<font class="style20">&nbsp; 
-														Cambiamenti improvvisi, 
-														ma buoni e fortunati,
-														</font></span>
-														<span class="style25">
-														destino</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														felice</span><span class="style50">,
-														</span>
-														<font class="style20">
-														<span class="style8">
-														vincite al gioco</span><span class="style54">,
-														</span></font>
-														<font class="style20" size="2">
-														<span class="style8">
-														<font class="style20">
-														viaggi di lavoro. Ascesa</font></span></font><span class="style25"><font color="#800040"><br>
-&nbsp; </font>ostacoli superati, inizio di un nuovo ciclo, dialogo, iniziative 
-														fortunate, alternativa,
-														</span>
-														<span class="style8">
-														<font class="style20">
-														progresso, </font>
-														</span>
-														<span class="style25">
-														acume<font color="#800040"><br>
-&nbsp; </font>e astuzia</span><font color="#000000" face="Arial Rounded MT Bold"><span class="style25">, 
-														sorpresa. Aiuti non 
-														richiesti, circostanze</span></font><font color="#800040"><span class="style25">
-														</span></font>
-														<font color="#000000">
-														<span class="style25">
-														favorevoli ad un 
-														progetto, per una 
-														impresa ad una</span></font><span class="style25"><font color="#800040"><br>
-														</font></span>
-														<font color="#000000">
-														<span class="style25">&nbsp; 
-														domanda fatta</span><span class="style50">.
-														</span></font>
-														<font class="style20" color="#800040" size="1">
-														<span class="style32">
-														Scatti nella carriera, 
-														buone prospettive di 
-														guadagno e investimento</span><span class="style58">.</span><span class="style8">
-														</span></font>
-														<font color="#000000">
-														<span class="style25">
-														Afferrare al&nbsp; volo</span></font><font class="style20" color="#800040" size="1"><span class="style8"><br>
-														</span></font>
-														<font color="#000000">
-														<span class="style25">&nbsp; 
-														le buone</span></font><font color="#800040"><span class="style25">
-														</span></font>
-														<font color="#000000">
-														<span class="style25">
-														occasioni. 
-														Riconoscimento 
-														professionale, modifiche 
-														per risolvere un 
-														problema.</span></font><font class="style20" color="#800040" size="1"><span class="style8"><br>
-&nbsp; </span></font><font color="#ff0000"><u><span class="style25"><strong>
-														AMORE</strong></span></u></font><span class="style25">: 
-														una nuova conoscenza che 
-														vi farà rinascere</span><span class="style50">,
-														</span>
-														<span class="style25">
-														incontro amoroso 
-														destinato a durare</span><span class="style50">
-														</span>
-														<span class="style25">
-														nel tempo.</span><font class="style20" color="#800040" size="1"><span class="style8"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														felicità e gioie 
-														amorose,</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														momento</span><font color="#800040"><span class="style25">
-														</span></font>
-														<span class="style25">
-														favorevole, osate pure. 
-														Capacità di comprensione 
-														di capire le altrui</span><font class="style20" color="#800040" size="1"><span class="style8"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														esigenze affettive e</span><font color="#800040"><span class="style25">
-														</span></font>
-														<span class="style25">le 
-														proprie, tutto andrà 
-														bene, b</span><font color="#000000"><span class="style25">uon 
-														umore. Amore che si 
-														rinnova continuamente.
-														<br>
-&nbsp; </span></font><font color="#008000"><u><span class="style25"><strong>
-														SALUTE</strong></span></u></font><span class="style25">:
-														<span class="style47">
-														braccio sinistro</span>, 
-														vitalità, superamento 
-														della malattia. 
-														Possibile gravidanza. 
-														Ottimo stato</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">di</span><font class="style20" color="#800040" size="1"><span class="style8"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														salute, una</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														netta ripresa.</span><font class="style20" color="#800040" size="1"><span class="style8">
-														<span class="style7">
-														Momento di grande 
-														benessere e di energia 
-														da sfruttare.</span><br>
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>&nbsp; Negativa</strong></span></font><font color="#000000"><span class="style25">:</span></font><span class="style25"> 
-														circolazione, fegato, 
-														ginocchia, intestino, 
-														sorvegliare ossa e dieta 
-														alimentare. </span></p>
-														</td>
-										</tr>
-						</table>
-						<p align="center" style="width: 1040px;">
-						<font color="#000000" size="2"><strong>
-						<img width="464" height="70" src="TarotLineaC060.gif"></strong></font></p>
-						<table class="style31" cellspacing="1" cellpadding="5">
-										<tr>
-														<td class="style11" rowspan="5">
-														<p class="style2">
-														<span class="style25">
-														<strong>&nbsp; 11</strong> 
-														- </span>
-														<font color="#0000ff">
-														<span class="style25">
-														<strong>LA FORZA</strong></span></font><span class="style20"><span class="style8"> 
-														= </span></span>
-														<font class="style8" face="Arial Rounded MT Bold" size="2">
-														<u>
-														<span class="style20">
-														Energia e volontà.</span></u><span class="style20">
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>LEONE</strong></span></font><span class="style25">
-														<strong>5</strong>° casa 
-														- Agosto - Domenica - 
-														Estate<font color="#800040">
-														<br>
-														</font></span>
-														<span class="style8">
-														<font class="style20">&nbsp; 
-														Fiducia nelle proprie 
-														azioni, coraggio, 
-														decisione, nobiltà 
-														d'animo, convinzione e 
-														sicurezza, </font>
-														</span>
-														<font class="style20" size="2">
-														<span class="style8">
-														<font class="style20">
-														dominio</font></span></font><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">su<font color="#800040"><br>
-&nbsp; </font>qualcosa o qualcuno</span><span class="style50">. </span>
-														<span class="style25">
-														Non scoraggiarsi</span><span class="style50">,
-														</span>
-														<font color="#000000">
-														<span class="style25">
-														potere di conquista</span><span class="style50">,
-														</span>
-														<span class="style25">
-														agire</span><span class="style50">
-														</span>
-														<span class="style25">
-														con</span><span class="style50">
-														</span>
-														<span class="style25">
-														coraggio</span><span class="style50">
-														</span>
-														<span class="style25">e 
-														determinazione</span><span class="style50">,
-														</span>
-														<span class="style25">
-														forza</span></font><span class="style25"><font color="#800040"><br>
-														</font></span>
-														<font color="#000000">
-														<span class="style25">&nbsp; 
-														d'animo e di carattere, 
-														agire da soli senza 
-														cercare appoggi, 
-														successo nelle imprese, 
-														intensa attività.</span></font><span class="style25"><font color="#800040"><br>
-														</font></span>
-														<font color="#000000">
-														<span class="style25">&nbsp; 
-														La volontà è un'arma 
-														potente, andare avanti 
-														con fiducia. Chiarezza 
-														precisa di giudizio. <br>
-&nbsp; </span></font><font color="#ff0000"><u><span class="style25"><strong>
-														AMORE</strong></span></u></font><span class="style25">: 
-														relazione 
-														extraconiugale, 
-														matrimonio, convivenza, 
-														protezione affettuosa, 
-														amica/o che aiuta.<font color="#800040"><br>
-&nbsp; </font>Trionfo dell'amore sull'odio, utilizzare tutta la vostra volontà. 
-														Un uomo o donna dai 30 
-														ai 45 anni. </span>
-														<font color="#800040">
-														<span class="style25">
-														<br>
-&nbsp; </span></font><font color="#008000"><u><span class="style25"><strong>
-														SALUTE</strong></span></u></font><font face="Arial Rounded MT Bold" size="2">:<span class="style25">
-														<span class="style47">
-														occhio sinistro,</span> 
-														vitalità e resistenza 
-														fisica, </span></font>
-														<span class="style25">
-														necessità di cure 
-														appropriate,</span><font face="Arial Rounded MT Bold" size="2"><span class="style25"> 
-														salute ed energia.</span></font><span class="style25"><font color="#800040">
-														<br>
-														</font></span>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>&nbsp; Negativa</strong></span></font><font color="#000000"><span class="style25">:</span></font><span class="style25"> 
-														disturbi</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">di 
-														cuore</span><span class="style50">,
-														</span>
-														<span class="style25">
-														vista</span><span class="style50">,
-														</span>
-														<span class="style25">
-														spina dorsale</span><span class="style50">,
-														</span>
-														<span class="style25">
-														perdita</span><font color="#800040"><span class="style25">
-														</span></font>
-														<span class="style25">di 
-														energie. Non abusare 
-														delle proprie forze,</span><font color="#000000" face="Arial Rounded MT Bold" size="2"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														nervosismo,</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														debolezza fisica.</span></p>
-														<p class="style2">
-														<span class="style25">
-														<strong>&nbsp; 12</strong> 
-														- </span>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>L'APPESO</strong></span></font><span class="style20"><span class="style8"> 
-														= </span></span>
-														<font class="style8" face="Arial Rounded MT Bold" size="2">
-														<u>
-														<span class="style20">
-														Sacrificio e dubbio</span></u><span class="style20">.
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>NETTUNO</strong></span></font><span class="style25">
-														<strong>12</strong>° 
-														casa - Sabato -</span><font color="#800040"><span class="style25">
-														</span></font>
-														<span class="style25">
-														Fine Inverno</span><font color="#800040"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														Rassegnazione, 
-														delusione, distacco, 
-														disagio e sofferenza, 
-														lacrime. Un prezzo da 
-														pagare, menzogna e</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														inganno</span><span class="style50">,
-														</span>
-														<span class="style25">
-														esito negativo</span><span class="style50">.
-														</span>
-														<span class="style25">
-														Niente di nuovo 
-														all'orizzonte, fuga</span><span class="style50">,</span><font color="#000000"><span class="style25"> 
-														resa,</span><span class="style50">
-														</span></font>
-														<span class="style8">
-														<font class="style20">
-														rinuncia, tradimento, 
-														errore, insidia,</font></span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<span class="style8">
-														<font class="style20">&nbsp; 
-														intrigo, calvario, 
-														debiti.</font></span><font class="style20" size="2"><span class="style8"> 
-														S</span></font><font color="#000000" face="Arial Rounded MT Bold" size="2"><span class="style25">ituazione 
-														difficile da 
-														interrompere,</span></font><font color="#000000"><span class="style25"> 
-														sacrifici per il bene 
-														comune, sforzi inutili.<br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														Le prove saranno 
-														superate con pazienza e 
-														rassegnazione.</span><font color="#000000"><span class="style25"> 
-														Rimboccarsi le maniche, 
-														darsi da fare.<br>
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>&nbsp; <u>AMORE</u></strong></span></font><span class="style25">: 
-														promesse non mantenute, 
-														amore non corrisposto, 
-														fuga, mancanza di 
-														chiarezza,</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														confusione</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														nei sentimenti, 
-														separazione.</span><font color="#800040"><span class="style25">
-														</span></font>
-														<font class="style25" color="#000000" size="2">
-														Amore sbagliato.</font><font color="#000000"><span class="style25">
-														<br>
-														</span></font>
-														<font color="#008000">
-														<span class="style25">
-														<strong>&nbsp; <u>SALUTE</u></strong></span></font><font face="Arial Rounded MT Bold" size="2">:<span class="style25">
-														</span></font>
-														<font color="#000000">
-														<span class="style25">
-														piedi, depressione, 
-														stanchezza, ansietà, 
-														problemi con droghe, 
-														alcool e fumo. <br>
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>&nbsp; Negativa</strong></span></font><font color="#000000"><span class="style25">:</span></font><span class="style25"> 
-														operazione,</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														incidente, reni, lutto, 
-														abuso di droghe, alcool 
-														e fumo. </span></p>
-														<div class="style2">
-																		<span class="style25">
-																		<strong>
-																		&nbsp; 13</strong> 
-																		- </span>
-																		<font color="#ff0000">
-																		<span class="style25">
-																		<strong>
-																		LA MORTE</strong></span></font><span class="style20"><span class="style8"> 
-																		= </span>
-																		</span>
-																		<font class="style8" face="Arial Rounded MT Bold" size="2">
-																		<u>
-																		<span class="style20">
-																		Trasformazione 
-																		e fine.</span></u><span class="style20">
-																		</span>
-																		</font>
-																		<font color="#ff0000">
-																		<span class="style25">
-																		<strong>
-																		PLUTONE</strong></span></font><span class="style25"> 
-																		-
-																		<strong>
-																		8</strong>° 
-																		casa - 
-																		Martedì.<font color="#800040">
-																		</font>
-																		Autunno<font color="#800040"><br>
-																		&nbsp; </font>
-																		Rinnovamento, 
-																		fallimento, 
-																		fatalità, 
-																		delusione, 
-																		dispiacere.</span><font color="#000000"><span class="style25">
-																		</span>
-																		</font>
-																		<font color="#000000" face="Arial Rounded MT Bold" size="2">
-																		<span class="style25">
-																		Cambiamento 
-																		radicale 
-																		e 
-																		inatteso. 
-																		Un anno<font color="#800040"><br>
-																		&nbsp; </font>
-																		che deve 
-																		passare, 
-																		attendere<font color="#800040">
-																		</font>
-																		in 
-																		silenzio, 
-																		una 
-																		sconfitta 
-																		che 
-																		porta 
-																		con se 
-																		una 
-																		lezione 
-																		utile. 
-																		Fine o 
-																		inizio<font color="#800040"><br>
-																		&nbsp; </font>
-																		di un 
-																		ciclo, n<font color="#000000">uovi 
-																		affari 
-																		meno 
-																		vincolanti 
-																		e 
-																		pesanti,
-																		</font>
-																		salto di 
-																		qualità, 
-																		un nuovo<font color="#000000">
-																		</font>
-																		impiego. 
-																		Crollo 
-																		dei 
-																		sogni<font color="#800040"><br>
-																		&nbsp; </font>
-																		e delle 
-																		illusioni. 
-																		Un 
-																		brusco 
-																		cambiamento 
-																		dell'attività 
-																		e inizio 
-																		di 
-																		un'altra 
-																		completamente 
-																		diversa. 
-																		Fine<font color="#800040"><br>
-																		&nbsp; </font>
-																		di un 
-																		lavoro o 
-																		un'attività, 
-																		licenziamento.<br>
-																		&nbsp; </span>
-																		</font>
-																		<font color="#ff0000">
-																		<u>
-																		<span class="style25">
-																		<strong>
-																		AMORE</strong></span></u></font><span class="style25">: 
-																		un flirt 
-																		che si 
-																		trasforma 
-																		in un 
-																		rapporto 
-																		stabile, 
-																		una</span><font color="#000000"><span class="style25">
-																		</span>
-																		</font>
-																		<font face="Arial Rounded MT Bold" size="2">
-																		<span class="style25">
-																		semplice 
-																		simpatia 
-																		in una 
-																		forte</span><font color="#000000"><span class="style25">
-																		</span>
-																		</font>
-																		<span class="style25">
-																		passione.<font color="#800040"><br>
-																		&nbsp; </font>
-																		Dispiacere, 
-																		lacrime, 
-																		indifferenza 
-																		o 
-																		difficoltà.</span></font><font color="#000000" face="Arial Rounded MT Bold" size="2"><span class="style25"> 
-																		Fine di 
-																		una 
-																		relazione 
-																		d'amore 
-																		o di</span><font color="#000000"><span class="style25">
-																		</span>
-																		</font>
-																		<span class="style25">
-																		amicizia, 
-																		indifferenza,<font color="#800040"><br>
-																		&nbsp; </font>
-																		solitudine 
-																		e 
-																		malinconia. 
-																		Una 
-																		persona 
-																		anziana, 
-																		fredda e 
-																		austera, 
-																		severa, 
-																		rassegnata.<br>
-																		&nbsp; </span>
-																		</font>
-																		<font color="#008000">
-																		<u>
-																		<span class="style25">
-																		<strong>
-																		SALUTE</strong></span></u></font><font face="Arial Rounded MT Bold" size="2"><span class="style25">: 
-																		intervento 
-																		chirurgico 
-																		all'apparato 
-																		genitale 
-																		o 
-																		all'addome, 
-																		incidente 
-																		grave, 
-																		cure 
-																		energiche,<font color="#800040"><br>
-																		&nbsp; </font>
-																		lenta 
-																		guarigione.<font color="#800040"><br>
-																		</font>
-																		</span>
-																		</font>
-																		<font color="#ff0000">
-																		<span class="style25">
-																		<strong>
-																		&nbsp; 
-																		Negativa</strong></span></font><font color="#000000"><span class="style25">:</span></font><span class="style25"> 
-																		Ossa, 
-																		nervi 
-																		scossi, 
-																		salute 
-																		malferma, 
-																		lutto, 
-																		pericolo 
-																		di 
-																		morte.
-																		</span>
-														</div>
-														<p class="style2">
-														<span class="style25">
-														<strong>&nbsp; 14
-														</strong>- </span>
-														<font color="#0000ff">
-														<span class="style25">
-														<strong>LA TEMPERANZA</strong></span></font><span class="style20"><span class="style8"> 
-														= </span></span>
-														<font class="style8" face="Arial Rounded MT Bold" size="2">
-														<u>
-														<span class="style20">
-														Adattamento e iniziativa</span></u><span class="style20">.
-														</span></font>
-														<font color="#800000">
-														<span class="style25">
-														<strong>ACQUARIO</strong></span></font><font class="style25" size="2"> 
-														- <strong>11</strong>° 
-														casa - Febbraio- Inverno</font><font color="#800040"><span class="style25"><br>
-&nbsp; </span></font><span class="style25">Cambiamento, miglioramento di 
-														progetti e desideri, 
-														speranze che si 
-														realizzano, sorprese,</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														appoggio,</span><font color="#800040"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														calma, fiducia e 
-														autocontrollo. </span>
-														<font color="#000000">
-														<span class="style25">
-														Una situazione può avere 
-														una doppia soluzione, 
-														una trasformazione.</span></font><font color="#800040"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														Moderazione</span><span class="style50">,
-														</span>
-														<span class="style25">
-														capacità</span><font color="#800040"><span class="style25">
-														</span></font>
-														<font color="#000000">
-														<span class="style25">e 
-														abilità nel lavoro, dei 
-														buoni appoggi, 
-														disponibilità, 
-														protezione</span><span class="style50">,
-														</span>
-														<span class="style25">un 
-														imprevisto. </span>
-														</font>
-														<font color="#800040">
-														<span class="style25">
-														<br>
-														</span></font>
-														<font color="#000000">
-														<span class="style25">&nbsp; 
-														Occorre battersi. 
-														Telefono, radio, 
-														televisione, 
-														elettricità. treno, 
-														automobile, aereo e 
-														spazio. <br>
-&nbsp; </span></font><font color="#ff0000"><u><span class="style25"><strong>
-														AMORE</strong></span></u></font><span class="style25">: 
-														serenità e armonia, 
-														buon'amicizia, rapporto 
-														con alti e bassi, dubbi 
-														e incertezze, il 
-														rapporto</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														a due presenta momenti 
-														di tensione. Problemi 
-														risolti col buon senso. 
-														Matrimonio vicino, 
-														adattabilità,</span><font color="#800040"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														scontento, un amore 
-														senza passione. </span>
-														<font color="#800040">
-														<span class="style25">
-														<br>
-&nbsp; </span></font><font color="#008000"><u><span class="style25"><strong>
-														SALUTE</strong></span></u></font><span class="style25">: 
-														necessità di riposo, 
-														capacità di guarire, 
-														energia nervosa.</span><font color="#000000"><span class="style25">
-														<br>
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>&nbsp; Negativa</strong></span></font><font class="style8" color="#000000" face="Arial Rounded MT Bold" size="2"><span class="style20">:
-														</span></font>
-														<span class="style25">
-														circolazione, vene, 
-														caviglie, ossessione, 
-														apatia, tensione, 
-														nervosismo.</span></p>
-														<p class="style2">
-														<span class="style25">
-														<strong>&nbsp; 15
-														</strong>- </span>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>IL DIAVOLO</strong></span></font><span class="style20"><span class="style8"> 
-														= </span></span>
-														<font class="style8" face="Arial Rounded MT Bold" size="2">
-														<u>
-														<span class="style20">
-														Pericolo e imprevisto.</span></u><span class="style20">
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>MARTE</strong></span></font><span class="style25"> 
-														- </span>
-														<font color="#0000ff">
-														<span class="style25">
-														<strong>SCORPIONE</strong></span></font><span class="style25"> 
-														- Martedì. Autunno
-														</span>
-														<font color="#800040">
-														<span class="style25">
-														<br>
-&nbsp; </span></font><font color="#000000"><span class="style25">Controversia, f</span></font><span class="style25">atalità, 
-														difficoltà, 
-														complicazioni e guai in 
-														genere, violenza, 
-														inganno, errore. </span>
-														<font color="#000000">
-														<span class="style25">
-														Ricchezza</span></font><font color="#800040"><span class="style25"><br>
-														</span></font>
-														<font color="#000000">
-														<span class="style25">&nbsp; 
-														usata male,</span></font><span class="style55">
-														</span>
-														<font color="#000000">
-														<span class="style25">
-														realizzazioni non prive 
-														di ostacoli.&nbsp;Sete di 
-														potere, problemi e 
-														fastidi in arrivo, un 
-														periodo<br>
-														</span></font>
-														<font class="style20" color="#000000" size="2">
-														<span class="style8">&nbsp; 
-														cruciale dell'esistenza. 
-														Timore di non farcela, 
-														egoismo, insuccesso, 
-														ribellione e collera, 
-														vizio, </span></font>
-														<span class="style25">
-														intrigo,</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														disputa,<span class="style56">
-														</span>abuso di</span><font color="#800040"><span class="style25">
-														</span></font>
-														<span class="style25">
-														fiducia, disordine, 
-														nemici, estorsione.</span><font color="#000000"><span class="style25"> 
-														Intolleranza con 
-														colleghi, capi o 
-														clienti.<br>
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>&nbsp; <u>AMORE</u></strong></span></font><span class="style25">: 
-														passione intensa, legame 
-														amoroso, profondità di 
-														sentimenti. Carica 
-														sessuale</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														all'eccesso,</span><font color="#000000"><span class="style25"><br>
-														&nbsp;</span></font><font color="#800040"><span class="style25">
-														</span></font>
-														<span class="style25">
-														gelosia e odio, </span>
-														<font color="#000000">
-														<span class="style25">
-														attrazione fisica, amore 
-														illecito. Persona 
-														magica, 
-														misteriosa,dotata di 
-														poteri occulti. <br>
-&nbsp; </span></font><font color="#008000"><u><span class="style25"><strong>
-														SALUTE</strong></span></u></font><span class="style25">:
-														<span class="style47">
-														organi sessuali,</span> 
-														infiammazioni, 
-														interventi chirurgici 
-														organi genitali, 
-														schiavitù dai farmaci o</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														da</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														droghe, </span>
-														<font class="style8" color="#000000" face="Arial Rounded MT Bold" size="2">
-														<span class="style20">
-														debole vitalità. 
-														Problemi al naso, testa, 
-														reni, muscoli, nervi, 
-														febbre, infezioni.</span></font><font color="#800040"><span class="style25"><br>
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>&nbsp; Negativa</strong></span></font><font color="#000000"><span class="style25">:</span></font><span class="style25"> 
-														complicazione di</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														una malattia, 
-														esaurimento nervoso.</span></p>
-														<p class="style2">
-														<span class="style25">
-														<strong>&nbsp; 16</strong></span><span class="style20"><font color="#ff0000"><span class="style8">
-														</span></font>
-														<span class="style8">-
-														</span></span>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>LA TORRE</strong></span></font><span class="style20"><span class="style8"> 
-														= </span></span>
-														<font class="style8" face="Arial Rounded MT Bold" size="2">
-														<u>
-														<span class="style20">
-														Rovina e crollo</span></u><span class="style20">.
-														</span></font>
-														<font class="style25" color="#ff0000" size="2">
-														<strong>URANO</strong>
-														</font>
-														<span class="style25">- 
-														Tutte le stagione, ogni 
-														momento.</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														Cattiva sorpresa, </span>
-														<font class="style20">
-														<span class="style8">il 
-														periodo è negativo,
-														</span>
-														<font class="style20" size="2">
-														<span class="style8">
-														calamità,</span></font></font><font class="style8" color="#000000" face="Arial Rounded MT Bold" size="2"><span class="style20"> 
-														disperazione. </span>
-														</font>
-														<span class="style25">
-														Angoscia, delusione, 
-														difficoltà, perdita</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														di denaro o di lavoro.
-														</span>
-														<font color="#000000">
-														<span class="style25">
-														Fortuna avversa, rischio 
-														di decisioni troppo 
-														affrettate,</span></font><font color="#800040"><span class="style25">
-														</span></font>
-														<font color="#000000">
-														<span class="style25">
-														avvenimento imprevisto,<br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														furto</span><font color="#000000"><span class="style25">.</span></font><font class="style8" color="#000000" face="Arial Rounded MT Bold" size="2"><span class="style20"> 
-														Crollo di</span></font><font color="#000000"><span class="style25"> 
-														progetti, timore 
-														giustificato, una 
-														situazione difficile
-														</span></font>
-														<font class="style25" color="#000000" size="2">
-														da superare, colpa 
-														punita. Stare in</font><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<font class="style25" color="#000000" size="2">&nbsp; 
-														guardia nell'attività o 
-														negli affari, 
-														licenziamento in tronco, 
-														colpa punita.<br>
-&nbsp; </font><font color="#ff0000"><u><span class="style25"><strong>AMORE</strong></span></u></font><span class="style25">: 
-														colpo di fulmine ma 
-														privo di un possibile 
-														futuro, legame 
-														clandestino, fine di una</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														relazione,</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														persona non libera</span><font color="#800040"><span class="style25">
-														</span></font>
-														<span class="style25">e 
-														lontana. Amore 
-														contrastato che crea 
-														problemi, divorzio o</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														separazione. </span>
-														<font color="#800040">
-														<span class="style25">
-														<br>
-&nbsp; </span></font><font color="#008000"><u><span class="style25"><strong>
-														SALUTE</strong></span></u></font><span class="style25">: 
-														intervento chirurgico 
-														delicato o improvviso, 
-														disturbi psicosomatici. 
-														Esaurimento nervoso.</span><font class="style25" color="#000000" size="2"><br>
-														</font>
-														<span class="style25">&nbsp; 
-														Gravidanza</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">o 
-														parto difficile.</span><font color="#ff0000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														Squilibrio psicofisico.</span><font color="#800040"><span class="style25"><br>
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>&nbsp; Negativa</strong></span></font><font color="#000000"><span class="style25">:
-														</span></font>
-														<span class="style25">
-														incidente grave, 
-														infarto,</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														spasmi, crampi, 
-														distorsioni, slogature, 
-														aborto. Incidente 
-														stradali</span><font class="style25" color="#000000" size="2"><br>
-														</font>
-														<span class="style25">&nbsp; 
-														e di lavoro. Esaurimento 
-														nervoso, stanchezza, 
-														collasso, ictus, un 
-														lutto improvviso.&nbsp;&nbsp;
-														</span></p>
-														<p class="style2">
-														<span class="style25">
-														<strong>&nbsp; 17</strong></span><span class="style20"><font color="#ff0000"><span class="style8">
-														</span></font>
-														<span class="style8">-
-														</span></span>
-														<font color="#0000ff">
-														<span class="style25">
-														<strong>LE STELLE</strong></span></font><span class="style20"><span class="style8"> 
-														= </span></span>
-														<font class="style8" face="Arial Rounded MT Bold" size="2">
-														<u>
-														<span class="style20">
-														Riuscita e speranza</span></u><span class="style20">.
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>VENERE</strong></span></font><span class="style25"> 
-														- </span>
-														<font color="#0000ff">
-														<span class="style25">
-														<strong>PESCI</strong></span></font><span class="style25"> 
-														- Venerdì -<font color="#800040">
-														</font>Fine Inverno<font color="#800040">&nbsp;
-														<br>
-&nbsp; </font>Successo, benessere e abbondanza, prosperità, un roseo futuro, 
-														aiuto divino, promesse</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														mantenute</span><font class="style25" color="#000000" size="2"><br>
-														</font>
-														<span class="style25">&nbsp; 
-														anche se non immediate.
-														</span>
-														<font color="#000000">
-														<span class="style25">
-														Verità, bontà, bellezza,
-														</span></font>
-														<span class="style25">
-														colpo di</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														fortuna, chiarezza</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														interiore, 
-														soddisfazione,</span><font class="style25" color="#000000" size="2"><br>
-														</font>
-														<span class="style25">&nbsp; 
-														nuove iniziative. 
-														Gratificazioni, il 
-														momento è propizio,
-														</span>
-														<font color="#000000">
-														<span class="style25">
-														dei sogni premonitori, 
-														buoni auspici, favore 
-														dal</span></font><font class="style25" color="#000000" size="2"><br>
-														</font>
-														<font color="#000000">
-														<span class="style25">&nbsp; 
-														destino, tutto promette 
-														bene, non perdere di 
-														vista gli obiettivi, 
-														imminente appagamento di 
-														speranze,</span></font><font class="style25" color="#000000" size="2"><br>
-&nbsp; di desideri, di progetti. </font><font color="#000000">
-														<span class="style25">
-														Apertura di nuovi 
-														orizzonti e iniziative. 
-														Aiuto da amici. Sogni 
-														premonitori. </span>
-														</font>
-														<font color="#000000" face="Arial Rounded MT Bold" size="1">
-														<br>
-&nbsp;&nbsp; </font><font color="#ff0000"><u><span class="style25"><strong>AMORE</strong></span></u></font><span class="style25">: 
-														un nuovo incontro, 
-														armonia, pace e 
-														serenità, fidanzamento, 
-														matrimonio, intima</span><font color="#000000"><span class="style25">
-														</span></font>
-														<font class="style20" size="2">
-														<span class="style8">
-														esperienza</span></font><font color="#000000" face="Arial Rounded MT Bold" size="1"><br>
-														</font>
-														<font class="style20" size="2">
-														<span class="style8">&nbsp; 
-														importante.</span></font><span class="style25"> 
-														Buone speranze di 
-														realizzare un sogno 
-														d'amore.<font color="#800040">
-														</font>Soddisfazione in 
-														amore. Persona bella e</span><font color="#000000" face="Arial Rounded MT Bold" size="1"><br>
-														</font>
-														<span class="style25">&nbsp; 
-														attraente, raffinata, 
-														elegante, buona dal 
-														carattere facile e 
-														armonioso, che ama la 
-														musica e la poesia.<font color="#800040"><br>
-&nbsp; </font></span><font color="#008000"><u><span class="style25"><strong>
-														SALUTE</strong></span></u></font><span class="style25">:
-														<span class="style47">
-														orecchio sinistro</span>, 
-														completo benessere e 
-														protezione, fecondità, 
-														concepimento e/o 
-														nascita.<font color="#800040"><br>
-														</font></span>
-														<font color="#000000" face="Arial Rounded MT Bold">
-														<span class="style8">
-														<span class="style20">&nbsp; 
-														Energia, buona salute.</span></span></font><font class="style25" color="#000000" size="2"><br>
-														</font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>&nbsp; Negativa</strong></span></font><font color="#000000"><span class="style25">:</span></font><span class="style25"> 
-														problemi di 
-														circolazione,</span><font face="Arial Black" size="1">
-														</font>
-														<span class="style25">ai 
-														reni, voce, gola, 
-														malumori e tensioni.
-														</span></p>
-														</td>
-										</tr>
-						</table>
-						<p class="style70" style="width: 1109px">
-						<font color="#000000" size="2"><strong>
-						<img width="464" height="70" src="TarotLineaC060.gif"></strong></font></p>
-						<table class="style31" cellspacing="1" cellpadding="5">
-										<tr>
-														<td class="style69" rowspan="5">
-														<div class="style2">
-																		<span class="style25">
-																		<strong>
-																		&nbsp; 18
-																		</strong>
-																		- </span>
-																		<font color="#ff0000">
-																		<span class="style25">
-																		<strong>
-																		LA LUNA</strong></span></font><span class="style20"><span class="style8"> 
-																		= </span>
-																		</span>
-																		<font class="style8" face="Arial Rounded MT Bold" size="2">
-																		<u>
-																		<span class="style20">
-																		Delusione 
-																		e 
-																		pericolo</span></u><span class="style20">.
-																		</span>
-																		</font>
-																		<font color="#ff0000">
-																		<span class="style25">
-																		<strong>
-																		LUNA</strong></span></font><span class="style25"> 
-																		- </span>
-																		<font color="#0000ff">
-																		<span class="style25">
-																		<strong>
-																		CANCRO</strong></span></font><span class="style25"> 
-																		- Lunedì 
-																		notte - 
-																		Estate<font color="#800040"><br>
-																		&nbsp; </font>
-																		Conquista 
-																		faticosa, 
-																		passato 
-																		che 
-																		ritorna, 
-																		furti, 
-																		menzogna, 
-																		nemici 
-																		sconosciuti.<font color="#800040">
-																		</font>
-																		Sogni 
-																		premonitori, 
-																		ansia<font color="#800040"><br>
-																		&nbsp; </font>
-																		e 
-																		sfiducia,
-																		</span>
-																		<font face="Arial Rounded MT Bold" size="2">
-																		<span class="style25">
-																		pericolo 
-																		di</span><font color="#000000"><span class="style25">
-																		</span>
-																		</font>
-																		<span class="style25">
-																		errori o 
-																		scelte 
-																		sbagliate, 
-																		avvenimenti 
-																		non 
-																		ancora 
-																		ben 
-																		definiti, 
-																		il 
-																		silenzio 
-																		è d'oro.</span></font><font color="#000000" face="Arial Rounded MT Bold" size="2"><span class="style25"><font color="#800040"><br>
-																		&nbsp; </font>
-																		Non&nbsp;parlare 
-																		dei 
-																		propri 
-																		problemi, 
-																		immaginazione, 
-																		intuizione, 
-																		illusione, 
-																		indolenza. 
-																		Prudenza 
-																		nelle 
-																		azioni,<font color="#800040"><br>
-																		&nbsp; </font>
-																		sensazione 
-																		di 
-																		precarietà, 
-																		presentimento, 
-																		affare<font color="#000000">
-																		</font>
-																		misterioso. 
-																		Equivoco, 
-																		un 
-																		abbaglio, 
-																		una 
-																		trappola, 
-																		una<font color="#800040"><br>
-																		&nbsp; </font>
-																		s</span></font><font color="#000000"><span class="style25">ituazione 
-																		problematica 
-																		e 
-																		confusa. 
-																		Bugie e 
-																		segreti 
-																		che 
-																		vengono 
-																		alla 
-																		luce. 
-																		Bisogno 
-																		di aiuto 
-																		morale.</span></font><font color="#800040"><span class="style25"><br>
-																		&nbsp; </span>
-																		</font>
-																		<font color="#ff0000">
-																		<u>
-																		<span class="style25">
-																		<strong>
-																		AMORE</strong></span></u></font><span class="style25">:
-																		<font color="#000000" size="2">
-																		<span class="style8">
-																		incontro 
-																		al 
-																		passato 
-																		o cose 
-																		del 
-																		passato 
-																		che 
-																		ritornano,
-																		</span>
-																		</font>
-																		una 
-																		donna 
-																		vedova o 
-																		separata, 
-																		una 
-																		folle<font color="#800040"><br>
-																		&nbsp; </font>
-																		passione, 
-																		un 
-																		ideale</span><font color="#800040"><span class="style25">
-																		</span>
-																		</font>
-																		<font face="Arial Rounded MT Bold" size="2">
-																		<span class="style25">
-																		nascosto, 
-																		ricordo 
-																		nostalgico.</span><font color="#000000"><span class="style25"> 
-																		Una 
-																		donna 
-																		nascosta 
-																		o la cui 
-																		esistenza 
-																		è 
-																		coperta 
-																		dal<font color="#800040"><br>
-																		&nbsp; </font>
-																		mistero. 
-																		Adulterio, 
-																		a</span></font><span class="style25">more<span class="style56">
-																		</span>
-																		romanzesco, 
-																		attenzione 
-																		alle 
-																		illusioni 
-																		e alle
-																		</span>
-																		</font>
-																		<font class="style8" color="#000000" face="Arial Rounded MT Bold" size="2">
-																		<span class="style20">
-																		bugie.&nbsp;
-																		</span>
-																		</font>
-																		<font color="#800040">
-																		<span class="style25">
-																		<br>
-																		&nbsp; </span>
-																		</font>
-																		<font color="#008000">
-																		<u>
-																		<span class="style25">
-																		<strong>
-																		SALUTE</strong></span></u></font><font face="Arial Rounded MT Bold" size="2"><span class="style25">: 
-																		gravidanza, 
-																		alti e 
-																		bassi 
-																		d'umore, 
-																		depressione 
-																		e 
-																		malinconia. 
-																		Cure e 
-																		controlli 
-																		medici, 
-																		occorre<font color="#800040"><br>
-																		&nbsp; </font>
-																		cambiare</span><font color="#800040"><span class="style25">
-																		</span>
-																		</font>
-																		<span class="style25">
-																		luogo e 
-																		clima.</span></font><font color="#800040"><span class="style25"><br>
-																		</span>
-																		</font>
-																		<font color="#ff0000">
-																		<span class="style25">
-																		<strong>
-																		&nbsp; 
-																		Negativa</strong></span></font><font color="#000000"><span class="style25">:</span></font><span class="style25"> 
-																		disturbi 
-																		di 
-																		stomaco, 
-																		della 
-																		nutrizione, 
-																		obesità. 
-																		Abuso di 
-																		medicinali</span><span class="style50">,
-																		</span>
-																		<span class="style25">
-																		problemi 
-																		all'utero</span><font face="Arial Rounded MT Bold" size="2"><span class="style25"> 
-																		o alle<span class="style56"><font color="#800040"><br>
-																		&nbsp; </font>
-																		</span>
-																		ovaie, 
-																		esaurimento 
-																		nervoso.&nbsp;
-																		</span>
-																		</font>
-														</div>
-														<p class="style2">
-														<span class="style25">
-														<strong>&nbsp; 19</strong></span><span class="style20"><span class="style8"> 
-														- </span></span>
-														<font color="#0000ff">
-														<span class="style25">
-														<strong>IL SOLE</strong></span></font><span class="style25"> 
-														= </span>
-														<font class="style8" face="Arial Rounded MT Bold" size="2">
-														<u>
-														<span class="style20">
-														Felicità e verità.</span></u><span class="style20">
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>SOLE</strong></span></font><span class="style25"> 
-														- </span>
-														<font color="#800000">
-														<span class="style25">
-														<strong>GEMELLI</strong></span></font><span class="style25"> 
-														- Giugno - Mercoledì - 
-														Domenica</span><font color="#800040"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														Fortuna e successo, 
-														serenità, pace, onori, 
-														gloria, superamento 
-														degli ostacoli, 
-														situazione</span><font color="#800040"><span class="style25">
-														</span></font>
-														<span class="style25">
-														professionale</span><font color="#800040"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														brillante.</span><font color="#800040"><span class="style25">
-														</span></font>
-														<font color="#000000">
-														<span class="style25">
-														Incarico di fiducia, 
-														conquiste artistiche, un 
-														viaggio di lavoro.</span></font><font color="#800040"><span class="style25">
-														</span></font>
-														<font class="style25" color="#000000" size="2">
-														Esito positivo di una 
-														qualsiasi<br>
-&nbsp; impresa. </font><font color="#000000"><span class="style25">Chiarezza di 
-														pensiero e di giudizio, 
-														un consistente ritorno 
-														di fortuna o di 
-														avvenimenti felici,</span></font><font class="style25" color="#000000" size="2"><br>
-&nbsp; generosità e tranquillità. Riuscita economica. Necessità di dialogo, 
-														collaboratori fedeli.
-														<br>
-&nbsp; </font><font color="#ff0000"><u><span class="style25"><strong>AMORE</strong></span></u></font><span class="style25">: 
-														nuova conoscenza, buona 
-														intesa, felicità 
-														coniugale, gioia, 
-														matrimonio, unione 
-														sincera, buon</span><font color="#000000"><span class="style25"><br>
-														&nbsp;</span></font><span class="style25"> 
-														amico/a.</span><font color="#800040"><span class="style25">
-														</span></font>
-														<font color="#000000">
-														<span class="style25">
-														Affetto profondo, 
-														persona libera e 
-														indipendente.</span></font><font color="#800040"><span class="style25">
-														<br>
-&nbsp; </span></font><font color="#008000"><u><span class="style25"><strong>
-														SALUTE</strong></span></u></font><span class="style25">:
-														<span class="style47">
-														cuore, occhi, testa</span>, 
-														energia fisica, 
-														vitalità, sicura 
-														guarigione. Benessere 
-														fisico e morale. </span>
-														<font color="#800040">
-														<span class="style25">
-														<br>
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>&nbsp; Negativa</strong></span></font><font color="#000000"><span class="style25">:</span></font><span class="style25"> 
-														disturbi cardiaci, 
-														occhi, scottature.
-														</span></p>
-														<p class="style2">
-														<span class="style25">
-														<strong>&nbsp; 20
-														</strong>- </span>
-														<font color="#0000ff">
-														<span class="style25">
-														<strong>IL GIUDIZIO</strong></span></font><span class="style25">
-														</span>
-														<span class="style20">
-														<span class="style8">=
-														</span></span>
-														<font class="style8" face="Arial Rounded MT Bold" size="2">
-														<u>
-														<span class="style20">
-														Rinascita e rinnovamento</span></u><span class="style20">. 
-														Febbraio - Sabato</span></font><font color="#000000"><span class="style25"> 
-														- Inverno <br>
-&nbsp; </span></font><span class="style25">Protezione divina, sorpresa, novità, 
-														buona notizia, fretta, 
-														lettera, visita, viaggio 
-														in aereo. Una svolta</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														positiva, successo 
-														incredibile, </span>
-														<font color="#000000">
-														<span class="style25">
-														arrivo quasi immediato 
-														di qualcosa che si 
-														aspetta da lungo tempo. 
-														Un<br>
-&nbsp; chiarimento di una situazione, una discussione, un contrasto, decisioni 
-														che cambieranno in 
-														meglio la<br>
-&nbsp; vita. Un'occasione da afferrare al volo, esito positivo sulla questione 
-														domandata. Promozione, 
-														vittoria.<br>
-&nbsp; </span></font><font color="#ff0000"><u><span class="style25"><strong>
-														AMORE</strong></span></u></font><span class="style25">: 
-														ritorno improvviso di 
-														una persona, di un 
-														affetto, amore che nasce 
-														in seguito ad</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">un 
-														colpo di</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														fulmine. Discussioni che 
-														fanno chiarezza in una 
-														situazione d'amore in 
-														crisi con</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														aumento</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														dell'amore.</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														Persona un po' 
-														eccentrica, impulsiva, 
-														agitata, ansiosa, 
-														entusiasta, moderna e 
-														dotata di poteri 
-														occulti.</span><font color="#000000"><span class="style25">&nbsp;
-														<br>
-&nbsp; </span></font><font color="#008000"><u><span class="style25"><strong>
-														SALUTE</strong></span></u></font><span class="style25">:<span class="style47"> 
-														caviglie, </span>nervi, 
-														arterie, circolazione, 
-														sistema cardiovascolare,</span><font color="#800040"><span class="style25"><span class="style7"> 
-														fare cure ricostituenti, 
-														riposo.</span><br>
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>&nbsp; Negativa</strong></span></font><font color="#000000"><span class="style25">:</span></font><span class="style25"> 
-														bisogno di cure 
-														ricostituenti, di 
-														riposo, nervosismo, 
-														agitazione.</span></p>
-														<p class="style2">
-														<span class="style25">
-														<strong>&nbsp; 21</strong></span><span class="style20"><font color="#ff0000"><span class="style8">
-														</span></font>
-														<span class="style8">-
-														</span></span>
-														<font color="#0000ff">
-														<span class="style25">
-														<strong>IL MONDO</strong></span></font><span class="style20"><span class="style8"> 
-														= </span></span>
-														<font class="style8" face="Arial Rounded MT Bold" size="2">
-														<u>
-														<span class="style20">
-														Espiazione e compimento</span></u><span class="style20">.</span></font><span class="style25">
-														</span>
-														<font color="#008000">
-														<span class="style25">
-														<strong>TORO</strong>
-														</span></font>
-														<span class="style25">- 
-														Maggio - Lunedì&nbsp;- 
-														Venerdì</span><font color="#800040"><span class="style25"><br>
-&nbsp; </span></font><span class="style25">Denaro, ricchezza, trionfo, riuscita 
-														totale, sogni che si 
-														avverano, professione 
-														sicura,</span><font color="#800040"><span class="style25">
-														</span></font>
-														<span class="style25">
-														successo,</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														viaggio</span><font color="#800040"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														in luoghi lontani. 
-														Sforzi ricompensati, 
-														colpo di fortuna, 
-														vincita al gioco, 
-														eredità, onori e</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														gloria, buoni</span><font color="#800040"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														guadagni, premio. 
-														Coronamento dell'opera, 
-														obiettivi</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														realizzati, borsa di 
-														studio, nomina, 
-														felicità. Aiuto</span><font color="#800040"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														da persone influenti, 
-														lavoro legato a 
-														spostamenti. Riuscita in 
-														ogni iniziativa, mente 
-														brillante. </span>
-														<font color="#800040">
-														<span class="style25">
-														<br>
-&nbsp; </span></font><font color="#ff0000"><u><span class="style25"><strong>
-														AMORE</strong></span></u></font><span class="style25">: 
-														rapporti armoniosi e 
-														soddisfacenti, gioia e 
-														felicità, sogno di</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														amore che si<span class="style56">
-														</span>realizza, 
-														incontri,</span><font color="#800040"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														flirt, delle nuove 
-														conoscenze nascono da 
-														viaggi o spostamenti, 
-														sentimenti sinceri. 
-														Persona semplice</span><font color="#800040"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														onesta e sincera, calma 
-														e paziente, altruista, 
-														umana e sensitiva.&nbsp;
-														</span>
-														<font color="#800040">
-														<span class="style25">
-														<br>
-&nbsp; </span></font><font color="#008000"><u><span class="style25"><strong>
-														SALUTE</strong></span></u></font><span class="style25">:
-														<span class="style47">
-														collo, gola</span>, 
-														laringe, denti, avidità, 
-														ghiottoneria, salute 
-														robusta.</span><font color="#000000"><span class="style25">
-														<br>
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>&nbsp; Negativa</strong></span></font><font color="#000000"><span class="style25">:</span></font><span class="style25"> 
-														problemi o disturbi</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														della nutrizione, 
-														anoressia. </span></p>
-														<p class="style2">
-														<span class="style25">
-														<strong>&nbsp; 22/0</strong> 
-														- </span>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>IL MATTO</strong></span></font><span class="style20"><span class="style8"> 
-														= </span></span>
-														<font class="style8" face="Arial Rounded MT Bold" size="2">
-														<u>
-														<span class="style20">
-														Confusione e caos</span></u><span class="style20">.
-														</span></font>
-														<font color="#0000ff">
-														<span class="style25">
-														<strong>SCORPIONE</strong></span></font><span class="style25"> 
-														- Novembre - Martedì -
-														</span>
-														<font color="#800040">
-														<span class="style25">
-														<span class="style7">
-														Autunno</span><br>
-														</span></font>
-														<font face="Arial Rounded MT Bold" size="2">
-														<span class="style25">&nbsp; 
-														Dubbio, follia, errore, 
-														colpo di testa, scelta 
-														sbagliata, decisione 
-														affrettata,</span></font><font color="#800040"><span class="style25">
-														</span></font>
-														<span class="style25">
-														cattivo incontro,</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														cammino</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														incerto. </span>
-														<font class="style20" color="#000000" size="2">
-														<span class="style8">
-														Incoscienza, 
-														impulsività, rifiuto 
-														delle costrizioni, 
-														incognita</span><span class="style54">,
-														</span>
-														<span class="style8">
-														rischio</span><span class="style54">.
-														</span>
-														<span class="style8">Un
-														</span></font>
-														<font color="#000000" size="2">
-														<span class="style25">
-														imprevisto, menzogna,</span></font><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<font color="#000000" size="2">
-														<span class="style25">&nbsp; 
-														invidia, inganno, 
-														tradimento, odio, 
-														ribellione. 
-														Allontanamento, non 
-														bruciare&nbsp;le tappe, una 
-														situazione</span></font><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<font color="#000000" size="2">
-														<span class="style25">&nbsp; 
-														senza via d'uscita, 
-														abuso di fiducia, idee 
-														stravaganti, qualcosa 
-														viene </span></font>
-														<font class="style20" color="#000000" size="2">
-														<span class="style8">
-														carpito con l'inganno o 
-														smarrito.</span></font><font color="#000000"><span class="style25"><br>
-&nbsp; </span></font><font color="#ff0000"><u><span class="style25"><strong>
-														AMORE</strong></span></u></font><span class="style25">: 
-														la situazione 
-														sentimentale è 
-														instabile, poco chiara o 
-														confusa,</span><font color="#800040"><span class="style25"></span></font><span class="style25"> 
-														fine di un rapporto.
-														</span>
-														<font color="#000000">
-														<span class="style25">Un 
-														amore<br>
-&nbsp; non ricambiato o che </span></font><span class="style25">
-														<font color="#000000">è 
-														seriamente contrastato,</font><span class="style56">
-														</span>gelosia, dramma 
-														passionale. Persona 
-														immatura.
-														<font color="#800040">
-														<br>
-&nbsp; </font></span><font color="#008000"><u><span class="style25"><strong>
-														SALUTE</strong></span></u></font><span class="style25">: 
-														disturbi nervosi, 
-														ascessi, infiammazioni, 
-														intossicazioni, 
-														avvelenamenti, 
-														squilibrio psichico.</span><font color="#800040"><span class="style25"><br>
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>&nbsp; Negativa</strong></span></font><font color="#000000"><span class="style25">:</span></font><span class="style25"> 
-														disturbi organi 
-														genitali, problemi 
-														all'utero e vagina, 
-														frigidità, impotenza, 
-														angoscia, manie,</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														insonnia. Stanchezza 
-														mentale e fisica, 
-														mancanza di forza e di 
-														memoria, depressione.</span></p>
-														</td>
-										</tr>
-						</table>
-						<p style="width: 1112px;">
-						<font color="#000000" size="2"><strong>
-						<img width="464" height="70" src="TarotLineaC060.gif"></strong></font><br>
-						</p>
-						<p align="center" class="style63" style="width: 1115px">
-						<font size="5"><strong>INTERPRETAZIONE</strong></font></p>
-						<p align="center" class="style9" style="width: 1118px">
-						<strong><font size="3"><span class="style65">METODO 
-						DELLE</span> </font><span class="style22">
-						<span class="style52">5</span><font size="3"> </font>
-						</span><span class="style65"><font size="3">CARTE</font></span></strong></p>
-						<table class="style23" cellspacing="1" cellpadding="5">
-										<tr>
-														<td class="style11" rowspan="5">
-														<font color="#000000">
-														<span class="style21">&nbsp; 
-														Questo metodo è 
-														consigliato per 
-														rispondere ad un quesito 
-														preciso, chiaro </span>
-														</font>
-														<span class="style10">
-														<span class="style20">e</span><font color="#ff0000" face="Arial Rounded MT Bold" size="1"><span class="style20">
-														</span></font>
-														<span class="style20">
-														netto.</span></span><font color="#000000"><span class="style21"><font color="#800040" face="Arial Rounded MT Bold" size="2"><br>
-														</font></span></font>
-														<span class="style21">&nbsp; 
-														Stabilita la domanda 
-														mescolate
-														<span class="style22">
-														<strong>7</strong></span> 
-														volte il mazzo dei
-														<font color="#ff0000">
-														<strong>22 </strong>
-														</font><strong>
-														<span class="style65">
-														Tarocchi</span></strong></span><font color="#000000" face="Arial Rounded MT Bold"><span class="style10"><span class="style20">, 
-														poi lo</span><font color="#ff0000" size="1"><span class="style20">
-														</span></font></span>
-														</font>
-														<span class="style21">
-														tagliate</span><font color="#000000"><span class="style21">
-														</span></font>
-														<span class="style21">
-														con<font color="#800040" face="Arial Rounded MT Bold" size="2"><br>
-														&nbsp;&nbsp; </font>la</span><span class="style2">
-														</span>
-														<span class="style10">
-														<span class="style20">
-														mano sinistra. Allargate 
-														le carte a ventaglio sul 
-														tavolo coperto</span><font color="#ff0000" face="Arial Rounded MT Bold" size="1"><span class="style20">
-														</span></font>
-														<span class="style20">
-														con un panno colo<font color="#000000"><span class="style21">re<font color="#800040" face="Arial Rounded MT Bold" size="2"><br>
-														</font></span></font>
-														</span></span>
-														<font color="#008040" face="Arial Rounded MT Bold">
-														<strong>
-														<span class="style10">
-														<span class="style20">&nbsp; 
-														verde</span></span></strong><span class="style29">
-														</span></font>
-														<span class="style21">o
-														</span>
-														<font color="#0000a0">
-														<span class="style21">
-														<strong>blu</strong></span></font><span class="style21">, 
-														scegliete </span>
-														<font color="#ff0000">
-														<span class="style21">
-														<strong>4</strong></span></font><span class="style21"> 
-														carte e disponetele in</span><font color="#000000"><span class="style21">
-														</span></font>
-														<span class="style21">
-														questo ordine:</span></td>
-										</tr>
-						</table>
-						<p style="width: 1112px;">&nbsp;<img width="50" height="90" src="TarotDorsoAA0A2.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<img width="50" height="90" src="TarotDorsoAA0A2.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-						&nbsp;&nbsp;<img width="50" height="90" src="TarotDorsoAA0A2.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<img width="50" height="90" src="TarotDorsoAA0A2.jpg">
-						<font color="#ff0000" face="Arial Black" size="4">&nbsp;+&nbsp;
-						</font>&nbsp;<img width="50" height="90" src="TarotDorsoAA0A2.jpg"></p>
-						<p style="width: 1079px; height: 606px;">
-						<font color="#ff0000" face="Arial Black" size="5">&nbsp; 
-						1°</font><font color="#000000" size="6">&nbsp;
-						<span class="style49">-</span></font><font color="#ff0000" size="6">&nbsp;
-						</font>
-						<font color="#ff0000" face="Arial Black" size="5">&nbsp;2°</font><font color="#000000" size="6">&nbsp;
-						<span class="style49">-</span></font><font color="#ff0000" size="6">&nbsp;&nbsp;
-						</font>
-						<font color="#ff0000" face="Arial Black" size="5">3°&nbsp;
-						</font><span class="style49"><font size="6">-</font></span><font color="#ff0000" size="6">&nbsp;&nbsp;
-						</font>
-						<font color="#ff0000" face="Arial Black" size="5">4°</font><font color="#ff0000" size="6">&nbsp;
-						</font><span class="style49"><font size="5">+</font></span><font color="#000000" size="6">&nbsp;&nbsp;
-						</font>
-						<font color="#ff0000" face="Arial Black" size="5">5°</font><table class="style31" cellspacing="1" cellpadding="5">
-										<tr>
-														<td class="style27" rowspan="5">
-														<p class="style2">
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>&nbsp; 1</strong>°</span></font><span class="style25"> 
-														carta: rappresenta il o 
-														la consultante =</span><font color="#ff0000"><span class="style25">
-														<strong>PENSIERO</strong><br>
-														<strong>&nbsp; 2</strong>°</span></font><font face="Arial Rounded MT Bold"><span class="style25"> 
-														carta</span></font><span class="style25">:</span><font color="#ff0000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														indica gli eventuali 
-														ostacoli o nemici =
-														</span>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>A FAVORE</strong></span></font><span class="style25"> 
-														(</span><font color="#0000ff"><span class="style25"><strong>PASSATO</strong></span></font><span class="style25">)</span><font color="#800040"><span class="style25"><br>
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>&nbsp; 3</strong>°</span></font><font face="Arial Rounded MT Bold"><span class="style25"> 
-														carta</span></font><span class="style25">: 
-														indica la protezione, 
-														l'oggi = </span>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>SITUAZIONE 
-														ATTUALE</strong></span></font><span class="style25"> 
-														(</span><font color="#0000ff"><span class="style25"><strong>PRESENTE</strong></span></font><span class="style25">)</span><font color="#800040"><span class="style25"><br>
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>&nbsp; 4</strong>°</span></font><font face="Arial Rounded MT Bold"><span class="style25"> 
-														carta</span></font><span class="style25">: 
-														indica la sentenza o 
-														consiglio = </span>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>RISPOSTA
-														</strong></span></font>
-														<font color="#800040">
-														<span class="style25">
-														<br>
-														</span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>&nbsp; 5</strong>°</span></font><font face="Arial Rounded MT Bold"><span class="style25"> 
-														carta</span></font><span class="style25">: 
-														da leggere se la</span><font color="#ff0000"><span class="style25">
-														<strong>4</strong>°
-														</span></font>
-														<span class="style25">è 
-														negativa = </span>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>SINTESI </strong>
-														</span></font>
-														<font color="#800040">
-														<span class="style25">
-														<br>
-														</span></font>
-														<span class="style25">&nbsp; 
-														Leggete il responso 
-														delle carte </span>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>3</strong>°</span></font><span class="style25"> 
-														e </span>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>4</strong>°</span></font><span class="style25"> 
-														perché sono le più 
-														significative.</span><font color="#800040"><em><span class="style25"><br>
-														</span></em></font>
-														<font color="#000000">
-														<span class="style25">&nbsp; 
-														La carta </span></font>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>5</strong>°
-														</span></font>
-														<font color="#000000">
-														<span class="style25">
-														rappresenta anche gli 
-														eventi futuri.</span></font><font color="#800040"><em><span class="style25"><br>
-														</span></em></font>
-														<span class="style25">&nbsp; 
-														La</span><font color="#ff0000" face="Arial Rounded MT Bold"><span class="style25">
-														<strong>SINTESI</strong></span></font><font color="#ff0000"><span class="style25">
-														</span></font>
-														<span class="style8">
-														<font class="style20">
-														delle carte è necessaria 
-														solo se l'ultimo tarocco 
-														è negativo e</font></span><font class="style20"><span class="style29">
-														</span></font>
-														<font class="style20" size="2">
-														<span class="style8">
-														<font class="style20">
-														lascia qualche</font></span></font><font color="#ff0000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														dubbio sulla</span><font color="#800040"><em><span class="style25"><br>
-														</span></em></font>
-														<span class="style25">&nbsp; 
-														risposta.</span><font color="#ff0000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														Fate la somma del numero</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														delle carte,</span><font color="#800040"><span class="style25">
-														</span></font>
-														<span class="style25">se 
-														il totale è superiore a</span><font color="#ff0000"><span class="style25">
-														<strong>22</strong>
-														</span></font>
-														<span class="style25">
-														ridurre ancora.</span><font color="#800040"><span class="style25">
-														</span></font></p>
-														<p class="style34">
-														<strong>
-														<span class="style65">
-														METODO DELLE</span>
-														<span class="style53">3</span>
-														<span class="style65">
-														CARTE</span></strong></p>
-														<p class="style2">
-														<span class="style25">&nbsp; 
-														Togliere dai </span>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>22</strong></span></font><span class="style25"> 
-														arcani maggiori, le 
-														carte:</span><font color="#000000" size="2"><span class="style20"><span class="style8"><br>
-														<strong>&nbsp; 1</strong></span></span></font><font color="#0000ff"><span class="style25">
-														</span></font>
-														<span class="style25">-
-														</span>
-														<font color="#0000ff">
-														<span class="style25">
-														<strong>IL BAGATTO</strong></span></font><span class="style25">,
-														</span>
-														<font color="#000000">
-														<span class="style25">
-														<strong>2</strong></span></font><font color="#0000ff"><span class="style25"><strong>
-														</strong></span></font>
-														<span class="style25">-
-														</span>
-														<font color="#0000ff">
-														<span class="style25">
-														<strong>LA PAPESSA</strong></span></font><span class="style25">,
-														</span>
-														<font color="#000000">
-														<span class="style25">
-														<strong>22/0</strong></span></font><font color="#ff0000"><span class="style25">
-														</span></font>
-														<span class="style25">-
-														</span>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>IL MATTO</strong></span></font><span class="style25">.</span><font color="#000000"><span class="style25"><br>
-														</span></font>
-														<font class="style25" size="2">&nbsp; 
-														Mescolate le <u><strong>
-														tre carte</strong></u> e 
-														formulate la domanda, 
-														estraete una sola carta 
-														e leggete il suo</font><font color="#ff0000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														responso.</span><font color="#000000" size="2"><span class="style20"><span class="style8"><br>
-														<strong>&nbsp; 1</strong></span></span></font><font color="#0000ff"><span class="style46">
-														</span></font>
-														<span class="style46">-
-														</span>
-														<font color="#0000ff">
-														<span class="style25">
-														<strong>IL BAGATTO</strong></span></font><span class="style25">: 
-														vi sono ottime 
-														prospettive per 
-														realizzare il tuo 
-														progetto. </span>
-														<font color="#000000">
-														<span class="style25">
-														<br>
-														<strong>&nbsp; 2</strong></span></font><font color="#0000ff"><span class="style46">
-														</span></font>
-														<span class="style46">-
-														</span>
-														<font color="#0000ff">
-														<span class="style25">
-														<strong>LA PAPESSA</strong></span></font><span class="style25">: 
-														non rinunciare al tuo 
-														progetto, ma riesaminalo 
-														e cambialo. Sei stato</span><font color="#ff0000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														affrettato nel</span><font color="#000000" size="2"><span class="style20"><span class="style8"><br>
-														</span></span></font>
-														<span class="style25">&nbsp; 
-														prepararlo, un po' di 
-														attenzione in più ti 
-														consentirà di vederne i 
-														punti deboli</span><font color="#ff0000"><span class="style25">
-														</span></font>
-														<span class="style25">e 
-														modificarlo. </span>
-														<font color="#000000">
-														<span class="style25">
-														<br>
-														<strong>&nbsp; 22/0</strong></span></font><font color="#ff0000"><span class="style46">
-														</span></font>
-														<span class="style46">-
-														</span>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>IL MATTO</strong></span></font><span class="style25">: 
-														rinuncia al tuo 
-														progetto, non sei 
-														preparato ad 
-														affrontarlo,</span><font color="#000000"><span class="style25">
-														</span></font>
-														<span class="style25">e 
-														potresti</span><font color="#ff0000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														commettere</span><font color="#000000" size="2"><span class="style20"><span class="style8"><br>
-														</span></span></font>
-														<span class="style25">&nbsp; 
-														degli errori fatali. 
-														Meglio attendere e 
-														rivedere la situazione, 
-														con calma e</span><font class="style25" color="#ff0000" size="1"><span class="style7">....</span>
-														</font>
-														<span class="style25">
-														pazienza.</span></p>
-														<p class="style2">
-														<span class="style25">&nbsp; 
-														Le carte segnate in
-														</span>
-														<font color="#0000ff">
-														<span class="style25">
-														<strong>BLU</strong></span></font><span class="style25"> 
-														sono positive, quelle
-														</span>
-														<font color="#ff0000">
-														<span class="style25">
-														<strong>ROSSE</strong></span></font><span class="style25"> 
-														negative.</span></p>
-														<p class="style2">
-														<span class="style25">&nbsp; 
-														Per un buon esito del 
-														gioco evitate di 
-														ascoltare della musica o 
-														rumori molesti. 
-														L'estrazione</span><font color="#ff0000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														delle</span><font color="#800040"><span class="style25">
-														</span></font>
-														<span class="style25">
-														carte</span><font class="style25" color="#ff0000" size="1"><br>
-														</font>
-														<span class="style25">&nbsp; 
-														va fatta sempre con la 
-														mano sinistra, fate 
-														vuoto mentale, non 
-														ascoltate musica,</span><font color="#ff0000"><span class="style25">
-														</span></font>
-														<span class="style25">
-														non accavallate le</span><font class="style25" color="#ff0000" size="1"><br>
-														</font>
-														<span class="style25">&nbsp; 
-														gambe. Formulare una 
-														domanda sola con il 
-														punto interrogativo.</span><font class="style25" color="#ff0000" size="1">
-														</font>
-														<font color="#000000">
-														<span class="style25">
-														Ogni domanda richiede 
-														una nuova</span></font><font class="style25" color="#ff0000" size="1"><br>
-														</font>
-														<font color="#000000">
-														<span class="style25">&nbsp; 
-														estrazione.
-														<span class="style47">
-														Aspettate un mese per un 
-														secondo consulto.</span></span></font></p>
-														</td>
-										</tr>
-						</table>
-						</p>
-						<p style="width: 1089px;">
-						<font color="#000000" size="2"><strong>
-						<img width="464" height="70" src="TarotLineaC060.gif">&nbsp;&nbsp;&nbsp;&nbsp;
-						<img width="464" height="70" src="TarotLineaC060.gif"></strong></font></p>
-						<p align="center" class="style61" style="width: 1100px">
-						<strong><a href="mailto:%20studio.acquario@libero.it">
-						<span class="style65">Manda a LAURA una e-mail</span></a></strong></p>
+<table background="TArubanfonce.jpg" cellspacing="5" cellPadding="0" borderColorDark="#9E8F6F" borderColorLight="#F4E5C5" width="95%" class="sBorder1s" align="center">
+  <tr><td>
+	<table background="TArubanmetal.jpg" cellSpacing="1" cellPadding="0" width="100%" border="0">
+	  <tr><td>
+		<table background="TArubanfonce.jpg" cellPadding="0" borderColorDark="#9E8F6F" borderColorLight="#F4E5C5" width="100%" class="sBorder1s">
+		  <tr><td class="sBorder1">
+			<table background="TArubanmetal.jpg" cellSpacing="0" cellPadding="0" width="100%" border="0">
+			  <tr><td>
+				<table background="TArubanclair.jpg" cellSpacing="5" cellPadding="0" width="100%" border="0">
+				  <tr><td>
+					<table background="TArubanfonce.jpg" cellPadding="15" borderColorDark="#9E8F6F" borderColorLight="#F4E5C5" width="100%" class="sBorder1s">
+					  <tr><td background="TAfondmilieu02.gif" bgcolor="#E4D7B9">
 
-                                           <span style="COLOR: black; mso-bidi-font-size: 10.0pt">
-                                           <font face="Arial Rounded MT Bold" color="#000000">
-											<span style="mso-bidi-font-weight:normal">
+		<p class="sPersianPlum sXXLarge sBold sCenter">I TAROCCHI</p>
+		<p class="sPersianPlum sXLarge sBold sCenter">COME FARE UNA DIVINAZIONE CON I TAROCCHI ASTROLOGICI</p>
 
-								<font face="Verdana" color="#000000" size="2">
+		<p class="sCenter">
+			<img src="ATarocchi.jpg"   width="387" height="528">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="TACartaLuna.jpg" width="170" height="296">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="TATarotA.jpg"    width="356" height="486"><br><br>
 
-    						<span class="style115">
+			<img src="TAligne02.gif"   width="331" height="46" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="TAligne02.gif"   width="331" height="46" >
+		</p>
+		<p class="sLarge sPersianPlum sBold sCenter">
+			<span class="sRed">ATTENZIONE!</span> le carte segnate in <span class="sBlue">BLU</span> sono positive, quelle 
+			<span class="sRed">ROSSE</span> sono negative.<br><br>
 
-						<p align="center" style="width: 1101px">
-							<img src="ARacquario.gif" width="146" height="141">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							<img src="LauraAB2016..jpg" width="148" height="238"></p>
+			<a href="OroscTarot.htm" class="sMedium sRed">Visita la pagina</a> per fare una previsione dell'anno corrente.
+		</p>
+		<table class="sBorder2sRR sBGWhite" cellspacing="1" cellpadding="5" width="95%" align="center">
+		  <tr>
+			<td class="sBorder2sRR sBGLinen sCenter">
+			<p class="sMedium">
+				<strong>1 - <span class="sBlue">IL BAGATTO</span></strong> = Volontà - iniziativa - 
+				<span class="sRed sBold">ARIETE</span> - <strong>1°</strong> casa - Aprile - Martedì
+			</p>
+			<p class="sSmall sJustify sPadding10">
+				<strong>Libero arbitrio</strong>. Conquista, potere, riuscita completa, progresso, un buon esito, cambiamenti, azione, miglioramenti, 
+				una nuova direzione da seguire. Intelligenza, abilità manuale, audacia, energia, studi concreti, e ntusiasmo, creatività. 
+				Necessità di convincere, agire con le proprie forze. Promozione.<br>
+				<span class="sRed sBold">AMORE</span>: inizio d'una nuova relazione, amore sincero, conquista della libertà. Persona un po' ingenua,
+				marito, fidanzato, figlio. Ripresa di un rapporto. Uomo dai 20/30 anni, sveglio, vivace e giovanile.<br>
+				<span class="sGreen sBold">SALUTE</span>: cure efficaci, ottima ripresa, buona salute, energia e grande benessere, miglioramento.<br>
+				<span class="sRed sBold">Negativa</span>: febbre, occhi, agitazione, crisi cardiaca, nervosismo, infortunio al capo, poca vitalità. 
+			</p>
 
-						</span></font></span></font></span>
+			<p class="sMedium">
+				<strong>2 - <span class="sBlue">LA PAPESSA</span></strong> = Scienza - attesa -
+				<span class="sRed sBold">LUNA</span> - <strong>2°</strong> casa - Maggio, Giugno - Lunedì
+			</p>
+			<p class="sSmall sJustify sPadding10">
+				<strong>Casa, coppia</strong>. Buon senso, attendere con fede, cautela e fede, serenità, denaro che entra in casa. La verità trionfa, 
+				non rivelare le proprie intenzioni. Pazienza, riserbo, saggezza, memoria, comprensione, Immaginazione, ispirazione, desiderio che viene
+				esaudito. La fortuna aiuta in modo inaspettato.<br>
+				<span class="sRed sBold">AMORE</span>: unione duratura, totale dedizione, incertezze presto superate. Amore materno, coniugale, 
+				amicizia senza intimità, figli. Una donna dai 40/45 anni, comprensiva, saggia e intuitiva.<br>
+				<span class="sGreen sBold">SALUTE</span>: occhio destro, buona salute, gravidanza, il figlio atteso è femmina, aumento di peso.<br>
+				<span class="sRed sBold">Negativa</span>: nevrosi, reni, seno, esami e controlli, la vitalità è un po' scarsa.  
+			</p>
 
-						<p align="center" class="style64" style="width: 1104px">
-						<strong>&nbsp;&nbsp;&nbsp;&nbsp; </strong>
-						<font size="3"><em><strong><u><span class="style63">
-						<img width="33" height="33" src="TelefonoC164.gif"></span></u></strong></em></font><span class="style63"><font size="3"><em><strong>
-						</strong></em></font></span>
-						<font class="style66" size="3"><strong>
-						<span class="style20">O TELEFONA: </span></strong>
-						<span class="style20"><strong>0125-631175 - Cell. 347 
-						0417409</strong></span></font><span class="style21">
-						</span></p>
-						<p align="center" style="width: 1121px;">
-						<font class="style61" size="2"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-						Aggiornamento a:
-						<!--webbot bot="Timestamp" s-type="REGENERATED" s-format="%A, %d %B %Y %H:%M" startspan -->lunedì, 18 dicembre 2017 20:04<!--webbot bot="Timestamp" i-checksum="4888" endspan -->
-						</strong></font></p>
-						<p align="center" style="width: 1118px;">
-						<font class="style66" size="2"><strong>
-						<span class="style20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="183" height="56" src="Sitoinclassifica3.png">&nbsp;&nbsp;&nbsp; 
-						Sei il visitatore n°&nbsp;&nbsp;
-						<!--webbot bot="HTMLMarkup" startspan --><A href="http://www.retecivica.milano.it/"><IMG src="http://www.retecivica.milano.it/counter/counter.php?link=1220430673-wce9u6" border="0"></A><!--webbot bot="HTMLMarkup" endspan --> 
-						&nbsp;</span></strong></font></p>
-                		<p style="width: 1167px">
-                        <img src="TAligne04.gif" width="390" height="44"><img src="TAligne02.gif" width="331" height="46"><img src="TAligne04.gif" width="390" height="44"></td>
-                        </tr>
-</TBODY>
-                        </table>
-                        </center></div></td>
-                        </tr>
-</TBODY>
-                        </table>
-                        </center></div></td>
-                        </tr>
-</TBODY>
-                        </table>
-                        </center></div></td>
-                        </tr>
-</TBODY>
-                        </table>
-                        </center></div></td>
-                      </tr>
-</TBODY>
-                    </table>
-                    </center></div></td>
-                  </tr>
-</TBODY>
-                </table>
-                </center></div></td>
-              </tr>
-</TBODY>
-            </table>
-            </center></div></td>
-          </tr>
-</TBODY>
-        </table>
-        </center></div></td>
-      </tr>
-</TBODY>
-    </table>
-    </center></div></td>
-  </tr>
-</TBODY>
-</table>
-</center></div>
+			<p class="sMedium">
+				<strong>3 - <span class="sBlue">L'IMPERATRICE</span></strong> = Azione e mente -
+				<span class="sRed sBold">VENERE  SOLE</span> - <strong>3°</strong> casa - Venerdì, Domenica
+			</p>
+			<p class="sSmall sJustify sPadding10">
+				<strong>Progetti realizzabili</strong>. Intelligenza, vicinanza, arrivo di notizie e lettere, una promozione, dialogo. Uscita dai dubbi, 
+				un aiuto risolutore, usare la mente, fortuna e abbondanza. Progresso, avanzamento, buoni affari, maggior guadagno, riuscita, breve viaggio. 
+				Successo femminile, fascino, ricchezza, creatività.<br>
+				<span class="sRed sBold">AMORE</span>: incontro con una persona molto importante, relazione concreta, una buona amica socievole, tenera, 
+				autoritaria ma gentile. Svolta sentimentale decisiva, matrimonio, la donna guida il rapporto.<br>
+				<span class="sGreen sBold">SALUTE</span>: orecchio destro, ottima salute, energia, fecondità, maternità voluta, scomparsa dell'ansia.<br>
+				<span class="sRed sBold">Negativa</span>: disturbi al cuore e alle arterie, gravidanza con problemi, aborto, esaurimento nervoso.
+			</p>
 
+			<p class="sMedium">
+				<strong>4 - <span class="sBlue">L'IMPERATORE</span></strong> = Realizzazione e potere -
+				<span class="sRed sBold">GIOVE</span> - <strong>4°, 7°, 12°</strong> casa - Marzo, Luglio, Dicembre - Giovedì - Inizio Primavera,
+				Estate, Fine Autunno
+			</p>
+			<p class="sSmall sJustify sPadding10">
+				<strong>Certezza</strong>, qualcosa di buono in vista, azione vittoriosa, apporto di di beni e di denaro, sforzi coronati da successo, 
+				protezione di qualcuno potente, appoggio, esito positivo. Accordo con soci, firma di un contratto, fermezza, persuasione, autorità, 
+				cose concrete, soddisfazione, cose legali, lunghi viaggi.<br>
+				<span class="sRed sBold">AMORE</span>: serenità in famiglia, pace stima e rispetto. Uomo virile e potente. Dominio sulle emozioni, 
+				conciliazione dei sentimenti, Una persona dai 40/45 ai 60 anni circa, uno zio o zia, onesta, generosa, abile e colta. Un uomo virile e
+				potente, affidabile e credibile, vuole il vostro bene, la vostra felicità.<br>
+				<span class="sGreen sBold">SALUTE</span>: dottore, infermiere, volontario, professore capace, buona salute, virilità. Eccessi alimentari.<br>
+				<span class="sRed sBold">Negativa</span>: mancanza di forze, ripresa di una malattia. Disturbi del ricambio, circolazione, cistifellea,
+				fegato, pancreas.
+			</p>
+
+			<p class="sMedium">
+				<strong>5 - <span class="sBlue">IL PAPA</span></strong> = Ispirazione e dovere -
+				<span class="sRed sBold">MERCURIO</span> - <strong>5°</strong> casa - Giugno, Settembre - Mercoledì - Estate
+			</p>
+			<p class="sSmall sJustify sPadding10">
+				<strong>Protezione divina</strong>, aiuto morale, conoscenza , bisogno di comprensione, una persona che dà dei buoni consigli, degna di
+				fiducia. Studi superiori, protezione intellettuale, affermazione. Punto di riferimento, situazioni che devono essere analizzate in 
+				profondità. Brevi viaggi, visite, notizie, lettere, scritti, libri. Trionfo della verità, consolidamento e riconoscimento. Alleanza 
+				e sicurezza materiale, pazienza.<br>
+				<span class="sRed sBold">AMORE</span>: incontro importante con un uomo maturo, buono e leale. Persona degna di fiducia, generosa e 
+				mansueta che sa dare buoni consigli. Periodo molto bello, sereno e godibile, affetto solido e felice.<br>
+				<span class="sGreen sBold">SALUTE</span>: gamba destra, braccia, bronchi, polmoni. Ottimo stato fisico, superamento di una malattia 
+				con la volontà.<br>
+				<span class="sRed sBold">Negativa</span>: poca energia fisica, sistema nervoso e agitazione, respirazione, tendenza ad ingrassare, calcoli,
+				reumatismi.</p>
+
+			<p class="sMedium">
+				<strong>6 - <span class="sBlue">GLI AMANTI</span></strong> = Scelta e prova -
+				<span class="sMaroon sBold">GEMELLI</span> / <span class="sGreen sBold">VERGINE</span> - <strong>6°</strong> casa - Giugno, Settembre - Mercoledì
+			</p>
+			<p class="sSmall sJustify sPadding10">
+				<strong>Libero arbitrio</strong>, due possibilità, usare il cervello, bluff, dialogo, onestà, dubbio, vicinanza, incertezza, oscurità. 
+				Figli, hobby, tempo libero, piccoli animali. Un affare da vagliare con cautela. Sdoppiamento, tentazione, timore di sbagliare.<br>
+				<span class="sRed sBold">AMORE</span>: tormento, passione, gelosia, dubbi ed esitazione fra due amori, amore lontano. Incertezza e
+				superficialità. Uomo/donna dai 20/30 anni, i bambini i parenti. Una persona duplice, indecisa, gelosa.<br>
+				<span class="sGreen sBold">SALUTE</span>: occhi e orecchi, piccoli malanni, problemi ai reni, ventre, intestino. Assistenza di parenti.<br>
+				<span class="sRed sBold">Negativa</span>: Fegato, alti e bassi, crisi depressive, esaurimento nervoso, bisogno di aiuto morale.
+			</p>
+
+			<p class="sMedium">
+				<strong>7 - <span class="sBlue">IL CARRO</span></strong> = Vittoria e trionfo -
+				<span class="sRed sBold">SAGITTARIO</span> - <strong>9°</strong> casa - Dicembre - Giovedì - Fine Autunno
+			</p>
+			<p class="sSmall sJustify sPadding10">
+				<strong>Aiuto divino</strong>, conquista, riuscita, progresso, intensa attività. Una questione si risolve nel migliore dei modi, superamento
+				delle difficoltà. Ambizione, entusiasmo, viaggio per lavoro, onori, talento, meriti riconosciuti, successo. Laurea a pieni voti, piena 
+				affermazione delle proprie capacità, promozione.<br>
+				<span class="sRed sBold">AMORE</span>: unione favorevole, incontro durante un viaggio, un amico intimo, una nuova conoscenza. I flirt danno
+				vita a nuovi amori. Trionfo di un amore impossibile anche contro il destino. Rapporto a due stabile, una persona che vive lontano o che 
+				viaggia. Persona di età matura di 40/60 anni, attraente e virile, diplomatica, ambiziosa e giusta.<br>
+				<span class="sGreen sBold">SALUTE</span>: gamba sinistra, ottima forma, guarigione, malattia superata. Bronchi, polmoni, fegato.<br>
+				<span class="sRed sBold">Negativa</span>: incidenti, squilibri, umore instabile, spreco d'energie. Panico, impotenza sessuale.
+			</p>
+
+			<p class="sMedium">
+				<strong>8 - <span class="sBlue">LA GIUSTIZIA</span></strong> = Equilibrio e rigore - 
+				<span class="sMaroon sBold">BILANCIA</span> - <strong>7°</strong> casa - Ottobre - Venerdì - Autunno
+			</p>
+			<p class="sSmall sJustify sPadding10">
+				<strong>Accordo</strong>, contratto d'ogni genere, esito favorevole di una contestazione, causa vinta, la cosa richiesta è giusta, diploma
+				di studio. Fermezza di opinioni e di propositi, giuste scelte nel lavoro, assunzione, acquisti fortunati. Riuscita, concorso pubblico,
+				correttezza, cose ufficiali e legali. Ricerca d'armonia.<br>
+				<span class="sRed sBold">AMORE</span>: matrimonio raggiunto dopo molte lotte e avversità, gioie e problemi che vengono da una donna, 
+				sposata o associata, armonia e buon'intesa. Persona d'età matura oltre i 50 anni, ragionevole, pratica, cortese, delicata. Affidamento
+				dei figli, alimenti, eredità.<br>
+				<span class="sGreen sBold">SALUTE</span>: braccio destro, visita medica, diagnosi, analisi, recupero forze, salute stabile. 
+				Ecografia, tac.<br>
+				<span class="sRed sBold">Negativa</span>: disturbi reni, vescica, prostata, febbre, obesità, bronchite.
+			</p>
+
+			<p class="sMedium">
+				<strong>9 - <span class="sRed">L'EREMITA</span></strong> = Tempo e prudenza -
+				<span class="sRed sBold">SATURNO</span> - Dicembre - Sabato - Inverno
+			</p>
+			<p class="sSmall sJustify sPadding10">
+				<strong>Pazienza</strong>, discrezione, riservatezza, saper aspettare, parlare di meno, impedimento, difficoltà, cautela e riflessione, 
+				progetto che va portato avanti. Solitudine, isolamento, lentezza e rinuncia, esperienza, è meglio fidarsi di se stesso che degli altri,
+				intravedere il peggio e prevenirlo. Progetto che va portato avanti, approfondimento necessario, sentiero giusto, meditazione. Ricerca vana
+				di un altro lavoro.<br>
+				<span class="sRed sBold">AMORE</span>: amore discreto, freddo e incapace di manifestare i propri sentimenti. Periodo di riflessione, 
+				segretezza, bisogna capire cosa si vuole. Un uomo o donna dai 60 anni in su, padre, madre, nonni.<br>
+				<span class="sGreen sBold">SALUTE</span>: cure metodiche che richiedono del tempo per dare un esito, fare degli esami per conoscere lo 
+				stato di salute. Malattia cronica o lunga e dolorosa. Crisi depressive, problemi alle ginocchia, denti, orecchi, pelle.<br>
+				<span class="sRed sBold">Negativa</span>: disturbi cardiaci, circolazione, fratture ossa, artrite, pressione, reni, reumatismi.
+			</p>
+
+			<p class="sMedium">
+				<strong>10 - <span class="sBlue">RUOTA della FORTUNA</span></strong> =  Buona sorte - 
+				<span class="sGreen sBold">CAPRICORNO</span> - <strong>10°</strong> casa - Gennaio - Sabato - Inverno
+			</p>
+			<p class="sSmall sJustify sPadding10">
+				<strong>Cambiamenti improvvisi</strong>, ma buoni e fortunati, destino felice, vincite al gioco, viaggi di lavoro. Ascesa ostacoli 
+				superati, inizio di un nuovo ciclo, dialogo, iniziative fortunate, alternativa, progresso, acume e astuzia, sorpresa. Aiuti non richiesti,
+				circostanze favorevoli ad un progetto, per una impresa ad una domanda fatta. Scatti nella carriera, buone prospettive di guadagno e 
+				investimento. Afferrare al volo le buone occasioni. Riconoscimento professionale, modifiche per risolvere un problema.<br>
+				<span class="sRed sBold">AMORE</span>: una nuova conoscenza che vi farà rinascere, incontro amoroso destinato a durare nel tempo. 
+				Felicità e gioie amorose, momento favorevole, osate pure. Capacità di comprensione di capire le altrui esigenze affettive e le proprie, 
+				tutto andrà bene, buon umore. Amore che si rinnova continuamente.<br>
+				<span class="sGreen sBold">SALUTE</span>: braccio sinistro , vitalità, superamento della malattia. Possibile gravidanza. Ottimo stato di salute, una netta ripresa. Momento di grande benessere e di energia da sfruttare.<br>
+				<span class="sRed sBold">Negativa</span>: circolazione, fegato, ginocchia, intestino, sorvegliare ossa e dieta alimentare.
+			</p>
+			</td>
+		  </tr>
+		</table>
+
+		<p class="sCenter">
+			<img width="464" height="70" src="TarotLineaC060.gif">
+		</p>
+
+		<table class="sBorder2sRR sBGWhite" cellspacing="1" cellpadding="5" width="95%" align="center">
+		  <tr>
+			<td class="sBorder2sRR sBGLinen sCenter">
+
+			<p class="sMedium">
+				<strong>11 - <span class="sBlue">LA FORZA</span></strong> = Energia e volontà -
+				<span class="sRed sBold">LEONE</span> - <strong>5°</strong> casa - Agosto - Domenica - Estate
+			</p>
+			<p class="sSmall sJustify sPadding10">
+				Fiducia nelle proprie azioni, coraggio, decisione, nobiltà d'animo, convinzione e sicurezza, dominio su qualcosa o 
+				qualcuno. Non scoraggiarsi, potere di conquista, agire con coraggio e determinazione, forza d'animo e di carattere, agire da soli senza 
+				cercare appoggi, successo nelle imprese, intensa attività. La volontà è un'arma potente, andare avanti con fiducia. Chiarezza precisa 
+				di giudizio.<br>
+				<span class="sRed sBold">AMORE</span>: relazione extraconiugale, matrimonio, convivenza, protezione affettuosa, amica/o che aiuta. 
+				Trionfo dell'amore sull'odio, utilizzare tutta la vostra volontà. Un uomo o donna dai 30 ai 45 anni.<br>
+				<span class="sGreen sBold">SALUTE</span>: occhio sinistro, vitalità e resistenza fisica, necessità di cure appropriate, salute ed 
+				energia.<br>
+				<span class="sRed sBold">Negativa</span>: disturbi di cuore, vista, spina dorsale, perdita di energie. Non abusare delle proprie forze,
+				nervosismo, debolezza fisica.
+			</p>
+
+			<p class="sMedium">
+				<strong>12 - <span class="sRed">L'APPESO</span></strong> = Sacrificio e dubbio -
+				<span class="sRed sBold">NETTUNO</span> - <strong>12°</strong> casa - Sabato - Fine Inverno
+			</p>
+			<p class="sSmall sJustify sPadding10">
+				Rassegnazione, delusione, distacco, disagio e sofferenza, lacrime. Un prezzo da pagare, menzogna e inganno, esito negativo. Niente di 
+				nuovo all'orizzonte, fuga, resa, rinuncia, tradimento, errore, insidia, intrigo, calvario, debiti. Situazione difficile da interrompere, 
+				sacrifici per il bene comune, sforzi inutili. Le prove saranno superate con pazienza e rassegnazione. Rimboccarsi le maniche, darsi da
+				fare.<br>
+				<span class="sRed sBold">AMOR</span>: promesse non mantenute, amore non corrisposto, fuga, mancanza di chiarezza, confusione nei sentimenti, separazione. Amore sbagliato.<br>
+				<span class="sGreen sBold">SALUTE</span>: piedi, depressione, stanchezza, ansietà, problemi con droghe, alcool e fumo.<br>
+				<span class="sRed sBold">Negativa</span>: operazione, incidente, reni, lutto, abuso di droghe, alcool e fumo.
+			</p>
+
+			<p class="sMedium">
+				<strong>13 - <span class="sRed">LA MORTE</span></strong> = Trasformazione e fine -
+				<span class="sRed sBold">PLUTONE</span> - <strong>8°</strong> casa - Martedì - Autunno
+			</p>
+			<p class="sSmall sJustify sPadding10">
+				Rinnovamento, fallimento, fatalità, delusione, dispiacere. Cambiamento radicale e inatteso. Un anno che deve passare, attendere in 
+				silenzio, una sconfitta che porta con se una lezione utile. Fine o inizio di un ciclo, nuovi affari meno vincolanti e pesanti, salto di 
+				qualità, un nuovo impiego. Crollo dei sogni e delle illusioni. Un brusco cambiamento dell'attività e inizio di un'altra completamente
+				diversa. Fine di un lavoro o un'attività, licenziamento.<br>
+				<span class="sRed sBold">AMORE</span>: un flirt che si trasforma in un rapporto stabile, una semplice simpatia in una forte passione. 
+				Dispiacere, lacrime, indifferenza o difficoltà. Fine di una relazione d'amore o di amicizia, indifferenza, solitudine e malinconia. 
+				Una persona anziana, fredda e austera, severa, rassegnata.<br>
+				<span class="sGreen sBold">SALUTE</span>: intervento chirurgico all'apparato genitale o all'addome, incidente grave, cure energiche, 
+				lenta guarigione.<br>
+				<span class="sRed sBold">Negativa</span>: Ossa, nervi scossi, salute malferma, lutto, pericolo di morte.
+			</p>
+
+			<p class="sMedium">
+				<strong>14 - <span class="sBlue">LA TEMPERANZA</span></strong> = Adattamento e iniziativa -
+				<span class="sMaroon sBold">ACQUARIO</span> - <strong>11°</strong> casa - Febbraio- Inverno
+			</p>
+			<p class="sSmall sJustify sPadding10">
+				Cambiamento, miglioramento di progetti e desideri, speranze che si realizzano, sorprese, appoggio, calma, fiducia e autocontrollo.
+				Una situazione può avere una doppia soluzione, una trasformazione. Moderazione, capacità e abilità nel lavoro, dei buoni appoggi, disponibilità, protezione, un imprevisto. Occorre battersi. Telefono, radio, televisione, elettricità. treno, automobile, aereo e spazio.<br>
+				<span class="sRed sBold">AMORE</span>: serenità e armonia, buon'amicizia, rapporto con alti e bassi, dubbi e incertezze, il rapporto a due presenta momenti di tensione. Problemi risolti col buon senso. Matrimonio vicino, adattabilità, scontento, un amore senza passione.<br>
+				<span class="sGreen sBold">SALUTE</span>: necessità di riposo, capacità di guarire, energia nervosa.<br>
+				<span class="sRed sBold">Negativa</span>: circolazione, vene, caviglie, ossessione, apatia, tensione, nervosismo.
+			</p>
+
+			<p class="sMedium">
+				<strong>15 - <span class="sRed"> IL DIAVOLO</span></strong> =  Pericolo e imprevisto -
+				<strong><span class="sRed">MARTE</span> / <span class="sBlue">SCORPIONE</span></strong> - Martedì - Autunno
+			</p>
+			<p class="sSmall sJustify sPadding10">
+				Controversia, fatalità, difficoltà, complicazioni e guai in genere, violenza, inganno, errore. Ricchezza usata male, realizzazioni non 
+				prive di ostacoli. Sete di potere, problemi e fastidi in arrivo, un periodo cruciale dell'esistenza. Timore di non farcela, egoismo,
+				insuccesso, ribellione e collera, vizio, intrigo, disputa, abuso di fiducia, disordine, nemici, estorsione. Intolleranza con colleghi, 
+				capi o clienti.<br>
+				<span class="sRed sBold">AMORE</span>: passione intensa, legame amoroso, profondità di sentimenti. Carica sessuale all'eccesso, gelosia 
+				e odio, attrazione fisica, amore illecito. Persona magica, misteriosa,dotata di poteri occulti.<br>
+				<span class="sGreen sBold">SALUTE</span>: organi sessuali, infiammazioni, interventi chirurgici organi genitali, schiavitù dai farmaci
+				o da droghe, debole vitalità. Problemi al naso, testa, reni, muscoli, nervi, febbre, infezioni.<br>
+				<span class="sRed sBold">Negativa</span>: complicazione di una malattia, esaurimento nervoso.
+			</p>
+
+			<p class="sMedium">
+				<strong>16 - <span class="sRed">LA TORRE</span></strong> = Rovina e crollo -
+				<span class="sRed sBold">URANO</span> - Tutte le stagione, ogni momento
+			</p>
+			<p class="sSmall sJustify sPadding10">
+				Cattiva sorpresa, il periodo è negativo, calamità, disperazione. Angoscia, delusione, difficoltà, perdita di denaro o di lavoro. Fortuna
+				avversa, rischio di decisioni troppo affrettate, avvenimento imprevisto, furto. Crollo di progetti, timore giustificato, una situazione
+				difficile da superare, colpa punita. Stare in guardia nell'attività o negli affari, licenziamento in tronco.<br>
+				<span class="sRed sBold">AMORE</span>: colpo di fulmine ma privo di un possibile futuro, legame clandestino, fine di una relazione, 
+				persona non libera e lontana. Amore contrastato che crea problemi, divorzio o separazione.<br>
+				<span class="sGreen sBold">SALUTE</span>: intervento chirurgico delicato o improvviso, disturbi psicosomatici. Esaurimento nervoso.
+				Gravidanza o parto difficile. Squilibrio psicofisico.<br>
+				<span class="sRed sBold">Negativa</span>: incidente grave, infarto, spasmi, crampi, distorsioni, slogature, aborto. Incidente stradali 
+				e di lavoro. Esaurimento nervoso, stanchezza, collasso, ictus, un lutto improvviso.
+			</p>
+
+			<p class="sMedium">
+				<strong>17 - <span class="sBlue">LE STELLE</span></strong> =  Riuscita e speranza -
+				<strong><span class="sRed">VENERE</span> / <span class="sBlue">PESCI</strong> - Venerdì - Fine Inverno
+			</p>
+			<p class="sSmall sJustify sPadding10">
+				Successo, benessere e abbondanza, prosperità, un roseo futuro, aiuto divino, promesse mantenute anche se non immediate. Verità, bontà,
+				bellezza, colpo di fortuna, chiarezza interiore, soddisfazione, nuove iniziative. Gratificazioni, il momento è propizio, dei sogni
+				premonitori, buoni auspici, favore dal destino, tutto promette bene, non perdere di vista gli obiettivi, imminente appagamento di 
+				speranze, di desideri, di progetti. Apertura di nuovi orizzonti e iniziative. Aiuto da amici. Sogni premonitori.<br>
+				<span class="sRed sBold">AMORE</span>: un nuovo incontro, armonia, pace e serenità, fidanzamento, matrimonio, intima esperienza importante. 
+				Buone speranze di realizzare un sogno d'amore. Soddisfazione in amore. Persona bella e attraente, raffinata, elegante, buona dal carattere 
+				facile e armonioso, che ama la musica e la poesia.<br>
+				<span class="sGreen sBold">SALUTE</span>: orecchio sinistro, completo benessere e protezione, fecondità, concepimento e/o nascita. 
+				Energia, buona salute.<br>
+				<span class="sRed sBold">Negativa</span>: problemi di circolazione, ai reni, voce, gola, malumori e tensioni.
+			</p>
+			</td>
+		  </tr>
+		</table>
+
+		<p class="sCenter">
+			<img width="464" height="70" src="TarotLineaC060.gif">
+		</p>
+
+		<table class="sBorder2sRR sBGWhite" cellspacing="1" cellpadding="5" width="95%" align="center">
+		  <tr>
+			<td class="sBorder2sRR sBGLinen sCenter">
+
+			<p class="sMedium">
+				<strong>18 - <span class="sRed">LA LUNA</span></strong> = Delusione e pericolo -
+				<strong><span class="sRed">LUNA</span> / <span class="sBlue">CANCRO</span></strong> - Lunedì notte - Estate
+			</p>
+			<p class="sSmall sJustify sPadding10">
+				Conquista faticosa, passato che ritorna, furti, menzogna, nemici sconosciuti. Sogni premonitori, ansia e sfiducia, pericolo di errori 
+				o scelte sbagliate, avvenimenti non ancora ben definiti, il silenzio è d'oro. Non parlare dei propri problemi, immaginazione, intuizione, 
+				illusione, indolenza. Prudenza nelle azioni, sensazione di precarietà, presentimento, affare misterioso. Equivoco, un abbaglio, una 
+				trappola, una s ituazione problematica e confusa. Bugie e segreti che vengono alla luce. Bisogno di aiuto morale.<br>
+				<span class="sRed sBold">AMORE</span>: incontro al passato o cose del passato che ritornano, una donna vedova o separata, una folle 
+				passione, un ideale nascosto, ricordo nostalgico. Una donna nascosta o la cui esistenza è coperta dal mistero. Adulterio, amore 
+				romanzesco, attenzione alle illusioni e alle bugie.<br>
+				<span class="sGreen sBold">SALUTE</span>: gravidanza, alti e bassi d'umore, depressione e malinconia. Cure e controlli medici, 
+				occorre cambiare luogo e clima.<br>
+				<span class="sRed sBold">Negativa</span>: disturbi di stomaco, della nutrizione, obesità. Abuso di medicinali, problemi all'utero o 
+				alle ovaie, esaurimento nervoso.
+			</p>
+
+			<p class="sMedium">
+				<strong>19 - <span class="sBlue">IL SOLE</span></strong> = Felicità e verità -
+				<strong><span class="sRed">SOLE</span> / <span class="sMaroon">GEMELLI</span></strong> - Giugno - Mercoledì - Domenica
+			</p>
+			<p class="sSmall sJustify sPadding10">
+				Fortuna e successo, serenità, pace, onori, gloria, superamento degli ostacoli, situazione professionale brillante. Incarico di fiducia,
+				conquiste artistiche, un viaggio di lavoro. Esito positivo di una qualsiasi impresa. Chiarezza di pensiero e di giudizio, un consistente
+				ritorno di fortuna o di avvenimenti felici, generosità e tranquillità. Riuscita economica. Necessità di dialogo, collaboratori fedeli.<br>
+				<span class="sRed sBold">AMORE</span>: nuova conoscenza, buona intesa, felicità coniugale, gioia, matrimonio, unione sincera, buon amico/a.
+				Affetto profondo, persona libera e indipendente.<br>
+				<span class="sGreen sBold">SALUTE</span>: cuore, occhi, testa, energia fisica, vitalità, sicura guarigione. Benessere fisico e morale.<br>
+				<span class="sRed sBold">Negativa</span>: disturbi cardiaci, occhi, scottature.
+			</p>
+
+			<p class="sMedium">
+				<strong>20 - <span class="sBlue">IL GIUDIZIO</span></strong> = Rinascita e rinnovamento - Febbraio - Sabato - Inverno
+			</p>
+			<p class="sSmall sJustify sPadding10">
+				Protezione divina, sorpresa, novità, buona notizia, fretta, lettera, visita, viaggio in aereo. Una svolta positiva, successo incredibile,
+				arrivo quasi immediato di qualcosa che si aspetta da lungo tempo. Un chiarimento di una situazione, una discussione, un contrasto, decisioni 
+				che cambieranno in meglio la vita. Un'occasione da afferrare al volo, esito positivo sulla questione domandata. Promozione, vittoria.<br>
+				<span class="sRed sBold">AMORE</span>: ritorno improvviso di una persona, di un affetto, amore che nasce in seguito ad un colpo di 
+				fulmine. Discussioni che fanno chiarezza in una situazione d'amore in crisi con aumento dell'amore. Persona un po' eccentrica, 
+				impulsiva, agitata, ansiosa, entusiasta, moderna e dotata di poteri occulti.<br>
+				<span class="sGreen sBold">SALUTE</span>: caviglie, nervi, arterie, circolazione, sistema cardiovascolare, fare cure ricostituenti, 
+				riposo.<br>
+				<span class="sRed sBold">Negativa</span>: bisogno di cure ricostituenti, di riposo, nervosismo, agitazione.
+			</p>
+
+			<p class="sMedium">
+				<strong>21 - <span class="sBlue">IL MONDO</span></strong> =  Espiazione e compimento -
+				<span class="sGreen sBold">TORO</span> - Maggio - Lunedì - Venerdì
+			</p>
+			<p class="sSmall sJustify sPadding10">
+				Denaro, ricchezza, trionfo, riuscita totale, sogni che si avverano, professione sicura, successo, viaggio in luoghi lontani. Sforzi 
+				ricompensati, colpo di fortuna, vincita al gioco, eredità, onori e gloria, buoni guadagni, premio. Coronamento dell'opera, obiettivi
+				realizzati, borsa di studio, nomina, felicità. Aiuto da persone influenti, lavoro legato a spostamenti. Riuscita in ogni iniziativa, 
+				mente brillante.<br>
+				<span class="sRed sBold">AMORE</span>: rapporti armoniosi e soddisfacenti, gioia e felicità, sogno di amore che si realizza, incontri, 
+				flirt, delle nuove conoscenze nascono da viaggi o spostamenti, sentimenti sinceri. Persona semplice onesta e sincera, calma e paziente,
+				altruista, umana e sensitiva.<br>
+				<span class="sGreen sBold">SALUTE</span>: collo, gola, laringe, denti, avidità, ghiottoneria, salute robusta.<br>
+				<span class="sRed sBold">Negativa</span>: problemi o disturbi della nutrizione, anoressia.
+			</p>
+
+			<p class="sMedium">
+				<strong>22/0 - <span class="sRed">IL MATTO</span></strong> =  Confusione e caos -
+				<span class="sBlue sBold">SCORPIONE</span> - Novembre - Martedì - Autunno
+			</p>
+			<p class="sSmall sJustify sPadding10">
+				Dubbio, follia, errore, colpo di testa, scelta sbagliata, decisione affrettata, cattivo incontro, cammino incerto. Incoscienza, 
+				impulsività, rifiuto delle costrizioni, incognita, rischio. Un imprevisto, menzogna, invidia, inganno, tradimento, odio, ribellione. 
+				Allontanamento, non bruciare le tappe, una situazione senza via d'uscita, abuso di fiducia, idee stravaganti, qualcosa viene carpito 
+				con l'inganno o smarrito.<br>
+				<span class="sRed sBold">AMORE</span>: la situazione sentimentale è instabile, poco chiara o confusa, fine di un rapporto. Un amore 
+				non ricambiato o che è seriamente contrastato, gelosia, dramma passionale. Persona immatura.<br>
+				<span class="sGreen sBold">SALUTE</span>: disturbi nervosi, ascessi, infiammazioni, intossicazioni, avvelenamenti, squilibrio psichico.<br>   
+				<span class="sRed sBold">Negativa</span>: disturbi organi genitali, problemi all'utero e vagina, frigidità, impotenza, angoscia,
+				manie, insonnia. Stanchezza mentale e fisica, mancanza di forza e di memoria, depressione.
+			</p>
+			</td>
+		  </tr>
+		</table>
+		<p class="sCenter">
+			<img src="TAligne04.gif"      width="390" height="44">
+			<img src="TAligne02.gif"      width="331" height="46">
+			<img src="TAligne04.gif"      width="390" height="44"><br><br>
+			<img src="TarotLineaC060.gif" width="464" height="70">
+		</p>
+
+		<p class="sPersianPlum sXLarge sBold sCenter">INTERPRETAZIONE</p>
+
+		<table class="sBorder2sRR sBGWhite" cellspacing="1" cellpadding="5" width="95%" align="center">
+		  <tr>
+			<td class="sBorder2sRR sBGLinen sCenter">
+
+			<p class="sSmall sJustify sPadding20">
+				Le carte segnate in <span class="sBlue sBold">BLU</span> sono positive, quelle in <span class="sRed sBold">ROSSO</span> sono negative.
+				<br><br>
+				Per un buon esito del gioco evitate di ascoltare della musica o rumori molesti. L'estrazione delle carte va fatta sempre con la mano
+				sinistra, fate vuoto mentale, non ascoltate musica, non accavallate le gambe. Formulare una domanda sola con il punto interrogativo. 
+				Ogni domanda richiede una nuova estrazione. <em>Aspettate un mese per un secondo consulto</em>.<br>
+			</p>
+
+			<p class="sMedium sPersianPlum sBold sCenter">METODO DELLE <span class="sRed sLarger">5</span> CARTE</p>
+
+			<p class="sSmall sJustify sPadding10">
+				Questo metodo è consigliato per rispondere ad un quesito preciso, chiaro e netto.<br>
+				Stabilita la domanda, mescolate <span class="sRed sBold">7</span> volte il mazzo dei <span class="sRed sBold">22</span>
+				<span class="sPersianPlum sBold">Tarocchi</span>, poi lo tagliate con la mano sinistra. Allargate le carte a ventaglio sul tavolo 
+				coperto con un panno di colore <span class="sGreen sBold">verde</span> o <span class="sBlue sBold">blu</strong></span></font><span class="sSmall">, scegliete 4 carte e disponetele in questo ordine:</span>
+
+			<p class="sCenter">
+				<img width="50" height="90" src="TarotDorsoAA0A2.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<img width="50" height="90" src="TarotDorsoAA0A2.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<img width="50" height="90" src="TarotDorsoAA0A2.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<img width="50" height="90" src="TarotDorsoAA0A2.jpg">
+					<span class="sXXLarge sRed sBold">&nbsp;+&nbsp;</span>
+				<img width="50" height="90" src="TarotDorsoAA0A2.jpg">
+			</p>
+			<p class="sRed sBold sLarge sCenter">
+				&nbsp;&nbsp;
+				1°&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				2°&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				3°&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				4°<span class="sXLarge sRed sBold">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				5°&nbsp;&nbsp;
+			</p>
+
+			<p class="sSmall sJustify sPadding20">
+				<span class="sRed sBold">1°</span> carta: rappresenta il o la consultante = <span class="sRed sBold">PENSIERO</span><br>
+				<span class="sRed sBold">2°</span> carta: indica gli eventuali ostacoli o nemici = <span class="sRed sBold">A FAVORE</span> 
+					(<span class="sBlue sBold">PASSATO</span>)<br>
+				<span class="sRed sBold">3°</span> carta: indica la protezione, l'oggi =  <span class="sRed sBold">SITUAZIONE ATTUALE</span>
+					(<span class="sBlue sBold">PRESENTE</span>)<br>
+				<span class="sRed sBold">4°</span> carta: indica la sentenza o consiglio = <span class="sRed sBold">RISPOSTA</span><br>
+				<span class="sRed sBold">5°</span> carta: da leggere se la <span class="sRed sBold">4°</span> è negativa = 
+				<span class="sRed sBold">SINTESI</span><br>
+				Leggete il responso delle carte <span class="sRed sBold">3°</span> e <span class="sRed sBold">4°</span> perché sono le più significative.<br>
+				La carta <span class="sRed sBold">5°</span> rappresenta anche gli eventi futuri.<br>
+				La <span class="sRed sBold">SINTESI</span> delle carte è necessaria solo se l'ultimo tarocco è negativo e lascia qualche dubbio sulla 
+				risposta. Fate la somma del numero delle carte, se il totale è superiore a <span class="sRed sBold">22</span> ridurre ancora.<br>
+			</p>
+
+			<p class="sMedium sPersianPlum sBold sCenter">METODO DELLE <span class="sRed sLarger">3</span> CARTE</p>
+			
+			<p class="sSmall sJustify sPadding20">
+				Togliere dai <span class="sRed sBold">22</span> arcani maggiori, le carte:<br>
+				<strong>&nbsp;&nbsp;- 1 <span class="sBlue">IL BAGATTO</span></strong>;<br>
+				<strong>&nbsp;&nbsp;- 2 <span class="sBlue">LA PAPESSA</span></strong>;<br>
+				<strong>&nbsp;&nbsp;- 22/0 <span class="sRed">IL MATTO</span></strong>.<br><br>
+				Mescolate le <strong>tre carte</strong> e formulate la domanda. Estraete una sola carta e leggete il suo responso.<br><br>
+				<strong>1 - <span class="sBlue">IL BAGATTO</span></strong>: vi sono ottime prospettive per realizzare il tuo progetto.<br>
+				<strong>2 - <span class="sBlue">LA PAPESSA</span></strong>: non rinunciare al tuo progetto, ma riesaminalo e cambialo. Sei stato affrettato 
+				nel prepararlo, un po' di attenzione in più ti consentirà di vederne i punti deboli e modificarlo.<br>
+				<strong>22/0 - <span class="sRed">IL MATTO</span></strong>: rinuncia al tuo progetto, non sei preparato ad affrontarlo, e potresti 
+				commettere degli errori fatali. Meglio attendere e rivedere la situazione, con calma e ... pazienza.
+			</p>
+
+			</td>
+		  </tr>
+		</table>
+
+		<p class="sPersianPlum sSmall sCenter">
+			<img src="TarotLineaC060.gif" width="464" height="70">&nbsp;&nbsp;&nbsp;
+			<img src="TarotLineaC060.gif" width="464" height="70"><br><br>
+
+			<img src="email-box.gif"    width="35" height="35">
+			<strong>Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sTxtDecNo sBold sAqua">studio.acquario@libero.it</a><br><br>
+			<img src="TelefonoC164.gif" width="35" height="35">&nbsp;
+			<strong>oppure Telefona: 0125 631175 - Cell. 347 0417409</strong><br><br>
+
+			<a href="https://www.net-parade.it/?dettagli=www.studioacquario.it"><img width="183" height="56" src="Sitoinclassifica3.png"></a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Sei il visitatore n°</strong>&nbsp;&nbsp;
+			<a href="http://www.retecivica.milano.it/"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220430673-wce9u6" border="0"></a>
+			&nbsp;(Contenuto Aggiornato 18/12/2017)<br>
+		</p>
+					</td></tr></table>
+				</td></tr></table>
+			</td></tr></table>
+		</td></tr></table>
+	</td></tr></table>
+</td></tr></table>
+<p class="sCenter sXXSmall sWhite">
+	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati. 
+	Senza il consenso dell&#39;autrice, è vietata ogni riproduzione parziale o totale dei contenuti.</span>
+</p>
 </body>
 </html>
