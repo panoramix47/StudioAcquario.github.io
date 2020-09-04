@@ -1,703 +1,269 @@
 <!DOCTYPE html>
-<html>
-<HEAD>
+<html lang="it">
+<head>
 <meta charset="UTF-8">
-<TITLE>Fiori</TITLE>
+<title>Fiori - Studio Acquario</title>
 <link rel="icon" type="image/gif" href="favicon32.gif">
-<META name="description" content="Studio Acquario - Fiori">
-<meta name="keywords" content="astrologia">
-<meta name="author" content="Laura Lencia">
-<meta http-equiv="imagetoolbar" CONTENT="no">
-
+<meta name="description" content="Studio Acquario: Fiori">
+<meta name="keywords" content="studio, acquario, astrologia, fiori">
+<meta name="author" content="Laura Lencia, studio.acquario@libero.it">
+<meta name="owner" content="Laura Lencia">
+<meta name="language" content="it">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="content_updated" content="25/12/2019">
+<meta name="revised" content="04/09/2020">
 
 <style type="text/css">
-.style1 {
+body {
+	scrollbar-arrow-color: #83743C;
+	scrollbar-base-color: #FDEFEE; /* White Smoke */
+	scrollbar-dark-shadow-color: #FDEFEE;
+	scrollbar-track-color:#FDF2F1; /* White Smoke */
+
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #F8B8D7; /* Cotton Candy */
+	background-color: #CB6163; /* Mandy */
+	background-image: url('ASRback.gif');
+	background-attachment: fixed;
+}
+A:link {
+	color: #0000ff;
+}
+A:visited {
+	color: #0000ff;
+}
+h1 {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #000000; /* Black */
+	text-align: center;
+}
+.sLogoBanner {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	text-shadow: 1px 1px 5px #0000FF; /* Blue */
+	text-align: center;
+}
+.sBorder1 {
+				border-width: 1px;
+}
+.sBorder1s {
 				border-style: solid;
 				border-width: 1px;
 }
-.style67 {
-				text-align: center;
-}
-.style40 {
-				font-size: medium;
-				color: #5C5C2E;
-}
-.style65 {
-				font-size: medium;
-				color: #434321;
-}
-.style59 {
-				color: #5C5C2E;
-}
-.style23 {
-				font-family: Verdana;
-				font-size: x-small;
-}
-.style31 {
-				font-weight: bold;
-}
-.style32 {
-				font-weight: bold;
-				font-family: Verdana;
-				font-size: xx-large;
-				color: #000000;
-}
-.style61 {
-				border-width: 1px;
-}
-.style21 {
+.sBorder1s-CarouselPink {
 				border: 1px solid #FDDBE1;
 }
-.style34 {
-				font-family: Verdana;
-				font-size: x-small;
-				border-width: 0;
-				background-color: #FDDBE1;
-				color: #5F5F30;
-				text-align: left;
-}
-.style3 {
-				font-weight: bold;
-				font-family: Verdana;
-				color: #000000;
-				font-size: small;
-}
-.style24 {
-				font-size: x-small;
-}
-.style69 {
+.sBlack {
 				color: #000000;
 }
-.style20 {
-				font-family: Verdana;
-}
-.style2 {
-				text-align: left;
-}
-.style58 {
-				font-weight: bold;
-				color: #000000;
-}
-.style64 {
-				font-weight: normal;
-}
-.style27 {
-				text-decoration: underline;
-}
-.style55 {
-				font-size: small;
-				color: #000000;
-}
-A:link { text-decoration: none;}
-A {text-decoration: none}
-.style66 {
-				font-family: Verdana;
-				color: #000000;
-				font-size: small;
-}
-.style35 {
-				color: #FF9F9F;
-}
-.style63 {
+.sElPaso {
 				color: #434321;
 }
-.style53 {
-				font-family: Verdana;
-				color: #000000;
+.sWhite {
+				color: #FFFFFF;
 }
-.style5 {
-	font-size: small;
+.sBold {
+				font-weight: bold;
 }
-body {
-scrollbar-arrow-color: #83743C;
-scrollbar-base-color: #FDEFEE;
-scrollbar-dark-shadow-color: #FDEFEE;
-scrollbar-track-color:#FDEFEE;
-}
-.style72 {
-				border-style: solid;
+.sCenter {
 				text-align: center;
 }
-.style73 {
-				font-family: Verdana;
+.sJustify {
+				text-align: justify;
+}
+.sPadding {
+				padding-left: 20px;
+				padding-right: 20px;
+}
+.sLineH125 {
+				line-height: 125%;
+}
+.sXXSmall {
+				font-size: xx-small;
+}
+.sXSmall {
+				font-size: x-small;
+}
+.sSmall {
 				font-size: small;
 }
-.style74 {
-				font-size: small;
-				color: #5C5C2E;
-}
-.style75 {
-				font-size: small;
-				color: #434321;
-}
-.style76 {
+.sMedium {
 				font-size: medium;
-				color: #000000;
+}
+.sLarge {
+				font-size: large;
+}
+.sXLarge {
+				font-size: x-large;
+}
+.sXXLarge {
+				font-size: xx-large;
 }
 </style>
+</head>
 
-</HEAD>
+<body>
+<p class="sLogoBanner">Studio di Astrologia "Acquario"</p>
 
-<BODY onLoad="resizeTo(screen.width,screen.height)" text=#f8b8d7 vLink=#0000ff link=#0000ff bgColor="#CB6163" 
-background="ASRback.gif" bgproperties="fixed">
-<DIV align=center>
-<CENTER style="width: 1226px; height: 3499px">
-<TABLE cellSpacing=0 borderColorDark=#43050d cellPadding=0 
-borderColorLight=#a7474f 
-background="ASRback3.jpeg" style="width: 60%" class="style1">
-<TBODY>
-<TR>
-<TD style="width: 80%">
-<DIV align=center>
-<TABLE cellSpacing=0 cellPadding=0 
-background="ASRgoldtile2.jpeg" 
-border=0 style="width: 80%">
-<TBODY>
-<TR>
-<TD style="width: 80%">
-<DIV align=center>
-<TABLE cellSpacing=0 cellPadding=0 
-background="ASRstrip02.jpeg" 
-border=0 style="width: 80%">
-<TBODY>
-<TR>
-<TD width="100%">
-<DIV align=center>
-<TABLE cellSpacing=0 cellPadding=2 width="100%" 
-background="ASRgoldtile2.jpeg" 
-border=0>
-<TBODY>
-<TR>
-<TD width="100%">
-<DIV align=center>
-<TABLE cellSpacing=0 cellPadding=2 width="100%" 
-background="ASRstrip02.jpeg" 
-border=0>
-<TBODY>
-<TR>
-<TD width="100%">
-<DIV align=center>
-<TABLE cellSpacing=0 cellPadding=2 width="100%" 
-background="ASRgoldtile2.jpeg" 
-border=0>
-<TBODY>
-<TR>
-<TD width="100%">
-<DIV align=center>
-<TABLE cellSpacing=0 cellPadding=25 width="100%" 
-background="ASRstrip02.jpeg" 
-border=0>
-<TBODY>
-<TR>
-<TD width="100%">
-<DIV align=center>
-<TABLE cellSpacing=0 cellPadding=2 width="100%" 
-background="ASRgoldtile2.jpeg" 
-border=0>
-<TBODY>
-<TR>
-<TD width="100%">
-<DIV align=center>
-<TABLE cellSpacing=0 cellPadding=0 width="100%" 
-background="ASRindexfond.jpeg" 
-border=0>
-<TBODY>
-<TR>
-<TD width="100%">
-								<table cellPadding="0" width="100%"
-                background="OgoldLinea.gif" border="0">
-<TBODY>
-                  <tr>
-                    <td width="100%"><div align="center"><center><table cellSpacing="0" cellPadding="0"
-                    width="100%" background="http://www.moonandbackgraphics.com/gardenfencetile.jpg"
-                    border="0">
-<TBODY>
-                      <tr>
-                        <td width="100%"><div align="center"><center>
-										<table cellSpacing="0" cellPadding="0"
-                        width="100%" background="Ofondo2.gif" border="0" bordercolorlight="#FDDBE1"
-                        bordercolordark="#D28A92">
-                        <tr>
-                        <td bordercolor="#FDDBE1" class="style72" style="width: 100%">
-                        <div class="style67">
-                        <img src="Oligne.jpg" width="399" height="41"><span class="style40"><span class="style65">&nbsp;&nbsp;&nbsp; <img src="ORosaRossa.gif" width="50" height="58">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><img src="Oligne.jpg" width="371" height="41"><br>
-										&nbsp;&nbsp;
-                        				<span class="style59"><span class="style23">
-										&nbsp;
-										<img src="O.rose.gif" width="526" height="501">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>&nbsp;<img src="cuoreRos.gif" width="231" height="195"><br>
-						</div>
-						<p class="style31" align="center" style="width: 1138px">
-						<span lang="IT" class="style32">DILLO
-CON UN FIORE</span></p>
-						<span lang="IT" class="style76">
-<font face="Arial Black">SCOPRI
-IL LORO SIGNIFICATO</font></span><span class="style55"><br>
-                        </span>
-                        <span class="style74">
-                        <img src="Oligne.jpg" width="399" height="41"></span><span class="style40"><span class="style75"><img src="ORosaRossa.gif" width="50" height="58"></span></span><span class="style74"><img src="Oligne.jpg" width="399" height="41"></span><span class="style59"><span class="style73"><br>
-                        </span>
-                        </span>
-                        <div align="center"><center><table border="1" width="80%" cellspacing="15" cellpadding="5"
-                        bordercolorlight="#FDDBE1" bordercolordark="#D28A92">
-                        <tr>
-                        <td align="center" style="width: 1000px" class="style61">
+<TABLE background="ASRback3.jpeg" cellSpacing=0 cellPadding=0 borderColorDark="#43050d" borderColorLight="#a7474f" width="95%" class="sBorder1s" align="center">
+<TBODY><TR><TD>
 
-  <table background="file:///C:/Documents%20and%20Settings/Privato/My%20Documents/A-WEBSHARE/WWWROOT/Acquario/AstroSfon63B0.jpg" bgcolor="#FFFFFF" cellspacing="1" cellpadding="5" style="width: 1000px" class="style21">
-    <tr>
-      <center>
-      <td style="width: 1040px;" class="style34" rowspan="5">
-      <span lang="IT" class="style66">
-		&nbsp; </span>
-      <span lang="IT" class="style3">
-		&nbsp;ACACIA</span><font size="2" face="Arial Rounded MT Bold" class="style24"><span class="style69"><span lang="IT"><span class="style20"><span class="style5">: 
-		Amore celato, segreto, casto, puro e platonico. Bellezza ideale, è il 
-		simbolo di eterna<br>
-      &nbsp;&nbsp; amicizia vera e disinteressata.<br>
-      </span>
-      </span>
-      </span></span><span class="style20"><span class="style69"><span lang="IT">
-		<span class="style5">&nbsp;&nbsp;&nbsp;<b>ACETOSELLA</b>: Raro e semplice, è il fiore della 
-		tenerezza materna, un ideale omaggio per una<br>
-      &nbsp;&nbsp; neo-mamma e di buon augurio per le future genitrici.<br>
-      &nbsp;&nbsp;&nbsp;<b>AGRIFOGLIO</b>: 
-		eternità, aggressività, forza, resistenza, felicità domestica.<br>
-      &nbsp;&nbsp;&nbsp;<b>AMARILLIS</b>: bella, ma 
-		timida, orgoglio, poesia bucolica, fierezza.<br>
-      </span>
-      </span></span><span class="style5"><font class="style69"><span class="titolonomi1"><span lang="IT">
-		&nbsp;&nbsp;&nbsp;<b>A</b></span></span><b><span lang="IT">NEMONE</span></b></font></span><span class="style69"><span lang="IT"><span class="style5">:</span></span></span></span><span lang="IT"><span class="style20"><span class="style69"> 
-		<span class="style73">Da regalare per dire: mi 
-		trascuri torna da</span><span lang="IT" class="style2"><font face="Arial Rounded MT Bold"><font size="2" class="style5"><span lang="IT" class="style20">
-      </span></font></font>
-      </span><span class="style73">me, </span>
-      <font size="2" class="style73">non hai nulla da temere. </font> </span>
-		</span>
-		</span></font><span class="style69">
-		<span lang="IT">
-		<span class="style5"><font class="style20">Non solo<font size="2" face="Arial Rounded MT Bold" class="style24"><span class="style20"><br>
-      &nbsp;&nbsp;&nbsp; </span></font>a un amore ma</font></span><font class="style20"><span class="style5"> anche a un amico</span></font><font size="2" class="style23"><font size="2" face="Arial Rounded MT Bold" class="style5"><span class="style20">
-      </span></font><font class="style20"><span class="style5">e un parente. 
-		</span> </font>
-		<font size="2" face="Arial Rounded MT Bold" class="style24"><span class="style20"> 
-		<font size="2" class="style73">P</font><span class="style5">assione sincera, senso d&#39;abbandono 
-		e l&#39;amore<br>
-      &nbsp;&nbsp; tradito, </span> </span></font><span class="style73">
-		<font class="style20">anche la 
-		speranza e</font></span><span class="style23"><font size="2" face="Arial Rounded MT Bold" class="style24"><span class="style20"><span class="style5">
-		</span>
-      </span></font> </span><span class="style73"><font class="style20">l&#39;attesa. </font>
-		</span><font class="style20"><span class="style5"><br>
-      </span> </font>
-		</font>
-      </span><font size="2" class="style23"><font class="style20">
-		<span class="style5"><span class="titolonomi1"><span lang="IT">&nbsp;&nbsp;&nbsp;<b>A</b></span></span><b><span lang="IT">RTEMISIA</span><span lang="IT" class="titolonomi1">:</span></b></span></font><span lang="IT"><font class="style20"><span class="style5"> 
-		Serenità, felicità, salute. Da regalare per ringraziare di ciò che ci 
-		viene donato<font size="2" face="Arial Rounded MT Bold" class="style24"><span class="style20"><br>
-      &nbsp; </span></font></span> </font>
-		<font size="2" face="Arial Rounded MT Bold" class="style5"><span class="style20"> 
-		&nbsp;o</span></font><font class="style20"><span class="style5">gni giorno.<br>
-		</span> </font>
-		</span> </font>
-		</span><font class="style20"><font size="2" class="style23">
-		<span class="style5"><font class="style69"><span class="titolonomi1"><span lang="IT">
-		&nbsp;&nbsp;&nbsp;<b>A</b></span></span><b><span lang="IT">ZALEA</span></b></font><span lang="IT" class="style69">:
-      Simbolo cinese della femminilità e temperanza, simboleggia la</span></span><span class="style69"><span class="style5">
-		</span>
-		</span> </font>
-		</font>
-		<span class="style69"><span lang="IT"><span class="style73">fortuna, è 
-		un fiore da</span><span class="style23"><font size="2" face="Arial Rounded MT Bold" class="style5"><span class="style20"><font size="2" face="Arial Rounded MT Bold" class="style24"><span class="style5"><br>
-      &nbsp; </span></font>&nbsp;</span></font></span><span class="style73">regalare prima</span><span class="style23"><span class="style73">&nbsp;di affrontare una prova importante. </span>
-		</span>
-      </span><font size="2" face="Arial Rounded MT Bold" class="style2"><span lang="IT">
-		<span class="style73">Abbi cura di te.<br>
-      </span>
-      </span><span class="style20"><span lang="IT"><span class="style5">
-		&nbsp;&nbsp;&nbsp;<b>BIANCOSPINO</b>: Sincerità, speranza e prudenza. Può essere regalata in attesa di una 
-		risposta</span><span class="style24"><font size="2" class="style5"><font size="2" face="Arial Rounded MT Bold" class="style24"><span class="style5"><br>
-      &nbsp;&nbsp; </span></font>&nbsp;</font></span><span class="style5">positiva.<br>
-      &nbsp;&nbsp;&nbsp;<b>BUCANEVE</b></span></span></span><span lang="IT"><span class="style20"><span class="style5">: 
-		Un pensiero di consolazione, di speranza e amicizia.
-		Da donare per </span></span> </span></font>
-		<span lang="IT" class="style73">attestare
-      la<font size="2" face="Arial Rounded MT Bold" class="style24"><span class="style20"><span lang="IT"><span class="style5"><br>
-      </span>
-      </span></span></font>&nbsp;</span></span><span lang="IT"><span class="style69"><font size="2" class="style23"><font size="2" face="Arial Rounded MT Bold" class="style2"><span class="style20"><span class="style24"><font size="2" class="style5">&nbsp;&nbsp;</font></span></span></font></font><font class="style20"><span class="style5">propria
-		solidarietà.<br>
-      </span></font>
-      </span>
-      </span><font class="style20"><span class="style5"><span lang="IT" class="style69">&nbsp;&nbsp;&nbsp;</span><span lang="IT" class="style58">CALLA</span><span lang="IT"><span class="style69">: 
-		Comunica 
-		eleganza, stile, bellezza e raffinatezza.<br>
-      </span>
-      </span><span class="style69"><span lang="IT">&nbsp;&nbsp;&nbsp;</span><span lang="IT" class="style31">CAMELIA</span></span></span></font><span lang="IT"><span class="style69"><font class="style20"><span class="style5">:
-		<span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">È</span> 
-		un pegno e un impegno ad affrontare
-		</span></font>
-		<font size="2" class="style23">
-		<font size="2" face="Arial Rounded MT Bold" class="style5">
-		<span class="style20">ogni
-      </span></font><font class="style20"><span class="style5">sacrificio in nome 
-		dell&#39;amore, è una<font size="2" face="Arial Rounded MT Bold" class="style24"><span class="style20"><br>
-      &nbsp;
-      </span>
-      </font>&nbsp;perfetta bellezza e stima. <br>
-      </span></font>
-		</font>
-      </span>
-      </span><font size="2" class="style23"><span class="style69"><span lang="IT">
-		<font class="style20"><span class="style5">&nbsp;&nbsp; <b>CAMELIA</b>
-      <b><u>bianca</u></b>: Sei adorabile, stima, gratitudine, ammirazione.<br>
-      &nbsp;&nbsp; <b>CAMELIA</b>
-      <b><u>rosa</u></b>: Mi manchi, costanza, ammirazione e gratitudine, il 
-		ritrovarsi, grazia e stima,<font size="2" face="Arial Rounded MT Bold" class="style24"><span class="style20"><br>
-      &nbsp;&nbsp;
-      </span></font></span></font>
-		<font size="2" face="Arial Rounded MT Bold" class="style5"><span class="style20">
-      &nbsp;</span></font><font class="style20"><span class="style5">incontrarsi di nuovo.<br>
-		&nbsp;&nbsp;&nbsp;<b>CAMELIA</b> <b><u>rossa</u></b>: 
-		Sei una fiamma nel mio cuore.&nbsp;<br>
-      </span></font>
-      </span></span><font class="style20"><span class="style5"><font class="style69"><span class="titolonomi1"><span lang="IT">
-		&nbsp;&nbsp;&nbsp;<b>C</b></span></span><b><span lang="IT">ICLAMINO</span></b></font></span></font><span class="style69"><font class="style20"><span class="style5"><span lang="IT" class="titolonomi1">:</span></span></font><span lang="IT"><font class="style20"><span class="style5"> 
-		Rassegnazione e addio, amore senza pretese, </span></font>
-		<span class="style5"><font class="style20">sentimenti duraturi. Diffidenza,<font size="2" face="Arial Rounded MT Bold" class="style24"><span class="style20"><br>
-      &nbsp;&nbsp;
-      </span>
-      </font>&nbsp;gelosia, solitudine, bellezza.<br>
-      &nbsp;&nbsp;&nbsp;<b>CRISANTEMO</b>: Io amo. 
-		Un cuore sconsolato, sei un amico meraviglioso.<br>
-      &nbsp;&nbsp;&nbsp;<b>DALIA</b>: infonde 
-		nell&#39;animo riconoscenza e sicurezza, dignità </font>
-		</span> </span></span></font>
-		<span class="style69">
-		<span lang="IT"><span class="style73">ed eleganza,
-		</span> <span class="style5">
-		<font class="style20">buon gusto, si dona<font size="2" face="Arial Rounded MT Bold" class="style24"><span class="style20"><br>
-      &nbsp;&nbsp;
-      </span>
-      </font>&nbsp;per esprimeregratitudine.<br>
-      &nbsp;&nbsp;&nbsp;<b>DERA</b>: Amore 
-		matrimoniale, amicizia, tenerezza, </font>
-		</span>
-		<font size="2" class="style23"> <font size="2" class="style20">
-		<span class="style5">perenne fedeltà, amore esclusivo.</span></font></font><font class="style20"><span class="style5"><br>
-      </span></font>
-		<font size="2" class="style23"><span class="style5">
-		<font class="style20">&nbsp;&nbsp;&nbsp;<b>ERICA</b>: Protezione, i 
-		desideri che si avvereranno, ammirazione, speranza </font>
-		</span></font>
-		</span>
-		<span lang="IT" class="style73">(se è
-      </span><span lang="IT">
-		<font size="2" class="style20">
-		<span class="style5">ro</span></font><font class="style20"><span class="style5">sa vuol dire</span></font><font size="2" class="style20"><span class="style5"><font class="style20"><font size="2" face="Arial Rounded MT Bold" class="style24"><span class="style20"><br>
-      &nbsp;&nbsp;&nbsp;
-      </span></font>solitudine).<br>
-      </font>
-      </span>
-      </font>
-      </span><font size="2" class="style20"><span class="style5"><span lang="IT">&nbsp;&nbsp;&nbsp;</span><b><span lang="IT">FIORDALISO</span></b><span lang="IT">:</span></span></font><span lang="IT"><font class="style20"><span class="style5"> 
-		Felicità e leggerezza, </span> 
-		</font>
-		</span><font class="style20"><span lang="IT"> 
-		<span class="style5">sensibilità spiccata, </span> </span></font>
-		</span>
-		<font size="2" face="Arial Rounded MT Bold" class="style2">
-		<span class="style69"><span lang="IT"><span class="style20">
-		<span class="style5">delicatezza, primo amore,</span><span class="style24"><font size="2" class="style5">
-      </font>
-      </span>
-		<span class="style5">particolare<font size="2" face="Arial Rounded MT Bold" class="style24"><br>
-      &nbsp;&nbsp;&nbsp; </font>
-      </span>
-		<span class="style24"><font size="2" class="style73"> &nbsp;</font><span class="style5">beatitudine.<br>
-      </span>
-      </span></span>
-      </span></span><span class="style20">
-		<span class="style5">
-		<span class="style69"><span lang="IT">&nbsp;&nbsp; <b>FIORI </b> 
-		<strong>d</strong><u><strong>&#39;arancio</strong></u>: <span class="style24"> 
-		<font class="style20">
-		<span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style5">È</span> </font></span>amore eterno, 
-		verginità, purezza, una richiesta di matrimonio, fecondità<font class="style20"><br>
-      &nbsp;&nbsp; </font>innocenza.&nbsp;<br>
-      &nbsp;&nbsp;&nbsp;<b>FIORI </b>
-      <strong>di
-		</strong>
-      <u><strong>pesco</strong></u>: Compiacenza, amore immortale. Dedizione 
-		totale.<br>
-		</span></span><font class="style69"><span class="titolonomi1"><span lang="IT">
-		&nbsp;&nbsp;&nbsp;<b>G</b></span></span><b><span lang="IT">ARDENIA</span></b></font><span class="style69"><span lang="IT" class="titolonomi1">:</span><span lang="IT">
-      Sincerità, trasparenza, sei graziosa, amore segreto.&nbsp;<br>
-      &nbsp;&nbsp;&nbsp;<b>GAROFANO</b>: Fascino, 
-		donna amata.<br>
-      &nbsp;&nbsp;&nbsp;<b>GAROFANO </b>
-      </span><b><u><span lang="IT" class="titolonomi1">
-		bianco</span></u></b><span lang="IT" class="titolonomi1">:</span><span lang="IT">
-      <span class="style24"><font class="style20">
-		<span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style5">È 
-		s</span></font></span>imbolo di un amore reciproco, dolce e bello, amore puro, innocenza,<br>
-      &nbsp;&nbsp; fedeltà. Donalo per dirle che è unica.<br>
-      &nbsp;&nbsp;&nbsp;<b>GAROFANO </b>
-      </span><b><span lang="IT" class="titolonomi1"><u>
-		rosso</u>:</span></b><span lang="IT">
-      Rabbia, risentimento, ma anche amore passionale ed impetuoso.<br>
-      &nbsp;&nbsp;&nbsp;<b>GAROFANO <u>rosa</u></b>: Sensazione non lo dimenticherò mai.<br>
-      </span><span class="titolonomi1"><span lang="IT">&nbsp;&nbsp;&nbsp;<b>G</b></span></span><b><span lang="IT">ELSOMINO</span><span lang="IT" class="titolonomi1">
-      <u>bianco</u></span></b><span lang="IT" class="titolonomi1">:</span><span lang="IT">
-      Eleganza e grazia,&nbsp;amabilità e affetto, è il fiore della timidezza da usare<br>
-      &nbsp;&nbsp;
-      quando ci si vuole esporre ma non troppo.<br>
-      </span><span class="titolonomi1"><span lang="IT">&nbsp;&nbsp;&nbsp;<b>G</b></span></span><b><span lang="IT">ELSOMINO
-      </span><span lang="IT" class="titolonomi1"><u>giallo</u></span></b><span lang="IT" class="titolonomi1">:</span><span lang="IT">
-      Gentilezza, candore, eleganza e nobiltà.<br>
-      &nbsp;&nbsp;&nbsp;<b>GERANIO</b>: 
-		</span></span></span><span class="style69"><span lang="IT">
-      <span class="style5">Gioco, 
-		divertimento,&nbsp;sciocchezza, stupidità, follia.<br>
-      &nbsp;&nbsp;&nbsp;<b>GIACINTO</b>: 
-		Benevolenza, dolcezza, amore ardente.<br>
-      &nbsp;&nbsp;&nbsp;<b>GIACINTO</b>
-      <b><u>porpora</u></b>: Sono spiacente, per favore perdonami, dolore.<br>
-      &nbsp;&nbsp;&nbsp;<b>GIACINTO</b>
-      <u><strong>blu</strong></u>: Coerenza, costanza.<br>
-      &nbsp;&nbsp;&nbsp;<b>GIGLIO</b>: Fascino, 
-		verginità, maestà, dolcezza, ritorno di felicità. </span><span class="style24"> 
-		<font class="style20">
-		<span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style5">È</span><span class="style5"> </span> </font>
-		<span class="style5">il fiore ideale da regalare <br>
-      &nbsp;&nbsp; alla donna fiera, onesta e di classe, per dirle
-      che la consideriamo una regina. Rappresenta la<br>
-      &nbsp;&nbsp; purezza e castità. Il Giglio oggi simboleggia la 
-		nobiltà, magnanimità e</span><font size="2" class="style5">
-      </font><span class="style5">la fierezza d&#39;animo. <br>
-		</span></span>
-		</span></span><span class="style5"><font class="style69"><span class="titolonomi1"><span lang="IT">
-		&nbsp;&nbsp;&nbsp;<b>G</b></span></span><b><span lang="IT">IRASOLE</span></b></font><span class="style69"><span lang="IT">: 
-		Allegria e orgoglio,&nbsp;amore adorante, amore infelice.&nbsp;Non vedo che te.&nbsp;<br>
-      </span><b><span lang="IT">&nbsp;<span class="style64">&nbsp;&nbsp;</span>GLADIOLO</span></b><span lang="IT">: 
-		Sono 
-		veramente sincero, rispetto.<br>
-      &nbsp;&nbsp;&nbsp;<b>GINESTRA</b></span></span><span lang="IT"><span class="style69">: 
-		Modestia e 
-		umiltà.<br>
-      </span>
-      </span><span class="style69"><span lang="IT">&nbsp; </span></span><span lang="IT">
-		<span class="style69">&nbsp;<b>GLICINE</b></span></span><span class="style69"><span lang="IT">: 
-		Amicizia 
-		disinteressata.<br>
-      </span><span class="titolonomi1"><span lang="IT">&nbsp;&nbsp;&nbsp;<b>IRIS</b>:</span></span><span lang="IT">
-      è l&#39;emblema della Francia. Simboleggia fede e speranza ma anche la voglia 
-		di mandare<span class="titolonomi1"><b><br>
-      &nbsp;&nbsp;
-		</b></span>un messaggio. Per comunicare che ci sono novità o buone 
-		notizie per fare gli auguri a chi sta<span class="titolonomi1"><br>
-      &nbsp;&nbsp; </span>per<span class="titolonomi1"><b>
-		</b>f</span>are qualcosa d&#39;importante. Messaggio di stima e 
-		apprezzamento. </span>&nbsp;<span class="titolonomi1"><span lang="IT"><b><br>
-		</b>
-		&nbsp;&nbsp;&nbsp;<b>IRIS </b>
-      <u><strong>giallo</strong></u>:</span></span><span lang="IT">
-      Ardo di passione per te.<br>
-      &nbsp;&nbsp;&nbsp;<b>LAVANDA</b></span></span></span></span><span class="style69"><span lang="IT"><span class="style20"><span class="style5">: 
-		Buona fortuna, o diffidenza e distacco. Il tuo ricordo è la mia unica 
-		felicità.<br>
-		</span></span>
-		</span></span><span class="style20"><span class="style5"><span lang="IT">
-		<span class="style69">
-		&nbsp;&nbsp;&nbsp;<strong>LILLA</strong>&#39; <u><strong>bianco</strong></u>: 
-		Emozioni 
-		d&#39;amore,&nbsp;purezza, verginità, innocenza.<br>
-      &nbsp;&nbsp;&nbsp;<strong>LILLA</strong>&#39; <u><strong>viola</strong></u>: 
-		Prime emozioni, 
-		palpiti d&#39;amore.<br>
-      &nbsp;&nbsp;&nbsp;<strong>MAGNOLIA</strong>: Dignità nobiltà, bellezza superba, 
-		perseveranza. Autostima, coscienza del proprio<span class="style31"><br>
-      &nbsp;&nbsp;
-		</span>valore.<br>
-      &nbsp;&nbsp;&nbsp;<strong>MARGHERITA</strong>: Semplicità, freschezza, purezza, innocenza, 
-		spontaneità, bontà. Amore fedele.<br>
-      &nbsp;&nbsp;
-      <strong>MIMOSA</strong>: Sensibilità, forza e femminilità, innocenza, 
-		libertà, autonomia.<br>
-      &nbsp;&nbsp;
-      <strong>MIRTO</strong>: Desiderio e fantasia nei rapporti amorosi.&nbsp;<br>
-      &nbsp;&nbsp;
-      <strong>MUGHETTO</strong>: <span lang="IT" class="style69"><span class="style24"> 
-		<font class="style20">
-		<span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style5">È</span></font></span></span> il ritorno della felicità, portafortuna, 
-		verginità, civetteria. Significa rivediamoci<br>
-      &nbsp;&nbsp; e
-      parliamone.&nbsp;<br>
-      &nbsp;&nbsp;&nbsp;<strong>NARCISO</strong>: Autostima, vanità ed incapacità d&#39;amare.&nbsp;<br>
-      &nbsp;&nbsp;&nbsp;<strong>NINFEA</strong>: Castità, purezza, e freddezza.&nbsp;<br>
-      </span>
-      </span><font class="style69"><span lang="IT">&nbsp;&nbsp;&nbsp;<strong>NON TI SCORDAR DI ME</strong></span></font><span lang="IT"><span class="style69">: 
-		Amore vero, eterno, fedeltà perpetua, ricordo perenne, memorie. <br>
-      &nbsp;&nbsp;&nbsp;<strong>ORCHIDEA</strong>: Sensualità, eleganza e passione. Fiore da 
-		regalare se siete sicuri che la vostra<br>
-      &nbsp;&nbsp;
-      passione è corrisposta. Significa: grazie per 
-		esserti concessa! Amore, bellezza, raffinatezza.<br>
-      &nbsp;&nbsp;&nbsp;<strong>ORTENSIA</strong>: Grazie per la comprensione, freddezza, 
-		frigidità. Sei bella ma insensibile.<br>
-      &nbsp;&nbsp;&nbsp;<strong>PAPAVERO</strong>: Dubbiosità, sorpresa, sonno eterno, oblio, 
-		immaginazione.<br>
-      &nbsp;&nbsp;&nbsp;<strong>PAPAVERO</strong></span> <span class="style69"> <u><strong>bianco</strong></u>: 
-		Consolazione, 
-		sonno, sventura<br>
-      &nbsp;&nbsp;&nbsp;<strong>PAPAVERO</strong><span class="style31"> </span>
-      <u><strong>rosso</strong></u><span class="style31">: </span>Piacere, eccentricità, orgoglio, 
-		successo.<span class="style31"><br>
-      </span>&nbsp;&nbsp;&nbsp;<strong>PAPAVERO</strong>
-      </span>
-      </span><span lang="IT" class="titolonomi1"><span class="style69"><u><strong>rosa</strong></u>:</span></span><span lang="IT"><span class="style69">
-      Serenità, vivacità.<br>
-      &nbsp;&nbsp;&nbsp;<strong>PEONIA</strong>: Vergogna, timidezza.<br>
-      &nbsp;&nbsp;&nbsp;<strong>PETUNIA</strong>: Risentimento, Rabbia<br>
-      &nbsp;&nbsp;&nbsp;<strong>PERVINCA</strong>: Dolce ricordo.&nbsp;<br>
-      </span>
-      </span><font class="style69"><span class="titolonomi1"><span lang="IT">
-		&nbsp;&nbsp;&nbsp;<strong>P</strong></span></span><span lang="IT"><strong>RIMULA</strong></span></font><span lang="IT" class="style69">: 
-		<span class="style24">
-		<span class="style69"> <font class="style20">
-		<span lang="IT">
-		<span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style5">È</span></span></font></span></span> giovinezza, il primo amore, speranza di rinnovamento. Non posso 
-		vivere senza<span lang="IT"><span class="style69"><br>
-      &nbsp; </span>
-      </span>&nbsp;di te, credulità.&nbsp;&nbsp;<br>
-      &nbsp;&nbsp;&nbsp;<strong>PRATOLINA</strong>: Purezza, candore, speranza, contraccambio di 
-		sentimenti, ci penserò.<br>
-      &nbsp;&nbsp;&nbsp;<strong>RODODENDRO</strong>: Fragile incanto.<br>
-      </span><font class="style69"><span class="titolonomi1"><span lang="IT">
-		&nbsp;&nbsp;&nbsp;<strong>R</strong></span></span><span lang="IT"><strong>OSA</strong></span></font></span><span lang="IT"><span class="style69"><span class="style5">: 
-		Ogni colore porta con sé un messaggio diverso. Se il bocciolo è ben 
-		nascosto dai petali<br>
-      &nbsp;&nbsp;
-      incarna anche la castità femminile, se la Rosa è sbocciata rappresenta la 
-		bellezza giovanile.<br>
-      &nbsp;&nbsp;
-      Simbolo del segreto delle cose da rivelare con delicatezza. Importante 
-		conoscere il significato<br>
-      &nbsp; </span><span class="style24"><font size="2" class="style5">&nbsp;</font></span><span class="style5">che le 
-		accomuna tutte.&nbsp;<br>
-      </span>
-      </span>
-      </span><span class="style5"><font class="style69"><span class="titolonomi1"><span lang="IT">
-		&nbsp;&nbsp;
-		<strong>R</strong></span></span><span lang="IT"><strong>OSA</strong></span></font><span lang="IT">
-      <span class="style69">
-      <u><strong>bianca</strong></u>: Sono degno di te, candore, purezza, 
-		segreto, innocenza.<br>
-      </span>
-      </span><font class="style69"><span class="titolonomi1"><span lang="IT">
-		&nbsp;&nbsp;
-		<strong>R</strong></span></span><span lang="IT"><strong>OSA</strong></span></font><span lang="IT">
-      <span class="style69">
-      <u><strong>rosa</strong></u>: Felicità perfetta, freschezza, tenerezza, 
-		dolcezza e affetto, gratitudine, amicizia,<br>
-      &nbsp;&nbsp; apprezzamento, ammirazione o comprensione.<br>
-      </span>
-      </span><font class="style69"><span class="titolonomi1"><span lang="IT">
-		&nbsp;&nbsp;&nbsp;<strong>R</strong></span></span><span lang="IT"><strong>OSA</strong></span></font><span lang="IT">
-      <span class="style69">
-      <u><strong>rossa</strong></u>: Ti amo, amore ardente e passionale, 
-		rispetto, coraggio.<br>
-      </span>
-      </span><font class="style69"><span class="titolonomi1"><span lang="IT">
-		&nbsp;&nbsp;&nbsp;<strong>R</strong></span></span><span lang="IT"><strong>OSA</strong></span></font><span lang="IT">
-      <span class="style69">
-      <u><strong>gialla</strong></u>: Amore che sta</span></span></span><span class="style69"><span lang="IT"><span class="style5"> 
-		affievolendosi, vergogna, dichiarazione di gelosia, contentezza,
-      <br>
-      &nbsp;&nbsp; libertà, infedeltà.<br>
-		</span>
-		</span></span><span class="style5"><font class="style69"><span class="titolonomi1"><span lang="IT">
-		&nbsp;&nbsp;&nbsp;<strong>R</strong></span></span><span lang="IT"><strong>OSA</strong></span></font><span lang="IT">
-      <span class="style69">
-      <u><strong>Tea</strong></u>: Sottolinea la gentilezza della donna amata, 
-		ricorderò sempre.<br>
-      </span>
-      </span><font class="style69"><span class="titolonomi1"><span lang="IT">
-		&nbsp;&nbsp;&nbsp;<strong>R</strong></span></span><span lang="IT"><strong>OSA</strong></span></font><span lang="IT" class="titolonomi1">
-      <span class="style69">
-      <u><strong>canina</strong></u>:</span></span></span><span lang="IT"><span class="style5"><span class="style69"> 
-		Delicatezza e piacere ma anche sofferenza e dolore.<br>
-      </span><font class="style69">&nbsp;&nbsp;&nbsp;<strong>STELLA DI NATALE</strong></font></span><span class="style69"><span class="style5">: 
-		Buona fortuna<br>
-      &nbsp;&nbsp;&nbsp;<strong>TUBEROSA</strong>: Indifferenza, richiesta Illecita.<br>
-      &nbsp;&nbsp;&nbsp;<strong>TULIPANO</strong>: Non tutti lo sanno ma il fiore che rappresenta 
-		il vero amore è il <strong>Tulipano</strong>, fiore<br>
-      &nbsp;&nbsp;
-      perfetto per una dichiarazione d&#39;amore in piena regola. Una leggenda 
-		popolare racconta che il<br>
-      &nbsp;&nbsp; fiore sia nato dal sangue di un giovane che si suicidò per amore.&nbsp;Fiore 
-		perfetto per dire che la<br>
-      &nbsp;&nbsp; amate e l'amerete per sempre.<br>
-      &nbsp;&nbsp;&nbsp;<strong>TULIPANO</strong></span></span></span><span class="style5"><span lang="IT" class="titolonomi1"><strong> 
-		<span class="style69"> <span class="style27">giallo</span></span></strong></span></span><span lang="IT"><span class="style69"><span class="style5">: 
-		C’è il sole nel tuo sorriso, sei adorabile.<br>
-      &nbsp;&nbsp;&nbsp;<strong>VIOLA DEL PENSIERO</strong>: Pensiero intenso, romantico, 
-		riflessività, ricordo, è adatta per essere<br>
-      &nbsp;&nbsp;
-      donata agli anniversari.<br>
-      <strong>&nbsp;</strong></span><span class="style24"><span class="style5">&nbsp;&nbsp;<strong>VIOLETTA</strong>: 
-		Fedeltà, umiltà e modestia.<br>
-      &nbsp;&nbsp;&nbsp;<strong>VIOLA MAMMOLA</strong>: Pudore e modestia.<br>
-      &nbsp;&nbsp;&nbsp;<strong>ZINNIA</strong></span></span></span></span></span><span lang="IT"><span class="style20"><span class="style55">: 
-		Piango la tua assenza.<br>
-		</span></span></span></font></td>
-    </tr>
-  </table>
+<TABLE background="ASRgoldtile2.jpeg" cellSpacing="0" cellPadding="3" border="0" width="100%">
+<TBODY><TR><TD>
 
-                        </td>
-                        </tr>
-                        </table>
-                        </center></div>
-                        <img src="Oligne.jpg" width="399" height="41"><img src="Oligne.jpg" width="399" height="41"><br>
-						<p align="center" style="width: 1092px">
-                        &nbsp;&nbsp;
-						<img src="O.RoseRosse.gif" width="243" height="176">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-						<img src="LauraAB2016..jpg" width="148" height="238">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<img src="OFioriA..jpg" width="224" height="278">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="style59"><span class="style23">&nbsp;
-						</span>&nbsp;</span></p>
+<TABLE background="ASRstrip02.jpeg" cellSpacing="0" cellPadding="15" border="0" width="100%">
+<TBODY><TR><TD>
 
-						<span class="style35">
+<table background="OgoldLinea.gif" cellPadding="0" border="0" width="100%">
+<TBODY><tr><td>
 
-<p align="center" style="width: 1133px"><font size="3" face="Arial"><em><strong><u><img
-src="TelefonoC164.gif" width="33" height="33"></u></strong></em></font></span><font
-size="4" class="style73"><strong><span class="style69">O telefonate:
-</span> </strong><span class="style69"><strong>0125 631175 - Cell. 347 0417409</strong></span></font></p>
+<table background="Ofondo2.gif" cellSpacing="0" cellPadding="0" border="0" bordercolorlight="#FDDBE1" bordercolordark="#D28A92" width="100%">
+<tr><td>
 
-						<p style="width: 1131px" class="style55">
-                        <img src="Oligne.jpg" width="399" height="41"></p>
-                        
-<p style="width: 1125px" class="style67"><strong>
-<font face="Arial Rounded MT Bold" size="3">
-<span class="style66">&nbsp;</span></font></strong><u><font size="3" class="style73"><strong><span class="style63"><a href="index.html"><span class="style69">Torna 
-alla pagina iniziale&nbsp;</span></a></span></strong></font></u><strong><span class="style66">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</span></strong><span class="style66"><strong>Sei
-il visitatore n°</strong></span><span class="style53"><strong><span class="style5">&nbsp;</span></strong><span class="style5"><!--webbot bot="HTMLMarkup" startspan --><a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220428808-3rhrmsl" border=0></a><!--webbot
-bot="HTMLMarkup" endspan i-checksum="60544" --></span><strong><span class="style5">&nbsp; </span></strong>
-</span>
-						</p>
+		<h1>DILLO CON UN FIORE</h1>
+		<p class="sXLarge sBlack sBold sCenter">SCOPRI IL LORO SIGNIFICATO</p>
 
-						<p style="width: 1136px">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="Oligne.jpg" width="399" height="41"><span class="style40"><span class="style65"><img src="ORosaRossa.gif" width="50" height="58"></span></span><img src="Oligne.jpg" width="399" height="41"></td>
-                        </tr>
-</TBODY>
-                        </table>
-                        </center></div></td>
-                      </tr>
-</TBODY>
-                    </table>
-                    </center></div></td>
-                  </tr>
-</TBODY>
-                </table>
-</TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY>
-</TABLE></DIV></TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY
-></TABLE></DIV></TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY></TABLE>
-</DIV></TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY></TABLE>
-</DIV></TD></TR></TBODY></TABLE></DIV>
-</BODY></HTML>
+		<p class="sCenter">
+			<img src="O.rose.gif"   width="526" height="501">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="cuoreRos.gif" width="231" height="195">
+		</p>
+		<p class="sCenter">
+			<img src="Oligne.jpg" width="399" height="41">
+			<img src="ORosaRossa.gif" width="50" height="58">
+			<img src="Oligne.jpg" width="399" height="41">
+		</p>
+		
+<table cellspacing="10" cellpadding="5" border="1" bordercolorlight="#FDDBE1" bordercolordark="#D28A92" width="95%" align="center">
+<tr><td class="sBorder1">
+
+<table bgcolor="#FDDBE1" cellspacing="1" cellpadding="5" border="0" class="sBorder1s-CarouselPink" width="100%">
+<tr><td>
+
+		<p class="sSmall sBlack sJustify sPadding sLineH125">
+			<b>ACACIA</b>: Amore celato, segreto, casto, puro e platonico. Bellezza ideale, è il simbolo di eterna amicizia vera e disinteressata.<br>
+			<b>ACETOSELLA</b>: Raro e semplice, è il fiore della tenerezza materna, un ideale omaggio per una neo-mamma e di buon augurio per le future genitrici.<br>
+			<b>AGRIFOGLIO</b>: eternità, aggressività, forza, resistenza, felicità domestica.<br>
+			<b>AMARILLIS</b>: bella, ma timida, orgoglio, poesia bucolica, fierezza.<br>
+			<b>ANEMONE</b>: Da regalare per dire: mi trascuri torna da me, non hai nulla da temere. Non solo a un amore ma anche a un amico e un parente.
+			Passione sincera, senso d'abbandono e l'amore tradito, anche la speranza e l'attesa.<br>
+			<b>ARTEMISIA</b>: Serenità, felicità, salute. Da regalare per ringraziare di ciò che ci viene donato o gni giorno.<br>
+			<b>AZALEA</b>: Simbolo cinese della femminilità e temperanza, simboleggia la fortuna, è un fiore da regalare prima di affrontare una prova
+			importante. Abbi cura di te.<br><br>
+			<b>BIANCOSPINO</b>: Sincerità, speranza e prudenza. Può essere regalata in attesa di una risposta positiva.<br>
+			<b>BUCANEVE</b>: Un pensiero di consolazione, di speranza e amicizia. Da donare per attestare la propria solidarietà.<br><br>
+			<b>CALLA</b>: Comunica eleganza, stile, bellezza e raffinatezza.<br>
+			<b>CAMELIA</b>: È un pegno e un impegno ad affrontare ogni sacrificio in nome dell'amore, è una perfetta bellezza e stima.<br>
+			<b>CAMELIA <u>bianca</u></b>: Sei adorabile, stima, gratitudine, ammirazione.<br>
+			<b>CAMELIA <u>rosa</u></b>: Mi manchi, costanza, ammirazione e gratitudine, il ritrovarsi, grazia e stima, incontrarsi di nuovo.<br>
+			<b>CICLAMINO</b>: Rassegnazione e addio, amore senza pretese, sentimenti duraturi. Diffidenza, gelosia, solitudine, bellezza.<br>
+			<b>CRISANTEMO</b>: Io amo. Un cuore sconsolato, sei un amico meraviglioso.<br><br>
+			<b>DALIA</b>: infonde nell'animo riconoscenza e sicurezza, dignità ed eleganza, buon gusto, si dona per esprimere gratitudine.<br>
+			<b>DERA</b>: Amore matrimoniale, amicizia, tenerezza, perenne fedeltà, amore esclusivo.<br><br>
+			<b>ERICA</b>: Protezione, i desideri che si avvereranno, ammirazione, speranza (se è ro sa vuol dire solitudine).<br><br>
+			<b>FIORDALISO</b>: Felicità e leggerezza, sensibilità spiccata, delicatezza, primo amore, particolare beatitudine.<br>
+			<b>FIORI d'<u>arancio</u></b>: È amore eterno, verginità, purezza, una richiesta di matrimonio, fecondità innocenza.<br>
+			<b>FIORI di <u>pesco</u></b>: Compiacenza, amore immortale. Dedizione totale.<br><br>
+			<b>GARDENIA</b>: Sincerità, trasparenza, sei graziosa, amore segreto. <br>
+			<b>GAROFANO</b>: Fascino, donna amata.<br>
+			<b>GAROFANO <u>bianco</u></b>: È simbolo di un amore reciproco, dolce e bello, amore puro, innocenza, fedeltà. Donalo per dirle che è unica.<br>
+			<b>GAROFANO <u>rosso</u></b>: Rabbia, risentimento, ma anche amore passionale ed impetuoso.<br>
+			<b>GAROFANO <u>rosa</u></b>: Sensazione non lo dimenticherò mai.<br>
+			<b>GELSOMINO <u>bianco</u></b>: Eleganza e grazia, amabilità e affetto, è il fiore della timidezza da usare quando ci si vuole esporre ma non troppo.<br>
+			<b>GELSOMINO <u>giallo</u></b>: Gentilezza, candore, eleganza e nobiltà.<br>
+			<b>GERANIO</b>: Gioco, divertimento, sciocchezza, stupidità, follia.<br>
+			<b>GIACINTO</b>: Benevolenza, dolcezza, amore ardente.<br>
+			<b>GIACINTO <u>porpora</u></b>: Sono spiacente, per favore perdonami, dolore.<br>
+			<b>GIACINTO <u>blu</u></b>: Coerenza, costanza.<br>
+			<b>GIGLIO</b>: Fascino, verginità, maestà, dolcezza, ritorno di felicità. È il fiore ideale da regalare alla donna fiera, onesta e di classe, per
+			dirle che la consideriamo una regina. Rappresenta la purezza e castità. Il <b>Giglio</b> oggi simboleggia la nobiltà, magnanimità e la fierezza
+			d'animo.<br>
+			<b>GIRASOLE</b>: Allegria e orgoglio, amore adorante, amore infelice. Non vedo che te.<br>
+			<b>GLADIOLO</b>: Sono veramente sincero, rispetto.<br>
+			<b>GINESTRA</b>: Modestia e umiltà.<br>
+			<b>GLICINE</b>: Amicizia disinteressata.<br><br>
+			<b>IRIS</b>: è l'emblema della Francia. Simboleggia fede e speranza ma anche la voglia di mandare un messaggio. Per comunicare che ci sono novità
+			o buone notizie per fare gli auguri a chi sta per fare qualcosa d'importante. Messaggio di stima e apprezzamento.<br>
+			<b>IRIS <u>giallo</u></b>: Ardo di passione per te.<br><br>
+			<b>LAVANDA</b>: Buona fortuna, o diffidenza e distacco. Il tuo ricordo è la mia unica felicità.<br>
+			<b>LILLA' <u>bianco</u></b>: Emozioni d'amore, purezza, verginità, innocenza.<br>
+			<b>LILLA' <u>viola</u></b>: Prime emozioni, palpiti d'amore.<br><br>
+			<b>MAGNOLIA</b>: Dignità nobiltà, bellezza superba, perseveranza. Autostima, coscienza del proprio valore.<br>
+			<b>MARGHERITA</b>: Semplicità, freschezza, purezza, innocenza, spontaneità, bontà. Amore fedele.<br>
+			<b>MIMOSA</b>: Sensibilità, forza e femminilità, innocenza, libertà, autonomia.<br>
+			<b>MIRTO</b>: Desiderio e fantasia nei rapporti amorosi.<br>
+			<b>MUGHETTO</b>: È il ritorno della felicità, portafortuna, verginità, civetteria. Significa rivediamoci e parliamone.<br><br>
+			<b>NARCISO</b>: Autostima, vanità ed incapacità d'amare.<br>
+			<b>NINFEA</b>: Castità, purezza, e freddezza.<br>
+			<b>NON TI SCORDAR DI ME</b>: Amore vero, eterno, fedeltà perpetua, ricordo perenne, memorie.<br><br>
+			<b>ORCHIDEA</b>: Sensualità, eleganza e passione. Fiore da regalare se siete sicuri che la vostra passione è corrisposta. Significa: grazie per
+			esserti concessa! Amore, bellezza, raffinatezza.<br>
+			<b>ORTENSIA</b>: Grazie per la comprensione, freddezza, frigidità. Sei bella ma insensibile.<br><br>
+			<b>PAPAVERO</b>: Dubbiosità, sorpresa, sonno eterno, oblio, immaginazione.<br>
+			<b>PAPAVERO <u>bianco</u></b>: Consolazione, sonno, sventura.<br>
+			<b>PAPAVERO <u> osso</u></b>: Piacere, eccentricità, orgoglio, successo.<br>
+			<b>PAPAVERO <u>rosa</u></b>: Serenità, vivacità.<br>
+			<b>PEONIA</b>: Vergogna, timidezza.<br>
+			<b>PETUNIA</b>: Risentimento, Rabbia<br>
+			<b>PERVINCA</b>: Dolce ricordo.<br>
+			<b>PRIMULA</b>: È giovinezza, il primo amore, speranza di rinnovamento. Non posso vivere senza di te, credulità.<br>
+			<b>PRATOLINA</b>: Purezza, candore, speranza, contraccambio di sentimenti, ci penserò.<br><br>
+			<b>RODODENDRO</b>: Fragile incanto.<br>
+			<b>ROSA</b>: Ogni colore porta con sé un messaggio diverso. Se il bocciolo è ben nascosto dai petali incarna anche la castità femminile, se la
+			<b>Rosa</b> è sbocciata rappresenta la bellezza giovanile. Simbolo del segreto delle cose da rivelare con delicatezza. Importante conoscere il
+			significato che le accomuna tutte. <br>
+			<b>ROSA <u>bianca</u></b>: Sono degno di te, candore, purezza, segreto, innocenza.<br>
+			<b>ROSA <u>rosa</u></b>: Felicità perfetta, freschezza, tenerezza, dolcezza e affetto, gratitudine, amicizia, apprezzamento, ammirazione o
+			comprensione.<br>
+			<b>ROSA <u>rossa</u></b>: Ti amo, amore ardente e passionale, rispetto, coraggio.<br>
+			<b>ROSA <u>gialla</u></b>: Amore che sta affievolendosi, vergogna, dichiarazione di gelosia, contentezza, libertà, infedeltà.<br>
+			<b>ROSA <u>Tea</u></b>: Sottolinea la gentilezza della donna amata, ricorderò sempre.<br>
+			<b>ROSA <u>canina</u></b>: Delicatezza e piacere ma anche sofferenza e dolore.<br><br>
+			<b>STELLA DI NATALE</b>: Buona fortuna.<br><br>
+			<b>TUBEROSA</b>: Indifferenza, richiesta Illecita.<br>
+			<b>TULIPANO</b>: Non tutti lo sanno ma il fiore che rappresenta il vero amore è il <b>Tulipano</b>, fiore perfetto per una dichiarazione d'amore
+			in piena regola. Una leggenda popolare racconta che il fiore sia nato dal sangue di un giovane che si suicidò per amore. Fiore perfetto per dire
+			che la amate e l'amerete per sempre.<br>
+			<b>TULIPANO <u>giallo</u></b>: C’è il sole nel tuo sorriso, sei adorabile.<br><br>
+			<b>VIOLA DEL PENSIERO</b>: Pensiero intenso, romantico, riflessività, ricordo, è adatta per essere donata agli anniversari.<br>
+			<b>VIOLETTA</b>: Fedeltà, umiltà e modestia.<br>
+			<b>VIOLA MAMMOLA</b>: Pudore e modestia.<br><br>
+			<b>ZINNIA</b>: Piango la tua assenza.<br>
+		</p>
+
+</td></tr></table>
+</td></tr></table>
+
+		<p align="center">
+			<img src="Oligne.jpg" width="399" height="41">
+			<img src="Oligne.jpg" width="399" height="41"><br>
+
+			<img src="O.RoseRosse.gif"  width="243" height="176">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="LauraAB2016..jpg" width="148" height="238">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="OFioriA..jpg"     width="224" height="278">
+		</p>
+
+		<p class="sSmall sElPaso sCenter">
+			<img src="email-box.gif"    width="35" height="35">
+			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
+			<img src="TelefonoC164.gif" width="35" height="35">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+			<a href="index.html"><span class="sBlack sBold">Torna alla pagina iniziale</span></a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<strong>Sei il visitatore n°&nbsp;</strong>
+		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220428808-3rhrmsl" border=0></a>
+			&nbsp;(Contenuto Aggiornato <time datetime="2019-12-25">25/12/2019</time>)<br><br>
+		</p>
+				</td></tr></TBODY></table>
+			</td></tr></TBODY></table>
+		</td></tr></TBODY></table>
+	</TD></TR></TBODY></TABLE>
+</TD></TR></TBODY></TABLE>
+<p class="sXXSmall sWhite sBold sCenter">
+	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
+	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
+</p>
+</body>
+</html>
