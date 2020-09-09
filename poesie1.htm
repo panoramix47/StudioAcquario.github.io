@@ -12,7 +12,7 @@
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="01/02/2019">
-<meta name="revised" content="07/09/2020">
+<meta name="revised" content="09/09/2020">
 
 <style type="text/css">
 body {
@@ -56,6 +56,30 @@ img {
 	color: #FFFFFF; /* White */
 	text-shadow: 1px 1px 5px #0000FF; /* Blue */
 	text-align: center;
+}
+.sNavigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.sNavigation a {
+	font-size: small;
+	font-weight: bold;
+	padding: .25em;
+	color: black;
+	margin-left: 2px;
+	background: #F6D2DE; /*deepskyblue;*/
+	text-decoration: none;
+}
+.sNavigation a:hover {
+  background: #FF5C5C;
+}
+#PagCorrente {
+	border-bottom: 2px solid blue;
 }
 .sBorder1 {
 				border-style: solid;
@@ -153,20 +177,19 @@ img {
 			Sarò molto felice se leggerete i miei scritti e mi manderete un saluto.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>LAURA</b>
 		</p>
 
-		<p class="sSmall sBlack sCenter sBold sPadding sLineH125">
-			<br><span class="sBGPigPink">&nbsp;
-			<a href="poesie1.htm">Dedicate ad Alex</a> |</span><span class="sBGWhite">
-			<a href="poesie2.htm">Poesie, n°2</a> |
-			<a href="poesie3.htm">Poesie, n°3</a> |
-			<a href="poesie4.htm">Poesie, n°4</a> |
-			<a href="poesie5.htm">Poesie, n°5</a> |
-			<a href="poesie6.htm">Poesie, n°6</a> |
-			<a href="poesie7.htm">Lettere d'amore</a> |
-			<a href="poesie8.htm">Pensieri, n°7</a> |
-			<a href="Pensieri.htm">I miei pensieri</a> |
-			<a href="poesieGA.htm">Le poesie dei miei amici</a> |
-			<a href="index.html">Pagina&nbsp;Iniziale</a>&nbsp;</span><br>
-		</p>
+		<ul class="sNavigation">
+			<li><a href="poesie1.htm" id="PagCorrente">Dedicate ad Alex</a></li>
+			<li><a href="poesie2.htm">Poesie, n°2</a></li>
+			<li><a href="poesie3.htm">Poesie, n°3</a></li>
+			<li><a href="poesie4.htm">Poesie, n°4</a></li>
+			<li><a href="poesie5.htm">Poesie, n°5</a></li>
+			<li><a href="poesie6.htm">Poesie, n°6</a></li>
+			<li><a href="poesie7.htm">Lettere d'amore</a></li>
+			<li><a href="poesie8.htm">Pensieri, n°7</a></li>
+			<li><a href="Pensieri.htm">I miei pensieri</a></li>
+			<li><a href="poesieGA.htm">Le poesie dei miei amici</a></li>
+			<li><a href="index.html">Pagina Iniziale</a></li>
+		</ul>
 
 		<p class="sCenter">
 			<IMG SRC="CKfloral3div2.jpg" WIDTH="153" HEIGHT="33">&nbsp;
