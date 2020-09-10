@@ -12,7 +12,7 @@
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="01/02/2019">
-<meta name="revised" content="08/09/2020">
+<meta name="revised" content="10/09/2020">
 
 <style type="text/css">
 BODY{
@@ -41,12 +41,6 @@ h2 {
 	text-align: center;
 	margin-top: 30px;
 }
-a.barra:link {
-	color: #000000;
-}
-a.barra:visited {
-	color: #000000;
-}
 img {
 	max-width: 100%;
 	height: auto;
@@ -57,6 +51,37 @@ img {
 	color: #FFFFFF; /* White */
 	text-shadow: 1px 1px 5px #0000FF; /* Blue */
 	text-align: center;
+}
+.sNavigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 180%;
+}
+.sNavigation a {
+	font-size: small;
+	font-weight: bold;
+	padding: .42em;
+	color: black;
+	margin-left: 2px;
+	background: #F2C6D5; /* Pink Lace */
+	text-decoration: none;
+}
+.sNavigation a:hover {
+	background: #FF66FF; /* Pink Flamingo */
+}
+#PagCorrente {
+	border-bottom: 2.5px solid red;
+}
+.sHomeIcon {
+	vertical-align: bottom;
+	margin-bottom: 1px;
+	height: 25px;
+	width: 25px;
 }
 .sBorder1s {
 		border-style: solid;
@@ -70,9 +95,6 @@ img {
 }
 .sWhite {
 				color: #FFFFFF;
-}
-.sBGPigPink {
-				background-color: #F6D2DE;
 }
 .sBGWhite {
 				background-color: #FFFFFF;
@@ -156,20 +178,19 @@ img {
 			<img src="Bcuoric.gif" width="26" height="21">
 		</p>
 
-		<p class="sSmall sBlack sBold sCenter sPadding sLineH125">
-			<br><span class="sBGWhite">&nbsp;
-			<a href="poesie1.htm" class="barra">Dedicate&nbsp;ad&nbsp;Alex</a> |
-			<a href="poesie2.htm" class="barra">Poesie,&nbsp;n°2</a> |
-			<a href="poesie3.htm" class="barra">Poesie,&nbsp;n°3</a> |
-			<a href="poesie4.htm" class="barra">Poesie,&nbsp;n°4</a> |</span><span class="sBGPigPink">
-			<a href="poesie5.htm" class="barra">Poesie,&nbsp;n°5</a> |</span><span class="sBGWhite">
-			<a href="poesie6.htm" class="barra">Poesie,&nbsp;n°6</a> |
-			<a href="poesie7.htm" class="barra">Lettere&nbsp;d'amore</a> |
-			<a href="poesie8.htm" class="barra">Pensieri,&nbsp;n°7</a> |
-			<a href="Pensieri.htm" class="barra">I&nbsp;miei&nbsp;pensieri</a> |
-			<a href="poesieGA.htm" class="barra">Le&nbsp;poesie&nbsp;dei&nbsp;miei&nbsp;amici</a> |
-			<a href="index.html" class="barra">Pagina&nbsp;Iniziale</a>&nbsp;</span><br>
-		</p>
+		<ul class="sNavigation">
+			<li><a href="poesie1.htm">Dedicate ad Alex</a></li>
+			<li><a href="poesie2.htm">Poesie, n°2</a></li>
+			<li><a href="poesie3.htm">Poesie, n°3</a></li>
+			<li><a href="poesie4.htm">Poesie, n°4</a></li>
+			<li><a href="poesie5.htm" id="PagCorrente">Poesie, n°5</a></li>
+			<li><a href="poesie6.htm">Poesie, n°6</a></li>
+			<li><a href="poesie7.htm">Lettere d'amore</a></li>
+			<li><a href="poesie8.htm">Pensieri, n°7</a></li>
+			<li><a href="Pensieri.htm">I miei pensieri</a></li>
+			<li><a href="poesieGA.htm">Poesie degli amici</a></li>
+			<li><a href="index.html"><IMG SRC="favicon32.gif" class="sHomeIcon"></a></li>
+		</ul>
 
 		<p class="sCenter">
 			<br>

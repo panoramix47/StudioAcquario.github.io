@@ -46,12 +46,6 @@ a:link {
 a:visited {
 	color: #CD759C;
 }
-a.barra:link {
-	color: #000000;
-}
-a.barra:visited {
-	color: #000000;
-}
 img {
 	max-width: 100%;
 	height: auto;
@@ -62,6 +56,44 @@ img {
 	color: #FFFFFF; /* White */
 	text-shadow: 1px 1px 5px #0000FF; /* Blue */
 	text-align: center;
+}
+.sLogoBanner {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	text-shadow: 1px 1px 5px #0000FF; /* Blue */
+	text-align: center;
+}
+.sNavigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 180%;
+}
+.sNavigation a {
+	font-size: small;
+	font-weight: bold;
+	padding: .42em;
+	color: black;
+	margin-left: 2px;
+	background: #F2C6D5; /* Pink Lace */
+	text-decoration: none;
+}
+.sNavigation a:hover {
+  background: #FF66FF; /* Pink Flamingo */
+}
+#PagCorrente {
+	border-bottom: 2.5px solid red;
+}
+.sHomeIcon {
+	vertical-align: bottom;
+	margin-bottom: 1px;
+	height: 25px;
+	width: 25px;
 }
 .sBorder2s {
 				border-style: solid;
@@ -75,9 +107,6 @@ img {
 }
 .sWhite {
 				color: #FFFFFF;
-}
-.sBGPigPink {
-				background-color: #F6D2DE;
 }
 .sBGWhite {
 				background-color: #FFFFFF;
@@ -125,31 +154,31 @@ img {
 <body>
 <p class="sLogoBanner">Studio di Astrologia "Acquario"</p>
 
-<TABLE CELLSPACING="0" CELLPADDING="25" BACKGROUND="LCfloral9bk2.jpg" class="sBorder2s" BORDERCOLOR="#8D3559" BORDERCOLORDARK="#350518" width="95%" align="center">
+<TABLE BACKGROUND="LCfloral9bk2.jpg" CELLSPACING="0" CELLPADDING="20" class="sBorder2s" BORDERCOLOR="#8D3559" BORDERCOLORDARK="#350518" width="95%" align="center">
 <TR><TD>
 
-<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="2" WIDTH="100%" BACKGROUND="LCfloral9bk5.jpg">
+<TABLE BACKGROUND="LCfloral9bk5.jpg" CELLSPACING="0" CELLPADDING="2" BORDER="0" WIDTH="100%">
 <TR><TD>
 
-<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="4" WIDTH="100%" BACKGROUND="LCfloral9bk1.jpg">
+<TABLE BACKGROUND="LCfloral9bk1.jpg" CELLSPACING="0" CELLPADDING="4" BORDER="0" WIDTH="100%">
 <TR><TD>
 
-<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%" BACKGROUND="LCfloral9bk5.jpg">
+<TABLE BACKGROUND="LCfloral9bk5.jpg" CELLSPACING="0" CELLPADDING="0" BORDER="0" WIDTH="100%">
 <TR><TD>
 
-<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="17" WIDTH="100%" BACKGROUND="LCfloral9bk3.jpg">
+<TABLE BACKGROUND="LCfloral9bk3.jpg" CELLSPACING="0" CELLPADDING="14" BORDER="0" WIDTH="100%">
 <TR><TD>
 
-<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="2" WIDTH="100%" BACKGROUND="LCfloral9bk5.jpg">
+<TABLE BACKGROUND="LCfloral9bk5.jpg" CELLSPACING="0" CELLPADDING="2" BORDER="0" WIDTH="100%">
 <TR><TD>
 
-<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="4" WIDTH="100%" BACKGROUND="LCfloral9bk1.jpg">
+<TABLE BACKGROUND="LCfloral9bk1.jpg" CELLSPACING="0" CELLPADDING="4" BORDER="0" WIDTH="100%">
 <TR><TD>
 
-<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="2" WIDTH="100%" BACKGROUND="LCfloral9bk5.jpg">
+<TABLE BACKGROUND="LCfloral9bk5.jpg" CELLSPACING="0" CELLPADDING="2" BORDER="0" WIDTH="100%">
 <TR><TD>
 
-<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%" BACKGROUND="LCfloral9bk4.jpg">
+<TABLE BACKGROUND="LCfloral9bk4.jpg" CELLSPACING="0" CELLPADDING="0" BORDER="0" WIDTH="100%">
 <TR><TD>
 
 		<h1>POESIE E PENSIERI</h1>
@@ -160,20 +189,19 @@ img {
 			<IMG SRC="LCfloral9icon.jpg" WIDTH="127" HEIGHT="105">
 		</p>
 
-		<p class="sSmall sBlack sBold sCenter sPadding sLineH125">
-			<br><span class="sBGWhite">&nbsp;
-			<a href="poesie1.htm" class="barra">Dedicate&nbsp;ad&nbsp;Alex</a> |
-			<a href="poesie2.htm" class="barra">Poesie,&nbsp;n°2</a> |</span><span class="sBGPigPink">
-			<a href="poesie3.htm" class="barra">Poesie,&nbsp;n°3</a> |</span><span class="sBGWhite">
-			<a href="poesie4.htm" class="barra">Poesie,&nbsp;n°4</a> |
-			<a href="poesie5.htm" class="barra">Poesie,&nbsp;n°5</a> |
-			<a href="poesie6.htm" class="barra">Poesie,&nbsp;n°6</a> |
-			<a href="poesie7.htm" class="barra">Lettere&nbsp;d'amore</a> |
-			<a href="poesie8.htm" class="barra">Pensieri,&nbsp;n°7</a> |
-			<a href="Pensieri.htm" class="barra">I&nbsp;miei&nbsp;pensieri</a> |
-			<a href="poesieGA.htm" class="barra">Le&nbsp;poesie&nbsp;dei&nbsp;miei&nbsp;amici</a> |
-			<a href="index.html" class="barra">Pagina&nbsp;Iniziale</a>&nbsp;</span><br>
-		</p>
+		<ul class="sNavigation">
+			<li><a href="poesie1.htm">Dedicate ad Alex</a></li>
+			<li><a href="poesie2.htm">Poesie, n°2</a></li>
+			<li><a href="poesie3.htm" id="PagCorrente">Poesie, n°3</a></li>
+			<li><a href="poesie4.htm">Poesie, n°4</a></li>
+			<li><a href="poesie5.htm">Poesie, n°5</a></li>
+			<li><a href="poesie6.htm">Poesie, n°6</a></li>
+			<li><a href="poesie7.htm">Lettere d'amore</a></li>
+			<li><a href="poesie8.htm">Pensieri, n°7</a></li>
+			<li><a href="Pensieri.htm">I miei pensieri</a></li>
+			<li><a href="poesieGA.htm">Poesie degli amici</a></li>
+			<li><a href="index.html"><IMG SRC="favicon32.gif" class="sHomeIcon"></a></li>
+		</ul>
 
 		<p align="center" class="sPigPink sXLarge">
 			<IMG SRC="LCfloral9div.jpg" WIDTH="421" HEIGHT="41">&nbsp;&nbsp;

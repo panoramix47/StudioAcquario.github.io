@@ -12,7 +12,7 @@
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="18/12/2017">
-<meta name="revised" content="09/09/2020">
+<meta name="revised" content="10/09/2020">
 
 <style type="text/css">
 body {
@@ -22,7 +22,7 @@ body {
 	scrollbar-track-color: #bf7b86;
 
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-	color: #b78385; /* ? */
+	color: #B78385; /* Tapestry */
 	/* background-color: #F2F1EF; Romance */
 	background-image: url('SVAfl16bg3.jpg');
 	background-attachment: fixed;
@@ -46,12 +46,6 @@ A:link {
 a:visited {
 	color: #000000;
 }
-a.barra:link {
-	color: #000000;
-}
-a.barra:visited {
-	color: #000000;
-}
 img {
 	max-width: 100%;
 	height: auto;
@@ -63,6 +57,37 @@ img {
 	text-shadow: 1px 1px 5px #0000FF; /* Blue */
 	text-align: center;
 }
+.sNavigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 180%;
+}
+.sNavigation a {
+	font-size: small;
+	font-weight: bold;
+	padding: .42em;
+	color: black;
+	margin-left: 2px;
+	background: #F2C6D5; /* Pink Lace */
+	text-decoration: none;
+}
+.sNavigation a:hover {
+	background: #FF66FF; /* Pink Flamingo */
+}
+#PagCorrente {
+	border-bottom: 2.5px solid red;
+}
+.sHomeIcon {
+	vertical-align: bottom;
+	margin-bottom: 1px;
+	height: 25px;
+	width: 25px;
+}
 .sBlack {
 				color: #000000;
 }
@@ -71,9 +96,6 @@ img {
 }
 .sWhite {
 				color: #FFFFFF;
-}
-.sBGPigPink {
-				background-color: #F6D2DE;
 }
 .sBGWhite {
 				background-color: #FFFFFF;
@@ -133,7 +155,7 @@ img {
 <table background="SVAtanstrip3.jpg" cellspacing="2" cellpadding="0" border=0 width="100%">
 <tr><td>
 
-<table background="SVfl16bg2.jpg" cellspacing="20" cellpadding="0" border=2 borderColorDark="#b78385" bordercolorlight="#b78385" width="100%">
+<table background="SVfl16bg2.jpg" cellspacing="17" cellpadding="0" border=2 borderColorDark="#b78385" bordercolorlight="#b78385" width="100%">
 <tr><td>
 
 <table background="SVAfl16bg1.jpg" cellspacing="10" cellpadding="5" border=0 width="100%">
@@ -152,20 +174,19 @@ img {
 			<IMG SRC="SVAfl16bar.gif" width="494" height="67">
 		</p>
 
-		<p class="sSmall sBlack sBold sCenter sPadding sLineH125">
-			<br><span class="sBGWhite">&nbsp;
-			<a href="poesie1.htm" class="barra">Dedicate&nbsp;ad&nbsp;Alex</a> |
-			<a href="poesie2.htm" class="barra">Poesie,&nbsp;n°2</a> |
-			<a href="poesie3.htm" class="barra">Poesie,&nbsp;n°3</a> |
-			<a href="poesie4.htm" class="barra">Poesie,&nbsp;n°4</a> |
-			<a href="poesie5.htm" class="barra">Poesie,&nbsp;n°5</a> |
-			<a href="poesie6.htm" class="barra">Poesie,&nbsp;n°6</a> |
-			<a href="poesie7.htm" class="barra">Lettere&nbsp;d'amore</a> |
-			<a href="poesie8.htm" class="barra">Pensieri,&nbsp;n°7</a> |</span><span class="sBGPigPink">
-			<a href="Pensieri.htm" class="barra">I&nbsp;miei&nbsp;pensieri</a> |</span><span class="sBGWhite">
-			<a href="poesieGA.htm" class="barra">Le&nbsp;poesie&nbsp;dei&nbsp;miei&nbsp;amici</a> |
-			<a href="index.html" class="barra">Pagina&nbsp;Iniziale</a>&nbsp;</span><br>
-		</p>
+		<ul class="sNavigation">
+			<li><a href="poesie1.htm">Dedicate ad Alex</a></li>
+			<li><a href="poesie2.htm">Poesie, n°2</a></li>
+			<li><a href="poesie3.htm">Poesie, n°3</a></li>
+			<li><a href="poesie4.htm">Poesie, n°4</a></li>
+			<li><a href="poesie5.htm">Poesie, n°5</a></li>
+			<li><a href="poesie6.htm">Poesie, n°6</a></li>
+			<li><a href="poesie7.htm">Lettere d'amore</a></li>
+			<li><a href="poesie8.htm">Pensieri, n°7</a></li>
+			<li><a href="Pensieri.htm" id="PagCorrente">I miei pensieri</a></li>
+			<li><a href="poesieGA.htm">Poesie degli amici</a></li>
+			<li><a href="index.html"><IMG SRC="favicon32.gif" class="sHomeIcon"></a></li>
+		</ul>
 
 		<p class="sCenter">
 			<IMG SRC="SVAfl16bar.gif" width="494" height="67">
