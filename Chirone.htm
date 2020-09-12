@@ -1,965 +1,354 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-
-<title>Chirone</title>
-<link rel="icon" type="image/gif" href="https://www.studioacquario.it/favicon32.gif">
-<META name="description" content="Studio Acquario: Chirone">
-<meta name="keywords" content="astrologia">
+<meta charset="UTF-8">
+<title>Chirone - Studio Acquario</title>
+<link rel="icon" type="image/gif" href="favicon32.gif">
+<meta name="description" content="Studio Acquario: Chirone">
+<meta name="keywords" content="studio, acquario, astrologia, chirone, segni, case, zodiacali">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
 <meta name="language" content="it">
-<meta charset="UTF-8">
-<meta http-equiv="imagetoolbar" CONTENT="no">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="21/06/2020">
-<!-- meta name="revised" content="19/06/2020" -->
+<meta name="revised" content="12/09/2020">
 
 <style type="text/css">
 body {
-	SCROLLBAR-FACE-COLOR: #061739;
+	SCROLLBAR-FACE-COLOR: #061739; /* Midnight Express */
 	SCROLLBAR-HIGHLIGHT-COLOR: #BAA76C;
 	SCROLLBAR-SHADOW-COLOR: #BAA76C; 
 	SCROLLBAR-3DLIGHT-COLOR: #BAA76C;
 	SCROLLBAR-ARROW-COLOR: #BAA76C;
-	SCROLLBAR-TRACK-COLOR: #061739;
-	SCROLLBAR-DARKSHADOW-COLOR: #BAA76C
-	font-family: Verdana;
+	SCROLLBAR-TRACK-COLOR: #384561; /* Gulf Blue */
+	SCROLLBAR-DARKSHADOW-COLOR: #BAA76C;
+
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	/* color: #000000;  ? */
+	/* background-color: #FFFFFF;  ? */
+	background-image: url('ChironeB.jpg');
+	/* background-attachment: fixed; */
 }
-.style15 {
+h1 {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #7C1F5E;	/* Palatinate Purple */
+	text-align: center;
+}
+h2 {
+	font-size: large;
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+	margin-top: 30px;
+}
+header {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	text-shadow: 1px 1px 5px #0000FF; /* Blue */
+	text-align: center;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
+}
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+	margin-top: 5px;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.sVerdana {
 				font-family: Verdana;
 }
-.style20 {
-				font-family: Verdana;
-				font-size: x-small;
-}
-.style45 {
-				color: #FF0000;
-}
-.style46 {
+.sBorder2s-Navy {
 				border: 2px solid #000080;
 }
-.style48 {
-				color: #000000;
-				font-family: Verdana;
-				font-size: small;
+.sBorder3s-Navy {
+				border: 3px solid #000080;
 }
-.style50 {
-				text-align: center;
-}
-.style51 {
-				font-family: Verdana;
-				font-size: small;
-				color: #005128;
-}
-.style52 {
+.sTxtDecNo {
 				text-decoration: none;
 }
-.style53 {
-				text-align: justify;
-				font-size: 14.0pt;
-				font-family: Verdana;
-				margin-left: 0cm;
-				margin-right: 0cm;
-				margin-top: 0cm;
-				margin-bottom: .0001pt;
-}
-.style55 {
-				font-weight: bold;
-}
-.style57 {
+.sBritishRacingGreen {
 				color: #005128;
 }
-.style60 {
-				font-size: x-large;
-				font-family: Bangle;
+.sPalatinatePurple {
 				color: #7C1F5E;
 }
-.style61 {
-				border: 3px solid #000080;
-				background-color: #FEFBFF;
-}
-.style62 {
-				color: #7C1F5E;
-}
-.style64 {
-				color: #FF0000;
-				font-size: medium;
-				font-family: Verdana;
-}
-.style65 {
+.sBlack {
 				color: #000000;
 }
-.style66 {
-				font-size: small;
-				color: #7C1F5E;
+.sBlue {
+				color: #0000FF;
 }
-.style70 {
-				font-size: xx-small;
+.sGreen {
+				color: #008000;
 }
-.style72 {
-				border: 2px solid #000080;
+.sBlackcurrant {
+				color: #36004A;
+}
+.sSealBrown {
+				color: #400000;
+}
+.sIndigo {
+				color: #42005B; /* #470062; */
+}
+.sMardiGras {
+				color: #420042; /* #460046; */
+}
+.sTyrianPurple {
+				color: #530053;
+}
+.sPersianPlum {
+				color: #633232;
+}
+.sMaroon {
+				color: #800000;
+}
+.sGrey {
+				color: #808080;
+}
+.sRed {
+				color: #FF0000;
+}
+.sRedOrange {
+				color: #FF2D2D;
+}
+.sYellow {
+				color: #FFFF00;
+				text-shadow: 1px 1px 0px #000000; /* Tangerine=#DD8500 */
+}
+.sWhite {
+				color: #FFFFFF;
+}
+.sBGWhite {
 				background-color: #FFFFFF;
 }
-.style73 {
-				font-size: xx-large;
-				font-family: Bangle;
-				color: #7C1F5E;
+.sItalic {
+				font-style: italic;
 }
-.style74 {
-				font-family: Verdana;
-				font-size: small;
-}
-.style75 {
-				font-family: Verdana;
+.sBold {
 				font-weight: bold;
+}
+.sCenter {
+				text-align: center;
+}
+.sJustify {
+				text-align: justify;
+}
+.sPadding {
+				padding-left: 40px;
+				padding-right: 40px;
+}
+.sLineH125 {
+				line-height: 125%;
+}
+.sXXSmall {
+				font-size: xx-small;
+}
+.sXSmall {
+				font-size: x-small;
+}
+.sSmall {
 				font-size: small;
 }
-.style76 {
-				font-family: Verdana;
-				font-size: small;
-				color: #7C1F5E;
-}
-.style77 {
-				font-size: small;
-}
-.style78 {
-				border: 3px solid #000080;
-}
-.style79 {
-				font-family: Verdana;
+.sMedium {
 				font-size: medium;
 }
-.style80 {
-				text-align: justify;
+.sLarge {
+				font-size: large;
 }
-.style81 {
-				font-family: Verdana;
-				font-size: x-small;
-				text-align: justify;
+.sXLarge {
+				font-size: x-large;
+}
+.sXXLarge {
+				font-size: xx-large;
 }
 </style>
 </head>
 
-<body style="background-image: url('ChironeB.jpg')">
+<body>
+<header>Studio di Astrologia &quot;Acquario&quot;</header>
 
-<blockquote>
-  <div align="center">
-  <table style="width: 65%" class="style78" cellpadding="2">
-    <tr>
-      <td align="center" style="width: 65%" rowspan="2" class="style61" colspan="2">
-        <p class="style60" align="center" style="tab-stops: 120.5pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman; mso-bidi-font-weight: normal; width: 1044px;">
-<img src="vasobar2.jpg" width="570" height="10"></p>
-		<p class="style73" align="center" style="tab-stops: 120.5pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman; mso-bidi-font-weight: normal; width: 1044px;">
-<span style="mso-bidi-font-weight: normal; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman">
-<strong>CHIRONE NEI SEGNI E CASE</strong></span><span style="mso-bidi-font-size: 10.0pt"><font color="#005128"><br>
-        </font></span>
-<span style="mso-bidi-font-weight: normal; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman">
-<strong>&nbsp;ZODIACALI</strong></span></p>
+<table cellspacing="2" cellpadding="2" class="sBorder3s-Navy" width="95%" align="center">
+<tr><td class="sBorder3s-Navy sBGWhite">
 
-<p class="style62" align="center" style="tab-stops: 120.5pt; width: 1046px; height: 9px;">
-<img src="vasobar2.jpg" width="570" height="10"></p>
-		<p style="width: 1044px">
-		<img src="Chirone1A.jpg" width="276" height="186">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="ChironeC.jpg" width="223" height="225">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="A.Chirone.jpg" width="282" height="185"></p>
-		<p style="width: 1044px"><font size="2" color="#FF0000" class="style15">
-		<span style="mso-bidi-font-weight: normal; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman">&nbsp;</span></font><img src="vasobar2.jpg" width="570" height="10"></p>
-		<p class="style50" style="width: 1042px"><span class="style64">&nbsp;&nbsp;
-		</span>
-		<span style="mso-bidi-font-weight: normal; mso-bidi-font-size: 10.0pt">
-		<font size="2" class="style79"><strong>IL</strong>
-        <span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman; mso-bidi-font-weight: normal"><b style="mso-bidi-font-weight: normal; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman">SUO
-        SIMBOLO UNISCE TERRA E CIELO</b><b style="mso-bidi-font-weight: normal; mso-bidi-font-size: 10.0pt">,
-        </b><b style="mso-bidi-font-weight: normal; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman">E
-        DEFINISCE IL TALENTO</b><b style="mso-bidi-font-weight: normal; mso-bidi-font-size: 10.0pt">.</b></span></font></span></p>
-		<p class="style53" style="width: 1121px">
-		<strong>
-		<span class="style66">Chirone</span></strong><span class="style77"> è stato scoperto nel 1977, 
-		simboleggia le terapie insolite ed alternative, ha il corpo equino e il 
-		tronco</span><font color="#005128"><span style="mso-bidi-font-size: 10.0pt" class="style74">&nbsp; </span>
-        </font><span class="style77">umano e ricevette secondo la mitologia 
-		l'incarico dagli Dei di insegnare ad Asclepio l'arte medica. </span>
-		<span style="mso-bidi-font-size: 10.0pt" class="style74"><font color="#005128"><br>
-        </font></span><span class="style77">Simboleggia</span><font color="#005128"><span style="mso-bidi-font-size: 10.0pt" class="style74"> </span>
-        </font><span class="style77">l'apprendimento, l'iniziazione, le idee 
-		d'avanguardia, la medicina cara a <span class="style62"><strong>
-		Chirone</strong></span> è quella olistica.</span><span style="mso-bidi-font-size: 10.0pt" class="style74"><font color="#005128"><br>
-        </font></span><span class="style66"><strong>Chirone</strong></span><span style="color: black" class="style77"> 
-		trascorre circa quattro anni in ogni segno zodiacale. Rappresenta un 
-		periodo non facile per voi e per tutti&nbsp;i vostri coetanei.<o:p> </o:p>
-		</span></p>
-		<p class="style50" style="width: 1044px; height: 17px">
-		<font size="2" color="#FF0000" class="style74">
-		<span style="mso-bidi-font-weight: normal; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman">
-		<strong>&nbsp;&nbsp;</strong> <span class="style65">C</span><span><span class="style65">ercate
-        nella tabella a fine pagina il vostro<strong> </strong></span><strong>
-		<span class="style62">CHIRONE</span><span class="style65"> </span></strong>
-		<span class="style65">dove si trova nell'anno di
-        nascita.&nbsp;</span></span></span></font></p>
-        <p align="center" class="style15" style="width: 1041px">&nbsp; &nbsp;<img src="A.AChirone.jpg" width="135" height="184">&nbsp;&nbsp;&nbsp;
-		<img src="CB.1Ariete.jpg" width="161" height="200"></p>
-        <p class="style80" style="tab-stops:120.5pt; width: 1118px;">
-		<b style="mso-bidi-font-weight:
-normal"><span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman; color: red" class="style15">
-		<span class="style77">ARIETE</span></span></b><font class="style15"><span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman" class="style77">
-        </span></font><span class="style77"><font class="style15">=</font></span><font size="2" class="style74"><span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman"><strong>
-		</strong>
-		<span style="mso-bidi-font-weight:normal"><strong>Ha talento</strong></span></span><span style="mso-bidi-font-size: 10.0pt">: </span></font>
-		<span style="mso-bidi-font-size: 10.0pt" class="style77"><span class="style15">nel 
-		fare nascere cose nuove, specie se sono connesse al modo di presentarsi di essere e all'affermazione della 
-		personalità in ambito fisico e in quello<span class="style57">
-		</span>morale. Questo va bene in particolare se deve passare del tempo in luoghi rumorosi e affollati in particolare se è richiesta un'eccellente forma 
-		fisica, ma n</span></span><span style="color: black" class="style74">on 
-		riesce a</span><span style="color: black" class="style74">&nbsp;prendere iniziative per mancanza di personalità. 
-		Per riuscire a superare le 
-		sue paure deve 
-		sforzarsi a ritrovare il 
-		coraggio per lottare. Nella prima parte della vita ci saranno conflitti 
-		con i genitori e gli insegnanti perché pensa 
-		già di essere molto esperto su tutto fin dalla prima infanzia. Maturando 
-		imparerà fidarsi anche delle altre persone,</span><span style="color: black" class="style74">&nbsp;a volte 
-		anche troppo.</span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74"> 
-		Possono esserci dei problemi fisici legati alla testa, come emicranie 
-		frequenti o incidenti 
-		che causano ferite in questa zona, ma probabilmente la ferita è 
-		psicologica, e riguarda la profonda convinzione</span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">&nbsp;inconscia 
-		di sentirsi inadeguati e indegni dell'amore altrui. </span>
-		<o:p></o:p></p>
-		<p class="style80" style="width: 1119px"><b>
-		<span class="style76">CHIRONE</span><span style="color: #7171FF" class="style74"> </span></b>
-		<span style="color: black; mso-bidi-font-weight: bold" class="style74">
-		nella </span><span style="color: red" class="style75">I </span>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">
-		casa: </span><span class="style74">lo rende come un cavaliere senza 
-		macchia sempre pronto a lottare per i più deboli. Di solito,</span><span class="style74">&nbsp;mentre fa 
-		questo, trascura se stesso. Potrebbe essere un saggio 
-		consigliere (in particolare in materia di 
-		salute),</span><span style="mso-bidi-font-size: 10.0pt" class="style74"><font color="#005128">
-        </font>ma</span><span class="style74">&nbsp;sembra che abbia 
-		difficoltà a seguire i suoi stessi consigli. Può essere un</span><span style="mso-bidi-font-size: 10.0pt" class="style74"><font color="#005128">
-        </font></span><span class="style74">insegnante di talento, e insegnare</span><span style="mso-bidi-font-size: 10.0pt" class="style74"><font color="#005128">
-        </font></span><span class="style74">gli 
-		altri</span><span class="style74">&nbsp;come fare qualcosa meglio di quanto lo sappia fare</span><span style="mso-bidi-font-size: 10.0pt" class="style74"><font color="#005128">
-        </font></span><span class="style74">lui stesso. </span>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">
-		È </span>
-		<span style="mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">
-		un terapeuta a tempo pieno e riesce&nbsp;sempre 
-		a dare</span><span style="mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">&nbsp;consigli davvero speciali, che sono di grande 
-		aiuto a chi li richiede. Porta a godere di una profonda&nbsp;stima 
-		da parte di</span><span style="mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">&nbsp;coloro che ne beneficiano tanto che</span><span style="mso-bidi-font-size: 10.0pt" class="style74"><font color="#005128">
-        </font></span>
-		<span style="mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">
-		finisce spesso con il diventare anche delle figure di riferimento&nbsp;per 
-		la loro vita,&nbsp;veri e propri modelli.</span><o:p></o:p></p>
-        <p class="MsoNormal" style="tab-stops:120.5pt; width: 1046px;" align="center">&nbsp;<span style="mso-bidi-font-size: 10.0pt"><font size="2"><span style="mso-spacerun: yes" class="style15">&nbsp;&nbsp;&nbsp;
-        </span></font></span><img src="A.AChirone.jpg" width="135" height="184"><span style="mso-bidi-font-size: 10.0pt"><font size="2"><span style="mso-spacerun: yes" class="style15">&nbsp;&nbsp;&nbsp;
-		<img src="CB.2Toro.jpg" width="168" height="177"> </span></font></span></p>
-        <span style="mso-bidi-font-weight:
-normal">
-        <p class="style80" style="tab-stops:120.5pt; width: 1120px;">
-		</span>
-		<span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman; color: green" class="style15">
-		<span class="style77"><strong>
-		TORO</strong></span></span><span style="mso-bidi-font-size: 10.0pt" class="style74">
-        </span><span class="style74">=</span><font size="2" class="style74"><span style="mso-bidi-font-size: 10.0pt"> </span><span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman">
-		<strong>Ha
-        talento</strong></span><span style="mso-bidi-font-size: 10.0pt">: </span></font>
-		<span style="mso-bidi-font-size: 10.0pt" class="style74">nel consolidare 
-		le basi economiche e organizzative nei settori che offrono 
-		garanzie di<font color="#005128"><br>
-        </font>continuità. Predisposto per tutte le arti che esaltano 
-		la bellezza dei rapporti umani, o tale inclinazione trova uno&nbsp;sbocco professionale o raramente l'applica nel privato, 
-		poiché sono poche le persone con cui stabilisce dei rapporti&nbsp;di profonda amicizia. Si dimostra attento e generoso 
-		nell'educare gli altri. </span>
-		<span style="color: black" class="style74">Se ha anche valori artistici 
-		può essere un</span><span style="color: black" class="style74">&nbsp;ottimo 
-		maestro che forma molti altri artisti che continuano la sua opera.
-		</span><span style="mso-bidi-font-size: 10.0pt" class="style74">Sa 
-		esprimersi molto bene e farsi capire,&nbsp;attira l'attenzione sulle sue idee. </span>
-		<span class="style74">Pur concedendosi i piaceri semplici della vita, 
-		deve prima di tutto imparare</span><span class="style74">&nbsp;a valorizzarsi e trattare se 
-		stesso come vorrebbe essere trattato dagli altri. </span>
-		<span style="mso-bidi-font-size: 10.0pt" class="style74">S</span><span style="color: black" class="style77"><span class="style15">olo 
-		seguendo dei valori più profondi riesce a 
-		raggiungere i suoi risultati. Possibili 
-		le preoccupazioni economiche-finanziarie.</span><o:p></o:p></span></p>
-		<p class="style80" style="tab-stops:120.5pt; width: 1117px;">
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">
-		<span class="style62"><strong>CHIRONE</strong></span> in <strong>2°</strong> 
-		casa: insegna e dà consigli è la casa del denaro, dei beni e valori. È 
-		possibile aiutare le altre persone a</span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">&nbsp;prendersi 
-		cura del loro denaro meglio di quanto si possa fare con il proprio. In 
-		effetti le sue finanze possono essere</span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">&nbsp;un disastro. Alle volte questa posizione può rendere avari, ma il denaro 
-		risparmiato non porta mai nessun&nbsp;piacere 
-		e</span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">&nbsp;non si elimina mai la paura interiore di non avere risorse. Molto 
-		probabilmente, questo succede perché la&nbsp;persona</span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">&nbsp;ha un basso senso di autostima e sente di non meritare i soldi o i beni. 
-		In altri casi potrebbe sperperare o&nbsp;dare 
-		via</span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">&nbsp;quello che ha per lo stesso motivo. 
-		È importante ricordare che se ci 
-		sono dei problemi col denaro o i beni,&nbsp;questi 
-		molto</span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">&nbsp;probabilmente non sono il vero problema. Il senso di autostima è 
-		la chiave.</span>&nbsp;</p>
-        <p class="MsoNormal" style="tab-stops:120.5pt; width: 1046px;" align="center">&nbsp;<span class="style15"> </span>
-		<img src="A.AChirone.jpg" width="135" height="184"><span class="style15">&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="CB.3Gemelli.jpg" width="172" height="198"></span></p>
-        <p class="style80" style="tab-stops:120.5pt; width: 1120px;">
-		<strong>
-		<span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman; color: maroon" class="style74">
-		GEMELLI</span></strong><font class="style15"><span style="mso-bidi-font-size: 10.0pt" class="style77">
-        </span></font><span class="style77"><font class="style15">=</font></span><font size="2" class="style74"><span style="mso-bidi-font-size: 10.0pt"> </span><span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman">
-		<strong>Ha
-        talento</strong></span><span style="mso-bidi-font-size: 10.0pt">: per tutto
-        ciò che attiene la comunicazione e la</span></font><span style="mso-bidi-font-size: 10.0pt" class="style51"> </span>
-		<span style="mso-bidi-font-size: 10.0pt" class="style74">diffusione delle idee. Ha la
-        capacità di<font color="#005128"><br>
-        </font>crearsi attorno un clima di stimolante</span><span style="mso-bidi-font-size: 10.0pt" class="style51"> </span>
-		<span style="mso-bidi-font-size: 10.0pt" class="style74">complicità e di cogliere l'attimo fuggente di mode particolari, singolari&nbsp;e interessanti in</span><span style="mso-bidi-font-size: 10.0pt" class="style51"> </span>
-		<span style="mso-bidi-font-size: 10.0pt" class="style74">continuo
-        mutamento. Se riesce a porre un freno alla molteplicità dispersiva&nbsp;</span><span style="mso-bidi-font-size: 10.0pt"><span class="style74">dei
-        suoi interessi, 
-		</span><font size="2" class="style74"> per</font></span><span style="mso-bidi-font-size: 10.0pt"><font size="2" class="style74">&nbsp;consentir<span style="mso-spacerun: yes">e&nbsp;</span>di
-        approfondire quello</font><font class="style15"><span class="style77"> che è più importante</span></font><font color="#005128"><span class="style74">
-		</span>
-        </font><font size="2" class="style74">allora diventa
-        un vero centro di attrazione per gli altri.<span style="mso-spacerun: yes"> 
-		Ha</span></font></span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">
-		problemi ad esprimere le proprie idee, e solo con la ricerca della 
-		conoscenza può colmare questa sua lacuna. 
-		Avere dei buoni genitori e buoni insegnanti è un'assoluta necessità 
-		perché lui possa in futuro sentirsi sicuro delle</span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">&nbsp;sue 
-		opinioni. Quando da adulto tocca a lui il compito di guidare gli altri 
-		attraverso la conoscenza è sensibile, molto</span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">&nbsp;scrupoloso 
-		e convincente. Detesta la dispersione e aiuta ad approfondire con molta 
-		logica ma senza pregiudizi.<span style="mso-spacerun: yes">&nbsp;
-		</span></span></p>
-		<p class="style80" style="tab-stops:120.5pt; width: 1119px;">
-		<b><span class="style76">CHIRONE</span><span style="color: #7171FF" class="style74">
-		</span></b>
-		<span style="color: black; mso-bidi-font-weight: bold" class="style77">
-		<span class="style15">in <span class="style55">3°</span> casa:</span><o:p><span class="style15">
-		</span></span>
-		<span style="color: black; mso-bidi-font-weight: bold" class="style74">s</span></o:p><span class="style74">e 
-		non si hanno fratelli o sorelle, è possibile che denoti una mancanza, un 
-		vuoto nella vita.</span><span class="style74">&nbsp;Se si hanno, allora ci 
-		potrebbero essere problemi continui almeno con un fratello. Si tratta di 
-		una buona posizione</span><span class="style74">&nbsp;per un insegnante di canto o 
-		un logopedista. </span>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">
-		È </span><span class="style74">probabile che si sarà in grado di 
-		insegnare agli altri a parlare meglio</span><span class="style74">&nbsp;di lui. Questa posizione tende 
-		ad aumentare il rischio di problemi di comunicazione di un tipo o un 
-		altro. </span>
-		<span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">
-		È proprio</span><span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">&nbsp;la 
-		sua diversità di pensiero quello che potrà caratterizzarlo e farlo 
-		accedere a piani della conoscenza che altrimenti</span><font color="#005128"><span style="mso-bidi-font-size: 10.0pt" class="style74"> </span>
-        </font>
-		<span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">
-		resterebbero sigillatati ermeticamente, impedendo così di poter 
-		sperimentare cose, situazioni, esperienze che si è</span><span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">&nbsp;scelto al momento dell'attuale incarnazione e che sono in perfetta 
-		sintonia con il percorso evolutivo - spirituale</span><span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">&nbsp;che 
-		ha scelto di percorrere.</span></p>
-        <p class="MsoNormal" style="tab-stops:120.5pt; width: 1041px;" align="center">&nbsp;<span class="style15">&nbsp;&nbsp; </span>
-		<img src="A.AChirone.jpg" width="135" height="184"><span class="style15">&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="CB.4Cancro.jpg" width="159" height="198"></span></p>
-        <p class="style80" style="tab-stops:120.5pt; width: 1120px;">
-		<font class="style15">
-		<span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman; color: blue" class="style77">
-		<strong>CANCRO</strong></span><span style="mso-bidi-font-size: 10.0pt" class="style77">
-        </span></font><font size="2" face="Arial Rounded MT Bold">
-		<span class="style74">=</span><span class="style15"><span style="mso-bidi-font-size: 10.0pt"><span class="style77">
-		</span> </span><span class="style77"><span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman">
-		<strong>Ha
-        talento</strong></span></span></span><span style="mso-bidi-font-size: 10.0pt"><span class="style15"><span class="style77">: </span></span></span></font>
-		<span style="mso-bidi-font-size: 10.0pt" class="style74">in tutte le 
-		attività che richiedono ambienti confortevoli e protetti, che consentono 
-		di <font color="#005128">&nbsp;</font>vivere in una dimensione tra sogno e realtà. La sensibilità 
-		sovente offesa dalla realtà, lo porta ad idealizzare i valori&nbsp;tradizionali (famiglia, clan, patria), ravvisando in essi 
-		un sicuro rifugio dalla confusionaria aggressività circostante.&nbsp;</span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">Dovrebbe 
-		cercare di imparare a prendersi cura dei suoi bisogni. Questo 
-		l'aiuterebbe a creare un equilibrio dentro di</span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">&nbsp;sé 
-		e a farsi sentire completo. </span>
-		<span style="mso-bidi-font-size: 10.0pt" class="style74">Con i bambini 
-		ha il potere di farsi sentire forte e generoso, sa instaurare con loro 
-		felici&nbsp;rapporti. </span>
-		<span style="color: black" class="style74">Impara soprattutto 
-		attraverso le emozioni, le sensazioni e gli affetti più che col 
-		ragionamento. Ha bisogno</span><span style="color: black" class="style74">&nbsp;di avere 
-		educatori e genitori 
-		pazienti e sensibili. </span>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">
-		Riaffiorano vecchi problemi di</span><span style="mso-bidi-font-size: 10.0pt"><font color="#000000"><span class="style74">
-        </span>
-        </font></span>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">
-		famiglia.</span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">
-		Aprirsi agli&nbsp;altri 
-		e accettare il loro amore e la loro cura è un grande passo verso la 
-		guarigione della ferita interiore.</span></p>
-		<p class="style80" style="width: 1121px">
-		<b style="mso-bidi-font-weight: normal">
-		<span style="mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style76">
-		CHIRONE</span></b><span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74"> 
-		in <span class="style45"><strong>IV</strong></span> casa: dona un forte 
-		attaccamento alle radici familiari, sociali e culturali. Molti 
-		non riescono a tagliare del tutto il cordone col proprio passato, di questa 
-		come delle precedenti esistenze, ma lungi dal</span><span style="mso-bidi-font-size: 10.0pt" class="style74"> 
-		poter<font color="#005128">&nbsp;&nbsp;
-        </font></span>
-		<span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">diventare 
-		un ostacolo, è continua fonte di arricchimento e forza interiore per 
-		affrontare le varie sfide a cui la vita lo</span><span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">&nbsp;sottopone.
-		</span><span class="style74">La sfida esistenziale più importante è 
-		legata all'ambito familiare che per molti si presenta</span><span style="mso-bidi-font-size: 10.0pt" class="style74"><font color="#005128">
-        </font></span><span class="style74">sotto</span><span class="style74">&nbsp;forma di scelta, di decisione 
-		da prendere tra accettazione e sicurezza che giunge dal focolare 
-		domestico. Non</span><span class="style74">&nbsp;sempre ne conoscono i rischi e 
-		su cui ben di rado si può contare sull'aiuto altrui. </span>
-		<span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">
-		Possiede un particolare tatto</span><span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">&nbsp;nell'affrontare 
-		le questione affettive e da sempre l'impressione di essere una persona 
-		su cui contare e di&nbsp; potersi fidare, tanto che molto spesso si ritrova ad essere 
-		depositario di segreti e di confessioni di cui 
-		farebbe senz'altro a meno.</span></p>
-		<p class="style50" style="width: 1040px">
-		<span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style20">&nbsp;&nbsp;
-		</span><span style="color: #7030A0" class="style20">&nbsp;&nbsp;&nbsp;
-		</span>&nbsp;&nbsp;<span class="style15">&nbsp; </span>
-		<img src="A.AChirone.jpg" width="135" height="184"><span class="style15">&nbsp;&nbsp;&nbsp;
-		<img src="CB.5Leone.jpg" width="167" height="179"></span></p>
-        <p class="style80" style="tab-stops:120.5pt; width: 1120px;">
-		<font class="style15"><b style="mso-bidi-font-weight:
-normal"><span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman; color: red">
-		<span class="style77">LEONE</span></span></b><span style="mso-bidi-font-size: 10.0pt" class="style77">
-        </span></font><span class="style77"><font class="style15">=</font></span><font class="style15"><span class="style77">
-		</span><span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman">
-		<span class="style77"><strong>Ha
-        talento</strong></span></span><span style="mso-bidi-font-size: 10.0pt"><span class="style77">:
-        </span>
-        </span> </font>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">
-		si sente sottovalutato, come se i suoi talenti passassero sempre 
-		inosservati. O forse si sente</span><font color="#005128"><span style="mso-bidi-font-size: 10.0pt" class="style74">
-        </span>
-        </font>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">
-		a disagio, privo di qualunque talento. Eppure ha la capacità di aiutare 
-		gli altri a portare alla luce la sua creatività,&nbsp;</span><span style="mso-bidi-font-size: 10.0pt" class="style74">nell'operare come punto di riferimento in attività che esigano delle 
-		prestigiose messe in scena. </span>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">
-		La difficoltà che ha&nbsp;nell'esprimere 
-		i propri talenti probabilmente deriva dall'essere stato represso da 
-		bambino in ambito famigliare, o al 
-		contrario dall'eccessiva aspettativa riposta su di lui, magari in ambiti 
-		lontani dalla sua natura.</span><span style="mso-bidi-font-size: 10.0pt" class="style74">
-		La sua necessità di&nbsp;muovere critiche audaci e 
-		le inclinazione ad abbellire le apparenze accompagnata da gesti di 
-		autentica generosità<span class="style57"> </span>lo portano ad 
-		essere oggetto di 
-		giudizi contrastanti. C'è però chi lo invidia e lo disapprova, c'è</span><span style="mso-bidi-font-size: 10.0pt"><font color="#000000"><span class="style74"> 
-		anche 
-		chi</span></font></span><span style="mso-bidi-font-size: 10.0pt" class="style74"> prova per 
-		lui una grande ammirazione senza riserve in quanto subisce il suo 
-		fascino carismatico. </span></p>
-		<p class="style81" style="tab-stops:120.5pt; width: 1120px;">
-		<b style="mso-bidi-font-weight: normal">
-		<span style="mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style62">
-		<span class="style77">CHIRONE</span></span></b><span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74"> 
-		in <b style="mso-bidi-font-weight: normal">5°</b></span><b style="mso-bidi-font-weight: normal"><span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74"> </span>
-		</b>
-		<span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style15"> 
-		<span style="mso-bidi-font-weight: normal" class="style77">c</span></span><span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">asa: </span>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style77">
-		indica che è bravissimo con i bambini, o che ha problemi cronici con i 
-		propri figli o non ne ha&nbsp;proprio.
-		</span><span class="style77">La sfida esistenziale consiste proprio&nbsp;nel dare ascolto alle intuizioni e a procedere allineandovi 
-		secondo quelli che sono i canoni del vostro cuore.</span>&nbsp;<span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style77">È 
-		importante che nel corso della vita mantenga sempre un atteggiamento 
-		di grande apertura verso gli altri e il&nbsp;mondo 
-		emotivo, evitando di chiudersi o peggio ancora di 
-		congelare le emozioni. Più sarà elastico e&nbsp;disponibile, 
-		più sarà longevo nella creatività e anche in tarda età manterrà una luce 
-		ed entusiasmo da adolescente.</span><span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">
-		L'amore, la passione e la vita vissuta in tutte le possibilità è il 
-		terreno in cui può fare le esperienze</span><span style="mso-bidi-font-size: 10.0pt"><font color="#000000"><span class="style74">
-        </span>
-        </font></span>
-		<span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">
-		più&nbsp;importanti 
-		e apprendere gli insegnamenti più autentici e utili della sua vita. </span><span class="style77">Lezione 
-		da apprendere: mantenere costantemente allenato il proprio cuore a 
-		provare emozioni.</span><span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style77">
-		</span></p>
-		<p class="style15" style="tab-stops:120.5pt; width: 1043px;">&nbsp; <img src="A.AChirone.jpg" width="135" height="184">&nbsp; &nbsp;&nbsp;&nbsp;
-		<img src="CB.6Vergine.jpg" width="167" height="202">&nbsp; </p>
-        <p class="style80" style="tab-stops:120.5pt; width: 1118px;">
-		<b style="mso-bidi-font-weight:
-normal"><span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman; color: green" class="style15">
-		<span class="style77">VERGINE</span></span></b><font class="style15"><span style="mso-bidi-font-size: 10.0pt" class="style77">
-        </span></font><span class="style77"><font class="style15">=</font></span><font size="2" class="style74"><span style="mso-bidi-font-size: 10.0pt"> </span><span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman">
-		<strong>Ha
-        talento</strong></span><span style="mso-bidi-font-size: 10.0pt">: nei settori
-        legati al servizio pubblico o nelle attività </span></font>
-		<span style="mso-bidi-font-size: 10.0pt" class="style74">dipendenti, adatto ad
-        operare in orizzonti</span><span style="mso-bidi-font-size: 10.0pt"><font color="#000000"><span class="style74">
-        </span>
-        </font></span><span style="mso-bidi-font-size: 10.0pt" class="style74">limitati per puro senso del dovere. </span>
-		<span style="mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">È </span>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">
-		prigioniero di troppe regole e cerca di sconfiggere la sua ansia 
-		imparando a&nbsp;rilassarsi.</span><span style="mso-bidi-font-size: 10.0pt" class="style74"> </span>
-		<span class="style74">Fare del volontariato o lavorare nel settore della 
-		salute può aiutarlo a sviluppare un 
-		approccio realistico al&nbsp;concetto di guarigione e  
-		benessere.<o:p></o:p></span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">
-		</span><span style="mso-bidi-font-size: 10.0pt" class="style74">Ha 
-		predisposizione per quanto riguarda 
-		i problemi della salute, è&nbsp;analitico</span><span style="mso-bidi-font-size: 10.0pt"><font color="#000000"><span class="style74"> 
-		e</span></font></span><span style="mso-bidi-font-size: 10.0pt" class="style74"> tende alla cura dei particolari, 
-		s</span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">i
-		mette a disposizione degli altri. </span>
-		<span style="mso-bidi-font-size: 10.0pt" class="style74">Avere amicizie
-        è un po' complicato perché ha&nbsp;bisogno di persone che sappiano e
-        vogliano scoprire
-		le sue qualità più autentiche e rare di solito nascoste sotto una&nbsp;apparenza 
-		un po' rigida.</span></p>
-		<p class="style80" style="width: 1114px"><strong><span class="style76">CHIRONE</span></strong><span style="color: #7171FF" class="style75">
-		</span>
-		<span style="color: #0D0D0D; mso-bidi-font-weight: bold" class="style77">
-		<span class="style15">in <span class="style55">6°</span> casa: è s</span></span><span class="style74">empre 
-		possibile aiutare o istruire i colleghi a fare il lavoro meglio di 
-		quanto lo può fare lui. Forse è un mago nell'aiutare 
-		gli altri a restare in buona salute mentre lui ancora fuma e mangia cibo 
-		spazzatura.</span><span style="mso-bidi-font-size: 10.0pt"><font color="#000000"><span class="style74">&nbsp;</span></font></span><span class="style74">La 
-		sfida esistenziale con la quale gli capiterà spesso di confrontarsi è 
-		data dal doversi relazionare con chi tende a&nbsp;mettere in dubbio le sue idee, 
-		e con chi cerca di metterlo in secondo piano tentando di farlo passare per 
-		una persona&nbsp;priva di qualità. Ma nessuno 
-		può metterlo davvero a disagio se lui non gliene da la possibilità.</span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74"> 
-		Qualcuno potrebbe&nbsp;esigere 
-		che tutti gli altri siano al suo servizio, e di solito non è mai 
-		soddisfatto. Ovviamente questo causa problemi.</span><span style="mso-bidi-font-size: 10.0pt"><font color="#000000"><span class="style74">
-        </span>
-        </font></span><span class="style74">Lezione da apprendere: riuscire a 
-		credere maggiormente in se stesso e nel proprio potenziale.</span></p>
-		<p class="style50" style="width: 1042px"><span class="style20">&nbsp;
-		</span><span class="style15">&nbsp;</span><img src="A.AChirone.jpg" width="135" height="184"><span class="style15">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<img src="CB.7Bilancia.jpg" width="157" height="195"></span></p>
-        <p class="style80" style="tab-stops:120.5pt; width: 1122px;">
-		<font class="style15"><b style="mso-bidi-font-weight:
-normal"><span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman; color: maroon">
-		<span class="style77">BILANCIA</span></span></b><span style="mso-bidi-font-size: 10.0pt" class="style77">
-        </span></font><font size="2" face="Arial Rounded MT Bold">
-		<span class="style15"><span class="style77">=</span><span style="mso-bidi-font-size: 10.0pt"><span class="style77">
-		</span> </span><span class="style77"><span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman">
-		<strong>Ha
-        talento</strong></span></span></span><span style="mso-bidi-font-size: 10.0pt"><span class="style15"><span class="style77">: nei settori
-        in cui contano estetica, equilibrio, le </span> </span></span></font>
-		<span style="mso-bidi-font-size: 10.0pt" class="style74">sfumature 
-		e l'armonia. </span>
-		<span style="mso-bidi-font-size: 10.0pt" class="style77">
-		<span class="style15">La capacità di&nbsp;astrazione consente di non lasciarsi coinvolgere da ragioni soggettive e saper 
-		emettere giudizi anche aspri se</span></span><span style="mso-bidi-font-size: 10.0pt" class="style74"><font color="#000000"> 
-		sono</font></span><span style="mso-bidi-font-size: 10.0pt" class="style77"><span class="style15">&nbsp;necessari con obiettività anche se di solito non manca di 
-		elegante e sorridente bonarietà.</span><span style="mso-spacerun:yes" class="style15">
-		</span></span>
-		<span style="mso-bidi-font-size: 10.0pt" class="style74">Ha la rara 
-		predisposizione&nbsp;nel saper smussare ogni difficoltà, con tatto e senso di immedesimazione nei problemi altrui. </span>
-		<span class="style74">&nbsp;</span><o:p></o:p><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">C'è il rischio di lasciarsi coinvolgere in rapporti di dipendenza o di 
-		subire abusi fisici e psicologici,&nbsp;giungendo 
-		alla conclusione che nessuna relazione può funzionare. La lezione da 
-		imparare è che ognuno è completo&nbsp;da solo, e non si può trovare fuori di 
-		sé quello che manca all'interno. Solo capendo questo, arriverà il sollievo, e si raggiungerà 
-		l'equilibrio.</span><span class="style74"> L'arte può 
-		alleviare le&nbsp;sue sofferenze.</span></p>
-		<p class="style80" style="tab-stops:120.5pt; width: 1117px;">
-		<b style="mso-bidi-font-weight:normal">
-		<span style="mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style76">CHIRONE</span></b><span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74"> 
-		in <b style="mso-bidi-font-weight:normal"><span style="color:red">VII</span></b> 
-		casa: </span>
-		<o:p></o:p>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">
-		è probabile che passi la maggior parte del tempo a prendersi cura di un 
-		partner che ha un&nbsp;problema 
-		fisico o comunque ha bisogno di cure e assistenza. Questa casa 
-		rappresenta anche le società in ambito&nbsp;lavorativo. 
-		Ci si può prendere cura di un socio e insegnargli come fare affari 
-		meglio di quanto lui potrebbe mai fare.&nbsp;Attenzione 
-		a non essere proprio lui a pagarne le conseguenze però: una volta che 
-		l'allievo ha imparato da lui tutto&nbsp;il 
-		possibile, potrebbe soppiantarlo! </span>
-		<span style="font-size:4.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
-mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:IT;mso-fareast-language:
-IT;mso-bidi-language:AR-SA"><![if !supportLineBreakNewLine]><![endif]></span>
-		<o:p></o:p>
-		<span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">
-		I rapporti umani sono un vero e proprio banco di prova poiché vi 
-		permettono di</span><font color="#000000"><span style="mso-bidi-font-size: 10.0pt" class="style74"> </span>
-        </font>
-		<span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">
-		imparare e di accedere a differenti modelli di pensiero e di 
-		comportamento a cui ben difficilmente riuscirebbe ad&nbsp;approdare 
-		da solo. </span>
-		<o:p></o:p></p>
-        <p class="MsoNormal" style="tab-stops:120.5pt; width: 1045px;" align="center">
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="A.AChirone.jpg" width="135" height="184"><span class="style15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="CB.8Scorpione.jpg" width="168" height="190"></span></p>
-        <p class="style80" style="tab-stops:120.5pt; width: 1119px;">
-		<b style="mso-bidi-font-weight:
-normal"><span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman; color: blue" class="style15">
-		<span class="style77">SCORPIONE</span></span></b><font size="2" face="Arial Rounded MT Bold"><span style="mso-bidi-font-size: 10.0pt" class="style74">
-        </span><span class="style15"><span class="style77">=</span> 
-		<span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman" class="style77">
-		<strong>Ha
-        talento</strong></span>:<span class="style77"> </span> </span> <span style="mso-bidi-font-size: 10.0pt">
-		<span class="style15"><span class="style77">nel
-        focalizzare ciò che è difettoso o superfluo.
-		</span> </span> </span></font><span style="mso-bidi-font-size: 10.0pt">
-		<span class="style74"> 
-		Sa indagare </span>
-		<font class="style15"><span class="style77">e risolvere situazioni che comportano
-        problemi di coscienza. </span></font></span>
-		<span style="color: black" class="style74">Cerca di affrontare le 
-		preoccupazioni un&nbsp;passo 
-		alla volta.<o:p> </o:p></span>
-		<span style="mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">
-		È</span><span style="mso-bidi-font-size: 10.0pt"><span class="style77"><font class="style15"> </font></span>
-		<font size="2" class="style74">
-		pronto<span style="mso-spacerun: yes">&nbsp;</span>per
-        sua</font><span class="style15"><span class="style77"> natura, ad ereditare situazioni complesse,
-		senza timore per le difficoltà che&nbsp;si presentano,
-		e</span></span><span class="style74"> a lasciare di punto in bianco
-        le&nbsp;situazioni ottimali. </span></span>
-		<span style="color: black" class="style74">La tendenza ad avere segreti 
-		amplifica le sue 
-		paure di essere accettato. </span>
-		<span style="mso-bidi-font-size:10.0pt" class="style74"> Appare sovente un po' scomodo e&nbsp;</span><span style="mso-bidi-font-size: 10.0pt"><span class="style74">problematico, le rotture che 
-		provoca </span><font class="style15"><span class="style77">portano sempre alla trasformazione di</span></font></span><span style="mso-bidi-font-size: 10.0pt" class="style77"><font class="style15"> un
-        certo ambiente.</font></span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74"> </span>
-		<span class="style74">Imparerà che 
-		anche se&nbsp;perde qualcuno o qualcosa, si può apprezzare 
-		la vita e arricchirsi interiormente, e potrà essere di aiuto agli&nbsp;altri proprio per aver saputo trarre un 
-		insegnamento dal dolore di una perdita.</span><span style="mso-bidi-font-size:10.0pt" class="style74"> </span>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74"> 
-		Probabilmente è&nbsp;sempre 
-		molto preoccupato di perdere i propri averi o le persone care.</span><o:p></o:p></p>
-		<p class="style80" align="left" style="tab-stops:120.5pt; width: 1115px;">
-		<o:p> </o:p>
-		<b>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style76">
-		CHIRONE</span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; color: #7171FF; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">
-		</span></b>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; color: #0D0D0D; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA; mso-bidi-font-weight: bold" class="style74">
-		in <strong>8°</strong> casa: l</span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">o 
-		scenario più probabile è che c'é la possibilità di tirare fuori il 
-		meglio dal lato sessuale in&nbsp;un 
-		partner romantico. </span><span class="style74">La casa non 
-		parla solo di sesso, potrebbe trattarsi di eredità sue o del partner 
-		che&nbsp;sa gestire abilmente, o dei suoi beni che un 
-		partner troppo premuroso gestisce per lui. </span>
-		<span style="mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">
-		È</span><span class="style74"> troppo dipendente&nbsp;dal denaro che altri gli offrono per 
-		aiutarlo nel momento del bisogno, o è lui che destina troppi soldi 
-		guadagnati al&nbsp;supporto di altri. </span>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">
-		Si potrebbe tendere ad accettare i valori di altre persone (la famiglia, 
-		il gruppo la società) troppo&nbsp;facilmente. 
-		Il mito di <span class="style62">Chirone</span> può effettivamente 
-		prendere vita con questa posizione. Si può avere un talento per&nbsp;la 
-		guarigione o nel riabilitare gli altri, ma non sé stessi.</span><![if !supportLineBreakNewLine]><![endif]><o:p></o:p></p>
-		<p class="style50" style="tab-stops:120.5pt; width: 1045px;">
-		<span style="mso-bidi-font-size: 10.0pt"><font size="2" class="style15">
-		<span style="mso-spacerun: yes">&nbsp;</span></font></span><img src="A.AChirone.jpg" width="135" height="184">&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="CB.9Sagittario.jpg" width="169" height="195"></p>
-        <p class="style80" style="tab-stops:120.5pt; width: 1121px;">
-		<font class="style15"><b style="mso-bidi-font-weight:
-normal"><span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman; color: red">
-		<span class="style77">SAGITTARIO</span></span></b><span style="mso-bidi-font-size: 10.0pt; color: red" class="style77">
-        </span></font><span class="style77"><font class="style15">=</font></span><font class="style15"><span class="style77">
-		</span>
-		<span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman" class="style77">
-		<strong>Ha
-        talento</strong></span><font size="2" class="style15"><span class="style77">: 
-		</span> <span style="mso-bidi-font-size: 10.0pt"><span class="style77">per un'attività che
-        richiede di proiettarsi verso</span></span></font></font><span style="mso-bidi-font-size: 10.0pt" class="style74"> traguardi che superano 
-		dei limiti abituali.&nbsp;Per quanto 
-		possa avere<font color="#000000">
-        </font> </span>
-		<font size="2" class="style74"><span style="mso-bidi-font-size: 10.0pt">vissuto,<span style="mso-spacerun: yes">&nbsp;</span>continua
-        candidamente a stupirsi</span></font><font class="style15"><span style="mso-bidi-font-size: 10.0pt" class="style77"> di chi non onora la parola data. Ma, </span></font>
-		<span style="mso-bidi-font-size: 10.0pt" class="style74">nel guardare&nbsp;lontano, affinché le nuove
-        conquiste non escludano i vantaggi già acquisiti e possano assestarsi
-        senza scosse in un&nbsp;esistente quadro </span><span style="mso-bidi-font-size: 10.0pt" class="style15">
-		<span class="style77">di consenso generale.
-		</span></span>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">
-		Può sentirsi incapace di comprensione profonda e saggezza, non ascoltare 
-		i&nbsp;consigli 
-		altrui in ambiti diversi, ad esempio investimenti finanziari, o 
-		relazioni.</span><span class="style74"> Può sentirsi limitato in 
-		un'esistenza&nbsp;terrena: deve realizzare che ha un enorme potenziale di saggezza, e allora comincerà a 
-		sanare la sua&nbsp;ferita.</span><span style="mso-bidi-font-size: 10.0pt" class="style74"> I</span><span style="color: black" class="style74">nsoddisfatto 
-		della vita.</span><o:p></o:p></p>
-		<p class="style80" style="tab-stops:120.5pt; width: 1121px;">
-		<o:p></o:p>
-		<b style="mso-bidi-font-weight:normal">
-		<span style="mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style76">
-		CHIRONE</span></b><span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">
-		</span>
-		<span style="mso-fareast-font-family: Calibri; color: black; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA; mso-bidi-font-weight: bold; mso-bidi-font-style: italic" class="style74">
-		in <b>9° </b>casa: </span>
-		<span style="mso-fareast-font-family: Calibri; color: black; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">
-		ha 
-		capacità di interessarsi di mille cose e riuscire a diventare eccelso,&nbsp;sicuramente 
-		un 
-		abile conoscitore è una delle sue più grandi qualità, e teoricamente non 
-		ci sarebbe settore della vita&nbsp;nel 
-		quale potersi cimentare senza che possa cogliere anche un qualche minimo 
-		successo. </span>
-		<o:p></o:p>
-		<span style="mso-fareast-font-family: Calibri; color: black; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">
-		La sfida esistenziale a cui&nbsp;è&nbsp; sottoposto è quella relativa al ruolo di leader apripista 
-		in grado di aiutare gli altri a fare percorsi&nbsp;che risultano essere 
-		impervi o talmente fuori dall'ordinario, da essere ritenuti folli se non 
-		pericolosi. Ha grande&nbsp;capacità 
-		di rendere facile ciò che arduo e difficilmente sbaglia nel centrare 
-		l'obiettivo prefissato.&nbsp; </span></p>
-        <p class="MsoNormal" style="tab-stops: 120.5pt; width: 1044px;" align="center">&nbsp;<span class="style15"> </span>
-		<img src="A.AChirone.jpg" width="135" height="184"><span class="style15">&nbsp; &nbsp;&nbsp;
-		<img src="CB.10Capricorno.jpg" width="151" height="196"></span></p>
-        <p class="style80" style="tab-stops:120.5pt; width: 1116px;">
-		<b style="mso-bidi-font-weight:
-normal"><span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman; color: green" class="style15">
-		<span class="style77">CAPRICORNO</span></span></b><font size="2" face="Arial Rounded MT Bold"><span class="style15"><span class="style77"> =</span> 
-		<span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman" class="style77">
-		<strong>Ha
-        talento</strong></span><span class="style77">: </span> </span> <span style="mso-bidi-font-size: 10.0pt">
-		<span class="style15"><span class="style77">nel</span></span></span></font> <span style="mso-bidi-font-size: 10.0pt">
-        <span class="style74">superare le avversità per salire in cima</span></span><font size="2" face="Arial Rounded MT Bold"> 
-		<span style="mso-bidi-font-size: 10.0pt" class="style74">
-        con metodo</span></font><font face="Arial Rounded MT Bold"><span style="mso-bidi-font-size: 10.0pt" class="style74">
-		e tenacia.</span></font><span style="mso-bidi-font-size: 10.0pt"><span class="style74"> 
-		Insofferente a&nbsp;tutto quello che è nuovo o improvvisato&nbsp;lo predispone a saper validamente amministrare
-        e valorizzare tutto </span><font class="style15"><span class="style77">quanto</span></font></span><span style="mso-bidi-font-size: 10.0pt" class="style74">&nbsp;</span><span style="mso-bidi-font-size: 10.0pt" class="style77"><font class="style15">è antico.</font></span><span style="mso-bidi-font-size:10.0pt" class="style74">
-		</span><font face="Arial Rounded MT Bold"> 
-		<span style="mso-bidi-font-size: 10.0pt" class="style74">
-        Pur di arrivare 
-		ha disponibilità verso i sacrifici, </span></font>
-		<span style="mso-bidi-font-size: 10.0pt" class="style74">la tendenza a
-        pensare al peggio a stare sulla difensiva 
-		lo&nbsp;porta ad </span>
-		<span style="mso-bidi-font-size: 10.0pt">
-		<span class="style74">isolarsi dall'ambiente
-        circostante e accrescere</span></span><span style="mso-bidi-font-size: 10.0pt" class="style15"><font size="1" color="#000000"><span class="style77">
-        </span>
-        </font></span><span style="mso-bidi-font-size: 10.0pt">
-		<span class="style74">la sua
-        forza morale nelle
-        difficoltà. </span></span>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">
-		Spesso ha la&nbsp;sensazione 
-		di lavorare più di tutti gli altri senza ottenere alcun risultato. Ha un 
-		gran bisogno di ottenere prestigio&nbsp;sociale 
-		e rispetto che non riesce nemmeno a godersi le proprie realizzazioni.
-		</span><span style="mso-bidi-font-size: 10.0pt">
-		<span class="style74">C</span></span><span style="color: black" class="style74">erca</span><span style="mso-bidi-font-size: 10.0pt" class="style15"><font size="1" color="#000000"><span class="style77">
-        </span>
-        </font></span><span style="color: black" class="style74">di rispettare le regole che tanto&nbsp;lo deprimono.</span></p>
-		<p class="style80" style="tab-stops:120.5pt; width: 1118px;">
-		<b>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style76">
-		CHIRONE</span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; color: #7171FF; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">
-		</span></b>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; color: #0D0D0D; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA; mso-bidi-font-weight: bold" class="style74">
-		in </span>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; color: red; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style75">
-		X</span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; color: #0D0D0D; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA; mso-bidi-font-weight: bold" class="style74"> 
-		casa: </span>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">
-		questa è un'ottima posizione per un dirigente di una organizzazione in 
-		campo medico o di&nbsp;guarigione, 
-		ma spesso non importa quale sia la carriera. </span>
-		<span style="mso-fareast-font-family: Calibri; color: black; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">
-		Possiede un naturale tatto terapeutico con il quale l'aiuta&nbsp;molto 
-		spesso a dire e fare le cose giuste al momento opportuno, dono che gli 
-		permette poi di far star bene anche le&nbsp;persone 
-		che vivono accanto.</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
-mso-fareast-font-family:Calibri;color:black;mso-ansi-language:IT;mso-fareast-language:
-EN-US;mso-bidi-language:AR-SA"><span style="mso-fareast-font-family: Calibri; color: black; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74"> 
-		Infatti in lui c'è una speciale capacità di occuparsi degli altri, che 
-		spesso diventa una&nbsp;vera 
-		e propria professione, tale da farlo apparire come persona saggia, 
-		capace di aiutare chi ha bisogno, soprattutto&nbsp;talmente 
-		empatica che a volte non c'è neppure bisogno di sentirsi chiedere aiuto 
-		per poter intervenire e ad agire. </span></span></p>
-        <p class="MsoNormal" style="tab-stops: 120.5pt; width: 1046px;" align="center">
-		<img src="A.AChirone.jpg" width="135" height="184">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<span class="style15">
-		&nbsp; <img src="CB.11Acquario.jpg" width="169" height="181"></span></p>
-        <p class="style80" style="tab-stops:120.5pt; width: 1119px;">
-		<b style="mso-bidi-font-weight:
-normal"><span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman; color: maroon" class="style15">
-		<span class="style77">ACQUARIO</span></span></b><font size="2" face="Arial Rounded MT Bold"><span style="mso-bidi-font-size: 10.0pt" class="style74">
-		</span><span class="style15"><span class="style77">=</span>
-		<span style="mso-bidi-font-weight:normal">
-		<span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman" class="style77">
-		<strong>Ha
-        talento</strong></span></span><span class="style77">: </span></span>
-		</font>
-		<span style="mso-bidi-font-size: 10.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">nel 
-		convincere gli altri a cooperare in maniera amichevole, in una 
-		prospettiva di progresso&nbsp;anticonvenzionale.
-		</span>
-		<span style="mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">È</span><span style="mso-bidi-font-size: 10.0pt"><span class="style77"><font class="style15">
-		</font></span></span>
-		<span style="mso-bidi-font-size: 10.0pt" class="style74">predisposto per tutto quanto attiene alle
-        comunicazioni<font color="#000000"> </font>con l'aria, l'elettronica la psicologia di<font color="#000000">
-		</font>massa,
-        i mezzi di trasporto più moderni.<font color="#000000"> </font></span>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">Può sentirsi scollegato o isolato e fatica ad adattarsi. Ha un vero 
-		talento&nbsp;per 
-		aiutare gli altri ad esprimersi. Può interessarsi solo a idee nuove e 
-		all'avanguardia, o&nbsp; rimanere ancorato al vecchio. </span>
-		<span style="mso-bidi-font-size: 10.0pt" class="style74">
-		<font color="#000000">C</font>erca un partner estroso e</span><span style="mso-bidi-font-size: 10.0pt"><font color="#000000"><span class="style74">
-		</span></font><span class="style74">imprevedibile con </span>
-		<font class="style15"><span class="style77">cui scoprire emozioni</span></font><span class="style74"> e sensazioni
-        e nuove verità, perché</span><font color="#000000"><span class="style74">
-		</span></font><font class="style15"><span class="style77">la&nbsp;proiezione verso 
-		il futuro è l'aspetto più &quot;chironiano&quot;.</span></font></span><span style="color: black" class="style74"> 
-		Soffre per le tante ingiustizie sociali.
-		Eccesso di sensibilità.</span><o:p><span class="style74"> </span></o:p>
+		<h1>CHIRONE nei Segni e nelle Case Zodiacali</h1>
+
+		<p class="sCenter">
+			<br>
+			<img src="Chirone1A.jpg" width="276" height="186">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="ChironeC.jpg"  width="223" height="225">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="A.Chirone.jpg" width="282" height="185"><br><br>
 		</p>
-		<p class="style80" style="tab-stops:120.5pt; width: 1119px;">
-		<o:p></o:p>
-		<b style="mso-bidi-font-weight:normal">
-		<span style="mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style76">CHIRONE</span></b><span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">
-		</span>
-		<span style="mso-fareast-font-family: Calibri; color: black; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA; mso-bidi-font-weight: bold; mso-bidi-font-style: italic" class="style74">in 
-		<b>11°</b> casa:</span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74"> 
-		i suoi problemi sono le amicizie, le speranze ed i desideri. Da un 
-		lato, ci potrebbero</span><font color="#000000"><span style="mso-bidi-font-size: 10.0pt" class="style74"><br>
-		</span></font>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">essere 
-		difficoltà di avere o aggrapparsi agli amici o la paura di folle o 
-		gruppi. Potrebbe trovare molti amici che si</span><font color="#000000"><span style="mso-bidi-font-size: 10.0pt" class="style74">
-		</span></font>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">approfittano di lui e poi lo scaricano. Più spesso si dà molto agli 
-		amici che lo vogliano o no perché questo gli dà una&nbsp;sensazione 
-		di controllo. </span>
-		<span style="mso-fareast-font-family: Calibri; color: black; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">La sfida esistenziale consiste nel mantenere ben saldo il  
-		bisogno di libertà, da mettere&nbsp;subito 
-		in chiaro, a rischio di deludere e ferire chi ha dinanzi, e magari 
-		rischiare di essere lasciato da solo,&nbsp;che 
-		è vitale per lui avere spazi di totale autonomia e solitudine nei quali 
-		nessuno può entrarvi. Scelta di sicuro&nbsp;difficile 
-		da attuare, ma che alla lunga non mancherà di dare i suoi generosi 
-		frutti. </span><![if !supportLineBreakNewLine]><![endif]>
-		<o:p></o:p>
+
+		<p class="sMedium sBold sCenter sPadding">
+			IL SUO SIMBOLO UNISCE TERRA E CIELO, E DEFINISCE IL TALENTO.
 		</p>
-        <p class="MsoNormal" style="tab-stops: 120.5pt; width: 1043px;" align="center">
-		&nbsp;&nbsp;
-		<img src="A.AChirone.jpg" width="135" height="184"><span class="style15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
-		<img src="CB.12Pesci.jpg" width="169" height="200"><span class="style15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
-        <div class="style80" style="width: 1126px">
-						<font class="style15">
-						<b style="mso-bidi-font-weight:
-normal"><span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman; color: blue" class="style77">PESCI</span></b><span style="mso-bidi-font-size: 10.0pt" class="style77">
-        </span> <span class="style77">= </span> </font> <font color="#000000"> 
-		<font class="style15">  
-		<span style="mso-bidi-font-weight:normal">
-		<span style="mso-bidi-font-size: 10.0pt; mso-bidi-font-family: Times New Roman" class="style77">
-		<strong>Ha
-        talento</strong></span></span><span class="style77">:</span></font></font><span class="style74"> in 
-		tutto quanto è legato agli elementi liquidi, gassosi e chimici, al</span><span style="mso-bidi-font-size: 10.0pt" class="style74"> </span>
-						<span class="style74">
-		concetto d'ospitalità (case,</span><font color="#000000"><span style="mso-bidi-font-size: 10.0pt" class="style74"> </span>
-        </font><span class="style74">
-		mobili, cibi, bevande, ecc.). Nel cuore vi 
-		è sempre una mistica aspirazione alla luce, come gioia infinita, 
-		ma il suo&nbsp;misticismo può essere ambivalente, o di tipo 
-		spiritualistico o di tipo dionisiaco. Nel primo caso ha la tendenza a 
-		lenire&nbsp;la sofferenza altrui fisica e morale; nel secondo caso ha predisposizione per le 
-		esperienze che eccitano e stordiscano&nbsp;i sensi. </span>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">
-		Spesso fa la vittima. Eppure ha la capacità innata di attirare</span><font color="#000000"><span style="mso-bidi-font-size: 10.0pt" class="style74"> </span>
-        </font>
-		<span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">
-		persone meno fortunate e cerca di fare del suo&nbsp;meglio 
-		per aiutarle. </span><span class="style74">
-		C</span><span style="color:black" class="style74">ercare 
-		d'individuare una base spirituale per alleviare il suo dolore, l'aiuterà a darsi forza 
-		per&nbsp;combattere.</span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">
-		</span></div>
-		<div class="style80" style="width: 1128px">
-						<b style="mso-bidi-font-weight:normal">
-						<span style="mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style76">
-						<br>
-		CHIRONE</span></b><span style="mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Calibri; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">
-		</span>
-		<span style="mso-fareast-font-family: Calibri; color: black; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA; mso-bidi-font-weight: bold; mso-bidi-font-style: italic" class="style15">
-						<span class="style77">in </span> <strong>
-						<span class="style77">12°</span></strong><span class="style77"> casa:</span></span><span style="mso-fareast-font-family: Calibri; color: black; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">
-		</span>
-		<span style="mso-bidi-font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">
-		mostra dove si può fare di più per gli altri che per se stesso.</span><span style="mso-fareast-font-family: Calibri; color: black; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74"> 
-		Ma basta semplicemente fare 
-		ogni tanto un piccolo bilancio della sua vita per accorgersi di quanto 
-		ha fatto positivamente e di quanto gli altri gli&nbsp;sono 
-		debitori, tanto che la sua principale sfida esistenziale consiste 
-		proprio nel prendersi sul serio e nel 
-		credere di più in se stesso, nel recuperare autostima e nel mettersi in 
-		primo piano, trovando il modo di essere protagonisti 
-		attivo della sua vita.
-		C'è la paura ad affrontare&nbsp;a 
-		pensare a</span><font color="#000000"><span style="mso-bidi-font-size: 10.0pt" class="style74">lla</span></font><span style="mso-fareast-font-family: Calibri; color: black; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style15"><span class="style77"> 
-		persona speciale quale è, in genere tende a mantenere posizioni 
-		di secondo piano e a non&nbsp;mettersi 
-		mai sotto 
-		la luce dei riflettori, perché pensa che in lui non c'è nulla di grande 
-		di importante, di speciale.</span><span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: IT; mso-fareast-language: IT; mso-bidi-language: AR-SA" class="style74">
-		A volte si sente in colpa anche se non c'è alcun motivo.</span></span></div>
-		<p class="MsoNormal" align="left" style="text-align:left;tab-stops:120.5pt; height: 28px; width: 1120px;">
-		<span style="mso-fareast-font-family: Calibri; color: black; mso-ansi-language: IT; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style74">&nbsp;</span>&nbsp;</td>
-    </tr>
-  </table>
-  </div>
-</blockquote>
+		<p class="sSmall sBlack sJustify sPadding sLineH125">
+			<span class="sPalatinatePurple sBold">Chirone</span> è stato scoperto nel 1977, simboleggia le terapie insolite ed alternative, ha il corpo equino e il tronco umano e ricevette secondo la mitologia l'incarico dagli Dei di insegnare ad Asclepio l'arte medica. Simboleggia l'apprendimento, l'iniziazione, le idee d'avanguardia, la medicina cara a <span class="sPalatinatePurple sBold">Chirone</span> è quella olistica. <span class="sPalatinatePurple sBold">Chirone</span> trascorre circa quattro anni in ogni segno zodiacale. Rappresenta un periodo non facile per voi e per tutti i vostri coetanei.<br><br>
+			Nella tabella qui di seguito, cerca la posizione di <span class="sPalatinatePurple sBold">Chirone</span> nel tuo anno di nascita.
+		</p>
+		
+		<p class="sCenter">
+			<br>
+			<img src="TabChironeA.jpg" width="937" height="494" alt="Tabella Posizioni di Chirone"><br><br>
+			<img src="vasobar2.jpg"    width="570" height="10"  alt=""><br>
+		</p>
 
-<p align="center">
-	<img src="vasobar2.jpg"    width="570" height="10" ><br><br>
-	<img src="TabChironeA.jpg" width="937" height="494"><br><br>
-	<img src="vasobar2.jpg"    width="570" height="10" ></p>
+		<p class="sCenter">
+			<br>
+			<img src="A.AChirone.jpg" width="135" height="184">&nbsp;&nbsp;&nbsp;
+			<img src="CB.1Ariete.jpg" width="161" height="200">
+		</p>
+		<p class="sSmall sBlack sJustify sPadding sLineH125">
+			<span class="sRed sBold">ARIETE</span> = <b>Ha talento</b>: nel fare nascere cose nuove, specie se sono connesse al modo di presentarsi di essere e all'affermazione della personalità in ambito fisico e in quello morale. Questo va bene in particolare se deve passare del tempo in luoghi rumorosi e affollati in particolare se è richiesta un'eccellente forma fisica, ma n on riesce a prendere iniziative per mancanza di personalità. Per riuscire a superare le sue paure deve sforzarsi a ritrovare il coraggio per lottare. Nella prima parte della vita ci saranno conflitti con i genitori e gli insegnanti perché pensa già di essere molto esperto su tutto fin dalla prima infanzia. Maturando imparerà fidarsi anche delle altre persone, a volte anche troppo. Possono esserci dei problemi fisici legati alla testa, come emicranie frequenti o incidenti che causano ferite in questa zona, ma probabilmente la ferita è psicologica, e riguarda la profonda convinzione inconscia di sentirsi inadeguati e indegni dell'amore altrui.<br><br>
+			<span class="sPalatinatePurple sBold">CHIRONE</span> nella <span class="sRed sBold">I</span> casa: lo rende come un cavaliere senza macchia sempre pronto a lottare per i più deboli. Di solito, mentre fa questo, trascura se stesso. Potrebbe essere un saggio consigliere (in particolare in materia di salute), ma sembra che abbia difficoltà a seguire i suoi stessi consigli. Può essere un insegnante di talento, e insegnare gli altri come fare qualcosa meglio di quanto lo sappia fare lui stesso. È un terapeuta a tempo pieno e riesce sempre a dare consigli davvero speciali, che sono di grande aiuto a chi li richiede. Porta a godere di una profonda stima da parte di coloro che ne beneficiano tanto che finisce spesso con il diventare anche delle figure di riferimento per la loro vita, veri e propri modelli.
+		</p>
 
-<table style="width: 70%" align="center" class="style72">
-	<tr>
-		<td class="style46">
+		<p class="sCenter">
+			<br>
+			<img src="A.AChirone.jpg" width="135" height="184">&nbsp;&nbsp;&nbsp;
+			<img src="CB.2Toro.jpg"   width="168" height="177">
+		</p>
+		<p class="sSmall sBlack sJustify sPadding sLineH125">
+			<span class="sGreen sBold">TORO</span> = <b>Ha talento</b>: nel consolidare le basi economiche e organizzative nei settori che offrono garanzie di continuità. Predisposto per tutte le arti che esaltano la bellezza dei rapporti umani, o tale inclinazione trova uno sbocco professionale o raramente l'applica nel privato, poiché sono poche le persone con cui stabilisce dei rapporti di profonda amicizia. Si dimostra attento e generoso nell'educare gli altri. Se ha anche valori artistici può essere un ottimo maestro che forma molti altri artisti che continuano la sua opera. Sa esprimersi molto bene e farsi capire, attira l'attenzione sulle sue idee. Pur concedendosi i piaceri semplici della vita, deve prima di tutto imparare a valorizzarsi e trattare se stesso come vorrebbe essere trattato dagli altri. S olo seguendo dei valori più profondi riesce a raggiungere i suoi risultati. Possibili le preoccupazioni economiche-finanziarie.<br><br>
+			<span class="sPalatinatePurple sBold">CHIRONE</span> in <b>2°</b> casa: insegna e dà consigli è la casa del denaro, dei beni e valori. È possibile aiutare le altre persone a prendersi cura del loro denaro meglio di quanto si possa fare con il proprio. In effetti le sue finanze possono essere un disastro. Alle volte questa posizione può rendere avari, ma il denaro risparmiato non porta mai nessun piacere e non si elimina mai la paura interiore di non avere risorse. Molto probabilmente, questo succede perché la persona ha un basso senso di autostima e sente di non meritare i soldi o i beni. In altri casi potrebbe sperperare o dare via quello che ha per lo stesso motivo. È importante ricordare che se ci sono dei problemi col denaro o i beni, questi molto probabilmente non sono il vero problema. Il senso di autostima è la chiave.
+		</p>
 
-<div align="center" style="width: 1280px"><br><br>
-	<font color="#000000">
-	<a href="mailto:studio.acquario@libero.it" class="style52"><span class="style48"><strong>E-mail: studio.acquario@libero.it</strong></span></font></a>
-	<br><br>
+		<p class="sCenter">
+			<br>
+			<img src="A.AChirone.jpg"  width="135" height="184">&nbsp;&nbsp;&nbsp;
+			<img src="CB.3Gemelli.jpg" width="172" height="198">
+		</p>
+		<p class="sSmall sBlack sJustify sPadding sLineH125">
+			<span class="sYellow sBold">GEMELLI</span> = <b>Ha talento</b>: per tutto ciò che attiene la comunicazione e la diffusione delle idee. Ha la capacità di crearsi attorno un clima di stimolante complicità e di cogliere l'attimo fuggente di mode particolari, singolari e interessanti in continuo mutamento. Se riesce a porre un freno alla molteplicità dispersiva dei suoi interessi, per consentir e di approfondire quello che è più importante allora diventa un vero centro di attrazione per gli altri. Ha problemi ad esprimere le proprie idee, e solo con la ricerca della conoscenza può colmare questa sua lacuna. Avere dei buoni genitori e buoni insegnanti è un'assoluta necessità perché lui possa in futuro sentirsi sicuro delle sue opinioni. Quando da adulto tocca a lui il compito di guidare gli altri attraverso la conoscenza è sensibile, molto scrupoloso e convincente. Detesta la dispersione e aiuta ad approfondire con molta logica ma senza pregiudizi.<br><br>
+			<span class="sPalatinatePurple sBold">CHIRONE</span> in <b>3°</b> casa: s e non si hanno fratelli o sorelle, è possibile che denoti una mancanza, un vuoto nella vita. Se si hanno, allora ci potrebbero essere problemi continui almeno con un fratello. Si tratta di una buona posizione per un insegnante di canto o un logopedista. È probabile che si sarà in grado di insegnare agli altri a parlare meglio di lui. Questa posizione tende ad aumentare il rischio di problemi di comunicazione di un tipo o un altro. È proprio la sua diversità di pensiero quello che potrà caratterizzarlo e farlo accedere a piani della conoscenza che altrimenti resterebbero sigillatati ermeticamente, impedendo così di poter sperimentare cose, situazioni, esperienze che si è scelto al momento dell'attuale incarnazione e che sono in perfetta sintonia con il percorso evolutivo - spirituale che ha scelto di percorrere.
+		</p>
 
-	<img src="A.AChirone.jpg"   width="135" height="184">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<img src="LauraAB2016..jpg" width="148" height="238">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<img src="CB.3Gemelli.jpg"  width="172" height="198"><br><br>
+		<p class="sCenter">
+			<br>
+			<img src="A.AChirone.jpg" width="135" height="184">&nbsp;&nbsp;&nbsp;
+			<img src="CB.4Cancro.jpg" width="159" height="198">
+		</p>
+		<p class="sSmall sBlack sJustify sPadding sLineH125">
+			<span class="sBlue sBold">CANCRO</span> = <b>Ha talento</b>: in tutte le attività che richiedono ambienti confortevoli e protetti, che consentono di vivere in una dimensione tra sogno e realtà. La sensibilità sovente offesa dalla realtà, lo porta ad idealizzare i valori tradizionali (famiglia, clan, patria), ravvisando in essi un sicuro rifugio dalla confusionaria aggressività circostante. Dovrebbe cercare di imparare a prendersi cura dei suoi bisogni. Questo l'aiuterebbe a creare un equilibrio dentro di sé e a farsi sentire completo. Con i bambini ha il potere di farsi sentire forte e generoso, sa instaurare con loro felici rapporti. Impara soprattutto attraverso le emozioni, le sensazioni e gli affetti più che col ragionamento. Ha bisogno di avere educatori e genitori pazienti e sensibili. Riaffiorano vecchi problemi di famiglia. Aprirsi agli altri e accettare il loro amore e la loro cura è un grande passo verso la guarigione della ferita interiore.<br><br>
+			<span class="sPalatinatePurple sBold">CHIRONE</span> in <span class="sRed sBold">IV</span> casa: dona un forte attaccamento alle radici familiari, sociali e culturali. Molti non riescono a tagliare del tutto il cordone col proprio passato, di questa come delle precedenti esistenze, ma lungi dal poter diventare un ostacolo, è continua fonte di arricchimento e forza interiore per affrontare le varie sfide a cui la vita lo sottopone. La sfida esistenziale più importante è legata all'ambito familiare che per molti si presenta sotto forma di scelta, di decisione da prendere tra accettazione e sicurezza che giunge dal focolare domestico. Non sempre ne conoscono i rischi e su cui ben di rado si può contare sull'aiuto altrui. Possiede un particolare tatto nell'affrontare le questione affettive e da sempre l'impressione di essere una persona su cui contare e di potersi fidare, tanto che molto spesso si ritrova ad essere depositario di segreti e di confessioni di cui farebbe senz'altro a meno.
+		</p>
 
-	<span class="style74"><strong>LAURA ha Chirone nei Gemelli e in 10° casa</strong></span><br><br>
+		<p class="sCenter">
+			<br>
+			<img src="A.AChirone.jpg" width="135" height="184">&nbsp;&nbsp;&nbsp;
+			<img src="CB.5Leone.jpg"  width="167" height="179">
+		</p>
+		<p class="sSmall sBlack sJustify sPadding sLineH125">
+			<span class="sRed sBold">LEONE</span> = <b>Ha talento</b>: si sente sottovalutato, come se i suoi talenti passassero sempre inosservati. O forse si sente a disagio, privo di qualunque talento. Eppure ha la capacità di aiutare gli altri a portare alla luce la sua creatività, nell'operare come punto di riferimento in attività che esigano delle prestigiose messe in scena. La difficoltà che ha nell'esprimere i propri talenti probabilmente deriva dall'essere stato represso da bambino in ambito famigliare, o al contrario dall'eccessiva aspettativa riposta su di lui, magari in ambiti lontani dalla sua natura. La sua necessità di muovere critiche audaci e le inclinazione ad abbellire le apparenze accompagnata da gesti di autentica generosità lo portano ad essere oggetto di giudizi contrastanti. C'è però chi lo invidia e lo disapprova, c'è anche chi prova per lui una grande ammirazione senza riserve in quanto subisce il suo fascino carismatico.<br><br>
+			<span class="sPalatinatePurple sBold">CHIRONE</span> in <b>5°</b> casa: indica che è bravissimo con i bambini, o che ha problemi cronici con i propri figli o non ne ha proprio. La sfida esistenziale consiste proprio nel dare ascolto alle intuizioni e a procedere allineandovi secondo quelli che sono i canoni del vostro cuore. È importante che nel corso della vita mantenga sempre un atteggiamento di grande apertura verso gli altri e il mondo emotivo, evitando di chiudersi o peggio ancora di congelare le emozioni. Più sarà elastico e disponibile, più sarà longevo nella creatività e anche in tarda età manterrà una luce ed entusiasmo da adolescente. L'amore, la passione e la vita vissuta in tutte le possibilità è il terreno in cui può fare le esperienze più importanti e apprendere gli insegnamenti più autentici e utili della sua vita. Lezione da apprendere: mantenere costantemente allenato il proprio cuore a provare emozioni.
+		</p>
 
-	<img src="TelefonoC164.gif" width="33" height="33">
-	<font size="4" class="style74"><strong>Oppure telefonate: 0125 631175 - Cell. 347 0417409</strong></font><br><br>
+		<p class="sCenter">
+			<br>
+			<img src="A.AChirone.jpg"  width="135" height="184">&nbsp;&nbsp;&nbsp;
+			<img src="CB.6Vergine.jpg" width="167" height="202">
+		</p>
+		<p class="sSmall sBlack sJustify sPadding sLineH125">
+			<span class="sGreen sBold">VERGINE</span> = <b>Ha talento</b>: nei settori legati al servizio pubblico o nelle attività dipendenti, adatto ad operare in orizzonti limitati per puro senso del dovere. È prigioniero di troppe regole e cerca di sconfiggere la sua ansia imparando a rilassarsi. Fare del volontariato o lavorare nel settore della salute può aiutarlo a sviluppare un approccio realistico al concetto di guarigione e benessere. Ha predisposizione per quanto riguarda i problemi della salute, è analitico e tende alla cura dei particolari, s i mette a disposizione degli altri. Avere amicizie è un po' complicato perché ha bisogno di persone che sappiano e vogliano scoprire le sue qualità più autentiche e rare di solito nascoste sotto una apparenza un po' rigida.<br><br>
+			<span class="sPalatinatePurple sBold">CHIRONE</span> in <b>6°</b> casa: è s empre possibile aiutare o istruire i colleghi a fare il lavoro meglio di quanto lo può fare lui. Forse è un mago nell'aiutare gli altri a restare in buona salute mentre lui ancora fuma e mangia cibo spazzatura. La sfida esistenziale con la quale gli capiterà spesso di confrontarsi è data dal doversi relazionare con chi tende a mettere in dubbio le sue idee, e con chi cerca di metterlo in secondo piano tentando di farlo passare per una persona priva di qualità. Ma nessuno può metterlo davvero a disagio se lui non gliene da la possibilità. Qualcuno potrebbe esigere che tutti gli altri siano al suo servizio, e di solito non è mai soddisfatto. Ovviamente questo causa problemi. Lezione da apprendere: riuscire a credere maggiormente in se stesso e nel proprio potenziale.
+		</p>
 
-	<img src="vasobar2.jpg" width="570" height="10"><br><br>
+		<p class="sCenter">
+			<br>
+			<img src="A.AChirone.jpg"   width="135" height="184">&nbsp;&nbsp;&nbsp;
+			<img src="CB.7Bilancia.jpg" width="157" height="195">
+		</p>
+		<p class="sSmall sBlack sJustify sPadding sLineH125">
+			<span class="sYellow sBold">BILANCIA</span> = <b>Ha talento</b>: nei settori in cui contano estetica, equilibrio, le sfumature e l'armonia. La capacità di astrazione consente di non lasciarsi coinvolgere da ragioni soggettive e saper emettere giudizi anche aspri se sono necessari con obiettività anche se di solito non manca di elegante e sorridente bonarietà. Ha la rara predisposizione nel saper smussare ogni difficoltà, con tatto e senso di immedesimazione nei problemi altrui. C'è il rischio di lasciarsi coinvolgere in rapporti di dipendenza o di subire abusi fisici e psicologici, giungendo alla conclusione che nessuna relazione può funzionare. La lezione da imparare è che ognuno è completo da solo, e non si può trovare fuori di sé quello che manca all'interno. Solo capendo questo, arriverà il sollievo, e si raggiungerà l'equilibrio. L'arte può alleviare le sue sofferenze.<br><br>
+			<span class="sPalatinatePurple sBold">CHIRONE</span> in <span class="sRed sBold">VII</span> casa: è probabile che passi la maggior parte del tempo a prendersi cura di un partner che ha un problema fisico o comunque ha bisogno di cure e assistenza. Questa casa rappresenta anche le società in ambito lavorativo. Ci si può prendere cura di un socio e insegnargli come fare affari meglio di quanto lui potrebbe mai fare. Attenzione a non essere proprio lui a pagarne le conseguenze però: una volta che l'allievo ha imparato da lui tutto il possibile, potrebbe soppiantarlo! I rapporti umani sono un vero e proprio banco di prova poiché vi permettono di imparare e di accedere a differenti modelli di pensiero e di comportamento a cui ben difficilmente riuscirebbe ad approdare da solo.
+		</p>
 
-	<font size="2" class="style15"><strong>Sei il Visitatore n°&nbsp;</strong>
-<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220366432-2cm7xsz" border=0></a>
-	&nbsp;(Pagina Aggiornata 21/06/2020)</font><br><br>
+		<p class="sCenter">
+			<br>
+			<img src="A.AChirone.jpg"    width="135" height="184">&nbsp;&nbsp;&nbsp;
+			<img src="CB.8Scorpione.jpg" width="168" height="190">
+		</p>
+		<p class="sSmall sBlack sJustify sPadding sLineH125">
+			<span class="sBlue sBold">SCORPIONE</span> = <b>Ha talento</b>: nel focalizzare ciò che è difettoso o superfluo. Sa indagare e risolvere situazioni che comportano problemi di coscienza. Cerca di affrontare le preoccupazioni un passo alla volta. È pronto per sua natura, ad ereditare situazioni complesse, senza timore per le difficoltà che si presentano, e a lasciare di punto in bianco le situazioni ottimali. La tendenza ad avere segreti amplifica le sue paure di essere accettato. Appare sovente un po' scomodo e problematico, le rotture che provoca portano sempre alla trasformazione di un certo ambiente. Imparerà che anche se perde qualcuno o qualcosa, si può apprezzare la vita e arricchirsi interiormente, e potrà essere di aiuto agli altri proprio per aver saputo trarre un insegnamento dal dolore di una perdita. Probabilmente è sempre molto preoccupato di perdere i propri averi o le persone care.<br><br>
+			<span class="sPalatinatePurple sBold">CHIRONE</span> in <b>8°</b> casa: lo scenario più probabile è che c'é la possibilità di tirare fuori il meglio dal lato sessuale in un partner romantico. La casa non parla solo di sesso, potrebbe trattarsi di eredità sue o del partner che sa gestire abilmente, o dei suoi beni che un partner troppo premuroso gestisce per lui. È troppo dipendente dal denaro che altri gli offrono per aiutarlo nel momento del bisogno, o è lui che destina troppi soldi guadagnati al supporto di altri. Si potrebbe tendere ad accettare i valori di altre persone (la famiglia, il gruppo la società) troppo facilmente. Il mito di Chirone può effettivamente prendere vita con questa posizione. Si può avere un talento per la guarigione o nel riabilitare gli altri, ma non sé stessi.
+		</p>
 
-	<img src="vasobar2.jpg" width="570" height="10"><br><br>
-</div>
-		</td>
-	</tr>
-</table>
+		<p class="sCenter">
+			<br>
+			<img src="A.AChirone.jpg"     width="135" height="184">&nbsp;&nbsp;&nbsp;
+			<img src="CB.9Sagittario.jpg" width="169" height="195">
+		</p>
+		<p class="sSmall sBlack sJustify sPadding sLineH125">
+			<span class="sRed sBold">SAGITTARIO</span> = <b>Ha talento</b>: per un'attività che richiede di proiettarsi verso traguardi che superano dei limiti abituali. Per quanto possa avere vissuto, continua candidamente a stupirsi di chi non onora la parola data. Ma, nel guardare lontano, affinché le nuove conquiste non escludano i vantaggi già acquisiti e possano assestarsi senza scosse in un esistente quadro di consenso generale. Può sentirsi incapace di comprensione profonda e saggezza, non ascoltare i consigli altrui in ambiti diversi, ad esempio investimenti finanziari, o relazioni. Può sentirsi limitato in un'esistenza terrena: deve realizzare che ha un enorme potenziale di saggezza, e allora comincerà a sanare la sua ferita. I nsoddisfatto della vita.<br><br>
+			<span class="sPalatinatePurple sBold">CHIRONE</span> in <b>9°</b> casa: ha capacità di interessarsi di mille cose e riuscire a diventare eccelso, sicuramente un abile conoscitore è una delle sue più grandi qualità, e teoricamente non ci sarebbe settore della vita nel quale potersi cimentare senza che possa cogliere anche un qualche minimo successo. La sfida esistenziale a cui è sottoposto è quella relativa al ruolo di leader apripista in grado di aiutare gli altri a fare percorsi che risultano essere impervi o talmente fuori dall'ordinario, da essere ritenuti folli se non pericolosi. Ha grande capacità di rendere facile ciò che arduo e difficilmente sbaglia nel centrare l'obiettivo prefissato.
+		</p>
+
+		<p class="sCenter">
+			<br>
+			<img src="A.AChirone.jpg"      width="135" height="184">&nbsp;&nbsp;&nbsp;
+			<img src="CB.10Capricorno.jpg" width="151" height="196">
+		</p>
+		<p class="sSmall sBlack sJustify sPadding sLineH125">
+			<span class="sGreen sBold">CAPRICORNO</span> = <b>Ha talento</b>: nel superare le avversità per salire in cima con metodo e tenacia. Insofferente a tutto quello che è nuovo o improvvisato lo predispone a saper validamente amministrare e valorizzare tutto quanto è antico. Pur di arrivare ha disponibilità verso i sacrifici, la tendenza a pensare al peggio a stare sulla difensiva lo porta ad isolarsi dall'ambiente circostante e accrescere la sua forza morale nelle difficoltà. Spesso ha la sensazione di lavorare più di tutti gli altri senza ottenere alcun risultato. Ha un gran bisogno di ottenere prestigio sociale e rispetto che non riesce nemmeno a godersi le proprie realizzazioni. C erca di rispettare le regole che tanto lo deprimono.<br><br>
+			<span class="sPalatinatePurple sBold">CHIRONE</span> in <span class="sRed sBold">X</span> casa: questa è un'ottima posizione per un dirigente di una organizzazione in campo medico o di guarigione, ma spesso non importa quale sia la carriera. Possiede un naturale tatto terapeutico con il quale l'aiuta molto spesso a dire e fare le cose giuste al momento opportuno, dono che gli permette poi di far star bene anche le persone che vivono accanto. Infatti in lui c'è una speciale capacità di occuparsi degli altri, che spesso diventa una vera e propria professione, tale da farlo apparire come persona saggia, capace di aiutare chi ha bisogno, soprattutto talmente empatica che a volte non c'è neppure bisogno di sentirsi chiedere aiuto per poter intervenire e ad agire.
+		</p>
+
+		<p class="sCenter">
+			<br>
+			<img src="A.AChirone.jpg"    width="135" height="184">&nbsp;&nbsp;&nbsp;
+			<img src="CB.11Acquario.jpg" width="169" height="181">
+		</p>
+		<p class="sSmall sBlack sJustify sPadding sLineH125">
+			<span class="sYellow sBold">ACQUARIO</span> = <b>Ha talento</b>: nel convincere gli altri a cooperare in maniera amichevole, in una prospettiva di progresso anticonvenzionale. È predisposto per tutto quanto attiene alle comunicazioni con l'aria, l'elettronica la psicologia di massa, i mezzi di trasporto più moderni. Può sentirsi scollegato o isolato e fatica ad adattarsi. Ha un vero talento per aiutare gli altri ad esprimersi. Può interessarsi solo a idee nuove e all'avanguardia, o rimanere ancorato al vecchio. C erca un partner estroso e imprevedibile con cui scoprire emozioni e sensazioni e nuove verità, perché la proiezione verso il futuro è l'aspetto più &quot;chironiano&quot;. Soffre per le tante ingiustizie sociali. Eccesso di sensibilità.<br><br>
+			<span class="sPalatinatePurple sBold">CHIRONE</span> in <b>11°</b> casa: i suoi problemi sono le amicizie, le speranze ed i desideri. Da un lato, ci potrebbero essere difficoltà di avere o aggrapparsi agli amici o la paura di folle o gruppi. Potrebbe trovare molti amici che si approfittano di lui e poi lo scaricano. Più spesso si dà molto agli amici che lo vogliano o no perché questo gli dà una sensazione di controllo. La sfida esistenziale consiste nel mantenere ben saldo il bisogno di libertà, da mettere subito in chiaro, a rischio di deludere e ferire chi ha dinanzi, e magari rischiare di essere lasciato da solo, che è vitale per lui avere spazi di totale autonomia e solitudine nei quali nessuno può entrarvi. Scelta di sicuro difficile da attuare, ma che alla lunga non mancherà di dare i suoi generosi frutti.
+		</p>
+
+		<p class="sCenter">
+			<br>
+			<img src="A.AChirone.jpg" width="135" height="184">&nbsp;&nbsp;&nbsp;
+			<img src="CB.12Pesci.jpg" width="169" height="200">&nbsp;&nbsp;&nbsp;
+		</p>
+		<p class="sSmall sBlack sJustify sPadding sLineH125">
+			<span class="sBlue sBold">PESCI</span> = <b>Ha talento</b>: in tutto quanto è legato agli elementi liquidi, gassosi e chimici, al concetto d'ospitalità (case, mobili, cibi, bevande, ecc.). Nel cuore vi è sempre una mistica aspirazione alla luce, come gioia infinita, ma il suo misticismo può essere ambivalente, o di tipo spiritualistico o di tipo dionisiaco. Nel primo caso ha la tendenza a lenire la sofferenza altrui fisica e morale; nel secondo caso ha predisposizione per le esperienze che eccitano e stordiscano i sensi. Spesso fa la vittima. Eppure ha la capacità innata di attirare persone meno fortunate e cerca di fare del suo meglio per aiutarle. C ercare d'individuare una base spirituale per alleviare il suo dolore, l'aiuterà a darsi forza per combattere.<br><br>
+			<span class="sPalatinatePurple sBold">CHIRONE</span> in <b>12°</b> casa: mostra dove si può fare di più per gli altri che per se stesso. Ma basta semplicemente fare ogni tanto un piccolo bilancio della sua vita per accorgersi di quanto ha fatto positivamente e di quanto gli altri gli sono debitori, tanto che la sua principale sfida esistenziale consiste proprio nel prendersi sul serio e nel credere di più in se stesso, nel recuperare autostima e nel mettersi in primo piano, trovando il modo di essere protagonisti attivo della sua vita. C'è la paura ad affrontare a pensare a lla persona speciale quale è, in genere tende a mantenere posizioni di secondo piano e a non mettersi mai sotto la luce dei riflettori, perché pensa che in lui non c'è nulla di grande di importante, di speciale. A volte si sente in colpa anche se non c'è alcun motivo.  
+		</p>
+
+		<p class="sCenter">
+			<br>
+			<img src="vasobar2.jpg"     width="570" height="10" ><br><br>
+			<img src="A.AChirone.jpg"   width="135" height="184">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="LauraAB2016..jpg" width="148" height="238">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="CB.3Gemelli.jpg"  width="172" height="198">
+		</p>
+
+		<p class="sSmall sBlack sCenter">
+			<b>LAURA</b> ha <span class="sPalatinatePurple sBold">Chirone</span> nei <span class="sYellow sBold">Gemelli</span> e in <b>10°</b> casa<br><br>
+
+			<img src="email-box.gif"    width="35" height="35">
+			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
+			<img src="TelefonoC164.gif" width="35" height="35">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+			Torna alla <a href="index.html"><img SRC="favicon32.gif"> <span class="sBold">pagina iniziale</span></a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<strong>Sei il visitatore n°&nbsp;</strong>
+		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220366432-2cm7xsz" border=0></a>
+			&nbsp;(Contenuto Aggiornato <time datetime="2020-06-21">21/06/2020</time>)<br><br>
+		</p>
+
+</td></tr></table>
+<footer>
+	<span class="sBGWhite">Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
+	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.</span>
+</footer>
 </body>
 </html>
