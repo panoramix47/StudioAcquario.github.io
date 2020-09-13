@@ -1,41 +1,81 @@
 <!DOCTYPE html>
-<HTML>
-<HEAD>
- 
-<TITLE>Nipoti</TITLE>
-<link rel="icon" type="image/gif" href="https://www.studioacquario.it/favicon32.gif">
-<META name="description" content="Studio Acquario; Nipoti">
-<meta name="keywords" content="astrologia">
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Nipoti - Studio Acquario</title>
+<link rel="icon" type="image/gif" href="favicon32.gif">
+<meta name="description" content="Studio Acquario; Nipoti">
+<meta name="keywords" content="studio, acquario, astrologia, famiglia, nipoti">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
-<meta name="language" content="it, eng">
-<meta charset="UTF-8">
-<meta http-equiv="imagetoolbar" CONTENT="no">
+<meta name="language" content="it">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="21/05/2019">
-<meta name="revised" content="22/06/2020">
+<meta name="revised" content="13/09/2020">
 
 <style type="text/css"> 
 body {
 	scrollbar-arrow-color: #D4DCFA;
-	scrollbar-base-color: #1A3093;
+	scrollbar-base-color: #1A3093; /* Egyptian Blue */
 	scrollbar-dark-shadow-color: #1A3093;
-	scrollbar-track-color: #1A3093;
-	font-family: Verdana;
+	scrollbar-track-color: #4859A9; /* Governor Bay */
+
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #6484FC; /* Cornflower Blue */
+	background-color: #041E7F; /* Sapphire */
+	background-image: url('ANfantasy16bk1.jpg');
+	/* background-attachment: fixed; */
 }
-H1 {
-				font-size: xx-large;
-				text-align: center;
-				font-weight: bold;
-				color: #BFFFFF;
+a:link {
+	color: #9CB1FD;
 }
-H2 {
-				font-size: x-large;
-				text-align: center;
-				font-weight: bold;
-				color: #BFFFFF;
+a:visited {
+	color: #9CB1FD;
 }
-a {
-				color: #000080;
+h1 {
+		font-size: xx-large;
+		text-align: center;
+		font-weight: bold;
+		color: #BFFFFF;
+}
+h2 {
+		font-size: x-large;
+		text-align: center;
+		font-weight: bold;
+		color: #BFFFFF;
+}
+header {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	text-shadow: 1px 1px 5px #0000FF; /* Blue */
+	text-align: center;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
+}
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 5px;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+figcaption {
+	margin-top: 15px;
+}
+.sImmagine {
+		display: inline-block;
+		margin: 5px;
+}
+.sBorder2pt {
+				border-style: solid;
+				border-width: 2px;
 }
 .sNavy {
 				color: #000080;
@@ -43,23 +83,21 @@ a {
 .sPaleTurquoise {
 				color: #BFFFFF;
 }
-.sCenter {
-				text-align: center;
-}
-.sLeft {
-				text-align: left;
-}
 .sBold {
 				font-weight: bold;
 }
-.sItalic-Bold {
-				font-style: italic;
-				font-weight: bold;
+.sCenter {
+				text-align: center;
 }
-.sItalic-Bold-PaleTurquoise {
-				font-style: italic;
-				font-weight: bold;
-				color: #BFFFFF;
+.sJustify {
+				text-align: justify;
+}
+.sPadding {
+				padding-left: 40px;
+				padding-right: 40px;
+}
+.sLineH125 {
+				line-height: 130%;
 }
 .sXXSmall {
 				font-size: xx-small;
@@ -67,354 +105,382 @@ a {
 .sXSmall {
 				font-size: x-small;
 }
+.sSmall {
+				font-size: small;
+}
+.sMedium {
+				font-size: medium;
+}
+.sLarge {
+				font-size: large;
+}
 .sXLarge {
 				font-size: x-large;
 }
-.sXXSmall-Center {
-				font-size: xx-small;
-				text-align: center;
-}
-.sXSmall-Center {
-				font-size: x-small;
-				text-align: center;
-}
-.sXSmall-Bold {
-				font-size: x-small;
-				font-weight: bold;
-}
-.sXSmall-Italic {
-				font-size: x-small;
-				font-style: italic;
-}
-.sXSmall-PaleTurquoise {
-				font-size: x-small;
-				color: #BFFFFF;
-}
-.sXSmall-Center-PaleTurquoise {
-				font-size: x-small;
-				text-align: center;
-				color: #BFFFFF;
-}
-.sXSmall-Italic-PaleTurquoise {
-				font-size: x-small;
-				font-style: italic;
-				color: #BFFFFF;
-}
-.sXSmall-Italic-Bold {
-				font-size: x-small;
-				font-style: italic;
-				font-weight: bold;
-}
-.sXSmall-Italic-Cold-PaleTurquoise {
-				font-size: x-small;
-				font-style: italic;
-				font-weight: bold;
-				color: #BFFFFF;
-}
-.sXSmall-Bold-PaleTurquoise {
-				font-size: x-small;
-				font-weight: bold;
-				color: #BFFFFF;
-}
-.sXSmall-Left-PaleTurquoise {
-				font-size: x-small;
-				text-align: left;
-				color: #BFFFFF;
-}
-.sXLarge-PaleTurquoise {
-				font-size: x-large;
-				color: #BFFFFF;
-}
-.sXLarge-Center-PaleTurquoise {
-				font-size: x-large;
-				text-align: center;
-				color: #BFFFFF;
-}
-.sTxtDecNo {
-				text-decoration: none;
-}
-.sBorder2pt {
-				border-style: solid;
-				border-width: 2px;
+.sXXLarge {
+				font-size: xx-large;
 }
 </style>
-</HEAD>
- 
-<BODY BACKGROUND="ANfantasy16bk1.jpg" BGCOLOR="#041E7F" TEXT="#6484FC" LINK="#6484FC"  ALINK="#6484FC"  VLINK="#6484FC">
+</head>
 
-<TABLE CELLSPACING="0" CELLPADDING="30" BACKGROUND="ANfantasy16bk2.jpg" BORDERCOLOR="#072DB9" BORDERCOLORDARK="#031453" width="100%" class="sBorder2pt">
+<body>
+<header>Studio di Astrologia &quot;Acquario&quot;</header>
+
+<TABLE BACKGROUND="ANfantasy16bk3.jpg" CELLSPACING="0" CELLPADDING="15" BORDER="1" BORDERCOLOR="#1545F9" BORDERCOLORDARK="#072DB9" width="95%" align="center">
 <TR><TD>
 
-<TABLE CELLSPACING="0" CELLPADDING="20" BACKGROUND="ANfantasy16bk3.jpg" BORDERCOLOR="#1545F9" BORDERCOLORDARK="#072DB9" WIDTH="100%" BORDER="1">
+<TABLE BACKGROUND="ANfantasy16bk5.jpg" CELLSPACING="0" CELLPADDING="3" BORDER="0" WIDTH="100%">
 <TR><TD>
 
-<TABLE CELLSPACING="0" CELLPADDING="3" BACKGROUND="ANfantasy16bk5.jpg" WIDTH="100%" BORDER="0">
+<TABLE BACKGROUND="ANfantasy16bk4.jpg" CELLSPACING="0" CELLPADDING="0" BORDER="0" WIDTH="100%">
 <TR><TD>
 
-<TABLE CELLSPACING="0" CELLPADDING="0" BACKGROUND="ANfantasy16bk4.jpg" WIDTH="100%" BORDER="0">
-<TR><TD WIDTH="100%">
- 
-	<p align="center">
-		<img src="ANfantasy16.jpg" width="674" height="450"><br>
-		<IMG SRC="ANfantasy16div.jpg" WIDTH="420" HEIGHT="60" ALT="Divider"></p>
+		<h1>I NOSTRI 6 NIPOTI<br><i>OUR 6 GRAND-CHILDREN</i></h1>
 
-	<h1>I NOSTRI 6 NIPOTI<br>
-	<em>Our 6 grand children</em></h1>
+		<p class="sCenter">
+			<img src="ANfantasy16.jpg"    width="674"  height="450"><br><br>
+			<IMG SRC="ANfantasy16div.jpg" WIDTH="420"  HEIGHT="60" ><br><br><br>
+			<img src="Nipoti2016.jpg"     width="1001" height="600"><br><br><br>
+			<img src="bearhrtl9283.gif"   width="457"  height="32" >&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="bearhrtl9283.gif"   width="457"  height="32" ><br><br>
+		</p>
 
-	<p align="center">
-		<img src="bearhrtl9283.gif" width="457"  height="32" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-		<img src="bearhrtl9283.gif" width="457"  height="32" ><br><br>
-		<img src="Nipoti2016.jpg"   width="1001" height="600"><br><br>
-		<img src="bearhrtl9283.gif" width="457"  height="32">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-		<img src="bearhrtl9283.gif" width="457"  height="32"></p>
+		<h2>PAOLA<h2>
 
-<TABLE CELLSPACING="0" CELLPADDING="10" WIDTH="100%" BACKGROUND="ANfantasy16bk3.jpg" BORDER="0">
-<TR><TD>
+		<p class="sSmall sPaleTurquoise sBold sCenter sPadding sLineH125">
+			Paola Francesca è la nostra prima nipotina, nata il 4 ottobre 1991. E' figlia di Lorena e di Enrico.<br><br>
+			<i>Paola Francesca is our first grandchild. She was born on October 4, 1991. She is the daughter of Lorena and Enrico</i>.
+		</p>
+		<div class="sSmall sPaleTurquoise sBold sCenter">
+			<br>
+			<figure class="sImmagine">
+				<img src="paola93B1D2.jpg"  width="218" height="371">
+				<figcaption>Maggio 1993<br><i>May 1993</i></figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="Paola97BD080.jpg" width="267" height="370">
+				<figcaption>Giugno 1997<br><i>June 1997</i></figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="PaolaVenezia0061D4.jpg" width="270" height="433">
+				<figcaption>Venezia nel Luglio 2000<br><i>in Venice July 2000</i></figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="Paola01.jpg" width="281" height="375">
+				<figcaption>2001<br><i>&nbsp;</i></figcaption>
+			</figure>
+		</div>
 
-<TABLE CELLSPACING="0" CELLPADDING="2" WIDTH="100%" BACKGROUND="ANfantasy16bk5.jpg" BORDER="0">
-<TR><TD>
+		<div class="sSmall sPaleTurquoise sBold sCenter">
+			<br>
+			<figure class="sImmagine">
+				<img src="Paola07A.jpg"     width="351" height="413">
+				<figcaption>2007</figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="Pao2011.jpg"      width="299" height="373">
+				<figcaption>2011</figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="PaoLaurea14.jpg"  width="337" height="410">
+				<figcaption>2014 giorno della Laurea/<i>Day of University degree</i></figcaption>
+			</figure>
+		</div>
 
-<TABLE CELLSPACING="0" CELLPADDING="0" WIDTH="100%" BACKGROUND="ANfantasy16bk4.jpg" BORDER="0">
-<TR><TD>
+		<div class="sSmall sPaleTurquoise sBold sCenter">
+			<br>
+			<figure class="sImmagine">
+				<img src="PaoLory11.jpg"        width="408" height="366">
+				<figcaption>Paola con la mamma Lorena, 2011<br><i>Paola with mom Lorena, 2011</i></figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="AN.PaolaFranc16A.jpg" width="548" height="345">
+				<figcaption>Paola e l'amico Francesco 2016<br><i>Paola with friend Francesco, 2016</i></figcaption>
+			</figure>
+		</div>
 
-	<h2><BR>Paola<h2>
-	
-	<P class="sXSmall sCenter sBold sPaleTurquoise">
-		<BR>
-		<img src="paola93B1D2.jpg"  width="218" height="371">&nbsp;
-		<img src="Paola97BD080.jpg" width="267" height="370">&nbsp;
-		<img src="PaolaVenezia0061D4.jpg" width="270" height="433">&nbsp;
-		<img src="Paola01.jpg" width="281" height="375"><br><br>
-		Paola Francesca è la nostra prima nipotina, nata il 4 ottobre 1991.<br>
-		E' figlia di Lorena e di Enrico. La foto di sinistra è del Maggio 1993<br>
-		La foto al centro del Giugno 1997, a destra a Venezia nel Luglio 2000 e 2001.<br><br>
-		<em>Paola Francesca is our first grandchild. She was born on<br>
-		October 4, 1991. She is the daughter of Lorena and Enrico.<br>
-		The picture on the left was taken in May 1993.<br>
-		The picture in the middle was taken in June 1997, and on the right in Venice 2000 and 2001.<br><br>
+		<P class="sCenter">
+			<br>
+			<img src="bearhrtl9283.gif" width="457" height="32">
+		</p>
+		
+		<h2>NICHOLAS "Nicky"<h2>
 
-		<img src="bearhrtl9283.gif" width="457" height="32"><br><br>
-		<img src="Paola07A.jpg"     width="351" height="413">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="Pao2011.jpg"      width="299" height="373">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="PaoLaurea14.jpg"  width="337" height="410"><br><br>
-		
-		Paola 2007
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		Paola 2011
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		Paola 2014 Laurea/University degree<br><br>
-		
-		<img src="PaoLory11.jpg"        width="408" height="366">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="AN.PaolaFranc16A.jpg" width="548" height="345"><br><br>
+		<p class="sSmall sPaleTurquoise sBold sCenter sPadding sLineH125">
+			Nicholas Alexander è nato il 25 Novembre 1996 ed è il figlio di Silvia e Nick. 
+			Nicky è nato con una invalidante malattia genetica ereditaria della pelle chiamata &quot;Epidermolisi bollosa&quot;.
+			Per saperne di più su questa terribile malattia, visitate il sito di 
+			<a href="http://nicky.silviaskingdom.com" class="sPaleTurquoise">Nicky</a>.<br><br>
+			<i>Nicholas Alexander is born November 25, 1996. He is the son of Silvia and Nick. Nicky was born with a hereditary genetic skin disorder 
+			called &quot;Epidermolysis Bullosa&quot;. To find out more about this terrible disorder, please go to 
+			<a href="http://nicky.silviaskingdom.com" class="sPaleTurquoise">Nicky's</a> Home Page</i>.<br><br>
+			<a href="http://www.ebinfoworld.com/"><img src="eb90D3.gif" align="middle" border="0" width="109" height="109"></a>
+		</p>
+		<div class="sSmall sPaleTurquoise sBold sCenter">
+			<br>
+			<figure class="sImmagine">
+				<img src="nicky4mesiF001.jpg" width="237" height="355">
+				<figcaption>Aprile 1997, aveva quasi 5 mesi<br><i>April 1997 when he was almost 5 months old</i></figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="nicky97F2B0.jpg"    width="272" height="313">
+				<figcaption>Luglio 1997 e aveva 8 mesi<br><i>July 1997 when he was 8 months old</i></figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="nickybw31E4.jpg"    width="316" height="378">
+				<figcaption>Maggio 1998<br><i>May 1998 Nicky was 18 months old</i></figcaption>
+			</figure>
+			<br><br>
+		</div>
 
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		Paola con la mamma Lorena 2011
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		Paola e l'amico Francesco 2016<br><br>
-		
-		<img src="bearhrtl9283.gif" width="457" height="32">
-	</p>
-		
-	<h2><BR>Nicky<h2>
-	<P class="sXSmall sCenter sBold sPaleTurquoise">
-		<BR>
-		<img src="nicky4mesiF001.jpg" width="237" height="355">&nbsp;&nbsp;;&nbsp;
-		<img src="nicky97F2B0.jpg"    width="272" height="313">&nbsp;&nbsp;&nbsp;
-		<img src="nickybw31E4.jpg"    width="316" height="378"><br><br>
-		Nicholas Alexander è nato il 25 Novembre 1996 ed è il figlio di Silvia e Nick. La foto a sinistra è dell'Aprile 1997, aveva<br>
-		quasi 5 mesi. La foto al centro è del Luglio 1997 e aveva 8 mesi. La foto a destra e del maggio 1998<br>
-		Nicky è nato con una invalidante malattia genetica ereditaria della pelle chiamata &quot;Epidermolisi bollosa&quot;.<br><br>
-		Per saperne di più su questa terribile malattia, visitate il sito di 
-		<a href="http://nicky.silviaskingdom.com" class="sPaleTurquoise">Nicky</a><br><br><br>
-		<em>Nicholas Alexander is born November 25, 1996. He is the son of Silvia and Nick. The photo on the left was taken in April 1997 when he was almost 5
-		months old.<br>
-		The photo on the center was taken in July 1997 when he was 8 months old. The Photo on the right was taken on  May 1998 Nicky was 18 months old.<br>
-		Nicky was born with a hereditary genetic skin disorder called &quot;Epidermolysis Bullosa&quot;.<br><br>
-		To find out more about this terrible disorder, please go to 
-		<a href="http://nicky.silviaskingdom.com" class="sPaleTurquoise">Nicky's</a> Home Page.<br><br>
-		
-		<img src="bearhrtl9283.gif" width="457" height="32"><br><br>
-		<a href="http://www.ebinfoworld.com/"><img src="eb90D3.gif" align="middle" border="0" width="109" height="109"></a><br><br>
-		
-		<img src="nickyNat24321.jpg" width="253" height="350">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-		<img border="0" src="dec2503.jpg" width="500" height="375"><br><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-		Nicky nel 2000
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		In questa foto di Nicky e Connor, è stata fatta a Natale 2003<br><br>
-		
-		<img src="bearhrtl9283.gif" width="457" height="32"><br><br>
+		<div class="sSmall sPaleTurquoise sBold sCenter">
+			<br>
+			<figure class="sImmagine">
+				<img src="nickyNat24321.jpg" width="253" height="350">
+				<figcaption>2000</figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img border="0" src="dec2503.jpg" width="500" height="375">
+				<figcaption>Natale/Christmas 2003: Nicky &amp; Connor</figcaption>
+			</figure>
+		</div>
+		<div class="sSmall sPaleTurquoise sBold sCenter">
+			<br>
+			<figure class="sImmagine">
+				<img src="NickyApr05.jpg"   width="343" height="459">
+				<figcaption>Aprile/April 2005</figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="Nicky12anni.jpg"  width="280" height="328">
+				<figcaption>2008</figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="Nicky2012.jpg"    width="375" height="500">
+				<figcaption>2012</figcaption>
+			</figure>
+		</div>
 
-		<img src="NickyApr05.jpg"   width="343" height="459">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="Nicky12anni.jpg"  width="280" height="328">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="Nicky2012.jpg"    width="375" height="500"><br><br>
-		Nicky Aprile 2005
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		Nicky nel 2008
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		Nicky 2012<br><br>
-		<em>These picture of Nicky taken in the April 2005, 2008 and 2012</em><br><br><br>
+		<p class="sCenter">
+			<BR>
+			<img src="bearhrtl9283.gif" width="457" height="32">
+		</p>
 		
-		<img src="bearhrtl9283.gif" width="457" height="32">
-	</p>
-		
-	<h2><BR>Connor<h2>
-	<P class="sCenter">
-		<img src="Connor6Apr04.jpg" width="420" height="339">&nbsp;&nbsp;
-		<img src="Picture20138.jpg" width="319" height="400">&nbsp;&nbsp;
-		<img src="Connor4anni.jpg" width="350" height="317"></p>
-		
-	<P class="sXSmall sLeft sBold sPaleTurquoise">
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		Connor, figlio di Silvia e Greg, è nato il 5 Settembre 2003
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		Connor 1° anno 2004
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		Connor 4 anni 2007<br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<em>Son of Silvia and Greg, is born September 5, 2003
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		Connor's 1st Birthday 2004
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-		Connor's 4st Birthday 2007</p>
-		
-	<P class="sXSmall sCenter sBold sPaleTurquoise">
-		<img src="bearhrtl9283.gif" width="457" height="32"><br><br>
-		<img src="Connor5anni.jpg"  width="282" height="357">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="Connor10.jpg"                             >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="Connor12.jpg"><br><br>
-		Connor a sinistra 5 anni 2008, al centro 7 anni 2010, a destra 9 anni 2012<br><br>
-		<em>September 5th, 2008, 5st Birthday, 7st Birthday on 2010 and 9st Birthday on 2012</em><br><br>
+		<h2>CONNOR<h2>
 
-  		<img src="bearhrtl9283.gif"       width="457" height="32" ><br><br>
-		<img src="NickyConnor13B.jpg"     width="560" height="373">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="ConnorNicky.Dic14A.jpg" width="429" height="430"><br><br>
-		Nicky e Connor 2013&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 
-		Connor e Nicky 2014<br><br>
+		<p class="sSmall sPaleTurquoise sBold sCenter sPadding sLineH125">
+			Connor, figlio di Silvia e Greg, è nato il 5 Settembre 2003.<br>
+			<i>Son of Silvia and Greg, is born September 5, 2003.</i>
+		</p>
+		<div class="sSmall sPaleTurquoise sBold sCenter">
+			<figure class="sImmagine">
+				<img src="Connor6Apr04.jpg" width="420" height="339">
+				<figcaption>Aprile/April 2004</figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="Picture20138.jpg" width="319" height="400">
+				<figcaption>1° Compleanno 2004</figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="Connor4anni.jpg" width="350" height="317">
+				<figcaption>4 anni 2007</figcaption>
+			</figure>
+			<br><br>
+		</div>
+
+		<div class="sSmall sPaleTurquoise sBold sCenter">
+			<br><br>
+			<figure class="sImmagine">
+				<img src="Connor5anni.jpg"  width="282" height="357">
+				<figcaption>2008: 5 anni/years old</figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="Connor10.jpg">
+				<figcaption>2010: 7 anni/years old</figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="Connor12.jpg">
+				<figcaption>2012: 9 anni/years old</figcaption>
+			</figure>
+		</div>
+
+		<div class="sSmall sPaleTurquoise sBold sCenter">
+			<br><br>
+			<figure class="sImmagine">
+				<img src="NickyConnor13B.jpg"     width="560" height="373">
+				<figcaption>Nicky &amp; Connor 2013</figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="ConnorNicky.Dic14A.jpg" width="429" height="430">
+				<figcaption>Connor &amp; Nicky 2014</figcaption>
+			</figure>
+		</div>
+
+		<div class="sSmall sPaleTurquoise sBold sCenter">
+			<br><br>
+			<figure class="sImmagine">
+				<img src="ConnorFeb15.jpg"     width="320" height="480">
+				<figcaption>Connor &amp; Nicky Feb 2015</figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="NickyConnor15.jpg"   width="320" height="480">
+				<figcaption>Connor &amp; Nicky 2015</figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="NickyDiploma15B.jpg" width="320" height="480">
+				<figcaption>2015: Nicky giorno del Diploma/Diploma day</figcaption>
+			</figure>
+		</div>
+
+		<p class="sCenter">
+			<br>
+			<img src="bearhrtl9283.gif" width="457" height="32">
+		</p>
+
+		<h2>MAURIZIO &amp; GIULIA</h2>
+
+		<p class="sSmall sPaleTurquoise sBold sCenter sPadding sLineH125">
+			Questi sono i nostri nipoti "gemelli", nati il 4 Luglio 2002. Figli di Katia e Massimo.<br><br>
+			<i>These are our twin grand-children, born July 4th, 2002. Children of Katia and Massimo</i>
+		</p>
+
+		<div class="sSmall sPaleTurquoise sBold sCenter">
+			<br>
+			<figure class="sImmagine">
+				<img src="MauGiu15Gen035063.jpg" width="348" height="439">
+				<figcaption>Dicembre/December 2002</figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="MauGiuMar05.jpg"       width="509" height="350">
+				<figcaption>Natale/Christmas 2005</figcaption>
+			</figure>
+		</div>
+
+		<div class="sSmall sPaleTurquoise sBold sCenter">
+			<br>
+			<figure class="sImmagine">
+				<img src="GiuliaLug06.jpg"  width="306" height="450">
+				<figcaption>Estate/Summer 2006</figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="MauriLug06.jpg"   width="305" height="450">
+				<figcaption>Estate/Summer 2006</figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="GiuMauMaya09.jpg" width="464" height="418">
+				<figcaption>Con Maya estate 2009</figcaption>
+			</figure>
+		</div>
+
+		<div class="sSmall sPaleTurquoise sBold sCenter">
+			<br>
+			<figure class="sImmagine">
+				<img src="MauGiu11Comunione.jpg" width="342" height="473">
+				<figcaption>2011: Prima Comunione / First Communion</figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="MauGiuValeApr13A.jpg"  width="576" height="432">
+				<figcaption>2013: Maurizio, Valeria &amp; Giulia</figcaption>
+			</figure>
+		</div>
+
+		<div class="sSmall sPaleTurquoise sBold sCenter">
+			<br>
+			<figure class="sImmagine">
+				<img src="Mauri2015.jpg"          width="379" height="304">
+				<figcaption>Maurizio 2015</figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="Giulia%2012%20anni.jpg" width="410" height="308">
+				<figcaption>Giulia 2013</figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="MauGiu4Lug16.jpg"       width="334" height="470">
+				<figcaption>Compleanno/Birthday 2016</figcaption>
+			</figure>
+		</div>
+
+		<p class="sCenter">
+			<br>
+			<img src="bearhrtl9283.gif" width="457" height="32">
+		</p>
+
+		<h2>VALERIA</h2>
+
+		<p class="sSmall sPaleTurquoise sBold sCenter sPadding sLineH125">
+			Valeria è nata il 24 marzo 2011. Figli di Katia e Marco.<br><br>
+			<i>Valeria is born March 24th, 2011. Children of Katia and Marco.</i>
+		</p>
+
+		<div class="sSmall sPaleTurquoise sBold sCenter">
+			<br>
+			<figure class="sImmagine">
+				<img src="Vale2012.jpg"     width="289" height="351">
+				<figcaption>2012: 1 anno/year old</figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="Valeria13.jpg"    width="302" height="239">
+				<figcaption>2013: 2 anni/years old</figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="ValeOtt2015B.jpg" width="321" height="349">
+				<figcaption>4 anni senza ricci! / 4 /years old without curls</figcaption>
+			</figure>
+		</div>
+
+		<div class="sSmall sPaleTurquoise sBold sCenter">
+			<br>
+			<figure class="sImmagine">
+				<img src="AB.Vale13Mar16.jpg" width="306" height="345">
+				<figcaption>5 anni/years old</figcaption>
+			</figure>
+			<figure class="sImmagine">
+				<img src="Vale6anni.pg.jpg"   width="318" height="490">
+				<figcaption>6 anni/years old</figcaption>
+			</figure>
+		</div>
+
+		<p class="sCenter">
+			<br>
+			<img src="bearhrtl9283.gif" width="457" height="32">
+		</p>
 		
-		<img src="bearhrtl9283.gif"    width="457" height="32" ><br><br>
-		<img src="ConnorFeb15.jpg"     width="320" height="480">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="NickyConnor15.jpg"   width="320" height="480">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="NickyDiploma15B.jpg" width="320" height="480"><br><br>
-		Connor e Nicky 2015<br><br>
-		
-		<img src="bearhrtl9283.gif" width="457" height="32"></p>
+		<h2>ALEX</h2>
 
-	<h2>Maurizio e Giulia</h2>
+		<P class="sSmall sPaleTurquoise sBold sCenter sPadding sLineH125">
+			<img src="alex12B2.jpg" width="237" height="354"><br><br>
+			Non possiamo dimenticarci del nostro angioletto <b>Alex</b>, figlio di Silvia e Nick, nato morto al termine della gravidanza il 1 Marzo 1995.<br>
+			Questo disegno è stato ricavato da una foto. Se vuoi leggere la sua storia, visita il 
+			<a href="http://www.tatmar.net/silvia/angel.htm" class="sPaleTurquoise">sito a lui dedicato</a>.<br><br>
+			<i>We cannot forget our little angel <b>Alex</b>, son of Silvia and Nick, who was stillborn at full term on March 1st, 1995.<br>
+			This drawing was produced from a picture. To read more about Alex's story, please go to, Alex's 
+			<a href="http://www.tatmar.net/silvia/angel.htm" class="sPaleTurquoise">Home Page.</a></i>
+		</p>
 
-	<P class="sXSmall sCenter sBold sPaleTurquoise">
-		Questi sono i nipoti gemelli, nati il 4 Luglio 2002<br><br>
-		<em>These are our twin grandchildren, born July 4th 2002<br><br>
-		
-		<img src="MauGiu15Gen035063.jpg" width="348" height="439">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="MauGiuMar05.jpg"       width="509" height="350"><br><br>
-		A sinistra Maurizio e Giulia nel Dicembre 2002, a destra Natale 2005 sono i figli gemelli di Katia<br><br>
-		<em>On the left is Maurizio and Giulia in December 2002, right and Christmas 2005 children of Katia</em><br><br>
-		
-		<img src="bearhrtl9283.gif" width="457" height="32" ><br><br>
-		<img src="GiuliaLug06.jpg"  width="306" height="450">&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="MauriLug06.jpg"   width="305" height="450">&nbsp;&nbsp;&nbsp;&nbsp; 
-		<img src="GiuMauMaya09.jpg" width="464" height="418"><br><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		Giulia e Maurizio estate 2006
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		Giulia Maurizio e Maya estate 2009<br><br>
+		<p class="sCenter">
+			<IMG SRC="ANfantasy16div.jpg"   WIDTH="420" HEIGHT="45">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<IMG SRC="ANfantasy16icon2.jpg" WIDTH="63"  HEIGHT="70">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<IMG SRC="ANfantasy16div.jpg"   WIDTH="420" HEIGHT="45"><br><br>
+		</p>
 
-		<img src="bearhrtl9283.gif"      width="457" height="32" ><br><br>
-		<img src="MauGiu11Comunione.jpg" width="342" height="473">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="MauGiuValeApr13A.jpg"  width="576" height="432"><br><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-		Giulia e Maurizio 2011 Prima comunione
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-		Maurizio Valeria Giulia 2013<br><br>
-		
-		<img src="bearhrtl9283.gif"       width="457" height="32" ><br><br>
-		<img src="Mauri2015.jpg"          width="379" height="304">&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="Giulia%2012%20anni.jpg" width="410" height="308">&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="MauGiu4Lug16.jpg"       width="334" height="470"><br><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-		Maurizio 2015
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-		Giulia 2013
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-		Compleanno 2016<br><br>
-		
-		<img src="bearhrtl9283.gif" width="457" height="32"></p>
+		<P class="sSmall sPaleTurquoise sCenter">
+			<img src="LauraLug2012.jpg" width="221" height="290"><br><br>
+			<img src="email-box.gif"    width="35" height="35">
+			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
+			<img src="TelefonoC164.gif" width="35" height="35">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+			Torna alla <a href="index.html"><img SRC="favicon32.gif"> <span class="sBold">pagina iniziale</span></a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<strong>Sei il visitatore n°&nbsp;</strong>
+		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220428273-5ant9lyj" border="0"></a>
+			&nbsp;(Contenuto Aggiornato <time datetime="2019-05-21">21/05/2019</time>)<br><br>
+		</p>
 
-	<h2>Valeria</h2>
-
-	<P class="sXSmall sCenter sBold sPaleTurquoise">
-		<img src="Vale2012.jpg"     width="289" height="351">&nbsp;&nbsp;
-		<img src="Valeria13.jpg"    width="302" height="239">&nbsp;&nbsp;
-		<img src="ValeOtt2015B.jpg" width="321" height="349"><br><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		Valeria 1 anno 2012
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		Valeria 2 anni 2013
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-		Valeria 4 anni senza ricci!<br><br>
-		
-		<img src="bearhrtl9283.gif"   width="457" height="32" ><br><br>
-		<img src="AB.Vale13Mar16.jpg" width="306" height="345">&nbsp;&nbsp;
-		<img src="Vale6anni.pg.jpg"   width="318" height="490"><br><br>
-		Valeria 5 anni
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-		Valeria 6 anni<br><br>
-
-		<img src="bearhrtl9283.gif" width="457" height="32"></p>
-		
-	<h2>ALEX</h2>
-
-	<P class="sXSmall sCenter sBold sPaleTurquoise">
-		<img src="alex12B2.jpg" width="237" height="354"><br><br>
-		Non possiamo dimenticarci del nostro angioletto Alex, figlio di Silvia e Nick, nato morto al termine della gravidanza<br>
-		il 1 Marzo 1995. Questo disegno è stato ricavato da una foto.<br><br>
-		Per leggere la storia di <a href="http://www.tatmar.net/silvia/angel.htm" class="sPaleTurquoise">Alex</a> e vedere le sue foto.<br><br>
-		<em>We cannot forget our little angel Alex, son of Silvia and Nick, who was stillborn at full term on March 1st 1995.<br>
-		This drawing was produced from pictures. To read more about Alex's story and to see his pictures, please go to,<br>
-		Alex's <a href="http://www.tatmar.net/silvia/angel.htm" class="sPaleTurquoise">Home Page.</a><br><br>
-
-		<img src="bearhrtl9283.gif" width="457" height="32">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="bearhrtl9283.gif" width="457" height="32"></p>
-
+		</TD></TR></TABLE>
+	</TD></TR></TABLE>
 </TD></TR></TABLE>
-</TD></TR></TABLE>
-</TD></TR></TABLE>
-
-	<P class="sXSmall sCenter sPaleTurquoise">
-		<img src="LauraLug2012.jpg" width="221" height="290"><br><br>
-		<strong>Telefono: 0125 631175 -- Cellulare: 347 0417409<br><br>
-		E-mail: <a href="mailto:studio.acquario@libero.it" class="sTxtDecNo sPaleTurquoise">studio.acquario@libero.it</a><br><br>
-		<img src="bearhrtl9283.gif" width="457" height="32"><br><br>
-		Sei il visitatore n°&nbsp;</strong>
-<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220428273-5ant9lyj" border="0"></a>
-		&nbsp;(Pagina Aggiornata 21/05/2019)<br><br>
-
-	<img src="bearhrtl9283.gif"     width="457" height="32">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<img src="bearhrtl9283.gif"     width="457" height="32"><br><br>
-	<IMG SRC="ANfantasy16div.jpg"   WIDTH="420" HEIGHT="45">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<IMG SRC="ANfantasy16icon2.jpg" WIDTH="63"  HEIGHT="70" ALT="Flowers">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<IMG SRC="ANfantasy16div.jpg"   WIDTH="420" HEIGHT="45" ALT="Divider"><br><br></p>
- 
-</TD></TR></TABLE>
-</TD></TR></TABLE>
-</TD></TR></TABLE>
-</TD></TR></TABLE>
-</BODY>
-</HTML>
+<footer>
+	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
+	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
+</footer>
+</body>
+</html>
