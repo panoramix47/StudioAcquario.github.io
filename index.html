@@ -11,8 +11,8 @@
 <meta name="language" content="it, en">
 <meta http-equiv="imagetoolbar" CONTENT="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="content_updated" content="09/09/2020">
-<meta name="revised" content="17/09/2020">
+<meta name="content_updated" content="20/09/2020">
+<meta name="revised" content="20/09/2020">
 
 <meta property="og:title" content="Studio di Astrologia Acquario" />
 <meta property="og:type" content="website" />
@@ -119,14 +119,11 @@ ul li {
 
 <body>
 
-<table background="ACrubankissdesign.gif" cellpadding="0" cellspacing="5" bordercolordark="#1A3862" bordercolorlight="#5082C8" width="95%" class="sBorder2s" align="center">
-  <tr><td>
+<table background="ACrubankissdesign.gif" cellspacing="5" cellpadding="0" bordercolordark="#1A3862" bordercolorlight="#5082C8" width="95%" class="sBorder2s" align="center">
+<tr><td>
   
-<table background="ACdoreondule.jpg" cellpadding="0" width="100%" border="0">
-  <tr><td>
-
-<table background="ACfondmilieu.jpg" cellspacing="0" bgcolor="#1A3862" width="100%" border="0">
-  <tr><td>
+<table background="ACdoreondule.jpg" cellspacing="3" cellpadding="3" bgcolor="#1A3862" width="100%" border="0">
+<tr><td background="ACfondmilieu.jpg">
 
 		<p class="sCenter" valign="middle">
 			<img src="I12Segni1.jpg"   width="425" height="302">	<!-- originale 600x426 -->
@@ -170,7 +167,7 @@ ul li {
 					<li><a href="Cuspidi.htm">I nati sulla cuspide</a></li>
 					<li><a href="pianetiSegni.htm">Pianeti nei segni</a></li>
 					<br>
-					<li><a href="SegnoMese.htm" id="SegnoMese">Segno del Mese</a></li>
+					<li><a href="SegnoMese1.htm" id="SegnoMese">Segno del Mese</a></li>
 					<li><a href="SoleLuna.htm" id="SoleLuna">Sole e Luna del Mese</a></li>
 					<li><a href="OroscLuna.htm" id="OroscLuna">Oroscopo Luna del Mese</a></li>
 					<li><a href="GradiMese1.htm" id="GradiMese">Gradi del Mese</a></li>
@@ -393,15 +390,13 @@ ul li {
 			<strong>
 			Sei il visitatore n°&nbsp;</strong>
 			<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1219675201-xwuked2" border=0></a>
-			<br>(Contenuto Aggiornato <time datetime="2020-09-14">14/09/2020</time>)<br><br>
+			<br>(Contenuto Aggiornato <time datetime="2020-09-204">20/09/2020</time>)<br><br>
 		</p>
 		<p class="sCenter">
 			<a href="http://www.net-parade.it/attestato_riconoscimento.aspx?sito=www.studioacquario.it&amp;t=1">
 				<img src="http://tools.net-parade.it/images/01_award_sito_in_classifica.png" border="0" alt="In classifica"></a>
 		</p>
-						</td></tr></table>
-					</td></tr></table>
-				</td></tr></table>
+
 			</td></tr></table>
 		</td></tr></table>
 	</td></tr></table>
@@ -409,12 +404,24 @@ ul li {
 
 <script type="text/javascript">
 
+function SegnoMese() {
+// cambia link e descrizione a seconda del mese corrente ... non il mese ma il segno 1=Ariete quindi ...
+// occhio che l'automatismo è ancora da verificare
+
+	var sm_elemento = document.getElementById("SegnoMese");
+	var link_href="SegnoMese" + segno + ".htm";
+	var desc_href="Segno del Mese (" + t_segni[segno] + ")";
+
+	sm_elemento.href=link_href;
+	sm_elemento.innerHTML=desc_href;
+}
+
 function GradiMese() {
 // cambia link e descrizione a seconda del mese corrente
 
 	var gm_elemento = document.getElementById("GradiMese");
-	var link_href="GradiMese" + mese + ".htm"
-	var desc_href="Gradi del Mese di " + t_mesi[mese]
+	var link_href="GradiMese" + mese + ".htm";
+	var desc_href="Gradi del Mese di " + t_mesi[mese];
 
 	gm_elemento.href=link_href;
 	gm_elemento.innerHTML=desc_href;
@@ -424,22 +431,28 @@ function GradiSolari() {
 // cambia link e descrizione a seconda del mese corrente
 
 	var gs_elemento = document.getElementById("GradiSolari");
-	var link_href="GradiSolari" + mese + ".htm"
-	var desc_href="Gradi Solari del Mese di " + t_mesi[mese]
+	var link_href="GradiSolari" + mese + ".htm";
+	var desc_href="Gradi Solari del Mese di " + t_mesi[mese];
 
 	gs_elemento.href=link_href;
 	gs_elemento.innerHTML=desc_href;
 }
 
 // Variabili "globali"
-	var t_mesi = ["", "Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"]
-	var t_segni = ["", "Ariete", "Toro", "Gemelli", "Cancro", "Leone", "Vergine", "Bilancia", "Scorpione", "Sagittario", "Capricorno", "Acquario", "Pesci"]
-	var oggi = new Date()
-	var mese = oggi.getMonth() + 1
-	var giorno = oggi.getDate()
+	var t_mesi = ["", "Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"];
+	var t_cambioSegno = [ 0, 21, 19, 21, 21, 21, 21, 23, 23, 23, 23, 22, 22 ];
+	var t_meseSegno = [ 0, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
+	var t_segni = ["UNK", "Ariete", "Toro", "Gemelli", "Cancro", "Leone", "Vergine", "Bilancia", "Scorpione", "Sagittario", "Capricorno", "Acquario", "Pesci"];
+	var oggi = new Date();
+	var mese = oggi.getMonth() + 1;
+	var giorno = oggi.getDate();
+	var segno = t_meseSegno [mese];
+	var cambioGiorno = t_cambioSegno [mese];
 
 GradiMese();
 GradiSolari();
+if ( giorno >= cambioGiorno ) { segno = segno + 1 };
+SegnoMese();
 </script>
 </body>
 </html>
