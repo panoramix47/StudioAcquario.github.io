@@ -12,7 +12,7 @@
 <meta http-equiv="imagetoolbar" CONTENT="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="20/09/2020">
-<meta name="revised" content="20/09/2020">
+<meta name="revised" content="26/09/2020">
 
 <meta property="og:title" content="Studio di Astrologia Acquario" />
 <meta property="og:type" content="website" />
@@ -181,7 +181,7 @@ ul li {
 					<li><a href="LunaMadreMoglie.htm">Luna come madre/moglie</a></li>
 					<li><a href="MammaSeiSarai.htm">Che mamma sei e sarai</a></li>
 					<br>
-					<li><a href="AffinitaCoppia.htm">Affinità LEI e LUI</a></li>
+					<li><a href="AffinitaCoppia.htm" id="AffinitaCoppia">Affinità LEI e LUI</a></li> <!-- mettere 1 appena 1 è ok -->
 					<li><a href="AmoreSegni.htm">L'Amore nei segni</a></li>
 					<li><a href="ElementiCoppia.htm">Elementi nella Coppia</a></li>
 					<li><a href="LunaLeiLui.htm">Luna di LEI e LUI</a></li>
@@ -404,6 +404,18 @@ ul li {
 
 <script type="text/javascript">
 
+function AffinitaCoppia() {
+// cambia link e descrizione a seconda del mese corrente ... non il mese ma il segno 1=Ariete quindi ...
+// occhio che l'automatismo è ancora da verificare
+
+	var ac_elemento = document.getElementById("AffinitaCoppia");
+	var link_href="AffinitaCoppia" + segno + ".htm";
+	var desc_href="Affinità LEI e LUI (Lei " + t_segni[segno] + " e Lui ...)";
+
+	ac_elemento.href=link_href;
+	ac_elemento.innerHTML=desc_href;
+}
+
 function SegnoMese() {
 // cambia link e descrizione a seconda del mese corrente ... non il mese ma il segno 1=Ariete quindi ...
 // occhio che l'automatismo è ancora da verificare
@@ -453,6 +465,7 @@ GradiMese();
 GradiSolari();
 if ( giorno >= cambioGiorno ) { segno = segno + 1 };
 SegnoMese();
+AffinitaCoppia();
 </script>
 </body>
 </html>
