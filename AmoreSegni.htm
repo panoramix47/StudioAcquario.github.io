@@ -30,21 +30,16 @@ BODY {
 	background-color: #000000; /* black */
 	background-attachment: fixed;
 }
-a.navbar:hover{
-	background-image:url(anim.gif);
-}
-a:hover, a.navbar:hover {
-	background-image:url(anim.gif);
-}
-a:hover img {
-	background-image:url(anim.gif);
-	filter:alpha(finishopacity=0, style=2);
-	border:0px solid;
-}
-a {
+a:link {
 	color: #FFFFFF;
 }
 a:visited {
+	color: #FFFFFF;
+}
+a:hover {
+	color: #FF0000;
+}
+a:active {
 	color: #FFFFFF;
 }
 h1 {
@@ -500,11 +495,12 @@ h2 {
 		<p class="sSmall sWhite sCenter">
 			<img src="email-box.gif"    width="35" height="35">
 			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
-			<img src="TelefonoC164.gif" width="35" height="35">&nbsp;
-			oppure Telefona: <strong>0125 631175 - Cell. 347 0417409<br><br>
+			<img src="TelefonoC164.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+
 			Sei il visitatore n°&nbsp;</strong>
 			<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1437676069-i58xrkwz9" border=0></a>
-			&nbsp;(Contenuto Aggiornato 22/07/2017)<br><br>
+			&nbsp;(Contenuto Aggiornato <time datetime="2017-07-22">22/07/2017</time>)<br><br>
 		</p>
 		</td></tr></table>
 	</td></tr></table>
