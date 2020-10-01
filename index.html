@@ -11,8 +11,8 @@
 <meta name="language" content="it, en">
 <meta http-equiv="imagetoolbar" CONTENT="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="content_updated" content="29/09/2020">
-<meta name="revised" content="29/09/2020">
+<meta name="content_updated" content="02/10/2020">
+<meta name="revised" content="02/10/2020">
 
 <meta property="og:title" content="Studio di Astrologia Acquario" />
 <meta property="og:type" content="website" />
@@ -173,7 +173,7 @@ ul li {
 					<li><a href="GradiMese1.htm" id="GradiMese">Gradi del Mese</a></li>
 					<li><a href="GradiSolari1.htm" id="GradiSolari">Gradi Solari del Mese</a></li>
 					<li><a href="I12.ASC.htm" id="I12ASC">Ascendenti del Mese</a></li>
-					<li><a href="CoppiaMese.htm" id="CoppiaMese">La coppia del Mese</a></li>
+					<li><a href="CoppiaMese7.htm" id="CoppiaMese">La coppia del Mese</a></li>   <!--  mettere 1 quando sistemato -->
 					<br>
 					<li><a href="giorni.htm">Il giorno di nascita</a></li>
 					<li><a href="Ora.htm">A che ora sei nato</a></li>
@@ -390,7 +390,7 @@ ul li {
 			<strong>
 			Sei il visitatore n°&nbsp;</strong>
 			<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1219675201-xwuked2" border=0></a>
-			<br>(Contenuto Aggiornato <time datetime="2020-09-29">29/09/2020</time>)<br><br>
+			<br>(Contenuto Aggiornato <time datetime="2020-09-29">02/10/2020</time>)<br><br>
 		</p>
 		<p class="sCenter">
 			<a href="http://www.net-parade.it/attestato_riconoscimento.aspx?sito=www.studioacquario.it&amp;t=1">
@@ -414,6 +414,18 @@ function AffinitaCoppia() {
 
 	ac_elemento.href=link_href;
 	ac_elemento.innerHTML=desc_href;
+}
+
+function CoppiaMese() {
+// cambia link e descrizione a seconda del mese corrente ... non il mese ma il segno 1=Ariete quindi ...
+// occhio che l'automatismo è ancora da verificare
+
+	var cm_elemento = document.getElementById("CoppiaMese");
+	var link_href="CoppiaMese" + segno + ".htm";
+	var desc_href="La coppia del Mese (" + t_segni[segno] + " e ...)";
+
+	cm_elemento.href=link_href;
+	cm_elemento.innerHTML=desc_href;
 }
 
 function I12Asc() {
@@ -479,6 +491,7 @@ if ( giorno >= cambioGiorno ) { segno = segno + 1 };
 SegnoMese();
 AffinitaCoppia();
 I12Asc();
+CoppiaMese();
 </script>
 </body>
 </html>
