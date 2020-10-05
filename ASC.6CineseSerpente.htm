@@ -1,55 +1,135 @@
 <!DOCTYPE html>
-<HTML>
+<html lang="it" dir="ltr">
 <head>
-
-<title>Oroscopo Cinese: Ascendenti del Serpente</title>
-<link rel="icon" type="image/gif" href="https://www.studioacquario.it/favicon32.gif">
-<META name="description" content="Studio Acquario: Oroscopo Cinese: Ascendenti del Serpente">
-<meta name="keywords" content="astrologia, oroscopo cinese, ascendente, serpente">
+<meta charset="UTF-8">
+<title>Ascendenti del Serpente - Oroscopo Cinese - Studio Acquario</title>
+<link rel="icon" type="image/gif" href="favicon32.gif">
+<meta name="description" content="Studio Acquario: Oroscopo Cinese: Ascendenti del Serpente">
+<meta name="keywords" content="astrologia, studio, acquario, oroscopo cinese, ascendente, serpente">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
 <meta name="language" content="it">
-<meta charset="UTF-8">
-<meta http-equiv="imagetoolbar" CONTENT="no">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="26/11/2015">
-<meta name="revised" content="26/06/2020">
+<meta name="revised" content="05/10/2020">
 
 <style type="text/css">
 body{
-	scrollbar-face-color:#cceaf0;
-	scrollbar-arrow-color:#2e5256;
-	scrollbar-track-color:#cceaf0;
-	scrollbar-shadow-color:#2e5256;
-	scrollbar-highlight-color:#2e5256;
-	scrollbar-3dlight-color:#2e5256;
-	scrollbar-darkshadow-color:#2e5256;
-	font-family: Verdana, sans-serif;
+	scrollbar-face-color: #CCEAF0; /* Onahau */
+	scrollbar-arrow-color: #2e5256; /* Dark Slate Grey */
+	scrollbar-track-color: #DEF1F5; /* Light Cyan */
+	scrollbar-shadow-color: #2e5256;
+	scrollbar-highlight-color: #2e5256;
+	scrollbar-3dlight-color: #2e5256;
+	scrollbar-darkshadow-color: #2e5256;
+
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	/* color: #7E726C; Sand Dune */
+	/* background-color: #FFFFFF; White */
+	background-image: url('CIbg2.jpg');
 }
-H1 {
-		font-size: x-large;
-		text-align: center;
-		font-weight: bold;
-		color: #1E3C8C;
+a:link {
+	color: #000000;
 }
-H2 {
-		font-size: large;
-		text-align: center;
-		font-weight: bold;
-		color: #1E3C8C;
+a:visited {
+	color: #000000;
 }
-p {
-		font-size: small;
-		color: #1E3C8C; <!-- Egyptian Blue -->
+a:hover {
+	color: #FF0000;
+}
+a:active {
+	color: #000000;
+}
+h1 {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #1E3C8C; /* Egyptian Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+h2 {
+	font-size: x-large;
+	font-weight: bold;
+	color: #1E3C8C; /* Egyptian Blue */
+	text-align: center;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-top: 25px;
+	margin-bottom: 0;
+}
+header {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	text-shadow: 1px 1px 5px #0000FF; /* Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
+}
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	/* text-shadow: 1px 1px 1px #0000FF; Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
 }
 img {
-		max-width: 100%;
-		height: auto;
+	max-width: 100%;
+	height: auto;
 }
-.sRed {
-				color: red;
+p {
+	font-size: small;
+	color: #1E3C8C; /* Egyptian Blue */
+	text-align: justify;
+	padding-left: 35px;
+	padding-right: 35px;
+	line-height: 125%;
+}
+.sNavigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 180%;
+}
+.sNavigation a {
+	font-size: medium;
+	font-weight: bold;
+	padding:.42em;
+	color: #FFFFFF; /* White */
+	margin-left: 2px;
+	background: #2e5256; /* Dark Slate Grey */
+	text-decoration: none;
+}
+.sNavigation a:hover {
+	color: #000000; /* Black */
+	background: #00BFFF; /* Deep Sky Blue */
+}
+#PagCorrente {
+	border-bottom: 2.5px solid aqua;
+}
+.sHomeIcon {
+	vertical-align: bottom;
+	margin-bottom: 1px;
+	height: 25px;
+	width: 25px;
 }
 .sEgyptBlue {
 				color: #1E3C8C;
+}
+.sRed {
+				color: #FF0000;
 }
 .sCenter {
 				text-align: center;
@@ -63,191 +143,216 @@ img {
 </style>
 </head>
 
-<body background="CIbg2.jpg">
+<body>
+<header>Studio di Astrologia &quot;Acquario&quot;</header>
 
-<table cellpadding="20" cellspacing="0" bordercolor="#82c9db" background="CIbg1.jpg" width="100%" border="2"> 
-<tr><td>
+<table background="CIbg1.jpg" cellpadding="13" cellspacing="13" border="0" bordercolor="#82C9DB" width="95%" align="center">
+<tr><td background="CIbg2.jpg">
 
-<table cellpadding="20" cellspacing="0" bordercolor="#82c9db" background="CIbg2.jpg" width="100%" border="4">
-<tr><td>
+<table background="CIbg1.jpg" cellpadding="13" cellspacing="13" border="0" bordercolor="#82C9DB" width="100%">
+<tr><td background="CIbg3.jpg">
 
-<table cellpadding="20" cellspacing="0" bordercolor="#82c9db" background="CIbg1.jpg" width="100%" border="4">  
-<tr><td>
+		<h1>OROSCOPO CINESE:<br>
+			<span class="sRed">ASCENDENTI</span> DEL SERPENTE</h1>
 
-<table cellpadding="10" cellspacing="0" bordercolor="#82c9db" background="CIbg3.jpg" width="100%" border="4">  
-<tr><td>
+		<p class="sCenter">
+			<br>
+			<img src="AA6Serpente.jpg" width="159" height="168" alt="Segno Cinese Serpente">
+		</p>
 
-	<br>
-	<H1><span style="font-size: larger;">OROSCOPO CINESE</span></h1>
+		<nav class="sLarge sCenter">
+			<br>
+			<ul class="sNavigation">
+				<li><a href="ASC.1CineseTopo.htm">Topo</a></li>
+				<li><a href="ASC.2CineseBue.htm">Bue</a></li>
+				<li><a href="ASC.3CineseTigre.htm">Tigre</a></li>
+				<li><a href="ASC.4CineseLepre.htm">Lepre</a></li>
+				<li><a href="ASC.5CineseDrago.htm">Drago</a></li>
+				<li><a href="ASC.6CineseSerpente.htm" id="PagCorrente">Serpente</a></li>
+				<li><a href="ASC.7CineseCavallo.htm">Cavallo</a></li>
+				<li><a href="ASC.8CineseCapra.htm">Capra</a></li>
+				<li><a href="ASC.9CineseScimmia.htm">Scimmia</a></li>
+				<li><a href="ASC.10CineseGallo.htm">Gallo</a></li>
+				<li><a href="ASC.11CineseCane.htm">Cane</a></li>
+				<li><a href="ASC.12CineseCinghiale.htm">Cinghiale</a></li>
+				<li><a href="ZodiaCine.htm">Zodiaco Cinese</a></li>
+				<li><a href="index.html"><img src="favicon32.gif" class="sHomeIcon"></a></li>
+			</ul>
+		</nav>
 
-	<p class="sCenter"><br>
-		<img src="CIdivider.png"   width="390" height="93" >&nbsp;&nbsp;&nbsp;
-		<img src="AA6Serpente.jpg" width="159" height="168">&nbsp;&nbsp;&nbsp;
-		<img src="CIdivider.png"   width="390" height="93" ><br><br></p>
-		
-	<H1><span class="sRed">ASCENDENTI</span> DEL SERPENTE</h1>
+		<p class="sCenter">
+			<br>
+			<img src="CIdivider.png" width="390" height="93" alt="">
+		</p>
 
-	<h2>SERPENTE <span class="sRed">ASC</span> TOPO</h2>
+		<h2>SERPENTE <span class="sRed">ASC</span> TOPO</h2>
+		<p>
+			È un <b>Serpente</b> amichevole, affabile, apparentemente molto disponibile, ma costantemente vigile. Ha la fortuna di avere un'inesauribile
+			risorsa di energia grazie alla quale riesce a fronteggiare tutte le situazioni che gli interessano particolarmente. È molto attivo in campo
+			lavorativo, sempre in prima linea per il timore di veder svanire importanti opportunità. La cosa che lo attrae maggiormente è il danaro, tanto
+			che è disposto a lasciare incarichi importanti se non ha la contropartita economica. Non è un materialista: vuole semplicemente poter garantire
+			alla propria famiglia tutti gli agi possibili, vuole poter dare ai figli un punto di partenza perché si possano muovere tranquilli nel mondo
+			degli adulti. Niente e nessuno possono metterlo in crisi, perché segue sempre la sua stella. Quando segue una pista scavalca ogni ostacolo e
+			ottiene quanto desidera in breve tempo e senza sprechi di energie. Il magnetismo naturale lo porta a importanti conquiste, senza troppo spreco 
+			di energie. È molto ansioso, ma anche molto tenace non perde mai la testa, ma attende che passi la tempesta. Fortunato in amore difficilmente
+			qualcuno gli dice no!
+		</p>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È un <strong>Serpente</strong> amichevole, affabile, apparentemente molto disponibile, ma costantemente vigile. Ha la fortuna di avere 
-		un'inesauribile risorsa di energia grazie alla quale riesce a fronteggiare tutte le situazioni che gli interessano particolarmente. È molto attivo
-		in campo lavorativo, sempre in prima linea per il timore di veder svanire importanti opportunità. La cosa che lo attrae maggiormente è il danaro, 
-		tanto che è disposto a lasciare incarichi importanti se non ha la contropartita economica. Non è un materialista: vuole semplicemente poter 
-		garantire alla propria famiglia tutti gli agi possibili, vuole poter dare ai figli un punto di partenza perché si possano muovere tranquilli nel
-		mondo degli adulti. Niente e nessuno possono metterlo in crisi, perché segue sempre la sua stella. Quando segue una pista scavalca ogni ostacolo
-		e ottiene quanto desidera in breve tempo e senza sprechi di energie. Il magnetismo naturale lo porta a importanti conquiste, senza troppo spreco di
-		energie. È molto ansioso, ma anche molto tenace non perde mai la testa, ma attende che passi la tempesta. Fortunato in amore difficilmente qualcuno
-		gli dice no!<br><br></p>
+		<h2>SERPENTE <span class="sRed">ASC</span> BUE/BUFALO</h2>
+		<p>
+			È un <b>Serpente</b> metodico ed ostinato. Il <b>Bue</b> fa da calmiere al suo animo inquieto regalandogli la volontà e la forza di agire con
+			serietà. È molto sincero e l'invidia scompare del tutto anzi è il primo a congratularsi per i successi degli altri. 
+			L'<b><span class="sRed">ASC</span> Bue</b> rende molto attento e perspicace il <b>Serpente</b>. È sempre al lavoro per scoprire dei possibili
+			intrighi o per valutare la bontà di certe proposte. La sua mente non riposa mai, ma sa mostrarsi come una persona calma e riflessiva. È un 
+			modo per prendere tempo e per poter elaborare una sua strategia che consenta di trarre il massimo vantaggio. La forza fisica e nervosa è molto
+			accresciuta. Difficilmente torna sulle sue decisioni e questa ostinazione può essere causa di mancanza di comprensione in ambito lavorativo. 
+			La ponderatezza dell'<b><span class="sRed">ASC</span> Bue</b> serve da valido supporto alla voglia di arrivare del <b>Serpente</b>, che stupisce
+			tutti per la posizione di prestigio che riesce a rivestire. È geloso della sua vita affettiva, ma grazie al <b>Bue</b> questo <b>Serpente</b> 
+			ha molte più attenzioni verso il partner.
+		</p>
 
-	<h2>SERPENTE <span class="sRed">ASC</span> BUE/BUFALO</h2>
+		<h2>SERPENTE <span class="sRed">ASC</span> TIGRE</h2>
+		<p>
+			Magnetismo e seduzione sono le doti che fanno di questa personalità una delle più affascinanti del celeste Impero. Questo <b>Serpente</b>
+			acquisisce la carica energetica della <b>Tigre</b>, ma vede aumentata la sua già alta diffidenza. Ha però un grave difetto prende tutto e dà
+			assai poco. È capace di escogitare delle tattiche un po' perverse solo per mettere alla prova le persone che gli stanno accanto. Non è saggio
+			tentare di sorprenderlo perché le buone intenzioni sono al di fuori della sua comprensione. Con lui è necessario essere molto chiari e fare
+			immediatamente presente qual è il proprio tornaconto se si vuole essere credibili. Con queste premesse è possibile lavorare bene con lui e i
+			risultati verranno. A lui basta un sorriso o uno sbattere di ciglia per ottenere quello che desidera. Il suo fascino è davvero notevole. Ha 
+			una memoria di ferro però non deve dimenticare che non può prendere tutto a piene mani, ma deve imparare anche a donare. Geloso e sospettoso,
+			processa spesso la persona amata. In campo affettivo è molto cauto e la componente <b>Tigre</b> gli porta un maggior entusiasmo attraverso il
+			quale riesce a superare le sue ritrosie.
+		</p>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È un <strong>Serpente</strong> metodico ed ostinato. Il <strong>Bue</strong> fa da calmiere al suo animo inquieto regalandogli la volontà e la forza
-		di agire con serietà. È molto sincero e l'invidia scompare del tutto anzi è il primo a congratularsi per i successi degli altri. 
-		L'<strong><span class="sRed">ASC</span> Bue</strong> rende molto attento e perspicace il <strong>Serpente</strong>. È sempre al lavoro per scoprire
-		dei possibili intrighi o per valutare la bontà di certe proposte. La sua mente non riposa mai, ma sa mostrarsi come una persona calma e riflessiva.
-		È un modo per prendere tempo e per poter elaborare una sua strategia che consenta di trarre il massimo vantaggio. La forza fisica e nervosa è molto 
-		accresciuta. Difficilmente torna sulle sue decisioni e questa ostinazione può essere causa di mancanza di comprensione in ambito lavorativo. La
-		ponderatezza dell'<strong><span class="sRed">ASC</span> Bue</strong> serve da valido supporto alla voglia di arrivare del <strong>Serpente</strong>,
-		che stupisce tutti per la posizione di prestigio che riesce a rivestire. È geloso della sua vita affettiva, ma grazie al <strong>Bue</strong> questo 
-		<strong>Serpente</strong> ha molte più attenzioni verso il partner.<br><br></p>
+		<h2>SERPENTE <span class="sRed">ASC</span> LEPRE/GATTO</h2>
+		<p>
+			È un <b>Serpente</b> bonario e mansueto, che tuttavia non perde mai di vista la preda. L'<b><span class="sRed">ASC</span> Lepre</b> lo spinge 
+			a cercare collaborazioni, a relazionarsi con persone che possono avere opinioni e progetti diversi. È decisamente un <b>Serpente</b> meno 
+			sospettoso, capace di controllare le proprie paure, soprattutto quando si rende conto che può ottenere molto di più se accetta di mediare. Gli
+			piace arrivare ad assumere incarichi importanti, ma non devono essere posizioni di facciata perché lui vuole essere sempre operativo e in 
+			prima linea. L'influenza della tranquilla <b>Lepre</b> frena gli istinti focosi e l'ambizione sfrenata del <b>Serpente</b>, che è più dolce 
+			e disponibile verso il mondo degli altri. Negli affetti il <b>Serpente</b> è più aperto e disponibile a scoprire un poco alla volta le mille 
+			sfaccettature del partner. La <b>Lepre</b> frena la sua aggressività verbale e lo spinge a essere più gentile verso chi gli rivolge la parola. 
+			Il suo temperamento un po' malinconico trova lo sfogo adeguato nella quiete della <b>Lepre/Gatto</b>. Tanta fantasia creativa.
+		</p>
 
-	<h2>SERPENTE <span class="sRed">ASC</span> TIGRE</h2>
+		<h2>SERPENTE <span class="sRed">ASC</span> DRAGO</h2>
+		<p>
+			È un <b>Serpente</b> saggio e un po' filantropo grazie all'<b><span class="sRed">ASC</span> Drago</b>. Evita le polemiche gratuite, però non
+			permette a nessuno di mettere in atto azioni che possano compromettere in qualche modo i suoi progetti. Ecco il vero vincente. Questo 
+			<b>Serpente</b> non conosce sosta nella scala al successo. Ha un'intelligenza superiore alla media e sa realizzare ogni progetto, ma quanta
+			presuntuosità, non si nasconde ama il palcoscenico e le posizioni di prestigio, è disposto a tutto pur di raggiungerle. Il potere non lo 
+			spaventa e sa amministrarlo molto bene. Piace partecipare ad iniziative con scopi umanitari ed è disposto ad investire tempo e danaro senza 
+			pensare ad eventuali ritorni. Grazie alla sua vivace intelligenza e al grande intuito non conoscerà mai l'amaro sapore della sconfitta e salirà 
+			su impervie vette. Attento a non schiacciare chi lo circonda ed è meno fortunato di lui. In amore espone a non pochi problemi con il partner.
+		</p>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		Magnetismo e seduzione sono le doti che fanno di questa personalità una delle più affascinanti del celeste Impero. Questo <strong>Serpente</strong> 
-		acquisisce la carica energetica della <strong>Tigre</strong>, ma vede aumentata la sua già alta diffidenza. Ha però un grave difetto prende tutto e
-		dà assai poco. È capace di escogitare delle tattiche un po' perverse solo per mettere alla prova le persone che gli stanno accanto. Non è saggio 
-		tentare di sorprenderlo perché le buone intenzioni sono al di fuori della sua comprensione. Con lui è necessario essere molto chiari e fare 
-		immediatamente presente qual è il proprio tornaconto se si vuole essere credibili. Con queste premesse è possibile lavorare bene con lui e i risultati
-		verranno. A lui basta un sorriso o uno sbattere di ciglia per ottenere quello che desidera. Il suo fascino è davvero notevole. Ha una memoria di 
-		ferro però non deve dimenticare che non può prendere tutto a piene mani, ma deve imparare anche a donare. Geloso e sospettoso, processa spesso la 
-		persona amata. In campo affettivo è molto cauto e la componente <strong>Tigre</strong> gli porta un maggior entusiasmo attraverso il quale riesce a 
-		superare le sue ritrosie.<br><br></p>
+		<h2>SERPENTE <span class="sRed">ASC</span> SERPENTE</h2>
+		<p>
+			La miglior qualità di chi nasce con questa combinazione è data dal proprio sangue freddo, che garantisce di uscire vincitore anche nelle 
+			occasioni più difficili della vita. È sfuggente, e risulta difficile capirlo o prevedere le sue mosse. È dotato di una intelligenza brillante,
+			estremamente enigmatico, può raggiungere profondissime capacità di analisi. Riesce a tenere tutto sotto controllo anche quando sembra che non
+			abbia sufficienti elementi a disposizione. Inutile pensare di riuscire a escluderlo da tutte quelle cose che lo interessano o peggio ancora, di
+			tentare di raggirarlo. Non conosce la pietà e nessuno verrebbe risparmiato dalle sue ire. Prudente oltre ogni limite! Non agisce mai senza aver
+			valutato tutte le possibilità e i pro e contro della situazione. Molto taciturno ha sempre i nervi tesi a cogliere al volo le occasioni che si
+			presentano. Per trovare il partner ideale deve imparare la dolcezza. La sua vita affettiva è coperta da un velo di mistero. Non ama vivere
+			pubblicamente i propri rapporti e la sua casa è aperta a pochi, fidati amici.
+		</p>
 
-	<h2>SERPENTE <span class="sRed">ASC</span> LEPRE/GATTO</h2>
+		<h2>SERPENTE <span class="sRed">ASC</span> CAVALLO</h2>
+		<p>
+			Con l'<b><span class="sRed">ASC</span> Cavallo</b>, il <b>Serpente</b> si arricchisce di una notevole aggressività, mette le ali e vola con
+			entusiasmo verso nuove esperienze. Possiede una memoria di ferro e non dimentica mai un torto subito perché al momento opportuno si prende la
+			rivincita. È molto socievole grazie alla presenza dell'<b><span class="sRed">ASC</span> Cavallo</b> meno scettico e più costruttivo in tutti i
+			campi. È comunque un <b>Serpente</b> che vuole essere vincente e che non esita a servirsi delle notevoli doti intuitive per difendere i propri
+			interessi. Sul lavoro sa come conquistare la fiducia di tutti, è un <i>promoter</i> eccezionale perché sa come rassicurare chi si mette nelle 
+			sue mani. Il <b>Cavallo</b> porta in dono tutta la sua vitalità. È aggressivo e pronto alla lotta per far valere le sue opinioni, convinto come
+			è della sua superiorità. La sua memoria di ferro non gli fa mai scordare un'offesa. La vita affettiva è intensa, forse un po' spericolata, che
+			rischia fin troppo spesso di mettersi in situazioni intricate dalle quali preferisce fuggire piuttosto che chiarire.
+		</p>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È un <strong>Serpente</strong> bonario e mansueto, che tuttavia non perde mai di vista la preda. L'<strong><span class="sRed">ASC</span>
-		Lepre</strong> lo spinge a cercare collaborazioni, a relazionarsi con persone che possono avere opinioni e progetti diversi. È decisamente un
-		<strong>Serpente</strong> meno sospettoso, capace di controllare le proprie paure, soprattutto quando si rende conto che può ottenere molto di più
-		se accetta di mediare. Gli piace arrivare ad assumere incarichi importanti, ma non devono essere posizioni di facciata perché lui vuole essere
-		sempre operativo e in prima linea. L'influenza della tranquilla <strong>Lepre</strong> frena gli istinti focosi e l'ambizione sfrenata del 
-		<strong>Serpente</strong>, che è più dolce e disponibile verso il mondo degli altri. Negli affetti il <strong>Serpente</strong> è più aperto e 
-		disponibile a scoprire un poco alla volta le mille sfaccettature del partner. La <strong>Lepre</strong> frena la sua aggressività verbale e lo 
-		spinge a essere più gentile verso chi gli rivolge la parola. Il suo temperamento un po' malinconico trova lo sfogo adeguato nella quiete della
-		<strong>Lepre/Gatto</strong>. Tanta fantasia creativa.<br><br></p>
+		<h2>SERPENTE <span class="sRed">ASC</span> CAPRA</h2>
+		<p>
+			Temperamento artistico, eleganza, amore per le cose belle e le comodità. È un <b>Serpente</b> privato del veleno, dotato di un ottimo buon 
+			gusto e che ama coltivare interessi artistici. È piuttosto fortunato e non solo i suoi progetti vanno a buon fine, ma gli assicurano anche una
+			buona sicurezza economica. Dal lavoro riesce a trarre i massimi risultati spendendo poche energie perché vuole avere a disposizione ampi spazi
+			per coltivare ciò che più gli interessa. Se solo gli è possibile, cerca di privilegiare attività che coincidano con i suoi hobby. Il pessimismo
+			frena la tenacia tipica del <b>Serpente</b>, nel momento di prendere decisioni. Ha una personalità sensibile, vulnerabile e bisognosa
+			dell'appoggio altrui. Ha ottime capacità d'intuizione e prontezza nel saper cogliere le migliori opportunità. In amore è troppo serio e
+			rinunciatario. Nei rapporti affettivi è un <b>Serpente</b> che sa dare grazie ai suggerimenti dell'<b><span class="sRed">ASC</span> Capra</b>. 
+			È un partner prezioso ed affettuoso.
+		</p>
 
-	<h2>SERPENTE <span class="sRed">ASC</span> DRAGO</h2>
+		<h2>SERPENTE <span class="sRed">ASC</span> SCIMMIA</h2>
+		<p>
+			Eccezionale abbinamento: è un <b>Serpente</b> pieno d'ingegno e razionalità che non teme confronti. Fascino, prontezza, opportunismo, energia, 
+			un tipo che sa il fatto suo e lo dimostra. L'abilità e la scaltrezza dell'<b><span class="sRed">ASC</span> Scimmia</b> aiutano questo 
+			<b>Serpente</b> a vincere qualsiasi battaglia, difficile fargli fronte. Sul lavoro è sempre molto più avanti degli altri, a volte è anche un 
+			po' dispettoso e si diverte a depistare con proposte inutili chi può essere d'intralcio ai suoi molti programmi. Oltre a un'intelligenza molto
+			brillante e alla capacità di giudizio, può contare sulla propria furbizia, doti indispensabili per il vero scalatore sociale. Alle sue naturali
+			chance si uniscono le doti dell'<b><span class="sRed">ASC</span> Scimmia</b> astuzia e simpatia. È fortunato come pochi, ricercatissimo da tutti
+			per le sue capacità organizzative e l'elasticità mentale che consentono di portare a buon fine parecchie attività contemporaneamente. È molto
+			volubile e gli piace sperimentare in continuazione il potere che ha nei confronti del partner, in ogni caso non resterà mai solo. Possiede un
+			sex-appeal molto particolare che lo aiuta nei rapporti affettivi.
+		</p>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È un <strong>Serpente</strong> saggio e un po' filantropo grazie all'<strong><span class="sRed">ASC</span> Drago</strong>. Evita le polemiche
-		gratuite, però non permette a nessuno di mettere in atto azioni che possano compromettere in qualche modo i suoi progetti. Ecco il vero vincente.
-		Questo <strong>Serpente</strong> non conosce sosta nella scala al successo. Ha un'intelligenza superiore alla media e sa realizzare ogni progetto, 
-		ma quanta presuntuosità, non si nasconde ama il palcoscenico e le posizioni di prestigio, è disposto a tutto pur di raggiungerle. Il potere non lo 
-		spaventa e sa amministrarlo molto bene. Piace partecipare ad iniziative con scopi umanitari ed è disposto ad investire tempo e danaro senza pensare
-		ad eventuali ritorni. Grazie alla sua vivace intelligenza e al grande intuito non conoscerà mai l'amaro sapore della sconfitta e salirà su impervie
-		vette. Attento a non schiacciare chi lo circonda ed è meno fortunato di lui. In amore espone a non pochi problemi con il partner.<br><br></p>
+		<h2>SERPENTE <span class="sRed">ASC</span> GALLO</h2>
+		<p>
+			È un <b>Serpente</b> piumato che ama essere al centro dell'attenzione. Attratto dalle sfide si butta a testa bassa anche nelle azioni più
+			rischiose. Vanitosissimo cerca ogni occasione per mettersi in mostra. Fortunato, il destino lo aiuta sempre offrendogli eccezionali occasioni 
+			per emergere e pavoneggiarsi. Ama soprattutto porsi in antagonismo con gli altri, certo com'è della vittoria. L'<b><span class="sRed">ASC</span>
+			Gallo</b> aiuta il <b>Serpente</b> a ridurre le sue esitazioni e lo spinge in ambienti forse un po' superficiali, ma prestigiosi. Non perde
+			tuttavia il suo bisogno di dominare e di essere padrone e artefice di qualsiasi gioco. Nel lavoro sa dare il meglio di sé anche perché non 
+			palesa i suoi reali intenti e riesce a riscuotere notevoli simpatie e consensi tra i colleghi. Per quanto abbia delle idee molto chiare, non
+			arriva mai a sfruttare chi lo appoggia e questo lo aiuta a mantenere senza difficoltà le posizioni che raggiunge. Deve girare e agire, non
+			importa verso dove e per cosa. In amore dà un'immagine di sé che non corrisponde a quella reale sembra preso da numerosi interessi, ma in 
+			realtà è una persona fedele.
+		</p>
 
-	<h2>SERPENTE <span class="sRed">ASC</span> SERPENTE</h2>
+		<h2>SERPENTE <span class="sRed">ASC</span> CANE</h2>
+		<p>
+			È un <b>Serpente</b> aperto e schietto, che non ama i sotterfugi. L'<b><span class="sRed">ASC</span> Cane</b> dona al <b>Serpente</b> una forte
+			propensione pe il rispetto delle regole e dei valori. Il <b>Serpente</b> vuole capire in profondità le persone e non rifiuta alcun confronto.
+			Preferisce di gran lunga una serena discussione con le persone con cui collabora ad un'azione volta a raggiungere posizioni importanti o
+			risultati economici di rilievo. In realtà vorrebbe che tutto fosse condiviso, responsabilità, onori e guadagno. In questo è un po' utopistico e
+			spesso gli succede di rimanere con un pugno di mosche in mano. Molto nervoso e pessimista, sempre teso a vedere inganni ovunque, troppo spesso
+			perde di vista l'obiettivo desiderato. Allora cade in profonde crisi d'angoscia. Deve assolutamente imparare a tenere in equilibrio il suo 
+			fragile sistema nervoso, smorzando la continua ansia che fa temere nemici e tranelli. Non può continuare a vivere all'erta vedendo fantasmi di
+			rivali in chiunque e il suo pessimismo gli fa perdere ottime occasioni. La vita affettiva tende a scorrere tranquilla, ha bisogno di un partner
+			che lo capisca e, da parte sua è un eterno innamorato.
+		</p>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		La miglior qualità di chi nasce con questa combinazione è data dal proprio sangue freddo, che garantisce di uscire vincitore anche nelle occasioni 
-		più difficili della vita. È sfuggente, e risulta difficile capirlo o prevedere le sue mosse. È dotato di una intelligenza brillante, estremamente
-		enigmatico, può raggiungere profondissime capacità di analisi. Riesce a tenere tutto sotto controllo anche quando sembra che non abbia sufficienti 
-		elementi a disposizione. Inutile pensare di riuscire a escluderlo da tutte quelle cose che lo interessano o peggio ancora, di tentare di raggirarlo.
-		Non conosce la pietà e nessuno verrebbe risparmiato dalle sue ire. Prudente oltre ogni limite! Non agisce mai senza aver valutato tutte le 
-		possibilità e i pro e contro della situazione. Molto taciturno ha sempre i nervi tesi a cogliere al volo le occasioni che si presentano. Per trovare
-		il partner ideale deve imparare la dolcezza. La sua vita affettiva è coperta da un velo di mistero. Non ama vivere pubblicamente i propri rapporti e la sua casa è aperta a pochi, fidati amici.<br><br></p>
+		<h2>SERPENTE <span class="sRed">ASC</span> CINGHIALE</h2>
+		<p>
+			È un <b>Serpente</b> addolcito, ma non domato, dall'<b><span class="sRed">ASC</span> Cinghiale</b>. Sa apprezzare le piccole gioie di ogni
+			giorno, ma non si dimentica mai dei suoi grandi progetti. Vive in perenne contraddizione, perché da un lato vorrebbe concedersi dei maggiori
+			spazi privati, dall'altro ha paura di perdere importanti occasioni lavorative. A seconda della situazione del conto in banca, privilegia una
+			strada piuttosto di un'altra, alla fine quello che più gli sta a cuore è il lato edonistico della vita. Indubbiamente il <b>Serpente</b> è più
+			sincero e leale degli altri. Assolutamente discreto è il miglior depositario di segreti. Tanta è l'ostinazione del <b>Cinghiale</b>, mentre 
+			lui non ama i ruoli di secondo piano, non si ferma davanti a niente e nessuno pur di raggiungere quello che desidera. È certo il più sincero e
+			leale dei <b>Serpenti</b> sia in amicizia e sia in amore! Tenero ed affettuoso sa circondare il partner di mille attenzioni. Gli affetti 
+			familiari sono importanti per il <b>Serpente</b> e ciò che egli desidera di più è soddisfare tutte le esigenze dei suoi cari.
+		</p>
 
-	<h2>SERPENTE <span class="sRed">ASC</span> CAVALLO</h2>
+		<p class="sCenter">
+			<img src="CIdivider.png" width="390" height="93" alt="">
+		</p>
+		<p class="sCenter">
+			<img src="email-box.gif"    width="35" height="35" alt="">
+			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
+			<img src="TelefonoC164.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		Con l'<strong><span class="sRed">ASC</span> Cavallo</strong>, il <strong>Serpente</strong> si arricchisce di una notevole aggressività, mette le 
-		ali e vola con entusiasmo verso nuove esperienze. Possiede una memoria di ferro e non dimentica mai un torto subito perché al momento opportuno
-		si prende la rivincita. È molto socievole grazie alla presenza dell'<strong><span class="sRed">ASC</span> Cavallo</strong> meno scettico e più 
-		costruttivo in tutti i campi. È comunque un <strong>Serpente</strong> che vuole essere vincente e che non esita a servirsi delle notevoli doti
-		intuitive per difendere i propri interessi. Sul lavoro sa come conquistare la fiducia di tutti, è un promoter eccezionale perché sa come 
-		rassicurare chi si mette nelle sue mani. Il <strong>Cavallo</strong> porta in dono tutta la sua vitalità. È aggressivo e pronto alla lotta per far 
-		valere le sue opinioni, convinto come è della sua superiorità. La sua memoria di ferro non gli fa mai scordare un'offesa. La vita affettiva è 
-		intensa, forse un po' spericolata, che rischia fin troppo spesso di mettersi in situazioni intricate dalle quali preferisce fuggire piuttosto che 
-		chiarire.<br><br></p>
-
-	<h2>SERPENTE <span class="sRed">ASC</span> CAPRA</h2>
-
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		Temperamento artistico, eleganza, amore per le cose belle e le comodità. È un <strong>Serpente</strong> privato del veleno, dotato di un ottimo 
-		buon gusto e che ama coltivare interessi artistici. È piuttosto fortunato e non solo i suoi progetti vanno a buon fine, ma gli assicurano anche una
-		buona sicurezza economica. Dal lavoro riesce a trarre i massimi risultati spendendo poche energie perché vuole avere a disposizione ampi spazi per
-		coltivare ciò che più gl'interessa. Se solo gli è possibile, cerca di privilegiare attività che coincidano con i suoi hobby. Il pessimismo frena la 
-		tenacia tipica del <strong>Serpente</strong>, nel momento di prendere decisioni. Ha una personalità sensibile, vulnerabile e bisognosa dell'appoggio
-		altrui. Ha ottime capacità d'intuizione e prontezza nel saper cogliere le migliori opportunità. In amore è troppo serio e rinunciatario. Nei rapporti 
-		affettivi è un <strong>Serpente</strong> che sa dare grazie ai suggerimenti dell'<strong><span class="sRed">ASC</span> Capra</strong>. 
-		È un partner prezioso ed affettuoso.<br><br></p>
-
-	<h2>SERPENTE <span class="sRed">ASC</span> SCIMMIA</h2>
-
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		Eccezionale abbinamento: è un <strong>Serpente</strong> pieno d'ingegno e razionalità che non teme confronti. Fascino, prontezza, opportunismo, 
-		energia, un tipo che sa il fatto suo e lo dimostra. L'abilità e la scaltrezza dell'<strong><span class="sRed">ASC</span> Scimmia</strong> aiutano
-		questo <strong>Serpente</strong> a vincere qualsiasi battaglia, difficile fargli fronte. Sul lavoro è sempre molto più avanti degli altri,
-		a volte è anche un po' dispettoso e si diverte a depistare con proposte inutili chi può essere d'intralcio ai suoi molti programmi. Oltre a 
-		un'intelligenza molto brillante e alla capacità di giudizio, può contare sulla propria furbizia, doti indispensabili per il vero scalatore sociale.
-		Alle sue naturali chance si uniscono le doti dell'<strong><span class="sRed">ASC</span> Scimmia</strong> astuzia e simpatia. È fortunato come pochi,
-		ricercatissimo da tutti per le sue capacità organizzative e l'elasticità mentale che consentono di portare a buon fine parecchie attività 
-		contemporaneamente. È molto volubile e gli piace sperimentare in continuazione il potere che ha nei confronti del partner, in ogni caso non 
-		resterà mai solo. Possiede un sex-appeal molto particolare che lo aiuta nei rapporti affettivi.<br><br></p>
-
-	<h2>SERPENTE <span class="sRed">ASC</span> GALLO</h2>
-
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È un <strong>Serpente</strong> piumato che ama essere al centro dell'attenzione. Attratto dalle sfide si butta a testa bassa anche nelle azioni 
-		più rischiose. Vanitosissimo cerca ogni occasione per mettersi in mostra. Fortunato, il destino lo aiuta sempre offrendogli eccezionali 
-		occasioni per emergere e pavoneggiarsi. Ama soprattutto porsi in antagonismo con gli altri, certo com'è della vittoria. 
-		L'<strong><span class="sRed">ASC</span> Gallo</strong> aiuta il <strong>Serpente</strong> a ridurre le sue esitazioni e lo spinge in ambienti
-		forse un po' superficiali, ma prestigiosi. Non perde tuttavia il suo bisogno di dominare e di essere padrone e artefice di qualsiasi gioco. Nel
-		lavoro sa dare il meglio di sé anche perché non palesa i suoi reali intenti e riesce a riscuotere notevoli simpatie e consensi tra i colleghi. 
-		Per quanto abbia delle idee molto chiare, non arriva mai a sfruttare chi lo appoggia e questo lo aiuta a mantenere senza difficoltà le posizioni
-		che raggiunge. Deve girare e agire, non importa verso dove e per cosa. In amore dà un'immagine di sé che non corrisponde a quella reale sembra 
-		preso da numerosi interessi, ma in realtà è una persona fedele.<br><br></p>
-
-	<h2>SERPENTE <span class="sRed">ASC</span> CANE</h2>
-
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È un <strong>Serpente</strong> aperto e schietto, che non ama i sotterfugi. L'<strong><span class="sRed">ASC</span> Cane</strong> dona al
-		<strong>Serpente</strong> una forte propensione pe il rispetto delle regole e dei valori. Il <strong>Serpente</strong> vuole capire in profondità
-		le persone e non rifiuta alcun confronto. Preferisce di gran lunga una serena discussione con le persone con cui collabora ad un'azione volta a 
-		raggiungere posizioni importanti o risultati economici di rilievo. In realtà vorrebbe che tutto fosse condiviso, responsabilità, onori e guadagno.
-		In questo è un po' utopistico e spesso gli succede di rimanere con un pugno di mosche in mano. Molto nervoso e pessimista, sempre teso a vedere 
-		inganni ovunque, troppo spesso perde di vista l'obiettivo desiderato. Allora cade in profonde crisi d'angoscia. Deve assolutamente imparare a 
-		tenere in equilibrio il suo fragile sistema nervoso, smorzando la continua ansia che fa temere nemici e tranelli. Non può continuare a vivere 
-		all'erta vedendo fantasmi di rivali in chiunque e il suo pessimismo gli fa perdere ottime occasioni. La vita affettiva tende a scorrere tranquilla,
-		ha bisogno di un partner che lo capisca e, da parte sua è un eterno innamorato.<br><br></p>
-
-	<h2>SERPENTE <span class="sRed">ASC</span> CINGHIALE</h2>
-
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È un <strong>Serpente</strong> addolcito, ma non domato, dall'<strong><span class="sRed">ASC</span> Cinghiale</strong>. Sa apprezzare le piccole 
-		gioie di ogni giorno, ma non si dimentica mai dei suoi grandi progetti. Vive in perenne contraddizione, perché da un lato vorrebbe concedersi dei
-		maggiori spazi privati, dall'altro ha paura di perdere importanti occasioni lavorative. A seconda della situazione del conto in banca, privilegia 
-		una strada piuttosto di un'altra, alla fine quello che più gli sta a cuore è il lato edonistico della vita. Indubbiamente il <strong>Serpente</strong>
-		è più sincero e leale degli altri. Assolutamente discreto è il miglior depositario di segreti. Tanta è l'ostinazione del <strong>Cinghiale</strong>, 
-		mentre lui non ama i ruoli di secondo piano, non si ferma davanti a niente e nessuno pur di raggiungere quello che desidera. È certo il più sincero
-		e leale dei <strong>Serpenti</strong> sia in amicizia e sia in amore! Tenero ed affettuoso sa circondare il partner di mille attenzioni. Gli affetti 
-		familiari sono importanti per il <strong>Serpente</strong> e ciò che egli desidera di più è soddisfare tutte le esigenze dei suoi cari.<br><br></p>
-
-	<p class="sCenter">
-		<img src="CIdivider.png" width="390" height="93">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="CIdivider.png" width="390" height="93"><br>
-		<a href="ASC.7CineseCavallo.htm" class="sEgyptBlue">Clicca per l'ASCENDENTE del CAVALLO</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<strong>Sei il visitatore n°&nbsp;</strong>
+			<b>Sei il visitatore n°&nbsp;</b>
 		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1593187799-1zyxp1b" border="0"></a>
-		&nbsp;(Pagina Aggiornata 26/11/2015)<br><br></p>
-		
+			&nbsp;(Contenuto Aggiornato <time datetime="2015-11-26">26/11/2015</time>)<br>
+		</p>
+
 </td></tr></table>
 </td></tr></table>
-</td></tr></table>
-</td></tr></table>
+<footer>
+	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
+	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
+</footer>
 </body>
 </html>

@@ -1,55 +1,135 @@
 <!DOCTYPE html>
-<HTML>
+<html lang="it" dir="ltr">
 <head>
-
-<title>Oroscopo Cinese: Ascendenti della Lepre</title>
-<link rel="icon" type="image/gif" href="https://www.studioacquario.it/favicon32.gif">
-<META name="description" content="Studio Acquario: Oroscopo Cinese: Ascendenti della Lepre">
-<meta name="keywords" content="astrologia, oroscopo cinese, ascendente, lepre">
+<meta charset="UTF-8">
+<title>Ascendenti della Lepre - Oroscopo Cinese - Studio Acquario</title>
+<link rel="icon" type="image/gif" href="favicon32.gif">
+<meta name="description" content="Studio Acquario: Oroscopo Cinese: Ascendenti della Lepre">
+<meta name="keywords" content="astrologia, studio, acquario, oroscopo cinese, ascendente, lepre">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
 <meta name="language" content="it">
-<meta charset="UTF-8">
-<meta http-equiv="imagetoolbar" CONTENT="no">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="26/11/2015">
-<meta name="revised" content="26/06/2020">
+<meta name="revised" content="05/10/2020">
 
 <style type="text/css">
 body{
-	scrollbar-face-color:#cceaf0;
-	scrollbar-arrow-color:#2e5256;
-	scrollbar-track-color:#cceaf0;
-	scrollbar-shadow-color:#2e5256;
-	scrollbar-highlight-color:#2e5256;
-	scrollbar-3dlight-color:#2e5256;
-	scrollbar-darkshadow-color:#2e5256;
-	font-family: Verdana, sans-serif;
+	scrollbar-face-color: #CCEAF0; /* Onahau */
+	scrollbar-arrow-color: #2e5256; /* Dark Slate Grey */
+	scrollbar-track-color: #DEF1F5; /* Light Cyan */
+	scrollbar-shadow-color: #2e5256;
+	scrollbar-highlight-color: #2e5256;
+	scrollbar-3dlight-color: #2e5256;
+	scrollbar-darkshadow-color: #2e5256;
+
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	/* color: #7E726C; Sand Dune */
+	/* background-color: #FFFFFF; White */
+	background-image: url('CIbg2.jpg');
 }
-H1 {
-		font-size: x-large;
-		text-align: center;
-		font-weight: bold;
-		color: #1E3C8C;
+a:link {
+	color: #000000;
 }
-H2 {
-		font-size: large;
-		text-align: center;
-		font-weight: bold;
-		color: #1E3C8C;
+a:visited {
+	color: #000000;
 }
-p {
-		font-size: small;
-		color: #1E3C8C; <!-- Egyptian Blue -->
+a:hover {
+	color: #FF0000;
+}
+a:active {
+	color: #000000;
+}
+h1 {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #1E3C8C; /* Egyptian Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+h2 {
+	font-size: x-large;
+	font-weight: bold;
+	color: #1E3C8C; /* Egyptian Blue */
+	text-align: center;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-top: 25px;
+	margin-bottom: 0;
+}
+header {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	text-shadow: 1px 1px 5px #0000FF; /* Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
+}
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	/* text-shadow: 1px 1px 1px #0000FF; Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
 }
 img {
-		max-width: 100%;
-		height: auto;
+	max-width: 100%;
+	height: auto;
 }
-.sRed {
-				color: red;
+p {
+	font-size: small;
+	color: #1E3C8C; /* Egyptian Blue */
+	text-align: justify;
+	padding-left: 35px;
+	padding-right: 35px;
+	line-height: 125%;
+}
+.sNavigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 180%;
+}
+.sNavigation a {
+	font-size: medium;
+	font-weight: bold;
+	padding:.42em;
+	color: #FFFFFF; /* White */
+	margin-left: 2px;
+	background: #2e5256; /* Dark Slate Grey */
+	text-decoration: none;
+}
+.sNavigation a:hover {
+	color: #000000; /* Black */
+	background: #00BFFF; /* Deep Sky Blue */
+}
+#PagCorrente {
+	border-bottom: 2.5px solid aqua;
+}
+.sHomeIcon {
+	vertical-align: bottom;
+	margin-bottom: 1px;
+	height: 25px;
+	width: 25px;
 }
 .sEgyptBlue {
 				color: #1E3C8C;
+}
+.sRed {
+				color: #FF0000;
 }
 .sCenter {
 				text-align: center;
@@ -63,187 +143,218 @@ img {
 </style>
 </head>
 
-<body background="CIbg2.jpg">
+<body>
+<header>Studio di Astrologia &quot;Acquario&quot;</header>
 
-<table cellpadding="20" cellspacing="0" bordercolor="#82c9db" background="CIbg1.jpg" width="100%" border="2"> 
-<tr><td>
+<table background="CIbg1.jpg" cellpadding="13" cellspacing="13" border="0" bordercolor="#82C9DB" width="95%" align="center">
+<tr><td background="CIbg2.jpg">
 
-<table cellpadding="20" cellspacing="0" bordercolor="#82c9db" background="CIbg2.jpg" width="100%" border="4">
-<tr><td>
+<table background="CIbg1.jpg" cellpadding="13" cellspacing="13" border="0" bordercolor="#82C9DB" width="100%">
+<tr><td background="CIbg3.jpg">
 
-<table cellpadding="20" cellspacing="0" bordercolor="#82c9db" background="CIbg1.jpg" width="100%" border="4">  
-<tr><td>
+		<h1>OROSCOPO CINESE:<br>
+			<span class="sRed">ASCENDENTI</span> DELLA LEPRE</h1>
 
-<table cellpadding="10" cellspacing="0" bordercolor="#82c9db" background="CIbg3.jpg" width="100%" border="4">  
-<tr><td>
+		<p class="sCenter">
+			<br>
+			<img src="AA4Lepre.jpg"  width="167" height="168" alt="Segno Cinese Lepre">
+		</p>
 
-	<br>
-	<H1><span style="font-size: larger;">OROSCOPO CINESE</span></h1>
+		<nav class="sLarge sCenter">
+			<br>
+			<ul class="sNavigation">
+				<li><a href="ASC.1CineseTopo.htm">Topo</a></li>
+				<li><a href="ASC.2CineseBue.htm">Bue</a></li>
+				<li><a href="ASC.3CineseTigre.htm">Tigre</a></li>
+				<li><a href="ASC.4CineseLepre.htm" id="PagCorrente">Lepre</a></li>
+				<li><a href="ASC.5CineseDrago.htm">Drago</a></li>
+				<li><a href="ASC.6CineseSerpente.htm">Serpente</a></li>
+				<li><a href="ASC.7CineseCavallo.htm">Cavallo</a></li>
+				<li><a href="ASC.8CineseCapra.htm">Capra</a></li>
+				<li><a href="ASC.9CineseScimmia.htm">Scimmia</a></li>
+				<li><a href="ASC.10CineseGallo.htm">Gallo</a></li>
+				<li><a href="ASC.11CineseCane.htm">Cane</a></li>
+				<li><a href="ASC.12CineseCinghiale.htm">Cinghiale</a></li>
+				<li><a href="ZodiaCine.htm">Zodiaco Cinese</a></li>
+				<li><a href="index.html"><img src="favicon32.gif" class="sHomeIcon"></a></li>
+			</ul>
+		</nav>
 
-	<p class="sCenter"><br>
-		<img src="CIdivider.png" width="390" height="93" >&nbsp;&nbsp;&nbsp;
-		<img src="AA4Lepre.jpg"  width="167" height="168">&nbsp;&nbsp;&nbsp;
-		<img src="CIdivider.png" width="390" height="93" ><br><br></p>
-		
-	<H1><span class="sRed">ASCENDENTI</span> DELLA LEPRE</h1>
+		<p class="sCenter">
+			<br>
+			<img src="CIdivider.png" width="390" height="93" alt="">
+		</p>
 
-	<h2>LEPRE <span class="sRed">ASC</span> TOPO</h2>
+		<h2>LEPRE <span class="sRed">ASC</span> TOPO</h2>
+		<p>
+			È attento, interessato a ciò che succede intorno a lui, disposto ad assumersi impegni onerosi. L'<b><span class="sRed">ASC</span> Topo</b> aiuta
+			la <b>Lepre</b> ad essere meno timoroso e lo spinge a guardare oltre l'orizzonte più immediato. La disponibilità a volte un po' eccessiva, della
+			<b>Lepre</b> diventa con questa combinazione un acume diplomatico. Non si mostrerà mai sprovveduto e saprà smascherare chi sta agendo solo per
+			raggiungere obiettivi personali. La <b>Lepre</b> si arricchisce d'intraprendenza e capacità di azione. Diminuisce la fantasia, ma non lo spirito
+			malinconico, che abbisogna di costante compagnia. Difficile che abbia dei problemi sul lavoro perché riesce sempre a conciliare le varie anime
+			di un gruppo. L'azione è più incisiva e le paure esistenziali si ridimensionano. La fervida immaginazione lo spinge ad ingigantire i problemi,
+			ma le sue crisi durano poco e riesce a trovare tutta l’energia necessaria per destreggiarsi perfettamente. Ama molto la compagnia. Negli affetti
+			è più sciolto e meno mutevole e riesce a stabilire rapporti molto sereni ed appaganti.
+		</p>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È attento, interessato a ciò che succede intorno a lui, disposto ad assumersi impegni onerosi. L'<strong><span class="sRed">ASC</span> Topo</strong>
-		aiuta la <strong>Lepre</strong> ad essere meno timoroso e lo spinge a guardare oltre l'orizzonte più immediato. La disponibilità a volte un po'
-		eccessiva, della <strong>Lepre</strong> diventa con questa combinazione un acume diplomatico. Non si mostrerà mai sprovveduto e saprà smascherare
-		chi sta agendo solo per raggiungere obiettivi personali. La <strong>Lepre</strong> si arricchisce d'intraprendenza e capacità di azione. Diminuisce 
-		la fantasia, ma non lo spirito malinconico, che abbisogna di costante compagnia.  Difficile che abbia dei problemi sul lavoro perché riesce sempre a
-		conciliare le varie anime di un gruppo. L'azione è più incisiva e le paure esistenziali si ridimensionano. La fervida immaginazione lo spinge ad
-		ingigantire i problemi, ma le sue crisi durano poco e riesce a trovare tutta l’energia necessaria per destreggiarsi perfettamente. Ama molto la 
-		compagnia. Negli affetti è più sciolto e meno mutevole e riesce a stabilire rapporti molto sereni ed appaganti.<br><br></p>
+		<h2>LEPRE <span class="sRed">ASC</span> BUE/BUFALO</h2>
+		<p>
+			È una <b>Lepre</b> che sa guardare al lato pratico della vita e che non si lascia commuovere facilmente.
+			L'<b><span class="sRed">ASC</span> Bue</b> spinge verso realizzazioni concrete, diventa molto costante e non si lascia distrarre dai suoi
+			obiettivi. Ama le cose semplici, sia sul lavoro sia nella vita di relazione, tanto che è capace di dure reazioni se qualcuno cerca di
+			complicargli la vita con progetti troppo ambiziosi o richieste eccessivamente onerose. Quello che più conta per lui è raggiungere una posizione
+			adeguata e comoda che consenta di vivere tranquillamente. Per raggiungere l'agognata meta è disposto ad affrontare i più duri sacrifici.
+			Ha pochi ma intimi e fidati amici con cui ama passare le belle serate. Difficili le crisi proprio perché non si lascia travolgere dall'emozione,
+			cerca prima di tutto di capire cosa vuole veramente il partner. Ha molta padronanza di sé e questo l'aiuta nella vita affettiva. La cosa più
+			importante è trovare un'oasi di pace e di tranquillità, dove risiedano amore ed amicizia.
+		</p>
 
-	<h2>LEPRE <span class="sRed">ASC</span> BUE/BUFALO</h2>
+		<h2>LEPRE <span class="sRed">ASC</span> TIGRE</h2>
+		<p>
+			È una <b>Lepre</b> decisamente non comune, capace di mostrare una certa grinta grazie ai suggerimenti
+			dell'<b><span class="sRed">ASC</span> Tigre</b>. In certi momenti si mostrerà impaziente, desideroso di abbattere tutti gli ostacoli, ma dopo
+			poco è capace di farsi assalire da mille dubbi da remore che potranno rallentare il suo procedere. Orgoglio e voglia di fare spingono questa
+			<b>Lepre</b> a rinunciare alla vita sedentaria, per conquistarsi un prestigioso posto al sole. La consapevolezza del proprio valore è la chiave
+			del successo. Darà il massimo di sé in gruppi di lavoro bene organizzati. La sua irruenza servirà a smuovere situazioni che si sono arenate,
+			mentre le perplessità serviranno a far riflettere tutti sulla sua bontà delle scelte che si stanno operando. È orgoglioso e intraprendente e
+			si lancia in progetti studiati per tempo a tavolino. Comincia in solitudine, ma se durante la scalata incontra qualcuno disposto a sollevarlo
+			dalle fatiche, non esita ad entrare in società. Non ama i lavori sedentari e preferisci viaggiare, almeno con la fantasia. Dalla <b>Tigre</b>
+			la <b>Lepre</b> acquisisce anche la passionalità. La vita affettiva è quindi molto più vivace.
+		</p>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È una <strong>Lepre</strong> che sa guardare al lato pratico della vita e che non si lascia commuovere facilmente.
-		L'<strong><span class="sRed">ASC</span> Bue</strong> spinge verso realizzazioni concrete, diventa molto costante e non si lascia distrarre dai suoi
-		obiettivi. Ama le cose 	semplici, sia sul lavoro sia nella vita di relazione, tanto che è capace di dure reazioni se qualcuno cerca di complicargli
-		la vita con progetti troppo ambiziosi o richieste eccessivamente onerose. Quello che più conta per lui è raggiungere una posizione adeguata e comoda
-		che consenta di vivere tranquillamente. Per raggiungere l'agognata meta è disposto ad affrontare i più duri sacrifici. Ha pochi ma intimi e fidati
-		amici con cui ama passare le belle serate. Difficili le crisi proprio perché non si lascia travolgere dall'emozione, cerca prima di tutto di capire
-		cosa vuole veramente il partner. Ha molta padronanza di sè e questo l'aiuta nella vita affettiva. La cosa più importante è trovare un'oasi di pace
-		e di tranquillità, dove risiedano amore ed amicizia.<br><br></p>
+		<h2>LEPRE <span class="sRed">ASC</span> LEPRE/GATTO</h2>
+		<p>
+			È una <b>Lepre</b> che non tollera le situazioni problematiche, e fuggirà con una rapidità unica da chiunque gli imponga di fare scelte su due
+			piedi. Vuole la tranquillità ed è capace di difendere con una tenacia non comune i progetti che ha elaborato fin nei minimi particolari. È un
+			pianificatore abile, ma non ama condividere il suo lavoro con gli altri, ha troppa paura d'essere scavalcato e perdere la parte che ha ritagliato
+			su misura per se stesso. Può dare l'impressione di essere frettoloso o superficiale perché non dà spiegazioni sulle sue intenzioni, invece sa
+			come raggiunge quanto si è prefissato. Attira molte simpatie ed unanimi consensi per la propria dolcezza e discrezione. È molto simpatico ed
+			attira le attenzioni degli altri che però non lo capiscono mai del tutto. Se introverso, raramente parla dei suoi intimi problemi. Nemmeno
+			l'amato partner potrà vantarsi di conoscere tutti i recessi intimi del suo sensibile animo. Ma è troppo introverso, e fatica ad instaurare un
+			rapporto maturo con il partner, che è sconcertato da tanta volubilità. Anche in amore agisce in questo modo sa quale partner vuole e quando
+			pensa d'averlo trovato, lo cattura con molta abilità.
+		</p>
 
-	<h2>LEPRE <span class="sRed">ASC</span> TIGRE</h2>
+		<h2>LEPRE <span class="sRed">ASC</span> DRAGO</h2>
+		<p>
+			È una <b>Lepre</b> meno schiva, capace di proiettarsi all'esterno grazie alle qualità dell'<b><span class="sRed">ASC</span> Drago</b>.
+			Determinato e gentile nei modi, riuscirà a procedere verso sicuri successi senza creare situazioni problematiche nel gruppo in cui opererà.
+			Riesce ad influenzare gli altri senza però prevaricare, ha la capacità di far sì che tutti abbiano un ruolo importante e che ognuno lo svolga
+			senza interferenze. Si nasconde dietro una maschera d'indifferenza, si lascia andare volentieri quando si sente ammirato e ben voluto.
+			Estremamente perfezionista eccelle in lavori di pazienza. Piace raggiungere posizioni di potere, ma se le circostanze non sono favorevoli
+			s'accontenta e aspetta nell'ombra il momento propizio. Il suo buon gusto innato, la raffinatezza dei modi e la ricerca della perfezione estetica
+			consigliano d'abbracciare una attività legata al mondo della moda, della bellezza o dell'arredamento. Dietro ad una facciata fredda e distaccata
+			si nasconde un immenso bisogno di attenzioni, affetto e rassicurazioni. In amore è molto possessivo ha bisogno di un partner che ascolti le sue
+			confidenze e i suoi dubbi e che lo affianchi nei progetti più difficili.
+		</p>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È una <strong>Lepre</strong> decisamente non comune, capace di mostrare una certa grinta grazie ai suggerimenti 
-		dell'<strong><span class="sRed">ASC</span> Tigre</strong>. In certi momenti si mostrerà impaziente, desideroso di abbattere tutti gli ostacoli, ma
-		dopo poco è capace di farsi assalire da mille dubbi da remore che potranno rallentare il suo procedere. Orgoglio e voglia di fare spingono questa 
-		<strong>Lepre</strong> a rinunciare alla vita sedentaria, per conquistarsi un prestigioso posto al sole. La consapevolezza del proprio valore è la
-		chiave del successo. Darà il massimo di sé in gruppi di lavoro bene organizzati. La sua irruenza servirà a smuovere situazioni che si sono arenate,
-		mentre le perplessità serviranno a far riflettere tutti sulla sua bontà delle scelte che si stanno operando. È orgoglioso e intraprendente e si 
-		lancia in progetti studiati per tempo a tavolino. Comincia in solitudine, ma se durante la scalata incontra qualcuno disposto a sollevarlo dalle
-		fatiche, non esita ad entrare in società. Non ama i lavori sedentari e preferisci viaggiare, almeno con la fantasia. Dalla <strong>Tigre</strong>
-		la <strong>Lepre</strong> acquisisce anche la passionalità. La vita affettiva è quindi molto più vivace.<br><br></p>
+		<h2>LEPRE <span class="sRed">ASC</span> SERPENTE</h2>
+		<p>
+			È capace di intuire quanto sta succedendo intorno a lui. Rapido nell'elaborare i dati che il sesto senso percepisce e ad utilizzare i risultati
+			di queste analisi per raggiungere le mete che più gli stanno a cuore. Ha bisogno di tempo, e soprattutto ha bisogno di entrare in sintonia con
+			gli altre di essere rassicurato sulle loro reali intenzioni. L'<span class="sRed sBold">ASC</span> nel <b>Serpente</b> lo rende un po'
+			diffidente, e questo può limitare la possibilità di collaborare tranquillamente con persone che conosce da poco. Per essere felice questo nativo
+			deve imparare a diffidare meno degli altri ad abbandonarsi con maggior grinta alla vita. Non vive quasi mai serenamente, tanta è la sua paura di
+			non essere giustamente valutato, capito o apprezzato. Tende a isolarsi ed è difficile che si leghi con gli altri ma quando s'innamora ed è certo
+			d'essere ricambiato la situazione cambia profondamente. Nel campo affettivo è una <b>Lepre</b> ammaliatrice, capace di sedurre come pochi.
+			Umore decisamente instabile. Il legame con il partner sarà profondo e appagante.
+		</p>
 
-	<h2>LEPRE <span class="sRed">ASC</span> LEPRE/GATTO</h2>
+		<h2>LEPRE <span class="sRed">ASC</span> CAVALLO</h2>
+		<p>
+			È ottimista, quasi incosciente, grazie alla presenza dei valori <b>Cavallo</b>. Gli piace essere sempre in primo piano e, a volte, si dimentica
+			delle sue naturali buone maniere. Non ama venire ostacolato ed è capace di lanciarsi in accese discussioni se ha l'impressione che le sue
+			proposte non sono state attentamente vagliate. È difficile che commetta degli errori di valutazione; quando questo succede riesce, come un
+			giocoliere a trovare una nuova scappatoia. Corre al galoppo verso il successo, con ottimismo ed entusiasmo, sicuro della vittoria. Ha grande
+			ottimismo e capacità di agire senza aiuti. Ambivalenza tra il bisogno di protezione e l'insofferenza per i legami troppo stretti, che possono
+			imbrigliare il bisogno di movimento. Non sopporta i legami stretti ed è un errore madornale costringerlo a muoversi in ambienti troppo limitati.
+			È uno spirito libero, allegro, ottimista, ama molto la compagnia ma deve essere sempre lui a decidere tempi e luoghi d'incontro. Nella vita
+			affettiva è portato a riservare molto più spazio alle amicizie che al rapporto di coppia e infatti il suo partner deve, prima di ogni altra
+			cosa, essere un amico sincero.
+		</p>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È una <strong>Lepre</strong> che non tollera le situazioni problematiche, e fuggirà con una rapidità unica da chiunque gli imponga di fare scelte su
-		due piedi. Vuole la tranquillità ed è capace di difendere con una tenacia non comune i progetti che ha elaborato fin nei minimi particolari. È un
-		pianificatore abile, ma non ama condividere il suo lavoro con gli altri, ha troppa paura d'essere scavalcato e perdere la parte che ha ritagliato su
-		misura per se stesso. Può dare l'impressione di essere frettoloso o superficiale perché non dà spiegazioni sulle sue intenzioni, invece sa come
-		raggiunge quanto si è prefissato. Attira molte simpatie ed unanimi consensi per la propria dolcezza e discrezione. È molto simpatico ed attira le 
-		attenzioni degli altri che però non lo capiscono mai del tutto. Se introverso, raramente parla dei suoi intimi problemi. Nemmeno l'amato partner potrà 
-		vantarsi di conoscere tutti i recessi intimi del suo sensibile animo. Ma è troppo introverso, e fatica ad instaurare un rapporto maturo con il
-		partner, che è sconcertato da tanta volubilità. Anche in amore agisce in questo modo sa quale partner vuole e quando pensa d'averlo trovato, lo 
-		cattura con molta abilità.<br><br></p>
+		<h2>LEPRE <span class="sRed">ASC</span> CAPRA</h2>
+		<p>
+			È una <b>Lepre</b> che vede rafforzate alcune sue caratteristiche di base come la capacità di capire, o un'enorme carica affettiva che vorrebbe
+			comprendere tutto il mondo. Una maggiore tolleranza nei confronti degli altri, accompagnata però da tendenza alle spese eccessive. Suscita
+			simpatia in qualsiasi ambiente e difficilmente ha problemi relazionali anche quando si imbatte in persone litigiose. Normalmente la nota dolente
+			per questa <b>Lepre</b> è la parte economica: non ha molto il senso degli affari e non sa dare il giusto valore alle cose. Spesso si trova in
+			difficoltà, sa riprendersi rapidamente perché sa adattarsi a tutto. Riservatezza e discrezione fanno di questa <b>Lepre</b> un amico fidato e
+			pronto a soccorrere nel momento del bisogno. Chi però tradisce la sua fiducia si trova di fronte un avversario implacabile. Pigro e amante della
+			sua intimità, spesso si perde in mondi fantastici dove non trovano posto le brutture o le fatiche. È sensibile e intelligente ma la timidezza
+			e il riserbo impediscono di far valere le sue qualità. Ha bisogno di un partner che lo apprezzi e sproni ad agire con coerenza e determinazione.
+			In amore è capace di gran tenerezza e dedizione. Anche nella vita affettiva si dona completamente, senza alcuna riserva, ma ci vuole un partner
+			realista e concreto.
+		</p>
 
-	<h2>LEPRE <span class="sRed">ASC</span> DRAGO</h2>
+		<h2>LEPRE <span class="sRed">ASC</span> SCIMMIA</h2>
+		<p>
+			È un tipo scherzoso, furbo e malizioso, ricco di iniziative e atteggiamenti sorprendenti. La <b>Lepre</b> perde un po' della sua ingenuità
+			grazie alla presenza dei valori della maliziosa <b>Scimmia</b>. È un insieme gradevole di forte simpatia, che fa di questa <b>Lepre</b> un
+			compagno ideale sia sul lavoro che nella vita di coppia. Le sue proposte hanno una vena di genialità, aspetto questo che gli permette di
+			superare con facilità parecchi ostacoli. Ha il dono di saper proporre con discrezione le proprie idee e non si adirerà se non vengono accettate.
+			È impossibile pensare di stare da solo, è nato per la vita di società ed è disposto ad ogni compromesso pur di garantirsi l'ammirata presenza
+			di amici e partner. Ha la necessità di stare sempre in mezzo agli altri per paura della solitudine che lo porterebbe a prendere atto delle sue
+			intime emozioni sempre celate. Adora gli imprevisti e i programmi dell'ultimo minuto, ma vuole essere sempre al centro delle attenzioni del
+			partner. In amore ha bisogno di essere sorpreso dal partner.
+		</p>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È una <strong>Lepre</strong> meno schiva, capace di proiettarsi all'esterno grazie alle qualità dell'<strong><span class="sRed">ASC</span>
-		Drago</strong>. Determinato e gentile nei modi, riuscirà a procedere verso sicuri successi senza creare situazioni problematiche nel gruppo in cui opererà. Riesce ad influenzare gli altri senza però prevaricare, ha la capacità di far sì che tutti abbiano un ruolo importante e che ognuno lo 
-		svolga senza interferenze. Si nasconde dietro una maschera d'indifferenza, si lascia andare volentieri quando si sente ammirato e ben voluto.
-		Estremamente perfezionista eccelle in lavori di pazienza. Piace raggiungere posizioni di potere, ma se le circostanze non sono favorevoli 
-		s'accontenta e aspetta nell'ombra il momento propizio. Il suo buon gusto innato, la raffinatezza dei modi e la ricerca della perfezione estetica 
-		consigliano d'abbracciare una attività legata al mondo della moda, della bellezza o dell'arredamento. Dietro ad una facciata fredda e distaccata si
-		nasconde un immenso bisogno di attenzioni, affetto e rassicurazioni. In amore è molto possessivo ha bisogno di un partner che ascolti le sue 
-		confidenze e i suoi dubbi e che lo affianchi nei progetti più difficili.<br><br></p>
+		<h2>LEPRE <span class="sRed">ASC</span> GALLO</h2>
+		<p>
+			È una <b>Lepre</b> schietta e sincera, un amico prezioso che riesce a dire anche cose in apparenza sgradevoli ma con il massimo garbo. Sa
+			ascoltare realmente tutti, ma vuole lo stesso tipo di attenzione e non abbandona il campo finché non è certo di aver chiarito tutto. Ha una
+			visione positiva della vita ed è convinto che tutto si possa aggiustare se alla base c'è il desiderio di comprensione reciproca. È attivo ma
+			ha bisogno della presenza di qualcuno che lo sproni e lo rassicuri in continuazione. Non ama mostrare le proprie emozioni perché ha il timore
+			di essere deriso. Grande eccitabilità nervosa e costante pericolo di cadere vittima di profonde crisi esistenziali. Il temperamento nervoso del
+			<b>Gallo</b> gli crea tanti squilibri emotivi turbando il suo bisogno di tranquillità. Costretto a muoversi con un'eccessiva agitazione spesso
+			manca gli obiettivi. Se rimane solo, anche per brevi periodi, cade in depressioni acute. Questa è una combinazione che fa aumentare la
+			riservatezza tipica della <b>Lepre</b> nella vita affettiva.
+		</p>
 
-	<h2>LEPRE <span class="sRed">ASC</span> SERPENTE</h2>
+		<h2>LEPRE <span class="sRed">ASC</span> CANE</h2>
+		<p>
+			È una <b>Lepre</b> sensibile e molto emotiva, troppo vulnerabile nei confronti di attacchi provenienti dal mondo esterno.
+			L'<b><span class="sRed">ASC</span> Cane</b> rende fragile soprattutto nei rapporti interpersonali. Per trovare equilibrio deve imparare ad
+			amarsi di più e a sorridere più spesso. L'esasperata sensibilità lo spinge a cercare rifugio nella retroguardia, lasciando la prima linea ad
+			altri meno timidi. Se subisce un torto esplode con insospettata violenza e con uguale enfasi difendi i deboli, ingiustamente accusati. Ha il
+			timore di essere abbandonato a se stesso, di perdere i riferimenti affettivi. Franchezza e sincerità sono le qualità apportate
+			dall'<b><span class="sRed">ASC</span> Cane</b>, insieme ad un maggiore altruismo. Il lavoro non rappresenta un problema: si impegna oltre ogni
+			limite e l'unica cosa che chiede è il giusto riconoscimento economico. Non ha delle velleità di comando e non si impegna in scalate che, secondo
+			la sua ottica, sono solo una perdita di tempo. Vuole invece essere libero di dedicarsi agli affetti. È altruista e accorrerà al primo richiamo.
+			Compagno fedele e sincero.
+		</p>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È capace di intuire quanto sta succedendo intorno a lui. Rapido nell'elaborare i dati che il sesto senso percepisce e ad utilizzare i risultati di queste analisi per raggiungere le mete che più gli stanno a cuore. Ha bisogno di tempo, e soprattutto ha bisogno di entrare in sintonia con gli altr
-		e di essere rassicurato sulle loro reali intenzioni. L'<span class="sRed sBold">ASC</span> nel <strong>Serpente</strong> lo rende un po' diffidente,
-		e questo può limitare la possibilità di collaborare tranquillamente con persone che conosce da poco. Per essere felice questo nativo deve imparare a
-		diffidare meno degli altri ad abbandonarsi con maggior grinta alla vita. Non vive quasi mai serenamente, tanta è la sua paura di non essere 
-		giustamente valutato, capito o apprezzato. Tende a isolarsi ed è difficile che si leghi con gli altri ma quando s'innamora ed è certo d'essere
-		ricambiato la situazione cambia profondamente. Nel campo affettivo è una <strong>Lepre</strong> ammaliatrice, capace di sedurre come pochi. Umore 
-		decisamente instabile. Il legame con il partner sarà profondo e appagante.<br><br></p>
+		<h2>LEPRE <span class="sRed">ASC</span> CINGHIALE</h2>
+		<p>
+			Nella <b>Lepre</b> si amplificano l'amore per i piaceri materiali, e anche il già notevole senso estetico. La sua disponibilità verso gli altri
+			rimane forte, con bonarietà e sana concretezza ma c'è una maggiore lucidità. L'<b><span class="sRed">ASC</span> Cinghiale</b> aiuta questa
+			<b>Lepre</b> ad essere più attento all'aspetto economico, ed a programmare attentamente le scelte lavorative che dovranno garantire quei piccoli
+			lussi che tanto desidera. Ha la capacità di rendersi conto quando qualcuno cerca di utilizzare per fini poco edificanti la sua tolleranza. È il
+			miglior amico di tutto lo Zodiaco cinese, discreto e pronto a porgere una mano a tutti. Nessuno meglio di lui sa ascoltare e calarsi nei
+			problemi degli altri. Purtroppo spesso si lascia intenerire dalle storie pietose che furbi lestofanti gli propinano per farsi aprire il
+			portafoglio. L'inganno subito lo fa soffrire perché lui non conosce né falsità né ipocrisia. Deve essere meno ingenuo e diventare amico
+			soprattutto di sé stesso, o sono guai. In campo affettivo è meno lunatico e molto romantico.
+		</p>
 
-	<h2>LEPRE <span class="sRed">ASC</span> CAVALLO</h2>
+		<p class="sCenter">
+			<img src="CIdivider.png" width="390" height="93" alt="">
+		</p>
+		<p class="sCenter">
+			<img src="email-box.gif"    width="35" height="35" alt="">
+			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
+			<img src="TelefonoC164.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È ottimista, quasi incosciente, grazie alla presenza dei valori <strong>Cavallo</strong>. Gli piace essere sempre in primo piano e, a volte, si 
-		dimentica delle sue naturali buone maniere. Non ama venire ostacolato ed è capace di lanciarsi in accese discussioni se ha l'impressione che le sue 
-		proposte non sono state attentamente vagliate. È difficile che commetta degli errori di valutazione; quando questo succede riesce, come un giocoliere
-		a trovare una nuova scappatoia. Corre al galoppo verso il successo, con ottimismo ed entusiasmo, sicuro della vittoria. Ha grande ottimismo e capacità di agire senza aiuti. Ambivalenza tra il bisogno di protezione e l'insofferenza per i legami troppo stretti, che possono imbrigliare il
-		bisogno di movimento. Non sopporta i legami stretti ed è un errore madornale costringerlo a muoversi in ambienti troppo limitati. È uno spirito 
-		libero, allegro, ottimista, ama molto la compagnia ma deve essere sempre lui a decidere tempi e luoghi d'incontro. Nella vita affettiva è portato
-		a riservare molto più spazio alle amicizie che al rapporto di coppia e infatti il suo partner deve, prima di ogni altra cosa, essere un amico sincero.
-		<br><br></p>
-
-	<h2>LEPRE <span class="sRed">ASC</span> CAPRA</h2>
-
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È una <strong>Lepre</strong> che vede rafforzate alcune sue caratteristiche di base come la capacità di capire, o un'enorme carica affettiva che
-		vorrebbe comprendere tutto il mondo. Una maggiore tolleranza nei confronti degli altri, accompagnata però da tendenza alle spese eccessive.
-		Suscita simpatia in qualsiasi ambiente e difficilmente ha problemi relazionali anche quando si imbatte in persone litigiose. Normalmente la nota
-		dolente per questa <strong>Lepre</strong> è la parte economica: non ha molto il senso degli affari e non sa dare il giusto valore alle cose.
-		Spesso si trova in difficoltà, sa riprendersi rapidamente perché sa adattarsi a tutto. Riservatezza e discrezione fanno di questa
-		<strong>Lepre</strong> un amico fidato e pronto a soccorrere nel momento del bisogno. Chi però tradisce la sua fiducia si trova di fronte un
-		avversario implacabile. Pigro e amante della sua intimità, spesso si perde in mondi fantastici dove non trovano posto le brutture o le fatiche.
-		È sensibile e intelligente ma la timidezza e il riserbo impediscono di far valere le sue qualità. Ha bisogno di un partner che lo apprezzi e sproni
-		ad agire con coerenza e determinazione. In amore è capace di gran tenerezza e dedizione. Anche nella vita affettiva si dona completamente, senza alcuna riserva, ma ci vuole un partner realista e concreto.<br><br></p>
-
-	<h2>LEPRE <span class="sRed">ASC</span> SCIMMIA</h2>
-
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;"> 
-		È un tipo scherzoso, furbo e malizioso, ricco di iniziative e atteggiamenti sorprendenti. La <strong>Lepre</strong> perde un po' della sua ingenuità
-		grazie alla presenza dei valori della maliziosa <strong>Scimmia</strong>. È un insieme gradevole di forte simpatia, che fa di questa 
-		<strong>Lepre</strong> un compagno ideale sia sul lavoro che nella vita di coppia. Le sue proposte hanno una vena di genialità, aspetto questo che 
-		gli permette di superare con facilità parecchi ostacoli. Ha il dono di saper proporre con discrezione le proprie idee e non si adirerà se non vengono
-		accettate. È impossibile pensare di stare da solo, è nato per la vita di società ed è disposto ad ogni compromesso pur di garantirsi l'ammirata
-		presenza di amici e partner. Ha la necessità di stare sempre in mezzo agli altri per paura della solitudine che lo porterebbe a prendere atto delle
-		sue intime emozioni sempre celate. Adora gli imprevisti e i programmi dell'ultimo minuto, ma vuole essere sempre al centro delle attenzioni del
-		partner. In amore ha bisogno di essere sorpreso dal partner.<br><br></p>
-
-	<h2>LEPRE <span class="sRed">ASC</span> GALLO</h2>
-
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;"> 
-		È una <strong>Lepre</strong> schietta e sincera, un amico prezioso che riesce a dire anche cose in apparenza sgradevoli ma con il  massimo garbo. 
-		Sa ascoltare realmente tutti, ma vuole lo stesso tipo di attenzione e non abbandona il campo finché non è certo di aver chiarito tutto. Ha una 
-		visione positiva della vita ed è convinto che tutto si possa aggiustare se alla base c'è il desiderio di comprensione reciproca. È attivo ma 
-		ha bisogno della presenza di qualcuno che lo sproni e lo rassicuri in continuazione. Non ama mostrare le proprie emozioni perché ha il timore di 
-		essere deriso. Grande eccitabilità nervosa e costante pericolo di cadere vittima di profonde crisi esistenziali. Il temperamento nervoso del
-		<strong>Gallo</strong> gli crea tanti squilibri emotivi turbando il suo bisogno di tranquillità. Costretto a muoversi con un'eccessiva
-		agitazione spesso manca gli obiettivi. Se rimane solo, anche per brevi periodi, cade in depressioni acute. Questa è una combinazione che fa aumentare la riservatezza tipica della <strong>Lepre</strong> nella vita affettiva.<br><br></p>
-
-	<h2>LEPRE <span class="sRed">ASC</span> CANE</h2>
-
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;"> 
-		È una <strong>Lepre</strong> sensibile e molto emotiva, troppo vulnerabile nei confronti di attacchi provenienti dal mondo esterno.
-		L'<strong><span class="sRed">ASC</span> Cane</strong> rende fragile soprattutto nei rapporti interpersonali. Per trovare equilibrio deve imparare
-		ad amarsi di più e a sorridere più spesso. L'esasperata sensibilità lo spinge a cercare rifugio nella retroguardia, lasciando la prima linea ad altri
-		meno timidi. Se subisce un torto esplode con insospettata violenza e con uguale enfasi difendi i deboli, ingiustamente accusati. Ha il timore di 
-		essere abbandonato a se stesso, di perdere i riferimenti affettivi. Franchezza e sincerità sono le qualità apportate 
-		dall'<strong><span class="sRed">ASC</span> Cane</strong>, insieme ad un maggiore altruismo. Il lavoro non rappresenta un problema: si impegna oltre 
-		ogni limite e l'unica cosa che chiede è il giusto riconoscimento economico. Non ha delle velleità di comando e non si impegna in scalate che, secondo
-		la sua ottica, sono solo una perdita di tempo. Vuole invece essere libero di dedicarsi agli affetti. È altruista e accorrerà al primo richiamo. 
-		Compagno fedele e sincero.<br><br></p>
-
-	<h2>LEPRE <span class="sRed">ASC</span> CINGHIALE</h2>
-
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;"> 
-		Nella <strong>Lepre</strong> si amplificano l'amore per i piaceri materiali, e anche il già notevole senso estetico. La sua disponibilità verso gli 
-		altri rimane forte, con bonarietà e sana concretezza ma c'è una maggiore lucidità. L'<strong><span class="sRed">ASC</span> Cinghiale</strong> aiuta
-		questa <strong>Lepre</strong> ad essere più attento all'aspetto economico, ed a programmare attentamente le scelte lavorative che dovranno garantire 
-		quei piccoli lussi che tanto desidera. Ha la capacità di rendersi conto quando qualcuno cerca di utilizzare per fini poco edificanti la sua 
-		tolleranza. È il miglior amico di tutto lo Zodiaco cinese, discreto e pronto a porgere una mano a tutti. Nessuno meglio di lui sa ascoltare e 
-		calarsi nei problemi degli altri. Purtroppo spesso si lascia intenerire dalle storie pietose che furbi lestofanti gli propinano per farsi aprire il
-		portafoglio. L'inganno subito lo fa soffrire perché lui non conosce né falsità né ipocrisia. Deve essere meno ingenuo e diventare amico soprattutto
-		di sé stesso, o sono guai. In campo affettivo è meno lunatico e molto romantico.<br><br></p>
-
-	<p class="sCenter">
-		<img src="CIdivider.png" width="390" height="93">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="CIdivider.png" width="390" height="93"><br>
-		<a href="ASC.5CineseDrago.htm" class="sEgyptBlue">Clicca per l'ASCENDENTE del DRAGO</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<strong>Sei il visitatore n°&nbsp;</strong>
-		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1593170366-8k6jj78" border="0"></a>
-		&nbsp;(Pagina Aggiornata 26/11/2015)<br><br></p>
+			<b>Sei il visitatore n°&nbsp;</b>
+			<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1593170366-8k6jj78" border="0"></a>
+			&nbsp;(Contenuto Aggiornato <time datetime="2015-11-26">26/11/2015</time>)<br>
+		</p>
 
 </td></tr></table>
 </td></tr></table>
-</td></tr></table>
-</td></tr></table>
+<footer>
+	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
+	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
+</footer>
 </body>
 </html>

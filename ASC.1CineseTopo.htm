@@ -1,55 +1,135 @@
 <!DOCTYPE html>
-<HTML>
+<html lang="it" dir="ltr">
 <head>
-
-<title>Oroscopo Cinese: Ascendenti del Topo</title>
-<link rel="icon" type="image/gif" href="https://www.studioacquario.it/favicon32.gif">
-<META name="description" content="Studio Acquario: Oroscopo Cinese: Ascendenti del Topo">
-<meta name="keywords" content="astrologia, oroscopo cinese, ascendente, topo">
+<meta charset="UTF-8">
+<title>Ascendenti del Topo - Oroscopo Cinese - Studio Acquario</title>
+<link rel="icon" type="image/gif" href="favicon32.gif">
+<meta name="description" content="Studio Acquario: Oroscopo Cinese: Ascendenti del Topo">
+<meta name="keywords" content="astrologia, studio, acquario, oroscopo cinese, ascendente, topo">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
 <meta name="language" content="it">
-<meta charset="UTF-8">
-<meta http-equiv="imagetoolbar" CONTENT="no">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="01/02/2019">
-<meta name="revised" content="26/06/2020">
+<meta name="revised" content="05/10/2020">
 
 <style type="text/css">
 body {
-	scrollbar-face-color:#cceaf0;
-	scrollbar-arrow-color:#2e5256;
-	scrollbar-track-color:#cceaf0;
-	scrollbar-shadow-color:#2e5256;
-	scrollbar-highlight-color:#2e5256;
-	scrollbar-3dlight-color:#2e5256;
-	scrollbar-darkshadow-color:#2e5256;
-	font-family: Verdana, sans-serif;
+	scrollbar-face-color: #CCEAF0; /* Onahau */
+	scrollbar-arrow-color: #2e5256; /* Dark Slate Grey */
+	scrollbar-track-color: #DEF1F5; /* Light Cyan */
+	scrollbar-shadow-color: #2e5256;
+	scrollbar-highlight-color: #2e5256;
+	scrollbar-3dlight-color: #2e5256;
+	scrollbar-darkshadow-color: #2e5256;
+
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	/* color: #7E726C; Sand Dune */
+	/* background-color: #FFFFFF; White */
+	background-image: url('CIbg2.jpg');
 }
-H1 {
-		font-size: x-large;
-		text-align: center;
-		font-weight: bold;
-		color: #1E3C8C;
+a:link {
+	color: #000000;
 }
-H2 {
-		font-size: large;
-		text-align: center;
-		font-weight: bold;
-		color: #1E3C8C;
+a:visited {
+	color: #000000;
 }
-p {
-		font-size: small;
-		color: #1E3C8C; <!-- Egyptian Blue -->
+a:hover {
+	color: #FF0000;
+}
+a:active {
+	color: #000000;
+}
+h1 {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #1E3C8C; /* Egyptian Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+h2 {
+	font-size: x-large;
+	font-weight: bold;
+	color: #1E3C8C; /* Egyptian Blue */
+	text-align: center;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-top: 25px;
+	margin-bottom: 0;
+}
+header {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	text-shadow: 1px 1px 5px #0000FF; /* Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
+}
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	/* text-shadow: 1px 1px 1px #0000FF; Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
 }
 img {
-		max-width: 100%;
-		height: auto;
+	max-width: 100%;
+	height: auto;
 }
-.sRed {
-				color: red;
+p {
+	font-size: small;
+	color: #1E3C8C; /* Egyptian Blue */
+	text-align: justify;
+	padding-left: 35px;
+	padding-right: 35px;
+	line-height: 125%;
+}
+.sNavigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 180%;
+}
+.sNavigation a {
+	font-size: medium;
+	font-weight: bold;
+	padding:.42em;
+	color: #FFFFFF; /* White */
+	margin-left: 2px;
+	background: #2e5256; /* Dark Slate Grey */
+	text-decoration: none;
+}
+.sNavigation a:hover {
+	color: #000000; /* Black */
+	background: #00BFFF; /* Deep Sky Blue */
+}
+#PagCorrente {
+	border-bottom: 2.5px solid aqua;
+}
+.sHomeIcon {
+	vertical-align: bottom;
+	margin-bottom: 1px;
+	height: 25px;
+	width: 25px;
 }
 .sEgyptBlue {
 				color: #1E3C8C;
+}
+.sRed {
+				color: #FF0000;
 }
 .sCenter {
 				text-align: center;
@@ -63,188 +143,198 @@ img {
 </style>
 </head>
 
-<body background="CIbg2.jpg">
+<body>
+<header>Studio di Astrologia &quot;Acquario&quot;</header>
 
-<table cellpadding="20" cellspacing="0" bordercolor="#82c9db" background="CIbg1.jpg" width="100%" border="2"> 
-<tr><td>
+<table background="CIbg1.jpg" cellpadding="13" cellspacing="13" border="0" bordercolor="#82C9DB" width="95%" align="center">
+<tr><td background="CIbg2.jpg">
 
-<table cellpadding="20" cellspacing="0" bordercolor="#82c9db" background="CIbg2.jpg" width="100%" border="4">
-<tr><td>
+<table background="CIbg1.jpg" cellpadding="13" cellspacing="13" border="0" bordercolor="#82C9DB" width="100%">
+<tr><td background="CIbg3.jpg">
 
-<table cellpadding="20" cellspacing="0" bordercolor="#82c9db" background="CIbg1.jpg" width="100%" border="4">  
-<tr><td>
+		<h1>OROSCOPO CINESE:<br>
+			<span class="sRed">ASCENDENTI</span> DEL TOPO</h1>
 
-<table cellpadding="10" cellspacing="0" bordercolor="#82c9db" background="CIbg3.jpg" width="100%" border="4">  
-<tr><td>
+		<p class="sCenter">
+			<br>
+			<img src="AA1Topo.jpg" width="159" height="151" alt="Segno Cinese Topo">
+		</p>
 
-	<br>
-	<H1><span style="font-size: larger;">OROSCOPO CINESE</span></h1>
+		<nav class="sLarge sCenter">
+			<br>
+			<ul class="sNavigation">
+				<li><a href="ASC.1CineseTopo.htm" id="PagCorrente">Topo</a></li>
+				<li><a href="ASC.2CineseBue.htm">Bue</a></li>
+				<li><a href="ASC.3CineseTigre.htm">Tigre</a></li>
+				<li><a href="ASC.4CineseLepre.htm">Lepre</a></li>
+				<li><a href="ASC.5CineseDrago.htm">Drago</a></li>
+				<li><a href="ASC.6CineseSerpente.htm">Serpente</a></li>
+				<li><a href="ASC.7CineseCavallo.htm">Cavallo</a></li>
+				<li><a href="ASC.8CineseCapra.htm">Capra</a></li>
+				<li><a href="ASC.9CineseScimmia.htm">Scimmia</a></li>
+				<li><a href="ASC.10CineseGallo.htm">Gallo</a></li>
+				<li><a href="ASC.11CineseCane.htm">Cane</a></li>
+				<li><a href="ASC.12CineseCinghiale.htm">Cinghiale</a></li>
+				<li><a href="ZodiaCine.htm">Zodiaco Cinese</a></li>
+				<li><a href="index.html"><img src="favicon32.gif" class="sHomeIcon"></a></li>
+			</ul>
+		</nav>
 
-	<p class="sCenter"><br>
-		<img src="CIdivider.png" width="390" height="93" >&nbsp;&nbsp;&nbsp;
-		<img src="AA1Topo.jpg"   width="159" height="151">&nbsp;&nbsp;&nbsp;
-		<img src="CIdivider.png" width="390" height="93" ><br><br></p>
+		<p class="sCenter">
+			<br>
+			<img src="CIdivider.png" width="390" height="93" alt="">
+		</p>
 
-	<H1><span class="sRed">ASCENDENTI</span> DEL TOPO</h1>
+		<h2>TOPO <span class="sRed">ASC</span> TOPO</h2>
+		<p> È rafforzata la componente di fascino e l'attenzione rispetto alla propria immagine. È possibile un certo egocentrismo che in certe situazioni può
+			limitare il rapporto con gli altri. Si intensifica il bisogno di acquisire beni materiali, come una casa nella quale potersi rifugiare ma anche
+			invitare gli amici. Questo <span class="sRed sBold">ASC</span> può amplificare anche la propensione agli scritti e di spingere il
+			<b>Topo</b> verso professioni attinenti. Spesso manifesta una grossa presunzione. Eleganza e diplomazia sono le sue armi vincenti e
+			consentono di raggiungere le mete desiderate nel lavoro e nella vita privata. I rapporti affettivi rimangono importanti ma perde in spontaneità
+			perché si può evidenziare la tendenza a voler essere a tutti i costi la parte dominante della coppia. Se riesce a tenere a freno l'impulsività e
+			l'aggressività, può essere un eccellente diplomatico, circondato da amici pronti a schierarsi al tuo fianco. Si veste con raffinatezza e cura di
+			ogni particolare. In ogni situazioni brilla da vera star.
+		</p>
 
-	<h2>TOPO <span class="sRed">ASC</span> TOPO</h2>
+		<h2>TOPO <span class="sRed">ASC</span> BUE/BUFALO</h2>
+		<p> È un <b>Topo</b> più pacato e riflessivo, l'impazienza è frenata. Darà il meglio di sé se gli sono assegnati importanti compiti in
+			ambito finanziario. L'<b><span class="sRed">ASC</span> Bue</b> lo rende molto più prudente, sono bandite le speculazioni, ma anche la
+			disponibilità verso gli altri e l'irrequietezza sono più contenute. Assume molta importanza la dimensione lavorativa, la necessità di raggiungere
+			delle posizioni economiche che garantiscano stabilità e sicurezza. Introverso, ma è un ottimo amico, in grado di risolvere ogni problema. Lealtà e
+			comprensione, unite al forte senso di giustizia, lo spingono a prendere le difese dei più deboli. È alquanto concentrato sulla sua attività, è
+			coraggioso e non indietreggia davanti ad alcun ostacolo. Ha bisogno di brevi intervalli di riposo per recuperare l'energia spesa nella sua
+			frenetica attività professionale. Amante tenero, appassionato e fedele. È un buon amico sempre pronto a difendere i deboli. Con il partner è ancor
+			più possessivo e può avere qualche problema perché raramente si rende conto di essere eccessivo.
+		</p>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È rafforzata la componente di fascino e l'attenzione rispetto alla propria immagine. È possibile un certo egocentrismo che in certe situazioni può
-		limitare il rapporto con gli altri. Si intensifica il bisogno di acquisire beni materiali, come una casa nella quale potersi rifugiare ma anche 
-		invitare gli amici. Questo <span class="sRed sBold">ASC</span> può amplificare anche la propensione agli scritti e di spingere il 
-		<strong>Topo</strong> verso professioni attinenti. Spesso manifesta una grossa presunzione. Eleganza e diplomazia sono le sue armi vincenti e
-		consentono di raggiungere le mete desiderate nel lavoro e nella vita privata. I rapporti affettivi rimangono importanti ma perde in spontaneità 
-		perché si può evidenziare la tendenza a voler essere a tutti i costi la parte dominante della coppia. Se riesce a tenere a freno l'impulsività e
-		l'aggressività, può essere un eccellente diplomatico, circondato da amici pronti a schierarsi al tuo fianco. Si veste con raffinatezza e cura di 
-		ogni particolare. In ogni situazioni brilla da vera star.<br><br></p>
+		<h2>TOPO <span class="sRed">ASC</span> TIGRE</h2>
+		<p> Ottimo abbinamento: il <b>Topo</b> vede aumentare la propria irruenza e la propria aggressività. Questo lo rende meno critico e interessato 
+			rispetto a tutto. Ne guadagna in spontaneità e ciò l'aiuta soprattutto nei rapporti d'amicizia che diventano più fluidi e soddisfacenti. Si 
+			rafforza l'interesse per tutto ciò che può rendere la vita più comoda ed agevole, e una certa apprensione per la propria situazione economica.
+			Pieno di energia, è esigente, intransigente, usa ogni mezzo per arrivare al successo. Al calcolo razionale s'aggiunge una carica di rapace
+			aggressività. La <b>Tigre</b> porta a spendere senza attenzione o nei momenti meno opportuni. Possiede un fiuto eccezionale, che lo aiuta
+			a concludere, con ottimi risultati, anche affari rischiosi. Personalità carismatica destinata a rivestire cariche di comando. Attrazione per il
+			lusso e le comodità. Sempre in movimento e ama il rischio e la speculazione che guidato dall'intelligenza permette di concludere affari che per
+			gli altri sembrano impossibili. In amore se saprà rischiare di più, avrà molte più gratificazioni dal partner.</p>
 
-	<h2>TOPO <span class="sRed">ASC</span> BUE/BUFALO</h2>
+		<h2>TOPO <span class="sRed">ASC</span> LEPRE/GATTO</h2>
+		<p> La gentilezza della Lepre rende molto più morbido e suadente il <b>Topo</b>. La componente Lepre spinge a essere conciliante il
+			<b>Topo</b> non permette mai che qualcuno strumentalizzi le sue attitudini per fini diversi dai suoi, sembra esitare di fronte alle scelte,
+			ma sta solamente valutando con molta accortezza tutti i pro e i contro. È un insieme vincente soprattutto sul lavoro, ancor più se ci sono affari
+			importanti in corso. Maggiori timori, maggiori esitazioni, ma con cautela ed una furbizia moltiplicate per due. È un <b>Topo</b> tranquillo e 
+			poco amante dei rischi. Raffinato ed elegante, riveste un ruolo primario nella vita sociale e brilla tra gli amici per il suo garbato modo di
+			presentarsi, senza invadere gli spazi altrui. L'affiatamento con il partner è sicuro e sarà la base per un rapporto duraturo. Poco battagliero 
+			odia il rischio e le discussioni. Il suo motto è: &quot;vivi e lascia vivere&quot;. Non disdegna la vita sociale ma alle scatenate notti brave
+			preferisce la comodità della sua adorata poltrona, della buona musica e TV. L'amore è vissuto con serenità.
+		</p>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È un <strong>Topo</strong> più pacato e riflessivo, l'impazienza è frenata. Darà il meglio di sé se gli sono assegnati importanti compiti in
-		ambito finanziario. L'<strong><span class="sRed">ASC</span> Bue</strong> lo rende molto più prudente, sono bandite le speculazioni, ma anche la 
-		disponibilità verso gli altri e l'irrequietezza sono più contenute. Assume molta importanza la dimensione lavorativa, la necessità di raggiungere
-		delle posizioni economiche che garantiscano stabilità e sicurezza. Introverso, ma è un ottimo amico, in grado di risolvere ogni problema. Lealtà e 
-		comprensione, unite al forte senso di giustizia, lo spingono a prendere le difese dei più deboli. È alquanto concentrato sulla sua attività, è 
-		coraggioso e non indietreggia davanti ad alcun ostacolo. Ha bisogno di brevi intervalli di riposo per recuperare l'energia spesa nella sua 
-		frenetica attività professionale. Amante tenero, appassionato e fedele. È un buon amico sempre pronto a difendere i deboli. Con il partner è ancor
-		più possessivo e può avere qualche problema perché raramente si rende conto di essere eccessivo<br><br></p>
+		<h2>TOPO <span class="sRed">ASC</span> DRAGO</h2>
+		<p> È un <b>Topo</b> più espansivo, generoso e ottimista. Indubbi i suoi successi economici, ma non sono più così determinanti per il
+			raggiungimento della felicità. C'è la capacità di godere delle piccole cose e di saper donare agli altri in tutti i sensi. La vitalità del
+			<b>Drago</b> unita al bisogno di concretizzare del <b>Topo</b> portano a risultati soddisfacenti sia in campo lavorativo che
+			in ambito affettivo. Individuo solare, in cui non trovano posto né menzogna né intrigo. Generoso, sempre pronto a portare aiuto a chi lo chiede.
+			In cambio chiede adulazione e ammirazione. È un affascinante e brillante parlatore. Non ci si stanca ad ascoltarlo, anche perché è altrettanto 
+			difficile è possibile farlo smettere. Generoso e disponibile è pronto a soccorrere gli amici in difficoltà, che però devono propinargli le 
+			quotidiane adulazioni di cui è ghiotto! In amore l'<b><span class="sRed">ASC</span> Drago</b> lo spinge verso la libertà si attenua e ciò porta
+			il <b>Topo</b> ad essere molto rispettoso delle esigenze del partner e di tutti i familiari.
+		</p>
 
-	<h2>TOPO <span class="sRed">ASC</span> TIGRE</h2>
+		<h2>TOPO <span class="sRed">ASC</span> SERPENTE</h2>
+		<p> Molto acuto ed attento, è sempre in stato di allerta. Ha un intelligenza e una saggezza fuori dal comune. Riesce sempre a capire cosa sta
+			succedendo intorno a lui e ad agire con prontezza in modo da ottenere vantaggi per se stesso. Entrambe le componenti sono molto attente al lato
+			economico così come non tollerano le speculazioni. Astutissimo e spesso subdolo, il <b>Topo</b> può affascinare ottenendo quello che
+			vuole dagli altri. Sul lavoro è la persona più idonea per incarichi difficili ma deve avere la più ampia autonomia. Intelligenza acutissima e
+			fascino irresistibile sono le armi vincenti, è ponderato come un vecchio saggio. Dietro a una maschera di disponibilità, nasconde un animo
+			diffidente: è difficile ingannarlo.  Diffidente e attento seleziona accuratamente chi incontra. Non accetta di sprecare il suo prezioso tempo in
+			attività poco stimolanti. La vita affettiva è un rebus non ama confidarsi con gli amici preferisce tenere separata la sfera pubblica da quella
+			privata.
+		</p>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		Ottimo abbinamento: il <strong>Topo</strong> vede aumentare la propria irruenza e la propria aggressività. Questo lo rende meno critico e 
-		interessato rispetto a tutto. Ne guadagna in spontaneità e ciò l'aiuta soprattutto nei rapporti d'amicizia che diventano più fluidi e soddisfacenti.
-		Si rafforza l'interesse per tutto ciò che può rendere la vita più comoda ed agevole, e una certa apprensione per la propria situazione economica.
-		Pieno di energia, è esigente, intransigente, usa ogni mezzo per arrivare al successo. Al calcolo razionale s'aggiunge una carica di rapace 
-		aggressività. La <strong>Tigre</strong> porta a spendere senza attenzione o nei momenti meno opportuni. Possiede un fiuto eccezionale, che lo aiuta
-		a concludere, con ottimi risultati, anche affari rischiosi. Personalità carismatica destinata a rivestire cariche di comando. Attrazione per il 
-		lusso e le comodità. Sempre in movimento e ama il rischio e la speculazione che guidato dall'intelligenza permette di concludere affari che per 
-		gli altri sembrano impossibili. In amore se saprà rischiare di più, avrà molte più gratificazioni dal partner.<br><br></p>
+		<h2>TOPO <span class="sRed">ASC</span> CAVALLO</h2>
+		<p> L'<b><span class="sRed">ASC</span> Cavallo</b> dona al <b>Topo</b> una inconsueta attrazione verso l'ignoto. È ancor di più
+			irrequieto e curioso e può arrivare a correre dei rischi che, a lungo andare, possono essere causa di malesseri o, cosa ben peggiore per un
+			<b>Topo</b>, di situazioni critiche a livello economico. Incostante e bizzarro, avventuroso e capriccioso. Fortunatamente l'ottimismo del
+			<b>Cavallo</b> lo aiuta ad individuare le possibili soluzioni nei momenti di crisi. L'energia e la voglia di vivere in eccesso impediscono alla 
+			personalità di mantenere a lungo i rapporti. Certamente è simpatico, ma manca completamente di tatto e di diplomazia. Esplosivo scontro di 
+			energie! Deve trovare il modo di equilibrare la forza che possiede, così vivrà meglio lui e farai vivere più serenamente chi lo circonda. Il
+			partner inizialmente sarà stregato dal suo fascino, ma nel tempo non potrà reggere i suoi ritmi. La sua vita affettiva è vivace, si fa distrarre 
+			con facilità e questo non l'aiuta a stabilizzare i rapporti. Il partner dovrà essere molto determinato se vorrà costruire qualcosa di importante.
+		</p>
 
-	<h2>TOPO <span class="sRed">ASC</span> LEPRE/GATTO</h2>
+		<h2>TOPO <span class="sRed">ASC</span> CAPRA</h2>
+		<p> È un <b>Topo</b> piuttosto scontroso, e un po' ombroso può cedere ai ricatti sentimentali. Quando si apre riesce facilmente a conquistare gli
+			altri. È consapevole che la dimensione affettiva è il suo vero punto debole e mette una serie di barriere tra se stesso e gli altri. È abilissimo 
+			nei suoi progetti ancor di più nel conquistare i favori di collaboratori o superiori. La bontà della <b>Capra</b> frenerà alcuni atteggiamenti
+			disinvolti del <b>Topo</b>, ma l'amalgama di queste due caratteristiche sa conquistare la fiducia di tutti. Tuttavia ci sono barriere di pasta 
+			frolla che si sbriciolano di fronte ad un sorriso seducente, uno sguardo smarrito. L'entusiasmo del <b>Topo</b> si fiacca a contatto della natura
+			melanconica della <b>Capra</b>. Un'ambivalente convivenza di ottimismo e pessimismo. Alti e bassi emozionali costituiscono il delicato ordito della
+			fragile e delicata personalità. Vive in altalena e alterna momenti di frenetica e spericolata attività a periodi di mistica solitudine. Preferisce 
+			le pareti domestiche al duro e infido mondo esterno. Tanto è fragile nella dimensione affettiva quanto è granitico sul lavoro.
+		</p>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		La gentilezza della Lepre rende molto più morbido e suadente il <strong>Topo</strong>. La componente Lepre spinge a essere conciliante il 
-		<strong>Topo</strong> non permette mai che qualcuno strumentalizzi le sue attitudini per fini diversi dai suoi, sembra esitare di fronte alle scelte,
-		ma sta solamente valutando con molta accortezza tutti i pro e i contro. È un insieme vincente soprattutto sul lavoro, ancor più se ci sono affari 
-		importanti in corso. Maggiori timori, maggiori esitazioni, ma con cautela ed una furbizia moltiplicate per due. È un <strong>Topo</strong> tranquillo
-		e poco amante dei rischi. Raffinato ed elegante, riveste un ruolo primario nella vita sociale e brilla tra gli amici per il suo garbato modo di 
-		presentarsi, senza invadere gli spazi altrui. L'affiatamento con il partner è sicuro e sarà la base per un rapporto duraturo. Poco battagliero odia
-		il rischio e le discussioni. Il suo motto è: &quot;vivi e lascia vivere&quot;. Non disdegna la vita sociale ma alle scatenate notti brave preferisce
-		la comodità della sua adorata poltrona, della buona musica e TV. L'amore è vissuto con serenità.<br><br></p>
+		<h2>TOPO <span class="sRed">ASC</span> SCIMMIA</h2>
+		<p> L'umorismo è una caratteristica comune ai due segni. È un <b>Topo</b> molto diverso, più socievole, raffinato e di sicuro effetto in qualsiasi
+			ambiente. Sa indossare maschere diverse assecondando la situazione in cui viene a trovarsi, è un abilissimo manipolatore, ma è piacevole perché
+			non scade né nel ridicolo né nella grettezza. È il classico &quot;Pierino delle barzellette&quot;, l'amico che tutti si contendono. È un 
+			abilissimo Arlecchino, intraprendente, trafficone, che spesso comanda fingendo di servire. Brillante, dinamico e simpatico, miete consensi 
+			ovunque vada. La sua vivissima curiosità lo spinge ad interessarsi di mille cose, e, solitamente, riesce a condurle tutte a buon termine. Nel 
+			lavoro non avrà mai problemi soprattutto se ha la possibilità di utilizzare in modo professionale queste prerogative. Trova sempre il bandolo
+			della matassa con destrezza può svolgere diverse attività. Sagace e ironico punzecchia tutti con simpatica ironia ed è il primo a ridere di se
+			stesso. Meno facile la vita affettiva perché è poco sentimentale, è comunque geloso e vuole un partner brillante ed estroverso.
+		</p>
 
-	<h2>TOPO <span class="sRed">ASC</span> DRAGO</h2>
+		<h2>TOPO <span class="sRed">ASC</span> GALLO</h2>
+		<p> È una combinazione molto positiva per il <b>Topo</b> perché lo spinge ad uscire dagli schemi abituali. Non si chiude ma accetta di buon grado 
+			sia di confrontarsi con gli altri sia i riconoscimenti al proprio operato. L'unico vero neo sta nella propensione allo spendere 
+			dell'<b><span class="sRed">ASC </span> Gallo</b>, mentre il <b>Topo</b> vorrebbe tesaurizzare. L'intelligenza è notevole, ha il costante bisogno
+			di vedersi circondato da un pubblico plaudente ed allegro. Piuttosto nervoso, non riesce mai a stare fermo un attimo, non fosse altro che con 
+			la sua mobilissima lingua. Il suo sistema nervoso sempre al limite del corto circuito lo spinge a vivere in modo frenetico e sconsiderato. Il
+			terrore della solitudine lo costringe a cercare compagnia e adulazioni che compensino l'insicurezza che lo pervade. Nel campo affettivo rimane
+			molto forte il bisogno di soddisfare i desideri del partner, ma non sarà molto disponibile a cedere o a condividere la posizione di leadership
+			in casa.
+		</p>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È un <strong>Topo</strong> più espansivo, generoso e ottimista. Indubbi i suoi successi economici, ma non sono più così determinanti per il 
-		raggiungimento della felicità. C'è la capacità di godere delle piccole cose e di saper donare agli altri in tutti i sensi. La vitalità del 
-		<strong>Drago</strong> unita al bisogno di concretizzare del <strong>Topo</strong> portano a risultati soddisfacenti sia in campo lavorativo che
-		in ambito affettivo. Individuo solare, in cui non trovano posto né menzogna né intrigo. Generoso, sempre pronto a portare aiuto a chi lo chiede. 
-		In cambio chiede adulazione e ammirazione. È un affascinante e brillante parlatore. Non ci si stanca ad ascoltarlo, anche perché è altrettanto
-		difficile è possibile farlo smettere. Generoso e disponibile è pronto a soccorrere gli amici in difficoltà, che però devono propinargli le quotidiane
-		adulazioni di cui è ghiotto! In amore l'<strong><span class="sRed">ASC</span> Drago</strong> lo spinge verso la libertà si attenua e ciò porta il
-		<strong>Topo</strong> ad essere molto rispettoso delle esigenze del partner e di tutti i familiari.<br><br></p>
+		<h2>TOPO <span class="sRed">ASC</span> CANE</h2>
+		<p> La natura cristallina dell'<b><span class="sRed">ASC</span> Cane</b> pone non pochi freni alle mete lavorative del <b>Topo</b>. Sobrietà e 
+			rigore, meno proteso al conseguimento di risultati economici importanti perché si fa troppi scrupoli. È molto attratto dalle materie umanistiche
+			e dall'arte in genere sono consigliabili professioni collegate all'insegnamento. Pur essendo dotato di <i>savoir-faire</i> e umorismo 
+			difficilmente brilla in società. Il timore di non essere compreso lo porta a vivere ogni situazione con apparente freddezza e distacco emotivo.
+			Solo chi lo conosce bene sa quanto, invece sia calda e generosa la sua personalità. Pratico intelligente è apprezzato per l'immensa mole di
+			lavoro che sbriga. Sentimentale e affettuoso, mantiene un atteggiamento distaccato, per non coinvolgersi troppo e soffrire. In amore il 
+			<b>Topo</b> è restio a legarsi, la sua titubanza fa sì che le occasioni sfumino. Chi s'innamora di lui dovrà avere molta pazienza ed rispettare
+			i suoi tempi. Quando finalmente si lascia andare, il partner potrà dormire tra due guanciali perché avrà un compagno fedelissimo.
+		</p>
 
-	<h2>TOPO <span class="sRed">ASC</span> SERPENTE</h2>
+		<h2>TOPO <span class="sRed">ASC</span> CINGHIALE</h2>
+		<p> Un <b>Topo</b> indeciso, pieno di dubbi e di domande. L'intelligenza è vivace e rafforzata, ma non è proiettata verso interessi economici e
+			lavorativi. L'idealismo del <b>Cinghiale</b> smorza la concretezza del <b>Topo</b>, il suo bisogno di agevolare le persone diventa un fattore
+			predominante e tutto si muove con ritmi a misura di uomo. Questo <b>Topo</b> è interessato ai movimenti d'opinione e si muove sempre in prima
+			persona per raggiungere importanti traguardi. Bonarietà e curiosità intellettuale. Intelligente e saggio, può emergere in qualsiasi attività
+			lavorativa e raggiungere un'ottima posizione socio-economica, a patto che riesca a vincere la sua inguaribile pigrizia, che rischia di bloccarlo.
+			Ottimista, è sempre circondato da gente cui non esita ad aprire casa, cuore e portafoglio, ahimè con tale ingenuità che paga con cocenti 
+			delusioni. La vita affettiva è molto serena. Si lascia trascinare dal partner soprattutto se è romantico e capace di tanti piccoli gesti
+			affettuosi. Spesso rinuncia ad appuntamenti importanti per gli attacchi di pigrizia che lo colpiscono all'improvviso.
+		</p>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		Molto acuto ed attento, è sempre in stato di allerta. Ha un intelligenza e una saggezza fuori dal comune. Riesce sempre a capire cosa sta 
-		succedendo intorno a lui e ad agire con prontezza in modo da ottenere vantaggi per se stesso. Entrambe le componenti sono molto attente al lato
-		economico così come non tollerano le speculazioni. Astutissimo e spesso subdolo, il <strong>Topo</strong> può affascinare ottenendo quello che 
-		vuole dagli altri. Sul lavoro è la persona più idonea per incarichi difficili ma deve avere la più ampia autonomia. Intelligenza acutissima e 
-		fascino irresistibile sono le armi vincenti, è ponderato come un vecchio saggio. Dietro a una maschera di disponibilità, nasconde un animo
-		diffidente: è difficile ingannarlo.  Diffidente e attento seleziona accuratamente chi incontra. Non accetta di sprecare il suo prezioso tempo in 
-		attività poco stimolanti. La vita affettiva è un rebus non ama confidarsi con gli amici preferisce tenere separata la sfera pubblica da quella
-		privata.<br><br></p>
+		<p class="sCenter">
+			<img src="CIdivider.png" width="390" height="93" alt="">
+		</p>
+		<p class="sCenter">
+			<img src="email-box.gif"    width="35" height="35" alt="">
+			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
+			<img src="TelefonoC164.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
 
-	<h2>TOPO <span class="sRed">ASC</span> CAVALLO</h2>
-
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		L'<strong><span class="sRed">ASC</span> Cavallo</strong> dona al <strong>Topo</strong> una inconsueta attrazione verso l'ignoto. È ancor di più 
-		irrequieto e curioso e può arrivare a correre dei rischi che, a lungo andare, possono essere causa di malesseri o, cosa ben peggiore per un
-		<strong>Topo</strong>, di situazioni critiche a livello economico. Incostante e bizzarro, avventuroso e capriccioso. Fortunatamente l'ottimismo del
-		<strong>Cavallo</strong> lo aiuta ad individuare le possibili soluzioni nei momenti di crisi. L'energia e la voglia di vivere in eccesso 
-		impediscono alla personalità di mantenere a lungo i rapporti. Certamente è simpatico, ma manca completamente di tatto e di diplomazia. Esplosivo
-		scontro di energie! Deve trovare il modo di equilibrare la forza che possiede, così vivrà meglio lui e farai vivere più serenamente chi lo
-		circonda. Il partner inizialmente sarà stregato dal suo fascino, ma nel tempo non potrà reggere i suoi ritmi. La sua vita affettiva è vivace, 
-		si fa distrarre con facilità e questo non l'aiuta a stabilizzare i rapporti. Il partner dovrà essere molto determinato se vorrà costruire qualcosa
-		di importante.<br><br></p>
-
-	<h2>TOPO <span class="sRed">ASC</span> CAPRA</h2>
-
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È un <strong>Topo</strong> piuttosto scontroso, e un po' ombroso può cedere ai ricatti sentimentali. Quando si apre riesce facilmente a conquistare
-		gli altri. È consapevole che la dimensione affettiva è il suo vero punto debole e mette una serie di barriere tra se stesso e gli altri. È abilissimo
-		nei suoi progetti ancor di più nel conquistare i favori di collaboratori o superiori. La bontà della <strong>Capra</strong> frenerà alcuni 
-		atteggiamenti disinvolti del <strong>Topo</strong>, ma l'amalgama di queste due caratteristiche sa conquistare la fiducia di tutti. Tuttavia ci sono
-		barriere di pasta frolla che si sbriciolano di fronte ad un sorriso seducente, uno sguardo smarrito. L'entusiasmo del <strong>Topo</strong> si fiacca
-		a contatto della natura melanconica della <strong>Capra</strong>. Un'ambivalente convivenza di ottimismo e pessimismo. Alti e bassi emozionali 
-		costituiscono il delicato ordito della fragile e delicata personalità. Vive in altalena e alterna momenti di frenetica e spericolata attività a 
-		periodi di mistica solitudine. Preferisce le pareti domestiche al duro e infido mondo esterno. Tanto è fragile nella dimensione affettiva quanto è 
-		granitico sul lavoro.<br><br></p>
-
-	<h2>TOPO <span class="sRed">ASC</span> SCIMMIA</h2>
-
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		L'umorismo è una caratteristica comune ai due segni. È un <strong>Topo</strong> molto diverso, più socievole, raffinato e di sicuro effetto in
-		qualsiasi ambiente. Sa indossare maschere diverse assecondando la situazione in cui viene a trovarsi, è un abilissimo manipolatore, ma è piacevole
-		perché non scade né nel ridicolo né nella grettezza. È il classico &quot;Pierino delle barzellette&quot;, l'amico che tutti si contendono. È un
-		abilissimo Arlecchino, intraprendente, trafficone, che spesso comanda fingendo di servire. Brillante, dinamico e simpatico, miete consensi ovunque
-		vada. La sua vivissima curiosità lo spinge ad interessarsi di mille cose, e, solitamente, riesce a condurle tutte a buon termine. Nel lavoro non 
-		avrà mai problemi soprattutto se ha la possibilità di utilizzare in modo professionale queste prerogative. Trova sempre il bandolo della matassa 
-		con destrezza può svolgere diverse attività. Sagace e ironico punzecchia tutti con simpatica ironia ed è il primo a ridere di se stesso. Meno facile
-		la vita affettiva perché è poco sentimentale, è comunque geloso e vuole un partner brillante ed estroverso.<br><br></p>
-
-	<h2>TOPO <span class="sRed">ASC</span> GALLO</h2>
-
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È una combinazione molto positiva per il <strong>Topo</strong> perché lo spinge ad uscire dagli schemi abituali. Non si chiude ma accetta di buon
-		grado sia di confrontarsi con gli altri sia i riconoscimenti al proprio operato. L'unico vero neo sta nella propensione allo spendere 
-		dell'<strong><span class="sRed">ASC </span> Gallo</strong>, mentre il <strong>Topo</strong> vorrebbe tesaurizzare. L'intelligenza è notevole, 
-		ha il costante bisogno di vedersi circondato da un pubblico plaudente ed allegro. Piuttosto nervoso, non riesce mai a stare fermo un attimo, non
-		fosse altro che con la sua mobilissima lingua. Il suo sistema nervoso sempre al limite del corto circuito lo spinge a vivere in modo frenetico e
-		sconsiderato. Il terrore della solitudine lo costringe a cercare compagnia e adulazioni che compensino l'insicurezza che lo pervade. Nel campo 
-		affettivo<span style="mso-spacerun: yes">&nbsp;</span>rimane molto forte il bisogno di soddisfare i desideri del partner, ma non sarà molto 
-		disponibile a cedere o a condividere la posizione di leadership in casa.<br><br></p>
-
-	<h2>TOPO <span class="sRed">ASC</span> CANE</h2>
-
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		La natura cristallina dell'<strong><span class="sRed">ASC</span> Cane</strong> pone non pochi freni alle mete lavorative del <strong>Topo</strong>.
-		Sobrietà e rigore, meno proteso al conseguimento di risultati economici importanti perché si fa troppi scrupoli. È molto attratto dalle materie 
-		umanistiche e dall'arte in genere sono consigliabili professioni collegate all'insegnamento. Pur essendo dotato di savoir faire e umorismo
-		difficilmente brilla in società. Il timore di non essere compreso lo porta a vivere ogni situazione con apparente freddezza e distacco emotivo.
-		Solo chi lo conosce bene sa quanto, invece sia calda e generosa la sua personalità. Pratico intelligente è apprezzato per l'immensa mole di lavoro
-		che sbriga. Sentimentale e affettuoso, mantiene un atteggiamento distaccato, per non coinvolgersi troppo e soffrire. In amore il <strong>Topo</strong>
-		è restio a legarsi, la sua titubanza fa sì che le occasioni sfumino. Chi s'innamora di lui dovrà avere molta pazienza ed rispettare i suoi tempi.
-		Quando finalmente si lascia andare, il partner potrà dormire tra due guanciali perché avrà un compagno fedelissimo.br><br></p>
-
-	<h2>TOPO <span class="sRed">ASC</span> CINGHIALE</h2>
-
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		Un <strong>Topo</strong> indeciso, pieno di dubbi e di domande. L'intelligenza è vivace e rafforzata, ma non è proiettata verso interessi
-		economici e lavorativi. L'idealismo del <strong>Cinghiale</strong> smorza la concretezza del <strong>Topo</strong>, il suo bisogno di agevolare 
-		le persone diventa un fattore predominante e tutto si muove con ritmi a misura di uomo. Questo <strong>Topo</strong> è interessato ai movimenti
-		d'opinione e si muove sempre in prima persona per raggiungere importanti traguardi. Bonarietà e curiosità intellettuale. Intelligente e saggio, 
-		può emergere in qualsiasi attività lavorativa e raggiungere un'ottima posizione socio-economica, a patto che riesca a vincere la sua inguaribile
-		pigrizia, che rischia di bloccarlo. Ottimista, è sempre circondato da gente cui non esita ad aprire casa, cuore e portafoglio, ahimè con tale 
-		ingenuità che paga con cocenti delusioni. La vita affettiva è molto serena. Si lascia trascinare dal partner soprattutto se è romantico e capace 
-		di tanti piccoli gesti affettuosi. Spesso rinuncia ad appuntamenti importanti per gli attacchi di pigrizia che lo colpiscono all'improvviso.
-		<br><br></p>
-
-	<p class="sCenter">
-		<img src="CIdivider.png" width="390" height="93">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="CIdivider.png" width="390" height="93"><br>
-		<a href="ASC.2CineseBue.htm" class="sEgyptBlue">Clicca per l'ASCENDENTE del BUE/BUFALO</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<strong>Sei il visitatore n°&nbsp;</strong>
+			<b>Sei il visitatore n°&nbsp;</b>
 		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1393244699-xke74q" border="0"></a>
-		&nbsp;(Pagina Aggiornata 01/02/2019)<br><br></p>                                                
- 
+			&nbsp;(Contenuto Aggiornato <time datetime="2019-02-01">01/02/2019</time>)<br>
+		</p>
+
 </td></tr></table>
 </td></tr></table>
-</td></tr></table>
-</td></tr></table>
+<footer>
+	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
+	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
+</footer>
 </body>
 </html>
