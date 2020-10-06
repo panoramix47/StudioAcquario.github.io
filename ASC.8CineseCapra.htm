@@ -1,55 +1,135 @@
 <!DOCTYPE html>
-<HTML>
+<html lang="it" dir="ltr">
 <head>
-
-<title>Capra: gli Ascendenti</title>
-<link rel="icon" type="image/gif" href="https://www.studioacquario.it/favicon32.gif">
-<META name="description" content="Studio Acquario: Oroscopo Cinese - Capra: gli Ascendenti">
-<meta name="keywords" content="astrologia, oroscopo cinese, ascendente, capra">
+<meta charset="UTF-8">
+<title>Ascendenti della Capra - Oroscopo Cinese - Studio Acquario</title>
+<link rel="icon" type="image/gif" href="favicon32.gif">
+<meta name="description" content="Studio Acquario: Oroscopo Cinese: Ascendenti della Capra">
+<meta name="keywords" content="astrologia, studio, acquario, oroscopo cinese, ascendente, capra">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
 <meta name="language" content="it">
-<meta charset="UTF-8">
-<meta http-equiv="imagetoolbar" CONTENT="no">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="26/11/2015">
-<meta name="revised" content="26/06/2020">
+<meta name="revised" content="06/10/2020">
 
 <style type="text/css">
-BODY{
-	scrollbar-face-color:#cceaf0;
-	scrollbar-arrow-color:#2e5256;
-	scrollbar-track-color:#cceaf0;
-	scrollbar-shadow-color:#2e5256;
-	scrollbar-highlight-color:#2e5256;
-	scrollbar-3dlight-color:#2e5256;
-	scrollbar-darkshadow-color:#2e5256;
-	font-family: Verdana, sans-serif;
+body{
+	scrollbar-face-color: #CCEAF0; /* Onahau */
+	scrollbar-arrow-color: #2e5256; /* Dark Slate Grey */
+	scrollbar-track-color: #DEF1F5; /* Light Cyan */
+	scrollbar-shadow-color: #2e5256;
+	scrollbar-highlight-color: #2e5256;
+	scrollbar-3dlight-color: #2e5256;
+	scrollbar-darkshadow-color: #2e5256;
+
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	/* color: #7E726C; Sand Dune */
+	/* background-color: #FFFFFF; White */
+	background-image: url('CIbg2.jpg');
 }
-H1 {
-		font-size: x-large;
-		text-align: center;
-		font-weight: bold;
-		color: #1E3C8C;
+a:link {
+	color: #000000;
 }
-H2 {
-		font-size: large;
-		text-align: center;
-		font-weight: bold;
-		color: #1E3C8C;
+a:visited {
+	color: #000000;
 }
-p {
-		font-size: small;
-		color: #1E3C8C; <!-- Egyptian Blue -->
+a:hover {
+	color: #FF0000;
+}
+a:active {
+	color: #000000;
+}
+h1 {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #1E3C8C; /* Egyptian Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+h2 {
+	font-size: x-large;
+	font-weight: bold;
+	color: #1E3C8C; /* Egyptian Blue */
+	text-align: center;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-top: 25px;
+	margin-bottom: 0;
+}
+header {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	text-shadow: 1px 1px 5px #0000FF; /* Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
+}
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	/* text-shadow: 1px 1px 1px #0000FF; Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
 }
 img {
-		max-width: 100%;
-		height: auto;
+	max-width: 100%;
+	height: auto;
 }
-.sRed {
-				color: red;
+p {
+	font-size: small;
+	color: #1E3C8C; /* Egyptian Blue */
+	text-align: justify;
+	padding-left: 35px;
+	padding-right: 35px;
+	line-height: 125%;
+}
+.sNavigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 180%;
+}
+.sNavigation a {
+	font-size: medium;
+	font-weight: bold;
+	padding:.42em;
+	color: #FFFFFF; /* White */
+	margin-left: 2px;
+	background: #2e5256; /* Dark Slate Grey */
+	text-decoration: none;
+}
+.sNavigation a:hover {
+	color: #000000; /* Black */
+	background: #00BFFF; /* Deep Sky Blue */
+}
+#PagCorrente {
+	border-bottom: 2.5px solid aqua;
+}
+.sHomeIcon {
+	vertical-align: bottom;
+	margin-bottom: 1px;
+	height: 25px;
+	width: 25px;
 }
 .sEgyptBlue {
 				color: #1E3C8C;
+}
+.sRed {
+				color: #FF0000;
 }
 .sCenter {
 				text-align: center;
@@ -57,191 +137,219 @@ img {
 .sJustify {
 				text-align: justify;
 }
+.sBold {
+				font-weight: bold;
+}
 </style>
 </head>
 
-<body background="CIbg2.jpg">
+<body>
+<header>Studio di Astrologia &quot;Acquario&quot;</header>
 
-<table cellpadding="20" cellspacing="0" bordercolor="#82c9db" background="CIbg1.jpg" width="100%" border="2"> 
-<tr><td>
+<table background="CIbg1.jpg" cellpadding="13" cellspacing="13" border="0" bordercolor="#82C9DB" width="95%" align="center">
+<tr><td background="CIbg2.jpg">
 
-<table cellpadding="20" cellspacing="0" bordercolor="#82c9db" background="CIbg2.jpg" width="100%" border="4">
-<tr><td>
+<table background="CIbg1.jpg" cellpadding="13" cellspacing="13" border="0" bordercolor="#82C9DB" width="100%">
+<tr><td background="CIbg3.jpg">
 
-<table cellpadding="20" cellspacing="0" bordercolor="#82c9db" background="CIbg1.jpg" width="100%" border="4">  
-<tr><td>
+		<h1>OROSCOPO CINESE:<br>
+			<span class="sRed">ASCENDENTI</span> DELLA CAPRA</h1>
 
-<table cellpadding="10" cellspacing="0" bordercolor="#82c9db" background="CIbg3.jpg" width="100%" border="4">  
-<tr><td>
+		<p class="sCenter">
+			<br>
+			<img src="AA8Capra.jpg" width="167" height="168" alt="Segno Cinese Capra">
+		</p>
 
-	<br>
-	<H1><span style="font-size: larger;">OROSCOPO CINESE</span></h1>
+		<nav class="sLarge sCenter">
+			<br>
+			<ul class="sNavigation">
+				<li><a href="ASC.1CineseTopo.htm">Topo</a></li>
+				<li><a href="ASC.2CineseBue.htm">Bue</a></li>
+				<li><a href="ASC.3CineseTigre.htm">Tigre</a></li>
+				<li><a href="ASC.4CineseLepre.htm">Lepre</a></li>
+				<li><a href="ASC.5CineseDrago.htm">Drago</a></li>
+				<li><a href="ASC.6CineseSerpente.htm">Serpente</a></li>
+				<li><a href="ASC.7CineseCavallo.htm">Cavallo</a></li>
+				<li><a href="ASC.8CineseCapra.htm" id="PagCorrente">Capra</a></li>
+				<li><a href="ASC.9CineseScimmia.htm">Scimmia</a></li>
+				<li><a href="ASC.10CineseGallo.htm">Gallo</a></li>
+				<li><a href="ASC.11CineseCane.htm">Cane</a></li>
+				<li><a href="ASC.12CineseCinghiale.htm">Cinghiale</a></li>
+				<li><a href="ZodiaCine.htm">Zodiaco Cinese</a></li>
+				<li><a href="index.html"><img src="favicon32.gif" class="sHomeIcon"></a></li>
+			</ul>
+		</nav>
 
-	<p class="sCenter"><br>
-		<img src="CIdivider.png"  width="390" height="93" >&nbsp;&nbsp;&nbsp;
-		<img src="AA8Capra.jpg"   width="167" height="168">&nbsp;&nbsp;&nbsp;
-		<img src="CIdivider.png"  width="390" height="93" ><br><br></p>
-		
-	<H1><span class="sRed">ASCENDENTI</span> DELLA CAPRA</h1>
+		<p class="sCenter">
+			<br>
+			<img src="CIdivider.png" width="390" height="93" alt="">
+		</p>
 
-	<h2>CAPRA <span class="sRed">ASC</span> TOPO</h2>
+		<h2>CAPRA <span class="sRed">ASC</span> TOPO</h2>
+		<p>
+			È una <b>Capra</b> che sa affrontare la realtà senza molti patemi d'animo, è meno emotiva e molto più concreta grazie alla componente
+			<b>Topo</b>. Questo insieme la agevola soprattutto in ambito lavorativo, dove non solo è capace di difendere le proprie posizioni, riesce anche
+			ad avere un ruolo importante in fase di progettazione e di elaborazione dei progetti. La <b>Capra</b> sa conquistare la fiducia degli altri
+			grazie al suo intuito che le fa capire quali sono i suoi desideri inespressi. Abile nello scoprire da dove si possono attingere nuove risorse
+			economiche dove non avrà mai seri problemi. Grazie all'appoggio dell'<b><span class="sRed">ASC</span> Topo</b> è meno vulnerabile e più
+			ambiziosa. È ottimista e grintosa, riesce a superare gli ostacoli che si frappongono alla conquista del successo. È portato a cambiamenti d'umore
+			repentini e ingiustificati. Irrequieto e capriccioso, non è mai soddisfatto, e non sopporta di stare solo, cerca sempre amici vecchi o nuovi che
+			lo ascoltino. Portato per il lavoro libero. La sua fragilità può essere strumentalizzata da un partner ambizioso.
+		</p>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È una <strong>Capra</strong> che sa affrontare la realtà senza molti patemi d'animo, è meno emotiva e molto più concreta grazie alla componente
-		<strong>Topo</strong>. Questo insieme la agevola soprattutto in ambito lavorativo, dove non solo è capace di difendere le proprie posizioni, riesce
-		anche ad avere un ruolo importante in fase di progettazione e di elaborazione dei progetti. La <strong>Capra</strong> sa conquistare la fiducia degli
-		altri grazie al suo intuito che le fa capire quali sono i suoi desideri inespressi. Abile nello scoprire da dove si possono attingere nuove risorse 
-		economiche dove non avrà mai seri problemi. Grazie all'appoggio dell'<strong><span class="sRed">ASC</span> Topo</strong> è meno vulnerabile e più 
-		ambiziosa. È ottimista e grintosa, riesce a superare gli ostacoli che si frappongono alla conquista del successo. È portato a cambiamenti d'umore 
-		repentini e ingiustificati. Irrequieto e capriccioso, non è mai soddisfatto, e non sopporta di stare solo, cerca sempre amici vecchi o nuovi che lo 
-		ascoltino. Portato per il lavoro libero. La sua fragilità può essere strumentalizzata da un partner ambizioso.<br><br></p>
+		<h2>CAPRA <span class="sRed">ASC</span> BUE/BUFALO</h2>
+		<p>
+			È un ottimo abbinamento: la componente <b>Bue</b>, rende questa <b>Capra</b> meno lamentosa e molto più sicura di se stessa. Aumentano il riserbo
+			e l'introversione. Sa ascoltare gli altri, ma non si fa condizionare nelle sue scelte o, almeno non cambia i propri piani se i risultati non sono
+			garantiti. In alcuni momenti può assumere atteggiamenti autoritari che lasciano sconcertate le persone con cui collabora, è però l'unico modo che
+			conosce per difendersi. Si accentua il suo bisogno di sicurezza economica e tenta di tutto per procurartela. Introverso e sensibile è quasi
+			impossibile avere un colloquio sereno con lui. La fantasia non le manca, ma riesce ad imbrigliarla, a trasformarla in utili suggerimenti per
+			vivere più tranquillo. È molto attento ai bisogni della famiglia alla quale non farà mai mancare nulla. Il suo bisogno di avere una casa comoda,
+			una stabile posizione economica e una solida vita affettiva, spingono la <b>Capra</b> all'azione.
+		</p>
 
-	<h2>CAPRA <span class="sRed">ASC</span> BUE/BUFALO</h2>
+		<h2>CAPRA <span class="sRed">ASC</span> TIGRE</h2>
+		<p>
+			È una <b>Capra</b> che riesce a dare ampio spazio alla propria vena creativa. Come ogni artista che si rispetti, è piuttosto incostante: non solo
+			cambia facilmente direzione, ma arrivare a rinnegare tutto ciò che ha fatto fino al giorno prima, per buttarsi a capofitto in un progetto solo
+			abbozzato. È la più dinamica dei propri simili, molto portata verso la libera professione, dove emerge grazie alla propria geniale inventiva.
+			Ha bisogno di avere al suo fianco persone molto ferme perché solo così non si perderanno le sue brillanti idee. Questa <b>Capra</b> acquista la
+			temerarietà della <b>Tigre</b> e sa come coinvolgere nei suoi intricati percorsi chi sta vicino. Energica e volitiva, riesce a coinvolgere tutti.
+			Stimolato in modo giusto può raggiungere eccelse vette di successo, soprattutto nella libera professione. Istintivamente è portato per tutto ciò
+			che è arte, se supera lo sconforto per le prime sconfitte, potrà avere grosse soddisfazioni. La vita affettiva è in perenne evoluzione, con
+			questa <b>Capra</b> è difficile fare dei progetti a lunga scadenza.
+		</p>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È un ottimo abbinamento: la componente <strong>Bue</strong>, rende questa <strong>Capra</strong> meno lamentosa e molto più sicura di se stessa.
-		Aumentano il riserbo e l'introversione. Sa ascoltare gli altri, ma non si fa condizionare nelle sue scelte o, almeno non cambia i propri piani se i
-		risultati non sono garantiti. In alcuni momenti può assumere atteggiamenti autoritari che lasciano sconcertate le persone con cui collabora, è però 
-		l'unico modo che conosce per difendersi. Si accentua il suo bisogno di sicurezza economica e tenta di tutto per procurartela. Introverso e sensibile
-		è quasi impossibile avere un colloquio sereno con lui. La fantasia non le manca, ma riesce ad imbrigliarla, a trasformarla in utili suggerimenti per
-		vivere più tranquillo. È molto attento ai bisogni della famiglia alla quale non farà mai mancare nulla. Il suo bisogno di avere una casa comoda, una
-		stabile posizione economica e una solida vita affettiva, spingono la <strong>Capra</strong> all'azione.<br><br></p>
+		<h2>CAPRA <span class="sRed">ASC</span> LEPRE</h2>
+		<p>
+			È una <b>Capra</b> sempre in posizione difensiva, perché non riesce a capire cosa realmente gli altri si aspettino da lei. È molto abile nel
+			disimpegnarsi, non si pensi tuttavia che non accetti gli impegni. Sul lavoro ha bisogno di sapere tutto solo così collaborerà senza riserve.
+			I dubbi che manifesterà saranno un ottimo banco di prova per tutti e sarà proprio grazie a questa <b>Capra</b> che non ci saranno sorprese.
+			Ha il timore che qualcuno la coinvolga in operazioni discutibili e che questo comporti la perdita di quel benessere tanto caro dato
+			dall'<b><span class="sRed">ASC</span> Lepre</b>. Ottimo amico, discreto e riservato, a cui è possibile confidare tutto e chiedere ogni aiuto.
+			Non riesce proprio a dire no, ma attenzione a non tradire la sua fiducia, o diventa uno spietato nemico che non conosce pietà. Molto riservato
+			per tutto quello che riguarda la sua vita affettiva e tende a proteggere la sua famiglia da qualsiasi intromissione esterna. È dotato di un fiuto
+			invidiabile e sa concludere eccellenti affari. Amico fidato e discreto cui ricorrere quando i problemi sembrano impossibili da risolvere.
+			Ama ricevere in casa e i suoi ospiti saranno stuzzicati piacevolmente dai pranzetti che cucina e dalla calda simpatia.
+		</p>
 
-	<h2>CAPRA <span class="sRed">ASC</span> TIGRE</h2>
+		<h2>CAPRA <span class="sRed">ASC</span> DRAGO</h2>
+		<p>
+			Questa <b>Capra</b> acquista una grande forza dalla presenza dei valori del <b>Drago</b>. È capace di prendere decisioni anche in situazioni
+			critiche, ha il coraggio di difendere le proprie scelte e riesce, grazie alla sensibilità, a coordinare dei lavori impegnativi. È una
+			<b>Capra</b> che dà molta importanza ai riconoscimenti esterni, guai a non dimostrale l'apprezzamento per il lavoro che sta svolgendo o per un
+			risultato raggiunto. Non si fa dei problemi nel stroncare su due piedi chi non ammette che lei è una vincente. Ha maggiore coraggio, maggiore
+			forza di decisione, ma rimangono forti la vanità ed il bisogno di sentirsi apprezzato. È il personaggio meglio dotato per la carriera
+			diplomatica. Con l'intelligenza e la sua dolcezza riesce a trovare la strada migliore per accontentare tutti e conquistare un posto di rilievo
+			in seno alla società. È naturalmente portato per la carriera diplomatica o delle pubbliche relazioni. È il migliore a dirimere discussioni tra
+			colleghi o amici. Sa prendere l'abito imparziale dell'arbitro giudicando con salomonica saggezza. La tenerezza che non trova posto sul lavoro
+			è invece molto presente nella sua vita affettiva. È una <b>Capra</b> diversa, premurosa, sensibile ed avvolgente.
+		</p>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È una <strong>Capra</strong> che riesce a dare ampio spazio alla propria vena creativa. Come ogni artista che si rispetti, è piuttosto incostante: non
-		solo cambia facilmente direzione, ma arrivare a rinnegare tutto ciò che ha fatto fino al giorno prima, per buttarsi a capofitto in un progetto solo 
-		abbozzato. È la più dinamica dei propri simili, molto portata verso la libera professione, dove emerge grazie alla propria geniale inventiva. Ha 
-		bisogno di avere al suo fianco persone molto ferme perché solo così non si perderanno le sue brillanti idee. Questa <strong>Capra</strong> acquista 
-		la temerarietà della <strong>Tigre</strong> e sa come coinvolgere nei suoi intricati percorsi chi sta vicino. Energica e volitiva, riesce a
-		coinvolgere tutti. Stimolato in modo giusto può raggiungere eccelse vette di successo, soprattutto nella libera professione. Istintivamente è portato
-		per tutto ciò che è arte, se supera lo sconforto per le prime sconfitte, potrà avere grosse soddisfazioni. La vita affettiva è in perenne evoluzione,
-		con questa <strong>Capra</strong> è difficile fare dei progetti a lunga scadenza.<br><br></p>
+		<h2>CAPRA <span class="sRed">ASC</span> SERPENTE</h2>
+		<p>
+			È una <b>Capra</b> che riesce ad unire la sua naturale sensibilità all'intelligenza limpida del <b>Serpente</b>. Questa <b>Capra</b> non si
+			fa scoraggiare dalle situazioni difficili, convinta com'è che a tutto c'è rimedio È la persona ideale a cui sottoporre dei problemi complessi
+			o lavori che si sono arenati. Non c'impiegherà molto a capire cosa è fattibile e cosa è opportuno abbandonare, e il tempo le dà ragione. È
+			consapevole di queste sue doti e ciò la rende molto sicura di sé. Taciturna e introversa, osserva il mondo in modo disincantato e si aspetta
+			sempre il peggio da tutto e tutti. Appare fredda e dura ma è una finzione a difesa della propria sensibilità ed emotività. Questa <b>Capra</b>
+			suscita infatti molto spesso sentimenti di invidia, ma non si fa coinvolgere in risse inutili. Terribilmente pessimista ed estremamente cruda
+			nell'esaminare la realtà, non si lascia trascinare da sogni o fantasie. Nasconde i suoi sentimenti talmente gelosamente, che in sintesi nessuno
+			riesce a vedere di là dalla sua maschera di freddezza, e questo la difende da ogni possibile attacco.
+		</p>
 
-	<h2>CAPRA <span class="sRed">ASC</span> LEPRE</h2>
+		<h2>CAPRA <span class="sRed">ASC</span> CAVALLO</h2>
+		<p>
+			È una <b>Capra</b> che riesce a vivere nel modo più completo la sua dimensione fantastica grazie alle qualità del <b>Cavallo</b>. È in costante
+			movimento, diretta verso nuovi orizzonti e lo fa senza timore alcuno. Non sa neppure cosa sta cercando ed è inutile tentare di dare un senso
+			alle sue azioni. Vive con parametri al di fuori di qualsiasi norma. Qualcuno può pensare che soffra per questa inquietudine, invece lei è
+			felicissima di inseguire le sue chimere. Vivace e dinamico, si muove con una buona dose di sicurezza, ma non tollera ordini per cui è molto
+			meglio che si dedichi ad una attività in proprio. Ha anche una discreta fortuna, tant'è che riesce sempre a provvedere con economia a se stessa
+			e alla propria famiglia, sempre che decida di accettare un rapporto stabilizzato. Attento a non cedere al vizio del gioco o rischierà molte
+			perdite. Del resto ha le carte in regola per avere successo tanto nel lavoro quanto in amore. Il partner infatti è obbligato ad assecondarlo,
+			se non vuole rimanere in perenne attesa di qualcuno che non potrebbe ritrovare la strada di casa.
+		</p>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È una <strong>Capra</strong> sempre in posizione difensiva, perché non riesce a capire cosa realmente gli altri si aspettino da lei. È  molto abile
-		nel disimpegnarsi, non si pensi tuttavia che non accetti gli impegni. Sul lavoro ha bisogno di sapere tutto solo così collaborerà senza riserve.
-		I dubbi che manifesterà saranno un ottimo banco di prova per tutti e sarà proprio grazie a questa <strong>Capra</strong> che non ci saranno sorprese.
-		Ha il timore che qualcuno la coinvolga in operazioni discutibili e che questo comporti la perdita di quel benessere tanto caro dato dall'
-		<strong><span class="sRed">ASC</span> Lepre</strong>. Ottimo amico, discreto e riservato, a cui è possibile confidare tutto e chiedere ogni aiuto. 
-		Non riesce proprio a dire no, ma attenzione a non tradire la sua fiducia, o diventa uno spietato nemico che non conosce pietà. Molto riservato per 
-		tutto quello che riguarda la sua vita affettiva e tende a proteggere la sua famiglia da qualsiasi intromissione esterna. È dotato di un fiuto 
-		invidiabile e sa concludere eccellenti affari. Amico fidato e discreto cui ricorrere quando i problemi sembrano impossibili da risolvere.
-		Ama ricevere in casa e i suoi ospiti saranno stuzzicati piacevolmente dai pranzetti che cucina e dalla calda simpatia.<br><br></p>
+		<h2>CAPRA <span class="sRed">ASC</span> CAPRA</h2>
+		<p>
+			Assolutamente incapace di vedere la vita con occhiali rosa. È una <b>Capra</b> che vive al di fuori del mondo reale, immersa nelle sue molte
+			fantasie, nascosta nel caldo e protettivo nido. È emotivo e molto più vulnerabile, le lacrime spuntano con una facilità incredibile. Possiede
+			una buona sensibilità, non ha molta fiducia nel prossimo, anche se questa <b>Capra</b> farà in modo di essere presente là dove c'è qualcuno che
+			ha bisogno di aiuto. È una persona ottimista, che preferisce pensare ad una evoluzione positiva delle situazioni difficili. Ha necessità di
+			avere al fianco qualcuno di molto pratico perché si dimentica con troppa facilità dei suoi impegni quotidiani. Rischia d'annegare nel classico
+			bicchiere d'acqua. Deve imparare ad usare le proprie notevoli capacità intellettive per affrontare gli ostacoli e sarà successo! Davanti alle
+			difficoltà si sente perso del tutto incapace di reagire. Il suo partner deve assolutamente sostenerlo in ogni situazione e spingerlo a muoversi
+			aiutandolo a uscire dall'apatia mortale in cui spesso cade. Ha bisogno d'amore e tenerezze che ricambia ampiamente. È sensuale e fantasioso.
+		</p>
 
-	<h2>CAPRA <span class="sRed">ASC</span> DRAGO</h2>
+		<h2>CAPRA <span class="sRed">ASC</span> SCIMMIA</h2>
+		<p>
+			In questa <b>Capra</b> c'è un forte desiderio di prendere delle iniziative, meglio se fuori del comune. L'<b><span class="sRed">ASC</span>
+			Scimmia</b> rende la <b>Capra</b> più abile, sveglia, svelta e sicura delle proprie capacità, e l'aiuta a vivere con maggior distacco le
+			emozioni che la vita offre. È un'ottima compagna di lavoro, sia perché sa trasmettere agli altri il suo ottimismo sia perché non è invadente.
+			Non le piace essere tiranneggiata, ma non farà mai nulla di sconveniente o di discutibile agli altri. La sua furbizia, dote di spicco della
+			<b>Scimmia</b>, è al servizio del bisogno di amorose spalle della <b>Capra</b>. Molto facilmente trova qualcuno disposto a togliere per lui le
+			castagne dal fuoco. Ha un'intelligenza davvero notevole che però spesso non sa utilizzare al meglio per pigrizia o faciloneria. Dotato di scarsa
+			volontà ad agire, deve essere spinto perché finalmente si decida a mettere a frutto i doni del destino. Nella vita affettiva questo modo di
+			essere è ancor più visibile, è molto premuroso con il partner e non prende alcuna iniziativa senza prima essersi consultato. È dotato di molto
+			fascino e le può capitare di subire corteggiamenti non desiderati.
+		</p>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		Questa <strong>Capra</strong> acquista una grande forza dalla presenza dei valori del <strong>Drago</strong>. È capace di prendere decisioni anche in
-		situazioni critiche, ha il coraggio di difendere le proprie scelte e riesce, grazie alla sensibilità, a coordinare dei lavori impegnativi. È una
-		<strong>Capra</strong> che dà molta importanza ai riconoscimenti esterni, guai a non dimostrale l'apprezzamento per il lavoro che sta svolgendo o per 
-		un risultato raggiunto. Non si fa dei problemi nel stroncare su due piedi chi non ammette che lei è una vincente. Ha maggiore coraggio, maggiore 
-		forza di decisione, ma rimangono forti la vanità ed il bisogno di sentirsi apprezzato. È il personaggio meglio dotato per la carriera diplomatica.
-		Con l'intelligenza e la sua dolcezza riesce a trovare la strada migliore per accontentare tutti e conquistare un posto di rilievo in seno alla
-		società. È naturalmente portato per la carriera diplomatica o delle pubbliche relazioni. È il migliore a dirimere discussioni tra colleghi o amici.
-		Sa prendere l'abito imparziale dell'arbitro giudicando con salomonica saggezza. La tenerezza che non trova posto sul lavoro è invece molto presente
-		nella sua vita affettiva. È una <strong>Capra</strong> diversa, premurosa, sensibile ed avvolgente.<br><br></p>
+		<h2>CAPRA <span class="sRed">ASC</span> GALLO</h2>
+		<p>
+			È una <b>Capra</b> vivace, piena di idee e dotata di una grande comunicativa. Ama la vita sociale ed è sempre contornata da amici che sanno
+			apprezzare la sua verve. L'intelligenza in genere è accresciuta, ma spesso le sue idee peccano per eccesso di grandezza. Si entusiasma
+			facilmente, ma non ha la prontezza di verificare se ciò che sta intraprendendo è fattibile o meno. Sul lavoro può avere qualche problema proprio
+			perché è fin troppo vivace. Ci tiene molto alla propria immagine e non gradisce essere ripresa nemmeno quando l'errore che ha commesso è
+			evidente. Ha semplicemente bisogno di qualche freno perché le sue proposte sono in ogni caso sempre interessanti. È terrorizzato dalla solitudine
+			e quando le circostanze lo portano a stare solo, cade in depressione! La spavalda vanità del <b>Gallo</b> aiuta questa <b>Capra</b> ad osare
+			tutto. È meno introversa e sensibile, vive circondata da amici allegri e spiritosi con cui trascorre in allegria la vita. Il partner non ha
+			vita facile, deve essere un paziente ascoltatore e farle capire il proprio dissenso usando molto tatto.
+		</p>
 
-	<h2>CAPRA <span class="sRed">ASC</span> SERPENTE</h2>
+		<h2>CAPRA <span class="sRed">ASC</span> CANE</h2>
+		<p>
+			È molto più agganciata alla realtà e perde parte del suo innato ottimismo per la presenza dell'<b><span class="sRed">ASC</span> Cane</b>. Sa
+			che ogni cosa bisogna conquistarsela e non crede nei colpi di fortuna. È così pessimista e diffidente da non saper cogliere la nota giusta per
+			portare il cambiamento necessario nella propria esistenza. Lavoratore infaticabile e sa assumersi delle grosse responsabilità, non ama i paragoni
+			e, quando è presente, non ammette che una programmazione si basi più sulla demolizione delle idee degli altri che su una valutazione dei
+			contenuti. È molto razionale è questo le consente di non perdere mai di vista gli obiettivi. È portato a crearsi dei problemi anche quando non
+			ce ne sono, Vive in costante stato ansioso, incolpando tutti tranne se stesso della sfortuna nera che lo perseguita, ha davvero una visione
+			distorta della vita. Se smettesse di piangere e agisse vedrebbe anche il rosa! In amore è timida, ma la paura della solitudine è un ottimo
+			deterrente per farle superare qualsiasi perplessità.
+		</p>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È una <strong>Capra</strong> che riesce ad unire la sua naturale sensibilità all'intelligenza limpida del <strong>Serpente</strong>. Questa <strong>
-		Capra</strong> non si fa scoraggiare dalle situazioni difficili, convinta com'è che a tutto c'è rimedio È la persona ideale a cui sottoporre dei
-		problemi complessi o lavori che si sono arenati. Non c'impiegherà molto a capire cosa è fattibile e cosa è opportuno abbandonare, e il tempo le dà 
-		ragione. È consapevole di queste sue doti e ciò la rende molto sicura di sé. Taciturna e introversa, osserva il mondo in modo disincantato e si 
-		aspetta sempre il peggio da tutto e tutti. Appare fredda e dura ma è una finzione a difesa della propria sensibilità ed emotività. Questa <strong>
-		Capra</strong> suscita infatti molto spesso sentimenti di invidia, ma non si fa coinvolgere in risse inutili. Terribilmente pessimista ed
-		estremamente cruda nell'esaminare la realtà, non si lascia trascinare da sogni o fantasie. Nasconde i suoi sentimenti talmente gelosamente, che in 
-		sintesi nessuno riesce a vedere di là dalla sua maschera di freddezza, e questo la difende da ogni possibile attacco.<br><br></p>
+		<h2>CAPRA <span class="sRed">ASC</span> CINGHIALE</h2>
+		<p>
+			È una <b>Capra</b> più solida, capace di affrontare gli alti e bassi della vita quotidiana. È in assoluto il più equilibrato tra i propri simili.
+			Natura dolce e sensibile molto attratta dal creativo mondo dell'arte, spesso arriva a toccare eccelse mete e a rivestire un ruolo di primissimo
+			piano. L'<b><span class="sRed">ASC</span> Cinghiale</b> l'aiuta a vedere con una punta di distacco i normali disagi e a non soccombere alle
+			prime avvisaglie di un pericolo. Ha bisogno di solidi rapporti di amicizia e con il tempo riesce a costruirli. Mostra molta diffidenza sia nei
+			rapporti di lavoro che nella vita di relazione, ma è pronta a ricredersi e ad aprirsi non solo dando il suo aiuto, ma anche accettando tutte
+			quelle persone che sono profondamente diverse da lei. È più allegro e ottimista di altre <b>Capre</b> e dopo una delusione, si rialza senza
+			drammatizzare. Senza ricorrere a strani armeggi o strategie particolari sa per istinto cosa fare e come agire per farsi voler bene. Anche se
+			la sua vita affettiva potrà subire svariati scossoni, alla fine riuscirà a trovare un partner che la capisca realmente.
+		</p>
 
-	<h2>CAPRA <span class="sRed">ASC</span> CAVALLO</h2>
+		<p class="sCenter">
+			<img src="CIdivider.png" width="390" height="93" alt="">
+		</p>
+		<p class="sCenter">
+			<img src="email-box.gif"    width="35" height="35" alt="">
+			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
+			<img src="TelefonoC164.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
 
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È una <strong>Capra</strong> che riesce a vivere nel modo più completo la sua dimensione fantastica grazie alle qualità del <strong>Cavallo</strong>.
-		È in costante movimento, diretta verso nuovi orizzonti e lo fa senza timore alcuno. Non sa neppure cosa sta cercando ed è inutile tentare di dare un 
-		senso alle sue azioni. Vive con parametri al di fuori di qualsiasi norma. Qualcuno può pensare che soffra per questa inquietudine, invece lei è 
-		felicissima di inseguire le sue chimere. Vivace e dinamico, si muove con una buona dose di sicurezza, ma non tollera ordini per cui è molto meglio 
-		che si dedichi ad una attività in proprio. Ha anche una discreta fortuna, tant'è che riesce sempre a provvedere con economia a se stessa e alla 
-		propria famiglia, sempre che decida di accettare un rapporto stabilizzato. Attento a non cedere al vizio del gioco o rischierà molte perdite. Del 
-		resto ha le carte in regola per avere successo tanto nel lavoro quanto in amore. Il partner infatti è obbligato ad assecondarlo, se non vuole 
-		rimanere in perenne attesa di qualcuno che non potrebbe ritrovare la strada di casa.<br><br></p>
-
-	<h2>CAPRA <span class="sRed">ASC</span> CAPRA</h2>
-
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		Assolutamente incapace di vedere la vita con occhiali rosa. È una <strong>Capra</strong> che vive al di fuori del mondo reale, immersa nelle sue molte 
-		fantasie, nascosta nel caldo e protettivo nido. È emotivo e molto più vulnerabile, le lacrime spuntano con una facilità incredibile. Possiede una 
-		buona sensibilità, non ha molta fiducia nel prossimo, anche se questa <strong>Capra</strong> farà in modo di essere presente là dove c'è qualcuno che
-		ha bisogno di aiuto. È una persona ottimista, che preferisce pensare ad una evoluzione positiva delle situazioni difficili. Ha necessità di avere al
-		fianco qualcuno di molto pratico perché si dimentica con troppa facilità dei suoi impegni quotidiani. Rischia d'annegare nel classico bicchiere 
-		d'acqua. Deve imparare ad usare le proprie notevoli capacità intellettive per affrontare gli ostacoli e sarà successo! Davanti alle difficoltà si 
-		sente perso del tutto incapace di reagire. Il suo partner deve assolutamente sostenerlo in ogni situazione e spingerlo a muoversi aiutandolo a uscire
-		dall'apatia mortale in cui spesso cade. Ha bisogno d'amore e tenerezze che ricambia ampiamente. È sensuale e fantasioso.<br><br></p>
-
-	<h2>CAPRA <span class="sRed">ASC</span> SCIMMIA</h2>
-
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		In questa <strong>Capra</strong> c'è un forte desiderio di prendere delle iniziative, meglio se fuori del comune. L'<strong><span class="sRed">ASC
-		</span> Scimmia</strong> rende la <strong>Capra</strong> più abile, sveglia, svelta e sicura delle proprie capacità, e l'aiuta a vivere con maggior 
-		distacco le emozioni che la vita offre. È un'ottima compagna di lavoro, sia perché sa trasmettere agli altri il suo ottimismo sia perché non è 
-		invadente. Non le piace essere tiranneggiata, ma non farà mai nulla di sconveniente o di discutibile agli altri. La sua furbizia, dote di spicco
-		della <strong>Scimmia</strong>, è al servizio del bisogno di amorose spalle della <strong>Capra</strong>. Molto facilmente trova qualcuno 
-		disposto a togliere per lui le castagne dal fuoco. Ha un'intelligenza davvero notevole che però spesso non sa utilizzare al meglio per pigrizia o 
-		faciloneria. Dotato di scarsa volontà ad agire, deve essere spinto perche finalmente si decida a mettere a frutto i doni del destino. Nella vita 
-		affettiva questo modo di essere è ancor più visibile, è molto premuroso con il partner e non prende alcuna iniziativa senza prima essersi consultato.
-		È dotato di molto fascino e le può capitare di subire corteggiamenti non desiderati.<br><br></p>
-
-	<h2>CAPRA <span class="sRed">ASC</span> GALLO</h2>
-
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È una <strong>Capra</strong> vivace, piena di idee e dotata di una grande comunicativa. Ama la vita sociale ed è sempre contornata da amici che sanno
-		apprezzare la sua verve. L'intelligenza in genere è accresciuta, ma spesso le sue idee peccano per eccesso di grandezza. Si entusiasma facilmente, ma
-		non ha la prontezza di verificare se ciò che sta intraprendendo è fattibile o meno. Sul lavoro può avere qualche problema proprio perché è fin troppo 
-		vivace. Ci tiene molto alla propria immagine e non gradisce essere ripresa nemmeno quando l'errore che ha commesso è evidente. Ha semplicemente
-		bisogno di qualche freno perché le sue proposte sono in ogni caso sempre interessanti. È terrorizzato dalla solitudine e quando le circostanze lo
-		portano a stare solo, cade in depressione! La spavalda vanità del <strong>Gallo</strong> aiuta questa <strong>Capra</strong> ad osare tutto. È meno 
-		introversa e sensibile, vive circondata da amici allegri e spiritosi con cui trascorre in allegria la vita. Il partner non ha vita facile, deve
-		essere un paziente ascoltatore e farle capire il proprio dissenso usando molto tatto.<br><br></p>
-
-	<h2>CAPRA <span class="sRed">ASC</span> CANE</h2>
-
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È molto più agganciata alla realtà e perde parte del suo innato ottimismo per la presenza dell'<strong><span class="sRed">ASC</span> 
-		Cane</strong>. Sa che ogni cosa bisogna conquistarsela e non crede nei colpi di fortuna. È così pessimista e diffidente da non saper cogliere la nota
-		giusta per portare il cambiamento necessario nella propria esistenza. Lavoratore infaticabile e sa assumersi delle grosse responsabilità, non ama i
-		paragoni e, quando è presente, non ammette che una programmazione si basi più sulla demolizione delle idee degli altri che su una valutazione dei 
-		contenuti. È molto razionale è questo le consente di non perdere mai di vista gli obiettivi. È portato a crearsi dei problemi anche quando non ce ne
-		sono, Vive in costante stato ansioso, incolpando tutti tranne se stesso della sfortuna nera che lo perseguita, ha davvero una visione distorta della 
-		vita. Se smettesse di piangere e agisse vedrebbe anche il rosa! In amore è timida, ma la paura della solitudine è un ottimo deterrente per farle
-		superare qualsiasi perplessità.<br><br></p>
-
-	<h2>CAPRA <span class="sRed">ASC</span> CINGHIALE</h2>
-
-	<p class="sJustify" style="padding-left: 3em; padding-right: 2em;">
-		È una <strong>Capra</strong> più solida, capace di affrontare gli alti e bassi della vita quotidiana. È in assoluto il più equilibrato tra i propri 
-		simili. Natura dolce e sensibile molto attratta dal creativo mondo dell'arte, spesso arriva a toccare eccelse mete e a rivestire un ruolo di
-		primissimo piano. L'<strong><span class="sRed">ASC</span> Cinghiale</strong> l'aiuta a vedere con una punta di distacco i normali disagi e a non 
-		soccombere alle prime avvisaglie di un pericolo. Ha bisogno di solidi rapporti di amicizia e con il tempo riesce a costruirli. Mostra molta 
-		diffidenza sia nei rapporti di lavoro che nella vita di relazione, ma è pronta a ricredersi e ad aprirsi non solo dando il suo aiuto, ma anche 
-		accettando tutte quelle persone che sono profondamente diverse da lei. È più allegro e ottimista di altre <strong>Capre</strong> e dopo una 
-		delusione, si rialza senza drammatizzare. Senza ricorrere a strani armeggi o strategie particolari sa per istinto cosa fare e come agire per farsi 
-		voler bene. Anche se la sua vita affettiva potrà subire svariati scossoni, alla fine riuscirà a trovare un partner che la capisca realmente.
-		<br><br></p>
-
-	<p class="sCenter">
-		<img src="CIdivider.png" width="390" height="93">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="CIdivider.png" width="390" height="93"><br>
-		<a href="ASC.9CineseScimmia.htm" class="sEgyptBlue">Clicca per l'ASCENDENTE della SCIMMIA</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<strong>Sei il visitatore n°&nbsp;</strong>
+			<b>Sei il visitatore n°&nbsp;</b>
 		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1593162972-qdw3j1dn" border="0"></a>
-		&nbsp;(Pagina Aggiornata 26/11/2015)<br><br></p>
+			&nbsp;(Contenuto Aggiornato <time datetime="2015-11-26">26/11/2015</time>)<br>
+		</p>
 
 </td></tr></table>
 </td></tr></table>
-</td></tr></table>
-</td></tr></table>
+<footer>
+	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
+	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
+</footer>
 </body>
 </html>
