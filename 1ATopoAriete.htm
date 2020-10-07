@@ -1,35 +1,127 @@
 <!DOCTYPE html>
-<html lang="it">
-<HEAD>
+<html lang="it" dir="ltr">
+<head>
 <meta charset="UTF-8">
-<TITLE>Topo nei segni</TITLE>
-<link rel="icon" type="image/gif" href="https://www.studioacquario.it/favicon32.gif">
-<META name="description" content="Studio Acquario: Oroscpono Cinese: Topo nei segni">
-<meta name="keywords" content="astrologia, oroscopo cinese, topo, segni zodiacali">
+<title>Topo nei segni Zodiacali - Studio Acquario</title>
+<link rel="icon" type="image/gif" href="favicon32.gif">
+<meta name="description" content="Studio Acquario: Oroscopo Cinese: Topo nei segni Zodiacali">
+<meta name="keywords" content="astrologia, studio, acquario, oroscopo cinese, topo, segni zodiacali">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
 <meta name="language" content="it">
-<meta http-equiv="imagetoolbar" CONTENT="no">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="18/02/2020">
-<meta name="revised" content="03/07/2020">
+<meta name="revised" content="07/10/2020">
 
-<style type="text/css"> 
+<style type="text/css">
 body {
 	scrollbar-arrow-color: #FD8397;
-	scrollbar-base-color: #D3CBF1;
+	scrollbar-base-color: #D3CBF1; /* Fog */
 	scrollbar-dark-shadow-color: #D3CBF1;
-	scrollbar-track-color: #D3CBF1;
-	font-family: Verdana, Arial, sans-serif;
+	scrollbar-track-color: #DCD5F4; /* Quartz */
+
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #450169; /* Indigo */
+	background-color: #DDD7F1; /* Quartz */
+	background-image: url('misc45bk1.jpg');
+}
+a:link {
+	color: #7C64CC; /* Slate Blue */
+}
+a:visited {
+	color: #7C64CC;
+}
+a:hover {
+	color: #FF0000;
+}
+a:active {
+	color: #7C64CC;
+}
+h1 {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #450169; /* Indigo */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 140%;
+}
+h2 {
+	font-size: medium;
+	font-weight: bold;
+	color: #450169; /* Indigo */
+	text-align: center;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-top: 30px;
+	/* margin-bottom: 0; */
+}
+header {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	text-shadow: 1px 1px 5px #0000FF; /* Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
+}
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #000000; /* White */
+	text-shadow: 1px 1px 0px #FFFFFF; /* White */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
 }
 img {
 	max-width: 100%;
 	height: auto;
 }
-.sHalfLine {
-	line-height: 10px;
+p {
+	font-size: small;
+	color: #450169; /* Indigo */
+	text-align: justify;
+	padding-left: 35px;
+	padding-right: 35px;
+	line-height: 125%;
 }
-.sTexDecNo {
-				text-decoration: none;
+.sNavigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 180%;
+}
+.sNavigation a {
+	font-size: medium;
+	font-weight: bold;
+	padding:.42em;
+	color: #FFFFFF; /* White */
+	margin-left: 2px;
+	background: #7C64CC; /* Slate Blue */
+	text-decoration: none;
+}
+.sNavigation a:hover {
+	color: #000000; /* Black */
+	background: #FF66FF; /* Pink Flamingo */
+}
+#PagCorrente {
+	border-bottom: 2.5px solid red;
+}
+.sHomeIcon {
+	vertical-align: bottom;
+	margin-bottom: 1px;
+	height: 25px;
+	width: 25px;
 }
 .sBlue {
 				color: #0000FF;
@@ -40,8 +132,8 @@ img {
 .sIndigo {
 				color: #450169;
 }
-.sMaroon {
-				color: #800000;
+.sGoldenBrown {
+				color: #996600;
 }
 .sRed {
 				color: #FF0000;
@@ -56,8 +148,8 @@ img {
 				text-align: justify;
 }
 .sPadding {
-				padding-left: 40px;
-				padding-right: 40px;
+				padding-left: 35px;
+				padding-right: 35px;
 }
 .sXSmall {
 				font-size: x-small;
@@ -75,222 +167,216 @@ img {
 				font-size: x-large;
 }
 </style>
-</HEAD>
- 
-<BODY BACKGROUND="misc45bk1.jpg" BGCOLOR="#DDD7F1" LINK="#7C64CC" ALINK="#7C64CC" VLINK="#7C64CC">
- 
-<TABLE CELLSPACING="5" CELLPADDING="0" BACKGROUND="misc45bk2.jpg" BORDERCOLOR="#DCD4F6" BORDERCOLORDARK="#7361AD" WIDTH="100%" BORDER="0">
-  <TR><TD>
-	<TABLE CELLSPACING="5" CELLPADDING="0" BACKGROUND="misc45bk2.jpg" BORDERCOLOR="#DCD4F6" BORDERCOLORDARK="#7361AD" WIDTH="100%" BORDER="1">
-	  <TR><TD>
-		<TABLE CELLSPACING="12" CELLPADDING="0" BACKGROUND="misc45bk3.jpg" BORDERCOLOR="#DCD4F6" BORDERCOLORDARK="#7361AD" WIDTH="100%" BORDER="1">
-		  <TR><TD>
-			<TABLE CELLSPACING="3" CELLPADDING="0" BACKGROUND="misc45bk2.jpg" BORDERCOLOR="#DCD4F6" BORDERCOLORDARK="#7361AD" WIDTH="100%" BORDER="1">
-			  <TR><TD>
-				<TABLE CELLSPACING="7" CELLPADDING="0" BACKGROUND="misc45bk4.jpg" BORDERCOLOR="#F2F0FA" BORDERCOLORDARK="#BBAFE1" WIDTH="100%" BORDER="1">
-				  <TR><TD>
+</head>
 
-			<P class="sCenter">
-				<br><br>
-				<img src="ZodiaCine3.png"  width="280" height="280">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<img src="Cinese1Topo.jpg" width="237" height="212">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<img src="AstriAB.jpg"     width="280" height="286"><br><br><br></p>
-				
-			<P class="sXLarge sBold sCenter sIndigo">
-				Segno CINESE del <span class="sRed">TOPO</span> nei Segni Zodiacali
-			</p>
+<body>
+<header>Studio di Astrologia &quot;Acquario&quot;</header>
 
-			<p class="sCenter">
-				<br>
-				<IMG SRC="misc45div.jpg"  WIDTH="410" HEIGHT="47">&nbsp;&nbsp;&nbsp;&nbsp;
-				<IMG SRC="misc45icon.jpg" WIDTH="108" HEIGHT="75">&nbsp;&nbsp;&nbsp;&nbsp;
-				<IMG SRC="misc45div.jpg"  WIDTH="410" HEIGHT="47"></p>
+<TABLE BACKGROUND="misc45bk2.jpg" CELLSPACING="5"  CELLPADDING="10" BORDER="1" BORDERCOLOR="#DCD4F6" BORDERCOLORDARK="#7361AD" WIDTH="95%" align="center">
+<TR><TD BACKGROUND="misc45bk3.jpg">
 
-			<p class="sMedium sBold sCenter sIndigo">
-				TOPO - <span class="sRed">ARIETE</span></p>
+<TABLE BACKGROUND="misc45bk2.jpg" CELLSPACING="5"  CELLPADDING="0" BORDER="1" BORDERCOLOR="#DCD4F6" BORDERCOLORDARK="#7361AD" WIDTH="100%">
+<TR><TD BACKGROUND="misc45bk4.jpg">
 
-			<div class="sSmall sIndigo sPadding sJustify">
-				L&#39;impulsività dell&#39;<span class="sRed sBold">Ariete</span> si unisce all&#39;aggressività del <strong>Topo</strong> e 
-				conferisce una carica marziana di tutto rispetto. È un <strong>Topo</strong> ostinato, irruente e sicuro di sé, impulsivo e precipitoso, 
-				curioso irritabile ma simpatico. Per il suo carattere sovente giudicato arrogante, mentre nasconde dietro questa maschera una certa 
-				insicurezza interiore. Gli fa tanto piacere poter donare agli altri, vorrebbe però, che ciò gli fosse anche riconosciuto. Piuttosto franco
-				e diretto per un <strong>Topo</strong>, molto socievole, ma senza brillare troppo per la pazienza, può essere delizioso vivere con lui, 
-				a condizione di mantenere il ritmo. Ama mettersi in vista, avendo bisogno dell'autoaffermazione della sua personalità spiccata. Molto 
-				sensibile ai riconoscimenti e alle lodi, sa dimostrarsi buono e generoso, ma solo con chi vuole. È facilmente frainteso poiché ha pudore 
-				dei suoi sentimenti e li cela, questo lo fa sembrare superficiale. Insofferente alle critiche ma pronto a criticare tutto e tutti, 
-				non accetta consigli, in compenso ne dà tantissimi. Ha ottime doti commerciali, fortuna negli affari, talento organizzativo. 
-				Vita affettiva intensa.</div>
+		<h1>Segno CINESE del <span class="sRed">TOPO</span> nei Segni Zodiacali</h1>
 
-			<p class="sMedium sBold sCenter sIndigo">
-				<br class="sHalfLine">
-				TOPO - <span class="sGreen">TORO</span></p>
+		<P class="sCenter">
+			<br>
+			<img src="ZodiaCine3.png"  width="280" height="280" alt="Zodiaco Cinese"   >&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="Cinese1Topo.jpg" width="237" height="212" alt="Segno Cinese Topo">&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="AstriAB.jpg"     width="280" height="286" alt="Astri">
+			<br><br><br>
+		</p>
 
-			<div class="sSmall sIndigo sPadding sJustify">
-				Il <strong>Topo</strong> e il <span class="sGreen sBold">Toro</span> sono pazienti e fiduciosi di ottenere quello che desiderano con la 
-				costanza e la fede attitudini che sono veramente loro amiche. È un <strong>Topo</strong> più stabile e sicuro, più tradizionalista e amante
-				del denaro e le comodità, abile finanziere. Sensuale e godereccio ama il lusso, la vita comoda, la sicurezza economica è uno dei suoi
-				obiettivi primari. È sensibile e di buon cuore, si oppone a ogni autorità. Se non si sente amato si ritira in se stesso se invece capisce 
-				che gli vogliono bene, diventa il migliore e più fedele partner del mondo. Possiede molto talento artistico e buon gusto, tutto ciò che ha
-				attinenza con la bellezza è un’attività adatta a lui che può portarlo al sicuro successo. In amore non ha gli atteggiamenti adatti per far
-				colpo a prima vista su chi piace, quando non conosce l'ambiente si sente facilmente imbarazzato, bisogna conoscerlo a fondo per amarlo e 
-				apprezzarlo. Per i figli è un genitore tenero e sensibile, pur mantenendo un atteggiamento equilibrato.</div>
+		<nav class="sLarge sCenter">
+			<br>
+			<ul class="sNavigation">
+				<li><a href="1ATopoAriete.Topo.htm" id="PagCorrente">Topo</a></li>
+				<li><a href="2ABufaloAriete.htm">Bue</a></li>
+				<li><a href="3ATigreAriete.htm">Tigre</a></li>
+				<li><a href="4ALepreAriete.htm">Lepre</a></li>
+				<li><a href="5ADragoAriete.htm">Drago</a></li>
+				<li><a href="6ASerpenteAriete.htm">Serpente</a></li>
+				<li><a href="7ACavalloAriete.htm">Cavallo</a></li>
+				<li><a href="8ACapraAriete.htm">Capra</a></li>
+				<li><a href="9AScimmiaAriete.htm">Scimmia</a></li>
+				<li><a href="10AGalloAriete.htm">Gallo</a></li>
+				<li><a href="11ACaneAriete.htm">Cane</a></li>
+				<li><a href="12ACinghialeAriete.htm">Cinghiale</a></li>
+				<li><a href="ZodiaCine.htm">Zodiaco Cinese</a></li>
+				<li><a href="index.html"><img src="favicon32.gif" class="sHomeIcon"></a></li>
+			</ul>
+		</nav>
 
-			<p class="sMedium sBold sCenter sIndigo">
-				<br class="sHalfLine">
-				TOPO - <span class="sMaroon">GEMELLI</span></p>
+		<p class="sCenter">
+			<br>
+			<IMG SRC="misc45div.jpg"  WIDTH="410" HEIGHT="47" alt="">&nbsp;&nbsp;&nbsp;
+			<IMG SRC="misc45icon.jpg" WIDTH="108" HEIGHT="75" alt="">&nbsp;&nbsp;&nbsp;
+			<IMG SRC="misc45div.jpg"  WIDTH="410" HEIGHT="47" alt="">
+		</p>
 
-			<div class="sSmall sIndigo sPadding sJustify">
-				I <span class="sMaroon sBold">Gemelli</span> conferiscono al <strong>Topo</strong> una maggiore carica nervosa e una maggiore mobilità. 
-				È un <strong>Topo</strong> vivace, originale, furbo e molto intelligente, coraggioso e sempre disposto a dare consigli per il bene altrui, 
-				ha però poca costanza e pazienza, la sua versatilità gli fa provare molte strade, conoscere molte strade, tanta gente ma è un po' dispersivo.
-				Infinitamente curioso e dotato di un'intelligenza brillante e perspicace. In apparenza è molto socievole, si comporta con scioltezza 
-				notevole, si adatta in maniera eccezionale alle situazioni più spinose. Ha molte possibilità nel campo finanziario, grande fortuna riguardo 
-				la situazione economica, però tende a spendere subito quello che ha ottenuto. Può avere qualche difficoltà nel portare a termine progetti a 
-				lunga durata e si stanca facilmente della routine. Anche in amore è piuttosto instabile, tende ad essere capriccioso e volubile finché non 
-				incontra l'anima gemella.</div>
+		<h2>TOPO - <span class="sRed">ARIETE</span></h2>
+		<p>
+			L'impulsività dell'<span class="sRed sBold">Ariete</span> si unisce all'aggressività del <b>Topo</b> e conferisce una carica marziana di tutto
+			rispetto. È un <b>Topo</b> ostinato, irruente e sicuro di sé, impulsivo e precipitoso, curioso irritabile ma simpatico. Per il suo carattere
+			sovente giudicato arrogante, mentre nasconde dietro questa maschera una certa insicurezza interiore. Gli fa tanto piacere poter donare agli
+			altri, vorrebbe però, che ciò gli fosse anche riconosciuto. Piuttosto franco e diretto per un <b>Topo</b>, molto socievole, ma senza brillare
+			troppo per la pazienza, può essere delizioso vivere con lui, a condizione di mantenere il ritmo. Ama mettersi in vista, avendo bisogno
+			dell'autoaffermazione della sua personalità spiccata. Molto sensibile ai riconoscimenti e alle lodi, sa dimostrarsi buono e generoso, ma solo
+			con chi vuole. È facilmente frainteso poiché ha pudore dei suoi sentimenti e li cela, questo lo fa sembrare superficiale. Insofferente alle
+			critiche ma pronto a criticare tutto e tutti, non accetta consigli, in compenso ne dà tantissimi. Ha ottime doti commerciali, fortuna negli
+			affari, talento organizzativo. Vita affettiva intensa.
+		</p>
 
-			<p class="sMedium sBold sCenter sIndigo">
-				<br class="sHalfLine">
-				TOPO - <span class="sBlue">CANCRO</span></p>
+		<h2>TOPO - <span class="sGreen">TORO</span></h2>
+		<p>
+			Il <b>Topo</b> e il <span class="sGreen sBold">Toro</span> sono pazienti e fiduciosi di ottenere quello che desiderano con la costanza e la fede
+			attitudini che sono veramente loro amiche. È un <b>Topo</b> più stabile e sicuro, più tradizionalista e amante del denaro e le comodità, abile
+			finanziere. Sensuale e godereccio ama il lusso, la vita comoda, la sicurezza economica è uno dei suoi obiettivi primari. È sensibile e di buon
+			cuore, si oppone a ogni autorità. Se non si sente amato si ritira in se stesso se invece capisce che gli vogliono bene, diventa il migliore e
+			più fedele partner del mondo. Possiede molto talento artistico e buon gusto, tutto ciò che ha attinenza con la bellezza è un’attività adatta a
+			lui che può portarlo al sicuro successo. In amore non ha gli atteggiamenti adatti per far colpo a prima vista su chi piace, quando non conosce
+			l'ambiente si sente facilmente imbarazzato, bisogna conoscerlo a fondo per amarlo e apprezzarlo. Per i figli è un genitore tenero e sensibile,
+			pur mantenendo un atteggiamento equilibrato.
+		</p>
 
-			<div class="sSmall sIndigo sPadding sJustify">
-				Silenzioso e sognatore, emotivo e influenzabile, molto timido e curioso. Sembra calmo, tenero e affettuoso ma sotto l'aspetto tranquillo, 
-				trasparente, complicato e segreto. Ha tuttavia un buon fiuto negli affari, non manca di furbizia, sa maneggiare i soldi e costruirsi un 
-				avvenire solido sotto il profilo economico. È infatti un perfezionista un idealista spesso insoddisfatto che vorrebbe che il mondo 
-				girasse secondo i suoi schemi. La fertile immaginazione del <strong>Topo</strong> si unisce al buon senso e alla cautela del 
-				<span class="sBlue sBold">Cancro</span> e produce un individuo in grado di cavarsela in qualsiasi circostanza. Ha un estremo bisogno di 
-				sentirsi circondato di affetto, da una persona cara un amico, un compagno o un parente. Molto abile nel bricolage, ama abbellire la sua 
-				casa con ingegnose trovate. Nel lavoro deve essere più deciso, perde molte occasioni per la paura di sbagliare, di non essere all'altezza
-				della situazione. In amore ha bisogno più che mai di trovare un rifugio sicuro tra le pareti domestiche, con un partner solido e ottimista
-				che l'apprezzi e lo valorizzi.</div>
+		<h2>TOPO - <span class="sGoldenBrown">GEMELLI</span></h2>
+		<p>
+			I <span class="sGoldenBrown sBold">Gemelli</span> conferiscono al <b>Topo</b> una maggiore carica nervosa e una maggiore mobilità. È un
+			<b>Topo</b> vivace, originale, furbo e molto intelligente, coraggioso e sempre disposto a dare consigli per il bene altrui, ha però poca
+			costanza e pazienza, la sua versatilità gli fa provare molte strade, conoscere molte strade, tanta gente ma è un po' dispersivo. Infinitamente
+			curioso e dotato di un'intelligenza brillante e perspicace. In apparenza è molto socievole, si comporta con scioltezza notevole, si adatta in
+			maniera eccezionale alle situazioni più spinose. Ha molte possibilità nel campo finanziario, grande fortuna riguardo la situazione economica,
+			però tende a spendere subito quello che ha ottenuto. Può avere qualche difficoltà nel portare a termine progetti a lunga durata e si stanca
+			facilmente della routine. Anche in amore è piuttosto instabile, tende ad essere capriccioso e volubile finché non incontra l'anima gemella.
+		</p>
 
-			<p class="sMedium sBold sCenter sIndigo">
-				<br class="sHalfLine">
-				TOPO - <span class="sRed">LEONE</span></p>
+		<h2>TOPO - <span class="sBlue">CANCRO</span></h2>
+		<p>
+			Silenzioso e sognatore, emotivo e influenzabile, molto timido e curioso. Sembra calmo, tenero e affettuoso ma sotto l'aspetto tranquillo,
+			trasparente, complicato e segreto. Ha tuttavia un buon fiuto negli affari, non manca di furbizia, sa maneggiare i soldi e costruirsi un avvenire
+			solido sotto il profilo economico. È infatti un perfezionista un idealista spesso insoddisfatto che vorrebbe che il mondo girasse secondo i suoi
+			schemi. La fertile immaginazione del <b>Topo</b> si unisce al buon senso e alla cautela del <span class="sBlue sBold">Cancro</span> e produce un
+			individuo in grado di cavarsela in qualsiasi circostanza. Ha un estremo bisogno di sentirsi circondato di affetto, da una persona cara un amico,
+			un compagno o un parente. Molto abile nel bricolage, ama abbellire la sua casa con ingegnose trovate. Nel lavoro deve essere più deciso, perde
+			molte occasioni per la paura di sbagliare, di non essere all'altezza della situazione. In amore ha bisogno più che mai di trovare un rifugio
+			sicuro tra le pareti domestiche, con un partner solido e ottimista che l'apprezzi e lo valorizzi.
+		</p>
 
-			<div class="sSmall sIndigo sPadding sJustify">
-				Impetuoso e ardito, intraprendente e attivo, sapendo alternare a meraviglia fascino e autorità ama essere preso sul serio e fa 
-				tutto quello che può per questo. È un <strong>Topo</strong> più magnanimo e generoso, più aristocratico nei modi e nelle aspirazioni. 
-				La regalità del <span class="sRed sBold">Leone</span> è temperata dal senso del risparmio e la tendenza del <strong>Topo</strong> ad 
-				accumulare, per cui ama spendere per le cose importanti e di valore, ma è accorto e oculato nell'amministrare il budget quotidiano.
-				Il temperamento vivace del <span class="sRed sBold">Leone</span> si amalgama bene all'irrequietezza del <strong>Topo</strong>, e molta 
-				gente rimane senza fiato per stargli dietro. Ha bisogno d'azione, di sforzo fisico e morale, di passione per vivere. Sul lavoro tende a 
-				dominare ed a prevenire con astuzia gli ostacoli. In amore è sensuale, possessivo ed esigente, ma può dare molto alla persona giusta ed è 
-				capace di nobili gesti per un partner che ama.</div>
+		<h2>TOPO - <span class="sRed">LEONE</span></h2>
+		<p>
+			Impetuoso e ardito, intraprendente e attivo, sapendo alternare a meraviglia fascino e autorità ama essere preso sul serio e fa tutto quello
+			che può per questo. È un <b>Topo</b> più magnanimo e generoso, più aristocratico nei modi e nelle aspirazioni. La regalità del
+			<span class="sRed sBold">Leone</span> è temperata dal senso del risparmio e la tendenza del <b>Topo</b> ad accumulare, per cui ama spendere
+			per le cose importanti e di valore, ma è accorto e oculato nell'amministrare il budget quotidiano. Il temperamento vivace del
+			<span class="sRed sBold">Leone</span> si amalgama bene all'irrequietezza del <b>Topo</b>, e molta gente rimane senza fiato per stargli dietro.
+			Ha bisogno d'azione, di sforzo fisico e morale, di passione per vivere. Sul lavoro tende a dominare ed a prevenire con astuzia gli ostacoli.
+			In amore è sensuale, possessivo ed esigente, ma può dare molto alla persona giusta ed è capace di nobili gesti per un partner che ama.
+		</p>
 
-			<p class="sMedium sBold sCenter sIndigo">
-				<br class="sHalfLine">
-				TOPO - <span class="sGreen">VERGINE</span></p>
+		<h2>TOPO - <span class="sGreen">VERGINE</span></h2>
+		<p>
+			Lavoratore solerte, preciso, scrupoloso, calcolatore. Dotato di un'acuta intelligenza, ipercritico, nervoso, pignolo fino all'eccesso, può
+			essere un difficile compagno, perché non esita a dire la sua in ogni circostanza, non è certo tenero nei giudizi. Ha una visione molto
+			realistica della vita, non si fa illusioni perché sa che tutto deve essere conquistato con fatica. Può avere fortuna in campo letterario e nel
+			commercio, nell'insegnamento e nelle lingue straniere. Molto attento al benessere materiale (non tanto per se stesso quanto per i suoi cari),
+			amministra oculatamente il denaro e vuole controllare nei minimi dettagli l'andamento del <i>menage</i>. Sotto un'apparenza un po' severa,
+			nasconde una sessualità raffinata e un po' torbida, è avido di piaceri, cerca la grande passione e il partner può restare sbalordito
+			conoscendolo nell'intimità. Non è sempre fedele ma ha il culto della famiglia e stravede per i figli.
+		</p>
 
-			<div class="sSmall sIndigo sPadding sJustify">
-				Lavoratore solerte, preciso, scrupoloso, calcolatore. Dotato di un'acuta intelligenza, ipercritico, nervoso, pignolo fino all'eccesso, 
-				può essere un difficile compagno, perché non esita a dire la sua in ogni circostanza, non è certo tenero nei giudizi. Ha una visione molto 
-				realistica della vita, non si fa illusioni perché sa che tutto deve essere conquistato con fatica. Può avere fortuna in campo letterario e 
-				nel commercio, nell'insegnamento e nelle lingue straniere. Molto attento al benessere materiale (non tanto per se stesso quanto per i 
-				suoi cari), amministra oculatamente il denaro e vuole controllare nei minimi dettagli l'andamento del menage. Sotto un'apparenza un po' 
-				severa, nasconde una sessualità raffinata e un po' torbida, è avido di piaceri, cerca la grande passione e il partner può restare 
-				sbalordito conoscendolo nell'intimità. Non è sempre fedele ma ha il culto della famiglia e stravede per i figli.</div>
+		<h2>TOPO - <span class="sGoldenBrown">BILANCIA</span></h2>
+		<p>
+			Ecco una <span class="sGoldenBrown sBold">Bilancia</span> molto accorta e affascinante, che riesce ad ottenere tutto servendosi delle belle
+			maniere e della persuasione. Desidera mettersi in mostra con la sua eleganza raffinata, ma semplice ben conscio che è molto più in vista di
+			altri <b>Topo</b>. La <span class="sGoldenBrown sBold">Bilancia</span> può fornire al <b>Topo</b> piacevoli sfumature artistiche ed una maggiore
+			diplomazia. La tendenza al risparmio del <b>Topo</b> si allenta a contatto con l'edonismo della <span class="sGoldenBrown sBold">Bilancia</span>,
+			e occorre fare attenzione perché i conti tornino. Il lavoro è un mezzo per lui, per realizzare ciò che desidera e per poter vivere bene non è
+			ambizioso. Questo suo modo di essere si conquista le simpatie nell'ambito del lavoro. Il punto in comune è l'avidità affettiva, intensa per
+			entrambi. In amore può considerarsi fortunato negli anni maturi, è un partner affettuoso, anche se ha la tendenza a flirtare e civettare.
+			Il matrimonio è molto importante, e il rapporto di coppia passa in primo piano, alle volte prima ancora dei figli.
+		</p>
 
-			<p class="sMedium sBold sCenter sIndigo">
-				<br class="sHalfLine">
-				TOPO - <span class="sMaroon">BILANCIA</span></p>
+		<h2>TOPO - <span class="sBlue">SCORPIONE</span></h2>
+		<p>
+			È molto intelligente e dotato di un formidabile intuito, ed è quasi impossibile ingannarlo. Acuto psicologo sa come manovrare le debolezze degli
+			altri, ma è al tempo stesso in grado di fornire un aiuto prezioso con i suoi consigli e i punti di vista sempre azzeccati. È molto sincero e
+			non sopporta chi è bugiardo, la mente acuta è prodiga di validi consigli, perciò molti si rivolgono a lui. Generoso, ma al tempo stesso oculato
+			amministratore dei propri beni. È un <b>Topo</b> dai modi e pensieri un po' tortuosi e sotterranei, analitico, distruttivo, morbidamente
+			aggressivo. È più lucido più segreto e più sconcertante dei <b>Topi</b>, ma anche il più ricco. Ama vivere comodamente e ha un ottimo fiuto per
+			le occasioni vantaggiose. In amore è un romantico, anche se non lo vuole confessare. Sa trovare la giusta dose tra il sentimentalismo e
+			passione, perciò sa sempre affascinare il partner, con la fermezza e la tenerezza.
+		</p>
 
-			<div class="sSmall sIndigo sPadding sJustify">
-				Ecco una <span class="sMaroon sBold">Bilancia</span> molto accorta e affascinante, che riesce ad ottenere tutto servendosi delle 
-				belle maniere e della persuasione. Desidera mettersi in mostra con la sua eleganza raffinata, ma semplice ben conscio che è molto più in
-				vista di altri <strong>Topo</strong>. La <span class="sMaroon sBold">Bilancia</span> può fornire al <strong>Topo</strong> piacevoli 
-				sfumature artistiche ed una maggiore diplomazia. La tendenza al risparmio del <strong>Topo</strong> si allenta a contatto con l'edonismo 
-				della <span class="sMaroon sBold">Bilancia</span>, e occorre fare attenzione perché i conti tornino. Il lavoro è un mezzo per lui, per 
-				realizzare ciò che desidera e per poter vivere bene non è ambizioso. Questo suo modo di essere si conquista le simpatie nell'ambito del
-				lavoro. Il punto in comune è l'avidità affettiva, intensa per entrambi. In amore può considerarsi fortunato negli anni maturi, è un partner 
-				affettuoso, anche se ha la tendenza a flirtare e civettare. Il matrimonio è molto importante, e il rapporto di coppia passa in primo piano, 
-				alle volte prima ancora dei figli.</div>
+		<h2>TOPO - <span class="sRed">SAGITTARIO</span></h2>
+		<p>
+			Il <span class="sRed sBold">Sagittario</span> ha un carattere combattivo e il <b>Topo</b> è paziente e testardo, queste caratteristiche unite
+			fanno sì che raggiunga ciò che vuole. Questo <b>Topo</b> è socievole e dinamico, è fatto per trascinare le folle. È dotato per i discorsi, le
+			argomentazioni non ha pari per convincere. In generale le sue idee sono generose, oneste, concrete, realizzabili. Ha numerosi interessi, adora
+			i contatti umani ed è sensibile ai problemi altrui. Ama la vita agiata, la compagnia, le serate danzanti e culturali, sa sempre rendere la vita
+			interessante al partner che l'ammira molto per il suo interesse per la vita. È più difficile per lui sentirsi appagato nel lavoro, anche se
+			raggiunge il successo. Un maggior fascino e maggiori tendenze avventurose. In amore è romantico e sensuale anche molto esigente, e pretende
+			che il partner lo affianchi in tutte le sue imprese.
+		</p>
 
-			<p class="sMedium sBold sCenter sIndigo">
-				<br class="sHalfLine">
-				TOPO - <span class="sBlue">SCORPIONE</span></p>
+		<h2>TOPO - <span class="sGreen">CAPRICORNO</span></h2>
+		<p>
+			Il <span class="sGreen sBold">Capricorno</span> ha i piedi ben piantati sulla terra e non intraprende nulla di nuovo se non ha tutte le garanzie
+			circa il buon esito dell'operazione. Il <b>Topo</b> è spesso nervoso e diffidente e può rodersi in silenzio se ha l'impressione che le cose
+			non vadano per il verso giusto, è un perfezionista difficile da soddisfare. È un <b>Topo</b> un po' severo ma studioso e riflessivo, abile
+			nell'investire il denaro, paziente e costante. Nella professione è coscienzioso, prima di accettare cambiamenti, valuta bene ogni pro e contro,
+			evitando così dispiaceri e disastri. Dal momento che non concepisce di vivere da solo, formarsi una famiglia serena è di fondamentale importanza
+			per il suo equilibrio psicofisico. È molto diffidente, segreto, poco espansivo, e ha paura del ridicolo quando desidera fare una dichiarazione,
+			è però fedele e affidabile, discretamente affettuoso. In amore è sovente troppo apprensivo, teme di non poter rendere sereno e ... felice il
+			partner.
+		</p>
 
-			<div class="sSmall sIndigo sPadding sJustify">
-				È molto intelligente e dotato di un formidabile intuito, ed è quasi impossibile ingannarlo. Acuto psicologo sa come manovrare le debolezze
-				degli altri, ma è al tempo stesso in grado di fornire un aiuto prezioso con i suoi consigli e i punti di vista sempre azzeccati. È molto 
-				sincero e non sopporta chi è bugiardo, la mente acuta è prodiga di validi consigli, perciò molti si rivolgono a lui. Generoso, ma al tempo 
-				stesso oculato amministratore dei propri beni. È un <strong>Topo</strong> dai modi e pensieri un po' tortuosi e sotterranei, analitico, 
-				distruttivo, morbidamente aggressivo. È più lucido più segreto e più sconcertante dei <strong>Topi</strong>, ma anche il più ricco. 
-				Ama vivere comodamente e ha un ottimo fiuto per le occasioni vantaggiose. In amore è un romantico, anche se non lo vuole confessare. 
-				Sa trovare la giusta dose tra il sentimentalismo e passione, perciò sa sempre affascinare il partner, con la fermezza e la tenerezza.</div>
+		<h2>TOPO - <span class="sGoldenBrown">ACQUARIO</span></h2>
+		<p>
+			Questo <b>Topo</b> intelligente, inventivo e idealista non saprebbe accontentarsi dei sentieri battuti. Vive all'insegna di imprese temerarie
+			che, secondo lui apriranno la via a un mondo migliore. Ingegnoso, immaginativo, ricco d'idee un po' geniali e un po' folli ma non è mai noioso.
+			Poco interessato alla carriera preferisce un lavoro di tipo sociale a una attività ben retribuita ma arida, o peggio che non si adatta ai suoi
+			ideali. Non è fatto per la vita di casa, frequenta volentieri molti amici e ama viaggiare, conoscere gente. Queste sue tendenze possono a volte
+			offendere la persona cara che si sente messa da parte. Il suo bisogno di sedurre, di affascinare, di possedere e l'aggressività di alcune sue
+			reazioni allontaneranno parecchie simpatie. Anche se innamorato non è molto sentimentale ed è indispensabile rispettarne il profondo bisogno
+			di libertà.
+		</p>
 
-			<p class="sMedium sBold sCenter sIndigo">
-				<br class="sHalfLine">
-				TOPO - <span class="sRed">SAGITTARIO</span></p>
+		<h2>TOPO - <span class="sBlue">PESCI</span></h2>
+		<p>
+			L'acuta intelligenza del <b>Topo</b> si allea alla multiforme oceanica personalità dei <span class="sBlue sBold">Pesci</span>. È dotato di grande
+			fascino, di un'ottima sensibilità, è un po' timido e confusionario, ma è fornito di una prodigiosa intuizione e riesce a parare gli attacchi con
+			notevole tempismo. Le idee non gli mancano ma manca la chiarezza di vedute, troppi progetti insieme non riesce a realizzarli. Sa godere la vita
+			e rendersi simpatico e ciò lo deve al <b>Topo</b>, poiché il tipo <span class="sBlue sBold">Pesci</span> è sovente troppo chiuso. Può rivelarsi
+			critico e permaloso, è un chiacchierone nato, ma ha un animo buono e molto sensibile alle sofferenze altrui. In amore la sua vita si presenta
+			molto movimentata negli anni giovanili, più serena negli anni maturi. È un genitore tenerissimo, forse un po' troppo indulgente, è anche fornito
+			di notevole dose di tolleranza nei confronti del partner.
+		</p>
 
-			<div class="sSmall sIndigo sPadding sJustify">
-				Il <span class="sRed sBold">Sagittario</span> ha un carattere combattivo e il <strong>Topo</strong> è paziente e testardo, queste 
-				caratteristiche unite fanno sì che raggiunga ciò che vuole. Questo <strong>Topo</strong> è socievole e dinamico, è fatto per trascinare 
-				le folle. È dotato per i discorsi, le argomentazioni non ha pari per convincere. In generale le sue idee sono generose, oneste, concrete, 
-				realizzabili. Ha numerosi interessi, adora i contatti umani ed è sensibile ai problemi altrui. Ama la vita agiata, la compagnia, le serate
-				danzanti e culturali, sa sempre rendere la vita interessante al partner che l'ammira molto per il suo interesse per la vita. È più 
-				difficile per lui sentirsi appagato nel lavoro, anche se raggiunge il successo. Un maggior fascino e maggiori tendenze avventurose. 
-				In amore è romantico e sensuale anche molto esigente, e pretende che il partner lo affianchi in tutte le sue imprese.</div>
+		<p class="sCenter">
+			<br>
+			<IMG SRC="misc45div.jpg"  WIDTH="410" HEIGHT="47" alt="">&nbsp;&nbsp;&nbsp;
+			<IMG SRC="misc45icon.jpg" WIDTH="108" HEIGHT="75" alt="">&nbsp;&nbsp;&nbsp;
+			<IMG SRC="misc45div.jpg"  WIDTH="410" HEIGHT="47" alt="">
+			<br>
+		</p>
 
-			<p class="sMedium sBold sCenter sIndigo">
-				<br class="sHalfLine">
-				TOPO - <span class="sGreen">CAPRICORNO</span></p>
+		<p class="sCenter">
+			<img src="email-box.gif"    width="35" height="35" alt="">
+			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
+			<img src="TelefonoC164.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
 
-			<div class="sSmall sIndigo sPadding sJustify">
-				Il <span class="sGreen sBold">Capricorno</span> ha i piedi ben piantati sulla terra e non intraprende nulla di nuovo se non ha tutte le
-				garanzie circa il buon esito dell'operazione. Il <strong>Topo</strong> è spesso nervoso e diffidente e può rodersi in silenzio se ha 
-				l'impressione che le cose non vadano per il verso giusto, è un perfezionista difficile da soddisfare. È un <strong>Topo</strong> un po'
-				severo ma studioso e riflessivo, abile nell'investire il denaro, paziente e costante. Nella professione è coscienzioso, prima di accettare
-				cambiamenti, valuta bene ogni pro e contro, evitando così dispiaceri e disastri. Dal momento che non concepisce di vivere da solo, formarsi
-				una famiglia serena è di fondamentale importanza per il suo equilibrio psicofisico. È molto diffidente, segreto, poco espansivo, e ha 
-				paura del ridicolo quando desidera fare una dichiarazione, è però fedele e affidabile, discretamente affettuoso. In amore è sovente troppo 
-				apprensivo, teme di non poter rendere sereno e ... felice il partner.</div>
+			<b>Sei il visitatore n°&nbsp;</b>
+		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1390150538-3vk892" border=0></a>
+			&nbsp;(Contenuto Aggiornato <time datetime="2020-02-18">18/02/2020</time>)<br><br>
+		</p>
 
-			<p class="sMedium sBold sCenter sIndigo">
-				<br class="sHalfLine">
-				TOPO - <span class="sMaroon">ACQUARIO</span></p>
-
-			<div class="sSmall sIndigo sPadding sJustify">
-				Questo <strong>Topo</strong> intelligente, inventivo e idealista non saprebbe accontentarsi dei sentieri battuti. Vive all'insegna di 
-				imprese temerarie che, secondo lui apriranno la via a un mondo migliore. Ingegnoso, immaginativo, ricco d'idee un po' geniali e un po'
-				folli ma non è mai noioso. Poco interessato alla carriera preferisce un lavoro di tipo sociale a una attività ben retribuita ma arida, 
-				o peggio che non si adatta ai suoi ideali. Non è fatto per la vita di casa, frequenta volentieri molti amici e ama viaggiare, conoscere 
-				gente. Queste sue tendenze possono a volte offendere la persona cara che si sente messa da parte. Il suo bisogno di sedurre, di 
-				affascinare, di possedere e l'aggressività di alcune sue reazioni allontaneranno parecchie simpatie. Anche se innamorato non è molto
-				sentimentale ed è indispensabile rispettarne il profondo bisogno di libertà.</div>
-
-			<p class="sMedium sBold sCenter sIndigo">
-				<br class="sHalfLine">
-				TOPO - <span class="sBlue">PESCI</span></p>
-
-			<div class="sSmall sIndigo sPadding sJustify">
-				L'acuta intelligenza del <strong>Topo</strong> si allea alla multiforme oceanica personalità dei <span class="sBlue sBold">Pesci</span>. 
-				È dotato di grande fascino, di un'ottima sensibilità, è un po' timido e confusionario, ma è fornito di una prodigiosa intuizione e riesce
-				a parare gli attacchi con notevole tempismo. Le idee non gli mancano ma manca la chiarezza di vedute, troppi progetti insieme non riesce a
-				realizzarli. Sa godere la vita e rendersi simpatico e ciò lo deve al <strong>Topo</strong>, poiché il tipo 
-				<span class="sBlue sBold">Pesci</span> è sovente troppo chiuso. Può rivelarsi critico e permaloso, è un chiacchierone nato, ma ha un animo 
-				buono e molto sensibile alle sofferenze altrui. In amore la sua vita si presenta molto movimentata negli anni giovanili, più serena negli 
-				anni maturi. È un genitore tenerissimo, forse un po' troppo indulgente, è anche fornito di notevole dose di tolleranza nei confronti del 
-				partner.</div>
-
-			<div class="sSmall sCenter sIndigo">
-				<br>
-				<IMG SRC="misc45div.jpg"  WIDTH="410" HEIGHT="47">&nbsp;&nbsp;&nbsp;&nbsp; 
-				<IMG SRC="misc45icon.jpg" WIDTH="108" HEIGHT="75">&nbsp;&nbsp;&nbsp;&nbsp;
-				<IMG SRC="misc45div.jpg"  WIDTH="410" HEIGHT="47"><br><br><br>
-
-				<strong>Clicca<a href="2ABufaloAriete.htm" class="sTexDecNo"> qui </a>per il <span class="sRed">BUFALO</span> nei Segni
-				&nbsp;&nbsp;-&nbsp;&nbsp;Torna alla pagina dello <a href="ZodiaCine.htm" class="sTexDecNo">Zodiaco Cinese</a><br><br><br>
-
-				Sei il visitatore n°&nbsp;</strong>
-				<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1390150538-3vk892" border=0></a>
-				&nbsp;(Contenuto Aggiornato 18/02/2020)<br><br><br>
-			</div>
-
-				</TD></TR></TABLE>
-			</TD></TR></TABLE>
-		</TD></TR></TABLE>
-	</TD></TR></TABLE>
-</TD></TR></TABLE>
-</BODY>
-</HTML>
+</td></tr></table>
+</td></tr></table>
+<footer>
+	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
+	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
+</footer>
+</body>
+</html>
