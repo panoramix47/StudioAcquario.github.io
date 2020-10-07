@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" dir="ltr">
 <head>
 <meta charset="UTF-8">
-<title>Gradi Solari: Marzo</title>
+<title>Gradi Solari: Marzo - Studio Acquario</title>
 <link rel="icon" type="image/gif" href="favicon32.gif">
 <meta name="description" content="Studio Acquario: Gradi Solari dello Zodiaco: Marzo">
-<meta name="keywords" content="astrologia, gradi, solari, zodiaco, marzo">
+<meta name="keywords" content="astrologia, studio, acquario, gradi, solari, zodiaco, marzo">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
 <meta name="language" content="it">
 <meta http-equiv="imagetoolbar" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="29/07/2020">
-<meta name="revised" content="04/08/2020">
+<meta name="revised" content="08/10/2020">
 
 <style type="text/css">
 BODY {
-	SCROLLBAR-ARROW-COLOR: #51327d; 
-	SCROLLBAR-TRACK-COLOR: #a89470; 
-	SCROLLBAR-BASE-COLOR: #e0d0a8; 
+	SCROLLBAR-ARROW-COLOR: #51327d;
+	SCROLLBAR-TRACK-COLOR: #a89470;
+	SCROLLBAR-BASE-COLOR: #e0d0a8;
 	scrollbar-dark-shadow-color: #E7C1CE;
 
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
@@ -25,31 +26,100 @@ BODY {
 	background-image: url('GRback02.jpg');
 	background-color: #FFFFCC; /* Cream */
 }
-a {
+a:link {
 	color: #000000;
 }
-A:link {
-	text-decoration:none;
+a:visited {
+	color: #000000; /* ex purple */
+}
+a:hover {
+	color: #FF0000;
+}
+a:active {
+	color: #000000; /* ex red */
 }
 h1 {
 	font-size: xx-large;
-	color: #000000;
 	font-weight: bold;
+	color: #000000;
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 h2 {
 	font-size: medium;
-	color: #000000;
 	font-weight: normal;
+	color: #000000;
 	text-align: center;
-	margin-top: 0.65cm;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-top: 35px; /* 0.65cm; */
 }
-.sLogoBanner {
+header {
 	font-size: xx-large;
 	font-weight: bold;
 	color: #FFFFFF; /* White */
 	text-shadow: 1px 1px 5px #0000FF; /* Blue */
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
+}
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #000000; /* Black */
+	/* text-shadow: 1px 1px 1px #0000FF; Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
+}
+p {
+	font-size: small;
+	color: #000000; /* Black */
+	text-align: justify;
+	padding-left: 35px;
+	padding-right: 35px;
+	line-height: 125%;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.sNavigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 180%;
+}
+.sNavigation a {
+	font-size: medium;
+	font-weight: bold;
+	padding:.42em;
+	color: black;
+	margin-left: 2px;
+	background: #CEC18C; /* Winter Hazel */
+	text-decoration: none;
+}
+.sNavigation a:hover {
+	color: #FFFFFF; /* White */
+	background: #996D3D; /* Buttered Rum */
+}
+#PagCorrente {
+	border-bottom: 2.5px solid brown;
+}
+.sHomeIcon {
+	vertical-align: bottom;
+	margin-bottom: 1px;
+	height: 25px;
+	width: 25px;
 }
 .sBorder1s-Olive {
 				border: 1px solid #666600;
@@ -66,18 +136,11 @@ h2 {
 .sRed {
 				color: #FF0000;
 }
-.sYellow {
-				color: #FFFF00; 
-				text-shadow: 1px 1px 0px #DD8500; /* Tangerine */				
+.sGoldenBrown {
+				color: #996600;
 }
 .sWhite {
 				color: #FFFFFF;
-}
-.sBGPigPink {
-				background-color: #F6D2DE;
-}
-.sBGWhite {
-				background-color: #FFFFFF;
 }
 .sCenter {
 				text-align: center;
@@ -86,8 +149,8 @@ h2 {
 				text-align: justify;
 }
 .sPadding {
-				padding-left: 40px;
-				padding-right: 40px;
+				padding-left: 35px;
+				padding-right: 35px;
 }
 .sBold {
 				font-weight: bold;
@@ -116,81 +179,337 @@ h2 {
 </style>
 </head>
 
-<body vlink="purple" alink="red">
-<p class="sLogoBanner">Studio di Astrologia "Acquario"</p>
+<body>
+<header>Studio di Astrologia &quot;Acquario&quot;</header>
 
-<table background="GRbronze.jpg" cellspacing="0" cellpadding="0" width="95%" class="sBorder1s-Olive" align="center">
-  <tr><td>
+<table background="GRbronze.jpg" cellspacing="0" cellpadding="0" class="sBorder1s-Olive" width="95%" align="center">
+<tr><td background="GRorochiaro.jpg">
 
-	<table background="GRorochiaro.jpg" cellspacing="0" cellpadding="0" width="100%" border="0" class="sBorder1s-Olive">
-	  <tr><td>
+<table background="GRbronze.jpg" cellspacing="14" cellpadding="14" class="sBorder1s-Olive" width="100%">
+<tr><td background="GRorochiaro.jpg">
 
-		<table background="GRbronze.jpg" cellspacing="7" cellpadding="7" width="100%" class="sBorder1s-Olive">
-		  <tr><td>
-
-			<table background="GRorochiaro.jpg" cellspacing="7" cellpadding="7" width="100%" class="sBorder1s-Olive">
-			  <tr><td>
-
-				<table background="GRbronze.jpg" cellspacing="7" cellpadding="7" width="100%" class="sBorder1s-Olive">
-				  <tr><td>
-
-					<table background="GRback04.jpg" bgcolor="#FFF0D0" bordercolor="#FFFFFF" width="100%" border="0">
-					  <tr><td>
+<table background="GRbronze.jpg" cellspacing="14" cellpadding="7" class="sBorder1s-Olive" bgcolor="#FFF0D0" bordercolor="#FFFFFF" width="100%">
+<tr><td background="GRback04.jpg">
 
 		<h1>I GRADI SOLARI DELLO ZODIACO</h1>
 
 		<p class="sCenter">
-			<img src="GOLDLINE3.gif" width="350" height="35">&nbsp;&nbsp; 
-			<img src="GOLDLINE3.gif" width="350" height="35">					
+			<br>
+			<img src="GR.B.03Mar.gif"    width="311" height="214" alt="Marzo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="GR.DA.12pesci.gif" width="130" height="130" alt="Pesci">
 		</p>
 
-		<p class="sMedium sBlack sJustify sPadding">
-			Lo <strong>Zodiaco</strong> è suddiviso in <strong>12</strong> segni, <strong>36</strong> decadi e <strong>360</strong> gradi. 
-			Ogni <strong>grado</strong> ha un valore e un significato. Ad ognuno dei 360 gradi corrisponde un aforisma. 
-			Conoscere il giorno di nascita non è quindi sufficiente: occorre anche sapere quale é il grado.    
+		<nav class="sLarge sCenter">
+			<br>
+			<ul class="sNavigation">
+				<li><a href="GradiSolari1.htm">Gennaio</a></li>
+				<li><a href="GradiSolari2.htm" id="PagCorrente">Febbraio</a></li>
+				<li><a href="GradiSolari3.htm">Marzo</a></li>
+				<li><a href="GradiSolari4.htm">Aprile</a></li>
+				<li><a href="GradiSolari5.htm">Maggio</a></li>
+				<li><a href="GradiSolari6.htm">Giugno</a></li>
+				<li><a href="GradiSolari7.htm">Luglio</a></li>
+				<li><a href="GradiSolari8.htm">Agosto</a></li>
+				<li><a href="GradiSolari9.htm">Settembre</a></li>
+				<li><a href="GradiSolari10.htm">Ottobre</a></li>
+				<li><a href="GradiSolari11.htm">Novembre</a></li>
+				<li><a href="GradiSolari12.htm">Dicembre</a></li>
+				<li><a href="index.html"><img src="favicon32.gif" class="sHomeIcon"></a></li>
+			</ul>
+			<br>
+		</nav>
+
+		<p class="sMedium">
+			Lo <b>Zodiaco</b> è suddiviso in <b>12</b> segni, <b>36</b> decadi e <b>360</b> gradi.
+			Ogni <b>grado</b> ha un valore e un significato. Ad ognuno dei 360 gradi corrisponde un aforisma.
+			Conoscere il giorno di nascita non è quindi sufficiente: occorre anche sapere quale é il grado.
 		</p>
-					
-		<p class="sBlack sSmall sCenter sBold">
-			<br><span class="sBGWhite">&nbsp;
-			<a href="GradiSolari1.htm">Gennaio</a> |
-			<a href="GradiSolari2.htm">Febbraio</a> |</span><span class="sBGPigPink">
-			<a href="GradiSolari3.htm">Marzo</a> |</span><span class="sBGWhite">
-			<a href="GradiSolari4.htm">Aprile</a> |
-			<a href="GradiSolari5.htm">Maggio</a> |
-			<a href="GradiSolari6.htm">Giugno</a> |
-			<a href="GradiSolari7.htm">Luglio</a> |
-			<a href="GradiSolari8.htm">Agosto</a> |
-			<a href="GradiSolari9.htm">Settembre</a> |
-			<a href="GradiSolari10.htm">Ottobre</a> |
-			<a href="GradiSolari11.htm">Novembre</a> |
-			<a href="GradiSolari12.htm">Dicembre</a> |
-			<a href="index.html">Pagina&nbsp;Iniziale</a>&nbsp;</span><br>
+
+		<p class="sCenter">
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">&nbsp;&nbsp;
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">
+		</p>
+
+		<p class="sXLarge sBold sCenter">
+			NATO A&nbsp;<img src="A.3Marzo.gif" width="155" height="109" alt="Marzo">
+		</p>
+
+		<p>
+			Personalità sexy e interessante. La facilità di comprensione è straordinaria, con una memoria eccellente per tutto quello che è affine alle
+			questioni intellettuali. Affettuoso, timido, riservato, indole sensibile e introversa. Onesto, generoso e simpatico. Amante della pace, della
+			calma e della tranquillità. Molto creativo e fantasioso. Vive molto dentro la sua testa creando dei capolavori all'interno della sua mente.
+			Tende a vivere in un mondo tutto suo, escludendosi dal quotidiano a cui appartiene. È delicato e gentile con le altre persone, ma tende a
+			nascondere la maggior parte dei suoi aspetti agli altri. Preferisce vivere lontano dal caos, dedicando del tempo a se stesso. Profondamente
+			buono, sempre pronto a dividere ciò che possiede con quelli che ne hanno bisogno. È una persona sulla quale si può contare. Ama sognare e
+			fantasticare. Ha talento per la musica. È amabile, capriccioso ma affidabile. Tende a mostrarsi troppo modesto, manca di fiducia in sé. Prende
+			decisioni affrettate nella scelta del partner. Ama le cose speciali, ma si arrabbia e si irrita facilmente. È un buon osservatore, adora
+			viaggiare, ama decorare case e ambienti. Apprezza e ricambia la gentilezza. Sensibile, ama servire gli altri. Lunatico. Vendicativo.<br>
+			La <b>donna</b> è spesso carismatica e incantevole. È coscienziosa e leale, ma ha difficoltà a regalare il suo cuore a qualcuno e
+			innamorarsi. Quando è turbata diventa molto sgradevole. Però normalmente è una persona squisita.<br>
+			Il <b>bambino</b> è dolce, ha buon cuore ed è molto sensibile. Ha un carattere così generoso che darebbe al primo venuto tutto ciò
+			che possiede. La mente, il cuore, le mani ben esercitati fin dalla prima età, permetterà a questo fiore di Marzo un buon inizio della vita.
 		</p>
 
 		<p class="sCenter">
 			<br>
-			<img src="GR.B.03Mar.gif"    width="311" height="214">
-			<img src="GR.DA.12pesci.gif" width="130" height="130">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">
 		</p>
 
-		<p class="sLarge sBlack sBold sCenter">
-			NATO A&nbsp;<img src="A.3Marzo.gif" width="155" height="109">
+		<h2><b>1° MARZO</b> - dal <b>10°</b> al <b>11° <span class="sBlue">PESCI</span></b> = <b>Grado di libertà di sensualità</b></h2>
+		<p>
+			<u>Un cavallo selvaggio salta una barriera</u>.<br>
+			Temerario, girovago, lunghi viaggi, vita facile o corrotta, mondanità, lussuria. Spirito di avventura, previdenza.<br>
+			<b>Carattere</b> libero, socievole, entusiasta, sensitivo, simpatico e impulsivo, affettuoso. Possiede un temperamento gradevole
+			e gentile, un'intelligenza brillante e intuitiva, una viva immaginazione e una grande fiducia in se stesso. Sa cosa fare per incantare gli
+			altri e ottenere il meglio da se stesso e dalla vita. Ricco di fascino, di magnetismo e inventiva, mostra grande originalità nelle idee e
+			nelle azioni. È energico e deciso, s'impone su tutti ma non vuole impegnarsi e preferisce la libertà. Sa mettere in risalto il meglio di
+			se nelle difficoltà. Può avere fortuna come avvocato o scrittore è un vero artista, interesse per l'astrologia. Non sopporta costrizione
+			ed è insofferente alle restrizioni. È più fortunato con le amicizie, col lavoro e nei rapporti interpersonali, ma in amore invece è spesso
+			lasciato perché tende a soffocare il partner a causa della gelosia che per lui è sempre presente in ogni rapporto affettivo.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding">
-			Personalità sexy e interessante. La facilità di comprensione è straordinaria, con una memoria eccellente per tutto quello che è affine alle
-			questioni intellettuali. Affettuoso, timido, riservato, indole sensibile e introversa. Onesto, generoso e simpatico. Amante della pace, della
-			calma e della tranquillità. Molto creativo e fantasioso. Vive molto dentro la sua testa creando dei capolavori all'interno della sua mente. 
-			Tende a vivere in un mondo tutto suo, escludendosi dal quotidiano a cui appartiene. È delicato e gentile con le altre persone, ma tende a
-			nascondere la maggior parte dei suoi aspetti agli altri. Preferisce vivere lontano dal caos, dedicando del tempo a se stesso. Profondamente 
-			buono, sempre pronto a dividere ciò che possiede con quelli che ne hanno bisogno. È una persona sulla quale si può contare. Ama sognare e 
-			fantasticare. Ha talento per la musica. È amabile, capriccioso ma affidabile. Tende a mostrarsi troppo modesto, manca di fiducia in sé. Prende
-			decisioni affrettate nella scelta del partner. Ama le cose speciali, ma si arrabbia e si irrita facilmente. È un buon osservatore, adora 
-			viaggiare, ama decorare case e ambienti. Apprezza e ricambia la gentilezza. Sensibile, ama servire gli altri. Lunatico. Vendicativo.<br>
-			La <strong>donna</strong> è spesso carismatica e incantevole. È coscienziosa e leale, ma ha difficoltà a regalare il suo cuore a qualcuno e
-			innamorarsi. Quando è turbata diventa molto sgradevole. Però normalmente è una persona squisita.<br>
-			Il <strong>bambino</strong> è dolce, ha buon cuore ed è molto sensibile. Ha un carattere così generoso che darebbe al primo venuto tutto ciò 
-			che possiede. La mente, il cuore, le mani ben esercitati fin dalla prima età, permetterà a questo fiore di Marzo un buon inizio della vita.
+		<h2><b>2 MARZO</b> - dal <b>11°</b> al <b>12° <span class="sBlue">PESCI</span></b> = <b>Grado di riduzione e azione incerta</b></h2>
+		<p>
+			<u>Un uomo riccamente vestito che guarda dietro di sé. Una colonna spezzata</u>.<br>
+			Grande fortuna ma continua insoddisfazione e rimpianti.<br>
+			<b>Carattere</b> inquieto, dinamico, battagliero, idealista, laborioso e ambizioso, ha eccellenti capacità organizzative. Notevole
+			la fantasia, che lo agevola nel lavoro e nel tempo libero. Nella vita riesce ad ottenere sempre ciò che desidera e spesse volte trova la sua
+			realizzazione nel lavoro e nello studio. Non brilla per le doti appariscenti ma di bontà e generosità, gentilezza, fedeltà e comprensione
+			da farne una vera perla rara. È un sensitivo ma non ama stare al centro dell'attenzione, le simpatie e antipatie sono forti e spesso decisive
+			nella scelta delle amicizie e conoscenze. Buon gusto nella letteratura, nell'arte ama l'occultismo e il mistero. Pur avendo delle attitudine
+			al comando, si dimostra tollerante e comprensivo con gli amici, buono e gentile con coloro ama. Tenacia e amore del lavoro che porteranno al
+			superamento degli ostacoli, simpatie nascoste.
+		</p>
+
+		<h2><b>3 MARZO</b> - dal <b>12°</b> al <b>13° <span class="sBlue">PESCI</span></b> = <b>Grado di protezione</b></h2>
+		<p>
+			<u>Due cerchi, uno dentro l'altro. Uomo e donna a cavallo</u>.<br>
+			Elevazione limitata a causa dei famigliari. Eccessi di difesa, esistenza limitata dalla volubilità.<br>
+			<b>Carattere</b> sensibile, intuitivo, attraente, affascinante, con un'intelligenza brillante e attiva, assimilatrice e fantasiosa.
+			Una natura duttile e serena. Tende a prendere troppo alla leggera la fortuna, si lascia andare a dormire sugli allori e non ama le difese,
+			ciò gli fa dare per scontato le cose buone della vita. Ha alti ideali, animo gentile, forza di volontà, argomentazioni interessanti e
+			carisma consente di avere al fianco amici e persone influenti. È affascinato dal mondo dello spettacolo e del teatro. Fascino e dialettica
+			lo favoriscono socialmente e professionalmente ma non nella sfera sentimentale. È fortunato in amore anche se un po' ambiguo, avrà grande
+			intesa col partner e felicità nei rapporti. Possiede notevoli doti recitative che usa nella vita, ma con scarso profitto. Matrimonio felice,
+			successo nelle associazioni.
+		</p>
+
+		<h2><b>4 MARZO</b> - dal <b>13°</b> al <b>14° <span class="sBlue">PESCI</span></b> = <b>Grado di lavoro intelligente, instabilità</b></h2>
+		<p>
+			<u>Uomo a torso nudo taglia della legna</u>.<br>
+			Scarse ambizioni, vita dura. Modestia di mezzi ed esistenza laboriosa, ma anche semplicità e naturalezza.<br>
+			<b>Carattere</b> passionale, ardente, versatile, abile, pratico e creativo, con un'intelligenza superiore alla norma. È dotato di
+			un atteggiamento calmo e sereno nei riguardi dell'esistenza, i modi aperti e i suoi principi umanitari lo rendono caro a tutti gli amici e
+			colleghi di lavoro, sa guadagnarsi la fiducia dei superiori. Essendo socievole e comprensivo è ben disposto verso gli altri, ottiene vantaggi
+			dalle attività di gruppo e associazioni. La forza creativa, il senso di praticità, l'acuto intuito ne fanno un eccellente ingegnere o un
+			tecnico. Non mancano doti di cuore, le idee socio-umanitarie che ne fa un ottimo amico e un direttore d'enti assistenziali. Capace ad unire
+			gli affari col piacere, ama dibattere e comunicare le idee, preferisce l'amicizia all'amore.
+		</p>
+
+		<h2><b>5 MARZO</b> - dal <b>14°</b> al <b>15° <span class="sBlue">PESCI</span></b> = <b>Grado di franchezza, di determinazione</b></h2>
+		<p>
+			<u>Una freccia vola attraverso una nuvola di fumo. Un uomo con un coltello</u>.<br>
+			Spirito incisivo e ambizioso, che conosce la sua vita e va dritto allo scopo.<br>
+			<b>Carattere</b> violento e aggressivo, dispotico, irascibile, facilmente irritabile, polemico ma sincero. È apprezzato se fa
+			critiche costruttive, ma ha scatti di violenza venata da isterismo. L'intelligenza è buona ed efficace, non è certo facile ingannarlo. Ama
+			l'adulazione e diventa una facile preda di amici e colleghi senza scrupoli. Lunghi viaggi e cambiamenti nella vita, la sua felicità è al
+			culmine quando può cambiare residenza o paese. Ha molti amici e realizza buoni contatti sociali, detesta le attività di routine e le persone
+			poco stimolanti, soprattutto sul piano intellettuale. Ha una personalità pratica, orientata a scopi concreti e importanti. Se entusiasta di
+			una relazione si mostra disponibile.
+		</p>
+
+		<h2><b>6 MARZO</b> - dal <b>15°</b> al <b>16° <span class="sBlue">PESCI</span></b> = <b>Grado d'aiuti generosi, sorveglianza</b></h2>
+		<p>
+			<u>Una tigre avanza circospetta o bada ai suoi piccoli</u>.<br>
+			Devozione e riuscita nella vita. Forti attaccamenti e difesa dei propri averi fino alla violenza.<br>
+			<b>Carattere</b> buono d'animo, gentile, sensibile e altruista, energico e ambizioso, idealista, intelligente e dinamico, possiede
+			tutte le doti atte a porle in posizioni di rilievo, ad occupare posti di responsabilità e comando. La grande abilità nel portare a termine
+			i suoi compiti, la decisione e la perseveranza, lo porta al successo e all'indipendenza economica. Ricerca novità e situazioni sempre diverse
+			e stimolanti in ambiti creativi e produttivi, oltre ad utilizzare al meglio la sua notevole fantasia. Ricco di ambizione, coraggioso,
+			avventuroso ed esibizionista. Ha successo negli affari grazie alla prudenza ama la famiglia. Un po' testardo, tende a non dare ascolto
+			nessuno. In amore è un tenero ma incline alle scappatelle. Ama profondamente il partner al quale resta fedele anche nei momenti di maggiore
+			difficoltà.
+		</p>
+
+		<h2><b>7 MARZO</b> - dal <b>16°</b> al <b>17° <span class="sBlue">PESCI</span></b> = <b>Grado di crollo, rovina, bersaglio mobile</b></h2>
+		<p>
+			<u>Un uomo cade fra le travi divelte di un ponte</u>.<br>
+			Pericolo o incidente nel mezzo della vita, incomprensione dei famigliari, esistenza combattuta.<br>
+			<b>Carattere</b> instabile, incostante, sensibile, idealista con un atteggiamento amichevole e generoso. Aperto a nuove idee, ha
+			una forte immaginazione, e la fortuna di possedere una natura comprensiva e umanitaria, una personalità indipendente e organizzata. Il
+			desiderio d'aiutare chi chiede aiuto può degenerare in spese eccessive per le sue possibilità e causargli di conseguenza problemi
+			finanziari. L'idealismo abbinato ad una specie di ambizione lo porta ad agire laddove i risultati sono ancora da prevedere. Preferisce
+			impartire ordini, piuttosto che riceverli; riconosce con molta facilità le occasioni favorevoli e i buoni affari. Ama il lusso e la bella
+			vita, come divertirsi e intrattenere le persone che gli interessano.
+		</p>
+
+		<h2><b>8 MARZO</b> - dal <b>17°</b> al <b>18° <span class="sBlue">PESCI</span></b> = <b>Grado di catastrofe</b></h2>
+		<p>
+			<u>Un cavallo e il suo cavaliere cadono nel saltare una siepe</u>.<br>
+			Pericolo negli spostamenti. Iniziative avventurose, fiducia mal riposta, amicizie che si rompono.<br>
+			<b>Carattere</b> mutevole, loquace, versatile, gentile e sensibile, molto equilibrato, non possiede delle doti eccelse ma sa come
+			servirsi discretamente di ciò che madre natura gli ha fornito. Dotato di una forte immaginazione e un'intensa vita interiore che lo rende
+			cordiale e affascinante, ricercato dagli amici e dalle persone del sesso opposto. Riesce in vari campi, potrebbe incontrare difficoltà a
+			trovare la strada giusta. Indipendente e organizzato, dotato di un'intelligenza scientifica, portata alla sperimentazione e di una
+			personalità magnetica. Ha abilità artigianale e può essere una figura illustre. Pur essendo ricco emotivamente, ha bisogno di trovare
+			sbocchi pratici ai suoi sogni e alla fantasie. Riesce in vari campi ma può incontrare delle difficoltà a trovare la strada giusta. Tuttavia
+			è molto attivo e abile negli affari. Ha una vita avventurosa con qualche problema nel settore sentimentale. Riesce però a raggiungere una
+			posizione soddisfacente nella vita sociale. Amante dello sport, dei cavalli, proprietario di una barca.
+		</p>
+
+		<h2><b>9 MARZO</b> - dal <b>18°</b> al <b>19° <span class="sBlue">PESCI</span></b> = <b>Grado di soccorso, aiuto corporale</b></h2>
+		<p>
+			<u>Due spade incrociate. Utensili e strumenti di medicina e uomo che pesta in un mortaio</u>.<br>
+			Natura incline alle lotte ed entusiasta, spirito marziale.<br>
+			<b>Carattere</b> entusiasta, intelligente, simpatico, ricettivo, sensibile, cordiale, una personalità amabile e attraente, ma la
+			sua natura fortemente emotiva lo rende facile all'ira. L'abilità manuale e la praticità lo portano a grandi vantaggi rispetto agli altri e
+			lo agevola nei rapporti sociali. Ha sviluppate qualità intuitive, fecondità di idee e trovate originali, applicabili nella vita pratica.
+			È amante di ogni genere di piacere, sempre in cerca di notorietà, coraggioso e avventuriero. Temperamento allegro e spensierato, con una
+			grande apertura mentale. Nonostante l'ambizione e il senso degli affari, attribuisce grande importanza alla famiglia e agli affetti.
+			Di buon cuore, ha abilità esecutiva di cose pratiche e semplici. Vecchiaia prospera.
+		</p>
+
+		<h2><b>10 MARZO</b> - dal <b>19°</b> al <b>20° <span class="sBlue">PESCI</span></b> = <b>Grado di divagazione, di ondeggiamento</b></h2>
+		<p>
+			<u>Un rotolo a spirale</u>.<br>
+			Perdita di tempo, contemplazione, spirito fantasioso, viva immaginazione. Malattie nervose.<br>
+			<b>Carattere</b> indeciso, volubile e mutevole, intuitivo, sensibile, riservato, raffinato e affascinante, dotato di una natura
+			seria e nobile, di spiccate qualità mentali e di gran senso d'indipendenza. Mobile, intuitivo, ha mentalità elastica, molto aperta e
+			moderna. Ha una grande facilità di parola, la sua dialettica è scorrevole ma tagliente e se perde le staffe è incontrollata, ma nella vita
+			vince comunque. Sognatore e idealista, in genere è aiutato dalla fortuna e dai parenti e qualcosa di buono realizza in ogni caso. Pratico e
+			profondo, ospitale e gentile, ama il suo prossimo, è un organizzatore e accentratore, riesce a creare intorno a sé un vero calore che attira
+			gli altri. Oltre a possedere un'intelligenza acuta, originale e intraprendente, è dotato di molti talenti, che consente di farsi notare in
+			ambito sociale. Ama tenersi aggiornato su tutto, è proiettato nel futuro. Cerca un partner di cui possa fidarsi e che sia disposto a
+			condividere dei momenti di grande trasporto affettivo e sessuale. In amore è sensuale, aperto e disponibile.
+		</p>
+
+		<h2><b>11 MARZO</b> - dal <b>20°</b> al <b>21° <span class="sBlue">PESCI</span></b> = <b>Grado di doppio senso, di splendore</b></h2>
+		<p>
+			<u>Una falce di Luna emerge dalle nuvole ed è colpita da un baleno</u>.<br>
+			Fortuna che si perde per incuria, indolenza e mancanza di volontà.<br>
+			<b>Carattere</b> originale e avventuroso, ambizioso, battagliero e incline ai piaceri. La sua caratteristica è la pigrizia alternata ad un'attività frenetica e continua. È idealista e sognatore, dotato di una natura molto comprensiva resa ancor più preziosa dalla bontà, dalla generosità e dalla profondità dei suoi sentimenti. Ha un'intelligenza originale e intraprendente unita ad un temperamento sereno e armonioso. Agisce con grande facilità ed è sempre pronto al combattimento e determinato a difendersi da eventuali attacchi. Ha concezioni mentali superiori e idee penetranti, molta immaginazione e si accontenta facilmente e quindi spesso gli manca l'incentivo a superare gli ostacoli. Per amore è capace di devozione e sofferenza. Pur amando molto la libertà e l'indipendenza, ricerca la sicurezza e la stabilità: casa e famiglia assumono grande importanza nella vita, sia nel bene che nel male. È sensuale, geloso e alterna la devozione all'infedeltà.
+		</p>
+
+		<h2><b>12 MARZO</b> - dal <b>21°</b> al <b>22° <span class="sBlue">PESCI</span></b> = <b>Grado di prostrazione, di castigo</b></h2>
+		<p>
+			<u>Una bella donna con abiti stracciati, dal viso cupo curva su un uomo addormentato</u>.<br>
+			Sensualità, prodigalità che porta alla rovina, sprechi, vita corrotta.<br>
+			<b>Carattere</b> debole, molto emotivo, la natura sensibile e umana è resa ancora più preziosa dalla profondità dei sentimenti.
+			Intellettuale, generoso, ama le cose belle della terra, adora la musica e l'arte e come artista potrebbe ottenere un discreto successo.
+			Ambizioso, ama prendere il comando delle situazioni e raggiungere il più veloce possibile gli obiettivi desiderati, per soddisfare la brama
+			di denaro e di possesso che tanto lo caratterizza. È molto comprensivo, ispirato ben disposto verso gli altri, poiché ama interagire con
+			gli altri e fare buona impressione. Caparbio, con obiettivi chiari e precisi ama rincorrere i suoi ideali, i quali solo in tarda età riesce
+			a raggiungere. Trova l'appagamento negli affetti, ama infatti in modo completo anche se a volte sembra un po' troppo riservato. L'amore
+			assume una parte importante nella sua vita ed è molto attaccato alla madre. Pericoli a causa dell'altro sesso, debolezza e influenzabilità.
+		</p>
+
+		<h2><b>13 MARZO</b> - dal <b>22°</b> al <b>23° <span class="sBlue">PESCI</span></b> = <b>Grado di speculazione, d'incoscienza</b></h2>
+		<p>
+			<u>Un arciere tende l'arco con la freccia ben fissata. Donna in una barca senza remi</u>.<br>
+			Scarsa previdenza, iniziative sballate, distrazioni pericolose.<br>
+			<b>Carattere</b> gentile, gradevole, affascinante e generoso, violento e forte, scopi ben precisi e determinati. Ha una
+			personalità geniale e magnetica, impulsiva ed entusiasta, emotivamente stabile e dall'umore discontinuo. Il temperamento artistico lo
+			predispone alla carriera professionale piuttosto che commerciale, se è adeguatamente preparato. Pur avendo una natura pratica, determinata
+			e ambiziosa, si mostra sensibile, socievole, accomodante e comprensivo, nell'amore e nelle amicizie, che sono numerose e importanti. Ama
+			l'azzardo e gli piace affrontare i rischi, appassionato al gioco e allo sport. Ansioso e spesse volte depresso, fa leva sul buon cuore
+			degli altri. Incline a lamentarsi non gode mai fino in fondo delle cose che ha. Deve fare attenzione al suo stato emotivo, perché è soggetto
+			all'ipocondria. Pigro, noncurante e poco passionale, dovrebbe trovare degli spunti giusti per reagire a un'indolenza congenita. Non si
+			stacca mai dalla famiglia e questo a lungo andare diventa un problema. Raggiunge la serenità in età avanzata, anche perché rimanda di
+			giorno in giorno l'inventario della sua vita. Ama molto viaggiare.
+		</p>
+
+		<h2><b>14 MARZO</b> - dal <b>23°</b> al <b>24° <span class="sBlue">PESCI</span></b> = <b>Grado di sensualità, d'intimità pericolosa</b></h2>
+		<p>
+			<u>Un uomo e una donna a letto. Una donna seminuda sdraiata su un divano</u>.<br>
+			Lusso, mollezza, perversione. Sensualità e inclinazione ai piaceri.<br>
+			<b>Carattere</b> delicato, generoso, ambizioso, carismatico, gentile di bell'aspetto. Possiede una mente acuta, pratica e ricca di
+			intuito. Dotato d'intelligenza viva e brillante, filosofo, mistico e studioso. Pur avendo molti talenti, non sempre è in grado di tradurre
+			in realtà le sue idee innovative e creative. È un amico fedele e prezioso che detesta la mediocrità e ammira chi ha successo e carisma nella
+			vita. Il temperamento artistico, unito ad uno spiccato istinto umanitario, attira sempre attorno a lui molte amicizie durevoli e importanti.
+			Non manca di sani principi e neppure d'abilità machiavellica, impegno e astuzia ma ha tendenza a sottrarsi alle responsabilità che cerca di
+			cavarsela col minore sforzo. Ha molta fantasia anche se molto pigro e fatalista. Predilige vivere alla giornata, e detesta fare programmi
+			e difficilmente pensa al domani. È controllato in amore e nei sentimenti avrà una felice vita a due.
+		</p>
+
+		<h2><b>15 MARZO</b> - dal <b>24°</b> al <b>25° <span class="sBlue">PESCI</span></b> = <b>Grado di vittoria</b></h2>
+		<p>
+			<u>Una corona e una clava . Un uomo lancia delle pietre con una fionda</u>.<br>
+			Vittoria sui nemici. Lotte accanite seguite da successi. Spirito battagliero, polemico o rissoso.<br>
+			<b>Carattere</b> sensibile, ricettivo, ma anche pratico e razionale, coraggioso e aggressivo, tende alla parte materiale della
+			vita cercando di afferrare tutto quello che capita a portata di mano. Mentalità elastica, molto aperta e moderna. Non manca di fortuna e
+			spesso ne abusa. Ha grande facilità di parola, la sua dialettica è scorrevole ma tagliente e a volte incontrollata. Grande dignità
+			conquistata con forza e convinzione, vittoria sui nemici. Possiede molti talenti e ha un'intelligenza viva e brillante, sagace e penetrante,
+			unita a spiccate capacità di concentrazione, ama la musica e i viaggi. Non piace prendere ordini da altri, soprattutto in ambito
+			professionale, si mostra riservato in faccende private. Ama le cose belle, i viaggi e ne inventa sempre uno nuovo. Stabilisce dei legami
+			sentimentali con partner disposti a condividere interessi intellettuali o creativi. Creativo e fantasioso sa amare in modo profondo e
+			adorabile.
+		</p>
+
+		<h2><b>16 MARZO</b> - dal <b>25°</b> al <b>26° <span class="sBlue">PESCI</span></b> = <b>Grado di sicurezza di decisione</b></h2>
+		<p>
+			<u>Uomo armato di lancia e scudo. Donna che taglia la testa ad un guerriero addormentato</u>.<br>
+			Spirito circospetto fedele e leale che sa vincere le rivalità.<br>
+			<b>Carattere</b> sensibile, duttile, fantasioso, intuitivo, dotato di una mente acuta e indagatrice che gli consente di farsi
+			notare soprattutto in ambiti intellettuali e scientifici. Ricco di straordinarie doti intellettuali unite all'abilità di sviluppare la mente
+			in campo scientifico. In grado d'esaltare al massimo il suo temperamento costante e pieno di forza. Intelligente con grandi capacità
+			d'analisi, sintesi e concentrazione. È combattivo, sensuale, attivo, preciso e incline ai piaceri, ambizioso e con una gran capacità in
+			campo lavorativo. Ha una mente elastica, aperta, che si adatta perfettamente a tutte le situazioni. Umano e altruista, al servizio
+			dell'umanità. Ama molto viaggiare ma deve stare attento alla guida, all'aereo e alle navi. È fortunato e in un modo o nell'altro per lui
+			le cose si aggiustano sempre in modo positivo.
+		</p>
+
+		<h2><b>17 MARZO</b> - dal <b>26°</b> al <b>27° <span class="sBlue">PESCI</span></b> = <b>Grado di rovescio di disfatta</b></h2>
+		<p>
+			<u>Uomo nudo bussa alla porta di una casa, mentre un terremoto fa tremare le fondamenta</u>.<br>
+			Calamità repentina e imprevista, vita errabonda, umiliazioni.<br>
+			<b>Carattere</b> irritabile, emotivo, dinamico, di facile comunicativa, stravagante amante dell'avventura ha facilità all'ira
+			quanto alla commozione. Si rivela adatto a tutte le attività che richiedono iniziativa e costanza, anche non essendo molto paziente,
+			possiede una carica di entusiasmo dura a spegnersi. È un idealista in apparenza calmo, disposto a fare qualunque sacrificio per il partner
+			e i familiari. È espressivo, un buon amico e incline ad assecondare i desideri e le necessità degli amici. Nutre una grande passione per i
+			lunghi viaggi in terre lontane, la sua vita sarà comunque una continua girandola di avvenimenti. È provvisto di talenti artistici e
+			letterari, ma riscuote successo nella vendita e nel commercio per la dialettica, il fascino e la comunicativa che lo qualificano. È molto
+			sensuale ha nel sesso la preminenza nella sua vita. È molto incline ai piaceri e ai peccati di gola. Ha poche ambizioni e vive alla
+			giornata.
+		</p>
+
+		<h2><b>18 MARZO</b> - dal <b>27°</b> al <b>28° <span class="sBlue">PESCI</span></b> = <b>Grado di poteri particolari e di sapienza</b></h2>
+		<p>
+			<u>Un serpente si erge in mezzo a un cerchio di fuoco</u>.<br>
+			Doni medici, studio dei segreti della natura. Diplomazia, alte cariche, poteri occulti.<br>
+			<b>Carattere</b> generoso, gentile, ambizioso, intuitivo, analitico ed egocentrico. Temperamento romantico, in genere fa sfoggio
+			di cultura modana, di concetti all'avanguardia ma sotto è un superficiale che sa quel tanto che basta per far colpo. Ha una forte
+			personalità è inoltre battagliero e agguerrito. Mostra grande abilità negli affari e nell'amministrare il proprio denaro il buon senso e
+			organizzazione non gli fanno difetto! Deve vigilare perché l'amore per le cose buone della vita non degeneri in sperpero di denaro e logorio
+			fisico. Ama la gente più grande, mentre deve stare con gli amici della sua età. Pur essendo emotivo buono e generoso, non sempre riesce a
+			manifestare i suoi sentimenti. Sempre in movimento, vive una vita colma di avvenimenti. A ma l'avventura e le situazioni che procurano
+			brivido. Molto incline ai piaceri ed è assai goloso. È molto sensuale, instabile e poco fedele.
+		</p>
+
+		<h2><b>19 MARZO</b> - dal <b>29°</b> al <b>30° <span class="sBlue">PESCI</span></b> = <b>Grado di isolamento e d'incertezza</b></h2>
+		<p>
+			Temperamento incerto, di scarsa iniziativa, vagabondo, debolezza nella vita. Idealismo.<br>
+			<b>Carattere</b> brillante, sereno e generoso, intuitivo, spontaneo, fantasioso e appassionato. Introverso, riservato e
+			distaccato. È un sognatore e dà un'enorme imperizia per le cose della vita. È ricco d'idee lontane dalla realtà, utopie autentiche che si
+			ostina a con incrollabile ottimismo a voler mettere in pratica. Si mostra equo sia nelle questioni personali e sociali. Ha un carattere
+			complicato, e non è per niente facile capirlo. Non ammette mai d'avere torto, si nasconde dietro mille alibi per non prendersi le sue
+			responsabilità. Ha qualità introspettive e di comprensione tali, da comprendere immediatamente i molti aspetti di una questione o una
+			persona. Ama viaggiare e desidera avere al fianco un partner dinamico e intelligente, con cui condividere interessi stimolanti dal punto
+			di vista emotivo e intellettuale. Ama collezionare, paragonare, è attratto dalla zoologia e dall'astrologia. È incline a stati di
+			malinconia profonda, anche perché è innamorato dell'amore.
+		</p>
+
+		<h2><b>20 MARZO</b> - <b>30° <span class="sBlue">PESCI</span></b> = <b>Grado di potere personale di egoismo</b></h2>
+		<p>
+			<u>Una donna calzata e vestita che si guarda in uno specchio. Una colonna e un capitello</u>.<br>
+			Influenza personale ma manca di bontà e flessibilità verso altri.<br>
+			<b>Carattere</b> autoritario, vanitoso, egoista, freddo, manca di emotività. Spirito forte che domina le avversità e fa prevalere
+			il ragionamento sui sentimenti. Tenace, paziente e generoso, dai sani principi è orgoglioso e crede molto in se stesso questo potrebbe
+			generare in vanità. Intuitivo e determinato a voler raggiungere una posizione di rilievo in ambito professionale. Sa esercitare una grande
+			influenza personale, ma manca di dolcezza e di bontà. È valido come collaboratore e la qualità di saper girare a proprio favore anche le
+			avversità, non solo per l'intelligenza personale ma anche in virtù della fortuna. Non ha problemi economici e sa assumersi seriamente le
+			responsabilità anche in amore. Intuitivo e magico, spesse volte soffre di disturbi dell'alimentazione. Cerca un partner stimolante, ma
+			serio e degno di fiducia.
 		</p>
 
 		<p class="sCenter">
@@ -198,435 +517,173 @@ h2 {
 			<img src="GOLDLINE3.gif" width="350" height="35">
 		</p>
 
-			<h2><strong>1° MARZO</strong> - dal <strong>10°</strong> al <strong>11° <span class="sBlue">PESCI</span></strong> = <strong>Grado di libertà di sensualità</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un cavallo selvaggio salta una barriera</u>.<br>
-				Temerario, girovago, lunghi viaggi, vita facile o corrotta, mondanità, lussuria. Spirito di avventura, previdenza.<br>
-				<strong>Carattere</strong> libero, socievole, entusiasta, sensitivo, simpatico e impulsivo, affettuoso. Possiede un temperamento gradevole
-				e gentile, un'intelligenza brillante e intuitiva, una viva immaginazione e una grande fiducia in se stesso. Sa cosa fare per incantare gli
-				altri e ottenere il meglio da se stesso e dalla vita. Ricco di fascino, di magnetismo e inventiva, mostra grande originalità nelle idee e
-				nelle azioni. È energico e deciso, s'impone su tutti ma non vuole impegnarsi e preferisce la libertà. Sa mettere in risalto il meglio di 
-				se nelle difficoltà. Può avere fortuna come avvocato o scrittore è un vero artista, interesse per l'astrologia. Non sopporta costrizione 
-				ed è insofferente alle restrizioni. È più fortunato con le amicizie, col lavoro e nei rapporti interpersonali, ma in amore invece è spesso
-				lasciato perché tende a soffocare il partner a causa della gelosia che per lui è sempre presente in ogni rapporto affettivo.
-			</p>
+		<h2><b>21 MARZO</b> - dal <b>1°</b> al <b>2° <span class="sRed">ARIETE</span></b> = <b>Grado di forza e passione</b></h2>
+		<p>
+			<u>Un uomo che tiene nella mano destra una falce e nella sinistra una fronda</u>.<br>
+			Forza di carattere e sopportazione. Spirito battagliero preparato alle lotte per la vita.<br>
+			<b>Carattere</b> passionale, indipendente, forte e aggressivo, sensibile, ambizioso, ricco di talento e di doti non comuni che
+			gli consentono di arrivare molto in alto. Laborioso ma attaccabrighe, preparato alle lotte per la vita, deciso, autoritario. Nutre interessi
+			spirituali e filosofici. Apparentemente dispotico, in realtà è generoso e timido, ha tutte le prerogative necessarie di successo. Non mancano
+			buone doti diplomatiche in caso di necessità, la personalità è positiva ed energica, originale e instancabile, tenace e costante. Su tutto
+			prevale l'ambizione e per questo motivo il cuore non conta, il ragionamento e la volontà prevalgono sempre sull'amore. Essendo un po' critico
+			ed esigente, incontra qualche difficoltà a trovare la persona del cuore che sia all'altezza delle sue aspettative. È un ottimo compagno in
+			amore, ardente, sensuale e appassionato solo se il partner è giusto. Ha istinti combattivi ed è innamorato della libertà.
+		</p>
 
-			<h2><strong>2 MARZO</strong> - dal <strong>11°</strong> al <strong>12° <span class="sBlue">PESCI</span></strong> = <strong>Grado di riduzione e azione incerta</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un uomo riccamente vestito che guarda dietro di sé. Una colonna spezzata</u>.<br>
-				Grande fortuna ma continua insoddisfazione e rimpianti.<br>
-				<strong>Carattere</strong> inquieto, dinamico, battagliero, idealista, laborioso e ambizioso, ha eccellenti capacità organizzative. Notevole
-				la fantasia, che lo agevola nel lavoro e nel tempo libero. Nella vita riesce ad ottenere sempre ciò che desidera e spesse volte trova la sua
-				realizzazione nel lavoro e nello studio. Non brilla per le doti appariscenti ma di bontà e generosità, gentilezza, fedeltà e comprensione 
-				da farne una vera perla rara. È un sensitivo ma non ama stare al centro dell'attenzione, le simpatie e antipatie sono forti e spesso decisive
-				nella scelta delle amicizie e conoscenze. Buon gusto nella letteratura, nell'arte ama l'occultismo e il mistero. Pur avendo delle attitudine
-				al comando, si dimostra tollerante e comprensivo con gli amici, buono e gentile con coloro ama. Tenacia e amore del lavoro che porteranno al
-				superamento degli ostacoli, simpatie nascoste.
-			</p>
+		<h2><b>22 MARZO</b> - dal <b>2°</b> al <b>3° <span class="sRed">ARIETE</span></b> = <b>Grado di parata, valore e di ostentazione</b></h2>
+		<p>
+			<u>Un uomo in piedi, armato con lancia e spada riccamente vestito, s'appresta alla lotta</u>.<br>
+			Temperamento guerriero, indipendente nel modo di vivere.<br>
+			<b>Carattere</b> pratico, ostinato, aggressivo, tenace, laborioso, determinato, pieno d'energia. Abile, dinamico, caritatevole,
+			una natura autosufficiente. Mostra un grande coraggio e abilità nel superare gli ostacoli, ma anche per raggiungere gli obiettivi
+			prefissati. Accanito lavoratore col pallino dell'organizzazione, è fornito di notevoli capacità in merito, ricco d'idee originali, socievole
+			e simpatico. La mente fertile lo porta a sviluppare doti di scienziato e di matematico. Amando i giochi e le sfide mentali in amore, gli è
+			quasi impossibile realizzare un rapporto affettivo soddisfacente. Ha grandi capacità intuitive, deve cercare di dominare la natura impetuosa.
+			È molto fortunato, infatti nonostante tutto riesce a realizzare i suoi sogni e trova l'amore che dura tutta la vita. Vive una vita sociale
+			intensa e ricca di relazioni ed emozioni.
+		</p>
 
-			<h2><strong>3 MARZO</strong> - dal <strong>12°</strong> al <strong>13° <span class="sBlue">PESCI</span></strong> = <strong>Grado di protezione</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Due cerchi, uno dentro l'altro. Uomo e donna a cavallo</u>.<br>
-				Elevazione limitata a causa dei famigliari. Eccessi di difesa, esistenza limitata dalla volubilità.<br>
-				<strong>Carattere</strong> sensibile, intuitivo, attraente, affascinante, con un'intelligenza brillante e attiva, assimilatrice e fantasiosa.
-				Una natura duttile e serena. Tende a prendere troppo alla leggera la fortuna, si lascia andare a dormire sugli allori e non ama le difese,
-				ciò gli fa dare per scontato le cose buone della vita. Ha alti ideali, animo gentile, forza di volontà, argomentazioni interessanti e 
-				carisma consente di avere al fianco amici e persone influenti. È affascinato dal mondo dello spettacolo e del teatro. Fascino e dialettica 
-				lo favoriscono socialmente e professionalmente ma non nella sfera sentimentale. È fortunato in amore anche se un po' ambiguo, avrà grande 
-				intesa col partner e felicità nei rapporti. Possiede notevoli doti recitative che usa nella vita, ma con scarso profitto. Matrimonio felice,
-				successo nelle associazioni.
-			</p>
+		<h2><b>23 MARZO</b> - dal <b>2°</b> al <b>3° <span class="sRed">ARIETE</span></b> = <b>Grado di accordo di lusso e di benessere</b></h2>
+		<p>
+			<u>Una donna amabile con una veste greca scollata, il collo e le braccia nude incrociate sulle ginocchia</u>.<br>
+			Modi cortesi e amabili, amore per la pace.<br>
+			<b>Carattere</b> raffinato, focoso, ardente, sottile ed entusiasta, affettuoso, interessante, versatile. Ha gusto per la vita
+			sociale, amico della concordia, senso dell'amicizia. Ha notevoli doti artistiche abbinate ad un solido senso pratico. Ha grande senso
+			dell'umorismo, estroverso ambizioso senza ostentazione, può aspirare al successo. Abilità d'esprimersi attraverso la poesia e la letteratura.
+			Spirito di iniziativa, che tanto lo caratterizza lo portano ad esplorare nuove idee o muoversi verso nuove direzioni. La mente versatile e
+			la forte coscienza sociale, indica un successo in un'attività nel settore pubblico. Vive con incertezza la sfera sentimentale, a causa del
+			continuo desiderio di novità e di avventura. È illuminato da una buona stella, ed è costantemente protetto dalla fortuna. È sensuale,
+			generoso e protettivo, affabile e gentile. È fortunato perché ha un cuore generoso.
+		</p>
 
-			<h2><strong>4 MARZO</strong> - dal <strong>13°</strong> al <strong>14° <span class="sBlue">PESCI</span></strong> = <strong>Grado di lavoro intelligente, instabilità</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Uomo a torso nudo taglia della legna</u>.<br>
-				Scarse ambizioni, vita dura. Modestia di mezzi ed esistenza laboriosa, ma anche semplicità e naturalezza.<br>
-				<strong>Carattere</strong> passionale, ardente, versatile, abile, pratico e creativo, con un'intelligenza superiore alla norma. È dotato di 
-				un atteggiamento calmo e sereno nei riguardi dell'esistenza, i modi aperti e i suoi principi umanitari lo rendono caro a tutti gli amici e
-				colleghi di lavoro, sa guadagnarsi la fiducia dei superiori. Essendo socievole e comprensivo è ben disposto verso gli altri, ottiene vantaggi
-				dalle attività di gruppo e associazioni. La forza creativa, il senso di praticità, l'acuto intuito ne fanno un eccellente ingegnere o un
-				tecnico. Non mancano doti di cuore, le idee socio-umanitarie che ne fa un ottimo amico e un direttore d'enti assistenziali. Capace ad unire
-				gli affari col piacere, ama dibattere e comunicare le idee, preferisce l'amicizia all'amore.
-			</p>
+		<h2><b>24 MARZO</b> - dal <b>3°</b> al <b>4° <span class="sRed">ARIETE</span></b> = <b>Grado rude e d'indipendenza</b></h2>
+		<p>
+			<u>Foreste o macchie selvatiche dove abbondano rovi e piante d'ogni specie</u>.<br>
+			Facili ricchezze che si perdono però facilmente. Dissipazione, dispersione.<br>
+			<b>Carattere</b> impulsivo, esuberante, affettuoso, autorevole, intelligente, energico e deciso. Ha una personalità magnetica e
+			passionale e un certo livello di vanità, cuore generoso ma inesperto. Qualità che consentono di riscuotere molti consensi in ambito sociale
+			e professionale e nelle amicizie, numerose e selezionate. È portato per le scienze esatte e mostra anche capacità in politica e nella
+			carriera diplomatica. Sicuro e consapevole delle capacità, riesce sempre a raggiungere posizioni di prestigio. Ama la vita comoda, è leale
+			e sincero con la persona che ama ed è disposto a fare qualsiasi cosa. Impetuoso, nervoso irascibile e presuntuoso, non accetta critiche o
+			imposizioni. Natura un po' selvaggia, amante della vita campestre, sperpero d'energie. Per quanto sia impulsivo e sensuale è capace
+			d'affetti forti e duraturi. Sarà prima o poi baciato dalla fortuna.
+		</p>
 
-			<h2><strong>5 MARZO</strong> - dal <strong>14°</strong> al <strong>15° <span class="sBlue">PESCI</span></strong> = <strong>Grado di franchezza, di determinazione</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Una freccia vola attraverso una nuvola di fumo. Un uomo con un coltello</u>.<br>
-				Spirito incisivo e ambizioso, che conosce la sua vita e va dritto allo scopo.<br>
-				<strong>Carattere</strong> violento e aggressivo, dispotico, irascibile, facilmente irritabile, polemico ma sincero. È apprezzato se fa 
-				critiche costruttive, ma ha scatti di violenza venata da isterismo. L'intelligenza è buona ed efficace, non è certo facile ingannarlo. Ama 
-				l'adulazione e diventa una facile preda di amici e colleghi senza scrupoli. Lunghi viaggi e cambiamenti nella vita, la sua felicità è al 
-				culmine quando può cambiare residenza o paese. Ha molti amici e realizza buoni contatti sociali, detesta le attività di routine e le persone
-				poco stimolanti, soprattutto sul piano intellettuale. Ha una personalità pratica, orientata a scopi concreti e importanti. Se entusiasta di
-				una relazione si mostra disponibile.
-			</p>
+		<h2><b>25 MARZO</b> - dal <b>4°</b> al <b>5° <span class="sRed">ARIETE</span></b> = <b>Grado di orgoglio giustificato, d'incertezza</b></h2>
+		<p>
+			<u>Cielo notturno e tempestoso. Dei lampi illuminano una montagna sulla quale un uomo s'inerpica, deciso e sicuro</u>.<br>
+			Elevazione folgorante.<br>
+			<b>Carattere</b> forte, magnanimo, magnetico e imperioso. Possiede un ottimo intuito, un'ottima capacità di giudizio e notevoli
+			doti intellettuali, che consente d'essere sempre un passo davanti agli altri. La sua dote più spiccata è una gran creatività può quindi
+			diventare un sostenitore di ogni forma d'arte. Raggiunge i suoi scopi grazie all'umanità e al senso di realtà. Di idee moderne,
+			all'avanguardia e con un'audace concezione della vita. Non ama essere contrariato e si mostra intollerante verso coloro che ritiene
+			inferiori, soprattutto sotto il profilo intellettuale. Vive la propria vita alla ricerca dell'ascesa sociale e di un'evoluzione spirituale
+			che però raggiunge lentamente e faticosamente. L'interesse per la letteratura lo arricchisce e lo rende un vero intellettuale, raggiunge
+			la felicità stando a contatto con la gente e qualsiasi attività intraprenda è votato al successo. Compagno fedele e piacevole.
+		</p>
 
-			<h2><strong>6 MARZO</strong> - dal <strong>15°</strong> al <strong>16° <span class="sBlue">PESCI</span></strong> = <strong>Grado d'aiuti generosi, sorveglianza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Una tigre avanza circospetta o bada ai suoi piccoli</u>.<br>
-				Devozione e riuscita nella vita. Forti attaccamenti e difesa dei propri averi fino alla violenza.<br>
-				<strong>Carattere</strong> buono d'animo, gentile, sensibile e altruista, energico e ambizioso, idealista, intelligente e dinamico, possiede
-				tutte le doti atte a porle in posizioni di rilievo, ad occupare posti di responsabilità e comando. La grande abilità nel portare a termine 
-				i suoi compiti, la decisione e la perseveranza, lo porta al successo e all'indipendenza economica. Ricerca novità e situazioni sempre diverse 
-				e stimolanti in ambiti creativi e produttivi, oltre ad utilizzare al meglio la sua notevole fantasia. Ricco di ambizione, coraggioso,
-				avventuroso ed esibizionista. Ha successo negli affari grazie alla prudenza ama la famiglia. Un po' testardo, tende a non dare ascolto 
-				nessuno. In amore è un tenero ma incline alle scappatelle. Ama profondamente il partner al quale resta fedele anche nei momenti di maggiore
-				difficoltà.
-			</p>
+		<h2><b>26 MARZO</b> - dal <b>5°</b> al <b>6° <span class="sRed">ARIETE</span></b> = <b>Grado di superiorità innata</b></h2>
+		<p>
+			<u>Uomo che cavalca lungo una scogliera e guarda una vallata dove ci sono dei lavoratori</u>.<br>
+			Supremazia sugli altri, ascendente, elevazione. Amore per gli animali, alta posizione morale.<br>
+			<b>Carattere</b> deciso, risoluto, ambizioso, vanitoso, dinamico ed entusiasta, agisce spesso senza riflettere, spinto dal
+			desiderio di emergere. È affascinante, oltre che idealista e ottimista ad oltranza, al punto di diventare troppo sicuro di sé. Irrequieto
+			e nervoso, un sognatore, ma corre il rischio di girare come una trottola senza arrivare a cogliere nulla di quanto si prefigge. Sebbene
+			sia dotato di una personalità acuta e razionale, la natura inquieta può trascinarlo in qualche impresa sfortunata. Sa arrivare in alto
+			senza perdere la sua genuinità. Esprime al meglio le proprie capacità in settori creativi o artistici, e ama tutto ciò che è inconsueto e
+			progressista. È predisposto alle delusioni in amore: per eccesso di aspettative e per non essere in grado di assumersi le proprie
+			responsabilità! Ama molto gli animali, ha le qualità per diventare un ottimo proprietario o allevatore di cavalli.
+		</p>
 
-			<h2><strong>7 MARZO</strong> - dal <strong>16°</strong> al <strong>17° <span class="sBlue">PESCI</span></strong> = <strong>Grado di crollo, rovina, bersaglio mobile</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un uomo cade fra le travi divelte di un ponte</u>.<br>
-				Pericolo o incidente nel mezzo della vita, incomprensione dei famigliari, esistenza combattuta.<br>
-				<strong>Carattere</strong> instabile, incostante, sensibile, idealista con un atteggiamento amichevole e generoso. Aperto a nuove idee, ha
-				una forte immaginazione, e la fortuna di possedere una natura comprensiva e umanitaria, una personalità indipendente e organizzata. Il
-				desiderio d'aiutare chi chiede aiuto può degenerare in spese eccessive per le sue possibilità e causargli di conseguenza problemi 
-				finanziari. L'idealismo abbinato ad una specie di ambizione lo porta ad agire laddove i risultati sono ancora da prevedere. Preferisce 
-				impartire ordini, piuttosto che riceverli; riconosce con molta facilità le occasioni favorevoli e i buoni affari. Ama il lusso e la bella 
-				vita, come divertirsi e intrattenere le persone che gli interessano.
-			</p>
+		<h2><b>27 MARZO</b> - dal <b>6°</b> al <b>7° <span class="sRed">ARIETE</span></b> = <b>Grado di prudenza di circospezione</b></h2>
+		<p>
+			<u>Una volpe corre lungo una muraglia</u>.<br>
+			La presenza di spirito può diventare un mezzo di liberazione dai pericoli. Circospezione nel pericolo.<br>
+			<b>Carattere</b> diffidente, sospettoso, vendicativo, aggressivo, astuto, pratico, fiducioso in se stesso, ambizioso e
+			determinato. Possiede una buona dose di volontà, sa trarre sintesi utili dalle analisi e non di rado è pignolo fino al fanatismo.
+			Riflessivo, ponderato, profondo e prudente, tende a prendere la vita dal lato serio. È un idealista, semplice, simpatico e comprensivo,
+			ama la natura e la caccia. È uno dei pochi <b>Ariete</b> capace di ponderare e di pensare prima di agire. Possiede grandi
+			capacità e qualità che gli permettono di ottenere molto dalla vita e dal lavoro, forse il settore più favorito. Ama la casa, la famiglia,
+			e cerca in amore, la compagnia di persone serie e autentiche. Ama in modo profondo è appassionato e di sicuro fantasioso anche nei
+			rapporti sessuali.
+		</p>
 
-			<h2><strong>8 MARZO</strong> - dal <strong>17°</strong> al <strong>18° <span class="sBlue">PESCI</span></strong> = <strong>Grado di catastrofe</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un cavallo e il suo cavaliere cadono nel saltare una siepe</u>.<br>
-				Pericolo negli spostamenti. Iniziative avventurose, fiducia mal riposta, amicizie che si rompono.<br>
-				<strong>Carattere</strong> mutevole, loquace, versatile, gentile e sensibile, molto equilibrato, non possiede delle doti eccelse ma sa come
-				servirsi discretamente di ciò che madre natura gli ha fornito. Dotato di una forte immaginazione e un'intensa vita interiore che lo rende
-				cordiale e affascinante, ricercato dagli amici e dalle persone del sesso opposto. Riesce in vari campi, potrebbe incontrare difficoltà a
-				trovare la strada giusta. Indipendente e organizzato, dotato di un'intelligenza scientifica, portata alla sperimentazione e di una 
-				personalità magnetica. Ha abilità artigianale e può essere una figura illustre. Pur essendo ricco emotivamente, ha bisogno di trovare 
-				sbocchi pratici ai suoi sogni e alla fantasie. Riesce in vari campi ma può incontrare delle difficoltà a trovare la strada giusta. Tuttavia
-				è molto attivo e abile negli affari. Ha una vita avventurosa con qualche problema nel settore sentimentale. Riesce però a raggiungere una 
-				posizione soddisfacente nella vita sociale. Amante dello sport, dei cavalli, proprietario di una barca.     
-			</p>
+		<h2><b>28 MARZO</b> - dal <b>7°</b> al <b>8° <span class="sRed">ARIETE</span></b> = <b>Grado di precipitazione e d'impulsività</b></h2>
+		<p>
+			<u>Un uomo circondato da altri che cercano d' attaccare briga con lui</u>.<br>
+			Impetuosità, facile alle contestazioni, irascibilità e spirito vendicativo.<br>
+			<b>Carattere</b> polemico, battagliero, incline alla violenza, ha eccellenti doti oratorie, un'intelligenza acuta e vivace.
+			Sa essere acuto e sarcastico, violento, turbolento, propenso alle liti e alle discussioni, difficilmente riesce a manifestare
+			l'affettuosità che possiede, non è compreso neppure dagli intimi. Su tutto prevale l'ambizione e per questo motivo il cuore non conta per
+			lui, il ragionamento e la volontà prevalgono sempre sull'amore, che oltre a favorirlo in ambito sociale, gli consente di volgere a proprio
+			vantaggio le situazioni più difficili. Molto attivo, responsabile e con spiccato senso del dovere. È positivo un gran lavoratore, amante
+			della vita regolare anche se si fa prendere un po' dal fanatismo. Seppur dipendendo molto dal partner, l'amore è assai importante nella
+			sua vita. Tende a correre verso il pericolo, guerrafondaio. Ama la famiglia e con lei è tenero e magnanimo.
+		</p>
 
-			<h2><strong>9 MARZO</strong> - dal <strong>18°</strong> al <strong>19° <span class="sBlue">PESCI</span></strong> = <strong>Grado di soccorso, aiuto corporale</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Due spade incrociate. Utensili e strumenti di medicina e uomo che pesta in un mortaio</u>.<br>
-				Natura incline alle lotte ed entusiasta, spirito marziale.<br>
-				<strong>Carattere</strong> entusiasta, intelligente, simpatico, ricettivo, sensibile, cordiale, una personalità amabile e attraente, ma la 
-				sua natura fortemente emotiva lo rende facile all'ira. L'abilità manuale e la praticità lo portano a grandi vantaggi rispetto agli altri e 
-				lo agevola nei rapporti sociali. Ha sviluppate qualità intuitive, fecondità di idee e trovate originali, applicabili nella vita pratica. 
-				È amante di ogni genere di piacere, sempre in cerca di notorietà, coraggioso e avventuriero. Temperamento allegro e spensierato, con una 
-				grande apertura mentale. Nonostante l'ambizione e il senso degli affari, attribuisce grande importanza alla famiglia e agli affetti. 
-				Di buon cuore, ha abilità esecutiva di cose pratiche e semplici. Vecchiaia prospera.
-			</p>
+		<h2><b>29 MARZO</b> - dal <b>8°</b> al <b>9° <span class="sRed">ARIETE</span></b> = <b>Grado di orgoglio di vanità e d'infatuazione</b></h2>
+		<p>
+			<u>Un uomo in piedi su una cima con le braccia incrociate e la testa alta</u>.<br>
+			Spirito temerario, amante della libertà e disprezza il soccorso altrui.<br>
+			<b>Carattere</b> coraggioso, forte, orgoglioso, dignitoso, idealista, indipendente, che sa ben nascondere per meglio manipolare
+			gli altri. Ha un temperamento energico e ambizioso, è corredato di straordinarie capacità intellettuali che gli consente di raggiungere
+			facilmente posizioni di prestigio in ambito sociale e professionale! Non molto fortunato, raccoglie frustrazioni profonde per non riuscire
+			a comunicare in modo corretto e costruttivo, nonostante sia molto bravo con le parole. È aperto a tutte le innovazioni, sa sfruttare con
+			abilità le occasioni atte tanto a porlo in buona luce quanto a portarlo in alto. Piace mostrarsi onesto e sincero, ed è attratto da persone
+			intelligenti e simpatiche. È loquace e qualsiasi mestiere per il quale bisogna parlare bene gli sarà congeniale, superiorità e trionfo
+			spesso si realizzano. Sensibile alle lodi, d'indole aggressiva, insofferente ai consigli e sofista fiducioso nelle proprie forze e capacità.
+		</p>
 
-			<h2><strong>10 MARZO</strong> - dal <strong>19°</strong> al <strong>20° <span class="sBlue">PESCI</span></strong> = <strong>Grado di divagazione, di ondeggiamento</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un rotolo a spirale</u>.<br>
-				Perdita di tempo, contemplazione, spirito fantasioso, viva immaginazione. Malattie nervose.<br>
-				<strong>Carattere</strong> indeciso, volubile e mutevole, intuitivo, sensibile, riservato, raffinato e affascinante, dotato di una natura
-				seria e nobile, di spiccate qualità mentali e di gran senso d'indipendenza. Mobile, intuitivo, ha mentalità elastica, molto aperta e 
-				moderna. Ha una grande facilità di parola, la sua dialettica è scorrevole ma tagliente e se perde le staffe è incontrollata, ma nella vita
-				vince comunque. Sognatore e idealista, in genere è aiutato dalla fortuna e dai parenti e qualcosa di buono realizza in ogni caso. Pratico e
-				profondo, ospitale e gentile, ama il suo prossimo, è un organizzatore e accentratore, riesce a creare intorno a sé un vero calore che attira
-				gli altri. Oltre a possedere un'intelligenza acuta, originale e intraprendente, è dotato di molti talenti, che consente di farsi notare in 
-				ambito sociale. Ama tenersi aggiornato su tutto, è proiettato nel futuro. Cerca un partner di cui possa fidarsi e che sia disposto a 
-				condividere dei momenti di grande trasporto affettivo e sessuale. In amore è sensuale, aperto e disponibile.
-			</p>
+		<h2><b>30 MARZO</b> - dal <b>9°</b> al <b>10° <span class="sRed">ARIETE</span></b> = <b>Grado di trionfo di vittoria</b></h2>
+		<p>
+			<u>U n uomo a cavallo, solo in mezzo ad un campo di battaglia dove giacciono morti e feriti</u>.<br>
+			Imprese rischiose, carattere fuori del comune, vittoria sui nemici.<br>
+			<b>Carattere</b> battagliero, ambizioso, n ervoso, ardente, passionale e geloso. Ha una natura forte e coraggiosa, e può arrivare
+			ad un'importante posizione nella vita, sarà ammirato dagli amici o da persone altolocate. Il suo intuito è di grande aiuto nei momenti in
+			cui deve prendere delle decisioni importanti. Energico, acuto e intelligente, dotato di notevole capacità di valutare rapidamente le
+			situazioni, che spinge ad iniziative arrischiate che però hanno successo. Cultore del bello, un po' presuntuoso ma spesso a ragion veduta.
+			Ha forza e stile anche quando esterna la sua ira alquanto furiosa. Riveste ruoli di prestigio in ambito sociale e professionale. Si mostra
+			appassionato, generoso e affettuoso con la persona amata. Amante del rischio, delle avventure pericolose. L'amore sarà importante. Può
+			sviluppare il dono delle percezioni extrasensoriali.
+		</p>
 
-			<h2><strong>11 MARZO</strong> - dal <strong>20°</strong> al <strong>21° <span class="sBlue">PESCI</span></strong> = <strong>Grado di doppio senso, di splendore</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Una falce di Luna emerge dalle nuvole ed è colpita da un baleno</u>.<br>
-				Fortuna che si perde per incuria, indolenza e mancanza di volontà.<br>
-				<strong>Carattere</strong> originale e avventuroso, ambizioso, battagliero e incline ai piaceri. La sua caratteristica è la pigrizia alternata ad un'attività frenetica e continua. È idealista e sognatore, dotato di una natura molto comprensiva resa ancor più preziosa dalla bontà, dalla generosità e dalla profondità dei suoi sentimenti. Ha un'intelligenza originale e intraprendente unita ad un temperamento sereno e armonioso. Agisce con grande facilità ed è sempre pronto al combattimento e determinato a difendersi da eventuali attacchi. Ha concezioni mentali superiori e idee penetranti, molta immaginazione e si accontenta facilmente e quindi spesso gli manca l'incentivo a superare gli ostacoli. Per amore è capace di devozione e sofferenza. Pur amando molto la libertà e l'indipendenza, ricerca la sicurezza e la stabilità: casa e famiglia assumono grande importanza nella vita, sia nel bene che nel male. È sensuale, geloso e alterna la devozione all'infedeltà.        
-			</p>
-
-			<h2><strong>12 MARZO</strong> - dal <strong>21°</strong> al <strong>22° <span class="sBlue">PESCI</span></strong> = <strong>Grado di prostrazione, di castigo</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Una bella donna con abiti stracciati, dal viso cupo curva su un uomo addormentato</u>.<br>
-				Sensualità, prodigalità che porta alla rovina, sprechi, vita corrotta.<br>
-				<strong>Carattere</strong> debole, molto emotivo, la natura sensibile e umana è resa ancora più preziosa dalla profondità dei sentimenti. 
-				Intellettuale, generoso, ama le cose belle della terra, adora la musica e l'arte e come artista potrebbe ottenere un discreto successo. 
-				Ambizioso, ama prendere il comando delle situazioni e raggiungere il più veloce possibile gli obiettivi desiderati, per soddisfare la brama 
-				di denaro e di possesso che tanto lo caratterizza. È molto comprensivo, ispirato ben disposto verso gli altri, poiché ama interagire con 
-				gli altri e fare buona impressione. Caparbio, con obiettivi chiari e precisi ama rincorrere i suoi ideali, i quali solo in tarda età riesce
-				a raggiungere. Trova l'appagamento negli affetti, ama infatti in modo completo anche se a volte sembra un po' troppo riservato. L'amore 
-				assume una parte importante nella sua vita ed è molto attaccato alla madre. Pericoli a causa dell'altro sesso, debolezza e influenzabilità.
-			</p>
-
-			<h2><strong>13 MARZO</strong> - dal <strong>22°</strong> al <strong>23° <span class="sBlue">PESCI</span></strong> = <strong>Grado di speculazione, d'incoscienza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un arciere tende l'arco con la freccia ben fissata. Donna in una barca senza remi</u>.<br>
-				Scarsa previdenza, iniziative sballate, distrazioni pericolose.<br>
-				<strong>Carattere</strong> gentile, gradevole, affascinante e generoso, violento e forte, scopi ben precisi e determinati. Ha una 
-				personalità geniale e magnetica, impulsiva ed entusiasta, emotivamente stabile e dall'umore discontinuo. Il temperamento artistico lo 
-				predispone alla carriera professionale piuttosto che commerciale, se è adeguatamente preparato. Pur avendo una natura pratica, determinata 
-				e ambiziosa, si mostra sensibile, socievole, accomodante e comprensivo, nell'amore e nelle amicizie, che sono numerose e importanti. Ama 
-				l'azzardo e gli piace affrontare i rischi, appassionato al gioco e allo sport. Ansioso e spesse volte depresso, fa leva sul buon cuore 
-				degli altri. Incline a lamentarsi non gode mai fino in fondo delle cose che ha. Deve fare attenzione al suo stato emotivo, perché è soggetto
-				all'ipocondria. Pigro, noncurante e poco passionale, dovrebbe trovare degli spunti giusti per reagire a un'indolenza congenita. Non si 
-				stacca mai dalla famiglia e questo a lungo andare diventa un problema. Raggiunge la serenità in età avanzata, anche perché rimanda di 
-				giorno in giorno l'inventario della sua vita. Ama molto viaggiare.
-			</p>
-
-			<h2><strong>14 MARZO</strong> - dal <strong>23°</strong> al <strong>24° <span class="sBlue">PESCI</span></strong> = <strong>Grado di sensualità, d'intimità pericolosa</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un uomo e una donna a letto. Una donna seminuda sdraiata su un divano</u>.<br>
-				Lusso, mollezza, perversione. Sensualità e inclinazione ai piaceri.<br>
-				<strong>Carattere</strong> delicato, generoso, ambizioso, carismatico, gentile di bell'aspetto. Possiede una mente acuta, pratica e ricca di
-				intuito. Dotato d'intelligenza viva e brillante, filosofo, mistico e studioso. Pur avendo molti talenti, non sempre è in grado di tradurre
-				in realtà le sue idee innovative e creative. È un amico fedele e prezioso che detesta la mediocrità e ammira chi ha successo e carisma nella
-				vita. Il temperamento artistico, unito ad uno spiccato istinto umanitario, attira sempre attorno a lui molte amicizie durevoli e importanti.
-				Non manca di sani principi e neppure d'abilità machiavellica, impegno e astuzia ma ha tendenza a sottrarsi alle responsabilità che cerca di
-				cavarsela col minore sforzo. Ha molta fantasia anche se molto pigro e fatalista. Predilige vivere alla giornata, e detesta fare programmi 
-				e difficilmente pensa al domani. È controllato in amore e nei sentimenti avrà una felice vita a due.      
-			</p>
-
-			<h2><strong>15 MARZO</strong> - dal <strong>24°</strong> al <strong>25° <span class="sBlue">PESCI</span></strong> = <strong>Grado di vittoria</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Una corona e una clava . Un uomo lancia delle pietre con una fionda</u>.<br>
-				Vittoria sui nemici. Lotte accanite seguite da successi. Spirito battagliero, polemico o rissoso.<br>
-				<strong>Carattere</strong> sensibile, ricettivo, ma anche pratico e razionale, coraggioso e aggressivo, tende alla parte materiale della 
-				vita cercando di afferrare tutto quello che capita a portata di mano. Mentalità elastica, molto aperta e moderna. Non manca di fortuna e 
-				spesso ne abusa. Ha grande facilità di parola, la sua dialettica è scorrevole ma tagliente e a volte incontrollata. Grande dignità 
-				conquistata con forza e convinzione, vittoria sui nemici. Possiede molti talenti e ha un'intelligenza viva e brillante, sagace e penetrante,
-				unita a spiccate capacità di concentrazione, ama la musica e i viaggi. Non piace prendere ordini da altri, soprattutto in ambito 
-				professionale, si mostra riservato in faccende private. Ama le cose belle, i viaggi e ne inventa sempre uno nuovo. Stabilisce dei legami 
-				sentimentali con partner disposti a condividere interessi intellettuali o creativi. Creativo e fantasioso sa amare in modo profondo e 
-				adorabile.     
-			</p>
-
-			<h2><strong>16 MARZO</strong> - dal <strong>25°</strong> al <strong>26° <span class="sBlue">PESCI</span></strong> = <strong>Grado di sicurezza di decisione</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Uomo armato di lancia e scudo. Donna che taglia la testa ad un guerriero addormentato</u>.<br>
-				Spirito circospetto fedele e leale che sa vincere le rivalità.<br>
-				<strong>Carattere</strong> sensibile, duttile, fantasioso, intuitivo, dotato di una mente acuta e indagatrice che gli consente di farsi 
-				notare soprattutto in ambiti intellettuali e scientifici. Ricco di straordinarie doti intellettuali unite all'abilità di sviluppare la mente
-				in campo scientifico. In grado d'esaltare al massimo il suo temperamento costante e pieno di forza. Intelligente con grandi capacità 
-				d'analisi, sintesi e concentrazione. È combattivo, sensuale, attivo, preciso e incline ai piaceri, ambizioso e con una gran capacità in 
-				campo lavorativo. Ha una mente elastica, aperta, che si adatta perfettamente a tutte le situazioni. Umano e altruista, al servizio 
-				dell'umanità. Ama molto viaggiare ma deve stare attento alla guida, all'aereo e alle navi. È fortunato e in un modo o nell'altro per lui 
-				le cose si aggiustano sempre in modo positivo.      
-			</p>
-
-			<h2><strong>17 MARZO</strong> - dal <strong>26°</strong> al <strong>27° <span class="sBlue">PESCI</span></strong> = <strong>Grado di rovescio di disfatta</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Uomo nudo bussa alla porta di una casa, mentre un terremoto fa tremare le fondamenta</u>.<br>
-				Calamità repentina e imprevista, vita errabonda, umiliazioni.<br>
-				<strong>Carattere</strong> irritabile, emotivo, dinamico, di facile comunicativa, stravagante amante dell'avventura ha facilità all'ira 
-				quanto alla commozione. Si rivela adatto a tutte le attività che richiedono iniziativa e costanza, anche non essendo molto paziente, 
-				possiede una carica di entusiasmo dura a spegnersi. È un idealista in apparenza calmo, disposto a fare qualunque sacrificio per il partner 
-				e i familiari. È espressivo, un buon amico e incline ad assecondare i desideri e le necessità degli amici. Nutre una grande passione per i 
-				lunghi viaggi in terre lontane, la sua vita sarà comunque una continua girandola di avvenimenti. È provvisto di talenti artistici e 
-				letterari, ma riscuote successo nella vendita e nel commercio per la dialettica, il fascino e la comunicativa che lo qualificano. È molto
-				sensuale ha nel sesso la preminenza nella sua vita. È molto incline ai piaceri e ai peccati di gola. Ha poche ambizioni e vive alla 
-				giornata.    
-			</p>
-
-			<h2><strong>18 MARZO</strong> - dal <strong>27°</strong> al <strong>28° <span class="sBlue">PESCI</span></strong> = <strong>Grado di poteri particolari e di sapienza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un serpente si erge in mezzo a un cerchio di fuoco</u>.<br>
-				Doni medici, studio dei segreti della natura. Diplomazia, alte cariche, poteri occulti.<br>
-				<strong>Carattere</strong> generoso, gentile, ambizioso, intuitivo, analitico ed egocentrico. Temperamento romantico, in genere fa sfoggio
-				di cultura modana, di concetti all'avanguardia ma sotto è un superficiale che sa quel tanto che basta per far colpo. Ha una forte 
-				personalità è inoltre battagliero e agguerrito. Mostra grande abilità negli affari e nell'amministrare il proprio denaro il buon senso e 
-				organizzazione non gli fanno difetto! Deve vigilare perché l'amore per le cose buone della vita non degeneri in sperpero di denaro e logorio 
-				fisico. Ama la gente più grande, mentre deve stare con gli amici della sua età. Pur essendo emotivo buono e generoso, non sempre riesce a 
-				manifestare i suoi sentimenti. Sempre in movimento, vive una vita colma di avvenimenti. A ma l'avventura e le situazioni che procurano 
-				brivido. Molto incline ai piaceri ed è assai goloso. È molto sensuale, instabile e poco fedele.         
-			</p>
-
-			<h2><strong>19 MARZO</strong> - dal <strong>29°</strong> al <strong>30° <span class="sBlue">PESCI</span></strong> = <strong>Grado di isolamento e d'incertezza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				Temperamento incerto, di scarsa iniziativa, vagabondo, debolezza nella vita. Idealismo.<br>
-				<strong>Carattere</strong> brillante, sereno e generoso, intuitivo, spontaneo, fantasioso e appassionato. Introverso, riservato e 
-				distaccato. È un sognatore e dà un'enorme imperizia per le cose della vita. È ricco d'idee lontane dalla realtà, utopie autentiche che si 
-				ostina a con incrollabile ottimismo a voler mettere in pratica. Si mostra equo sia nelle questioni personali e sociali. Ha un carattere 
-				complicato, e non è per niente facile capirlo. Non ammette mai d'avere torto, si nasconde dietro mille alibi per non prendersi le sue 
-				responsabilità. Ha qualità introspettive e di comprensione tali, da comprendere immediatamente i molti aspetti di una questione o una 
-				persona. Ama viaggiare e desidera avere al fianco un partner dinamico e intelligente, con cui condividere interessi stimolanti dal punto 
-				di vista emotivo e intellettuale. Ama collezionare, paragonare, è attratto dalla zoologia e dall'astrologia. È incline a stati di 
-				malinconia profonda, anche perché è innamorato dell'amore.       
-			</p>
-
-			<h2><strong>20 MARZO</strong> - <strong>30° <span class="sBlue">PESCI</span></strong> = <strong>Grado di potere personale di egoismo</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Una donna calzata e vestita che si guarda in uno specchio. Una colonna e un capitello</u>.<br>
-				Influenza personale ma manca di bontà e flessibilità verso altri.<br>
-				<strong>Carattere</strong> autoritario, vanitoso, egoista, freddo, manca di emotività. Spirito forte che domina le avversità e fa prevalere
-				il ragionamento sui sentimenti. Tenace, paziente e generoso, dai sani principi è orgoglioso e crede molto in se stesso questo potrebbe
-				generare in vanità. Intuitivo e determinato a voler raggiungere una posizione di rilievo in ambito professionale. Sa esercitare una grande 
-				influenza personale, ma manca di dolcezza e di bontà. È valido come collaboratore e la qualità di saper girare a proprio favore anche le 
-				avversità, non solo per l'intelligenza personale ma anche in virtù della fortuna. Non ha problemi economici e sa assumersi seriamente le 
-				responsabilità anche in amore. Intuitivo e magico, spesse volte soffre di disturbi dell'alimentazione. Cerca un partner stimolante, ma 
-				serio e degno di fiducia.
-			</p>
-
-			<p class="sCenter">
-				<img src="GOLDLINE3.gif" width="350" height="35">&nbsp;&nbsp;&nbsp;
-				<img src="GOLDLINE3.gif" width="350" height="35">
-			</p>
-
-			<h2><strong>21 MARZO</strong> - dal <strong>1°</strong> al <strong>2° <span class="sRed">ARIETE</span></strong> = <strong>Grado di forza e passione</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un uomo che tiene nella mano destra una falce e nella sinistra una fronda</u>.<br>
-				Forza di carattere e sopportazione. Spirito battagliero preparato alle lotte per la vita.<br>
-				<strong>Carattere</strong> passionale, indipendente, forte e aggressivo, sensibile, ambizioso, ricco di talento e di doti non comuni che 
-				gli consentono di arrivare molto in alto. Laborioso ma attaccabrighe, preparato alle lotte per la vita, deciso, autoritario. Nutre interessi
-				spirituali e filosofici. Apparentemente dispotico, in realtà è generoso e timido, ha tutte le prerogative necessarie di successo. Non mancano
-				buone doti diplomatiche in caso di necessità, la personalità è positiva ed energica, originale e instancabile, tenace e costante. Su tutto 
-				prevale l'ambizione e per questo motivo il cuore non conta, il ragionamento e la volontà prevalgono sempre sull'amore. Essendo un po' critico 
-				ed esigente, incontra qualche difficoltà a trovare la persona del cuore che sia all'altezza delle sue aspettative. È un ottimo compagno in 
-				amore, ardente, sensuale e appassionato solo se il partner è giusto. Ha istinti combattivi ed è innamorato della libertà.
-			</p>
-
-			<h2><strong>22 MARZO</strong> - dal <strong>2°</strong> al <strong>3° <span class="sRed">ARIETE</span></strong> = <strong>Grado di parata, valore e di ostentazione</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un uomo in piedi, armato con lancia e spada riccamente vestito, s'appresta alla lotta</u>.<br>
-				Temperamento guerriero, indipendente nel modo di vivere.<br>
-				<strong>Carattere</strong> pratico, ostinato, aggressivo, tenace, laborioso, determinato, pieno d'energia. Abile, dinamico, caritatevole, 
-				una natura autosufficiente. Mostra un grande coraggio e abilità nel superare gli ostacoli, ma anche per raggiungere gli obiettivi 
-				prefissati. Accanito lavoratore col pallino dell'organizzazione, è fornito di notevoli capacità in merito, ricco d'idee originali, socievole
-				e simpatico. La mente fertile lo porta a sviluppare doti di scienziato e di matematico. Amando i giochi e le sfide mentali in amore, gli è 
-				quasi impossibile realizzare un rapporto affettivo soddisfacente. Ha grandi capacità intuitive, deve cercare di dominare la natura impetuosa.
-				È molto fortunato, infatti nonostante tutto riesce a realizzare i suoi sogni e trova l'amore che dura tutta la vita. Vive una vita sociale
-				intensa e ricca di relazioni ed emozioni.     
-			</p>
-
-			<h2><strong>23 MARZO</strong> - dal <strong>2°</strong> al <strong>3° <span class="sRed">ARIETE</span></strong> = <strong>Grado di accordo di lusso e di benessere</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Una donna amabile con una veste greca scollata, il collo e le braccia nude incrociate sulle ginocchia</u>.<br>
-				Modi cortesi e amabili, amore per la pace.<br>
-				<strong>Carattere</strong> raffinato, focoso, ardente, sottile ed entusiasta, affettuoso, interessante, versatile. Ha gusto per la vita 
-				sociale, amico della concordia, senso dell'amicizia. Ha notevoli doti artistiche abbinate ad un solido senso pratico. Ha grande senso 
-				dell'umorismo, estroverso ambizioso senza ostentazione, può aspirare al successo. Abilità d'esprimersi attraverso la poesia e la letteratura.
-				Spirito di iniziativa, che tanto lo caratterizza lo portano ad esplorare nuove idee o muoversi verso nuove direzioni. La mente versatile e 
-				la forte coscienza sociale, indica un successo in un'attività nel settore pubblico. Vive con incertezza la sfera sentimentale, a causa del
-				continuo desiderio di novità e di avventura. È illuminato da una buona stella, ed è costantemente protetto dalla fortuna. È sensuale,
-				generoso e protettivo, affabile e gentile. È fortunato perché ha un cuore generoso.
-			</p>
-
-			<h2><strong>24 MARZO</strong> - dal <strong>3°</strong> al <strong>4° <span class="sRed">ARIETE</span></strong> = <strong>Grado rude e d'indipendenza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Foreste o macchie selvatiche dove abbondano rovi e piante d'ogni specie</u>.<br>
-				Facili ricchezze che si perdono però facilmente. Dissipazione, dispersione.<br>
-				<strong>Carattere</strong> impulsivo, esuberante, affettuoso, autorevole, intelligente, energico e deciso. Ha una personalità magnetica e
-				passionale e un certo livello di vanità, cuore generoso ma inesperto. Qualità che consentono di riscuotere molti consensi in ambito sociale
-				e professionale e nelle amicizie, numerose e selezionate. È portato per le scienze esatte e mostra anche capacità in politica e nella
-				carriera diplomatica. Sicuro e consapevole delle capacità, riesce sempre a raggiungere posizioni di prestigio. Ama la vita comoda, è leale
-				e sincero con la persona che ama ed è disposto a fare qualsiasi cosa. Impetuoso, nervoso irascibile e presuntuoso, non accetta critiche o 
-				imposizioni. Natura un po' selvaggia, amante della vita campestre, sperpero d'energie. Per quanto sia impulsivo e sensuale è capace 
-				d'affetti forti e duraturi. Sarà prima o poi baciato dalla fortuna.        
-			</p>
-
-			<h2><strong>25 MARZO</strong> - dal <strong>4°</strong> al <strong>5° <span class="sRed">ARIETE</span></strong> = <strong>Grado di orgoglio giustificato, d'incertezza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Cielo notturno e tempestoso. Dei lampi illuminano una montagna sulla quale un uomo s'inerpica, deciso e sicuro</u>.<br>
-				Elevazione folgorante.<br>
-				<strong>Carattere</strong> forte, magnanimo, magnetico e imperioso. Possiede un ottimo intuito, un'ottima capacità di giudizio e notevoli 
-				doti intellettuali, che consente d'essere sempre un passo davanti agli altri. La sua dote più spiccata è una gran creatività può quindi 
-				diventare un sostenitore di ogni forma d'arte. Raggiunge i suoi scopi grazie all'umanità e al senso di realtà. Di idee moderne, 
-				all'avanguardia e con un'audace concezione della vita. Non ama essere contrariato e si mostra intollerante verso coloro che ritiene 
-				inferiori, soprattutto sotto il profilo intellettuale. Vive la propria vita alla ricerca dell'ascesa sociale e di un'evoluzione spirituale
-				che però raggiunge lentamente e faticosamente. L'interesse per la letteratura lo arricchisce e lo rende un vero intellettuale, raggiunge 
-				la felicità stando a contatto con la gente e qualsiasi attività intraprenda è votato al successo. Compagno fedele e piacevole.     
-			</p>
-
-			<h2><strong>26 MARZO</strong> - dal <strong>5°</strong> al <strong>6° <span class="sRed">ARIETE</span></strong> = <strong>Grado di superiorità innata</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Uomo che cavalca lungo una scogliera e guarda una vallata dove ci sono dei lavoratori</u>.<br>
-				Supremazia sugli altri, ascendente, elevazione. Amore per gli animali, alta posizione morale.<br>
-				<strong>Carattere</strong> deciso, risoluto, ambizioso, vanitoso, dinamico ed entusiasta, agisce spesso senza riflettere, spinto dal
-				desiderio di emergere. È affascinante, oltre che idealista e ottimista ad oltranza, al punto di diventare troppo sicuro di sé. Irrequieto 
-				e nervoso, un sognatore, ma corre il rischio di girare come una trottola senza arrivare a cogliere nulla di quanto si prefigge. Sebbene 
-				sia dotato di una personalità acuta e razionale, la natura inquieta può trascinarlo in qualche impresa sfortunata. Sa arrivare in alto 
-				senza perdere la sua genuinità. Esprime al meglio le proprie capacità in settori creativi o artistici, e ama tutto ciò che è inconsueto e
-				progressista. È predisposto alle delusioni in amore: per eccesso di aspettative e per non essere in grado di assumersi le proprie 
-				responsabilità! Ama molto gli animali, ha le qualità per diventare un ottimo proprietario o allevatore di cavalli.
-			</p>
-
-			<h2><strong>27 MARZO</strong> - dal <strong>6°</strong> al <strong>7° <span class="sRed">ARIETE</span></strong> = <strong>Grado di prudenza di circospezione</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Una volpe corre lungo una muraglia</u>.<br>
-				La presenza di spirito può diventare un mezzo di liberazione dai pericoli. Circospezione nel pericolo.<br>
-				<strong>Carattere</strong> diffidente, sospettoso, vendicativo, aggressivo, astuto, pratico, fiducioso in se stesso, ambizioso e 
-				determinato. Possiede una buona dose di volontà, sa trarre sintesi utili dalle analisi e non di rado è pignolo fino al fanatismo. 
-				Riflessivo, ponderato, profondo e prudente, tende a prendere la vita dal lato serio. È un idealista, semplice, simpatico e comprensivo, 
-				ama la natura e la caccia. È uno dei pochi <strong>Ariete</strong> capace di ponderare e di pensare prima di agire. Possiede grandi 
-				capacità e qualità che gli permettono di ottenere molto dalla vita e dal lavoro, forse il settore più favorito. Ama la casa, la famiglia, 
-				e cerca in amore, la compagnia di persone serie e autentiche. Ama in modo profondo è appassionato e di sicuro fantasioso anche nei 
-				rapporti sessuali.      
-			</p>
-
-			<h2><strong>28 MARZO</strong> - dal <strong>7°</strong> al <strong>8° <span class="sRed">ARIETE</span></strong> = <strong>Grado di precipitazione e d'impulsività</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un uomo circondato da altri che cercano d' attaccare briga con lui</u>.<br>
-				Impetuosità, facile alle contestazioni, irascibilità e spirito vendicativo.<br>
-				<strong>Carattere</strong> polemico, battagliero, incline alla violenza, ha eccellenti doti oratorie, un'intelligenza acuta e vivace. 
-				Sa essere acuto e sarcastico, violento, turbolento, propenso alle liti e alle discussioni, difficilmente riesce a manifestare 
-				l'affettuosità che possiede, non è compreso neppure dagli intimi. Su tutto prevale l'ambizione e per questo motivo il cuore non conta per
-				lui, il ragionamento e la volontà prevalgono sempre sull'amore, che oltre a favorirlo in ambito sociale, gli consente di volgere a proprio 
-				vantaggio le situazioni più difficili. Molto attivo, responsabile e con spiccato senso del dovere. È positivo un gran lavoratore, amante
-				della vita regolare anche se si fa prendere un po' dal fanatismo. Seppur dipendendo molto dal partner, l'amore è assai importante nella 
-				sua vita. Tende a correre verso il pericolo, guerrafondaio. Ama la famiglia e con lei è tenero e magnanimo.
-			</p>
-
-			<h2><strong>29 MARZO</strong> - dal <strong>8°</strong> al <strong>9° <span class="sRed">ARIETE</span></strong> = <strong>Grado di orgoglio di vanità e d'infatuazione</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un uomo in piedi su una cima con le braccia incrociate e la testa alta</u>.<br>
-				Spirito temerario, amante della libertà e disprezza il soccorso altrui.<br>
-				<strong>Carattere</strong> coraggioso, forte, orgoglioso, dignitoso, idealista, indipendente, che sa ben nascondere per meglio manipolare 
-				gli altri. Ha un temperamento energico e ambizioso, è corredato di straordinarie capacità intellettuali che gli consente di raggiungere
-				facilmente posizioni di prestigio in ambito sociale e professionale! Non molto fortunato, raccoglie frustrazioni profonde per non riuscire
-				a comunicare in modo corretto e costruttivo, nonostante sia molto bravo con le parole. È aperto a tutte le innovazioni, sa sfruttare con 
-				abilità le occasioni atte tanto a porlo in buona luce quanto a portarlo in alto. Piace mostrarsi onesto e sincero, ed è attratto da persone 
-				intelligenti e simpatiche. È loquace e qualsiasi mestiere per il quale bisogna parlare bene gli sarà congeniale, superiorità e trionfo 
-				spesso si realizzano. Sensibile alle lodi, d'indole aggressiva, insofferente ai consigli e sofista fiducioso nelle proprie forze e capacità.
-			</p>
-
-			<h2><strong>30 MARZO</strong> - dal <strong>9°</strong> al <strong>10° <span class="sRed">ARIETE</span></strong> = <strong>Grado di trionfo di vittoria</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>U n uomo a cavallo, solo in mezzo ad un campo di battaglia dove giacciono morti e feriti</u>.<br>
-				Imprese rischiose, carattere fuori del comune, vittoria sui nemici.<br>
-				<strong>Carattere</strong> battagliero, ambizioso, n ervoso, ardente, passionale e geloso. Ha una natura forte e coraggiosa, e può arrivare
-				ad un'importante posizione nella vita, sarà ammirato dagli amici o da persone altolocate. Il suo intuito è di grande aiuto nei momenti in 
-				cui deve prendere delle decisioni importanti. Energico, acuto e intelligente, dotato di notevole capacità di valutare rapidamente le
-				situazioni, che spinge ad iniziative arrischiate che però hanno successo. Cultore del bello, un po' presuntuoso ma spesso a ragion veduta. 
-				Ha forza e stile anche quando esterna la sua ira alquanto furiosa. Riveste ruoli di prestigio in ambito sociale e professionale. Si mostra 
-				appassionato, generoso e affettuoso con la persona amata. Amante del rischio, delle avventure pericolose. L'amore sarà importante. Può
-				sviluppare il dono delle percezioni extrasensoriali.
-			</p>
-
-			<h2><strong>31 MARZO</strong> - dal <strong>10°</strong> al <strong>11° <span class="sRed">ARIETE</span></strong> = <strong>Grado di dolcezza e di bellezza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Una donna in piedi, tiene una chiave in mano, coperta a metà di una veste che scende dalla spalla</u>.<br>
-				Speranze che si realizzano. Amori nascosti.<br>
-				<strong>Carattere</strong> affabile, dolce, mite, benevolo, buono, idealista, altruista, affascinante, intuitivo e sensibile, pieno di idee
-				e di progetti, dotato di un forte senso del dovere e di responsabilità. Di bell'aspetto, gentile e seducente, ma con una volontà debole 
-				portata a smarrirsi sotto lo stimolo dei desideri. La curiosità e la voglia di ampliare le proprie conoscenze lo spinge a partecipare a 
-				corsi in cui gli è possibile esplorare i suoi talenti creativi, in particolare artistici e musicali. Ha bisogno di avere continue attenzioni
-				affettive; per questo va alla ricerca di rapporti sentimentali stabili e sicuri. Ha una natura piena di risorse e duttile, una mente 
-				scientifica, una grande energia e la capacità di capire e di guadagnarsi il rispetto di amici e compagni di lavoro. Può avere due matrimoni, 
-				due amori o due mestieri diversi. La vita gli dà molto e lui deve dare molto alla vita. A volte arriva a realizzare i suoi sogni e le 
-				ambizioni grazie a veri e propri lampi di genio.
+		<h2><b>31 MARZO</b> - dal <b>10°</b> al <b>11° <span class="sRed">ARIETE</span></b> = <b>Grado di dolcezza e di bellezza</b></h2>
+		<p>
+			<u>Una donna in piedi, tiene una chiave in mano, coperta a metà di una veste che scende dalla spalla</u>.<br>
+			Speranze che si realizzano. Amori nascosti.<br>
+			<b>Carattere</b> affabile, dolce, mite, benevolo, buono, idealista, altruista, affascinante, intuitivo e sensibile, pieno di idee
+			e di progetti, dotato di un forte senso del dovere e di responsabilità. Di bell'aspetto, gentile e seducente, ma con una volontà debole
+			portata a smarrirsi sotto lo stimolo dei desideri. La curiosità e la voglia di ampliare le proprie conoscenze lo spinge a partecipare a
+			corsi in cui gli è possibile esplorare i suoi talenti creativi, in particolare artistici e musicali. Ha bisogno di avere continue attenzioni
+			affettive; per questo va alla ricerca di rapporti sentimentali stabili e sicuri. Ha una natura piena di risorse e duttile, una mente
+			scientifica, una grande energia e la capacità di capire e di guadagnarsi il rispetto di amici e compagni di lavoro. Può avere due matrimoni,
+			due amori o due mestieri diversi. La vita gli dà molto e lui deve dare molto alla vita. A volte arriva a realizzare i suoi sogni e le
+			ambizioni grazie a veri e propri lampi di genio.
 		</p>
 
 		<p class="sCenter">
 			<br>
-			<img src="GOLDLINE3.gif" width="350" height="35">&nbsp;&nbsp;
-			<img src="GOLDLINE3.gif" width="350" height="35">
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">&nbsp;&nbsp;
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">
 		</p>
 
-		<p class="sSmall sBlack sCenter">
-			<img src="email-box.gif"    width="35"  height="35">
+		<p class="sCenter">
+			<img src="email-box.gif"    width="35" height="35" alt="">
 			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
-			<img src="TelefonoC164.gif" width="35" height="35">&nbsp;
-			oppure Telefona: <strong>0125 631175 - Cell. 347 0417409<br><br>
-			Sei il visitatore n°&nbsp;</strong>
-	<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1351762431-wvsw3d4r2" border=0></a>
-			&nbsp;(Contenuto Aggiornato 29/07/2020)<br><br>
+			<img src="TelefonoC164.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+
+			<b>Sei il visitatore n°&nbsp;</b>
+		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1351762431-wvsw3d4r2" border=0></a>
+			&nbsp;(Contenuto Aggiornato <time datetime="2020-07-29">29/07/2020</time>)<br><br>
 		</p>
-					</td></tr></table>
-				</td></tr></table>
-			</td></tr></table>
-		</td></tr></table>
-	</td></tr></table>
+
 </td></tr></table>
-<p class="sXXSmall sBlack sBold sCenter">
-	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati. 
-	Senza il consenso dell&#39;autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
-</p>
+</td></tr></table>
+</td></tr></table>
+<footer>
+	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
+	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
+</footer>
 </body>
 </html>
