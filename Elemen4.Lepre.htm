@@ -1,40 +1,137 @@
 <!DOCTYPE html>
-<HTML lang="it">
+<html lang="it" dir="ltr">
 <head>
-
-<title>Elementi Cinesi: Lepre</title>
-<link rel="icon" type="image/gif" href="https://www.studioacquario.it/favicon32.gif">
-<META name="description" content="Studio Acquario: Elementi Cinesi: Lepre">
-<meta name="keywords" content="astrologia, oroscopo cinese, elementi, lepre">
+<meta charset="UTF-8">
+<title>Elementi Cinesi: Lepre - Oroscopo Cinese - Studio Acquario</title>
+<link rel="icon" type="image/gif" href="favicon32.gif">
+<meta name="description" content="Studio Acquario: Oroscopo Cinese: Elementi Cinesi: Lepre">
+<meta name="keywords" content="astrologia, studio, acquario, oroscopo cinese, elementi, lepre">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
 <meta name="language" content="it">
-<meta charset="UTF-8">
-<meta http-equiv="imagetoolbar" CONTENT="no">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="05/09/2017">
-<meta name="revised" content="29/06/2020">
+<meta name="revised" content="07/10/2020">
 
 <style type="text/css">
 body {
 	scrollbar-arrow-color: #FFFFFF;
-	scrollbar-base-color: #B6B6B6;
+	scrollbar-base-color: #B6B6B6; /* Pink Swan */
 	scrollbar-dark-shadow-color: #B6B6B6;
-	scrollbar-track-color: #B6B6B6;
-	font-family: Verdana, sans-serif;
+	scrollbar-track-color: #C5C5C5; /* Silver */
+
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	/* color: #7E726C; Sand Dune */
+	background-color: #B6B6B6; /* Pink Swan */
+	background-image: url('CIfondexter.gif');
+}
+a:link {
+	color: #000000;
+}
+a:visited {
+	color: #000000;
+}
+a:hover {
+	color: #FF0000;
+}
+a:active {
+	color: #000000;
+}
+h1 {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #4D4D4D; /* sMatterhorn */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 140%;
+}
+h2 {
+	font-size: medium;
+	font-weight: bold;
+	color: #433E3A; /* Taupe */
+	text-align: center;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-top: 30px;
+	/* margin-bottom: 0; */
+}
+header {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	text-shadow: 1px 1px 5px #0000FF; /* Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
+}
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	text-shadow: 1px 1px 1px #0000FF; /* Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
 }
 img {
 	max-width: 100%;
 	height: auto;
 }
+p {
+	font-size: small;
+	color: #433E3A; /* sTaupe */
+	text-align: justify;
+	padding-left: 35px;
+	padding-right: 35px;
+	line-height: 125%;
+}
+.sNavigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 180%;
+}
+.sNavigation a {
+	font-size: medium;
+	font-weight: bold;
+	padding:.42em;
+	color: #FFFFFF; /* White */
+	margin-left: 2px;
+	background: #8C8C8C; /* Suva Grey */
+	text-decoration: none;
+}
+.sNavigation a:hover {
+	color: #000000; /* Black */
+	background: #C5C5C5; /* Deep Sky Blue */
+}
+#PagCorrente {
+	border-bottom: 2.5px solid aqua;
+}
+.sHomeIcon {
+	vertical-align: bottom;
+	margin-bottom: 1px;
+	height: 25px;
+	width: 25px;
+}
 .sBorder1s {
 				border-style: solid;
 				border-width: 1px;
 }
-.sBlu {
+.sBlue {
 				color: #0000FF;
 }
-.sVerde {
-				color: #008000;
+.sGreen {
+				color: #00954A; /* Pigment Green */
 }
 .sTaupe {
 				color: #433E3A;
@@ -61,8 +158,14 @@ img {
 				text-align: justify;
 }
 .sPadding {
-				padding-left: 40px;
-				padding-right: 40px;
+				padding-left: 35px;
+				padding-right: 35px;
+}
+.sLineH125 {
+				line-height: 125%;
+}
+.sXSmall {
+				font-size: x-small;
 }
 .sSmall {
 				font-size: small;
@@ -70,142 +173,161 @@ img {
 .sMedium {
 				font-size: medium;
 }
+.sLarge {
+				font-size: large;
+}
 .sXLarge {
 				font-size: x-large;
 }
 </style>
 </head>
 
-<body background="CIfondexter.gif" bgcolor="#B6B6B6" link="#808080" vlink="#433E3A" alink="#FFFFFF" topmargin="30">
+<body>
+<header>Studio di Astrologia &quot;Acquario&quot;</header>
 
-<table cellSpacing="10" cellPadding="0" borderColorDark="#211f23" borderColorLight="#BBBBBB" background="CIrubanfonce.jpg" width="100%" class="sBorder1s">
-  <tr><td width="100%">
-	<table cellPadding="0" cellspacing="1" background="CIrubanmetal.jpg" width="100%" border="0">
-      <tr><td width="100%">
-		<table cellSpacing="5" cellPadding="0" borderColorDark="#211f23" borderColorLight="#BBBBBB" background="CIrubanfonce.jpg" width="100%" border="1">
-          <tr><td width="100%">
-			<table cellSpacing="1" cellPadding="0" background="CIrubanmetal.jpg" width="100%" border="0">
-              <tr><td width="100%">
-				<table cellspacing="5" cellPadding="0" borderColorDark="#211F23" borderColorLight="#BBBBBB" background="CIrubanfonce.jpg" width="100%" border="1">
-                  <tr><td width="100%">
-					<table cellSpacing="1" cellPadding="0" background="CIrubanmetal.jpg" width="100%" border="0">
-                      <tr><td width="100%">
-						<table cellSpacing="2" cellPadding="0" borderColorDark="#211f23" borderColorLight="#BBBBBB" background="CIrubanfonce.jpg" width="100%" border="1">
-                          <tr><td width="100%">
-							<table cellSpacing="0" cellPadding="0" background="CIrubanmetal.jpg" width="100%" border="0">
-							  <tr><td width="100%">
-								<table cellSpacing="5" cellPadding="0" background="CIrubanclair.jpg" width="100%" border="0">
-								  <tr><td width="100%">
-									<table cellPadding="0" borderColorDark="#211F23" borderColorLight="#BBBBBB" background="CIrubanfonce.jpg" width="100%" border="1">
-<TBODY>
-									  <tr><td background="AC.tile.gif" bgcolor="#B6B6B6" width="100%">
+<table background="CIrubanfonce.jpg" cellSpacing="6" cellPadding="2" class="sBorder1s" borderColorDark="#211f23" borderColorLight="#BBBBBB" width="95%" align="center">
+<tr><td background="CIrubanmetal.jpg">
 
-			<p class="sXLarge sCenter sBold sMatterhorn">
-				<br>
-				<img src="CIlignegrande.gif" width="399" height="29">&nbsp;&nbsp;&nbsp;&nbsp;
-				<img src="CIlignepetite.gif" width="211" height="29">&nbsp;&nbsp;&nbsp;&nbsp;
-				<img src="CIlignegrande.gif" width="399" height="29"><br><br>
-				OROSCOPO CINESE<br><br>
-				<img src="CI.Lepre.jpg"      width="196" height="194"><br><br>
-				La LEPRE/GATTO nei CINQUE differenti Elementi
-			</p>
+<table background="CIrubanfonce.jpg" cellSpacing="6" cellPadding="2" border="1" borderColorDark="#211f23" borderColorLight="#BBBBBB" width="100%">
+<tr><td background="CIrubanmetal.jpg">
 
-            <div class="sSmall sBold sMatterhorn sPadding sJustify">
-				Anni che terminano con le cifre:<br>
-				<div style="padding-left: 40px;"><!-- padding addizionale -->
-					<span class="sTaupe">0 e 1 -> </span>
-					<span class="sDimGrey">METALLO = Meticolosità - Estremismo - Testardaggine - Ambizione - Linearità - Laboriosità - Organizzazione</span><br>
-					<span class="sTaupe">2 e 3 -> </span>
-					<span class="sBlu">ACQUA = Attenzione - Comprensione - Quiete - Umiltà - Accoglienza</span><br>
-					<span class="sTaupe">4 e 5 -> </span>
-					<span class="sMaroon">LEGNO = Laboriosità - Espansività - Generosità - Noncuranza - Ottimismo</span><br>
-					<span class="sTaupe">6 e 7 -> </span>
-					<span class="sRed">FUOCO = Forza - Urgenza - Operatività - Coraggio - Orgoglio</span><br>
-					<span class="sTaupe">8 e 9 -> </span>
-					<span class="sVerde">TERRA = Tranquillità - Equilibrio - Realismo - Responsabilità - Accortezza</span></div>
-				<br><br>
+<table background="CIrubanclair.jpg" cellSpacing="6" cellPadding="2" border="0" width="100%">
+<tr><td>
+
+<table background="CIrubanfonce.jpg" cellPadding="0" class="sBorder1s" borderColorDark="#211F23" borderColorLight="#BBBBBB" width="100%">
+<tr><td background="AC.tile.gif">
+
+		<h1>OROSCOPO CINESE:<br>La LEPRE/GATTO nei Cinque Elementi</h1>
+
+		<p class="sCenter">
+			<br>
+			<img src="CI.Lepre.jpg" width="196" height="194" alt="Segno Cinese Lepre">
+		</p>
+
+		<nav class="sLarge sCenter">
+			<br>
+			<ul class="sNavigation">
+				<li><a href="Elemen1.Topo.htm">Topo</a></li>
+				<li><a href="Elemen2.Bue.htm">Bue</a></li>
+				<li><a href="Elemen3.Tigre.htm">Tigre</a></li>
+				<li><a href="Elemen4.Lepre.htm" id="PagCorrente">Lepre</a></li>
+				<li><a href="Elemen5.Drago.htm">Drago</a></li>
+				<li><a href="Elemen6.Serpente.htm">Serpente</a></li>
+				<li><a href="Elemen7.Cavallo.htm">Cavallo</a></li>
+				<li><a href="Elemen8.Capra.htm">Capra</a></li>
+				<li><a href="Elemen9.Scimmia.htm">Scimmia</a></li>
+				<li><a href="Elemen10.Gallo.htm">Gallo</a></li>
+				<li><a href="Elemen11.Cane.htm">Cane</a></li>
+				<li><a href="Elemen12.Cinghiale.htm">Cinghiale</a></li>
+				<li><a href="ZodiaCine.htm">Zodiaco Cinese</a></li>
+				<li><a href="index.html"><img src="favicon32.gif" class="sHomeIcon"></a></li>
+			</ul>
+		</nav>
+
+		<p class="sCenter">
+			<br>
+			<img src="CIlignepetite.gif" width="211" height="29" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="CIlignepetite.gif" width="211" height="29" alt="">
+		</p>
+
+		<div class="sSmall sBold sMatterhorn sPadding sJustify">
+			<br>Anni che terminano con le cifre:<br>
+			<div style="padding-left: 40px;"><!-- padding addizionale -->
+				<span class="sTaupe">0 e 1 -> </span>
+				<span class="sDimGrey">METALLO = Meticolosità - Estremismo - Testardaggine - Ambizione - Linearità - Laboriosità - Organizzazione</span><br>
+				<span class="sTaupe">2 e 3 -> </span>
+				<span class="sBlue">ACQUA = Attenzione - Comprensione - Quiete - Umiltà - Accoglienza</span><br>
+				<span class="sTaupe">4 e 5 -> </span>
+				<span class="sMaroon">LEGNO = Laboriosità - Espansività - Generosità - Noncuranza - Ottimismo</span><br>
+				<span class="sTaupe">6 e 7 -> </span>
+				<span class="sRed">FUOCO = Forza - Urgenza - Operatività - Coraggio - Orgoglio</span><br>
+				<span class="sTaupe">8 e 9 -> </span>
+				<span class="sGreen">TERRA = Tranquillità - Equilibrio - Realismo - Responsabilità - Accortezza</span>
 			</div>
-			<p class="sCenter sMedium sBold sDimGrey">
-				<img src="CIlignepetite.gif" width="211" height="29">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<img src="CIlignepetite.gif" width="211" height="29"><br><br>
+		</div>
 
-				LEPRE HSIN <span class="sTaupe">(nato nel 1951 e nel 2011) Principio femminile - elemento</span> METALLO
-			</p>
+		<p class="sCenter">
+			<br>
+			<img src="CIlignegrande.gif" width="399" height="29" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="CIlignegrande.gif" width="399" height="29" alt="">
+		</p>
 
-			<div class="sSmall sTaupe sPadding sJustify">
-				Materialista, egocentrico, dotato di forza fisica e psichica e di una grande fiducia nelle proprie capacità, persegue il successo con 
-				ostinazione e grande senso di responsabilità. È così intelligente che è un peccato che proprio questo estremo raziocinio lo porti a non 
-				voler accettare tutto ciò che non è tangibile. Non sa immedesimarsi nel bisogno degli altri e agisce secondo il proprio punto di vista. 
-				Nella professione ha successo per uno sviluppato senso pratico e per svariate capacità ha anche molto fiuto per gli affari e il commercio. 
-				La vita affettiva è molto condizionata dalla sua personalità.</div>
+		<h2><span class="sDimGrey">LEPRE HSIN</span> (nato nel 1951 e nel 2011) Principio femminile - elemento <span class="sDimGrey">METALLO</span></h2>
+		<p>
+			Materialista, egocentrico, dotato di forza fisica e psichica e di una grande fiducia nelle proprie capacità, persegue il successo con
+			ostinazione e grande senso di responsabilità. È così intelligente che è un peccato che proprio questo estremo raziocinio lo porti a non
+			voler accettare tutto ciò che non è tangibile. Non sa immedesimarsi nel bisogno degli altri e agisce secondo il proprio punto di vista.
+			Nella professione ha successo per uno sviluppato senso pratico e per svariate capacità ha anche molto fiuto per gli affari e il commercio.
+			La vita affettiva è molto condizionata dalla sua personalità.
+		</p>
 
-			<p class="sCenter sMedium sBold sBlu">
-				<br>LEPRE KUEI <span class="sTaupe">(nato nel 1903 e nel 1963) Principio femminile - elemento</span> ACQUA</p>
+		<h2><span class="sBlue">LEPRE KUEI</span> (nato nel 1903 e nel 1963) Principio femminile - elemento <span class="sBlue">ACQUA</span></h2>
+		<p>
+			È una <span class="sBlue sBold">Lepre</span> molto emotiva e delicata, la fragilità e il suo amore per la quiete che si la può chiamare
+			poetica lo fa rifuggire da tutto quello che è troppo forte e violento. Come unico difetto è la pigrizia, lavora molto bene con gran
+			profitto quando è in vena, mentre non riesce ad impegnarsi in lavori difficili o che richiedono uno sforzo. Dotato di molto equilibrio
+			e di senso di giustizia, può avere successo come giudice o avvocato. A volte capita che capisca con esattezza i pensieri e le emozioni
+			delle persone con cui entra in contatto, questa sua capacità è a volte avvertita da queste ultime con il risultato che ne vengono attratte
+			facilmente. La vita affettiva è in genere serena, sa prendere ogni cosa dal lato migliore e ciò si ripercuote favorevolmente sulla psiche e
+			sull'umore. Non ha mai grossi problemi economici.
+		</p>
 
-			<div class="sSmall sTaupe sPadding sJustify">
-				È una <span class="sBlu sBold">Lepre</span> molto emotiva e delicata, la fragilità e il suo amore per la quiete che si la può chiamare
-            	poetica lo fa rifuggire da tutto quello che è troppo forte e violento. Come unico difetto è la pigrizia, lavora molto bene con gran
-				profitto quando è in vena, mentre non riesce ad impegnarsi in lavori difficili o che richiedono uno sforzo. Dotato di molto equilibrio 
-				e di senso di giustizia, può avere successo come giudice o avvocato. A volte capita che capisca con esattezza i pensieri e le emozioni 
-				delle persone con cui entra in contatto, questa sua capacità è a volte avvertita da queste ultime con il risultato che ne vengono attratte 
-				facilmente. La vita affettiva è in genere serena, sa prendere ogni cosa dal lato migliore e ciò si ripercuote favorevolmente sulla psiche e
-				sull'umore. Non ha mai grossi problemi economici.</div>
+		<h2><span class="sMaroon">LEPRE YI</span> (nato nel 1915 e nel 1975) Principio femminile - elemento <span class="sMaroon">LEGNO</span></h2>
+		<p>
+			È animato da una bontà particolare, che spesso gli è nociva, è infatti molto generoso e sa essere molto tollerante e comprensivo. È una
+			<span class="sMaroon sBold">Lepre</span> in cui si può riporre la massima fiducia, poiché sa essere leale preciso e corretto. Sempre
+			disponibile quando qualcuno si trova in una situazione precaria e dà il suo aiuto sia moralmente e materialmente. Si dimostra ottimo amico in
+			ogni occasione. È dotato di buona ambizione e di altrettanta capacità di adattamento, si trova a suo agio in situazioni di lavoro collettivo,
+			in cui potrà lentamente emergere. Sovente ha molti problemi in amore a causa della sua insicurezza. La famiglia rappresenta un grande
+			appoggio, è quindi consigliabile che si sposi presto.
+		</p>
 
-			<p class="sCenter sMedium sBold sMaroon">
-				<br>LEPRE YI <span class="sTaupe">(nato nel 1915 e nel 1975) Principio femminile - elemento</span> LEGNO</p>
-			
-			<div class="sSmall sTaupe sPadding sJustify">
-				È animato da una bontà particolare, che spesso gli è nociva, è infatti molto generoso e sa essere molto tollerante e comprensivo. È una 
-				<span class="sMaroon sBold">Lepre</span> in cui si può riporre la massima fiducia, poiché sa essere leale preciso e corretto. Sempre 
-				disponibile quando qualcuno si trova in una situazione precaria e dà il suo aiuto sia moralmente e materialmente. Si dimostra ottimo amico in 
-				ogni occasione. È dotato di buona ambizione e di altrettanta capacità di adattamento, si trova a suo agio in situazioni di lavoro collettivo,
-				in cui potrà lentamente emergere. Sovente ha molti problemi in amore a causa della sua insicurezza. La famiglia rappresenta un grande
-				appoggio, è quindi consigliabile che si sposi presto.</div>
-				
-			<p class="sCenter sMedium sBold sRed">
-				<br>LEPRE TING <span class="sTaupe">(nato nel 1927 e nel 1987) Principio femminile - elemento</span> FUOCO</p>
+		<h2><span class="sRed">LEPRE TING</span> (nato nel 1927 e nel 1987) Principio femminile - elemento <span class="sRed">FUOCO</span></h2>
+		<p>
+			È tra tutti il più espansivo e aperto, sa esprimere molto bene i sentimenti e i pensieri ed è capace di manifestare buone doti di leader.
+			È un passionale, simpatico, gaio, sa godersi pienamente i lati belli della vita. Tuttavia ha in genere una particolare debolezza: ha un
+			gran bisogno di essere sempre sostenuto, di avere sempre il conforto della approvazione altrui per potersi esprimere al meglio di sé.
+			Spreca le sue energie fisiche e psicologiche con facilità, sovente vive in modo sregolato. Le sue migliori qualità sono un'ottima capacità
+			intuitiva e l'arte della diplomazia che solo di rado viene turbata da qualche accesso d'ira o da dei moti d'impazienza. È abile nel lavoro,
+			ma però per la sua passionalità dona una grande parte della sua vita all'amore. La donna è affascinante per il suo temperamento
+			appassionato, l'uomo per la virilità, si comprende come la vita affettiva sia movimentata, non è particolarmente fedele, ma quando è con
+			un partner dona in quel momento tutto se stesso completamente.
+		</p>
 
-			<div class="sSmall sTaupe sPadding sJustify">
-				È tra tutti il più espansivo e aperto, sa esprimere molto bene i sentimenti e i pensieri ed è capace di manifestare buone doti di leader. 
-				È un passionale, simpatico, gaio, sa godersi pienamente i lati belli della vita. Tuttavia ha in genere una particolare debolezza: ha un 
-				gran bisogno di essere sempre sostenuto, di avere sempre il conforto della approvazione altrui per potersi esprimere al meglio di sé.
-				Spreca le sue energie fisiche e psicologiche con facilità, sovente vive in modo sregolato. Le sue migliori qualità sono un'ottima capacità
-				intuitiva e l'arte della diplomazia che solo di rado viene turbata da qualche accesso d'ira o da dei moti d'impazienza. È abile nel lavoro,
-				ma però per la sua passionalità dona una grande parte della sua vita all'amore. La donna è affascinante per il suo temperamento 
-				appassionato, l'uomo per la virilità, si comprende come la vita affettiva sia movimentata, non è particolarmente fedele, ma quando è con 
-				un partner dona in quel momento tutto se stesso completamente.</div>
+		<h2><span class="sGreen">LEPRE CHI</span> (nato nel 1939 e nel 1999) Principio femminile - elemento <span class="sGreen">TERRA</span></h2>
+		<p>
+			Ha molti talenti e forze latenti ma manca di fiducia in sé stesso e nella benevolenza del destino. Manca la tenacia e la continuità, è un
+			bene se riesce ad unirsi a dei collaboratori o soci di temperamento più vivace e intraprendente. L'emotività è sempre presente, non ha in
+			questo caso il predominio sulla razionalità, così riesce sempre a dare agli altri un'immagine di se stesso equilibrata e rassicurante.
+			Ha bisogno che qualcuno che gli infonda coraggio e lo sproni all'azione e alla decisione per la sua incertezza sovente si perde in molte
+			ottime occasioni. Più serena scorre la vita sentimentale è fedele per temperamento, quando sceglie una persona ne trae forze inesauribili
+			dalla serenità del proprio focolare.
+		</p>
 
-			<p class="sCenter sMedium sBold sVerde">
-				<br>LEPRE CHI <span class="sTaupe">(nato nel 1939 e nel 1999) Principio femminile - elemento</span> TERRA</p>
-				
-			<div class="sSmall sTaupe sPadding sJustify">
-				Ha molti talenti e forze latenti ma manca di fiducia in sé stesso e nella benevolenza del destino. Manca la tenacia e la continuità, è un
-				bene se riesce ad unirsi a dei collaboratori o soci di temperamento più vivace e intraprendente. L'emotività è sempre presente, non ha in
-				questo caso il predominio sulla razionalità, così riesce sempre a dare agli altri un'immagine di se stesso equilibrata e rassicurante.
-				Ha bisogno che qualcuno che gli infonda coraggio e lo sproni all'azione e alla decisione per la sua incertezza sovente si perde in molte
-				ottime occasioni. Più serena scorre la vita sentimentale è fedele per temperamento, quando sceglie una persona ne trae forze inesauribili
-				dalla serenità del proprio focolare.</div>
+		<p class="sCenter">
+			<br>
+			<img src="CIlignepetite.gif" width="211" height="29" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="CIlignepetite.gif" width="211" height="29" alt="">
+		</p>
 
-			<p class="sSmall sCenter sTaupe">
-				<img src="CIlignepetite.gif" width="211" height="29">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img src="CIlignepetite.gif" width="211" height="29"><br><br>
+		<p class="sCenter">
+			<img src="email-box.gif"    width="35" height="35" alt="">
+			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
+			<img src="TelefonoC164.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
 
-				<strong>Sei il visitatore n°&nbsp;</strong>
-				<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1267630334-fiahtxhj2" border=0></a>
-				&nbsp;(Contenuto Aggiornato 05/09/2017)<br><br><br>
-				<img src="CIlignegrande.gif" width="399" height="29">&nbsp;&nbsp;&nbsp;&nbsp;
-				<img src="CIlignepetite.gif" width="211" height="29">&nbsp;&nbsp;&nbsp;&nbsp;
-				<img src="CIlignegrande.gif" width="399" height="29"><br><br>
-			</p>                        
-									</td></tr></TBODY></table>
-								</td></tr></table>
-							</td></tr></table>
-						</td></tr></table>
-					</td></tr></table>
-				</td></tr></table>
-			</td></tr></table>
-		</td></tr></table>
-	</td></tr></table>
+			<b>Sei il visitatore n°&nbsp;</b>
+		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1267630334-fiahtxhj2" border=0></a>
+			&nbsp;(Contenuto Aggiornato <time datetime="2017-09-05">05/09/2017</time>)<br><br>
+		</p>
+
 </td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+<footer>
+	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
+	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
+</footer>
 </body>
 </html>

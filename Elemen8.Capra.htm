@@ -1,40 +1,137 @@
 <!DOCTYPE html>
-<HTML lang="it">
+<html lang="it" dir="ltr">
 <head>
-
-<title>Elementi Cinesi: Capra</title>
-<link rel="icon" type="image/gif" href="https://www.studioacquario.it/favicon32.gif">
-<META name="description" content="Studio Acquario - Elementi Cinesi: Capra">
-<meta name="keywords" content="astrologia, oroscopo cinese, elementi, capra">
+<meta charset="UTF-8">
+<title>Elementi Cinesi: Capra - Oroscopo Cinese - Studio Acquario</title>
+<link rel="icon" type="image/gif" href="favicon32.gif">
+<meta name="description" content="Studio Acquario: Oroscopo Cinese: Elementi Cinesi: Capra">
+<meta name="keywords" content="astrologia, studio, acquario, oroscopo cinese, elementi, capra">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
 <meta name="language" content="it">
-<meta charset="UTF-8">
-<meta http-equiv="imagetoolbar" CONTENT="no">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="19/09/2017">
-<meta name="revised" content="30/06/2020">
+<meta name="revised" content="07/10/2020">
 
 <style type="text/css">
 body {
 	scrollbar-arrow-color: #FFFFFF;
-	scrollbar-base-color: #B6B6B6;
+	scrollbar-base-color: #B6B6B6; /* Pink Swan */
 	scrollbar-dark-shadow-color: #B6B6B6;
-	scrollbar-track-color: #B6B6B6;
-	font-family: Verdana, sans-serif;
+	scrollbar-track-color: #C5C5C5; /* Silver */
+
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	/* color: #7E726C; Sand Dune */
+	background-color: #B6B6B6; /* Pink Swan */
+	background-image: url('CIfondexter.gif');
+}
+a:link {
+	color: #000000;
+}
+a:visited {
+	color: #000000;
+}
+a:hover {
+	color: #FF0000;
+}
+a:active {
+	color: #000000;
+}
+h1 {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #4D4D4D; /* sMatterhorn */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 140%;
+}
+h2 {
+	font-size: medium;
+	font-weight: bold;
+	color: #433E3A; /* Taupe */
+	text-align: center;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-top: 30px;
+	/* margin-bottom: 0; */
+}
+header {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	text-shadow: 1px 1px 5px #0000FF; /* Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
+}
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	text-shadow: 1px 1px 1px #0000FF; /* Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
 }
 img {
 	max-width: 100%;
 	height: auto;
 }
+p {
+	font-size: small;
+	color: #433E3A; /* sTaupe */
+	text-align: justify;
+	padding-left: 35px;
+	padding-right: 35px;
+	line-height: 125%;
+}
+.sNavigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 180%;
+}
+.sNavigation a {
+	font-size: medium;
+	font-weight: bold;
+	padding:.42em;
+	color: #FFFFFF; /* White */
+	margin-left: 2px;
+	background: #8C8C8C; /* Suva Grey */
+	text-decoration: none;
+}
+.sNavigation a:hover {
+	color: #000000; /* Black */
+	background: #C5C5C5; /* Deep Sky Blue */
+}
+#PagCorrente {
+	border-bottom: 2.5px solid aqua;
+}
+.sHomeIcon {
+	vertical-align: bottom;
+	margin-bottom: 1px;
+	height: 25px;
+	width: 25px;
+}
 .sBorder1s {
 				border-style: solid;
 				border-width: 1px;
 }
-.sBlu {
+.sBlue {
 				color: #0000FF;
 }
-.sVerde {
-				color: #008000;
+.sGreen {
+				color: #00954A; /* Pigment Green */
 }
 .sTaupe {
 				color: #433E3A;
@@ -61,8 +158,14 @@ img {
 				text-align: justify;
 }
 .sPadding {
-				padding-left: 40px;
-				padding-right: 40px;
+				padding-left: 35px;
+				padding-right: 35px;
+}
+.sLineH125 {
+				line-height: 125%;
+}
+.sXSmall {
+				font-size: x-small;
 }
 .sSmall {
 				font-size: small;
@@ -70,149 +173,164 @@ img {
 .sMedium {
 				font-size: medium;
 }
+.sLarge {
+				font-size: large;
+}
 .sXLarge {
 				font-size: x-large;
 }
 </style>
 </head>
 
-<body background="CIfondexter.gif" bgcolor="#B6B6B6" link="#808080" vlink="#433E3A" alink="#FFFFFF" topmargin="30">
+<body>
+<header>Studio di Astrologia &quot;Acquario&quot;</header>
 
-<table cellSpacing="10" cellPadding="0" borderColorDark="#211f23" borderColorLight="#BBBBBB" background="CIrubanfonce.jpg" width="100%" class="sBorder1s">
-  <tr><td width="100%">
-	<table cellspacing="1" cellPadding="0" background="CIrubanmetal.jpg" width="100%" border="0">
-      <tr><td width="100%">
-		<table cellSpacing="5" cellPadding="0" borderColorDark="#211f23" borderColorLight="#BBBBBB" background="CIrubanfonce.jpg" width="100%" border="1">
-          <tr><td width="100%">
-			<table cellSpacing="1" cellPadding="0" background="CIrubanmetal.jpg" width="100%" border="0">
-              <tr><td width="100%">
-				<table cellspacing="5" cellPadding="0" borderColorDark="#211F23" borderColorLight="#BBBBBB" background="CIrubanfonce.jpg" width="100%" border="1">
-                  <tr><td width="100%">
-					<table cellSpacing="1" cellPadding="0" background="CIrubanmetal.jpg" width="100%" border="0">
-                      <tr><td width="100%">
-						<table cellSpacing="2" cellPadding="0" borderColorDark="#211f23" borderColorLight="#BBBBBB" background="CIrubanfonce.jpg" width="100%" border="1">
-                          <tr><td width="100%">
-							<table cellSpacing="0" cellPadding="0" background="CIrubanmetal.jpg" width="100%" border="0">
-							  <tr><td width="100%">
-								<table cellSpacing="5" cellPadding="0" background="CIrubanclair.jpg" width="100%" border="0">
-								  <tr><td width="100%">
-									<table cellPadding="0" borderColorDark="#211F23" borderColorLight="#BBBBBB" background="CIrubanfonce.jpg" width="100%" border="1">
-<TBODY>
-									  <tr><td background="AC.tile.gif" bgcolor="#B6B6B6" width="100%">
+<table background="CIrubanfonce.jpg" cellSpacing="6" cellPadding="2" class="sBorder1s" borderColorDark="#211f23" borderColorLight="#BBBBBB" width="95%" align="center">
+<tr><td background="CIrubanmetal.jpg">
 
-			<p class="sXLarge sCenter sBold sMatterhorn">
-				<br>
-				<img src="CIlignegrande.gif" width="399" height="29">&nbsp;&nbsp;&nbsp;&nbsp;
-				<img src="CIlignepetite.gif" width="211" height="29">&nbsp;&nbsp;&nbsp;&nbsp;
-				<img src="CIlignegrande.gif" width="399" height="29"><br><br>
-				OROSCOPO CINESE<br><br>
-				<img src="CI.Capra.jpg"      width="184" height="183"><br><br>
-				La CAPRA/PECORA nei CINQUE differenti Elementi
-			</p>
+<table background="CIrubanfonce.jpg" cellSpacing="6" cellPadding="2" border="1" borderColorDark="#211f23" borderColorLight="#BBBBBB" width="100%">
+<tr><td background="CIrubanmetal.jpg">
 
-			<div class="sSmall sBold sMatterhorn sPadding sJustify">
-				Anni che terminano con le cifre:<br>
-				<div style="padding-left: 40px;"><!-- padding addizionale -->
-					<span class="sTaupe">0 e 1 -> </span>
-					<span class="sDimGrey">METALLO = Meticolosità - Estremismo - Testardaggine - Ambizione - Linearità - Laboriosità - Organizzazione</span><br>
-					<span class="sTaupe">2 e 3 -> </span>
-					<span class="sBlu">ACQUA = Attenzione - Comprensione - Quiete - Umiltà - Accoglienza</span><br>
-					<span class="sTaupe">4 e 5 -> </span>
-					<span class="sMaroon">LEGNO = Laboriosità - Espansività - Generosità - Noncuranza - Ottimismo</span><br>
-					<span class="sTaupe">6 e 7 -> </span>
-					<span class="sRed">FUOCO = Forza - Urgenza - Operatività - Coraggio - Orgoglio</span><br>
-					<span class="sTaupe">8 e 9 -> </span>
-					<span class="sVerde">TERRA = Tranquillità - Equilibrio - Realismo - Responsabilità - Accortezza</span></div>
-				<br><br>
+<table background="CIrubanclair.jpg" cellSpacing="6" cellPadding="2" border="0" width="100%">
+<tr><td>
+
+<table background="CIrubanfonce.jpg" cellPadding="0" class="sBorder1s" borderColorDark="#211F23" borderColorLight="#BBBBBB" width="100%">
+<tr><td background="AC.tile.gif">
+
+		<h1>OROSCOPO CINESE:<br>La CAPRA/PECORA nei Cinque Elementi</h1>
+
+		<p class="sCenter">
+			<br>
+			<img src="CI.Capra.jpg" width="184" height="183" alt="Segno Cinese Capra">
+		</p>
+
+		<nav class="sLarge sCenter">
+			<br>
+			<ul class="sNavigation">
+				<li><a href="Elemen1.Topo.htm">Topo</a></li>
+				<li><a href="Elemen2.Bue.htm">Bue</a></li>
+				<li><a href="Elemen3.Tigre.htm">Tigre</a></li>
+				<li><a href="Elemen4.Lepre.htm">Lepre</a></li>
+				<li><a href="Elemen5.Drago.htm">Drago</a></li>
+				<li><a href="Elemen6.Serpente.htm">Serpente</a></li>
+				<li><a href="Elemen7.Cavallo.htm">Cavallo</a></li>
+				<li><a href="Elemen8.Capra.htm" id="PagCorrente">Capra</a></li>
+				<li><a href="Elemen9.Scimmia.htm">Scimmia</a></li>
+				<li><a href="Elemen10.Gallo.htm">Gallo</a></li>
+				<li><a href="Elemen11.Cane.htm">Cane</a></li>
+				<li><a href="Elemen12.Cinghiale.htm">Cinghiale</a></li>
+				<li><a href="ZodiaCine.htm">Zodiaco Cinese</a></li>
+				<li><a href="index.html"><img src="favicon32.gif" class="sHomeIcon"></a></li>
+			</ul>
+		</nav>
+
+		<p class="sCenter">
+			<br>
+			<img src="CIlignepetite.gif" width="211" height="29" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="CIlignepetite.gif" width="211" height="29" alt="">
+		</p>
+
+		<div class="sSmall sBold sMatterhorn sPadding sJustify">
+			<br>Anni che terminano con le cifre:<br>
+			<div style="padding-left: 40px;"><!-- padding addizionale -->
+				<span class="sTaupe">0 e 1 -> </span>
+				<span class="sDimGrey">METALLO = Meticolosità - Estremismo - Testardaggine - Ambizione - Linearità - Laboriosità - Organizzazione</span><br>
+				<span class="sTaupe">2 e 3 -> </span>
+				<span class="sBlue">ACQUA = Attenzione - Comprensione - Quiete - Umiltà - Accoglienza</span><br>
+				<span class="sTaupe">4 e 5 -> </span>
+				<span class="sMaroon">LEGNO = Laboriosità - Espansività - Generosità - Noncuranza - Ottimismo</span><br>
+				<span class="sTaupe">6 e 7 -> </span>
+				<span class="sRed">FUOCO = Forza - Urgenza - Operatività - Coraggio - Orgoglio</span><br>
+				<span class="sTaupe">8 e 9 -> </span>
+				<span class="sGreen">TERRA = Tranquillità - Equilibrio - Realismo - Responsabilità - Accortezza</span>
 			</div>
-			<p class="sCenter sMedium sBold sDimGrey">
-				<img src="CIlignepetite.gif" width="211" height="29">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<img src="CIlignepetite.gif" width="211" height="29"><br><br>
+		</div>
 
-				CAPRA HSIN <span class="sTaupe">(nato nel 1931 e nel 1991) Principio femminile - elemento</span> METALLO
-			</p>
-			
-			<div class="sSmall  sTaupe sPadding sJustify">
-				La <span class="sDimGrey sBold">Capra</span> del <span class="sDimGrey sBold">Metallo</span> ha uno spirito artistico ed è senz'altro quella 
-				più creativa. Grazie al suo animo nobile avrà sempre molte persone che gli vogliono bene e che l'aiuteranno nella vita. Mostra una padronanza 
-				e una sicurezza in se stesso assai notevole. La calma e il suo equilibrio vacillano a volte per effetto di cambiamenti improvvisi, di
-				alterazioni che possono subentrare in famiglia o nell'ambiente di lavoro. Duttile e flessibile, aperto alle novità è portato ad accettare 
-				volentieri innovazioni. Questa fiducia nei propri mezzi nasconde però una certa instabilità. Possessivo e geloso, tollera a fatica che i 
-				suoi famigliari si muovano con una certa indipendenza e tende sempre a controllarli in modo eccessivo. È tra l'altro meno generoso degli
-				altri, anche se di tanto in tanto sa compiere dei gesti altruistici. Ama molto il lavoro ed è assai tenace nel progredire, non conosce la
-				stanchezza. Dinamico e allegro, ama i lati belli della vita e in amore è fortunato, ha per questo un carattere simpatico molte amicizie e
-				relazioni.</div>
+		<p class="sCenter">
+			<br>
+			<img src="CIlignegrande.gif" width="399" height="29" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="CIlignegrande.gif" width="399" height="29" alt="">
+		</p>
 
-			<p class="sCenter sMedium sBold sBlu">
-				<br>CAPRA KUEI <span class="sTaupe">(nato nel 1943 e nel 2003) Principio femminile - elemento</span> ACQUA</p>
+		<h2><span class="sDimGrey">CAPRA HSIN</span> (nato nel 1931 e nel 1991) Principio femminile - elemento <span class="sDimGrey">METALLO</span></h2>
+		<p>
+			La <span class="sDimGrey sBold">Capra</span> del <span class="sDimGrey sBold">Metallo</span> ha uno spirito artistico ed è senz'altro quella più
+			creativa. Grazie al suo animo nobile avrà sempre molte persone che gli vogliono bene e che l'aiuteranno nella vita. Mostra una padronanza e una
+			sicurezza in se stesso assai notevole. La calma e il suo equilibrio vacillano a volte per effetto di cambiamenti improvvisi, di alterazioni che
+			possono subentrare in famiglia o nell'ambiente di lavoro. Duttile e flessibile, aperto alle novità è portato ad accettare volentieri innovazioni.
+			Questa fiducia nei propri mezzi nasconde però una certa instabilità. Possessivo e geloso, tollera a fatica che i suoi famigliari si muovano con
+			una certa indipendenza e tende sempre a controllarli in modo eccessivo. È tra l'altro meno generoso degli altri, anche se di tanto in tanto sa
+			compiere dei gesti altruistici. Ama molto il lavoro ed è assai tenace nel progredire, non conosce la stanchezza. Dinamico e allegro, ama i lati
+			belli della vita e in amore è fortunato, ha per questo un carattere simpatico molte amicizie e relazioni.
+		</p>
 
-			<div class="sSmall sTaupe sPadding sJustify">
-				Carattere irrequieto e instabile, dotato di un grande fascino personale, amante dell'avventura, ma poco propenso per tutto ciò che richiede
-				un impegno costante. È facilmente circondato da molti amici che sono sempre pronti a sostenerla e aiutarla. Vivergli accanto è molto stancante
-				e per niente facile, e non si può mai sapere cosa accadrà l'indomani,  ma solo chi ha un carattere altrettanto dinamico e curioso può
-				trovarsi bene. Di natura influenzabile e passiva, tende ad adeguarsi a tutte le persone che esercitano una forte influenza su lui, anche 
-				se è irremovibile nelle decisioni prese. In realtà è una <span class="sBlu sBold">Capra</span> molto eclettica, la sua personalità può assumere
-				molte forme, molti aspetti, e può portare avanti insieme più di un'attività. Le sue doti si rivelano appieno quando trova l'affetto e l'aiuto
-				di un partner devoto.</div>
+		<h2><span class="sBlue">CAPRA KUEI</span> (nato nel 1943 e nel 2003) Principio femminile - elemento <span class="sBlue">ACQUA</span></h2>
+		<p>
+			Carattere irrequieto e instabile, dotato di un grande fascino personale, amante dell'avventura, ma poco propenso per tutto ciò che richiede un
+			impegno costante. È facilmente circondato da molti amici che sono sempre pronti a sostenerla e aiutarla. Vivergli accanto è molto stancante e per
+			niente facile, e non si può mai sapere cosa accadrà l'indomani, ma solo chi ha un carattere altrettanto dinamico e curioso può trovarsi bene.
+			Di natura influenzabile e passiva, tende ad adeguarsi a tutte le persone che esercitano una forte influenza su lui, anche se è irremovibile nelle
+			decisioni prese. In realtà è una <span class="sBlue sBold">Capra</span> molto eclettica, la sua personalità può assumere molte forme, molti
+			aspetti, e può portare avanti insieme più di un'attività. Le sue doti si rivelano appieno quando trova l'affetto e l'aiuto di un partner devoto.
+		</p>
 
-			<p class="sCenter sMedium sBold sMaroon">
-				<br>CAPRA YI <span class="sTaupe">(nato nel 1955 e nel 2015) Principio femminile - elemento</span> LEGNO</p>
-			
-			<div class="sSmall sTaupe sPadding sJustify">
-				È di un'indole più che mai affettuosa e gentile, ha una particolare sensibilità per i problemi degli altri, che cerca di aiutare sia 
-				moralmente sia economicamente, dimostrandosi sempre generoso con tutti. La sua gran bontà e la fiducia, a volte immeritata, che concede 
-				sempre a tutti rischia talvolta di metterlo nei guai, ma la grande fortuna di cui è dotato lo protegge sempre da gravi difficoltà. Avrebbe
-				tutte le carte in regola per raggiungere posizioni invidiabili nella sua attività, poiché è intelligente e capace, ma è piuttosto pigro ed 
-				apatico, senza una particolare ambizione, ciò fa volgere sovente le spalle alla fortuna, alle ottime occasioni che possono presentarsi. 
-				Se aspira a crearsi il cosiddetto &quot;posto al sole&quot;, necessita una giusta ambizione e la diligenza, mentre alla 
-				<span class="sMaroon sBold">Capra</span> è sufficiente che non manchi il necessario, s'accontenta troppo facilmente. Farà senz'altro un 
-				ottimo matrimonio, basato sulla reciproca stima e sull'accordo. Sensibile e tenero, la gente lo ammira grazie alla sua semplicità, non pensa 
-				mai al domani e vive la vita il più serenamente possibile. È affettuoso e la gente è affettuosa con lui.</div>
+		<h2><span class="sMaroon">CAPRA YI</span> (nato nel 1955 e nel 2015) Principio femminile - elemento <span class="sMaroon">LEGNO</span></h2>
+		<p>
+			È di un'indole più che mai affettuosa e gentile, ha una particolare sensibilità per i problemi degli altri, che cerca di aiutare sia moralmente
+			sia economicamente, dimostrandosi sempre generoso con tutti. La sua gran bontà e la fiducia, a volte immeritata, che concede sempre a tutti
+			rischia talvolta di metterlo nei guai, ma la grande fortuna di cui è dotato lo protegge sempre da gravi difficoltà. Avrebbe tutte le carte in
+			regola per raggiungere posizioni invidiabili nella sua attività, poiché è intelligente e capace, ma è piuttosto pigro ed apatico, senza una
+			particolare ambizione, ciò fa volgere sovente le spalle alla fortuna, alle ottime occasioni che possono presentarsi. Se aspira a crearsi il
+			cosiddetto &quot;posto al sole&quot;, necessita una giusta ambizione e la diligenza, mentre alla <span class="sMaroon sBold">Capra</span> è
+			sufficiente che non manchi il necessario, s'accontenta troppo facilmente. Farà senz'altro un ottimo matrimonio, basato sulla reciproca stima
+			e sull'accordo. Sensibile e tenero, la gente lo ammira grazie alla sua semplicità, non pensa mai al domani e vive la vita il più serenamente
+			possibile. È affettuoso e la gente è affettuosa con lui.
+		</p>
 
-			<p class="sCenter sMedium sBold sRed">
-				<br>CAPRA TING <span class="sTaupe">(nato nel 1907 e nel 1967) Principio femminile - elemento</span> FUOCO</p>
+		<h2><span class="sRed">CAPRA TING</span> (nato nel 1907 e nel 1967) Principio femminile - elemento <span class="sRed">FUOCO</span></h2>
+		<p>
+			È la <span class="sRed sBold">Capra</span> più audace, piace aiutare gli altri e lo fa senza volere niente in cambio, ama la tranquillità ed è
+			una persona molto serena. Pieno di talento, conferisce una certa sicurezza e una maggiore fiducia in sé. Il carattere è irrequieto e testardo,
+			piuttosto dispersivo, non ascolta volentieri i consigli altrui e lo comprende solo quando è troppo tardi che erano giusti e sinceri. Sa essere
+			aggressivo quando la situazione lo necessita. La sua capacità di prendere iniziative è senza dubbio buona, anche perché non è affatto privo di
+			coraggio. Incontra maggiori ostilità nel lavoro, soprattutto se questo lo costringe a prendere decisioni importanti. Ama molto le comodità e
+			il lusso, ha molta fortuna nella vita privata, quasi sempre incontra la persona adatta senza ricerche o sforzi particolari.
+		</p>
 
-			<div class="sSmall sTaupe sPadding sJustify">
-				È la <span class="sRed sBold">Capra</span> più audace, piace aiutare gli altri e lo fa senza volere niente in cambio, ama la tranquillità ed è 
-				una persona molto serena. Pieno di talento, conferisce una certa sicurezza e una maggiore fiducia in sé. Il carattere è irrequieto e 
-				testardo, piuttosto dispersivo, non ascolta volentieri i consigli altrui e lo comprende solo quando è troppo tardi che erano giusti e 
-				sinceri. Sa essere aggressivo quando la situazione lo necessita. La sua capacità di prendere iniziative è senza dubbio buona, anche 
-				perché non è affatto privo di coraggio. Incontra maggiori ostilità nel lavoro, soprattutto se questo lo costringe a prendere decisioni 
-				importanti. Ama molto le comodità e il lusso, ha molta fortuna nella vita privata, quasi sempre incontra la persona adatta senza ricerche
-				o sforzi particolari.</div>
+		<h2><span class="sGreen">CAPRA CHI</span> (nato nel 1919 e nel 1979) Principio femminile - elemento <span class="sGreen">TERRA</span></h2>
+		<p>
+			È una <span class="sGreen sBold">Capra</span> con una visione abbastanza ottimistica delle cose e nello stesso tempo poco disposta a volare con
+			la fantasia. Dotato di un grande senso di responsabilità, buon lavoratore tenace e scrupoloso, non si nega i piaceri della vita, anche se si
+			mostra molto assennato nello spendere. È poco fortunato, anche se è onesto e lavora con serietà e capacità, non sa farsi apprezzare nella giusta
+			misura e diventa facile vittima di raggiri e intrighi. La sua emotività è abbastanza ben controllata, ma non sono rare le occasioni in cui
+			l'estrema sensibilità lo rende un po' troppo vulnerabile. Agendo nella vita affettiva con calma e serenità, riesce a farsi amare molto dal
+			partner, nel quale può trovare conforto e sostegno.
+		</p>
 
-			<p class="sCenter sMedium sBold sVerde">
-				<br>CAPRA CHI <span class="sTaupe">(nato nel 1919 e nel 1979) Principio femminile - elemento</span> TERRA</p>
-				
-			<div class="sSmall sTaupe sPadding sJustify">
-				È una <span class="sVerde sBold">Capra</span> con una visione abbastanza ottimistica delle cose e nello stesso tempo poco disposta a volare con
-				la fantasia. Dotato di un grande senso di responsabilità, buon lavoratore tenace e scrupoloso, non si nega i piaceri della vita, anche se
-				si mostra molto assennato nello spendere. È poco fortunato, anche se è onesto e lavora con serietà e capacità, non sa farsi apprezzare 
-				nella giusta misura e diventa facile vittima di raggiri e intrighi. La sua emotività è abbastanza ben controllata, ma non sono rare le 
-				occasioni in cui l'estrema sensibilità lo rende un po' troppo vulnerabile. Agendo nella vita affettiva con calma e serenità, riesce a farsi
-				amare molto dal partner, nel quale può trovare conforto e sostegno.</div>
+		<p class="sCenter">
+			<br>
+			<img src="CIlignepetite.gif" width="211" height="29" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="CIlignepetite.gif" width="211" height="29" alt="">
+		</p>
 
-			<p class="sSmall sCenter sTaupe">
-				<img src="CIlignepetite.gif" width="211" height="29">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img src="CIlignepetite.gif" width="211" height="29"><br><br>
+		<p class="sCenter">
+			<img src="email-box.gif"    width="35" height="35" alt="">
+			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
+			<img src="TelefonoC164.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
 
-				<strong>Sei il visitatore n°&nbsp;</strong>
-				<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1267630573-jzeq7a4" border=0></a>
-				&nbsp;(Contenuto Aggiornato 19/09/2017)<br><br><br>
-				<img src="CIlignegrande.gif" width="399" height="29">&nbsp;&nbsp;&nbsp;&nbsp;
-				<img src="CIlignepetite.gif" width="211" height="29">&nbsp;&nbsp;&nbsp;&nbsp;
-				<img src="CIlignegrande.gif" width="399" height="29"><br><br>
-			</p>  
-						
-									</td></tr></TBODY></table>
-								</td></tr></table>
-							</td></tr></table>
-						</td></tr></table>
-					</td></tr></table>
-				</td></tr></table>
-			</td></tr></table>
-		</td></tr></table>
-	</td></tr></table>
+			<b>Sei il visitatore n°&nbsp;</b>
+		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1267630573-jzeq7a4" border=0></a>
+			&nbsp;(Contenuto Aggiornato <time datetime="2017-09-19">19/09/2017</time>)<br><br>
+		</p>
+
 </td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+<footer>
+	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
+	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
+</footer>
 </body>
 </html>

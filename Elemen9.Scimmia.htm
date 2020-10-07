@@ -1,40 +1,137 @@
 <!DOCTYPE html>
-<HTML lang="it">
+<html lang="it" dir="ltr">
 <head>
-
-<title>Elementi Cinesi: Scimmia</title>
-<link rel="icon" type="image/gif" href="https://www.studioacquario.it/favicon32.gif">
-<META name="description" content="Studio Acquario: Elementi Cinesi: Scimmia">
-<meta name="keywords" content="astrologia, oroscopo cinese, elementi, scimmia">
+<meta charset="UTF-8">
+<title>Elementi Cinesi: Scimmia - Oroscopo Cinese - Studio Acquario</title>
+<link rel="icon" type="image/gif" href="favicon32.gif">
+<meta name="description" content="Studio Acquario: Oroscopo Cinese: Elementi Cinesi: Scimmia">
+<meta name="keywords" content="astrologia, studio, acquario, oroscopo cinese, elementi, scimmia">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
 <meta name="language" content="it">
-<meta charset="UTF-8">
-<meta http-equiv="imagetoolbar" CONTENT="no">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="19/09/2017">
-<meta name="revised" content="01/07/2020">
+<meta name="revised" content="07/10/2020">
 
 <style type="text/css">
 body {
 	scrollbar-arrow-color: #FFFFFF;
-	scrollbar-base-color: #B6B6B6;
+	scrollbar-base-color: #B6B6B6; /* Pink Swan */
 	scrollbar-dark-shadow-color: #B6B6B6;
-	scrollbar-track-color: #B6B6B6;
-	font-family: Verdana, sans-serif;
+	scrollbar-track-color: #C5C5C5; /* Silver */
+
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	/* color: #7E726C; Sand Dune */
+	background-color: #B6B6B6; /* Pink Swan */
+	background-image: url('CIfondexter.gif');
+}
+a:link {
+	color: #000000;
+}
+a:visited {
+	color: #000000;
+}
+a:hover {
+	color: #FF0000;
+}
+a:active {
+	color: #000000;
+}
+h1 {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #4D4D4D; /* sMatterhorn */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 140%;
+}
+h2 {
+	font-size: medium;
+	font-weight: bold;
+	color: #433E3A; /* Taupe */
+	text-align: center;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-top: 30px;
+	/* margin-bottom: 0; */
+}
+header {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	text-shadow: 1px 1px 5px #0000FF; /* Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
+}
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	text-shadow: 1px 1px 1px #0000FF; /* Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
 }
 img {
 	max-width: 100%;
 	height: auto;
 }
+p {
+	font-size: small;
+	color: #433E3A; /* sTaupe */
+	text-align: justify;
+	padding-left: 35px;
+	padding-right: 35px;
+	line-height: 125%;
+}
+.sNavigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 180%;
+}
+.sNavigation a {
+	font-size: medium;
+	font-weight: bold;
+	padding:.42em;
+	color: #FFFFFF; /* White */
+	margin-left: 2px;
+	background: #8C8C8C; /* Suva Grey */
+	text-decoration: none;
+}
+.sNavigation a:hover {
+	color: #000000; /* Black */
+	background: #C5C5C5; /* Deep Sky Blue */
+}
+#PagCorrente {
+	border-bottom: 2.5px solid aqua;
+}
+.sHomeIcon {
+	vertical-align: bottom;
+	margin-bottom: 1px;
+	height: 25px;
+	width: 25px;
+}
 .sBorder1s {
 				border-style: solid;
 				border-width: 1px;
 }
-.sBlu {
+.sBlue {
 				color: #0000FF;
 }
-.sVerde {
-				color: #008000;
+.sGreen {
+				color: #00954A; /* Pigment Green */
 }
 .sTaupe {
 				color: #433E3A;
@@ -61,8 +158,14 @@ img {
 				text-align: justify;
 }
 .sPadding {
-				padding-left: 40px;
-				padding-right: 40px;
+				padding-left: 35px;
+				padding-right: 35px;
+}
+.sLineH125 {
+				line-height: 125%;
+}
+.sXSmall {
+				font-size: x-small;
 }
 .sSmall {
 				font-size: small;
@@ -70,145 +173,162 @@ img {
 .sMedium {
 				font-size: medium;
 }
+.sLarge {
+				font-size: large;
+}
 .sXLarge {
 				font-size: x-large;
 }
 </style>
 </head>
 
-<body background="CIfondexter.gif" bgcolor="#B6B6B6" link="#808080" vlink="#433E3A" alink="#FFFFFF" topmargin="30">
+<body>
+<header>Studio di Astrologia &quot;Acquario&quot;</header>
 
-<table cellSpacing="10" cellPadding="0" borderColorDark="#211f23" borderColorLight="#BBBBBB" background="CIrubanfonce.jpg" width="100%" border="0">
-  <tr><td width="100%">
-	<table cellspacing="1" cellPadding="0" background="CIrubanmetal.jpg" width="100%" border="0">
-      <tr><td width="100%">
-		<table cellSpacing="5" cellPadding="0" borderColorDark="#211f23" borderColorLight="#BBBBBB" background="CIrubanfonce.jpg" width="100%" border="1">
-          <tr><td width="100%">
-			<table cellSpacing="1" cellPadding="0" background="CIrubanmetal.jpg" width="100%" border="0">
-              <tr><td width="100%">
-				<table cellspacing="5" cellPadding="0" borderColorDark="#211F23" borderColorLight="#BBBBBB" background="CIrubanfonce.jpg" width="100%" border="1" >
-                  <tr><td width="100%">
-					<table cellSpacing="1" cellPadding="0" background="CIrubanmetal.jpg" width="100%" border="0">
-                      <tr><td width="100%">
-						<table cellSpacing="2" cellPadding="0" borderColorDark="#211f23" borderColorLight="#BBBBBB" background="CIrubanfonce.jpg" width="100%" border="1">
-                          <tr><td width="100%">
-							<table cellSpacing="0" cellPadding="0" background="CIrubanmetal.jpg" width="100%" border="0">
-							  <tr><td width="100%">
-								<table cellSpacing="5" cellPadding="0" background="CIrubanclair.jpg" width="100%" border="0">
-								  <tr><td width="100%">
-									<table cellPadding="0" background="CIrubanfonce.jpg" borderColorDark="#211F23" borderColorLight="#BBBBBB" width="100%" border="1">
-<TBODY>
-									  <tr><td background="AC.tile.gif" bgcolor="#B6B6B6" width="100%">
+<table background="CIrubanfonce.jpg" cellSpacing="6" cellPadding="2" class="sBorder1s" borderColorDark="#211f23" borderColorLight="#BBBBBB" width="95%" align="center">
+<tr><td background="CIrubanmetal.jpg">
 
-			<p class="sXLarge sCenter sBold sMatterhorn">
-				<br>
-				<img src="CIlignegrande.gif" width="399" height="29">&nbsp;&nbsp;&nbsp;&nbsp;
-				<img src="CIlignepetite.gif" width="211" height="29">&nbsp;&nbsp;&nbsp;&nbsp;
-				<img src="CIlignegrande.gif" width="399" height="29"><br><br>
-				OROSCOPO CINESE<br><br>
-				<img src="CI.Scimmia.jpg"    width="206" height="183"><br><br>
-				La SCIMMIA nei CINQUE differenti Elementi
-			</p>
+<table background="CIrubanfonce.jpg" cellSpacing="6" cellPadding="2" border="1" borderColorDark="#211f23" borderColorLight="#BBBBBB" width="100%">
+<tr><td background="CIrubanmetal.jpg">
 
-			<div class="sSmall sBold sMatterhorn sPadding sJustify">
-				Anni che terminano con le cifre:<br>
-				<div style="padding-left: 40px;"><!-- padding addizionale -->
-					<span class="sTaupe">0 e 1 -> </span>
-					<span class="sDimGrey">METALLO = Meticolosità - Estremismo - Testardaggine - Ambizione - Linearità - Laboriosità - Organizzazione</span><br>
-					<span class="sTaupe">2 e 3 -> </span>
-					<span class="sBlu">ACQUA = Attenzione - Comprensione - Quiete - Umiltà - Accoglienza</span><br>
-					<span class="sTaupe">4 e 5 -> </span>
-					<span class="sMaroon">LEGNO = Laboriosità - Espansività - Generosità - Noncuranza - Ottimismo</span><br>
-					<span class="sTaupe">6 e 7 -> </span>
-					<span class="sRed">FUOCO = Forza - Urgenza - Operatività - Coraggio - Orgoglio</span><br>
-					<span class="sTaupe">8 e 9 -> </span>
-					<span class="sVerde">TERRA = Tranquillità - Equilibrio - Realismo - Responsabilità - Accortezza</span></div>
-				<br><br>
+<table background="CIrubanclair.jpg" cellSpacing="6" cellPadding="2" border="0" width="100%">
+<tr><td>
+
+<table background="CIrubanfonce.jpg" cellPadding="0" class="sBorder1s" borderColorDark="#211F23" borderColorLight="#BBBBBB" width="100%">
+<tr><td background="AC.tile.gif">
+
+		<h1>OROSCOPO CINESE:<br>La SCIMMIA nei Cinque Elementi</h1>
+
+		<p class="sCenter">
+			<br>
+			<img src="CI.Scimmia.jpg" width="206" height="183" alt="Segno Cinese Scimmia">
+		</p>
+
+		<nav class="sLarge sCenter">
+			<br>
+			<ul class="sNavigation">
+				<li><a href="Elemen1.Topo.htm">Topo</a></li>
+				<li><a href="Elemen2.Bue.htm">Bue</a></li>
+				<li><a href="Elemen3.Tigre.htm">Tigre</a></li>
+				<li><a href="Elemen4.Lepre.htm">Lepre</a></li>
+				<li><a href="Elemen5.Drago.htm">Drago</a></li>
+				<li><a href="Elemen6.Serpente.htm">Serpente</a></li>
+				<li><a href="Elemen7.Cavallo.htm">Cavallo</a></li>
+				<li><a href="Elemen8.Capra.htm">Capra</a></li>
+				<li><a href="Elemen9.Scimmia.htm" id="PagCorrente">Scimmia</a></li>
+				<li><a href="Elemen10.Gallo.htm">Gallo</a></li>
+				<li><a href="Elemen11.Cane.htm">Cane</a></li>
+				<li><a href="Elemen12.Cinghiale.htm">Cinghiale</a></li>
+				<li><a href="ZodiaCine.htm">Zodiaco Cinese</a></li>
+				<li><a href="index.html"><img src="favicon32.gif" class="sHomeIcon"></a></li>
+			</ul>
+		</nav>
+
+		<p class="sCenter">
+			<br>
+			<img src="CIlignepetite.gif" width="211" height="29" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="CIlignepetite.gif" width="211" height="29" alt="">
+		</p>
+
+		<div class="sSmall sBold sMatterhorn sPadding sJustify">
+			<br>Anni che terminano con le cifre:<br>
+			<div style="padding-left: 40px;"><!-- padding addizionale -->
+				<span class="sTaupe">0 e 1 -> </span>
+				<span class="sDimGrey">METALLO = Meticolosità - Estremismo - Testardaggine - Ambizione - Linearità - Laboriosità - Organizzazione</span><br>
+				<span class="sTaupe">2 e 3 -> </span>
+				<span class="sBlue">ACQUA = Attenzione - Comprensione - Quiete - Umiltà - Accoglienza</span><br>
+				<span class="sTaupe">4 e 5 -> </span>
+				<span class="sMaroon">LEGNO = Laboriosità - Espansività - Generosità - Noncuranza - Ottimismo</span><br>
+				<span class="sTaupe">6 e 7 -> </span>
+				<span class="sRed">FUOCO = Forza - Urgenza - Operatività - Coraggio - Orgoglio</span><br>
+				<span class="sTaupe">8 e 9 -> </span>
+				<span class="sGreen">TERRA = Tranquillità - Equilibrio - Realismo - Responsabilità - Accortezza</span>
 			</div>
-			<p class="sCenter sMedium sBold sDimGrey">
-				<img src="CIlignepetite.gif" width="211" height="29">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<img src="CIlignepetite.gif" width="211" height="29"><br><br>
+		</div>
 
-				SCIMMIA KENG <span class="sTaupe">(nato nel 1920 e nel 1980) Principio maschile - elemento</span> METALLO
-			</p>
-			
-			<div class="sSmall sTaupe sPadding sJustify">
-				Forte, libero e bello, la <span class="sDimGrey sBold">Scimmia</span> del <span class="sDimGrey sBold">Metallo</span> è portato per gli 
-				affari e riesce sempre a concluderne di buoni. È un risparmiatore e riesce sempre in un modo o nell’altro ad ottenere quello che vuole. 
-				Vivace e passionale, dotato di una gran creatività e di una straordinaria capacità di convincere. Ha un'indole ricca di qualità, ma è 
-				incline alla dispersione. Instancabile e sempre in movimento, si perde in mille piccoli particolari, perdendo di vista l'essenza delle 
-				cose, la meta reale da raggiungere. Ha un'ottima inventiva e belle idee, ma da solo non riesce a realizzarle, ha bisogno di avere vicino 
-				dei validi collaboratori. Possiede grandi capacità e potrebbe raggiungere alte vette, se sapesse dosare meglio le sue energie e di avere 
-				più pazienza. Bisognoso d'indipendenza e sempre alla ricerca di attività che gli diano prestigio sociale e sicurezza economica. Ha in 
-				genere una vita affettiva molto intensa, ove si dimostra sensuale e molto espansivo.</div>
+		<p class="sCenter">
+			<br>
+			<img src="CIlignegrande.gif" width="399" height="29" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="CIlignegrande.gif" width="399" height="29" alt="">
+		</p>
 
-			<p class="sCenter sMedium sBold sBlu">
-				<br>SCIMMIA JEN <span class="sTaupe">(nato nel 1932 e nel 1992) Principio maschile - elemento</span> ACQUA</p>
+		<h2><span class="sDimGrey">SCIMMIA KENG</span> (nato nel 1920 e nel 1980) Principio maschile - elemento <span class="sDimGrey">METALLO</span></h2>
+		<p>
+			Forte, libero e bello, la <span class="sDimGrey sBold">Scimmia</span> del <span class="sDimGrey sBold">Metallo</span> è portato per gli
+			affari e riesce sempre a concluderne di buoni. È un risparmiatore e riesce sempre in un modo o nell’altro ad ottenere quello che vuole.
+			Vivace e passionale, dotato di una gran creatività e di una straordinaria capacità di convincere. Ha un'indole ricca di qualità, ma è
+			incline alla dispersione. Instancabile e sempre in movimento, si perde in mille piccoli particolari, perdendo di vista l'essenza delle
+			cose, la meta reale da raggiungere. Ha un'ottima inventiva e belle idee, ma da solo non riesce a realizzarle, ha bisogno di avere vicino
+			dei validi collaboratori. Possiede grandi capacità e potrebbe raggiungere alte vette, se sapesse dosare meglio le sue energie e di avere
+			più pazienza. Bisognoso d'indipendenza e sempre alla ricerca di attività che gli diano prestigio sociale e sicurezza economica. Ha in
+			genere una vita affettiva molto intensa, ove si dimostra sensuale e molto espansivo.
+		</p>
 
-			<div class="sSmall sTaupe sPadding sJustify">
-				È dotato di una particolare originalità e simpatia, molto persuasiva e convincente, grazie anche all'abilità con le parole. La sua fortuna 
-				si basa soprattutto su appoggi che riesce ad ottenere da persone influenti, sulla bonarietà dei superiori che lo fa avanzare. Non bisogna 
-				dimenticare le innegabili doti e la notevole forza fisica e psichica, la capacità e onestà nel lavoro. La sua vita è sovente caratterizzata
-				da cambiamenti e dagli eventi che vengono improvvisi e nel momento più impensato ma sono quasi sempre positivi. Deve cercare di non condurre
-				una vita sregolata, gli sono indispensabili molte ore di sonno, se vuole mantenersi efficiente. La sua vita sentimentale e affettiva si
-				svolge in un'atmosfera calda e di buoni sentimenti.</div>
+		<h2><span class="sBlue">SCIMMIA JEN</span> (nato nel 1932 e nel 1992) Principio maschile - elemento <span class="sBlue">ACQUA</span></h2>
+		<p>
+			È dotato di una particolare originalità e simpatia, molto persuasiva e convincente, grazie anche all'abilità con le parole. La sua fortuna
+			si basa soprattutto su appoggi che riesce ad ottenere da persone influenti, sulla bonarietà dei superiori che lo fa avanzare. Non bisogna
+			dimenticare le innegabili doti e la notevole forza fisica e psichica, la capacità e onestà nel lavoro. La sua vita è sovente caratterizzata
+			da cambiamenti e dagli eventi che vengono improvvisi e nel momento più impensato ma sono quasi sempre positivi. Deve cercare di non condurre
+			una vita sregolata, gli sono indispensabili molte ore di sonno, se vuole mantenersi efficiente. La sua vita sentimentale e affettiva si
+			svolge in un'atmosfera calda e di buoni sentimenti.
+		</p>
 
-			<p class="sCenter sMedium sBold sMaroon">
-				<br>SCIMMIA CHIA <span class="sTaupe">(nato nel 1944 e nel 2004) Principio maschile - elemento</span> LEGNO</p>
-			
-			<div class="sSmall sTaupe sPadding sJustify">
-				È intelligente, di un'eccezionale memoria, con tanta fantasia e talento inventivo da impressionare. La sua innata curiosità lo indirizzerà
-				nella ricerca di quanto di nuovo accade nel mondo. La vita sembra un altorilievo: ha molta luce e molta ombra. Ha un carattere che non
-				riesce simpatico a tutti, anzi per il suo comportamento distaccato e brusco, può allontanare o ferire gli altri e ciò sminuisce i valori
-				umani. Sempre insoddisfatto della sua vita, cerca continuamente di perfezionare e di migliorare le posizioni di lavoro ed economiche, 
-				aiutato in questo dalla calma e dalla prudenza. Le difficoltà non hanno il potere di fermarlo anzi lo stimolano a dare sempre il meglio
-				di sé. Apprezza i buoni rapporti sociali, le amicizie profonde e durature. In amore è piuttosto fortunato ma dipende dal comportamento
-				che tiene, perché se fa pesare la sua superiorità o è troppo passionale e geloso, può stancare la persona amata.</div>
+		<h2><span class="sMaroon">SCIMMIA CHIA</span> (nato nel 1944 e nel 2004) Principio maschile - elemento <span class="sMaroon">LEGNO</span></h2>
+		<p>
+			È intelligente, di un'eccezionale memoria, con tanta fantasia e talento inventivo da impressionare. La sua innata curiosità lo indirizzerà
+			nella ricerca di quanto di nuovo accade nel mondo. La vita sembra un altorilievo: ha molta luce e molta ombra. Ha un carattere che non
+			riesce simpatico a tutti, anzi per il suo comportamento distaccato e brusco, può allontanare o ferire gli altri e ciò sminuisce i valori
+			umani. Sempre insoddisfatto della sua vita, cerca continuamente di perfezionare e di migliorare le posizioni di lavoro ed economiche,
+			aiutato in questo dalla calma e dalla prudenza. Le difficoltà non hanno il potere di fermarlo anzi lo stimolano a dare sempre il meglio
+			di sé. Apprezza i buoni rapporti sociali, le amicizie profonde e durature. In amore è piuttosto fortunato ma dipende dal comportamento
+			che tiene, perché se fa pesare la sua superiorità o è troppo passionale e geloso, può stancare la persona amata.
+		</p>
 
-			<p class="sCenter sMedium sBold sRed">
-				<br>SCIMMIA PING <span class="sTaupe">(nato nel 1956 e nel 2016) Principio maschile - elemento</span> FUOCO</p>
+		<h2><span class="sRed">SCIMMIA PING</span> (nato nel 1956 e nel 2016) Principio maschile - elemento <span class="sRed">FUOCO</span></h2>
+		<p>
+			Dotato d'immaginazione fertile, di un'intuizione assai creativa. Ha molti talenti innati e doti, ma che misconosce e non riesce ad esternare.
+			Dotato di una grande energia vitale, di una sicurezza in se stesso e di un bisogno di affermazione sociale molto in evidenza. È fondamentalmente
+			buono, un ottimo amico e compagno leale, sincero, sempre disposto ad aiutare chi ne ha bisogno. Molto competitivo e a volte è anche geloso
+			dell'altrui successo, ha sovente intimi contrasti, conflitti interiori, ed è soggetto a crisi esistenziali. Se è prudente potrebbe raggiungere
+			dei livelli professionali di grande prestigio. Nella vita sentimentale è fedele fin troppo tranquillo, tanto che il suo partner può sentirsi
+			trascurato e non abbastanza amato. Ama molto i bambini e riesce a formarsi una famiglia di tipo tradizionale.
+		</p>
 
-			<div class="sSmall sTaupe sPadding sJustify">
-				Dotato d'immaginazione fertile, di un'intuizione assai creativa. Ha molti talenti innati e doti, ma che misconosce e non riesce ad 
-				esternare. Dotato di una grande energia vitale, di una sicurezza in se stesso e di un bisogno di affermazione sociale molto in evidenza. 
-				È fondamentalmente buono, un ottimo amico e compagno leale, sincero, sempre disposto ad aiutare chi ne ha bisogno. Molto competitivo e a
-				volte è anche geloso dell'altrui successo, ha sovente intimi contrasti, conflitti interiori, ed è soggetto a crisi esistenziali. 
-				Se è prudente potrebbe raggiungere dei livelli professionali di grande prestigio. Nella vita sentimentale è fedele fin troppo tranquillo,
-				tanto che il suo partner può sentirsi trascurato e non abbastanza amato. Ama molto i bambini e riesce a formarsi una famiglia di tipo
-				tradizionale.</div>
+		<h2><span class="sGreen">SCIMMIA WU</span> (nato nel 1908 e nel 1968) Principio maschile - elemento <span class="sGreen">TERRA</span></h2>
+		<p>
+			Ha delle sicure doti altruistiche, la sua bontà lo conduce a nutrire un grande affetto per tutti coloro che gli sono vicino, oltre che i
+			famigliari. Onesto e scrupoloso può addirittura esagerare nell'estrema cura posta nell'eseguire i suoi compiti. Ha del temperamento ed
+			è molto sensuale, l'attrazione fisica gioca un ruolo importante nella vita. È molto attratto dagli studi ed è sovente un intellettuale,
+			l'ambizione e il grande senso di responsabilità gli fa ottenere delle situazioni di lavoro o professionali di tutto rispetto. È sempre alla
+			ricerca di qualcosa e non riesce perciò ad apprezzare quello che ha già conquistato. La sua stabilità e la serenità affettiva dipende molto
+			dal tipo di partner scelto, che lo può aiutare molto.
+		</p>
 
-			<p class="sCenter sMedium sBold sVerde">
-				<br>SCIMMIA WU <span class="sTaupe">(nato nel 1908 e nel 1968) Principio maschile - elemento</span> TERRA</p>
-				
-			<div class="sSmall sTaupe sPadding sJustify">
-				Ha delle sicure doti altruistiche, la sua bontà lo conduce a nutrire un grande affetto per tutti coloro che gli sono vicino, oltre che i 
-				famigliari. Onesto e scrupoloso può addirittura esagerare nell'estrema cura posta nell'eseguire i suoi compiti. Ha del temperamento ed
-				è molto sensuale, l'attrazione fisica gioca un ruolo importante nella vita. È molto attratto dagli studi ed è sovente un intellettuale, 
-				l'ambizione e il grande senso di responsabilità gli fa ottenere delle situazioni di lavoro o professionali di tutto rispetto. È sempre alla
-				ricerca di qualcosa e non riesce perciò ad apprezzare quello che ha già conquistato. La sua stabilità e la serenità affettiva dipende molto
-				dal tipo di partner scelto, che lo può aiutare molto.</div>
+		<p class="sCenter">
+			<br>
+			<img src="CIlignepetite.gif" width="211" height="29" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="CIlignepetite.gif" width="211" height="29" alt="">
+		</p>
 
-			<p class="sSmall sCenter sTaupe">
-				<img src="CIlignepetite.gif" width="211" height="29">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img src="CIlignepetite.gif" width="211" height="29"><br><br>
+		<p class="sCenter">
+			<img src="email-box.gif"    width="35" height="35" alt="">
+			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
+			<img src="TelefonoC164.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
 
-				<strong>Sei il visitatore n°&nbsp;</strong>
-				<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1267630535-mnfivt7" border=0></a>
-				&nbsp;(Contenuto Aggiornato 19/09/2017)<br><br><br>
-				<img src="CIlignegrande.gif" width="399" height="29">&nbsp;&nbsp;&nbsp;&nbsp;
-				<img src="CIlignepetite.gif" width="211" height="29">&nbsp;&nbsp;&nbsp;&nbsp;
-				<img src="CIlignegrande.gif" width="399" height="29"><br><br>
-			</p> 
-                        
-									</td></tr></TBODY></table>
-								</td></tr></table>
-							</td></tr></table>
-						</td></tr></table>
-					</td></tr></table>
-				</td></tr></table>
-			</td></tr></table>
-		</td></tr></table>
-	</td></tr></table>
+			<b>Sei il visitatore n°&nbsp;</b>
+		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1267630535-mnfivt7" border=0></a>
+			&nbsp;(Contenuto Aggiornato <time datetime="2017-09-19">19/09/2017</time>)<br><br>
+		</p>
+
 </td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+<footer>
+	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
+	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
+</footer>
 </body>
 </html>
