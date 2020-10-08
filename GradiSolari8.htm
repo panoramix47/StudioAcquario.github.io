@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" dir="ltr">
 <head>
 <meta charset="UTF-8">
-<title>Gradi Solari: Agosto</title>
+<title>Gradi Solari: Agosto - Studio Acquario</title>
 <link rel="icon" type="image/gif" href="favicon32.gif">
 <meta name="description" content="Studio Acquario: Gradi Solari dello Zodiaco: Agosto">
-<meta name="keywords" content="astrologia, gradi, solari, zodiaco, agosto">
+<meta name="keywords" content="astrologia, studio, acquario, gradi, solari, zodiaco, agosto">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
 <meta name="language" content="it">
 <meta http-equiv="imagetoolbar" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="29/07/2020">
-<meta name="revised" content="08/08/2020">
+<meta name="revised" content="08/10/2020">
 
 <style type="text/css">
-BODY {
-	SCROLLBAR-ARROW-COLOR: #51327d; 
-	SCROLLBAR-TRACK-COLOR: #a89470; 
-	SCROLLBAR-BASE-COLOR: #e0d0a8; 
+body {
+	SCROLLBAR-ARROW-COLOR: #51327d;
+	SCROLLBAR-TRACK-COLOR: #a89470;
+	SCROLLBAR-BASE-COLOR: #e0d0a8;
 	scrollbar-dark-shadow-color: #E7C1CE;
 
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
@@ -25,31 +26,100 @@ BODY {
 	background-image: url('GRback02.jpg');
 	background-color: #FFFFCC; /* Cream */
 }
-a {
+a:link {
 	color: #000000;
 }
-A:link {
-	text-decoration:none;
+a:visited {
+	color: #000000;
+}
+a:hover {
+	color: #FF0000;
+}
+a:active {
+	color: #000000;
 }
 h1 {
 	font-size: xx-large;
-	color: #000000;
 	font-weight: bold;
+	color: #000000;
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 h2 {
 	font-size: medium;
-	color: #000000;
 	font-weight: normal;
+	color: #000000;
 	text-align: center;
-	margin-top: 0.65cm;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-top: 35px;
 }
-.sLogoBanner {
+header {
 	font-size: xx-large;
 	font-weight: bold;
 	color: #FFFFFF; /* White */
 	text-shadow: 1px 1px 5px #0000FF; /* Blue */
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
+}
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #000000; /* Black */
+	/* text-shadow: 1px 1px 1px #0000FF; Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
+}
+p {
+	font-size: small;
+	color: #000000; /* Black */
+	text-align: justify;
+	padding-left: 35px;
+	padding-right: 35px;
+	line-height: 125%;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.sNavigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 180%;
+}
+.sNavigation a {
+	font-size: medium;
+	font-weight: bold;
+	padding:.42em;
+	color: black;
+	margin-left: 2px;
+	background: #CEC18C; /* Winter Hazel */
+	text-decoration: none;
+}
+.sNavigation a:hover {
+	color: #FFFFFF; /* White */
+	background: #996D3D; /* Buttered Rum */
+}
+#PagCorrente {
+	border-bottom: 2.5px solid brown;
+}
+.sHomeIcon {
+	vertical-align: bottom;
+	margin-bottom: 1px;
+	height: 25px;
+	width: 25px;
 }
 .sBorder1s-Olive {
 				border: 1px solid #666600;
@@ -66,18 +136,11 @@ h2 {
 .sRed {
 				color: #FF0000;
 }
-.sYellow {
-				color: #FFFF00; 
-				text-shadow: 1px 1px 0px #DD8500; /* Tangerine */				
+.sGoldenBrown {
+				color: #996600;
 }
 .sWhite {
 				color: #FFFFFF;
-}
-.sBGPigPink {
-				background-color: #F6D2DE;
-}
-.sBGWhite {
-				background-color: #FFFFFF;
 }
 .sCenter {
 				text-align: center;
@@ -86,8 +149,8 @@ h2 {
 				text-align: justify;
 }
 .sPadding {
-				padding-left: 40px;
-				padding-right: 40px;
+				padding-left: 35px;
+				padding-right: 35px;
 }
 .sBold {
 				font-weight: bold;
@@ -116,509 +179,504 @@ h2 {
 </style>
 </head>
 
-<body vlink="purple" alink="red">
-<p class="sLogoBanner">Studio di Astrologia "Acquario"</p>
+<body>
+<header>Studio di Astrologia &quot;Acquario&quot;</header>
 
-<table background="GRbronze.jpg" cellspacing="0" cellpadding="0" width="95%" class="sBorder1s-Olive" align="center">
-  <tr><td>
+<table background="GRbronze.jpg" cellspacing="0" cellpadding="0" class="sBorder1s-Olive" width="95%" align="center">
+<tr><td background="GRorochiaro.jpg">
 
-	<table background="GRorochiaro.jpg" cellspacing="0" cellpadding="0" width="100%" border="0" class="sBorder1s-Olive">
-	  <tr><td>
+<table background="GRbronze.jpg" cellspacing="14" cellpadding="14" class="sBorder1s-Olive" width="100%">
+<tr><td background="GRorochiaro.jpg">
 
-		<table background="GRbronze.jpg" cellspacing="7" cellpadding="7" width="100%" class="sBorder1s-Olive">
-		  <tr><td>
-
-			<table background="GRorochiaro.jpg" cellspacing="7" cellpadding="7" width="100%" class="sBorder1s-Olive">
-			  <tr><td>
-
-				<table background="GRbronze.jpg" cellspacing="7" cellpadding="7" width="100%" class="sBorder1s-Olive">
-				  <tr><td>
-
-					<table background="GRback04.jpg" bgcolor="#FFF0D0" bordercolor="#FFFFFF" width="100%" border="0">
-					  <tr><td>
+<table background="GRbronze.jpg" cellspacing="14" cellpadding="7" class="sBorder1s-Olive" bgcolor="#FFF0D0" bordercolor="#FFFFFF" width="100%">
+<tr><td background="GRback04.jpg">
 
 		<h1>I GRADI SOLARI DELLO ZODIACO</h1>
 
 		<p class="sCenter">
-			<img src="GOLDLINE3.gif" width="350" height="35">&nbsp;&nbsp; 
-			<img src="GOLDLINE3.gif" width="350" height="35">					
+			<br>
+			<img src="GR.B.08Ago.gif"   width="410" height="143" alt="Agosto">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="GR.DA.5leone.gif" width="130" height="130" alt="Leone">
 		</p>
 
-		<p class="sMedium sBlack sJustify sPadding">
-			Lo <strong>Zodiaco</strong> è suddiviso in <strong>12</strong> segni, <strong>36</strong> decadi e <strong>360</strong> gradi. 
-			Ogni <strong>grado</strong> ha un valore e un significato. Ad ognuno dei 360 gradi corrisponde un aforisma. 
-			Conoscere il giorno di nascita non è quindi sufficiente: occorre anche sapere quale é il grado.    
-		</p>
-					
-		<p class="sBlack sSmall sCenter sBold">
-			<br><span class="sBGWhite">&nbsp;
-			<a href="GradiSolari1.htm">Gennaio</a> |
-			<a href="GradiSolari2.htm">Febbraio</a> |
-			<a href="GradiSolari3.htm">Marzo</a> |
-			<a href="GradiSolari4.htm">Aprile</a> |
-			<a href="GradiSolari5.htm">Maggio</a> |
-			<a href="GradiSolari6.htm">Giugno</a> |
-			<a href="GradiSolari7.htm">Luglio</a> |</span><span class="sBGPigPink">
-			<a href="GradiSolari8.htm">Agosto</a> |</span><span class="sBGWhite">
-			<a href="GradiSolari9.htm">Settembre</a> |
-			<a href="GradiSolari10.htm">Ottobre</a> |
-			<a href="GradiSolari11.htm">Novembre</a> |
-			<a href="GradiSolari12.htm">Dicembre</a> |
-			<a href="index.html">Pagina&nbsp;Iniziale</a>&nbsp;</span><br>
+		<nav class="sLarge sCenter">
+			<br>
+			<ul class="sNavigation">
+				<li><a href="GradiSolari1.htm">Gennaio</a></li>
+				<li><a href="GradiSolari2.htm">Febbraio</a></li>
+				<li><a href="GradiSolari3.htm">Marzo</a></li>
+				<li><a href="GradiSolari4.htm">Aprile</a></li>
+				<li><a href="GradiSolari5.htm">Maggio</a></li>
+				<li><a href="GradiSolari6.htm">Giugno</a></li>
+				<li><a href="GradiSolari7.htm">Luglio</a></li>
+				<li><a href="GradiSolari8.htm" id="PagCorrente">Agosto</a></li>
+				<li><a href="GradiSolari9.htm">Settembre</a></li>
+				<li><a href="GradiSolari10.htm">Ottobre</a></li>
+				<li><a href="GradiSolari11.htm">Novembre</a></li>
+				<li><a href="GradiSolari12.htm">Dicembre</a></li>
+				<li><a href="index.html"><img src="favicon32.gif" class="sHomeIcon"></a></li>
+			</ul>
+			<br>
+		</nav>
+
+		<p class="sMedium">
+			Lo <b>Zodiaco</b> è suddiviso in <b>12</b> segni, <b>36</b> decadi e <b>360</b> gradi.
+			Ogni <b>grado</b> ha un valore e un significato. Ad ognuno dei 360 gradi corrisponde un aforisma.
+			Conoscere il giorno di nascita non è quindi sufficiente: occorre anche sapere quale é il grado.
 		</p>
 
 		<p class="sCenter">
 			<br>
-			<img src="GR.B.08Ago.gif"   width="410" height="143">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="GR.DA.5leone.gif" width="130" height="130">
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">&nbsp;&nbsp;
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">
 		</p>
 
-		<p class="sLarge sBlack sBold sCenter">
-			NATO A&nbsp;<img src="A.8Agosto.gif" width="176" height="100">
+		<p class="sXLarge sBold sCenter">
+			NATO A&nbsp;<img src="A.8Agosto.gif" width="176" height="100" alt="">
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding"> 
-			È amabile, delicato, romantico. Attraente. Coraggioso e senza paura. Ha doti di leadership. Sa come consolare gli altri. Oscilla tra l'eccessiva 
+		<p>
+			È amabile, delicato, romantico. Attraente. Coraggioso e senza paura. Ha doti di leadership. Sa come consolare gli altri. Oscilla tra l'eccessiva
 			generosità e l'egoismo. Ha un anima con un cuore aperto e disponibile. Vive tutto secondo la logica, per cui la vita scorre in maniera schematica
-			e metodica. Ha il cuore buono generoso e si attira la simpatia di tutti. Adora comandare e sognare, avere nuovi amici. Indipendente, ama che lo 
-			si elogi è affidabile ma un po' viziato. È un buon osservatore, accurato e un po' geloso. S'irrita facilmente quando lo si provoca. Deve 
-			combattere l'egoismo se vuole conservare i vantaggi della sua natura attraente e simpatica. È un leader per natura, non ha paura di stare solo 
-			con le sue opinioni. Può sembrare prepotente e arrogante, ma sotto questa prima apparenza ha un grande cuore. Riesce a fare carriera in settori 
+			e metodica. Ha il cuore buono generoso e si attira la simpatia di tutti. Adora comandare e sognare, avere nuovi amici. Indipendente, ama che lo
+			si elogi è affidabile ma un po' viziato. È un buon osservatore, accurato e un po' geloso. S'irrita facilmente quando lo si provoca. Deve
+			combattere l'egoismo se vuole conservare i vantaggi della sua natura attraente e simpatica. È un leader per natura, non ha paura di stare solo
+			con le sue opinioni. Può sembrare prepotente e arrogante, ma sotto questa prima apparenza ha un grande cuore. Riesce a fare carriera in settori
 			che implicano il pensiero e l'analisi critica, perché vede la vita in modo logico, passo dopo passo. Deve abituarsi alle grandi responsabilità,
-			giacché ciò lo rende in grado di occupare importanti mansioni. Spirito forte. Attento e prudente. Ama guidare ed essere guidato. Talento nella 
-			musica e nelle arti da difesa. Ha paura dell'amore ed è facilmente geloso. Ama rilassarsi è avventato e fidato. Ama fare amicizia. In una 
-			relazione cerca forti emozioni e attenzioni e non ama improvvisarsi. Sensibile e tollerante. Spesso, la logica prevale anche sui sentimenti. 
+			giacché ciò lo rende in grado di occupare importanti mansioni. Spirito forte. Attento e prudente. Ama guidare ed essere guidato. Talento nella
+			musica e nelle arti da difesa. Ha paura dell'amore ed è facilmente geloso. Ama rilassarsi è avventato e fidato. Ama fare amicizia. In una
+			relazione cerca forti emozioni e attenzioni e non ama improvvisarsi. Sensibile e tollerante. Spesso, la logica prevale anche sui sentimenti.
 			Appassionato, amorevole e premuroso. Poche difese contro le malattie.<br>
-			La <strong>donna</strong> ha la tendenza di concentrare la vita intorno a se stessa, è anche altruista. Spesso vince quando argomenta e non 
-			tollera persone in disaccordo con lei, e se qualcuno si comporta male reagisce in modo brusco. Tuttavia ha un grande senso dell'umorismo. Ama 
+			La <b>donna</b> ha la tendenza di concentrare la vita intorno a se stessa, è anche altruista. Spesso vince quando argomenta e non
+			tollera persone in disaccordo con lei, e se qualcuno si comporta male reagisce in modo brusco. Tuttavia ha un grande senso dell'umorismo. Ama
 			e piace essere il centro dell'attenzione degli altri.<br>
-			Il <strong>bambino</strong> ha un carattere un po' ribelle ma può essere domato solo con la bontà e non con la paura. Ha il senso dell'onore, 
+			Il <b>bambino</b> ha un carattere un po' ribelle ma può essere domato solo con la bontà e non con la paura. Ha il senso dell'onore,
 			soprattutto se è stato ben educato.
 		</p>
 
 		<p class="sCenter">
-			<img src="GOLDLINE3.gif" width="350" height="35">&nbsp;&nbsp;&nbsp;
-			<img src="GOLDLINE3.gif" width="350" height="35">
+			<br>
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">
 		</p>
 
-			<h2><strong>1° AGOSTO</strong> - dal <strong>8°</strong> al <strong>9° <span class="sRed">LEONE</span></strong> = <strong>Grado di parata</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Uomo riccamente vestito</u>.<br>
-				Vanità, esibizionismo, desiderio di brillare, gusto del lusso, amore per l'esteriorità.<br>
-				<strong>Carattere</strong> generoso, orgoglioso, magnanimo, caldo, timido e sensibile, socievole e cordiale. Attira l'affetto degli altri 
-				e la simpatia, a volte è troppo candido, non gli mancano le doti necessarie per far soldi e rendere ricchi sia lui sia coloro che lavorano 
-				con lui. Ha il difetto di un'ostinazione che gli fa perdere molti vantaggi, farà dei lunghi viaggi, la fortuna gli starà sempre accanto e 
-				così sarà amato come pochi altri. Ha una personalità estroversa e affascinante, e anche un'intelligenza acuta, che gli consente di 
-				realizzare quanto desiderato e di comprendere velocemente le necessità altrui. È attratto dalla mondanità e dal lusso oltre che da p
-				ersone forti e determinate, con le quale stabilisce rapporti piacevoli e stimolanti sotto il profilo intellettuale.
-			</p>
+		<h2><b>1° AGOSTO</b> - dal <b>8°</b> al <b>9° <span class="sRed">LEONE</span></b> = <b>Grado di parata</b></h2>
+		<p>
+			<u>Uomo riccamente vestito</u>.<br>
+			Vanità, esibizionismo, desiderio di brillare, gusto del lusso, amore per l'esteriorità.<br>
+			<b>Carattere</b> generoso, orgoglioso, magnanimo, caldo, timido e sensibile, socievole e cordiale. Attira l'affetto degli altri
+			e la simpatia, a volte è troppo candido, non gli mancano le doti necessarie per far soldi e rendere ricchi sia lui sia coloro che lavorano
+			con lui. Ha il difetto di un'ostinazione che gli fa perdere molti vantaggi, farà dei lunghi viaggi, la fortuna gli starà sempre accanto e
+			così sarà amato come pochi altri. Ha una personalità estroversa e affascinante, e anche un'intelligenza acuta, che gli consente di
+			realizzare quanto desiderato e di comprendere velocemente le necessità altrui. È attratto dalla mondanità e dal lusso oltre che da p
+			ersone forti e determinate, con le quale stabilisce rapporti piacevoli e stimolanti sotto il profilo intellettuale.
+		</p>
 
-			<h2><strong>2 AGOSTO</strong> - dal <strong>9°</strong> al <strong>10° <span class="sRed">LEONE</span></strong> = <strong>Grado di pericolo, d'indulgenza verso se stesso</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un uomo e una donna seduti davanti ad una tavola imbandita</u>.<br>
-				Minaccia di morte violenta o prematura, collere pericolose, molti lutti.<br>
-				<strong>Carattere</strong> sensuale, cordiale, allegro e comunicativo, fermo e deciso, versatile, ha attitudine al comando, è ambizioso e 
-				abile nel gestire persone e situazioni, anche le più difficili. Sa ciò che vuole e come ottenerlo, non indietreggia facilmente, la mente è
-				concentrata a realizzare quello che si è posto come punto di arrivo. Ottimista e ambizioso, ha un atteggiamento filosofico verso la vita, 
-				ma deve controllare il suo temperamento impetuoso e irrequieto sempre sul piede di partenza. Può considerarsi molto fortunato e destinato 
-				a spiccare per una qualsiasi impresa in settori molto particolari. Pur mostrandosi leale e affettuoso con chi ama, non è affatto disposto 
-				a vivere dei legami sentimentali abitudinari e vincolanti. Nonostante questo non pone certo in secondo piano, né l'amore, né i tanti sogni 
-				che tiene gelosamente chiusi a chiave in un cassetto.
-			</p>
+		<h2><b>2 AGOSTO</b> - dal <b>9°</b> al <b>10° <span class="sRed">LEONE</span></b> = <b>Grado di pericolo, d'indulgenza verso se stesso</b></h2>
+		<p>
+			<u>Un uomo e una donna seduti davanti ad una tavola imbandita</u>.<br>
+			Minaccia di morte violenta o prematura, collere pericolose, molti lutti.<br>
+			<b>Carattere</b> sensuale, cordiale, allegro e comunicativo, fermo e deciso, versatile, ha attitudine al comando, è ambizioso e
+			abile nel gestire persone e situazioni, anche le più difficili. Sa ciò che vuole e come ottenerlo, non indietreggia facilmente, la mente è
+			concentrata a realizzare quello che si è posto come punto di arrivo. Ottimista e ambizioso, ha un atteggiamento filosofico verso la vita,
+			ma deve controllare il suo temperamento impetuoso e irrequieto sempre sul piede di partenza. Può considerarsi molto fortunato e destinato
+			a spiccare per una qualsiasi impresa in settori molto particolari. Pur mostrandosi leale e affettuoso con chi ama, non è affatto disposto
+			a vivere dei legami sentimentali abitudinari e vincolanti. Nonostante questo non pone certo in secondo piano, né l'amore, né i tanti sogni
+			che tiene gelosamente chiusi a chiave in un cassetto.
+		</p>
 
-			<h2><strong>3 AGOSTO</strong> - dal <strong>10°</strong> al <strong>11° <span class="sRed">LEONE</span></strong> = <strong>Grado di superiorità</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un bel toro bianco pascola in un parco all'ombra di un grande albero</u>.<br>
-				Vita tranquilla, probabilmente in campagna, riservatezza e matrimonio felice.<br>
-				<strong>Carattere</strong> simpatico, sensuale e seducente, paziente, allegro e ottimista, aperto, socievole e comunicativo. Ha qualità che 
-				gli consentono di stabilire ottime intese, sia per quanto riguarda il lavoro, sia nella la sfera privata. Nonostante questo, un 
-				atteggiamento distratto, a volte troppo spensierato lo ostacola nel raggiungimento di importanti obiettivi professionali. Pur essendo leale 
-				e sincero nei confronti della persona amata, non rinuncia alla propria libertà, tanto meno alla voglia di svago e divertimento. Energico e
-				coraggioso è tuttavia molto facile alla testardaggine e agli eccessi di collera. Ha un'intelligenza pronta e gli farà ottenere successi 
-				rimarchevoli. Il legame con la famiglia è molto intenso a volte un po' superficiale ma il buon senso l'aiuterà a distinguere la sostanza
-				dall'apparenza. Ama i piaceri, è un vero gaudente ed edonista, è saggio ma non stravagante, largo di vedute, gioviale e gentile. Molti
-				bambini prodigio sono nati sotto questo grado.
-			</p>
+		<h2><b>3 AGOSTO</b> - dal <b>10°</b> al <b>11° <span class="sRed">LEONE</span></b> = <b>Grado di superiorità</b></h2>
+		<p>
+			<u>Un bel toro bianco pascola in un parco all'ombra di un grande albero</u>.<br>
+			Vita tranquilla, probabilmente in campagna, riservatezza e matrimonio felice.<br>
+			<b>Carattere</b> simpatico, sensuale e seducente, paziente, allegro e ottimista, aperto, socievole e comunicativo. Ha qualità che
+			gli consentono di stabilire ottime intese, sia per quanto riguarda il lavoro, sia nella la sfera privata. Nonostante questo, un
+			atteggiamento distratto, a volte troppo spensierato lo ostacola nel raggiungimento di importanti obiettivi professionali. Pur essendo leale
+			e sincero nei confronti della persona amata, non rinuncia alla propria libertà, tanto meno alla voglia di svago e divertimento. Energico e
+			coraggioso è tuttavia molto facile alla testardaggine e agli eccessi di collera. Ha un'intelligenza pronta e gli farà ottenere successi
+			rimarchevoli. Il legame con la famiglia è molto intenso a volte un po' superficiale ma il buon senso l'aiuterà a distinguere la sostanza
+			dall'apparenza. Ama i piaceri, è un vero gaudente ed edonista, è saggio ma non stravagante, largo di vedute, gioviale e gentile. Molti
+			bambini prodigio sono nati sotto questo grado.
+		</p>
 
-			<h2><strong>4 AGOSTO da 11°</strong> al <strong>12° <span class="sRed">LEONE</span></strong> = <strong>Grado di vantaggi, di costanza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Pochi fili d'erba crescono stentatamente su di una roccia. Donna riccamente vestita</u>.<br>
-				Risoluzione e fermezza consentono la riuscita dopo varie lotte.<br>
-				<strong>Carattere</strong> buono, riservato, semplice, tranquillo e tradizionalista. Amante del successo, del potere della bella vita. Ha 
-				uno straordinario fiuto per gli affari, oltre ad essere sicuro di sé, ottimista e fortunato. Ha capacità al comando e raggiunge dei traguardi 
-				professionali e finanziari anche molto ambiziosi. Timido e percettivo è incline a diventare apprensivo. Posizione di responsabilità, onori 
-				e grandi incarichi, elevazione sociale e fama. Grazie al buon carattere potrà superare molti problemi e con l'aiuto di una buona fortuna 
-				avrà una vita felice. Istintivamente ha un ottimo senso della morale, sentimenti bilanciati e rispetto degli altri lo rendono gradito. 
-				Amando il lusso e la mondanità, attribuisce molta importanza alla sfera privata, o meglio alla famiglia, all'amore e alle amicizie. 
-				Matrimonio vantaggioso, felicità.
-			</p>
+		<h2><b>4 AGOSTO da 11°</b> al <b>12° <span class="sRed">LEONE</span></b> = <b>Grado di vantaggi, di costanza</b></h2>
+		<p>
+			<u>Pochi fili d'erba crescono stentatamente su di una roccia. Donna riccamente vestita</u>.<br>
+			Risoluzione e fermezza consentono la riuscita dopo varie lotte.<br>
+			<b>Carattere</b> buono, riservato, semplice, tranquillo e tradizionalista. Amante del successo, del potere della bella vita. Ha
+			uno straordinario fiuto per gli affari, oltre ad essere sicuro di sé, ottimista e fortunato. Ha capacità al comando e raggiunge dei traguardi
+			professionali e finanziari anche molto ambiziosi. Timido e percettivo è incline a diventare apprensivo. Posizione di responsabilità, onori
+			e grandi incarichi, elevazione sociale e fama. Grazie al buon carattere potrà superare molti problemi e con l'aiuto di una buona fortuna
+			avrà una vita felice. Istintivamente ha un ottimo senso della morale, sentimenti bilanciati e rispetto degli altri lo rendono gradito.
+			Amando il lusso e la mondanità, attribuisce molta importanza alla sfera privata, o meglio alla famiglia, all'amore e alle amicizie.
+			Matrimonio vantaggioso, felicità.
+		</p>
 
-			<h2><strong>5 AGOSTO</strong> - dal <strong>12°</strong> al <strong>13° <span class="sRed">LEONE</span></strong> = <strong>Grado d'inutilità, di volontà ostinata</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Toro immobile, in piedi su una roccia. Un cavallo che pascola accanto ad una ruota rotta</u>.<br>
-				Pessimismo, rassegnazione, forza, fierezza e ostinazione.<br>
-				<strong>Carattere</strong> impaziente, ostinato, risoluto, tenace, testardo, fermo, deciso, capace di affrontare ogni avversità. Percettivo, 
-				generoso e dotato di una mente aperta e vivace che consente di avere molti amici, e di stabilire ottime intese in campo professionale di 
-				sicuro il settore più fortunato della sua esistenza, arriva sempre dove vuole bene o male. Non sa attendere e spesso è troppo precipitoso,
-				una natura che non trova pace, manca un po' la fiducia nel prossimo. Dovrebbe superare la tendenza a brontolare, perché la sua vita è ricca 
-				di sincere amicizie. Attirato da tutto ciò che è arte, bellezza, leggiadria, sarà un vero artista: pittore, attore, sarto d'alta moda.
-				L'amore e il matrimonio pur avendo una certa importanza nella sua vita, passano in secondo piano.
-			</p>
+		<h2><b>5 AGOSTO</b> - dal <b>12°</b> al <b>13° <span class="sRed">LEONE</span></b> = <b>Grado d'inutilità, di volontà ostinata</b></h2>
+		<p>
+			<u>Toro immobile, in piedi su una roccia. Un cavallo che pascola accanto ad una ruota rotta</u>.<br>
+			Pessimismo, rassegnazione, forza, fierezza e ostinazione.<br>
+			<b>Carattere</b> impaziente, ostinato, risoluto, tenace, testardo, fermo, deciso, capace di affrontare ogni avversità. Percettivo,
+			generoso e dotato di una mente aperta e vivace che consente di avere molti amici, e di stabilire ottime intese in campo professionale di
+			sicuro il settore più fortunato della sua esistenza, arriva sempre dove vuole bene o male. Non sa attendere e spesso è troppo precipitoso,
+			una natura che non trova pace, manca un po' la fiducia nel prossimo. Dovrebbe superare la tendenza a brontolare, perché la sua vita è ricca
+			di sincere amicizie. Attirato da tutto ciò che è arte, bellezza, leggiadria, sarà un vero artista: pittore, attore, sarto d'alta moda.
+			L'amore e il matrimonio pur avendo una certa importanza nella sua vita, passano in secondo piano.
+		</p>
 
-			<h2><strong>6 AGOSTO</strong> - dal <strong>13°</strong> al <strong>14° <span class="sRed">LEONE</span></strong> = <strong>Grado d'indolenza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un uomo immobile. Una figura d'angelo con una spada che colpisce il sole</u>.<br>
-				Impotenza, incapacità, pigrizia, indifferenza, mancanza d'iniziative, ma ambizione.<br>
-				<strong>Carattere</strong> semplice, mistico, impulsivo, razionale, sincero, diretto e studioso. Manca spesso di risolutezza, la pigrizia 
-				è un nota costante, perderà molti dei suoi beni per colpa propria. Adora viaggiare e la bella vita, oltre ad affascinare gli altri con il 
-				suo ottimismo e la generosità. Ha doti musicali, scrittore, artista, ingegnosità e talento permettono di riuscire, ma non deve soffocare 
-				gl'istinti in tale senso ed essere più perseverante. Ama la lettura e la cultura (soprattutto filosofici, artistici e scientifici), ed 
-				esercita un gran potere sul sesso opposto. Ama la famiglia e la casa, nel suo nido tranquillo si sente felice e appagato.
-			</p>
+		<h2><b>6 AGOSTO</b> - dal <b>13°</b> al <b>14° <span class="sRed">LEONE</span></b> = <b>Grado d'indolenza</b></h2>
+		<p>
+			<u>Un uomo immobile. Una figura d'angelo con una spada che colpisce il sole</u>.<br>
+			Impotenza, incapacità, pigrizia, indifferenza, mancanza d'iniziative, ma ambizione.<br>
+			<b>Carattere</b> semplice, mistico, impulsivo, razionale, sincero, diretto e studioso. Manca spesso di risolutezza, la pigrizia
+			è un nota costante, perderà molti dei suoi beni per colpa propria. Adora viaggiare e la bella vita, oltre ad affascinare gli altri con il
+			suo ottimismo e la generosità. Ha doti musicali, scrittore, artista, ingegnosità e talento permettono di riuscire, ma non deve soffocare
+			gl'istinti in tale senso ed essere più perseverante. Ama la lettura e la cultura (soprattutto filosofici, artistici e scientifici), ed
+			esercita un gran potere sul sesso opposto. Ama la famiglia e la casa, nel suo nido tranquillo si sente felice e appagato.
+		</p>
 
-			<h2><strong>7 AGOSTO</strong> - dal <strong>14°</strong> al <strong>15° <span class="sRed">LEONE</span></strong> = <strong>Grado di non nocività, d'impulsività</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Leone coricato sull'erba. Un ariete ritto su una roccia batte il suolo con lo zoccolo</u>.<br>
-				Potenza non nociva, formidabile nell'esecuzione, bonarietà.<br>
-				<strong>Carattere</strong> buono, comprensivo, simpatico, divertente, impegnato, entusiasta, agitato, impulsivo, testardo e irremovibile. 
-				È pieno di buone qualità e di belle maniere. La mente è particolarmente vivace e creativa. La sua spiccata intelligenza e la grande sete 
-				di sapere permettono di raggiungere il successo in campo artistico, letterario o musicale. Emotivo e irruente, facile ad arrabbiarsi e 
-				altrettanto facile a calmarsi e riconoscere i suoi torti. Ha un'enorme fiducia in se stesso e in grado di compiere delle grandi imprese. 
-				È romantico, generoso e leale in amore, ma deve evitare di diventare troppo pretenzioso e possessivo.
-			</p>
+		<h2><b>7 AGOSTO</b> - dal <b>14°</b> al <b>15° <span class="sRed">LEONE</span></b> = <b>Grado di non nocività, d'impulsività</b></h2>
+		<p>
+			<u>Leone coricato sull'erba. Un ariete ritto su una roccia batte il suolo con lo zoccolo</u>.<br>
+			Potenza non nociva, formidabile nell'esecuzione, bonarietà.<br>
+			<b>Carattere</b> buono, comprensivo, simpatico, divertente, impegnato, entusiasta, agitato, impulsivo, testardo e irremovibile.
+			È pieno di buone qualità e di belle maniere. La mente è particolarmente vivace e creativa. La sua spiccata intelligenza e la grande sete
+			di sapere permettono di raggiungere il successo in campo artistico, letterario o musicale. Emotivo e irruente, facile ad arrabbiarsi e
+			altrettanto facile a calmarsi e riconoscere i suoi torti. Ha un'enorme fiducia in se stesso e in grado di compiere delle grandi imprese.
+			È romantico, generoso e leale in amore, ma deve evitare di diventare troppo pretenzioso e possessivo.
+		</p>
 
-			<h2><strong>8 AGOSTO</strong> - dal <strong>15°</strong> al <strong>16° <span class="sRed">LEONE</span></strong> = <strong>Grado di viaggio</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un uomo su un cammello seguito da servitori</u>.<br>
-				Destino che si realizza lontano, presunzione, commercio o vita militare, lavoratore indefesso.<br>
-				<strong>Carattere</strong> affettuoso, altruista, ostinato, sobrio. sicuro, libero, indipendente, istintivo, ma anche orgoglioso e ambizioso.
-				È molto prepotente e ribelle, combattivo e litigioso fino al punto di diventare molto aggressivo. È sua abitudine lanciare la pietra e poi
-				tirarsi indietro, per paura di affrontare situazioni che si vengono a creare. Parsimonioso e caparbio, migliorerà prendendo coscienza di se,
-				sa applicarsi bene nel lavoro, è un vero spirito ribelle, sarà sempre insofferente della autorità altrui. Poiché ha una natura aperta, 
-				affezionata e leale, facilmente supererà i contrattempi. In amore è geloso e soggetto a vivere situazioni passionali e profonde. In questo
-				grado nascono persone di statura imponente, con mani grandi e larghe spalle.
-			</p>
+		<h2><b>8 AGOSTO</b> - dal <b>15°</b> al <b>16° <span class="sRed">LEONE</span></b> = <b>Grado di viaggio</b></h2>
+		<p>
+			<u>Un uomo su un cammello seguito da servitori</u>.<br>
+			Destino che si realizza lontano, presunzione, commercio o vita militare, lavoratore indefesso.<br>
+			<b>Carattere</b> affettuoso, altruista, ostinato, sobrio. sicuro, libero, indipendente, istintivo, ma anche orgoglioso e ambizioso.
+			È molto prepotente e ribelle, combattivo e litigioso fino al punto di diventare molto aggressivo. È sua abitudine lanciare la pietra e poi
+			tirarsi indietro, per paura di affrontare situazioni che si vengono a creare. Parsimonioso e caparbio, migliorerà prendendo coscienza di se,
+			sa applicarsi bene nel lavoro, è un vero spirito ribelle, sarà sempre insofferente della autorità altrui. Poiché ha una natura aperta,
+			affezionata e leale, facilmente supererà i contrattempi. In amore è geloso e soggetto a vivere situazioni passionali e profonde. In questo
+			grado nascono persone di statura imponente, con mani grandi e larghe spalle.
+		</p>
 
-			<h2><strong>9 AGOSTO</strong> - dal <strong>16°</strong> al <strong>17° <span class="sRed">LEONE</span></strong> = <strong>Grado di brillantezza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Uno specchio su cui si riflettono i raggi del sole. Uomo che monta un camoscio</u>.<br>
-				Vita errabonda, lunghi viaggi all'insegna dell'avventura. Successi nella vita.<br>
-				<strong>Carattere</strong> intuitivo, fantasioso, versatile, intraprendente, gentile, forte, deciso e comprensivo. Battagliero e competitivo,
-				raramente tranquillo, ma stabile e paziente. Dotato d'intelligenza brillante vivace, creativa, capace di creare, originalità di idee e 
-				d'inventiva, delle azioni che fanno scalpore. Il temperamento è forte, risoluto e ambizioso, consente di raggiungere traguardi prestigiosi 
-				in ambito professionale e finanziario. Amante delle comodità e del lusso, molto attratto dall'astrologia e dall'occulto. Il lavoro duro non
-				lo spaventa, può essere un ottimo insegnante. Ha molti amici e ammiratori, ma non riesce a vivere relazioni affettive soddisfacenti. Questo 
-				grado è di chi è nato per lo spettacolo, ha talenti nascosti e può diventare un bravo comico.
-			</p>
+		<h2><b>9 AGOSTO</b> - dal <b>16°</b> al <b>17° <span class="sRed">LEONE</span></b> = <b>Grado di brillantezza</b></h2>
+		<p>
+			<u>Uno specchio su cui si riflettono i raggi del sole. Uomo che monta un camoscio</u>.<br>
+			Vita errabonda, lunghi viaggi all'insegna dell'avventura. Successi nella vita.<br>
+			<b>Carattere</b> intuitivo, fantasioso, versatile, intraprendente, gentile, forte, deciso e comprensivo. Battagliero e competitivo,
+			raramente tranquillo, ma stabile e paziente. Dotato d'intelligenza brillante vivace, creativa, capace di creare, originalità di idee e
+			d'inventiva, delle azioni che fanno scalpore. Il temperamento è forte, risoluto e ambizioso, consente di raggiungere traguardi prestigiosi
+			in ambito professionale e finanziario. Amante delle comodità e del lusso, molto attratto dall'astrologia e dall'occulto. Il lavoro duro non
+			lo spaventa, può essere un ottimo insegnante. Ha molti amici e ammiratori, ma non riesce a vivere relazioni affettive soddisfacenti. Questo
+			grado è di chi è nato per lo spettacolo, ha talenti nascosti e può diventare un bravo comico.
+		</p>
 
-			<h2><strong>10 AGOSTO</strong> - dal <strong>17°</strong> al <strong>18° <span class="sRed">LEONE</span></strong> = <strong>Grado di stupidità</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un uomo corre controvento e non riesce ad avanzare, le sue vesti volano a brandelli</u>.<br>
-				Spirito di contraddizione, incapacità di districarsi anche da piccole difficoltà.<br>
-				<strong>Carattere</strong> astuto, arguto, persuasivo, originale, impetuoso e intraprendente, un forte e risoluto temperamento. Ha grandi 
-				capacità di espressione sia verbale sia scritta. Intelligente, intuitivo, creativo e pieno di talenti, ambizioso: queste qualità consentono
-				di ricoprire ruoli di primo piano in campo professionale! Gentile, simpatico e attraente, è studioso della natura umana e della psiche, 
-				potrà essere ricco se saprà agire al momento giusto usando l'esperienza e la cultura. Pur essendo cordiale e ospitale in amore alterna
-				momenti di grande trasporto sentimentale, ad altri dove si mostra freddo e distaccato, tendente a diventare ostinato e imprudente. Piuttosto
-				lineare, ma anche rinunciatario nel tipo che pensa sempre: &quot;non ne vale la pena&quot;. La loro tranquillità viene prima di qualsiasi 
-				altro sentimento.
-			</p>
+		<h2><b>10 AGOSTO</b> - dal <b>17°</b> al <b>18° <span class="sRed">LEONE</span></b> = <b>Grado di stupidità</b></h2>
+		<p>
+			<u>Un uomo corre controvento e non riesce ad avanzare, le sue vesti volano a brandelli</u>.<br>
+			Spirito di contraddizione, incapacità di districarsi anche da piccole difficoltà.<br>
+			<b>Carattere</b> astuto, arguto, persuasivo, originale, impetuoso e intraprendente, un forte e risoluto temperamento. Ha grandi
+			capacità di espressione sia verbale sia scritta. Intelligente, intuitivo, creativo e pieno di talenti, ambizioso: queste qualità consentono
+			di ricoprire ruoli di primo piano in campo professionale! Gentile, simpatico e attraente, è studioso della natura umana e della psiche,
+			potrà essere ricco se saprà agire al momento giusto usando l'esperienza e la cultura. Pur essendo cordiale e ospitale in amore alterna
+			momenti di grande trasporto sentimentale, ad altri dove si mostra freddo e distaccato, tendente a diventare ostinato e imprudente. Piuttosto
+			lineare, ma anche rinunciatario nel tipo che pensa sempre: &quot;non ne vale la pena&quot;. La loro tranquillità viene prima di qualsiasi
+			altro sentimento.
+		</p>
 
-			<h2><strong>11 AGOSTO</strong> - dal <strong>18°</strong> al <strong>19° <span class="sRed">LEONE</span></strong> = <strong>Grado di distinzione, di luce spirituale</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Una Luna crescente con una stella brillante. Chiave misteriosa</u>.<br>
-				Indica numerosi cambiamenti nel corso della vita, molti dei quali determinati da figure femminili. Iniziazione e un grande sapere, 
-				scoperte importanti, posizioni notevoli in società.<br>
-				<strong>Carattere</strong> sottile, intrigante, socievole, comunicativo, cordiale, affettuoso, deciso e sicuro di sé. Ha un'intelligenza 
-				vivace, potente e anticonformista, che fruga nel mistero. Pratico, realista anche se talvolta è un po' aggressivo e prepotente, ma è 
-				piacevole e gioviale. Ha il dono dell'abilità e dell'intuizione per questo raggiunge buoni risultati negli affari. Dotato di una personalità 
-				energica e fortemente intellettuale, che consente di raggiungere gli obiettivi desiderati in campo professionale. Collabora volentieri con 
-				gli altri e si mostra disponibile a fornire aiuti materiali, ma anche eventuali supporti psicologici a chi ne ha più bisogno. Possiede 
-				un'innata originalità e un ottimo senso estetico, riesce a superare ostacoli e le difficoltà, lottando con coraggio e con tenacia, qualità 
-				con cui otterrà e arriverà dove non arrivano le sue risorse intellettuali.
-			</p>
+		<h2><b>11 AGOSTO</b> - dal <b>18°</b> al <b>19° <span class="sRed">LEONE</span></b> = <b>Grado di distinzione, di luce spirituale</b></h2>
+		<p>
+			<u>Una Luna crescente con una stella brillante. Chiave misteriosa</u>.<br>
+			Indica numerosi cambiamenti nel corso della vita, molti dei quali determinati da figure femminili. Iniziazione e un grande sapere,
+			scoperte importanti, posizioni notevoli in società.<br>
+			<b>Carattere</b> sottile, intrigante, socievole, comunicativo, cordiale, affettuoso, deciso e sicuro di sé. Ha un'intelligenza
+			vivace, potente e anticonformista, che fruga nel mistero. Pratico, realista anche se talvolta è un po' aggressivo e prepotente, ma è
+			piacevole e gioviale. Ha il dono dell'abilità e dell'intuizione per questo raggiunge buoni risultati negli affari. Dotato di una personalità
+			energica e fortemente intellettuale, che consente di raggiungere gli obiettivi desiderati in campo professionale. Collabora volentieri con
+			gli altri e si mostra disponibile a fornire aiuti materiali, ma anche eventuali supporti psicologici a chi ne ha più bisogno. Possiede
+			un'innata originalità e un ottimo senso estetico, riesce a superare ostacoli e le difficoltà, lottando con coraggio e con tenacia, qualità
+			con cui otterrà e arriverà dove non arrivano le sue risorse intellettuali.
+		</p>
 
-			<h2><strong>12 AGOSTO</strong> - dal <strong>19°</strong> al <strong>20° <span class="sRed">LEONE</span></strong> = <strong>Grado di penetrazione e di riuscita</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un uomo guarda un serpente. Mano che tiene dei papiri</u>.<br>
-				Impieghi importanti, studi elevati, alte conoscenze, erudizione, insegnamento. Un'intelligenza acuta e curiosa, che studia i segreti della
-				natura umana.<br>
-				<strong>Carattere</strong> ribelle, deciso, fiero, riservato, austero, suscettibile, ambizioso, creativo, energico e determinato. Mostra 
-				abilità nel comprendere persone e situazioni, ma anche a raggiungere gli obiettivi desiderati in campo professionale e finanziario. Le sue
-				ambizioni saranno a volte deluse, deve far uso della buona intelligenza e dell'intuito che possiede in gran quantità per superare gli 
-				ostacoli e insistere. È previsto il successo finale grazie ad una grande energia e ad una super resistenza. Avrà un impiego vicino a persone 
-				altolocate ed eminenti e molte amicizie utili. È molto ricco di idee originali e innovative. Ottiene successi nel campo sociale e occupa 
-				posti di grande importanza. Ama la libertà e il divertimento, le cose semplici, è attaccato alla casa e alla famiglia che per lui è l'unico 
-				porto sicuro. Matrimonio felice e sereno.
-			</p>
+		<h2><b>12 AGOSTO</b> - dal <b>19°</b> al <b>20° <span class="sRed">LEONE</span></b> = <b>Grado di penetrazione e di riuscita</b></h2>
+		<p>
+			<u>Un uomo guarda un serpente. Mano che tiene dei papiri</u>.<br>
+			Impieghi importanti, studi elevati, alte conoscenze, erudizione, insegnamento. Un'intelligenza acuta e curiosa, che studia i segreti della
+			natura umana.<br>
+			<b>Carattere</b> ribelle, deciso, fiero, riservato, austero, suscettibile, ambizioso, creativo, energico e determinato. Mostra
+			abilità nel comprendere persone e situazioni, ma anche a raggiungere gli obiettivi desiderati in campo professionale e finanziario. Le sue
+			ambizioni saranno a volte deluse, deve far uso della buona intelligenza e dell'intuito che possiede in gran quantità per superare gli
+			ostacoli e insistere. È previsto il successo finale grazie ad una grande energia e ad una super resistenza. Avrà un impiego vicino a persone
+			altolocate ed eminenti e molte amicizie utili. È molto ricco di idee originali e innovative. Ottiene successi nel campo sociale e occupa
+			posti di grande importanza. Ama la libertà e il divertimento, le cose semplici, è attaccato alla casa e alla famiglia che per lui è l'unico
+			porto sicuro. Matrimonio felice e sereno.
+		</p>
 
-			<h2><strong>13 AGOSTO</strong> - dal <strong>20°</strong> al <strong>21° <span class="sRed">LEONE</span></strong> = <strong>Grado d'ingiustizia</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un nido di uccellini sopra il quale si libra uno sparviero</u>.<br>
-				Pericolo di rimanere orfano e subire ingiustizie e rovesci. Fiducia mal riposta, segreti, spionaggio.<br>
-				<strong>Carattere</strong> onesto e aperto, generoso e stravagante, dinamico, coraggioso e ricco di inventiva. Ha una buona capacità di 
-				analisi e dimostra grande abilità nel lavoro e negli affari. Poiché ama molto l'indipendenza, ricerca un partner che rispetti la libertà di
-				cui ha bisogno. Sa insistere per ottenere ciò che vuole, discreto con gli altri, abile e solidale con il prossimo. È innato il senso del
-				dovere e della giustizia, sa concentrarsi e usare l'intelligenza per raggiungere quella fortuna che questo grado concede a tratti. Fiducia, 
-				pazienza e tolleranza gli sono indispensabili per salvaguardare salute e interessi, sebbene sia abile nel guadagnare. Tende ad essere 
-				superbo ed esagerato, amore per le cose strane e assurde. Amico affettuoso e leale, innamorato ardente, ma soggetto a impeti passionali 
-				e amante delle avventure.
-			</p>
+		<h2><b>13 AGOSTO</b> - dal <b>20°</b> al <b>21° <span class="sRed">LEONE</span></b> = <b>Grado d'ingiustizia</b></h2>
+		<p>
+			<u>Un nido di uccellini sopra il quale si libra uno sparviero</u>.<br>
+			Pericolo di rimanere orfano e subire ingiustizie e rovesci. Fiducia mal riposta, segreti, spionaggio.<br>
+			<b>Carattere</b> onesto e aperto, generoso e stravagante, dinamico, coraggioso e ricco di inventiva. Ha una buona capacità di
+			analisi e dimostra grande abilità nel lavoro e negli affari. Poiché ama molto l'indipendenza, ricerca un partner che rispetti la libertà di
+			cui ha bisogno. Sa insistere per ottenere ciò che vuole, discreto con gli altri, abile e solidale con il prossimo. È innato il senso del
+			dovere e della giustizia, sa concentrarsi e usare l'intelligenza per raggiungere quella fortuna che questo grado concede a tratti. Fiducia,
+			pazienza e tolleranza gli sono indispensabili per salvaguardare salute e interessi, sebbene sia abile nel guadagnare. Tende ad essere
+			superbo ed esagerato, amore per le cose strane e assurde. Amico affettuoso e leale, innamorato ardente, ma soggetto a impeti passionali
+			e amante delle avventure.
+		</p>
 
-			<h2><strong>14 AGOSTO</strong> - dal <strong>21°</strong> al <strong>22° <span class="sRed">LEONE</span></strong> = <strong>Grado d'intelligenza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Una stella brilla nel cielo e si specchia nel lago</u>.<br>
-				Spirito intuitivo, doti diplomatiche, brillerà nella sua sfera d'azione. Questo grado all'Ascendente crea ferite.<br>
-				<strong>Carattere</strong> allegro, d inamico, deciso, organizzato e intraprendente, ottimista ed entusiasta. È brillante, forte e 
-				battagliero, quasi militaresco e aggressivo. Di umore mutevole, interessante ma avido, egoista e ribelle. Ha un alto senso del dovere e 
-				della giustizia. Solidale, abile e utilizza la diplomazia per unire e risolvere le questioni difficili. Riscuote successi in campo sociale 
-				e vive un'esistenza felice, caratterizzata da molti viaggi, interessi culturali, contatti e avventure anche romantiche. Eccellente 
-				organizzatore rivela in questo il suo raziocinio e una buona capacità d'inventiva, non manca una buona capacità di analisi ma, a volte 
-				corre il rischio di diventare egocentrico, pedante e testardo. Deve cercare di moderare la tendenza a spendere con leggerezza il denaro. 
-				La felicità in famiglia è assicurata.
-			</p>
+		<h2><b>14 AGOSTO</b> - dal <b>21°</b> al <b>22° <span class="sRed">LEONE</span></b> = <b>Grado d'intelligenza</b></h2>
+		<p>
+			<u>Una stella brilla nel cielo e si specchia nel lago</u>.<br>
+			Spirito intuitivo, doti diplomatiche, brillerà nella sua sfera d'azione. Questo grado all'Ascendente crea ferite.<br>
+			<b>Carattere</b> allegro, d inamico, deciso, organizzato e intraprendente, ottimista ed entusiasta. È brillante, forte e
+			battagliero, quasi militaresco e aggressivo. Di umore mutevole, interessante ma avido, egoista e ribelle. Ha un alto senso del dovere e
+			della giustizia. Solidale, abile e utilizza la diplomazia per unire e risolvere le questioni difficili. Riscuote successi in campo sociale
+			e vive un'esistenza felice, caratterizzata da molti viaggi, interessi culturali, contatti e avventure anche romantiche. Eccellente
+			organizzatore rivela in questo il suo raziocinio e una buona capacità d'inventiva, non manca una buona capacità di analisi ma, a volte
+			corre il rischio di diventare egocentrico, pedante e testardo. Deve cercare di moderare la tendenza a spendere con leggerezza il denaro.
+			La felicità in famiglia è assicurata.
+		</p>
 
-			<h2><strong>15 AGOSTO</strong> - dal <strong>22°</strong> al <strong>23° <span class="sRed">LEONE</span></strong> = <strong>Grado di divinazione di semplicità</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un uomo abbatte un albero</u>.<br>
-				Intelligenza potente, genio assoluto, capace di portare a termine lavori lunghi, duri e costanti. Buona riuscita.<br>
-				<strong>Carattere</strong> semplice, leale e tenace. Intelligente, intuitivo, generoso e simpatico. Dotato di una certa dose di preveggenza,
-				è un pianificatore e organizzatore nato. Possiede eccellenti qualità artistiche che gli permettono di raggiungere il successo sperato in 
-				particolare nel settore dello spettacolo. Pur essendo soggetto a delusioni affettive dedica parte del suo tempo libero alle persone più
-				bisognose. Successo, gloria e popolarità, queste le cose che desidera e che riuscirà ad avere grazie alla fortuna che viene da questo grado, 
-				che dà un successo per qualsiasi attività che abbia attinenza con manifestazioni in pubblico come: cantante, attore, presentatore, avvocato 
-				penalista. Se evita litigi e dissensi avrà una vita felice.
-			</p>
+		<h2><b>15 AGOSTO</b> - dal <b>22°</b> al <b>23° <span class="sRed">LEONE</span></b> = <b>Grado di divinazione di semplicità</b></h2>
+		<p>
+			<u>Un uomo abbatte un albero</u>.<br>
+			Intelligenza potente, genio assoluto, capace di portare a termine lavori lunghi, duri e costanti. Buona riuscita.<br>
+			<b>Carattere</b> semplice, leale e tenace. Intelligente, intuitivo, generoso e simpatico. Dotato di una certa dose di preveggenza,
+			è un pianificatore e organizzatore nato. Possiede eccellenti qualità artistiche che gli permettono di raggiungere il successo sperato in
+			particolare nel settore dello spettacolo. Pur essendo soggetto a delusioni affettive dedica parte del suo tempo libero alle persone più
+			bisognose. Successo, gloria e popolarità, queste le cose che desidera e che riuscirà ad avere grazie alla fortuna che viene da questo grado,
+			che dà un successo per qualsiasi attività che abbia attinenza con manifestazioni in pubblico come: cantante, attore, presentatore, avvocato
+			penalista. Se evita litigi e dissensi avrà una vita felice.
+		</p>
 
-			<h2><strong>16 AGOSTO</strong> - dal <strong>23°</strong> al <strong>24° <span class="sRed">LEONE</span></strong> = <strong>Grado d'instabilità, di divinazione</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un triangolo rovesciato su uno sfondo rosso. Uomo con una sega</u>.<br>
-				Iniziative audaci e lotte, lavori manuali, materialismo, riflessione.<br>
-				<strong>Carattere</strong> gentile e comprensivo, energico, brillante e battagliero, agguerrito, pieno di grinta e aggressivo. Ha una mente 
-				percettiva capace di pensiero autonomo, ma tende a diventare burbero e dispettoso. Lavoratore abile, costante e generoso, ama la natura e 
-				anche se spesso è un po' avventato ha un buon cuore, è sempre alla ricerca della giustizia. Persona molto cauta e riflessiva ha uno spiccato 
-				senso del dovere. Talvolta confusionaria e disorganizzata. Di base è buono, attivo e con il senso della responsabilità. Ha un senso innato 
-				della giustizia e del dovere. Molto intelligente ha una dialettica pronta ed è molto riflessivo. Come amico è prezioso perché non si 
-				offende mai, proprio perché capisce tutto ciò che succede dentro gli altri, come si dice &quot;tutto compreso tutto perdonato&quot;. 
-				Logoramento e fatica nel lavoro ma sarà ricompensato. Abilità in tutte le cose e vita affettiva felice.
-			</p>
+		<h2><b>16 AGOSTO</b> - dal <b>23°</b> al <b>24° <span class="sRed">LEONE</span></b> = <b>Grado d'instabilità, di divinazione</b></h2>
+		<p>
+			<u>Un triangolo rovesciato su uno sfondo rosso. Uomo con una sega</u>.<br>
+			Iniziative audaci e lotte, lavori manuali, materialismo, riflessione.<br>
+			<b>Carattere</b> gentile e comprensivo, energico, brillante e battagliero, agguerrito, pieno di grinta e aggressivo. Ha una mente
+			percettiva capace di pensiero autonomo, ma tende a diventare burbero e dispettoso. Lavoratore abile, costante e generoso, ama la natura e
+			anche se spesso è un po' avventato ha un buon cuore, è sempre alla ricerca della giustizia. Persona molto cauta e riflessiva ha uno spiccato
+			senso del dovere. Talvolta confusionaria e disorganizzata. Di base è buono, attivo e con il senso della responsabilità. Ha un senso innato
+			della giustizia e del dovere. Molto intelligente ha una dialettica pronta ed è molto riflessivo. Come amico è prezioso perché non si
+			offende mai, proprio perché capisce tutto ciò che succede dentro gli altri, come si dice &quot;tutto compreso tutto perdonato&quot;.
+			Logoramento e fatica nel lavoro ma sarà ricompensato. Abilità in tutte le cose e vita affettiva felice.
+		</p>
 
-			<h2><strong>17 AGOSTO</strong> - dal <strong>24°</strong> al <strong>25° <span class="sRed">LEONE</span></strong> = <strong>Grado di solidità, di solitudine nello sforzo</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Uomo che lotta tra i flutti agitati. Uomo in un campo lavora con un bue</u>.<br>
-				Pericolo d'annegamento, avversità, grandi difficoltà da superare.<br>
-				<strong>Carattere</strong> tenace, forte e intuitivo, forza di volontà. Ha un'intelligenza critica e vivace e il vivo interesse che dimostra 
-				per la letteratura e l'arte in genere se coltivati arricchiranno la sua personalità raffinata. Grandi lotte nella vita lo matureranno, sa 
-				applicarsi a lavori fisici o ad impegni morali con forza e laboriosità. Ha qualità artistiche e musicali che gli consentono di raggiungere 
-				il successo nel settore dello spettacolo. Ama il bello e tutto ciò che è esclusivo, soprattutto l'antiquariato e per questo riempie la sua
-				casa di opere d'arte, molte volte spendendo per questo motivo un vero patrimonio in denaro. Ha una vasta cultura ed è esperto in ogni cosa. 
-				Non è certo un ottimo partner ma in generale è fedele. In amore è un po' egoista, ansioso e con una fantasia esagerata che spesso lo porta 
-				ad amare delusioni.
-			</p>
+		<h2><b>17 AGOSTO</b> - dal <b>24°</b> al <b>25° <span class="sRed">LEONE</span></b> = <b>Grado di solidità, di solitudine nello sforzo</b></h2>
+		<p>
+			<u>Uomo che lotta tra i flutti agitati. Uomo in un campo lavora con un bue</u>.<br>
+			Pericolo d'annegamento, avversità, grandi difficoltà da superare.<br>
+			<b>Carattere</b> tenace, forte e intuitivo, forza di volontà. Ha un'intelligenza critica e vivace e il vivo interesse che dimostra
+			per la letteratura e l'arte in genere se coltivati arricchiranno la sua personalità raffinata. Grandi lotte nella vita lo matureranno, sa
+			applicarsi a lavori fisici o ad impegni morali con forza e laboriosità. Ha qualità artistiche e musicali che gli consentono di raggiungere
+			il successo nel settore dello spettacolo. Ama il bello e tutto ciò che è esclusivo, soprattutto l'antiquariato e per questo riempie la sua
+			casa di opere d'arte, molte volte spendendo per questo motivo un vero patrimonio in denaro. Ha una vasta cultura ed è esperto in ogni cosa.
+			Non è certo un ottimo partner ma in generale è fedele. In amore è un po' egoista, ansioso e con una fantasia esagerata che spesso lo porta
+			ad amare delusioni.
+		</p>
 
-			<h2><strong>18 AGOSTO</strong> - dal <strong>25°</strong> al <strong>26° <span class="sRed">LEONE</span></strong> = <strong>Grado di amore per la natura, di distruzione</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un pugnale. Uno spaccalegna</u>.<br>
-				Laboriosità, umiltà, mediocrità, grandi fatiche che non sono sufficientemente apprezzate. Colpi di testa.<br>
-				<strong>Carattere</strong> entusiasta, semplice, pratico e laborioso, calmo, stabile e affidabile. Ha uno spirito concreto e realizzatore 
-				con una forte volontà, molto attivo e grande lavoratore. Ha una spiccata attitudine a controllare e ad organizzare gli altri e sa far fronte
-				alle sue responsabilità. La sua facilità di comunicazione e l'abilità linguistica lo rendono particolarmente dotato per le lingue straniere 
-				e per i dialetti, la chiromanzia, la cartomanzia e l'astrologia, lo guideranno nei momenti difficili. La ricchezza gli verrà attraverso 
-				professioni insolite e non con grandi guadagni. Un avventuriero in amore, soggetto a impeti passionali, ma spesso sono trattenuti e 
-				controllati. Amante della pace e della giustizia.
-			</p>
+		<h2><b>18 AGOSTO</b> - dal <b>25°</b> al <b>26° <span class="sRed">LEONE</span></b> = <b>Grado di amore per la natura, di distruzione</b></h2>
+		<p>
+			<u>Un pugnale. Uno spaccalegna</u>.<br>
+			Laboriosità, umiltà, mediocrità, grandi fatiche che non sono sufficientemente apprezzate. Colpi di testa.<br>
+			<b>Carattere</b> entusiasta, semplice, pratico e laborioso, calmo, stabile e affidabile. Ha uno spirito concreto e realizzatore
+			con una forte volontà, molto attivo e grande lavoratore. Ha una spiccata attitudine a controllare e ad organizzare gli altri e sa far fronte
+			alle sue responsabilità. La sua facilità di comunicazione e l'abilità linguistica lo rendono particolarmente dotato per le lingue straniere
+			e per i dialetti, la chiromanzia, la cartomanzia e l'astrologia, lo guideranno nei momenti difficili. La ricchezza gli verrà attraverso
+			professioni insolite e non con grandi guadagni. Un avventuriero in amore, soggetto a impeti passionali, ma spesso sono trattenuti e
+			controllati. Amante della pace e della giustizia.
+		</p>
 
-			<h2><strong>19 AGOSTO</strong> - dal <strong>26°</strong> al <strong>27° <span class="sRed">LEONE</span></strong> = <strong>Grado di sostegno e d'aiuto</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Due mani intrecciate in una stretta amichevole</u>.<br>
-				Notevole spirito di osservazione, difficoltà con o a causa dei famigliari, cautela nel matrimonio.<br>
-				<strong>Carattere</strong> amabile, socievole, piacevole, ironico, intelligente e un po' arrivista. Personalità affascinante e 
-				intraprendente, dotata di tempismo, a volte violenta e diffidente può rivelarsi un opportunista, ma in fondo ci si può fidare. È sensibile 
-				e umano, ma tuttavia nasconde questa sua prerogativa per raggiungere la stabilità economica e materiale. Ha possibilità di arrivare alla 
-				notorietà senza tuttavia diventare popolare è pronto e veloce ad agire, non teme l'azzardo e in affari è difficile farlo soccombere.
-				Psicologia, astrologia e parapsicologia lo affascinano moltissimo. È un amico fidato, anche se incline ai pettegolezzi. Ama in modo 
-				completo, ma è troppo rigido e talvolta esige dal partner le stesse cose che egli stesso dà.
-			</p>
+		<h2><b>19 AGOSTO</b> - dal <b>26°</b> al <b>27° <span class="sRed">LEONE</span></b> = <b>Grado di sostegno e d'aiuto</b></h2>
+		<p>
+			<u>Due mani intrecciate in una stretta amichevole</u>.<br>
+			Notevole spirito di osservazione, difficoltà con o a causa dei famigliari, cautela nel matrimonio.<br>
+			<b>Carattere</b> amabile, socievole, piacevole, ironico, intelligente e un po' arrivista. Personalità affascinante e
+			intraprendente, dotata di tempismo, a volte violenta e diffidente può rivelarsi un opportunista, ma in fondo ci si può fidare. È sensibile
+			e umano, ma tuttavia nasconde questa sua prerogativa per raggiungere la stabilità economica e materiale. Ha possibilità di arrivare alla
+			notorietà senza tuttavia diventare popolare è pronto e veloce ad agire, non teme l'azzardo e in affari è difficile farlo soccombere.
+			Psicologia, astrologia e parapsicologia lo affascinano moltissimo. È un amico fidato, anche se incline ai pettegolezzi. Ama in modo
+			completo, ma è troppo rigido e talvolta esige dal partner le stesse cose che egli stesso dà.
+		</p>
 
-			<h2><strong>20 AGOSTO</strong> - dal <strong>27°</strong> al <strong>28° <span class="sRed">LEONE</span></strong> = <strong>Grado d'unione</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Due cerchi d'oro uniti da un nastro blu con duplice nodo. Tre compagni che passeggiano</u>.<br>
-				Possibilità di doppio matrimonio, collaborazione, senso dell'amicizia.<br>
-				<strong>Carattere</strong> amabile, spensierato, amico della concordia. Socievole, simpatico, dotato di forza magnetica, grazie ad amicizie 
-				preziose farà fortuna e una buona carriera. Temperamento artistico, dotato di un grande senso dello humour e una mente analitica, piace 
-				sperimentare idee nuove e insolite. È pieno di slanci passionali, istintivo ed imprevedibile nelle sue azioni e reazioni. È un eccellente 
-				guidatore e ama molto le automobili. Ha sempre dei risultati positivi nelle cose intraprese. La sua presenza a feste o nella vita sociale
-				anima l'ambiente per l'allegria che sa comunicare con gli altri. È caloroso e protettivo nei confronti delle persone che ama, vita 
-				famigliare armoniosa.
-			</p>
+		<h2><b>20 AGOSTO</b> - dal <b>27°</b> al <b>28° <span class="sRed">LEONE</span></b> = <b>Grado d'unione</b></h2>
+		<p>
+			<u>Due cerchi d'oro uniti da un nastro blu con duplice nodo. Tre compagni che passeggiano</u>.<br>
+			Possibilità di doppio matrimonio, collaborazione, senso dell'amicizia.<br>
+			<b>Carattere</b> amabile, spensierato, amico della concordia. Socievole, simpatico, dotato di forza magnetica, grazie ad amicizie
+			preziose farà fortuna e una buona carriera. Temperamento artistico, dotato di un grande senso dello humour e una mente analitica, piace
+			sperimentare idee nuove e insolite. È pieno di slanci passionali, istintivo ed imprevedibile nelle sue azioni e reazioni. È un eccellente
+			guidatore e ama molto le automobili. Ha sempre dei risultati positivi nelle cose intraprese. La sua presenza a feste o nella vita sociale
+			anima l'ambiente per l'allegria che sa comunicare con gli altri. È caloroso e protettivo nei confronti delle persone che ama, vita
+			famigliare armoniosa.
+		</p>
 
-			<h2><strong>21 AGOSTO</strong> - dal <strong>28°</strong> al <strong>29° <span class="sRed">LEONE</span></strong> = <strong>Grado di splendore</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Uomo e donna che si tengono per mano</u>.<br>
-				Unione felice, amori senza problemi, accordo fra i due sessi. Abbondanza e coraggio. Vecchiaia felice.<br>
-				<strong>Carattere</strong> fermo, onesto, originale, coraggioso, autoritario, allegro, socievole, cordiale, affettuoso, aperto e 
-				comunicativo. Mostra grande abilità nel lavoro e negli affari, in grado di portare avanti iniziative anche difficili e rischiose, grazie 
-				alla sua intelligenza e alla sua determinazione! Usando con intelligenza la sua mente analitica, si garantisce una completa riuscita e 
-				grandi riconoscimenti nel mondo degli affari. Deve controllare la tendenza all'irrequietezza e all'instabilità diventando più paziente e
-				tollerante. Nonostante questo è buono d'animo e molto generoso, considera importanti le relazioni amichevoli e quelle sentimentali.
-				Matrimonio felice e fortunato, può anche succedere che faccia due matrimoni felici.
-			</p>
+		<h2><b>21 AGOSTO</b> - dal <b>28°</b> al <b>29° <span class="sRed">LEONE</span></b> = <b>Grado di splendore</b></h2>
+		<p>
+			<u>Uomo e donna che si tengono per mano</u>.<br>
+			Unione felice, amori senza problemi, accordo fra i due sessi. Abbondanza e coraggio. Vecchiaia felice.<br>
+			<b>Carattere</b> fermo, onesto, originale, coraggioso, autoritario, allegro, socievole, cordiale, affettuoso, aperto e
+			comunicativo. Mostra grande abilità nel lavoro e negli affari, in grado di portare avanti iniziative anche difficili e rischiose, grazie
+			alla sua intelligenza e alla sua determinazione! Usando con intelligenza la sua mente analitica, si garantisce una completa riuscita e
+			grandi riconoscimenti nel mondo degli affari. Deve controllare la tendenza all'irrequietezza e all'instabilità diventando più paziente e
+			tollerante. Nonostante questo è buono d'animo e molto generoso, considera importanti le relazioni amichevoli e quelle sentimentali.
+			Matrimonio felice e fortunato, può anche succedere che faccia due matrimoni felici.
+		</p>
 
-			<h2><strong>22 AGOSTO</strong> - dal <strong>29°</strong> al <strong>30° <span class="sRed">LEONE</span></strong> = <strong>Grado d'indigenza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Uomo a cavallo seduto di traverso, un cane in uno stato pietoso, latra e si trascina per terra</u>.<br>
-				Servile che si lamenta invece di agire. Influenzabilità, eccentricità.<br>
-				<strong>Carattere</strong> capriccioso, volubile, impulsivo, estremista, energico, intuitivo, brillante e carismatico, ma è anche simpatico 
-				e dotato d'intelligenza brillante e di forti capacità intuitive e divinatorie, ha grande possibilità di onori, fortuna, ricchezza e gloria. 
-				Ha buon gusto letterario, una personalità originale, coraggiosa e autoritaria. Successo nello scrivere, ama divertirsi e avere una vita bel
-				la e senza grandi problemi, gusti stravaganti e idee bizzarre ne fanno un originale. Può riscuotere dei larghi consensi nella politica, 
-				come nel sociale, oppure nell'arte, grazie alle notevoli capacità intellettive. Pur essendo forte e individualista, protegge le persone 
-				che ama: devono essere intelligenti e non lasciarsi dominare da lui!
-			</p>
+		<h2><b>22 AGOSTO</b> - dal <b>29°</b> al <b>30° <span class="sRed">LEONE</span></b> = <b>Grado d'indigenza</b></h2>
+		<p>
+			<u>Uomo a cavallo seduto di traverso, un cane in uno stato pietoso, latra e si trascina per terra</u>.<br>
+			Servile che si lamenta invece di agire. Influenzabilità, eccentricità.<br>
+			<b>Carattere</b> capriccioso, volubile, impulsivo, estremista, energico, intuitivo, brillante e carismatico, ma è anche simpatico
+			e dotato d'intelligenza brillante e di forti capacità intuitive e divinatorie, ha grande possibilità di onori, fortuna, ricchezza e gloria.
+			Ha buon gusto letterario, una personalità originale, coraggiosa e autoritaria. Successo nello scrivere, ama divertirsi e avere una vita bel
+			la e senza grandi problemi, gusti stravaganti e idee bizzarre ne fanno un originale. Può riscuotere dei larghi consensi nella politica,
+			come nel sociale, oppure nell'arte, grazie alle notevoli capacità intellettive. Pur essendo forte e individualista, protegge le persone
+			che ama: devono essere intelligenti e non lasciarsi dominare da lui!
+		</p>
 
-			<p class="sCenter">
-				<img src="GOLDLINE3.gif" width="350" height="35">&nbsp;&nbsp;&nbsp;
-				<img src="GOLDLINE3.gif" width="350" height="35">
-			</p>
+		<p class="sCenter">
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">
+		</p>
 
-			<h2><strong>23 AGOSTO</strong> - dal <strong>0°</strong> al <strong>1° <span class="sGreen">VERGINE</span></strong> = <strong>Grado di soddisfazioni materiali</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Gente elegante partecipa a una festa. Donna a tavola con una coppa</u>.<br>
-				Amore dei piaceri, del lusso, promesse d'amicizia e di felicità per associazione.<br>
-				<strong>Carattere</strong> riservato, timido, socievole, idealista, sognatore, cordiale, affettuoso, aperto e comunicativo. Ha
-				un'intelligenza al di sopra del livello normale, è geniale, riesce bene negli studi e nelle cose dove c'è bisogno di applicazione e 
-				fermezza. Mostra una grande abilità nel lavoro e negli affari: è in grado, infatti, di portare avanti iniziative anche difficili e 
-				rischiose, grazie all'intelligenza e alla sua determinazione! Nonostante questo è generoso, buono d'animo e considera importanti, sia le 
-				relazioni amichevoli, sia quelle sentimentali. Ha una natura romantica, semplice, sobria e ordinata, nei rapporti ottiene facilmente affetto 
-				e fedeltà, apprezza la vita sociale e non rifiuta a nessuno amicizia e ospitalità. Generalmente è fortunato nel matrimonio.
-			</p>
+		<h2><b>23 AGOSTO</b> - dal <b>0°</b> al <b>1° <span class="sGreen">VERGINE</span></b> = <b>Grado di soddisfazioni materiali</b></h2>
+		<p>
+			<u>Gente elegante partecipa a una festa. Donna a tavola con una coppa</u>.<br>
+			Amore dei piaceri, del lusso, promesse d'amicizia e di felicità per associazione.<br>
+			<b>Carattere</b> riservato, timido, socievole, idealista, sognatore, cordiale, affettuoso, aperto e comunicativo. Ha
+			un'intelligenza al di sopra del livello normale, è geniale, riesce bene negli studi e nelle cose dove c'è bisogno di applicazione e
+			fermezza. Mostra una grande abilità nel lavoro e negli affari: è in grado, infatti, di portare avanti iniziative anche difficili e
+			rischiose, grazie all'intelligenza e alla sua determinazione! Nonostante questo è generoso, buono d'animo e considera importanti, sia le
+			relazioni amichevoli, sia quelle sentimentali. Ha una natura romantica, semplice, sobria e ordinata, nei rapporti ottiene facilmente affetto
+			e fedeltà, apprezza la vita sociale e non rifiuta a nessuno amicizia e ospitalità. Generalmente è fortunato nel matrimonio.
+		</p>
 
-			<h2><strong>24 AGOSTO</strong> - dal <strong>1°</strong> al <strong>2° <span class="sGreen">VERGINE</span></strong> = <strong>Grado di monotonia e povertà</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Due donne sedute. Una roccia solitaria in un deserto</u>.<br>
-				Fissità, solidità, resistenza, fatalismo che impedisce ogni reazione positiva. Fortuna tardiva.<br>
-				<strong>Carattere</strong> paziente, ordinato, metodico, profondo, colto e raffinato. Possiede una mente pronta, creativa e piena di 
-				risorse e qualità manageriali, l'intelligenza è brillante e versatile oltre che penetrante. Mostra un notevole talento per la parola e per 
-				lo scrivere che consente di farsi notare in campo sociale. La forte determinazione a riuscire in qualunque cosa faccia lo porta a dare il 
-				meglio di sé, sempre alla perenne ricerca d'idee nuove ed entusiasmanti. Ingegnoso e originale, attratto da tutto ciò che è nuovo e 
-				tecnologico, ma anche da esperienze di vita che possono arricchirlo nello spirito e culturalmente e che gli consentono di affrontare 
-				serenamente ogni situazione! Ama scoprire il lato migliore degli uomini e delle cose al di là delle prime impressioni e delle apparenze. 
-				La fortuna è un po' mediocre, ma i riflessi pronti gli permettono di emergere e farsi avanti da solo. Lega facilmente con tutti e 
-				stabilisce intese basate più sull'affinità mentale che affettiva.
-			</p>
+		<h2><b>24 AGOSTO</b> - dal <b>1°</b> al <b>2° <span class="sGreen">VERGINE</span></b> = <b>Grado di monotonia e povertà</b></h2>
+		<p>
+			<u>Due donne sedute. Una roccia solitaria in un deserto</u>.<br>
+			Fissità, solidità, resistenza, fatalismo che impedisce ogni reazione positiva. Fortuna tardiva.<br>
+			<b>Carattere</b> paziente, ordinato, metodico, profondo, colto e raffinato. Possiede una mente pronta, creativa e piena di
+			risorse e qualità manageriali, l'intelligenza è brillante e versatile oltre che penetrante. Mostra un notevole talento per la parola e per
+			lo scrivere che consente di farsi notare in campo sociale. La forte determinazione a riuscire in qualunque cosa faccia lo porta a dare il
+			meglio di sé, sempre alla perenne ricerca d'idee nuove ed entusiasmanti. Ingegnoso e originale, attratto da tutto ciò che è nuovo e
+			tecnologico, ma anche da esperienze di vita che possono arricchirlo nello spirito e culturalmente e che gli consentono di affrontare
+			serenamente ogni situazione! Ama scoprire il lato migliore degli uomini e delle cose al di là delle prime impressioni e delle apparenze.
+			La fortuna è un po' mediocre, ma i riflessi pronti gli permettono di emergere e farsi avanti da solo. Lega facilmente con tutti e
+			stabilisce intese basate più sull'affinità mentale che affettiva.
+		</p>
 
-			<h2><strong>25 AGOSTO</strong> - dal <strong>2°</strong> al <strong>3° <span class="sGreen">VERGINE</span></strong> = <strong>Grado di ricerca e di scienza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Uno scienziato nel suo laboratorio e un uomo che semina</u>.<br>
-				Attitudini per la chimica e le scienze, studi superiori, previdenza, apostolato, insegnamento.<br>
-				<strong>Carattere</strong> tenace, paziente, silenzioso, attivo e dinamico, analitico ed equilibrato. Brillante, amante della vita libera 
-				all'aria aperta. È molto timido, cauto e parsimonioso, piuttosto incerto, sempre un po' titubante. Prolifico e costruttivo nelle idee, 
-				riesce a prevenire gli altri e a capirli, può essere uno scrittore o un artista, una persona saggia e coraggiosa. Previdenza e saggezza
-				permettono d'avere successo economico, viaggi all'estero avranno una grande importanza. Ha un grande senso protettivo nei confronti dei più
-				deboli. Ogni sacrificio per lo studio è ampiamente ripagato. Fa parte di molte associazioni, è disponibile e fedele in amore, nonostante 
-				sia troppo esigente nei confronti di chi ama.
-			</p>
+		<h2><b>25 AGOSTO</b> - dal <b>2°</b> al <b>3° <span class="sGreen">VERGINE</span></b> = <b>Grado di ricerca e di scienza</b></h2>
+		<p>
+			<u>Uno scienziato nel suo laboratorio e un uomo che semina</u>.<br>
+			Attitudini per la chimica e le scienze, studi superiori, previdenza, apostolato, insegnamento.<br>
+			<b>Carattere</b> tenace, paziente, silenzioso, attivo e dinamico, analitico ed equilibrato. Brillante, amante della vita libera
+			all'aria aperta. È molto timido, cauto e parsimonioso, piuttosto incerto, sempre un po' titubante. Prolifico e costruttivo nelle idee,
+			riesce a prevenire gli altri e a capirli, può essere uno scrittore o un artista, una persona saggia e coraggiosa. Previdenza e saggezza
+			permettono d'avere successo economico, viaggi all'estero avranno una grande importanza. Ha un grande senso protettivo nei confronti dei più
+			deboli. Ogni sacrificio per lo studio è ampiamente ripagato. Fa parte di molte associazioni, è disponibile e fedele in amore, nonostante
+			sia troppo esigente nei confronti di chi ama.
+		</p>
 
-			<h2><strong>26 AGOSTO</strong> - dal <strong>3°</strong> al <strong>4° <span class="sGreen">VERGINE</span></strong> = <strong>Grado di produzione</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un campo di grano alto e maturo. Uomo che conduce una carretta</u>.<br>
-				Gusti rurali, fecondità e immaginazione, potenza e successo per operosità, opere copiose.<br>
-				<strong>Carattere</strong> semplice e sensato, serio, profondo, pratico, ambizioso, caratterizzato da un'intelligenza brillante e da un 
-				forte senso d'indipendenza. Una natura sensibile, riservata e sentimentale, ama il suo lavoro in cui si sente realizzato. Di norma sceglie 
-				un lavoro a stretto contatto con la natura che è la sua vera e grande amica. È studioso ma fragile emotivamente, oltre che curioso e 
-				intelligente. Mostra grande interesse per l'arte, la musica e la letteratura che arricchiscono molto la sua cultura. Essendo romantico e 
-				capace di provare forti emozioni deve fare attenzione a non farsi travolgere da storie d'amore complicate e deludenti. Orgoglioso e 
-				sensibile, possiede un forte senso della casa e della famiglia, dimostra gran rispetto per gli altri: tende ad aiutare come può i meno 
-				fortunati di lui! Il matrimonio con un partner facoltoso faciliterà l'esistenza.
-			</p>
+		<h2><b>26 AGOSTO</b> - dal <b>3°</b> al <b>4° <span class="sGreen">VERGINE</span></b> = <b>Grado di produzione</b></h2>
+		<p>
+			<u>Un campo di grano alto e maturo. Uomo che conduce una carretta</u>.<br>
+			Gusti rurali, fecondità e immaginazione, potenza e successo per operosità, opere copiose.<br>
+			<b>Carattere</b> semplice e sensato, serio, profondo, pratico, ambizioso, caratterizzato da un'intelligenza brillante e da un
+			forte senso d'indipendenza. Una natura sensibile, riservata e sentimentale, ama il suo lavoro in cui si sente realizzato. Di norma sceglie
+			un lavoro a stretto contatto con la natura che è la sua vera e grande amica. È studioso ma fragile emotivamente, oltre che curioso e
+			intelligente. Mostra grande interesse per l'arte, la musica e la letteratura che arricchiscono molto la sua cultura. Essendo romantico e
+			capace di provare forti emozioni deve fare attenzione a non farsi travolgere da storie d'amore complicate e deludenti. Orgoglioso e
+			sensibile, possiede un forte senso della casa e della famiglia, dimostra gran rispetto per gli altri: tende ad aiutare come può i meno
+			fortunati di lui! Il matrimonio con un partner facoltoso faciliterà l'esistenza.
+		</p>
 
-			<h2><strong>27 AGOSTO</strong> - dal <strong>4°</strong> al <strong>5° <span class="sGreen">VERGINE</span></strong> = <strong>Grado di successi, di efficienza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un soldato pronto alla battaglia. Aquila in riposo</u>.<br>
-				Facoltà d'esecuzione e potere di decisione. Successo nello sport e nelle iniziative pratiche.<br>
-				<strong>Carattere</strong> battagliero, deciso, simpatico e pratico, orgoglioso e fiero. Un buon esecutore disciplinato, energico e non
-				esita a lottare per difendere i suoi interessi e le sue ragioni. Dotato d'intelligenza analitica, ama la musica, la letteratura e le arti 
-				in genere che lo arricchiscono notevolmente. La prontezza di azione è preziosa per i suoi collaboratori e nello stesso tempo redditizia per 
-				i guadagni. A volte è difficile capirlo perchè manca di stabilità emotiva. Ha molto fiuto negli affari, è preciso fortunato e ha spesso 
-				idee originali e splendide iniziative. È sempre all'avanguardia in tutto, quasi futurista. Pur essendo romantico e capace di provare forti
-				emozioni, deve fare molta attenzione a non farsi travolgere da possibili storie d'amore complicate e deludenti.
-			</p>
+		<h2><b>27 AGOSTO</b> - dal <b>4°</b> al <b>5° <span class="sGreen">VERGINE</span></b> = <b>Grado di successi, di efficienza</b></h2>
+		<p>
+			<u>Un soldato pronto alla battaglia. Aquila in riposo</u>.<br>
+			Facoltà d'esecuzione e potere di decisione. Successo nello sport e nelle iniziative pratiche.<br>
+			<b>Carattere</b> battagliero, deciso, simpatico e pratico, orgoglioso e fiero. Un buon esecutore disciplinato, energico e non
+			esita a lottare per difendere i suoi interessi e le sue ragioni. Dotato d'intelligenza analitica, ama la musica, la letteratura e le arti
+			in genere che lo arricchiscono notevolmente. La prontezza di azione è preziosa per i suoi collaboratori e nello stesso tempo redditizia per
+			i guadagni. A volte è difficile capirlo perchè manca di stabilità emotiva. Ha molto fiuto negli affari, è preciso fortunato e ha spesso
+			idee originali e splendide iniziative. È sempre all'avanguardia in tutto, quasi futurista. Pur essendo romantico e capace di provare forti
+			emozioni, deve fare molta attenzione a non farsi travolgere da possibili storie d'amore complicate e deludenti.
+		</p>
 
-			<h2><strong>28 AGOSTO</strong> - dal <strong>5°</strong> al <strong>6° <span class="sGreen">VERGINE</span></strong> = <strong>Grado di divertimento</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un uomo e una donna seduti davanti ad una tavola imbandita. Bella donna riccamente vestita</u>.<br>
-				Ruolo sociale, bellezza fisica, vita mondana, indolenza, vanità.<br>
-				<strong>Carattere</strong> vitale e allegro, socievole, costante ed energico. Attraente, intelligente, ha straordinarie facoltà mentali che 
-				gli danno autonomia di pensiero, comunicativo, cordiale e affettuoso. Ha una personalità energica, fortemente intellettuale, che consente 
-				di raggiungere degli obiettivi prestigiosi in campo professionale. Collabora volentieri con gli altri e si mostra disponibile a fornire 
-				aiuti materiali, ma anche eventuali supporti psicologici, a chi ne ha più bisogno. Ama il prossimo ed è molto sensibile alle gratificazioni 
-				e al successo sociale. Numerosi e facili i successi amorosi a discapito della vita interiore e intellettuale. Ha delle ottime possibilità 
-				nel ramo della chimica e possiede uno spiccato spirito d'osservazione, può riuscire come bravo chimico e perfino inventore. Successo e 
-				felicità gli giungeranno tramite le amicizie sincere. In amore è un vero conquistatore.
-			</p>
+		<h2><b>28 AGOSTO</b> - dal <b>5°</b> al <b>6° <span class="sGreen">VERGINE</span></b> = <b>Grado di divertimento</b></h2>
+		<p>
+			<u>Un uomo e una donna seduti davanti ad una tavola imbandita. Bella donna riccamente vestita</u>.<br>
+			Ruolo sociale, bellezza fisica, vita mondana, indolenza, vanità.<br>
+			<b>Carattere</b> vitale e allegro, socievole, costante ed energico. Attraente, intelligente, ha straordinarie facoltà mentali che
+			gli danno autonomia di pensiero, comunicativo, cordiale e affettuoso. Ha una personalità energica, fortemente intellettuale, che consente
+			di raggiungere degli obiettivi prestigiosi in campo professionale. Collabora volentieri con gli altri e si mostra disponibile a fornire
+			aiuti materiali, ma anche eventuali supporti psicologici, a chi ne ha più bisogno. Ama il prossimo ed è molto sensibile alle gratificazioni
+			e al successo sociale. Numerosi e facili i successi amorosi a discapito della vita interiore e intellettuale. Ha delle ottime possibilità
+			nel ramo della chimica e possiede uno spiccato spirito d'osservazione, può riuscire come bravo chimico e perfino inventore. Successo e
+			felicità gli giungeranno tramite le amicizie sincere. In amore è un vero conquistatore.
+		</p>
 
-			<h2><strong>29 AGOSTO</strong> - dal <strong>6°</strong> al <strong>7° <span class="sGreen">VERGINE</span></strong> = <strong>Grado di nullità, di modestia</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un uomo e una donna si volgono le spalle</u>.<br>
-				Riserbo e pudore, mancanza di coraggio o d'iniziative, affezioni sincere ma che metteranno alla prova.<br>
-				<strong>Carattere</strong> riservato e pudico, preciso, pignolo, puntiglioso, attivo, abile e brillante. Curioso, vivace e socievole, 
-				generoso, comunicativo e abitudinario, cordiale e affettuoso. Riscuote spesso dei consensi in attività che richiedono il rapporto con la 
-				gente. Agisce con tatto e prudenza, si realizza finanziariamente grazie ad amici influenti o ad un partner facoltoso. Ha una intelligenza 
-				viva e buone idee che permette di creare il proprio destino, il desiderio di sapere e imparare è imperioso, ma un'esagerata timidezza 
-				spesso lo rende asociale. Questo grado dà un forte senso per il campo giuridico: come avvocato, magistrato o notaio. Matrimonio un po' 
-				difficile e crea problemi a causa di donne, la mancanza di tatto lo porta ad essere addirittura sgarbato.
-			</p>
+		<h2><b>29 AGOSTO</b> - dal <b>6°</b> al <b>7° <span class="sGreen">VERGINE</span></b> = <b>Grado di nullità, di modestia</b></h2>
+		<p>
+			<u>Un uomo e una donna si volgono le spalle</u>.<br>
+			Riserbo e pudore, mancanza di coraggio o d'iniziative, affezioni sincere ma che metteranno alla prova.<br>
+			<b>Carattere</b> riservato e pudico, preciso, pignolo, puntiglioso, attivo, abile e brillante. Curioso, vivace e socievole,
+			generoso, comunicativo e abitudinario, cordiale e affettuoso. Riscuote spesso dei consensi in attività che richiedono il rapporto con la
+			gente. Agisce con tatto e prudenza, si realizza finanziariamente grazie ad amici influenti o ad un partner facoltoso. Ha una intelligenza
+			viva e buone idee che permette di creare il proprio destino, il desiderio di sapere e imparare è imperioso, ma un'esagerata timidezza
+			spesso lo rende asociale. Questo grado dà un forte senso per il campo giuridico: come avvocato, magistrato o notaio. Matrimonio un po'
+			difficile e crea problemi a causa di donne, la mancanza di tatto lo porta ad essere addirittura sgarbato.
+		</p>
 
-			<h2><strong>30 AGOSTO</strong> - dal <strong>7°</strong> al <strong>8° <span class="sGreen">VERGINE</span></strong> = <strong>Grado di contemplazione</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Uomo seduto su di un albero. Una torre sulla collina</u>.<br>
-				Natura amante delle cose semplici, idealista, sogno, utopia, purezza d'intenti, spirito contemplativo e successo, ma anche vecchiaia
-				solitaria e infelice.<br>
-				<strong>Carattere</strong> versatile, sereno, adattabile, generoso, buono, ricco d'intuito. Pratico e prudente, curioso, vivace e 
-				abitudinario. Agisce con tatto e prudenza e si realizza finanziariamente grazie ad amici influenti o ad un partner facoltoso. È espressivo, 
-				simpatico, stacanovista e abile nel maneggiare il denaro. Ha una mente analitica che consente di cogliere ogni dettaglio, oltre ad uno 
-				straordinario senso pratico che lo rende vincente nel lavoro. Interessi nella musica, in gastronomia, amore per la natura, la campagna e le 
-				cose semplici, preferisce accontentarsi di quello che ha. Sensibilità, fascino lo rendono molto ricercato nella vita privata. La 
-				personalità affascinante e il senso dell'umorismo procurano molti amici. Nella vita economica rivela una buona abilità finanziaria.
-			</p>
+		<h2><b>30 AGOSTO</b> - dal <b>7°</b> al <b>8° <span class="sGreen">VERGINE</span></b> = <b>Grado di contemplazione</b></h2>
+		<p>
+			<u>Uomo seduto su di un albero. Una torre sulla collina</u>.<br>
+			Natura amante delle cose semplici, idealista, sogno, utopia, purezza d'intenti, spirito contemplativo e successo, ma anche vecchiaia
+			solitaria e infelice.<br>
+			<b>Carattere</b> versatile, sereno, adattabile, generoso, buono, ricco d'intuito. Pratico e prudente, curioso, vivace e
+			abitudinario. Agisce con tatto e prudenza e si realizza finanziariamente grazie ad amici influenti o ad un partner facoltoso. È espressivo,
+			simpatico, stacanovista e abile nel maneggiare il denaro. Ha una mente analitica che consente di cogliere ogni dettaglio, oltre ad uno
+			straordinario senso pratico che lo rende vincente nel lavoro. Interessi nella musica, in gastronomia, amore per la natura, la campagna e le
+			cose semplici, preferisce accontentarsi di quello che ha. Sensibilità, fascino lo rendono molto ricercato nella vita privata. La
+			personalità affascinante e il senso dell'umorismo procurano molti amici. Nella vita economica rivela una buona abilità finanziaria.
+		</p>
 
-			<h2><strong>31 AGOSTO</strong> - dal <strong>8°</strong> al <strong>9° <span class="sGreen">VERGINE</span></strong> = <strong>Grado di spoliazione</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Uno stagno pieno d'erbacce e di una ricca vegetazione</u>.<br>
-				Grosse pretese, rischio di venire derubati da tutte le proprie sostanze, grosse pretese, prepotenza.<br>
-				<strong>Carattere</strong> suscettibile e indeciso, sensibile, idealista e costruttivo, sensibile, dal sistema nervoso un po' fragile. 
-				Dotato di un'intelligenza splendida, immediata, attiva e logica. Grande abilità e una buona eloquenza nel trattare con gli altri, spirito 
-				semplice e contemplativo, ha un'enorme forza creativa, una spiccata passione per i viaggi in modo particolare sull'acqua. La fervida 
-				immaginazione e le forti emozioni lo rendono spesso, rinunciatario di fronte agli ostacoli della vita, sa circondarsi per fortuna, di amici
-				simpatici che gli rendono più sopportabile l'esistenza! Freddezza nei rapporti affettivi in particolare nel matrimonio. Amore per la natura 
-				e l'arte, vari sono i campi d'azione e spesso a contatto della gente, mestieri di cameriere, fotomodella, farmacista, fornaio, negoziante, 
-				maitre di Hotel.
-			</p>
+		<h2><b>31 AGOSTO</b> - dal <b>8°</b> al <b>9° <span class="sGreen">VERGINE</span></b> = <b>Grado di spoliazione</b></h2>
+		<p>
+			<u>Uno stagno pieno d'erbacce e di una ricca vegetazione</u>.<br>
+			Grosse pretese, rischio di venire derubati da tutte le proprie sostanze, grosse pretese, prepotenza.<br>
+			<b>Carattere</b> suscettibile e indeciso, sensibile, idealista e costruttivo, sensibile, dal sistema nervoso un po' fragile.
+			Dotato di un'intelligenza splendida, immediata, attiva e logica. Grande abilità e una buona eloquenza nel trattare con gli altri, spirito
+			semplice e contemplativo, ha un'enorme forza creativa, una spiccata passione per i viaggi in modo particolare sull'acqua. La fervida
+			immaginazione e le forti emozioni lo rendono spesso, rinunciatario di fronte agli ostacoli della vita, sa circondarsi per fortuna, di amici
+			simpatici che gli rendono più sopportabile l'esistenza! Freddezza nei rapporti affettivi in particolare nel matrimonio. Amore per la natura
+			e l'arte, vari sono i campi d'azione e spesso a contatto della gente, mestieri di cameriere, fotomodella, farmacista, fornaio, negoziante,
+			maitre di Hotel.
+		</p>
 
 		<p class="sCenter">
 			<br>
-			<img src="GOLDLINE3.gif" width="350" height="35">&nbsp;&nbsp;
-			<img src="GOLDLINE3.gif" width="350" height="35">
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">&nbsp;&nbsp;
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">
 		</p>
 
-		<p class="sSmall sBlack sCenter">
-			<img src="email-box.gif"    width="35"  height="35">
+		<p class="sCenter">
+			<img src="email-box.gif"    width="35" height="35" alt="">
 			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
-			<img src="TelefonoC164.gif" width="35" height="35">&nbsp;
-			oppure Telefona: <strong>0125 631175 - Cell. 347 0417409<br><br>
-			Sei il visitatore n°&nbsp;</strong>
-	<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1351762431-wvsw3d4r2" border=0></a>
-			&nbsp;(Contenuto Aggiornato 29/07/2020)<br><br>
+			<img src="TelefonoC164.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+
+			<b>Sei il visitatore n°&nbsp;</b>
+		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1351762431-wvsw3d4r2" border=0></a>
+			&nbsp;(Contenuto Aggiornato <time datetime="2020-07-29">29/07/2020</time>)<br><br>
 		</p>
-					</td></tr></table>
-				</td></tr></table>
-			</td></tr></table>
-		</td></tr></table>
-	</td></tr></table>
+
 </td></tr></table>
-<p class="sXXSmall sBlack sBold sCenter">
-	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati. 
-	Senza il consenso dell&#39;autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
-</p>
+</td></tr></table>
+</td></tr></table>
+<footer>
+	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
+	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
+</footer>
 </body>
 </html>

@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" dir="ltr">
 <head>
 <meta charset="UTF-8">
-<title>Gradi Solari: Novembre</title>
+<title>Gradi Solari: Novembre - Studio Acquario</title>
 <link rel="icon" type="image/gif" href="favicon32.gif">
 <meta name="description" content="Studio Acquario: Gradi Solari dello Zodiaco: Novembre">
-<meta name="keywords" content="astrologia, gradi, solari, zodiaco, novembre">
+<meta name="keywords" content="astrologia, studio, acquario, gradi, solari, zodiaco, novembre">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
 <meta name="language" content="it">
 <meta http-equiv="imagetoolbar" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="29/07/2020">
-<meta name="revised" content="09/08/2020">
+<meta name="revised" content="08/10/2020">
 
 <style type="text/css">
-BODY {
-	SCROLLBAR-ARROW-COLOR: #51327d; 
-	SCROLLBAR-TRACK-COLOR: #a89470; 
-	SCROLLBAR-BASE-COLOR: #e0d0a8; 
+body {
+	SCROLLBAR-ARROW-COLOR: #51327d;
+	SCROLLBAR-TRACK-COLOR: #a89470;
+	SCROLLBAR-BASE-COLOR: #e0d0a8;
 	scrollbar-dark-shadow-color: #E7C1CE;
 
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
@@ -25,31 +26,100 @@ BODY {
 	background-image: url('GRback02.jpg');
 	background-color: #FFFFCC; /* Cream */
 }
-a {
+a:link {
 	color: #000000;
 }
-A:link {
-	text-decoration:none;
+a:visited {
+	color: #000000;
+}
+a:hover {
+	color: #FF0000;
+}
+a:active {
+	color: #000000;
 }
 h1 {
 	font-size: xx-large;
-	color: #000000;
 	font-weight: bold;
+	color: #000000;
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 h2 {
 	font-size: medium;
-	color: #000000;
 	font-weight: normal;
+	color: #000000;
 	text-align: center;
-	margin-top: 0.65cm;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-top: 35px;
 }
-.sLogoBanner {
+header {
 	font-size: xx-large;
 	font-weight: bold;
 	color: #FFFFFF; /* White */
 	text-shadow: 1px 1px 5px #0000FF; /* Blue */
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
+}
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #000000; /* Black */
+	/* text-shadow: 1px 1px 1px #0000FF; Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
+}
+p {
+	font-size: small;
+	color: #000000; /* Black */
+	text-align: justify;
+	padding-left: 35px;
+	padding-right: 35px;
+	line-height: 125%;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.sNavigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 180%;
+}
+.sNavigation a {
+	font-size: medium;
+	font-weight: bold;
+	padding:.42em;
+	color: black;
+	margin-left: 2px;
+	background: #CEC18C; /* Winter Hazel */
+	text-decoration: none;
+}
+.sNavigation a:hover {
+	color: #FFFFFF; /* White */
+	background: #996D3D; /* Buttered Rum */
+}
+#PagCorrente {
+	border-bottom: 2.5px solid brown;
+}
+.sHomeIcon {
+	vertical-align: bottom;
+	margin-bottom: 1px;
+	height: 25px;
+	width: 25px;
 }
 .sBorder1s-Olive {
 				border: 1px solid #666600;
@@ -66,18 +136,11 @@ h2 {
 .sRed {
 				color: #FF0000;
 }
-.sYellow {
-				color: #FFFF00; 
-				text-shadow: 1px 1px 0px #DD8500; /* Tangerine */
+.sGoldenBrown {
+				color: #996600;
 }
 .sWhite {
 				color: #FFFFFF;
-}
-.sBGPigPink {
-				background-color: #F6D2DE;
-}
-.sBGWhite {
-				background-color: #FFFFFF;
 }
 .sCenter {
 				text-align: center;
@@ -86,8 +149,8 @@ h2 {
 				text-align: justify;
 }
 .sPadding {
-				padding-left: 40px;
-				padding-right: 40px;
+				padding-left: 35px;
+				padding-right: 35px;
 }
 .sBold {
 				font-weight: bold;
@@ -116,491 +179,485 @@ h2 {
 </style>
 </head>
 
-<body vlink="purple" alink="red">
-<p class="sLogoBanner">Studio di Astrologia "Acquario"</p>
+<body>
+<header>Studio di Astrologia &quot;Acquario&quot;</header>
 
-<table background="GRbronze.jpg" cellspacing="0" cellpadding="0" width="95%" class="sBorder1s-Olive" align="center">
-  <tr><td>
+<table background="GRbronze.jpg" cellspacing="0" cellpadding="0" class="sBorder1s-Olive" width="95%" align="center">
+<tr><td background="GRorochiaro.jpg">
 
-	<table background="GRorochiaro.jpg" cellspacing="0" cellpadding="0" width="100%" border="0" class="sBorder1s-Olive">
-	  <tr><td>
+<table background="GRbronze.jpg" cellspacing="14" cellpadding="14" class="sBorder1s-Olive" width="100%">
+<tr><td background="GRorochiaro.jpg">
 
-		<table background="GRbronze.jpg" cellspacing="7" cellpadding="7" width="100%" class="sBorder1s-Olive">
-		  <tr><td>
-
-			<table background="GRorochiaro.jpg" cellspacing="7" cellpadding="7" width="100%" class="sBorder1s-Olive">
-			  <tr><td>
-
-				<table background="GRbronze.jpg" cellspacing="7" cellpadding="7" width="100%" class="sBorder1s-Olive">
-				  <tr><td>
-
-					<table background="GRback04.jpg" bgcolor="#FFF0D0" bordercolor="#FFFFFF" width="100%" border="0">
-					  <tr><td>
+<table background="GRbronze.jpg" cellspacing="14" cellpadding="7" class="sBorder1s-Olive" bgcolor="#FFF0D0" bordercolor="#FFFFFF" width="100%">
+<tr><td background="GRback04.jpg">
 
 		<h1>I GRADI SOLARI DELLO ZODIACO</h1>
 
 		<p class="sCenter">
-			<img src="GOLDLINE3.gif" width="350" height="35">&nbsp;&nbsp; 
-			<img src="GOLDLINE3.gif" width="350" height="35">
+			<br>
+			<img src="GR.B.011Nov.gif"      width="400" height="188" alt="Novembre">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="GR.DA.8scorpione.gif" width="130" height="130" alt="Scorpione">
 		</p>
 
-		<p class="sMedium sBlack sJustify sPadding">
-			Lo <strong>Zodiaco</strong> è suddiviso in <strong>12</strong> segni, <strong>36</strong> decadi e <strong>360</strong> gradi. 
-			Ogni <strong>grado</strong> ha un valore e un significato. Ad ognuno dei 360 gradi corrisponde un aforisma. 
-			Conoscere il giorno di nascita non è quindi sufficiente: occorre anche sapere quale é il grado.    
-		</p>
+		<nav class="sLarge sCenter">
+			<br>
+			<ul class="sNavigation">
+				<li><a href="GradiSolari1.htm">Gennaio</a></li>
+				<li><a href="GradiSolari2.htm">Febbraio</a></li>
+				<li><a href="GradiSolari3.htm">Marzo</a></li>
+				<li><a href="GradiSolari4.htm">Aprile</a></li>
+				<li><a href="GradiSolari5.htm">Maggio</a></li>
+				<li><a href="GradiSolari6.htm">Giugno</a></li>
+				<li><a href="GradiSolari7.htm">Luglio</a></li>
+				<li><a href="GradiSolari8.htm">Agosto</a></li>
+				<li><a href="GradiSolari9.htm">Settembre</a></li>
+				<li><a href="GradiSolari10.htm">Ottobre</a></li>
+				<li><a href="GradiSolari11.htm" id="PagCorrente">Novembre</a></li>
+				<li><a href="GradiSolari12.htm">Dicembre</a></li>
+				<li><a href="index.html"><img src="favicon32.gif" class="sHomeIcon"></a></li>
+			</ul>
+			<br>
+		</nav>
 
-		<p class="sBlack sSmall sCenter sBold">
-			<br><span class="sBGWhite">&nbsp;
-			<a href="GradiSolari1.htm">Gennaio</a> |
-			<a href="GradiSolari2.htm">Febbraio</a> |
-			<a href="GradiSolari3.htm">Marzo</a> |
-			<a href="GradiSolari4.htm">Aprile</a> |
-			<a href="GradiSolari5.htm">Maggio</a> |
-			<a href="GradiSolari6.htm">Giugno</a> |
-			<a href="GradiSolari7.htm">Luglio</a> |
-			<a href="GradiSolari8.htm">Agosto</a> |
-			<a href="GradiSolari9.htm">Settembre</a> |
-			<a href="GradiSolari10.htm">Ottobre</a> |</span><span class="sBGPigPink">
-			<a href="GradiSolari11.htm">Novembre</a> |</span><span class="sBGWhite">
-			<a href="GradiSolari12.htm">Dicembre</a> |
-			<a href="index.html">Pagina&nbsp;Iniziale</a>&nbsp;</span><br>
+		<p class="sMedium">
+			Lo <b>Zodiaco</b> è suddiviso in <b>12</b> segni, <b>36</b> decadi e <b>360</b> gradi.
+			Ogni <b>grado</b> ha un valore e un significato. Ad ognuno dei 360 gradi corrisponde un aforisma.
+			Conoscere il giorno di nascita non è quindi sufficiente: occorre anche sapere quale é il grado.
 		</p>
 
 		<p class="sCenter">
 			<br>
-			<img src="GR.B.011Nov.gif"      width="400" height="188">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="GR.DA.8scorpione.gif" width="130" height="130">
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">&nbsp;&nbsp;
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">
 		</p>
 
-		<p class="sLarge sBlack sBold sCenter">
-			NATO A&nbsp;<img src="A.11Novembre.gif" width="176" height="100">
+		<p class="sXLarge sBold sCenter">
+			NATO A&nbsp;<img src="A.11Novembre.gif" width="176" height="100" alt="Novembre">
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding">
-			Ha in genere molto tatto e buon gusto e usa un linguaggio scelto. È un possente oratore e la sua intelligenza è notevole. Carattere mutevole ed 
+		<p>
+			Ha in genere molto tatto e buon gusto e usa un linguaggio scelto. È un possente oratore e la sua intelligenza è notevole. Carattere mutevole ed
 			instabile. Un'indole battagliera e propensa al rischio, che spinge a buttarsi nelle situazioni che la vita mette davanti. Personalità dinamica,
-			ha molte idee a volte straordinarie. Persuasivo, coraggioso e liberale. Paziente, ostinato e testardo, non si arrende mai. Non ama dire agli 
+			ha molte idee a volte straordinarie. Persuasivo, coraggioso e liberale. Paziente, ostinato e testardo, non si arrende mai. Non ama dire agli
 			altri cosa fare, e tende a ritagliarsi la propria strada nella vita. Non si lascia intimidire e fermare da ciò che accade nella sua vita e ha un
-			approccio appassionato alla vita. È tra coloro che pensano che se c'é bisogno di fare qualcosa, ci deve essere un modo per farlo. Poco loquace,
-			ma amabile, ardito e generoso. Non ha troppe paure, e salta nelle situazioni a capofitto, prendendosi la responsabilità delle conseguenze. Non 
-			è in grado di controllare le sue emozioni. È difficile da comprendere. Pensa al futuro, è brillante e acuto, bello e forte. Prima d'aver 
+			approccio appassionato alla vita. È tra coloro che pensano che se c'è bisogno di fare qualcosa, ci deve essere un modo per farlo. Poco loquace,
+			ma amabile, ardito e generoso. Non ha troppe paure, e salta nelle situazioni a capofitto, prendendosi la responsabilità delle conseguenze. Non
+			è in grado di controllare le sue emozioni. È difficile da comprendere. Pensa al futuro, è brillante e acuto, bello e forte. Prima d'aver
 			imparato a dominarsi è brontolone e incontentabile una tendenza che dovrebbe combattere energicamente. Lavora con ardore quando il suo interesse
 			è in gioco, ma è portato all'indolenza. Curioso, affidabile e onesto, sa tenere i segreti. Laborioso con elevate capacità. Molto portato per i
-			lavori rischiosi, non lavorerà mai dietro ad una scrivania. Può diventare un buon medico. Difficilmente si lascia intimidire ed influenzare. 
-			Preferisce invece, buttarsi a capofitto, anche a costo di farsi male. Romantico, ma i ncostante nelle relazioni. In amore è il più passionale 
+			lavori rischiosi, non lavorerà mai dietro ad una scrivania. Può diventare un buon medico. Difficilmente si lascia intimidire ed influenzare.
+			Preferisce invece, buttarsi a capofitto, anche a costo di farsi male. Romantico, ma incostante nelle relazioni. In amore è il più passionale
 			in assoluto e si fida molto dei propri sentimenti. Segue l'emozione del momento, e si dona totalmente. Ama stare da solo in casa.<br>
-			La <strong>donna</strong> è molto intelligente e può vedere la disonestà da lontano. Misurarsi con lei è un errore, è supponente e non ha 
+			La <b>donna</b> è molto intelligente e può vedere la disonestà da lontano. Misurarsi con lei è un errore, è supponente e non ha
 			problemi ad ammetterlo.<br>
-			Il <strong>bambino</strong> è generalmente intelligente, capace e dotato di una buona memoria. Ha un carattere imbronciato e occorre che sia
+			Il <b>bambino</b> è generalmente intelligente, capace e dotato di una buona memoria. Ha un carattere imbronciato e occorre che sia
 			sorvegliato.
 		</p>
 
 		<p class="sCenter">
-			<img src="GOLDLINE3.gif" width="350" height="35">&nbsp;&nbsp;&nbsp;
-			<img src="GOLDLINE3.gif" width="350" height="35">
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">
 		</p>
 
-			<h2><strong>1° NOVEMBRE</strong> - dal <strong>8°</strong> al <strong>9° [bis] <span class="sYellow">SCORPIONE</span></strong> = <strong>Grado di simulazione, di maschera emblematica</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Un uomo che indossa una maschera da teatro. Uomo che fa smorfie</u>.<br>
-				Doppiezza, falsità, attitudini alla commedia e diplomazia.<br>
-				<strong>Carattere</strong> ambiguo, caparbio, testardo, calmo, furbo, prudente. Ha capacità mentali insolite e la rara dote di sviluppare 
-				l'intelligenza lungo canali intellettuali e scientifici. Abile nel nascondere i suoi pensieri sicuro di sé energico, competitivo ama 
-				sfidare le convenzioni e sperimentare tutto quello che è nuovo e sconosciuto. Detesta la solitudine, cerca volentieri la compagnia di amici 
-				e di persone ben disposte verso di lui. Ama il progresso, spesso è interessato alle scienze occulte e anche alla medicina. Queste doti 
-				medianiche danno un'eccezionale intuito la sua abilità è una forma d'intelligenza che s'avvicina all'astuzia e alla furberia e che gli dà 
-				molti vantaggi sul prossimo anche se non molte amicizie.
-			</p>
+		<h2><b>1° NOVEMBRE</b> - dal <b>8°</b> al <b>9° [bis] <span class="sGoldenBrown">SCORPIONE</span></b> = <b>Grado di simulazione, di maschera emblematica</b></h2>
+		<p>
+			<u>Un uomo che indossa una maschera da teatro. Uomo che fa smorfie</u>.<br>
+			Doppiezza, falsità, attitudini alla commedia e diplomazia.<br>
+			<b>Carattere</b> ambiguo, caparbio, testardo, calmo, furbo, prudente. Ha capacità mentali insolite e la rara dote di sviluppare
+			l'intelligenza lungo canali intellettuali e scientifici. Abile nel nascondere i suoi pensieri sicuro di sé energico, competitivo ama
+			sfidare le convenzioni e sperimentare tutto quello che è nuovo e sconosciuto. Detesta la solitudine, cerca volentieri la compagnia di amici
+			e di persone ben disposte verso di lui. Ama il progresso, spesso è interessato alle scienze occulte e anche alla medicina. Queste doti
+			medianiche danno un'eccezionale intuito la sua abilità è una forma d'intelligenza che s'avvicina all'astuzia e alla furberia e che gli dà
+			molti vantaggi sul prossimo anche se non molte amicizie.
+		</p>
 
-			<h2><strong>2 NOVEMBRE</strong> - dal <strong>9°</strong> al <strong>10° <span class="sYellow">SCORPIONE</span></strong> = <strong>Grado d'insicurezza, di coraggio incosciente</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Una lepre seduta sopra la sua tana, dietro si leva la luna. Uomo tiene uno scorpione per la coda</u>.<br>
-				Difficoltà inaspettate, vigilanza.<br>
-				<strong>Carattere</strong> sensibile, irrequieto, nervoso, appassionato, impulsivo, sempre alla ricerca di stimoli e novità. Per questo 
-				vive una vita dinamica, costellata d'incontri e divertimenti, fa amicizia con facilità, nonostante sia libero ed indipendente, pur 
-				pretendendo molto dalle persone che gli girano intorno. Ha uno spirito temerario e imprevidente, è dotato d'intelligenza viva e acuta,
-				curiosa e desiderosa d'emozioni sempre nuove. Si dedica attivamente a problematiche sociali e umanitarie. Probabilità di successo in campo
-				artistico, letterario e scientifico. Ama la competizione, lo sport, la bellezza, la grandezza e il lusso. La sua lealtà e fedeltà gli
-				procurano molti amici e gli fanno essere spesso apprezzato e ricercato.
-			</p>
+		<h2><b>2 NOVEMBRE</b> - dal <b>9°</b> al <b>10° <span class="sGoldenBrown">SCORPIONE</span></b> = <b>Grado d'insicurezza, di coraggio incosciente</b></h2>
+		<p>
+			<u>Una lepre seduta sopra la sua tana, dietro si leva la luna. Uomo tiene uno scorpione per la coda</u>.<br>
+			Difficoltà inaspettate, vigilanza.<br>
+			<b>Carattere</b> sensibile, irrequieto, nervoso, appassionato, impulsivo, sempre alla ricerca di stimoli e novità. Per questo
+			vive una vita dinamica, costellata d'incontri e divertimenti, fa amicizia con facilità, nonostante sia libero ed indipendente, pur
+			pretendendo molto dalle persone che gli girano intorno. Ha uno spirito temerario e imprevidente, è dotato d'intelligenza viva e acuta,
+			curiosa e desiderosa d'emozioni sempre nuove. Si dedica attivamente a problematiche sociali e umanitarie. Probabilità di successo in campo
+			artistico, letterario e scientifico. Ama la competizione, lo sport, la bellezza, la grandezza e il lusso. La sua lealtà e fedeltà gli
+			procurano molti amici e gli fanno essere spesso apprezzato e ricercato.
+		</p>
 
-			<h2><strong>3 NOVEMBRE</strong> - dal <strong>10°</strong> al <strong>11° <span class="sYellow">SCORPIONE</span></strong> = <strong>Grado di difesa, di fastidi irritanti</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Una villa circondata da un bosco. Mosche intorno ad un serpente</u>.<br>
-				Sfruttamento d'amicizie utili, nemici vili e bassi. Cattivi istinti.<br>
-				<strong>Carattere</strong> metodico, prudente, preciso, affettuoso e disponibile. Il cervello è sviluppato, la sua mente è piena di risorse, 
-				di passioni segrete, spesso è difficile da capire e penetrare. Dotato di senso pratico, allegro, ottimista, sereno, generoso, protettivo. 
-				Ha un temperamento impulsivo ed estremista un'intelligenza brillante e grandi capacità d'intuizione. Sente il desiderio di occuparsi dei 
-				più bisognosi offrendo comprensione, sostegno morale e finanziario. Si eleva socialmente ama socializzare, stabilire dei rapporti di 
-				amicizia stimolanti e vivere con trasporto emotivo ed affettivo le relazioni più strette. Adora la casa e i bambini.
-			</p>
+		<h2><b>3 NOVEMBRE</b> - dal <b>10°</b> al <b>11° <span class="sGoldenBrown">SCORPIONE</span></b> = <b>Grado di difesa, di fastidi irritanti</b></h2>
+		<p>
+			<u>Una villa circondata da un bosco. Mosche intorno ad un serpente</u>.<br>
+			Sfruttamento d'amicizie utili, nemici vili e bassi. Cattivi istinti.<br>
+			<b>Carattere</b> metodico, prudente, preciso, affettuoso e disponibile. Il cervello è sviluppato, la sua mente è piena di risorse,
+			di passioni segrete, spesso è difficile da capire e penetrare. Dotato di senso pratico, allegro, ottimista, sereno, generoso, protettivo.
+			Ha un temperamento impulsivo ed estremista un'intelligenza brillante e grandi capacità d'intuizione. Sente il desiderio di occuparsi dei
+			più bisognosi offrendo comprensione, sostegno morale e finanziario. Si eleva socialmente ama socializzare, stabilire dei rapporti di
+			amicizia stimolanti e vivere con trasporto emotivo ed affettivo le relazioni più strette. Adora la casa e i bambini.
+		</p>
 
-			<h2><strong>4 NOVEMBRE</strong> - dal <strong>11°</strong> al <strong>12° <span class="sYellow">SCORPIONE</span></strong> = <strong>Grado di stabilità</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Una grande torre solitaria appollaiata su una roccia</u>.<br>
-				Posizione elevata, forza morale, potenza intellettuale, spirito impenetrabile.<br>
-				<strong>Carattere</strong> potente e indipendente, permaloso e cavilloso, magnetico e affascinante, dotato d'intelligenza acuta, sensibile 
-				e creativa, sensibile e indagatrice, anche se influenzabile. Predisposto all'irritabilità, in certi casi può diventare piuttosto 
-				intrattabile. Il successo è costruito esclusivamente dal suo lavoro senza l'aiuto di altri, è instancabile ed ha molte altre qualità che 
-				gli assicurano la riuscita, costanza, ambizione e intuito, intelligenza, previdenza, la sua forza è la strategia. È deciso e determinato, 
-				ha bisogno d'esprimere la sua personalità, caratterizzata da un notevole senso pratico e da grande fantasia! Si mostra diplomatico al 
-				momento giusto e fa tutto il possibile per rendere solide e durature le relazioni che gli interessano. Di natura emotivo e portato ad 
-				avere molti amori.
-			</p>
+		<h2><b>4 NOVEMBRE</b> - dal <b>11°</b> al <b>12° <span class="sGoldenBrown">SCORPIONE</span></b> = <b>Grado di stabilità</b></h2>
+		<p>
+			<u>Una grande torre solitaria appollaiata su una roccia</u>.<br>
+			Posizione elevata, forza morale, potenza intellettuale, spirito impenetrabile.<br>
+			<b>Carattere</b> potente e indipendente, permaloso e cavilloso, magnetico e affascinante, dotato d'intelligenza acuta, sensibile
+			e creativa, sensibile e indagatrice, anche se influenzabile. Predisposto all'irritabilità, in certi casi può diventare piuttosto
+			intrattabile. Il successo è costruito esclusivamente dal suo lavoro senza l'aiuto di altri, è instancabile ed ha molte altre qualità che
+			gli assicurano la riuscita, costanza, ambizione e intuito, intelligenza, previdenza, la sua forza è la strategia. È deciso e determinato,
+			ha bisogno d'esprimere la sua personalità, caratterizzata da un notevole senso pratico e da grande fantasia! Si mostra diplomatico al
+			momento giusto e fa tutto il possibile per rendere solide e durature le relazioni che gli interessano. Di natura emotivo e portato ad
+			avere molti amori.
+		</p>
 
-			<h2><strong>5 NOVEMBRE</strong> - dal <strong>12°</strong> al <strong>13° <span class="sYellow">SCORPIONE</span></strong> = <strong>Grado di cameratismo, d'amicizie dannose</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Uomini seduti ad un tavolo che bevono delle coppe di vino rosso</u>.<br>
-				Libertà e franchezza di spirito ma sperpero del proprio tempo e mezzi.<br>
-				<strong>Carattere</strong> semplice, franco, risoluto, dinamico, a volte un po' indiscreto. Dotato d'intelligenza vivace, curiosa e profonda
-				con grandi capacità di concentrazione oltre che di una visione tranquilla e serena della vita. La personalità magnetica, la natura 
-				indipendente sono preziose per riscuotere grandi successi nel mondo degli affari. Versatile, strategico e vincente nella professione, ha 
-				un forte intuito che consente di individuare le buone opportunità, come di trovare le risposte giuste per risolvere problemi difficili. 
-				Stabilisce intese amichevoli e sentimentali importanti e durature. Abituato a pensare molto con il cuore ne fa un buon amico, un amante 
-				affettuoso un socio onesto. Crea il suo destino con tenacia e fermezza.
-			</p>
+		<h2><b>5 NOVEMBRE</b> - dal <b>12°</b> al <b>13° <span class="sGoldenBrown">SCORPIONE</span></b> = <b>Grado di cameratismo, d'amicizie dannose</b></h2>
+		<p>
+			<u>Uomini seduti ad un tavolo che bevono delle coppe di vino rosso</u>.<br>
+			Libertà e franchezza di spirito ma sperpero del proprio tempo e mezzi.<br>
+			<b>Carattere</b> semplice, franco, risoluto, dinamico, a volte un po' indiscreto. Dotato d'intelligenza vivace, curiosa e profonda
+			con grandi capacità di concentrazione oltre che di una visione tranquilla e serena della vita. La personalità magnetica, la natura
+			indipendente sono preziose per riscuotere grandi successi nel mondo degli affari. Versatile, strategico e vincente nella professione, ha
+			un forte intuito che consente di individuare le buone opportunità, come di trovare le risposte giuste per risolvere problemi difficili.
+			Stabilisce intese amichevoli e sentimentali importanti e durature. Abituato a pensare molto con il cuore ne fa un buon amico, un amante
+			affettuoso un socio onesto. Crea il suo destino con tenacia e fermezza.
+		</p>
 
-			<h2><strong>6 NOVEMBRE</strong> - dal <strong>13°</strong> al <strong>14° <span class="sYellow">SCORPIONE</span></strong> = <strong>Grado d'indolenza, d'indifferenza riprovevole</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Una bella donna immobile accanto ad un orso addormentato sotto un albero</u>.<br>
-				Fatalismo, mancanza d'iniziativa e d'energia, passività.<br>
-				<strong>Carattere</strong> entusiasta, irrequieto, ambizioso ricettivo, affascinante, fantasioso, socievole e intraprendente. È dotato di 
-				una intelligenza sveglia e di una visione calma e serena della vita, ha maniere aperte e accattivanti e rafforzate da principi umanitari, 
-				sa rendersi caro a tutti. Forza e potere d'azione nella maturità, difficoltà a gustare e godere le cose belle della vita, temendo sempre di 
-				dover perdere tutto. Ha una grande bontà per gli animali e gli essere indifesi, non reagisce ai problemi della vita e si lascia trascinare 
-				dall'onda. Ha bisogno di stare a contatto con la gente, ama conoscere persone nuove per allargare la cerchia delle proprie amicizie, ma 
-				anche per avvicinare persone potenti in grado di sostenerlo nel lavoro. Desideri di gloria e di sogni importanti. Cerca un partner che sia 
-				forte di carattere, da tenere al suo fianco che non limiti però in nessun modo la sua personalità.
-			</p>
+		<h2><b>6 NOVEMBRE</b> - dal <b>13°</b> al <b>14° <span class="sGoldenBrown">SCORPIONE</span></b> = <b>Grado d'indolenza, d'indifferenza riprovevole</b></h2>
+		<p>
+			<u>Una bella donna immobile accanto ad un orso addormentato sotto un albero</u>.<br>
+			Fatalismo, mancanza d'iniziativa e d'energia, passività.<br>
+			<b>Carattere</b> entusiasta, irrequieto, ambizioso ricettivo, affascinante, fantasioso, socievole e intraprendente. È dotato di
+			una intelligenza sveglia e di una visione calma e serena della vita, ha maniere aperte e accattivanti e rafforzate da principi umanitari,
+			sa rendersi caro a tutti. Forza e potere d'azione nella maturità, difficoltà a gustare e godere le cose belle della vita, temendo sempre di
+			dover perdere tutto. Ha una grande bontà per gli animali e gli essere indifesi, non reagisce ai problemi della vita e si lascia trascinare
+			dall'onda. Ha bisogno di stare a contatto con la gente, ama conoscere persone nuove per allargare la cerchia delle proprie amicizie, ma
+			anche per avvicinare persone potenti in grado di sostenerlo nel lavoro. Desideri di gloria e di sogni importanti. Cerca un partner che sia
+			forte di carattere, da tenere al suo fianco che non limiti però in nessun modo la sua personalità.
+		</p>
 
-			<h2><strong>7 NOVEMBRE</strong> - dal <strong>14°</strong> al <strong>15° <span class="sYellow">SCORPIONE</span></strong> = <strong>Grado di desolazione, di mansuetudine</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Una coppa o un bicchiere da cui si sprigionano raggi di luce vermiglia</u>.<br>
-				Ruolo sociale e umanitario, lavori umili, altruismo, carità.<br>
-				<strong>Carattere</strong> costante e tenace, caritatevole e umano. Generoso, di bell'aspetto, dai modi gentili e di buon cuore. È dotato
-				d'intelligenza pratica, curiosa, in grado di assimilare una gran quantità di informazioni, intuitiva e ricca d'arguzia, la sua mente è 
-				costante e bilanciata, ha capacità e inclinazione per gli studi profondi. La tenacia, la costanza e l'entusiasmo lo potranno portare a grandi 
-				altezze nella vita. Benevolenza, bontà e grandezza d'animo fa una persona dotata e sensibile. Ha abilità musicali, oratorie e grande senso 
-				dei colori. Ama avviare progetti innovativi e approfondire la conoscenza di argomenti insoliti e affascinanti. Attira fortune e simpatie 
-				durature e influenti, grazie ai suoi modi di fare gentili, raffinati e assai accattivanti! Sebbene sia una persona ambiziosa sa comprendere 
-				e incoraggiare gli altri. Doti di acuta intuizione, preveggenza e telepatia. È disposto a tutto per le persone a lui care.
-			</p>
+		<h2><b>7 NOVEMBRE</b> - dal <b>14°</b> al <b>15° <span class="sGoldenBrown">SCORPIONE</span></b> = <b>Grado di desolazione, di mansuetudine</b></h2>
+		<p>
+			<u>Una coppa o un bicchiere da cui si sprigionano raggi di luce vermiglia</u>.<br>
+			Ruolo sociale e umanitario, lavori umili, altruismo, carità.<br>
+			<b>Carattere</b> costante e tenace, caritatevole e umano. Generoso, di bell'aspetto, dai modi gentili e di buon cuore. È dotato
+			d'intelligenza pratica, curiosa, in grado di assimilare una gran quantità di informazioni, intuitiva e ricca d'arguzia, la sua mente è
+			costante e bilanciata, ha capacità e inclinazione per gli studi profondi. La tenacia, la costanza e l'entusiasmo lo potranno portare a grandi
+			altezze nella vita. Benevolenza, bontà e grandezza d'animo fa una persona dotata e sensibile. Ha abilità musicali, oratorie e grande senso
+			dei colori. Ama avviare progetti innovativi e approfondire la conoscenza di argomenti insoliti e affascinanti. Attira fortune e simpatie
+			durature e influenti, grazie ai suoi modi di fare gentili, raffinati e assai accattivanti! Sebbene sia una persona ambiziosa sa comprendere
+			e incoraggiare gli altri. Doti di acuta intuizione, preveggenza e telepatia. È disposto a tutto per le persone a lui care.
+		</p>
 
-			<h2><strong>8 NOVEMBRE</strong> - dal <strong>15°</strong> al <strong>16° <span class="sYellow">SCORPIONE</span></strong> = <strong>Grado di abbandono, di qualità discutibili</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Un relitto di nave in riva al mare. Lupo in corsa</u>.<br>
-				Esistenza vagabonda, pericolo di conflitti famigliari e sul lavoro. Disonestà, furti.<br>
-				<strong>Carattere</strong> comprensivo, generoso, sicuro e abile, intelligente, ambizioso e coraggioso, intraprendente e ben organizzato.
-				Ricerca strane emozioni e curiosità, schivo e timido, ha spesso amicizie nascoste, sensibile alle lusinghe e all'adulazione, diventa una 
-				facile preda per gli amici o i conoscenti interessati. Comprende rapidamente le situazioni e ha la fortuna di svolgere il lavoro desiderato. 
-				Nella professione è certamente aiutato da persone dell'altro sesso. La carriera militare può portargli soddisfazioni. Ha la stoffa del 
-				perfetto leader! Quando si impegna seriamente con qualcuno è capace di vivere delle emozioni e sentimenti profondi. Si mostra attento ai 
-				problemi e alle necessità degli altri, pur essendo una persona riservata e distaccata. È molto fortunato in amore.
-			</p>
+		<h2><b>8 NOVEMBRE</b> - dal <b>15°</b> al <b>16° <span class="sGoldenBrown">SCORPIONE</span></b> = <b>Grado di abbandono, di qualità discutibili</b></h2>
+		<p>
+			<u>Un relitto di nave in riva al mare. Lupo in corsa</u>.<br>
+			Esistenza vagabonda, pericolo di conflitti famigliari e sul lavoro. Disonestà, furti.<br>
+			<b>Carattere</b> comprensivo, generoso, sicuro e abile, intelligente, ambizioso e coraggioso, intraprendente e ben organizzato.
+			Ricerca strane emozioni e curiosità, schivo e timido, ha spesso amicizie nascoste, sensibile alle lusinghe e all'adulazione, diventa una
+			facile preda per gli amici o i conoscenti interessati. Comprende rapidamente le situazioni e ha la fortuna di svolgere il lavoro desiderato.
+			Nella professione è certamente aiutato da persone dell'altro sesso. La carriera militare può portargli soddisfazioni. Ha la stoffa del
+			perfetto leader! Quando si impegna seriamente con qualcuno è capace di vivere delle emozioni e sentimenti profondi. Si mostra attento ai
+			problemi e alle necessità degli altri, pur essendo una persona riservata e distaccata. È molto fortunato in amore.
+		</p>
 
-			<h2><strong>9 NOVEMBRE</strong> - dal <strong>16°</strong> al <strong>17° <span class="sYellow">SCORPIONE</span></strong> = <strong>Grado di gelosia, di fascino pericoloso</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Donna nascosta a metà dietro una porta. Dei serpenti attorno al collo di una fanciulla</u>.<br>
-				Potenza occulta o drammatica, diffidenza.<br>
-				<strong>Carattere</strong> sospettoso, geloso, voluttuoso, incostante, sensibile, socievole, comunicativo e affascinante, pur essendo forte 
-				e determinato. È infatti dotato di forte volontà, d'intelligenza brillante e strategica, di una natura imperiosa, spericolata, ricca 
-				d'originalità, deve moderare la gran sete di potere unita a desiderio di averla sempre vinta. Ha uno spiccato senso per la giustizia ma con
-				tendenza a diventare troppo severo. Abile ma anche un po' ambiguo e superficiale. È un fervente ammiratore dell'arte, gli piace la musica. 
-				Difficile vita famigliare e amorosa, spesso soffre d'improvvisi pentimenti. Ha molti amici e ammiratori, ma non realizza legami sentimentali 
-				soddisfacenti. Precoce calvizie.
-			</p>
+		<h2><b>9 NOVEMBRE</b> - dal <b>16°</b> al <b>17° <span class="sGoldenBrown">SCORPIONE</span></b> = <b>Grado di gelosia, di fascino pericoloso</b></h2>
+		<p>
+			<u>Donna nascosta a metà dietro una porta. Dei serpenti attorno al collo di una fanciulla</u>.<br>
+			Potenza occulta o drammatica, diffidenza.<br>
+			<b>Carattere</b> sospettoso, geloso, voluttuoso, incostante, sensibile, socievole, comunicativo e affascinante, pur essendo forte
+			e determinato. È infatti dotato di forte volontà, d'intelligenza brillante e strategica, di una natura imperiosa, spericolata, ricca
+			d'originalità, deve moderare la gran sete di potere unita a desiderio di averla sempre vinta. Ha uno spiccato senso per la giustizia ma con
+			tendenza a diventare troppo severo. Abile ma anche un po' ambiguo e superficiale. È un fervente ammiratore dell'arte, gli piace la musica.
+			Difficile vita famigliare e amorosa, spesso soffre d'improvvisi pentimenti. Ha molti amici e ammiratori, ma non realizza legami sentimentali
+			soddisfacenti. Precoce calvizie.
+		</p>
 
-			<h2><strong>10 NOVEMBRE</strong> - dal <strong>17°</strong> al <strong>18° <span class="sYellow">SCORPIONE</span></strong> = <strong>Grado d'avidità, di onestà combattiva</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Un pugnale ornato di gemme. Cane che abbaia</u>.<br>
-				Vigilanza costante, spirito pronto alla difensiva, pieno di forza e di vivacità. Fedeltà.<br>
-				<strong>Carattere</strong> avido, coraggioso, irascibile e scontroso, forte e deciso. Dotato di una personalità gradevole e facoltà 
-				intuitive straordinarie, la natura fortemente emotiva può degenerare in collere incontrollabili, a meno che non si sforzi con molt a pazienza
-				e perseveranza a vincere questo aspetto del carattere. Consente d'avere la meglio sui propri interlocutori, come di pianificare e avviare 
-				progetti importanti. È molto ricettivo, essendo in grado di comprendere velocemente i bisogni e le necessità altrui. È amante dei piaceri, 
-				del lusso, della tavola è allegro e brillante perché può assecondare la sua indole epicurea. Cerca un partner che sia tenero, semplice e
-				affidabile pur essendo in apparenza freddo e scontroso. Ambizioni realizzabili.
-			</p>
+		<h2><b>10 NOVEMBRE</b> - dal <b>17°</b> al <b>18° <span class="sGoldenBrown">SCORPIONE</span></b> = <b>Grado d'avidità, di onestà combattiva</b></h2>
+		<p>
+			<u>Un pugnale ornato di gemme. Cane che abbaia</u>.<br>
+			Vigilanza costante, spirito pronto alla difensiva, pieno di forza e di vivacità. Fedeltà.<br>
+			<b>Carattere</b> avido, coraggioso, irascibile e scontroso, forte e deciso. Dotato di una personalità gradevole e facoltà
+			intuitive straordinarie, la natura fortemente emotiva può degenerare in collere incontrollabili, a meno che non si sforzi con molt a pazienza
+			e perseveranza a vincere questo aspetto del carattere. Consente d'avere la meglio sui propri interlocutori, come di pianificare e avviare
+			progetti importanti. È molto ricettivo, essendo in grado di comprendere velocemente i bisogni e le necessità altrui. È amante dei piaceri,
+			del lusso, della tavola è allegro e brillante perché può assecondare la sua indole epicurea. Cerca un partner che sia tenero, semplice e
+			affidabile pur essendo in apparenza freddo e scontroso. Ambizioni realizzabili.
+		</p>
 
-			<h2><strong>11 NOVEMBRE</strong> - dal <strong>18°</strong> al <strong>19° <span class="sYellow">SCORPIONE</span></strong> = <strong>Grado di splendore</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Uomo seduto su di un camoscio. Il sole emerge dall'oceano</u>.<br>
-				Elevazioni ed onori, cambiamenti numerosi, viaggi molteplici. Spirito lucido e sereno.<br>
-				<strong>Carattere</strong> forte, originale, equilibrato, costante, curioso e sensibile. Ha un temperamento energico e una grande abilità 
-				nell'eseguire i compiti affidati, la costanza e la decisione anche di fronte ad ostacoli in apparenza insormontabili gli serve per arrivare 
-				al successo e l'indipendenza economica. Calma, pazienza e perseveranza, sono elementi che caratterizzano i successo professionale. È dotato
-				d'intelligenza acuta e astuta. Seleziona con molta cura gli amici, i conoscenti e interessi culturali. Un importante ruolo hanno i viaggi,
-				problemi di eredità. È molto affezionato agli amici e alle persone che ama. E anche il partner lo cerca intelligente e volitivo, che abbia 
-				qualità apprezzabili!
-			</p>
+		<h2><b>11 NOVEMBRE</b> - dal <b>18°</b> al <b>19° <span class="sGoldenBrown">SCORPIONE</span></b> = <b>Grado di splendore</b></h2>
+		<p>
+			<u>Uomo seduto su di un camoscio. Il sole emerge dall'oceano</u>.<br>
+			Elevazioni ed onori, cambiamenti numerosi, viaggi molteplici. Spirito lucido e sereno.<br>
+			<b>Carattere</b> forte, originale, equilibrato, costante, curioso e sensibile. Ha un temperamento energico e una grande abilità
+			nell'eseguire i compiti affidati, la costanza e la decisione anche di fronte ad ostacoli in apparenza insormontabili gli serve per arrivare
+			al successo e l'indipendenza economica. Calma, pazienza e perseveranza, sono elementi che caratterizzano i successo professionale. È dotato
+			d'intelligenza acuta e astuta. Seleziona con molta cura gli amici, i conoscenti e interessi culturali. Un importante ruolo hanno i viaggi,
+			problemi di eredità. È molto affezionato agli amici e alle persone che ama. E anche il partner lo cerca intelligente e volitivo, che abbia
+			qualità apprezzabili!
+		</p>
 
-			<h2><strong>12 NOVEMBRE</strong> - dal <strong>19°</strong> al <strong>20° <span class="sYellow">SCORPIONE</span></strong> = <strong>Grado d'indipendenza, di autorità innata</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Un cavallo sfrenato. Un toro su un'altura batte il terreno con lo zoccolo e annusa</u>.<br>
-				Insofferenza alle costrizioni, vagabondaggio.<br>
-				<strong>Carattere</strong> libero, indipendente, socievole, gentile, idealista, generoso, comprensivo, comunicativo. È un genio cosciente
-				d'essere unico e differente dagli altri, è molto dotato mentalmente, ha qualità che lo favoriscono in ambito sociale e nelle attività a 
-				contatto col pubblico. Originale, semplice e saggio, ama molto i bambini, le persone pulite, deve superare dei grandi ostacoli per arrivare 
-				al successo. Ribelle ad ogni volontà diversa dalla propria, avversità inevitabili. Sensitivo e critico, deve guardarsi da chi gli sta molto
-				vicino, sono pericolosi anche i parenti. Ribelle ad ogni volontà diversa dalla sua, avversità inevitabili. Ha sempre una necessità innata 
-				di fare cose nuove e di avere nuovi stimoli, ma soprattutto per lui è indispensabile una libertà incondizionata. Appassionato dei cavalli,
-				della caccia, e sport. Sa farsi apprezzare dagli amici e si mostra affettuoso e leale nelle relazioni sentimentali. Ama il mare e la 
-				navigazione.
-			</p>
+		<h2><b>12 NOVEMBRE</b> - dal <b>19°</b> al <b>20° <span class="sGoldenBrown">SCORPIONE</span></b> = <b>Grado d'indipendenza, di autorità innata</b></h2>
+		<p>
+			<u>Un cavallo sfrenato. Un toro su un'altura batte il terreno con lo zoccolo e annusa</u>.<br>
+			Insofferenza alle costrizioni, vagabondaggio.<br>
+			<b>Carattere</b> libero, indipendente, socievole, gentile, idealista, generoso, comprensivo, comunicativo. È un genio cosciente
+			d'essere unico e differente dagli altri, è molto dotato mentalmente, ha qualità che lo favoriscono in ambito sociale e nelle attività a
+			contatto col pubblico. Originale, semplice e saggio, ama molto i bambini, le persone pulite, deve superare dei grandi ostacoli per arrivare
+			al successo. Ribelle ad ogni volontà diversa dalla propria, avversità inevitabili. Sensitivo e critico, deve guardarsi da chi gli sta molto
+			vicino, sono pericolosi anche i parenti. Ribelle ad ogni volontà diversa dalla sua, avversità inevitabili. Ha sempre una necessità innata
+			di fare cose nuove e di avere nuovi stimoli, ma soprattutto per lui è indispensabile una libertà incondizionata. Appassionato dei cavalli,
+			della caccia, e sport. Sa farsi apprezzare dagli amici e si mostra affettuoso e leale nelle relazioni sentimentali. Ama il mare e la
+			navigazione.
+		</p>
 
-			<h2><strong>13 NOVEMBRE</strong> - dal <strong>20°</strong> al <strong>21° <span class="sYellow">SCORPIONE</span></strong> = <strong>Grado di costrizione, di perdizione</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Torrente impetuoso. Una cascata d'acqua cade dalla roccia</u>.<br>
-				Fecondità e ricerca, vicissitudini, avventure pericolose, mancanza di serenità.<br>
-				<strong>Carattere</strong> focoso, impulsivo, agitato, equilibrato e generoso. Versatile, impegnato, ambizioso, socievole e comunicativo, 
-				con un'intelligenza pronta e ricettiva. La personalità magnetica gli conquista molte amicizie rispettate e influenti. Qualità che consente
-				d'emergere nel lavoro e negli affari, i settori più fortunati della sua esistenza. La vita sarà caratterizzata da un continuo avanzare,
-				sentirà il desiderio di fare molti e frequenti cambiamenti. È attaccato alla casa e alla famiglia, ha un grande affetto per la madre. La 
-				famiglia ed il focolare, sono tutto quello che di più bello c'è per lui nella vita. Notevole è il bisogno di affermazione professionale, 
-				aspetto che non agevola la vita privata, penalizzata dai molti impegni e dalla difficoltà a scendere a compromessi con il partner.
-			</p>
+		<h2><b>13 NOVEMBRE</b> - dal <b>20°</b> al <b>21° <span class="sGoldenBrown">SCORPIONE</span></b> = <b>Grado di costrizione, di perdizione</b></h2>
+		<p>
+			<u>Torrente impetuoso. Una cascata d'acqua cade dalla roccia</u>.<br>
+			Fecondità e ricerca, vicissitudini, avventure pericolose, mancanza di serenità.<br>
+			<b>Carattere</b> focoso, impulsivo, agitato, equilibrato e generoso. Versatile, impegnato, ambizioso, socievole e comunicativo,
+			con un'intelligenza pronta e ricettiva. La personalità magnetica gli conquista molte amicizie rispettate e influenti. Qualità che consente
+			d'emergere nel lavoro e negli affari, i settori più fortunati della sua esistenza. La vita sarà caratterizzata da un continuo avanzare,
+			sentirà il desiderio di fare molti e frequenti cambiamenti. È attaccato alla casa e alla famiglia, ha un grande affetto per la madre. La
+			famiglia ed il focolare, sono tutto quello che di più bello c'è per lui nella vita. Notevole è il bisogno di affermazione professionale,
+			aspetto che non agevola la vita privata, penalizzata dai molti impegni e dalla difficoltà a scendere a compromessi con il partner.
+		</p>
 
-			<h2><strong>14 NOVEMBRE</strong> - dal <strong>21°</strong> al <strong>22° <span class="sYellow">SCORPIONE</span></strong> = <strong>Grado di dissipazione</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Piccoli ruscelli provenienti dalla stessa fonte. Un uomo che semina contro vento</u>.<br>
-				Difficoltà da superare, dilapidazione di beni, carriera politica.<br>
-				<strong>Carattere</strong> orgoglioso, dignitoso, ponderato, riflessivo, creativo e originale. Ha un temperamento serio e indipendente, è 
-				ambizioso, dotato di capacità pratiche e intellettuali. Il suo più vivo desiderio è di poter aiutare chi si trova in difficoltà. Ha talento 
-				e fortuna nella professione e nel lavoro, ma deve badare a non perdersi in progetti vani e inutili che possono portarlo a dispersioni di 
-				forze vitali ed energie intellettuali. Dandosi da fare, può arrivare al successo anche se in ritardo. Oltre a questo è ricettivo, un buon 
-				osservatore, attento e meticoloso nel lavoro, è disposto a lavorare sodo e compiere sforzi se necessario per raggiungere gli obiettivi 
-				desiderati! È insicuro e diffidente negli affetti, forse perché ha difficoltà a manifestare i suoi veri sentimenti.
-			</p>
+		<h2><b>14 NOVEMBRE</b> - dal <b>21°</b> al <b>22° <span class="sGoldenBrown">SCORPIONE</span></b> = <b>Grado di dissipazione</b></h2>
+		<p>
+			<u>Piccoli ruscelli provenienti dalla stessa fonte. Un uomo che semina contro vento</u>.<br>
+			Difficoltà da superare, dilapidazione di beni, carriera politica.<br>
+			<b>Carattere</b> orgoglioso, dignitoso, ponderato, riflessivo, creativo e originale. Ha un temperamento serio e indipendente, è
+			ambizioso, dotato di capacità pratiche e intellettuali. Il suo più vivo desiderio è di poter aiutare chi si trova in difficoltà. Ha talento
+			e fortuna nella professione e nel lavoro, ma deve badare a non perdersi in progetti vani e inutili che possono portarlo a dispersioni di
+			forze vitali ed energie intellettuali. Dandosi da fare, può arrivare al successo anche se in ritardo. Oltre a questo è ricettivo, un buon
+			osservatore, attento e meticoloso nel lavoro, è disposto a lavorare sodo e compiere sforzi se necessario per raggiungere gli obiettivi
+			desiderati! È insicuro e diffidente negli affetti, forse perché ha difficoltà a manifestare i suoi veri sentimenti.
+		</p>
 
-			<h2><strong>15 NOVEMBRE</strong> - dal <strong>22°</strong> al <strong>23° <span class="sYellow">SCORPIONE</span></strong> = <strong>Grado d'utilità, d'abnegazione</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Un uomo raccoglie legna nel bosco. Donna con un fuso</u>.<br>
-				Laboriosità, spirito lavoratore, onesto, disinteresse materiale, modestia, amore della casa.<br>
-				<strong>Carattere</strong> irascibile, impetuoso, abile, costruttivo, modesto, laborioso, creativo, misurato e coraggioso è anche socievole 
-				e attraente: queste qualità gli consentono di mettersi in vista nel sociale e di allacciare amicizie utili e importanti per la scalata al 
-				successo. Per il temperamento geniale ed estroverso, ha una vasta popolarità negli ambienti mondani, grazie al grande fascino unito alle 
-				doti di abile conversatore. La natura emotiva è facilmente controllabile le qualità artistiche e la personalità magnetica lo dispongono a 
-				grandi successi nella professione. Ha tra i vari amici dei medici famosi. Ama socializzare, conversare e intrattenere gli altri, pur avendo 
-				bisogno di molto affetto e di attenzioni. Un lavoro stabile e la sicurezza finanziaria vengono prima di tutto nei rapporti affettivi!
-			</p>
+		<h2><b>15 NOVEMBRE</b> - dal <b>22°</b> al <b>23° <span class="sGoldenBrown">SCORPIONE</span></b> = <b>Grado d'utilità, d'abnegazione</b></h2>
+		<p>
+			<u>Un uomo raccoglie legna nel bosco. Donna con un fuso</u>.<br>
+			Laboriosità, spirito lavoratore, onesto, disinteresse materiale, modestia, amore della casa.<br>
+			<b>Carattere</b> irascibile, impetuoso, abile, costruttivo, modesto, laborioso, creativo, misurato e coraggioso è anche socievole
+			e attraente: queste qualità gli consentono di mettersi in vista nel sociale e di allacciare amicizie utili e importanti per la scalata al
+			successo. Per il temperamento geniale ed estroverso, ha una vasta popolarità negli ambienti mondani, grazie al grande fascino unito alle
+			doti di abile conversatore. La natura emotiva è facilmente controllabile le qualità artistiche e la personalità magnetica lo dispongono a
+			grandi successi nella professione. Ha tra i vari amici dei medici famosi. Ama socializzare, conversare e intrattenere gli altri, pur avendo
+			bisogno di molto affetto e di attenzioni. Un lavoro stabile e la sicurezza finanziaria vengono prima di tutto nei rapporti affettivi!
+		</p>
 
-			<h2><strong>16 NOVEMBRE</strong> - dal <strong>23°</strong> al <strong>24° <span class="sYellow">SCORPIONE</span></strong> = <strong>Grado di cattura, di furto</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Un Lupo che sbrana un'oca. Un lupo vicino ad un cavallo morto</u>.<br>
-				Errori che si pagano caramente, lotte per la sopravvivenza, beni male acquistati.<br>
-				<strong>Carattere</strong> emotivo, idealista, sognatore, romantico. intuitivo, comprensivo. Dotato d'intelligenza pronta e penetrante, e di
-				un temperamento romantico che lo rende troppo sognatore e idealista. Nella sua vita incontrerà delle grandi lotte, si presenteranno spesso 
-				dei gravi problemi, passerà anche momenti difficili, ma alla fine trionferà. Ha una mentalità astuta e avida, uno spirito taciturno con alti 
-				e bassi, l'equilibrio è raggiunto con molta fatica. È ammiratore dell'eleganza sobria e della civiltà nordica. Nelle relazioni sentimentali 
-				la sua sicurezza economica rappresenta un fattore rilevante. Pur non essendo fortunato nel settore finanziario, predilige la frequentazione
-				di persone facoltose e famose. Per una vita felice a due il matrimonio richiede abnegazione.
-			</p>
+		<h2><b>16 NOVEMBRE</b> - dal <b>23°</b> al <b>24° <span class="sGoldenBrown">SCORPIONE</span></b> = <b>Grado di cattura, di furto</b></h2>
+		<p>
+			<u>Un Lupo che sbrana un'oca. Un lupo vicino ad un cavallo morto</u>.<br>
+			Errori che si pagano caramente, lotte per la sopravvivenza, beni male acquistati.<br>
+			<b>Carattere</b> emotivo, idealista, sognatore, romantico. intuitivo, comprensivo. Dotato d'intelligenza pronta e penetrante, e di
+			un temperamento romantico che lo rende troppo sognatore e idealista. Nella sua vita incontrerà delle grandi lotte, si presenteranno spesso
+			dei gravi problemi, passerà anche momenti difficili, ma alla fine trionferà. Ha una mentalità astuta e avida, uno spirito taciturno con alti
+			e bassi, l'equilibrio è raggiunto con molta fatica. È ammiratore dell'eleganza sobria e della civiltà nordica. Nelle relazioni sentimentali
+			la sua sicurezza economica rappresenta un fattore rilevante. Pur non essendo fortunato nel settore finanziario, predilige la frequentazione
+			di persone facoltose e famose. Per una vita felice a due il matrimonio richiede abnegazione.
+		</p>
 
-			<h2><strong>17 NOVEMBRE</strong> - dal <strong>24°</strong> al <strong>25° <span class="sYellow">SCORPIONE</span></strong> = <strong>Grado di sacrificio, d'abilità persuasiva</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Un uomo che corre con una gran bisaccia. Un uomo nuota sul mare deserto</u>.<br>
-				Arte d'arrangiarsi, ostacoli e lotte superate con coraggio.<br>
-				<strong>Carattere</strong> risoluto, coraggioso e forte, indipendente, espansivo, perfezionista e diplomatico, è dotato di una intelligenza
-				intuitiva e versatile, di comunicativa brillante e sciolta. Può essere un fondatore di qualche nuova idea del mondo ma una delle sue qualità
-				più notevoli sono l'inventiva e il coraggio. La personalità è gradevole e lo spiccato senso dell'umorismo attira intorno a lui molti amici.
-				Possibilità nell'arte e nella musica. È portato a controllare o ad organizzare il lavoro degli altri. Conosce molto bene la natura umana ed 
-				è capace di valorizzare al meglio le proprie capacità. Un atteggiamento da adolescenziale caratterizza, invece i suoi rapporti sentimentali:
-				un aspetto che lo induce a non prendere troppo sul serio l'amore e la vita di coppia!
-			</p>
+		<h2><b>17 NOVEMBRE</b> - dal <b>24°</b> al <b>25° <span class="sGoldenBrown">SCORPIONE</span></b> = <b>Grado di sacrificio, d'abilità persuasiva</b></h2>
+		<p>
+			<u>Un uomo che corre con una gran bisaccia. Un uomo nuota sul mare deserto</u>.<br>
+			Arte d'arrangiarsi, ostacoli e lotte superate con coraggio.<br>
+			<b>Carattere</b> risoluto, coraggioso e forte, indipendente, espansivo, perfezionista e diplomatico, è dotato di una intelligenza
+			intuitiva e versatile, di comunicativa brillante e sciolta. Può essere un fondatore di qualche nuova idea del mondo ma una delle sue qualità
+			più notevoli sono l'inventiva e il coraggio. La personalità è gradevole e lo spiccato senso dell'umorismo attira intorno a lui molti amici.
+			Possibilità nell'arte e nella musica. È portato a controllare o ad organizzare il lavoro degli altri. Conosce molto bene la natura umana ed
+			è capace di valorizzare al meglio le proprie capacità. Un atteggiamento da adolescenziale caratterizza, invece i suoi rapporti sentimentali:
+			un aspetto che lo induce a non prendere troppo sul serio l'amore e la vita di coppia!
+		</p>
 
-			<h2><strong>18 NOVEMBRE</strong> - dal <strong>25°</strong> al <strong>26° <span class="sYellow">SCORPIONE</span></strong> = <strong>Grado di fascino personale</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Due amici. Un guerriero arringa una folla di soldati armati</u>.<br>
-				Oratoria, capace di raccogliere attorno a sé dei seguaci.<br>
-				<strong>Carattere</strong> simpatico, possente, geniale, socievole e persuasivo, intuitivo, profondo e sincero. È dotato di entusiasmo e di
-				una straordinaria vivacità mentale. Una natura energica, piena di risorse, affabile, cordiale, attraente, filosofo e dialettico, adatto per 
-				le pubbliche relazioni. La vita spesso gli porterà colpi di fortuna, molti avranno successo nella vita, soprattutto in campo legale,
-				giornalistico e industriale. Sarà molto felice e farà felice gli altri. È un eccellente conoscitore della natura umana, oltre ad essere un
-				ottimo stratega è ben organizzato e non si lascia sfuggire nessun dettaglio. Riscuote, consensi sia in campo sociale che professionale. 
-				Si mostra leale con il partner, verso il quale è disposto a compiere sacrifici.
-			</p>
+		<h2><b>18 NOVEMBRE</b> - dal <b>25°</b> al <b>26° <span class="sGoldenBrown">SCORPIONE</span></b> = <b>Grado di fascino personale</b></h2>
+		<p>
+			<u>Due amici. Un guerriero arringa una folla di soldati armati</u>.<br>
+			Oratoria, capace di raccogliere attorno a sé dei seguaci.<br>
+			<b>Carattere</b> simpatico, possente, geniale, socievole e persuasivo, intuitivo, profondo e sincero. È dotato di entusiasmo e di
+			una straordinaria vivacità mentale. Una natura energica, piena di risorse, affabile, cordiale, attraente, filosofo e dialettico, adatto per
+			le pubbliche relazioni. La vita spesso gli porterà colpi di fortuna, molti avranno successo nella vita, soprattutto in campo legale,
+			giornalistico e industriale. Sarà molto felice e farà felice gli altri. È un eccellente conoscitore della natura umana, oltre ad essere un
+			ottimo stratega è ben organizzato e non si lascia sfuggire nessun dettaglio. Riscuote, consensi sia in campo sociale che professionale.
+			Si mostra leale con il partner, verso il quale è disposto a compiere sacrifici.
+		</p>
 
-			<h2><strong>19 NOVEMBRE</strong> - dal <strong>26°</strong> al <strong>27° <span class="sYellow">SCORPIONE</span></strong> = <strong>Grado di sicurezza morale</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Un tempio. Una croce infissa su un'alta roccia</u>.<br>
-				Disposizioni religiose e spirituali, idealismo, alti ideali, riservatezza. Ricerca filosofica, fede.<br>
-				<strong>Carattere</strong> luminoso, calmo ed equilibrato, leale, ambizioso e dinamico, che gli permette di circondarsi di gente allegra, 
-				collaboratori competenti, persone utili e influenti. Dotato d'intelligenza brillante, originale e intraprendente, ha grande forza 
-				d'immaginazione e di convinzione un temperamento gioviale e sereno. Nella vita privata e negli affari è scrupoloso, onesto e serio ed il 
-				successo spesso viene dalla sua parte. Spirito sottile e fantasioso, sempre alla ricerca dell'equilibrio e della logica. Grazie all'abilità 
-				e al potere di persuasione che lo caratterizza, riesce a raggiungere dei traguardi prestigiosi nell'attività professionale. Gli piace 
-				attirare l'attenzione degli altri e stabilire buoni rapporti di amicizia, ma non sopporta i legami affettivi opprimenti e duraturi. 
-				Vita predestinata, s'accontenta di poco.
-			</p>
+		<h2><b>19 NOVEMBRE</b> - dal <b>26°</b> al <b>27° <span class="sGoldenBrown">SCORPIONE</span></b> = <b>Grado di sicurezza morale</b></h2>
+		<p>
+			<u>Un tempio. Una croce infissa su un'alta roccia</u>.<br>
+			Disposizioni religiose e spirituali, idealismo, alti ideali, riservatezza. Ricerca filosofica, fede.<br>
+			<b>Carattere</b> luminoso, calmo ed equilibrato, leale, ambizioso e dinamico, che gli permette di circondarsi di gente allegra,
+			collaboratori competenti, persone utili e influenti. Dotato d'intelligenza brillante, originale e intraprendente, ha grande forza
+			d'immaginazione e di convinzione un temperamento gioviale e sereno. Nella vita privata e negli affari è scrupoloso, onesto e serio ed il
+			successo spesso viene dalla sua parte. Spirito sottile e fantasioso, sempre alla ricerca dell'equilibrio e della logica. Grazie all'abilità
+			e al potere di persuasione che lo caratterizza, riesce a raggiungere dei traguardi prestigiosi nell'attività professionale. Gli piace
+			attirare l'attenzione degli altri e stabilire buoni rapporti di amicizia, ma non sopporta i legami affettivi opprimenti e duraturi.
+			Vita predestinata, s'accontenta di poco.
+		</p>
 
-			<h2><strong>20 NOVEMBRE</strong> - dal <strong>27°</strong> al <strong>28° <span class="sYellow">SCORPIONE</span></strong> = <strong>Grado di talento, d'illuminazione</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Uomo seduto ad un tavolo con la penna in mano davanti ad uno scrittoio</u>.<br>
-				Studi profondi, grande scienza, elevazione morale e materiale.<br>
-				<strong>Carattere</strong> comprensivo, poliedrico, raffinato, curioso e creativo, sensibile, affascinante e magnetico, dotato di spirito 
-				di inventiva, oltre che di una spiccata originalità di idee. È intelligente, idealista e battagliero, riscuote spesso consensi nel settore 
-				scientifico o letterario. È uno studioso con attitudini alle scienze e alle arti. Fortuna per il suo talento letterario o scientifico. Alte 
-				cariche e successo. Può avere una buona posizione se sarà aiutato da amici sinceri. Ama la natura, l'aria aperta, i boschi e lo sport. 
-				Essendo disposto ad impegnarsi per la buona riuscita delle sue relazioni sentimentali è un partner leale e sincero. In amore è forte e 
-				appassionato.
-			</p>
+		<h2><b>20 NOVEMBRE</b> - dal <b>27°</b> al <b>28° <span class="sGoldenBrown">SCORPIONE</span></b> = <b>Grado di talento, d'illuminazione</b></h2>
+		<p>
+			<u>Uomo seduto ad un tavolo con la penna in mano davanti ad uno scrittoio</u>.<br>
+			Studi profondi, grande scienza, elevazione morale e materiale.<br>
+			<b>Carattere</b> comprensivo, poliedrico, raffinato, curioso e creativo, sensibile, affascinante e magnetico, dotato di spirito
+			di inventiva, oltre che di una spiccata originalità di idee. È intelligente, idealista e battagliero, riscuote spesso consensi nel settore
+			scientifico o letterario. È uno studioso con attitudini alle scienze e alle arti. Fortuna per il suo talento letterario o scientifico. Alte
+			cariche e successo. Può avere una buona posizione se sarà aiutato da amici sinceri. Ama la natura, l'aria aperta, i boschi e lo sport.
+			Essendo disposto ad impegnarsi per la buona riuscita delle sue relazioni sentimentali è un partner leale e sincero. In amore è forte e
+			appassionato.
+		</p>
 
-			<h2><strong>21 NOVEMBRE</strong> - dal <strong>28°</strong> al <strong>29° <span class="sYellow">SCORPIONE</span></strong> = <strong>Grado d'iniziazione, d'attrazione</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Una donna elegante gioca con una bacchetta attorno alla quale è arrotolato un serpente</u>.<br>
-				Eloquenza, scaltrezza, arti magiche, divinazione.<br>
-				<strong>Carattere</strong> riflessivo, astuto, allegro, affettuoso, ed eloquente. Ha una natura armoniosa e prudente, saggio, intelligente 
-				e il dono della facilità di parola lo rende molto convincente e simpatico come amico, ma un pò pericoloso come nemico. Dotato di un 
-				temperamento emotivo e forte, aperto, oltre a essere intuitivo, fantasioso e raffinato si aggiunge sensualità e generosità, bontà d'animo 
-				e il desiderio di aiutare gli altri. Ha fascino e potere d'attrazione procurano un ascendente sugli altri. Non essendo egoista, è combattivo
-				e perciò la vita militare l'attira molto. Adatto ad alti incarichi. Si dimostra paziente e strategico nel lavoro, tenace e responsabile 
-				nelle relazioni affettive dove non affiorano cedimenti e tanto meno abbandoni da parte sua.
-			</p>
+		<h2><b>21 NOVEMBRE</b> - dal <b>28°</b> al <b>29° <span class="sGoldenBrown">SCORPIONE</span></b> = <b>Grado d'iniziazione, d'attrazione</b></h2>
+		<p>
+			<u>Una donna elegante gioca con una bacchetta attorno alla quale è arrotolato un serpente</u>.<br>
+			Eloquenza, scaltrezza, arti magiche, divinazione.<br>
+			<b>Carattere</b> riflessivo, astuto, allegro, affettuoso, ed eloquente. Ha una natura armoniosa e prudente, saggio, intelligente
+			e il dono della facilità di parola lo rende molto convincente e simpatico come amico, ma un pò pericoloso come nemico. Dotato di un
+			temperamento emotivo e forte, aperto, oltre a essere intuitivo, fantasioso e raffinato si aggiunge sensualità e generosità, bontà d'animo
+			e il desiderio di aiutare gli altri. Ha fascino e potere d'attrazione procurano un ascendente sugli altri. Non essendo egoista, è combattivo
+			e perciò la vita militare l'attira molto. Adatto ad alti incarichi. Si dimostra paziente e strategico nel lavoro, tenace e responsabile
+			nelle relazioni affettive dove non affiorano cedimenti e tanto meno abbandoni da parte sua.
+		</p>
 
-			<h2><strong>22 NOVEMBRE</strong> - dal <strong>29°</strong> al <strong>30° <span class="sYellow">SCORPIONE</span></strong> = <strong>Grado di privazione, d'infantilismo</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Un uomo sdraiato su un mucchio di pietre al bordo della strada. Tre uomini senza testa</u>.<br>
-				Cattive compagnie, progetti sterili, libertà di spirito.<br>
-				<strong>Carattere</strong> abile, accorto, intuitivo, diplomatico. Ha una intelligenza pronta e acuta che, abbinata al suo grande intuito 
-				e spirito d'osservazione potrà farne un eccellente detective. Dotato di una natura intuitiva, telepatica e preveggente, ama natura, la 
-				libertà, la cultura, la ricercatezza, la vita mondana e il lusso è decisamente perspicace. La sua continua sete di conoscenza gli è preziosa
-				per ottenere successo in modo particolare nella carriera commerciale o scientifica, c'è in lui una straordinaria propensione per la filosofia
-				e la ricerca. Ha un senso di responsabilità in campo professionale, ama molto viaggiare e mostra interesse per la scienza, la politica e la
-				filosofia. È zelante e fortunato prova emozioni forti e intensi desideri, pur essendo una persona libera ed indipendente. Difficoltà nelle
-				questioni sentimentali.
-			</p>
+		<h2><b>22 NOVEMBRE</b> - dal <b>29°</b> al <b>30° <span class="sGoldenBrown">SCORPIONE</span></b> = <b>Grado di privazione, d'infantilismo</b></h2>
+		<p>
+			<u>Un uomo sdraiato su un mucchio di pietre al bordo della strada. Tre uomini senza testa</u>.<br>
+			Cattive compagnie, progetti sterili, libertà di spirito.<br>
+			<b>Carattere</b> abile, accorto, intuitivo, diplomatico. Ha una intelligenza pronta e acuta che, abbinata al suo grande intuito
+			e spirito d'osservazione potrà farne un eccellente detective. Dotato di una natura intuitiva, telepatica e preveggente, ama natura, la
+			libertà, la cultura, la ricercatezza, la vita mondana e il lusso è decisamente perspicace. La sua continua sete di conoscenza gli è preziosa
+			per ottenere successo in modo particolare nella carriera commerciale o scientifica, c'è in lui una straordinaria propensione per la filosofia
+			e la ricerca. Ha un senso di responsabilità in campo professionale, ama molto viaggiare e mostra interesse per la scienza, la politica e la
+			filosofia. È zelante e fortunato prova emozioni forti e intensi desideri, pur essendo una persona libera ed indipendente. Difficoltà nelle
+			questioni sentimentali.
+		</p>
 
-			<p class="sCenter">
-				<img src="GOLDLINE3.gif" width="350" height="35">&nbsp;&nbsp;&nbsp;
-				<img src="GOLDLINE3.gif" width="350" height="35">
-			</p>
+		<p class="sCenter">
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">
+		</p>
 
-			<h2><strong>23 NOVEMBRE</strong> - dal <strong>0°</strong> al <strong>1° <span class="sRed">SAGITTARIO</span></strong> = <strong>Grado di ferite, di lotta obbligata</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Un uomo in piedi regge una spada. Uomo che lancia pietre con una fionda</u>.<br>
-				Spirito marziale, pericolo di ferite per mano d'uomo, autodifesa.<br>
-				<strong>Carattere</strong> aggressivo, eccentrico, polemico, litigioso, è versatile e individualista. È un visionario dotato di senso pratico
-				e riesce a tradurre le idee in realtà. Si sente molto attratto verso l'avventura e preferisce una vita romantica e artistica. La sua forza 
-				di volontà è forte e spesso riesce in ciò che aspira. Successo nel lavoro, potrà fare fortuna lavorando per gli altri. Impiego pubblico o 
-				statale. La sua notevole apertura mentale gli consente di raggiungere dei prestigiosi traguardi, in campo sociale e professionale. Ama i 
-				viaggi, la natura e gli alti ideali, mostra interesse per la filosofia e le religioni. È un buon intrattenitore, ha molti amici e conoscenze:
-				sa avvicinare persone influenti nel lavoro e attirare l'attenzione di chi gli interessa negli affetti.
-			</p>
+		<h2><b>23 NOVEMBRE</b> - dal <b>0°</b> al <b>1° <span class="sRed">SAGITTARIO</span></b> = <b>Grado di ferite, di lotta obbligata</b></h2>
+		<p>
+			<u>Un uomo in piedi regge una spada. Uomo che lancia pietre con una fionda</u>.<br>
+			Spirito marziale, pericolo di ferite per mano d'uomo, autodifesa.<br>
+			<b>Carattere</b> aggressivo, eccentrico, polemico, litigioso, è versatile e individualista. È un visionario dotato di senso pratico
+			e riesce a tradurre le idee in realtà. Si sente molto attratto verso l'avventura e preferisce una vita romantica e artistica. La sua forza
+			di volontà è forte e spesso riesce in ciò che aspira. Successo nel lavoro, potrà fare fortuna lavorando per gli altri. Impiego pubblico o
+			statale. La sua notevole apertura mentale gli consente di raggiungere dei prestigiosi traguardi, in campo sociale e professionale. Ama i
+			viaggi, la natura e gli alti ideali, mostra interesse per la filosofia e le religioni. È un buon intrattenitore, ha molti amici e conoscenze:
+			sa avvicinare persone influenti nel lavoro e attirare l'attenzione di chi gli interessa negli affetti.
+		</p>
 
-			<h2><strong>24 NOVEMBRE</strong> - dal <strong>1°</strong> al <strong>2° <span class="sRed">SAGITTARIO</span></strong> = <strong>Grado di simpatia, di vistosa superiorità</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>La Dea della Misericordia. Un uomo assiso su un ariete</u>.<br>
-				Potenza creatrice, orgoglio, temerarietà, trionfo finale, ostinazione pericolosa.<br>
-				<strong>Carattere</strong> buono, versatile, pratico, sensibile, romantico, generoso, socievole, intraprendente e pieno di vita. Una natura 
-				umana, pietosa, caritatevole, la mentalità è entusiasta, aperta, è il paladino degli umili e degli oppressi. È artistico, può rivelare 
-				insospettate doti letterarie, qualità medianiche con probabilità di successo in uno o più di tali campi. Ha un gran talento per scrivere,
-				sensibilità poetica, accuratezza e precisione. Affascinante e onesto per natura, mostra interesse per chi lo circonda e abilità nel 
-				raggiungere risultati appaganti in campo intellettuale e creativo. Cerca stabilità e sicurezza negli affetti, perciò tende a legarsi a 
-				persone pratiche e decise, dotate di forte volontà. Ama molto la casa e la famiglia.
-			</p>
+		<h2><b>24 NOVEMBRE</b> - dal <b>1°</b> al <b>2° <span class="sRed">SAGITTARIO</span></b> = <b>Grado di simpatia, di vistosa superiorità</b></h2>
+		<p>
+			<u>La Dea della Misericordia. Un uomo assiso su un ariete</u>.<br>
+			Potenza creatrice, orgoglio, temerarietà, trionfo finale, ostinazione pericolosa.<br>
+			<b>Carattere</b> buono, versatile, pratico, sensibile, romantico, generoso, socievole, intraprendente e pieno di vita. Una natura
+			umana, pietosa, caritatevole, la mentalità è entusiasta, aperta, è il paladino degli umili e degli oppressi. È artistico, può rivelare
+			insospettate doti letterarie, qualità medianiche con probabilità di successo in uno o più di tali campi. Ha un gran talento per scrivere,
+			sensibilità poetica, accuratezza e precisione. Affascinante e onesto per natura, mostra interesse per chi lo circonda e abilità nel
+			raggiungere risultati appaganti in campo intellettuale e creativo. Cerca stabilità e sicurezza negli affetti, perciò tende a legarsi a
+			persone pratiche e decise, dotate di forte volontà. Ama molto la casa e la famiglia.
+		</p>
 
-			<h2><strong>25 NOVEMBRE</strong> - dal <strong>2°</strong> al <strong>3° <span class="sRed">SAGITTARIO</span></strong> = <strong>Grado d'orizzonti ristretti, di prudenza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Un soldato con una balestra in pugno dietro il vano di una finestra</u>.<br>
-				Preveggenza, diffidenza, riserbo nella vita sociale, gusto delle armi.<br>
-				<strong>Carattere</strong> bellicoso, aggressivo e coraggioso, scrupoloso, costante e raffinato. Leale e onesto all'infinito, per questo 
-				si impegna in ogni cosa che fa, prendendo tutto tremendamente sul serio! Un temperamento affettuoso ed espansivo, un senso acuto della 
-				giustizia. Ma è un po' nervoso, irrequieto e mai completamente soddisfatto. È molto prudente tranne che nell'amore dove è soggetto a 
-				delusioni a causa della sua passionalità. Non è fortunato nel matrimonio. Ha possibilità di successo nel settore elettronico. Pericolo 
-				vicino all'acqua in mare o sui fiumi. Pur essendo volubile negli affetti e nelle relazioni, riesce a stabilire intese interessanti in 
-				campo sociale e professionale. Si aggiorna di continuo e non si lascia mai sfuggire nessuna opportunità! La salute ha sempre bisogno di 
-				essere sorvegliata.
-			</p>
+		<h2><b>25 NOVEMBRE</b> - dal <b>2°</b> al <b>3° <span class="sRed">SAGITTARIO</span></b> = <b>Grado d'orizzonti ristretti, di prudenza</b></h2>
+		<p>
+			<u>Un soldato con una balestra in pugno dietro il vano di una finestra</u>.<br>
+			Preveggenza, diffidenza, riserbo nella vita sociale, gusto delle armi.<br>
+			<b>Carattere</b> bellicoso, aggressivo e coraggioso, scrupoloso, costante e raffinato. Leale e onesto all'infinito, per questo
+			si impegna in ogni cosa che fa, prendendo tutto tremendamente sul serio! Un temperamento affettuoso ed espansivo, un senso acuto della
+			giustizia. Ma è un po' nervoso, irrequieto e mai completamente soddisfatto. È molto prudente tranne che nell'amore dove è soggetto a
+			delusioni a causa della sua passionalità. Non è fortunato nel matrimonio. Ha possibilità di successo nel settore elettronico. Pericolo
+			vicino all'acqua in mare o sui fiumi. Pur essendo volubile negli affetti e nelle relazioni, riesce a stabilire intese interessanti in
+			campo sociale e professionale. Si aggiorna di continuo e non si lascia mai sfuggire nessuna opportunità! La salute ha sempre bisogno di
+			essere sorvegliata.
+		</p>
 
-			<h2><strong>26 NOVEMBRE</strong> - dal <strong>3°</strong> al <strong>4° <span class="sRed">SAGITTARIO</span></strong> = <strong>Grado di pena, d'indecisione dolorosa</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Donna che porta una culla in spalla. Un uomo di mezza età veglia su una culla</u>.<br>
-				Minaccia di dispiaceri e di separazioni, senso paterno.<br>
-				<strong>Carattere</strong> emotivo e fragile, originale, interessante, intuitivo e affascinante. È pronto e svelto ama l'arte e il suo 
-				gusto è estetico e raffinato. Abilità creativa, ispirazione artistica e illuminazioni quasi profetiche. La sua vita non sarà facile, ma 
-				alla fine trionferà sempre. Pericolo di vedovanza, solitudine, incontrerà e amerà una straniera. Sicurezza, determinazione e prudenza gli
-				assicurano successo. Dotato di capacità organizzative e di controllare gli altri. Idealista all'eccesso e sicuro di sé, è in grado di 
-				risolvere qualsiasi ostacolo e problema. La personalità che lo caratterizza, comunque, pur essendo un entusiasta e ottimista, nasconde 
-				qualche venatura di insicurezza e di pessimismo. Amante com'è della libertà, tende a rimandare ogni impegno e ogni decisione affettiva.
-			</p>
+		<h2><b>26 NOVEMBRE</b> - dal <b>3°</b> al <b>4° <span class="sRed">SAGITTARIO</span></b> = <b>Grado di pena, d'indecisione dolorosa</b></h2>
+		<p>
+			<u>Donna che porta una culla in spalla. Un uomo di mezza età veglia su una culla</u>.<br>
+			Minaccia di dispiaceri e di separazioni, senso paterno.<br>
+			<b>Carattere</b> emotivo e fragile, originale, interessante, intuitivo e affascinante. È pronto e svelto ama l'arte e il suo
+			gusto è estetico e raffinato. Abilità creativa, ispirazione artistica e illuminazioni quasi profetiche. La sua vita non sarà facile, ma
+			alla fine trionferà sempre. Pericolo di vedovanza, solitudine, incontrerà e amerà una straniera. Sicurezza, determinazione e prudenza gli
+			assicurano successo. Dotato di capacità organizzative e di controllare gli altri. Idealista all'eccesso e sicuro di sé, è in grado di
+			risolvere qualsiasi ostacolo e problema. La personalità che lo caratterizza, comunque, pur essendo un entusiasta e ottimista, nasconde
+			qualche venatura di insicurezza e di pessimismo. Amante com'è della libertà, tende a rimandare ogni impegno e ogni decisione affettiva.
+		</p>
 
-			<h2><strong>27 NOVEMBRE</strong> - dal <strong>4°</strong> al <strong>5° <span class="sRed">SAGITTARIO</span></strong> = <strong>Grado di servizio, di sapere inutile</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>La ruota di un mulino spinta dal vento. Bue con tre corna legato ad un mulino</u>.<br>
-				Destino che ostacola le proprie capacità, influenzabilità.<br>
-				<strong>Carattere</strong> ambizioso, pratico, dolce e simpatico. Dinamico e immediato, sensibile, intuitivo e incline a vivere delle forti 
-				emozioni. Spirito utilitario, laborioso e inventivo, tende a dominare le situazioni negative con il senso pratico. Ha modi suadenti e riesce
-				ad influenzare gli altri, grandi capacità che però restano inutilizzate. Facilità verbale ed eloquenza, ha buone possibilità d'ottenere 
-				riconoscimenti pubblici. Soggetto a fortune alterne nel corso della sua esistenza, tanto che gioie e dolori s'avvicenderanno. I viaggi e 
-				lo sport costituiscono le sue attività preferite. Possiede un notevole potenziale creativo e affettivo: gli consente di farsi notare in 
-				campo sociale e di accattivarsi la simpatia altrui! Ha un modo di fare elegante e raffinato, si mostra molto devoto e servizievole con il
-				partner. Dotato di grandi attrattive sessuali.
-			</p>
+		<h2><b>27 NOVEMBRE</b> - dal <b>4°</b> al <b>5° <span class="sRed">SAGITTARIO</span></b> = <b>Grado di servizio, di sapere inutile</b></h2>
+		<p>
+			<u>La ruota di un mulino spinta dal vento. Bue con tre corna legato ad un mulino</u>.<br>
+			Destino che ostacola le proprie capacità, influenzabilità.<br>
+			<b>Carattere</b> ambizioso, pratico, dolce e simpatico. Dinamico e immediato, sensibile, intuitivo e incline a vivere delle forti
+			emozioni. Spirito utilitario, laborioso e inventivo, tende a dominare le situazioni negative con il senso pratico. Ha modi suadenti e riesce
+			ad influenzare gli altri, grandi capacità che però restano inutilizzate. Facilità verbale ed eloquenza, ha buone possibilità d'ottenere
+			riconoscimenti pubblici. Soggetto a fortune alterne nel corso della sua esistenza, tanto che gioie e dolori s'avvicenderanno. I viaggi e
+			lo sport costituiscono le sue attività preferite. Possiede un notevole potenziale creativo e affettivo: gli consente di farsi notare in
+			campo sociale e di accattivarsi la simpatia altrui! Ha un modo di fare elegante e raffinato, si mostra molto devoto e servizievole con il
+			partner. Dotato di grandi attrattive sessuali.
+		</p>
 
-			<h2><strong>28 NOVEMBRE</strong> - dal <strong>5°</strong> al <strong>6° <span class="sRed">SAGITTARIO</span></strong> = <strong>Grado di placidità</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Un gruppo d'animali domestici che brucano al sole</u>.<br>
-				Vita tranquilla ma senza grandi realizzazioni, pigrizia, indolenza, poche necessità e poche ambizioni.<br>
-				<strong>Carattere</strong> paziente, accomodante, pacifico e disarmante. Ha un temperamento cordiale e armonioso, e la rara capacità di 
-				trasformare in amici i nemici. Ha un grande interesse per la parola scritta o parlata, libreria, cartoleria e scenografia. Forse il suo 
-				modo di procedere può sembrare lento, ma è metodico e sicuro. Per la dignità e la fiducia che sa ispirare è adatto a posizioni di grande
-				prestigio. Ha molti interessi, si occupa dei deboli e degli anziani, e ricopre per la stima e la fiducia che ispira, posizioni di prestigio
-				in campo sociale. A ma le comodità e il lusso e la sua vita sarà calma, semplice e tranquilla come desidera. Nonostante questo raramente si 
-				lascia trasportare dai sentimenti, fa amicizia facilmente, ma è allergico ai legami troppo stretti e duraturi! Attirato dalle gioie 
-				domestiche e dalla campagna, è sensibile e romantico, incline al facile innamoramento.
-			</p>
+		<h2><b>28 NOVEMBRE</b> - dal <b>5°</b> al <b>6° <span class="sRed">SAGITTARIO</span></b> = <b>Grado di placidità</b></h2>
+		<p>
+			<u>Un gruppo d'animali domestici che brucano al sole</u>.<br>
+			Vita tranquilla ma senza grandi realizzazioni, pigrizia, indolenza, poche necessità e poche ambizioni.<br>
+			<b>Carattere</b> paziente, accomodante, pacifico e disarmante. Ha un temperamento cordiale e armonioso, e la rara capacità di
+			trasformare in amici i nemici. Ha un grande interesse per la parola scritta o parlata, libreria, cartoleria e scenografia. Forse il suo
+			modo di procedere può sembrare lento, ma è metodico e sicuro. Per la dignità e la fiducia che sa ispirare è adatto a posizioni di grande
+			prestigio. Ha molti interessi, si occupa dei deboli e degli anziani, e ricopre per la stima e la fiducia che ispira, posizioni di prestigio
+			in campo sociale. A ma le comodità e il lusso e la sua vita sarà calma, semplice e tranquilla come desidera. Nonostante questo raramente si
+			lascia trasportare dai sentimenti, fa amicizia facilmente, ma è allergico ai legami troppo stretti e duraturi! Attirato dalle gioie
+			domestiche e dalla campagna, è sensibile e romantico, incline al facile innamoramento.
+		</p>
 
-			<h2><strong>29 NOVEMBRE</strong> - dal <strong>6°</strong> al <strong>7° <span class="sRed">SAGITTARIO</span></strong> = <strong>Grado d'azzardo, d'avventure</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Due uomini giocano a carte</u>.<br>
-				Spirito avventuriero, molti pericoli. Amore del gioco, spreco, speculazioni pericolose, investimenti sbagliati.<br>
-				<strong>Carattere</strong> gioviale, socievole, nervoso, idealista, curioso e intelligente, ricettivo e dinamico. Le sue spiccate capacità 
-				di comprensione della natura umana e la grande forza di carattere gli permette di superare dei momenti difficili nel lavoro e negli affari.
-				Ama avventure ed emozioni, i piaceri e le cose arrischiate, ed è piuttosto fortunato e se si butta in qualche cosa difficilmente desiste fino
-				a che non riesce. Ha un grande intuito anzi una sorta di chiaroveggenza in molte cose e soprattutto nella psicologia. È attratto dall'idea 
-				dell'universale, mostra entusiasmo e interesse per tutto ciò che riguarda il lontano e la conoscenza. In amore è un inguaribile romantico,
-				ama la libertà e l'avventura, preferisce le relazioni brevi fino a quando non incontra la persona giusta! Qualche problema nel matrimonio 
-				per i suoi colpi di testa.
-			</p>
+		<h2><b>29 NOVEMBRE</b> - dal <b>6°</b> al <b>7° <span class="sRed">SAGITTARIO</span></b> = <b>Grado d'azzardo, d'avventure</b></h2>
+		<p>
+			<u>Due uomini giocano a carte</u>.<br>
+			Spirito avventuriero, molti pericoli. Amore del gioco, spreco, speculazioni pericolose, investimenti sbagliati.<br>
+			<b>Carattere</b> gioviale, socievole, nervoso, idealista, curioso e intelligente, ricettivo e dinamico. Le sue spiccate capacità
+			di comprensione della natura umana e la grande forza di carattere gli permette di superare dei momenti difficili nel lavoro e negli affari.
+			Ama avventure ed emozioni, i piaceri e le cose arrischiate, ed è piuttosto fortunato e se si butta in qualche cosa difficilmente desiste fino
+			a che non riesce. Ha un grande intuito anzi una sorta di chiaroveggenza in molte cose e soprattutto nella psicologia. È attratto dall'idea
+			dell'universale, mostra entusiasmo e interesse per tutto ciò che riguarda il lontano e la conoscenza. In amore è un inguaribile romantico,
+			ama la libertà e l'avventura, preferisce le relazioni brevi fino a quando non incontra la persona giusta! Qualche problema nel matrimonio
+			per i suoi colpi di testa.
+		</p>
 
-			<h2><strong>30 NOVEMBRE</strong> - dal <strong>7°</strong> al <strong>8° <span class="sRed">SAGITTARIO</span></strong> = <strong>Grado d'esaltazione, d'entusiasmo</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">
-				<u>Una casa in fiamme. Incendio</u>.<br>
-				Grandi passioni, tragedie improvvise, spirito generoso e moderno, ha doti filosofiche, pericolo per fuoco.<br>
-				<strong>Carattere</strong> dispersivo, irrequieto, impulsivo, temperamento socievole e comunicativo. La personalità di base è idealista, 
-				romantica e avventurosa, caratterizzata anche da una ricca immaginazione e da ottime capacità di concentrazione, ma riesce a diventare 
-				testardo e avventato nelle cose personali. Intelligenza eminente e viva, un genio inventivo e intuitivo, adatto per le professioni di 
-				scrittore, attore e politico o che abbiano a che fare con il fuoco. È una persona dalle molteplici capacità peccato imposti male le sue 
-				doti. Dovrebbe fare in modo di riuscire a concedersi di più alla vita e agli altri. Ama enormemente viaggiare, giocare con tutto: amore e 
-				denaro. Quando s'impegna in un rapporto, fa tutto il possibile per conservare la pace e l'armonia, sacrificandosi e rinunciando ai suoi 
-				mille interessi.
-			</p>
+		<h2><b>30 NOVEMBRE</b> - dal <b>7°</b> al <b>8° <span class="sRed">SAGITTARIO</span></b> = <b>Grado d'esaltazione, d'entusiasmo</b></h2>
+		<p>
+			<u>Una casa in fiamme. Incendio</u>.<br>
+			Grandi passioni, tragedie improvvise, spirito generoso e moderno, ha doti filosofiche, pericolo per fuoco.<br>
+			<b>Carattere</b> dispersivo, irrequieto, impulsivo, temperamento socievole e comunicativo. La personalità di base è idealista,
+			romantica e avventurosa, caratterizzata anche da una ricca immaginazione e da ottime capacità di concentrazione, ma riesce a diventare
+			testardo e avventato nelle cose personali. Intelligenza eminente e viva, un genio inventivo e intuitivo, adatto per le professioni di
+			scrittore, attore e politico o che abbiano a che fare con il fuoco. È una persona dalle molteplici capacità peccato imposti male le sue
+			doti. Dovrebbe fare in modo di riuscire a concedersi di più alla vita e agli altri. Ama enormemente viaggiare, giocare con tutto: amore e
+			denaro. Quando s'impegna in un rapporto, fa tutto il possibile per conservare la pace e l'armonia, sacrificandosi e rinunciando ai suoi
+			mille interessi.
+		</p>
 
 		<p class="sCenter">
 			<br>
-			<img src="GOLDLINE3.gif" width="350" height="35">&nbsp;&nbsp;
-			<img src="GOLDLINE3.gif" width="350" height="35">
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">&nbsp;&nbsp;
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">
 		</p>
 
-		<p class="sSmall sBlack sCenter">
-			<img src="email-box.gif"    width="35"  height="35">
+		<p class="sCenter">
+			<img src="email-box.gif"    width="35" height="35" alt="">
 			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
-			<img src="TelefonoC164.gif" width="35" height="35">&nbsp;
-			oppure Telefona: <strong>0125 631175 - Cell. 347 0417409<br><br>
-			Sei il visitatore n°&nbsp;</strong>
+			<img src="TelefonoC164.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+
+			<b>Sei il visitatore n°&nbsp;</b>
 		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1351762431-wvsw3d4r2" border=0></a>
-			&nbsp;(Contenuto Aggiornato 29/07/2020)<br><br>
+			&nbsp;(Contenuto Aggiornato <time datetime="2020-07-29">29/07/2020</time>)<br><br>
 		</p>
-					</td></tr></table>
-				</td></tr></table>
-			</td></tr></table>
-		</td></tr></table>
-	</td></tr></table>
+
 </td></tr></table>
-<p class="sXXSmall sBlack sBold sCenter">
-	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati. 
-	Senza il consenso dell&#39;autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
-</p>
+</td></tr></table>
+</td></tr></table>
+<footer>
+	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
+	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
+</footer>
 </body>
 </html>
