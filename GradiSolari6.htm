@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" dir="ltr">
 <head>
 <meta charset="UTF-8">
-<title>Gradi Solari: Giugno</title>
+<title>Gradi Solari: Giugno - Studio Acquario</title>
 <link rel="icon" type="image/gif" href="favicon32.gif">
 <meta name="description" content="Studio Acquario: Gradi Solari dello Zodiaco: Giugno">
-<meta name="keywords" content="astrologia, gradi, solari, zodiaco, giugno">
+<meta name="keywords" content="astrologia, studio, acquario, gradi, solari, zodiaco, giugno">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
 <meta name="language" content="it">
 <meta http-equiv="imagetoolbar" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="29/07/2020">
-<meta name="revised" content="06/08/2020">
+<meta name="revised" content="08/10/2020">
 
 <style type="text/css">
-BODY {
-	SCROLLBAR-ARROW-COLOR: #51327d; 
-	SCROLLBAR-TRACK-COLOR: #a89470; 
-	SCROLLBAR-BASE-COLOR: #e0d0a8; 
+body {
+	SCROLLBAR-ARROW-COLOR: #51327d;
+	SCROLLBAR-TRACK-COLOR: #a89470;
+	SCROLLBAR-BASE-COLOR: #e0d0a8;
 	scrollbar-dark-shadow-color: #E7C1CE;
 
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
@@ -25,31 +26,100 @@ BODY {
 	background-image: url('GRback02.jpg');
 	background-color: #FFFFCC; /* Cream */
 }
-a {
+a:link {
 	color: #000000;
 }
-A:link {
-	text-decoration:none;
+a:visited {
+	color: #000000;
+}
+a:hover {
+	color: #FF0000;
+}
+a:active {
+	color: #000000;
 }
 h1 {
 	font-size: xx-large;
-	color: #000000;
 	font-weight: bold;
+	color: #000000;
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 h2 {
 	font-size: medium;
-	color: #000000;
 	font-weight: normal;
+	color: #000000;
 	text-align: center;
-	margin-top: 0.65cm;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-top: 35px;
 }
-.sLogoBanner {
+header {
 	font-size: xx-large;
 	font-weight: bold;
 	color: #FFFFFF; /* White */
 	text-shadow: 1px 1px 5px #0000FF; /* Blue */
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
+}
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #000000; /* Black */
+	/* text-shadow: 1px 1px 1px #0000FF; Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
+}
+p {
+	font-size: small;
+	color: #000000; /* Black */
+	text-align: justify;
+	padding-left: 35px;
+	padding-right: 35px;
+	line-height: 125%;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.sNavigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 180%;
+}
+.sNavigation a {
+	font-size: medium;
+	font-weight: bold;
+	padding:.42em;
+	color: black;
+	margin-left: 2px;
+	background: #CEC18C; /* Winter Hazel */
+	text-decoration: none;
+}
+.sNavigation a:hover {
+	color: #FFFFFF; /* White */
+	background: #996D3D; /* Buttered Rum */
+}
+#PagCorrente {
+	border-bottom: 2.5px solid brown;
+}
+.sHomeIcon {
+	vertical-align: bottom;
+	margin-bottom: 1px;
+	height: 25px;
+	width: 25px;
 }
 .sBorder1s-Olive {
 				border: 1px solid #666600;
@@ -66,18 +136,11 @@ h2 {
 .sRed {
 				color: #FF0000;
 }
-.sYellow {
-				color: #FFFF00; 
-				text-shadow: 1px 1px 0px #DD8500; /* Tangerine */				
+.sGoldenBrown {
+				color: #996600;
 }
 .sWhite {
 				color: #FFFFFF;
-}
-.sBGPigPink {
-				background-color: #F6D2DE;
-}
-.sBGWhite {
-				background-color: #FFFFFF;
 }
 .sCenter {
 				text-align: center;
@@ -86,8 +149,8 @@ h2 {
 				text-align: justify;
 }
 .sPadding {
-				padding-left: 40px;
-				padding-right: 40px;
+				padding-left: 35px;
+				padding-right: 35px;
 }
 .sBold {
 				font-weight: bold;
@@ -116,527 +179,521 @@ h2 {
 </style>
 </head>
 
-<body vlink="purple" alink="red">
-<p class="sLogoBanner">Studio di Astrologia "Acquario"</p>
+<body>
+<header>Studio di Astrologia &quot;Acquario&quot;</header>
 
-<table background="GRbronze.jpg" cellspacing="0" cellpadding="0" width="95%" class="sBorder1s-Olive" align="center">
-  <tr><td>
+<table background="GRbronze.jpg" cellspacing="0" cellpadding="0" class="sBorder1s-Olive" width="95%" align="center">
+<tr><td background="GRorochiaro.jpg">
 
-	<table background="GRorochiaro.jpg" cellspacing="0" cellpadding="0" width="100%" border="0" class="sBorder1s-Olive">
-	  <tr><td>
+<table background="GRbronze.jpg" cellspacing="14" cellpadding="14" class="sBorder1s-Olive" width="100%">
+<tr><td background="GRorochiaro.jpg">
 
-		<table background="GRbronze.jpg" cellspacing="7" cellpadding="7" width="100%" class="sBorder1s-Olive">
-		  <tr><td>
-
-			<table background="GRorochiaro.jpg" cellspacing="7" cellpadding="7" width="100%" class="sBorder1s-Olive">
-			  <tr><td>
-
-				<table background="GRbronze.jpg" cellspacing="7" cellpadding="7" width="100%" class="sBorder1s-Olive">
-				  <tr><td>
-
-					<table background="GRback04.jpg" bgcolor="#FFF0D0" bordercolor="#FFFFFF" width="100%" border="0">
-					  <tr><td>
+<table background="GRbronze.jpg" cellspacing="14" cellpadding="7" class="sBorder1s-Olive" bgcolor="#FFF0D0" bordercolor="#FFFFFF" width="100%">
+<tr><td background="GRback04.jpg">
 
 		<h1>I GRADI SOLARI DELLO ZODIACO</h1>
 
 		<p class="sCenter">
-			<img src="GOLDLINE3.gif" width="350" height="35">&nbsp;&nbsp; 
-			<img src="GOLDLINE3.gif" width="350" height="35">					
+			<br>
+			<img src="GR.B.06June.gif"    width="307" height="131" alt="Giugno">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="GR.DA.3gemelli.gif" width="130" height="130" alt="Gemelli">
 		</p>
 
-		<p class="sMedium sBlack sJustify sPadding">
-			Lo <strong>Zodiaco</strong> è suddiviso in <strong>12</strong> segni, <strong>36</strong> decadi e <strong>360</strong> gradi. 
-			Ogni <strong>grado</strong> ha un valore e un significato. Ad ognuno dei 360 gradi corrisponde un aforisma. 
-			Conoscere il giorno di nascita non è quindi sufficiente: occorre anche sapere quale é il grado.    
-		</p>
-					
-		<p class="sBlack sSmall sCenter sBold">
-			<br><span class="sBGWhite">&nbsp;
-			<a href="GradiSolari1.htm">Gennaio</a> |
-			<a href="GradiSolari2.htm">Febbraio</a> |
-			<a href="GradiSolari3.htm">Marzo</a> |
-			<a href="GradiSolari4.htm">Aprile</a> |
-			<a href="GradiSolari5.htm">Maggio</a> |</span><span class="sBGPigPink">
-			<a href="GradiSolari6.htm">Giugno</a> |</span><span class="sBGWhite">
-			<a href="GradiSolari7.htm">Luglio</a> |
-			<a href="GradiSolari8.htm">Agosto</a> |
-			<a href="GradiSolari9.htm">Settembre</a> |
-			<a href="GradiSolari10.htm">Ottobre</a> |
-			<a href="GradiSolari11.htm">Novembre</a> |
-			<a href="GradiSolari12.htm">Dicembre</a> |
-			<a href="index.html">Pagina&nbsp;Iniziale</a>&nbsp;</span><br>
+		<nav class="sLarge sCenter">
+			<br>
+			<ul class="sNavigation">
+				<li><a href="GradiSolari1.htm">Gennaio</a></li>
+				<li><a href="GradiSolari2.htm">Febbraio</a></li>
+				<li><a href="GradiSolari3.htm">Marzo</a></li>
+				<li><a href="GradiSolari4.htm">Aprile</a></li>
+				<li><a href="GradiSolari5.htm">Maggio</a></li>
+				<li><a href="GradiSolari6.htm" id="PagCorrente">Giugno</a></li>
+				<li><a href="GradiSolari7.htm">Luglio</a></li>
+				<li><a href="GradiSolari8.htm">Agosto</a></li>
+				<li><a href="GradiSolari9.htm">Settembre</a></li>
+				<li><a href="GradiSolari10.htm">Ottobre</a></li>
+				<li><a href="GradiSolari11.htm">Novembre</a></li>
+				<li><a href="GradiSolari12.htm">Dicembre</a></li>
+				<li><a href="index.html"><img src="favicon32.gif" class="sHomeIcon"></a></li>
+			</ul>
+			<br>
+		</nav>
+
+		<p class="sMedium">
+			Lo <b>Zodiaco</b> è suddiviso in <b>12</b> segni, <b>36</b> decadi e <b>360</b> gradi.
+			Ogni <b>grado</b> ha un valore e un significato. Ad ognuno dei 360 gradi corrisponde un aforisma.
+			Conoscere il giorno di nascita non è quindi sufficiente: occorre anche sapere quale é il grado.
 		</p>
 
 		<p class="sCenter">
-			<br>
-			<img src="GR.B.06June.gif"    width="307" height="131">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="GR.DA.3gemelli.gif" width="130" height="130">
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">&nbsp;&nbsp;
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">
 		</p>
 
-		<p class="sLarge sBlack sBold sCenter">
-			NATO A&nbsp;<img src="A.6Giugno.gif" width="160" height="96">
+		<p class="sXLarge sBold sCenter">
+			NATO A&nbsp;<img src="A.6Giugno.gif" width="160" height="96" alt="Giugno">
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding">
+		<p>
 			Molto esigente, aspira sempre al meglio. Ha molte idee, è sempre in movimento. Amabile e delicato nel parlare, sensibile con una mente attiva.
 			Dubita molto e tende a posporre le cose. Ha una grande abilità manuale e vuole sempre il meglio. Da molta importanza alle cose che non ha.
-			Ostinato e divertente, con un buon senso dell'umorismo. Ha bisogno di molto tempo per riprendersi dopo essere stato ferito. Adora gli scherzi, 
-			ed è un buon conversatore. Sogna ad occhi aperti. Un po' lunatico, si annoia facilmente. Temperamentale. Divertente e ironico. È l'espressione 
+			Ostinato e divertente, con un buon senso dell'umorismo. Ha bisogno di molto tempo per riprendersi dopo essere stato ferito. Adora gli scherzi,
+			ed è un buon conversatore. Sogna ad occhi aperti. Un po' lunatico, si annoia facilmente. Temperamentale. Divertente e ironico. È l'espressione
 			d'una personalità ricca e traboccante. È un pozzo di risorse, ma difficile da portar fuori. Tende ad essere curioso, creativo e grande
-			comunicatore. Il problema è che dice le cose prima di pensare. Tiene a portare nel mondo brillanti idee, contribuendo nel piccolo, a migliorarlo. 
-			Buone capacità oratorie. Loquace. Pignolo. Testardo. Costante, in grado di mostrare carattere. Raramente mostra le sue emozioni. Tale incostanza 
-			si riflette anche nelle relazioni sentimentali spesso fugaci e brevi. Facilmente influenzato dalla gentilezza. È molto sensibile e premuroso 
-			verso i sentimenti altrui. A volte è timido e pacato, ma la gente ammira questo suo aspetto. Anche se non sempre esprime come si sente, ha un 
-			intero mondo che vive dentro di lui, e deve solo capire come portarlo all'esterno nella vita di tutti i giorni. Ama vestire bene. Educato e 
+			comunicatore. Il problema è che dice le cose prima di pensare. Tiene a portare nel mondo brillanti idee, contribuendo nel piccolo, a migliorarlo.
+			Buone capacità oratorie. Loquace. Pignolo. Testardo. Costante, in grado di mostrare carattere. Raramente mostra le sue emozioni. Tale incostanza
+			si riflette anche nelle relazioni sentimentali spesso fugaci e brevi. Facilmente influenzato dalla gentilezza. È molto sensibile e premuroso
+			verso i sentimenti altrui. A volte è timido e pacato, ma la gente ammira questo suo aspetto. Anche se non sempre esprime come si sente, ha un
+			intero mondo che vive dentro di lui, e deve solo capire come portarlo all'esterno nella vita di tutti i giorni. Ama vestire bene. Educato e
 			amichevole, sa fare amicizia. Tendente al mali di gola ai polmoni e raffreddori.<br>
-			La <strong>donna</strong> cerca di affrontare la verità e non nascondere i suoi sentimenti. Questo fa si che sia una persona con una grande 
+			La <b>donna</b> cerca di affrontare la verità e non nascondere i suoi sentimenti. Questo fa si che sia una persona con una grande
 			forza di volontà e ha grande potere sugli uomini.<br>
-			Il <strong>bambino</strong> è molto delicato, deve essere sorvegliato da persone tranquille, calme e posate, perché tende alla nevrastenia. 
+			Il <b>bambino</b> è molto delicato, deve essere sorvegliato da persone tranquille, calme e posate, perché tende alla nevrastenia.
 			Dovete insegnargli a parlare piano e con calma e ad evitare con cura i gesti disordinati.
 		</p>
 
 		<p class="sCenter">
-			<img src="GOLDLINE3.gif" width="350" height="35">&nbsp;&nbsp;&nbsp;
-			<img src="GOLDLINE3.gif" width="350" height="35">
+			<br>
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">
 		</p>
 
-			<h2><strong>1° GIUGNO</strong> - dal <strong>11°</strong> al <strong>12° [bis] <span class="sYellow">GEMELLI</span></strong> = <strong>Grado di spoliazione</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>1° GIUGNO</b> - dal <b>11°</b> al <b>12° [bis] <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado di spoliazione</b></h2>
+			<p>
 				<u>Due donne guardando un albero spezzato dal vento e piangono</u>.<br>
 				Preoccupazioni, dolori, perdita di figlio o vedovanza, distacco doloroso dalla persona amata.<br>
-				<strong>Carattere</strong> dinamico, attivo ma anche sospettoso, indeciso, insicuro e incerto. Intelligente e affascinante, dotato di idee
-				brillanti e spirito pratico, qualità che consentono di realizzare ogni progetto anche il più ambizioso e difficile. È dotato di forte 
+				<b>Carattere</b> dinamico, attivo ma anche sospettoso, indeciso, insicuro e incerto. Intelligente e affascinante, dotato di idee
+				brillanti e spirito pratico, qualità che consentono di realizzare ogni progetto anche il più ambizioso e difficile. È dotato di forte
 				volontà, di una personalità energica con attitudini al comando, a volte è despota e autoritario, ma si riscatta per la grande umanità.
-				Insoddisfatto cambierà più di una professione, ha possibilità di vivere in un'altra nazione o di emigrare. Possiede la capacità di 
-				persuasione ed è un abile parlatore. Si sa adattare a tutte le situazioni e se la cava bene in tutte le circostanze, infatti è pieno di 
-				trovate ricche e inesauribili. Una persona alla quale è affezionato potrebbe all'improvviso lasciarlo. Pur essendo attento al denaro ama 
+				Insoddisfatto cambierà più di una professione, ha possibilità di vivere in un'altra nazione o di emigrare. Possiede la capacità di
+				persuasione ed è un abile parlatore. Si sa adattare a tutte le situazioni e se la cava bene in tutte le circostanze, infatti è pieno di
+				trovate ricche e inesauribili. Una persona alla quale è affezionato potrebbe all'improvviso lasciarlo. Pur essendo attento al denaro ama
 				il lusso e le comodità. Amante della casa, dei figli e della famiglia. Si mostra molto leale e sincero con il partner.
 			</p>
 
-			<h2><strong>2 GIUGNO</strong> - dal <strong>12°</strong> al <strong>13° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado di egoismo</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>2 GIUGNO</b> - dal <b>12°</b> al <b>13° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado di egoismo</b></h2>
+			<p>
 				<u>Due lupi divorano una carcassa al chiaro di luna</u>.<br>
 				Nemici potenti, furberia che porta a un'esistenza instabile, associazioni pericolose.<br>
-				<strong>Carattere</strong> astuto, irrequieto, attivo e intraprendente. Adattabile, quindi adatto a lavorare in squadra con altri a contatto
+				<b>Carattere</b> astuto, irrequieto, attivo e intraprendente. Adattabile, quindi adatto a lavorare in squadra con altri a contatto
 				col pubblico. Dovrebbe esercitare pazienza e tolleranza e i suoi desideri e le speranze saranno maggiori. Le sue idee sono buone, moderne e
-				progressiste e anche la pubblicità è un campo nel quale può eccellere. Spirito versatile si lancia in mille e un&#39;avventura. Ironia,
+				progressiste e anche la pubblicità è un campo nel quale può eccellere. Spirito versatile si lancia in mille e un'avventura. Ironia,
 				satira e discussione ne rivelano un potenziale avvocato, oratore o politico. Intelligente e dotato di una mente intuitiva e fantasiosa, tende
-				a diventare impaziente e a preoccuparsi eccessivamente quando incontra ostacoli lungo la sua strada. Avrà vantaggi grazie alla generosità di 
-				qualche persona amica. Piace molto comandare fa di tutto per convincere gli altri con la sua parlantina che è molto loquace. Vive una vita 
+				a diventare impaziente e a preoccuparsi eccessivamente quando incontra ostacoli lungo la sua strada. Avrà vantaggi grazie alla generosità di
+				qualche persona amica. Piace molto comandare fa di tutto per convincere gli altri con la sua parlantina che è molto loquace. Vive una vita
 				affettiva movimentata e piena di avventure.
 			</p>
 
-			<h2><strong>3 GIUGNO</strong> - dal <strong>13°</strong> al <strong>14° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado di voracità, di saccheggio</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>3 GIUGNO</b> - dal <b>13°</b> al <b>14° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado di voracità, di saccheggio</b></h2>
+			<p>
 				<u>Tre corvi inclinati fianco a fianco. Un uomo mascherato nella notte si nasconde dietro ad un albero, ai suoi piedi giace una mucca morta</u>.<br>
 				Ricettazione, ricchezza per transazioni e spesso procurata con mezzi talora di dubbia moralità.<br>
-				<strong>Carattere</strong> intelligente, irrequieto, astuto e determinato. Dominato da desideri e grandi aspirazioni. Sa ispirare chi gli 
-				sta intorno con le idee brillanti e i suoi progetti. L'idealismo gli fa affrontare molti sacrifici, ma esiste il pericolo di non essere 
-				compreso e d'essere sfruttato dagli altri. Dotato di molto autocontrollo, ma un po&#39; insofferente e non sopporta gli intralci. Ha qualità 
-				che consentono di riscuotere simpatie e successo in ogni ambiente. Migliore la seconda parte della vita quando arriva un certo successo e 
-				quando le iniziative verranno ricompensate con soddisfazioni morali e materiali. Dotato di buon senso e razionalità, ma deve guardarsi dalle 
-				frequenti distrazioni. Poiché nella sua vita non sempre tutto fila liscio spesso è irascibile e irritabile. Ama l'arte e la bella vita, ma 
+				<b>Carattere</b> intelligente, irrequieto, astuto e determinato. Dominato da desideri e grandi aspirazioni. Sa ispirare chi gli
+				sta intorno con le idee brillanti e i suoi progetti. L'idealismo gli fa affrontare molti sacrifici, ma esiste il pericolo di non essere
+				compreso e d'essere sfruttato dagli altri. Dotato di molto autocontrollo, ma un po' insofferente e non sopporta gli intralci. Ha qualità
+				che consentono di riscuotere simpatie e successo in ogni ambiente. Migliore la seconda parte della vita quando arriva un certo successo e
+				quando le iniziative verranno ricompensate con soddisfazioni morali e materiali. Dotato di buon senso e razionalità, ma deve guardarsi dalle
+				frequenti distrazioni. Poiché nella sua vita non sempre tutto fila liscio spesso è irascibile e irritabile. Ama l'arte e la bella vita, ma
 				anche la casa e la famiglia... pur lasciando scivolare nella routine le relazioni affettive.
 			</p>
 
-			<h2><strong>4 GIUGNO</strong> - dal <strong>14°</strong> al <strong>15° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado di confusione</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>4 GIUGNO</b> - dal <b>14°</b> al <b>15° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado di confusione</b></h2>
+			<p>
 				<u>Due volpi divorano delle galline. Una donna con i capelli sciolti al vento, porta pesanti fardelli</u>.<br>
 				Attività frenetica, beni mal conquistati, cattive compagnie, rapacità.<br>
-				<strong>Carattere</strong> risoluto, socievole e brillante, versatile, dotato di una mente acuta e di notevole sensibilità. Intelligenza 
-				vivace e ingegnosa, è generoso, affabile e incline all'indulgenza. Un atteggiamento calmo e sereno nei riguardi dell'esistenza, ha modi 
-				aperti e accattivanti che lo fanno amare da tutti. Per il suo temperamento artistico conquista molte amicizie influenti e durature. È 
+				<b>Carattere</b> risoluto, socievole e brillante, versatile, dotato di una mente acuta e di notevole sensibilità. Intelligenza
+				vivace e ingegnosa, è generoso, affabile e incline all'indulgenza. Un atteggiamento calmo e sereno nei riguardi dell'esistenza, ha modi
+				aperti e accattivanti che lo fanno amare da tutti. Per il suo temperamento artistico conquista molte amicizie influenti e durature. È
 				contrario alle abitudini, vorrebbe cambiare il mondo. Ha un gran fascino il quale gli apre tutte le porte nella società. Sostanzialmente è
-				timido, riesce quasi sempre a mascherare questa sua caratteristica fino a sembrare invadente. Ha delle qualità che gli permettono sia di 
+				timido, riesce quasi sempre a mascherare questa sua caratteristica fino a sembrare invadente. Ha delle qualità che gli permettono sia di
 				circondarsi di amici e persone influenti che di raggiungere posizioni di prestigio in campo sociale. Emotivamente insicuro, sente il bisogno
 				di raggiungere una solida e profonda intimità con chi ama.
 			</p>
 
-			<h2><strong>5 GIUGNO</strong> - dal <strong>15°</strong> al <strong>16° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado di superiorità mentale, di sterilità</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>5 GIUGNO</b> - dal <b>15°</b> al <b>16° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado di superiorità mentale, di sterilità</b></h2>
+			<p>
 				<u>Un uomo seduto sui talloni che spacca pietre con il martello</u>.<br>
 				Scarse capacità, poca fortuna, spirito confusionario, follia o genio.<br>
-				<strong>Carattere</strong> sveglio, versatile, brillante e antagonista, curioso, amabile, loquace, convincente e spiritoso, attivo e 
-				irrequieto. Personalità intelligente, ma non sempre fortunata. Mostra abilità e disinvoltura nel gestire i rapporti sociali, essendo scaltro 
+				<b>Carattere</b> sveglio, versatile, brillante e antagonista, curioso, amabile, loquace, convincente e spiritoso, attivo e
+				irrequieto. Personalità intelligente, ma non sempre fortunata. Mostra abilità e disinvoltura nel gestire i rapporti sociali, essendo scaltro
 				e intuitivo, ma anche ottimo conoscitore della natura umana. Difende a spada tratta le proprie opinioni e la propria libertà, sa mettere a
-				frutto il suo sapere e le proprie abilità, sa farsi benvolere da tutti. Natura emotiva poco giudiziosa, dispersiva, vuole fare troppe cose 
-				insieme, ingegnosità e genialità, una bella intelligenza. Mostra sempre una grande indipendenza di pensiero, è dotato di un temperamento 
+				frutto il suo sapere e le proprie abilità, sa farsi benvolere da tutti. Natura emotiva poco giudiziosa, dispersiva, vuole fare troppe cose
+				insieme, ingegnosità e genialità, una bella intelligenza. Mostra sempre una grande indipendenza di pensiero, è dotato di un temperamento
 				costante ed energico. E' facilmente irritabile e insofferente ai problemi quotidiani. Pur essendo poco influenzabili e pratico può rivelarsi
 				molto pasticcione e confusionario. Persona responsabile e coerente, sa sempre quello che vuole e lo ottiene. Ha grande volontà, ma anche un
 				accentuato spirito di contraddizione.<br>
 				Questo grado ha la possibilità di essere nato con un fratello gemello.
 			</p>
 
-			<h2><strong>6 GIUGNO</strong> - dal <strong>16°</strong> al <strong>17° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado d'impotenza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>6 GIUGNO</b> - dal <b>16°</b> al <b>17° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado d'impotenza</b></h2>
+			<p>
 				<u>Una brocca rotta a terra con intorno della frutta sparsa. Un ponte costruito al di là del fiume</u>.<br>
 				Fallimento o perdita di potere, impotenza nella vita, nullità. Lavoro sprecato o fatto senza competenza, fatiche di cui non si gode il frutto.<br>
-				<strong>Carattere</strong> emotivo, sensuale, autorevole, energico, battagliero, aggressivo, istintivo e ambizioso. Ha una natura modesta e
+				<b>Carattere</b> emotivo, sensuale, autorevole, energico, battagliero, aggressivo, istintivo e ambizioso. Ha una natura modesta e
 				generosa, molte cose che fa sono fatte per gli altri o almeno per far piacere agli altri. L'intelligenza brillante e metodica, unita ad uno
 				spiccato senso di diplomazia e ad un grande tatto gli garantiscono il rispetto generale. Ha un temperamento caloroso, socievole e ottimista
 				che permette di stabilire dei buoni contatti nel lavoro e nella sfera privata; non solo, ma gli consente anche di realizzarsi in un'attività
-				umanitaria o creativa. Ama la pace ed è disposto a sacrifici o a dei compromessi pur di averla. Piacciono le cose belle della vita, niente 
-				escluso, potrà avere un&#39;ingente eredità. La donna con questo grado è vanitosa, affascinante e intelligente. Piacciono le cose belle 
-				della vita, niente escluso, potrà avere un'ingente eredità. È attratto facilmente da tutto ma in breve tempo si stanca di tutto. Raggiunge 
+				umanitaria o creativa. Ama la pace ed è disposto a sacrifici o a dei compromessi pur di averla. Piacciono le cose belle della vita, niente
+				escluso, potrà avere un'ingente eredità. La donna con questo grado è vanitosa, affascinante e intelligente. Piacciono le cose belle
+				della vita, niente escluso, potrà avere un'ingente eredità. È attratto facilmente da tutto ma in breve tempo si stanca di tutto. Raggiunge
 				una discreta posizione economica e realizza un matrimonio felice.
 			</p>
 
-			<h2><strong>7 GIUGNO</strong> - dal <strong>17°</strong> al <strong>18° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado d'agitazione inutile, di esecuzione</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>7 GIUGNO</b> - dal <b>17°</b> al <b>18° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado d'agitazione inutile, di esecuzione</b></h2>
+			<p>
 				<u>Un uomo in piedi senza le mani, accanto ad una tavola piena d'ogni grazia di Dio. Una freccia che vola</u>.<br>
 				Pericolo di mutilazione o d'incidente. Aspirazioni elevate, sottigliezza, abilità nell'esecuzione ma incapacità di far fronte alle necessità
 				vitali.<br>
-				<strong>Carattere</strong> energico, attivo, intraprendente, versatile e simpatico, comunicativo, intelligente e ambizioso. Dotato di qualità
-				positive quali volontà, costanza, abilità, concretezza e chiarezza nell'esporre le proprie idee. Ha una mente fantasiosa e una duplice 
-				personalità, potrà ottenere successo nel mondo degli affari. Ama nello stesso tempo la recitazione e il palcoscenico. Riscuote successo in 
-				campo sociale non solo per le indiscusse capacità, anche per il modo di porsi: è raffinato nei modi ed elegante nel vestire. A volte ha 
-				difficoltà a difendersi dagli inconvenienti a cui va incontro nella vita. È insofferente e non sopporta intralci sul suo cammino. È di 
-				salute un pò cagionevole e fragile. È un passionale, ricerca un partner stimolante, sia sotto il profilo intellettuale che sentimentale. 
+				<b>Carattere</b> energico, attivo, intraprendente, versatile e simpatico, comunicativo, intelligente e ambizioso. Dotato di qualità
+				positive quali volontà, costanza, abilità, concretezza e chiarezza nell'esporre le proprie idee. Ha una mente fantasiosa e una duplice
+				personalità, potrà ottenere successo nel mondo degli affari. Ama nello stesso tempo la recitazione e il palcoscenico. Riscuote successo in
+				campo sociale non solo per le indiscusse capacità, anche per il modo di porsi: è raffinato nei modi ed elegante nel vestire. A volte ha
+				difficoltà a difendersi dagli inconvenienti a cui va incontro nella vita. È insofferente e non sopporta intralci sul suo cammino. È di
+				salute un pò cagionevole e fragile. È un passionale, ricerca un partner stimolante, sia sotto il profilo intellettuale che sentimentale.
 				La vita sarà felice e alcuni arriveranno ad una buona situazione sociale.
 			</p>
 
-			<h2><strong>8 GIUGNO</strong> - dal <strong>18°</strong> al <strong>19° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado di pericolo e inutilità</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>8 GIUGNO</b> - dal <b>18°</b> al <b>19° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado di pericolo e inutilità</b></h2>
+			<p>
 				<u>Volpe che corre con tutte le sue forze. Una donna in piedi con un'espressione triste si copre il seno nudo</u>.<br>
 				Speranze deluse, spirito agitato, scaltrezza.<br>
-				<strong>Carattere</strong> attivo, astuto, intelligente, buon cervello. Ha doti artistiche e creative non disgiunte da una splendida capacità
+				<b>Carattere</b> attivo, astuto, intelligente, buon cervello. Ha doti artistiche e creative non disgiunte da una splendida capacità
 				di affascinare la gente: qualità che gli consentono di mettersi in luce. Possibilità di fare due mestieri contemporaneamente, importante per
-				lui il n° <strong>6</strong>. Portato verso ogni espressione artistica, è dotato di spirito filantropico. Spesso trova difficoltoso 
-				affrontare i problemi pratici della vita, possiede un forte senso del ritmo e musicalità. Ama parlare e scrivere, i viaggi e il commercio, 
+				lui il n° <b>6</b>. Portato verso ogni espressione artistica, è dotato di spirito filantropico. Spesso trova difficoltoso
+				affrontare i problemi pratici della vita, possiede un forte senso del ritmo e musicalità. Ama parlare e scrivere, i viaggi e il commercio,
 				le pubbliche relazioni, oggetti piccoli e le cose belle. Nervoso, insofferente e intollerante, è attratto dal mistero. Una personalità piena
-				di brio anche se un po' strana e incomprensibile. Lealtà e calore lo distinguono nei rapporti privati, amichevoli e sentimentali. Ha una 
+				di brio anche se un po' strana e incomprensibile. Lealtà e calore lo distinguono nei rapporti privati, amichevoli e sentimentali. Ha una
 				vita molto movimentata e combattuta. Persona difficile in amore, perché molto sensibile, permaloso ed es igente nei rapporti umani.
 			</p>
 
-			<h2><strong>9 GIUGNO</strong> - dal <strong>19°</strong> al <strong>20° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado di smarrimento di sproporzione</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>9 GIUGNO</b> - dal <b>19°</b> al <b>20° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado di smarrimento di sproporzione</b></h2>
+			<p>
 				<u>Un mendicante cammina con la sua bisaccia. Due uomini ben vestiti, uno cavalca su un cavallo bianco</u>.<br>
 				Attitudini spirituali, emigrazione.<br>
-				<strong>Carattere</strong> buono, entusiasta, creativo e sensitivo, logico, risoluto ed esplicito, deciso, perseverante, dotato di una natura 
-				artistica e creativa. Sensibile, raffinato, elegante, con spiccate inclinazioni artistiche, e una mente aperta alla spiritualità, sogni e 
-				visioni. Intuitivo, dimostra grande abilità e destrezza nell&#39;eseguire i suoi compiti. Discontinuo e un po' vago, vive senza mai 
+				<b>Carattere</b> buono, entusiasta, creativo e sensitivo, logico, risoluto ed esplicito, deciso, perseverante, dotato di una natura
+				artistica e creativa. Sensibile, raffinato, elegante, con spiccate inclinazioni artistiche, e una mente aperta alla spiritualità, sogni e
+				visioni. Intuitivo, dimostra grande abilità e destrezza nell'eseguire i suoi compiti. Discontinuo e un po' vago, vive senza mai
 				raggiungere la serenità è sempre alla ricerca di qualcosa che non trova. Ha interessi illimitati ma superficiali. Riesce nelle imprese anche
-				difficili e insormontabili, amore per le scienze, disposizione per l'occultismo. È molto selettivo nei rapporti sentimentali e nelle 
-				amicizie, sa come intrattenere piacevolmente gli interlocutori e affascinare le persone che più lo interessano. In amore tradisce spesso, 
+				difficili e insormontabili, amore per le scienze, disposizione per l'occultismo. È molto selettivo nei rapporti sentimentali e nelle
+				amicizie, sa come intrattenere piacevolmente gli interlocutori e affascinare le persone che più lo interessano. In amore tradisce spesso,
 				dando come alibi che è alla ricerca dell'amore eterno e fantastico.
 			</p>
 
-			<h2><strong>10 GIUGNO</strong> - dal <strong>20°</strong> al <strong>21° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado di conoscenze dannose</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>10 GIUGNO</b> - dal <b>20°</b> al <b>21° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado di conoscenze dannose</b></h2>
+			<p>
 				<u>Tre serpenti stesi a terra. Un giovane getta delle monete in una ciotola</u>.<br>
 				Abilità pericolosa, tradimenti, gusto dello sport, poco amore del lavoro.<br>
-				<strong>Carattere</strong> introverso, intransigente e gaudente. Possiede un&#39;intelligenza acuta e pronta, incline agli studi e alle 
-				ricerche. Ha forza di volontà e determinazione, qualità che gli consente d'allargare i propri orizzonti culturali e raggiungere obiettivi 
+				<b>Carattere</b> introverso, intransigente e gaudente. Possiede un'intelligenza acuta e pronta, incline agli studi e alle
+				ricerche. Ha forza di volontà e determinazione, qualità che gli consente d'allargare i propri orizzonti culturali e raggiungere obiettivi
 				prestigiosi in campo sociale. Non è come tutti gli altri ha un dono che lo distingue e forse raggiungerà anche la celebrità. Possiede fascino
-				e talento artistico, che non passano certo inosservati. Esistono in lui delle percezioni extrasensoriali che gli consentono di diventare 
+				e talento artistico, che non passano certo inosservati. Esistono in lui delle percezioni extrasensoriali che gli consentono di diventare
 				parapsicologo od occultista bravo a patto d'una seria preparazione. Riesce con molta abilità ad imporsi agli altri e sovente è un po'
-				presuntuoso e molto misterioso. Ama divertirsi, frequentare persone di potere e di godere della compagnia delle persone a lui care, partner 
-				amici e familiari. Ha un buon cervello, una fervida immaginazione unita ad una energia persino eccessiva, può rendersi a volte piuttosto 
+				presuntuoso e molto misterioso. Ama divertirsi, frequentare persone di potere e di godere della compagnia delle persone a lui care, partner
+				amici e familiari. Ha un buon cervello, una fervida immaginazione unita ad una energia persino eccessiva, può rendersi a volte piuttosto
 				impaziente. Vive una vita affettiva molto complicata.
 			</p>
 
-			<h2><strong>11 GIUGNO</strong> - dal <strong>21°</strong> al <strong>22° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado d'indifferenza, di buon cameratismo</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>11 GIUGNO</b> - dal <b>21°</b> al <b>22° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado d'indifferenza, di buon cameratismo</b></h2>
+			<p>
 				<u>Una fanciulla sdraiata sotto un albero offre del cibo agli uccelli che gli volano attorno</u>.<br>
 				Eccentricità, dilapidazione, schiavitù, mollezza.<br>
-				<strong>Carattere</strong> seducente, attraente, originale, eccentrico e brillante. Ha una personalità vincente, con una mente eccezionale 
-				e straordinarie abilità professionali che consentono, oltre a mettersi in vista, di raggiungere una solida posizione economica. Deve 
+				<b>Carattere</b> seducente, attraente, originale, eccentrico e brillante. Ha una personalità vincente, con una mente eccezionale
+				e straordinarie abilità professionali che consentono, oltre a mettersi in vista, di raggiungere una solida posizione economica. Deve
 				combattere la tendenza a essere indifferente, poco tollerante e sfaticato. Incline alla poesia alla musica e all'armonia, di natura ascetica
-				e schiva, portato allo studio, ama la letteratura, le arti figurative. Aspira al successo, ed è un'idealista. Il denaro, in effetti, gioca 
-				un ruolo importante nella sua vita, ama tutti i lussi che la vita può offrire. Pur essendo generoso e disponibile a compiere qualche 
-				sacrificio, non riesce a realizzare relazioni affettive appaganti. Questo è un grado che indica la possibilità di ottenere dei grossi 
+				e schiva, portato allo studio, ama la letteratura, le arti figurative. Aspira al successo, ed è un'idealista. Il denaro, in effetti, gioca
+				un ruolo importante nella sua vita, ama tutti i lussi che la vita può offrire. Pur essendo generoso e disponibile a compiere qualche
+				sacrificio, non riesce a realizzare relazioni affettive appaganti. Questo è un grado che indica la possibilità di ottenere dei grossi
 				riconoscimenti grazie ad opere letterarie o artistiche. Molto geloso in amore spesse volte ha dei rapporti poco felici e per nulla armoniosi.
 			</p>
 
-			<h2><strong>12 GIUGNO</strong> - dal <strong>22°</strong> al <strong>23° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado di arte e felicità</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>12 GIUGNO</b> - dal <b>22°</b> al <b>23° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado di arte e felicità</b></h2>
+			<p>
 				<u>Una secolare quercia rinsecchita in mezzo ad una desolata palude. Due uccelli che cinguettano su un ramo</u>.<br>
 				Idee originali ma di difficile realizzazione.<br>
-				<strong>Carattere</strong> gentile, generoso, paziente, abile, perspicace, idealista, socievole e comunicativo. Ha un'intelligenza brillante 
-				e ottime capacità di giudizio, una mente vulcanica e particolarmente intuitiva gli consente di comprendere al volo il carattere di altre 
+				<b>Carattere</b> gentile, generoso, paziente, abile, perspicace, idealista, socievole e comunicativo. Ha un'intelligenza brillante
+				e ottime capacità di giudizio, una mente vulcanica e particolarmente intuitiva gli consente di comprendere al volo il carattere di altre
 				persone. Dotato di senso estetico, artistico, sa fare un buon uso della parola, può eccellere come parlatore, oratore e come scrittore e
-				poeta. Ha fantasia nell'inventare e nel comporre, la grande immaginazione unita ad un'acuta capacità di osservazione lo porta a sfidare la 
-				sorte e la fortuna. Ama molto la compagnia, dimostra serietà e senso di responsabilità in campo professionale. La morte del padre cambierà 
-				la sua vita quasi radicalmente. È dotato di molto brio, ed è capace di grandi sentimenti. Amante della natura e della musica. In amore è 
+				poeta. Ha fantasia nell'inventare e nel comporre, la grande immaginazione unita ad un'acuta capacità di osservazione lo porta a sfidare la
+				sorte e la fortuna. Ama molto la compagnia, dimostra serietà e senso di responsabilità in campo professionale. La morte del padre cambierà
+				la sua vita quasi radicalmente. È dotato di molto brio, ed è capace di grandi sentimenti. Amante della natura e della musica. In amore è
 				molto fortunato e raggiunge quasi sempre la felicità.
 			</p>
 
-			<h2><strong>13 GIUGNO</strong> - dal <strong>23°</strong> al <strong>24° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado d'amicizia, d'isolamento</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>13 GIUGNO</b> - dal <b>23°</b> al <b>24° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado d'amicizia, d'isolamento</b></h2>
+			<p>
 				<u>Molti passeri cinguettano e razzolano nella polvere. Un uomo decrepito che si trascina con un bastone</u>.<br>
 				Vita piena di difficoltà, vecchiaia infelice, figli ingrati, dispiaceri per i propri figli o nella vecchiaia.<br>
-				<strong>Carattere</strong> socievole, loquace, intelligente, impulsivo, mobile in tutti i sensi. Serio, ambizioso, dinamico con grandi
-				capacità mentali è profondo e al tempo stesso pratico. Le caratteristiche principali sono: un grande senso d'indipendenza e spiccato 
-				desiderio di dare aiuto a coloro che si trovano in difficoltà. È in grado di vedere in grande e di anticipare fatti e le situazioni con 
-				abilità. Ha una vita con numerosi alti e bassi, qualche volta è depresso e malinconico, fortuna a periodi e idee originali. È attratto 
+				<b>Carattere</b> socievole, loquace, intelligente, impulsivo, mobile in tutti i sensi. Serio, ambizioso, dinamico con grandi
+				capacità mentali è profondo e al tempo stesso pratico. Le caratteristiche principali sono: un grande senso d'indipendenza e spiccato
+				desiderio di dare aiuto a coloro che si trovano in difficoltà. È in grado di vedere in grande e di anticipare fatti e le situazioni con
+				abilità. Ha una vita con numerosi alti e bassi, qualche volta è depresso e malinconico, fortuna a periodi e idee originali. È attratto
 				dalle persone originali e dotate d'intelligenza brillante, dalle amicizie stimolanti e da un partner affascinante con il quale condivide
 				mille e più interessi. La sua riuscita finanziaria e sociale è garantita. È una persona longeva, e la sua vita però sarà costellata da
 				difficoltà soprattutto in amore.
 			</p>
 
-			<h2><strong>14 GIUGNO</strong> - dal <strong>24°</strong> al <strong>25° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado di vita movimentata, di cultura</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>14 GIUGNO</b> - dal <b>24°</b> al <b>25° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado di vita movimentata, di cultura</b></h2>
+			<p>
 				<u>Due donne sono sedute in conversazione. Un vecchio libro aperto e a lato una lampada illuminata</u>.<br>
 				Vocazioni e concezioni intellettuali.<br>
-				<strong>Carattere</strong> affabile, espansivo, loquace, originale, con un'intelligenza brillante e pratica, oltre ad essere sensibile,
-				socievole e comunicativo e fantasioso. Simpatico, allegro, gioviale sempre pronto a stare insieme agli altri. Ha un umorismo brillante e un 
-				forte senso della giustizia. Buon conversatore, ha molti amici sinceri, crea simpatie immediate si lascia trasportare dai desideri e dai 
-				sogni ad occhi aperti. È amante delle allegre compagnie. Comprende facilmente il carattere e pensieri altrui, sa cogliere al volo occasioni 
-				vincenti anche le più difficili. Ama le belle arti e non è da escludere che scelga una professione nella quale l'arte, la moda, la bellezza 
+				<b>Carattere</b> affabile, espansivo, loquace, originale, con un'intelligenza brillante e pratica, oltre ad essere sensibile,
+				socievole e comunicativo e fantasioso. Simpatico, allegro, gioviale sempre pronto a stare insieme agli altri. Ha un umorismo brillante e un
+				forte senso della giustizia. Buon conversatore, ha molti amici sinceri, crea simpatie immediate si lascia trasportare dai desideri e dai
+				sogni ad occhi aperti. È amante delle allegre compagnie. Comprende facilmente il carattere e pensieri altrui, sa cogliere al volo occasioni
+				vincenti anche le più difficili. Ama le belle arti e non è da escludere che scelga una professione nella quale l'arte, la moda, la bellezza
 				e il buon gusto giocano un ruolo importante. Nel matrimonio è fortunato anche se il partner lo dominerà. Pur provando forti emozioni e pur
-				mostrandosi gentile e generoso con tutti, non riesce a realizzare dei legami sentimentali soddisfacenti. Forse a causa dell'innata 
+				mostrandosi gentile e generoso con tutti, non riesce a realizzare dei legami sentimentali soddisfacenti. Forse a causa dell'innata
 				irrequietezza!
 			</p>
 
-			<h2><strong>15 GIUGNO</strong> - dal <strong>25°</strong> al <strong>26° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado di combattimento, d'intelligenza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>15 GIUGNO</b> - dal <b>25°</b> al <b>26° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado di combattimento, d'intelligenza</b></h2>
+			<p>
 				<u>Un gruppo di uomini tenendo un bastone, litigano in mezzo ad una piazza. Un uomo è circondato da libri</u>.<br>
 				Amore per la conoscenza e lo studio.<br>
-				<strong>Carattere</strong> ostinato, combattivo, testardo e cocciuto, coraggioso, ribelle e ostinato. Dinamico e cordiale, con mente pronta 
-				e ricettiva che lo aiuta nel lavoro e nelle relazioni, nonostante l&#39;innato spirito indipendente. Intellettuale e normalmente colto è 
-				portato per gli studi impegnativi e la ricerca. Ha tanti pregi ma anche tanti difetti. Dotato di grandi capacità oratorie. Ha un buon 
-				cervello che sa utilizzare fino la punto da essere un filosofo, un saggio o uno scienziato. Ottiene sempre quello che spera ma soffre di 
-				simpatie e antipatie improvvise e manca di praticità nelle faccende quotidiane. È entusiasta e sensibile, vede le situazioni in modo un po' 
-				bizzarro, originale ma aderente alla realtà è animato da un grande amore per il prossimo. Avendo una vita professionale e sociale molto 
+				<b>Carattere</b> ostinato, combattivo, testardo e cocciuto, coraggioso, ribelle e ostinato. Dinamico e cordiale, con mente pronta
+				e ricettiva che lo aiuta nel lavoro e nelle relazioni, nonostante l'innato spirito indipendente. Intellettuale e normalmente colto è
+				portato per gli studi impegnativi e la ricerca. Ha tanti pregi ma anche tanti difetti. Dotato di grandi capacità oratorie. Ha un buon
+				cervello che sa utilizzare fino la punto da essere un filosofo, un saggio o uno scienziato. Ottiene sempre quello che spera ma soffre di
+				simpatie e antipatie improvvise e manca di praticità nelle faccende quotidiane. È entusiasta e sensibile, vede le situazioni in modo un po'
+				bizzarro, originale ma aderente alla realtà è animato da un grande amore per il prossimo. Avendo una vita professionale e sociale molto
 				intensa, pone in secondo piano la vita privata e il matrimonio. Convoglia le energie e i talenti in attività intellettuali e imprenditoriali
 				e in quelle artistiche come musica, teatro o pittura. Protetto da una buona stella e molto fortunato nella vita.
 			</p>
 
-			<h2><strong>16 GIUGNO</strong> - dal <strong>26°</strong> al <strong>27° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado di contestazione</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>16 GIUGNO</b> - dal <b>26°</b> al <b>27° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado di contestazione</b></h2>
+			<p>
 				<u>Un giovane scarmigliato e piangente seduto su una roccia in riva al mare. Due cani che si mordono</u>.<br>
 				Natura malinconica, dispiaceri, dispute e risse nella vita.<br>
-				<strong>Carattere</strong> battagliero, originale e di larghe vedute, sdegnoso e poco socievole è testardo e spesso irascibile. Abile, 
-				tenace, con grande personalità e serietà. Aspirazioni e visioni lo rendono un sognatore comprensivo ma pigro, incline a provocazioni e 
+				<b>Carattere</b> battagliero, originale e di larghe vedute, sdegnoso e poco socievole è testardo e spesso irascibile. Abile,
+				tenace, con grande personalità e serietà. Aspirazioni e visioni lo rendono un sognatore comprensivo ma pigro, incline a provocazioni e
 				contestazioni si fissa con idee sbagliate. L'intelletto è eccellente e insieme alla sensibilità gli consente di fare molta strada nella vita.
 				Spende capitali per divertirsi e soddisfare i suoi tanti capricci, pur non impegnandosi eccessivamente nel lavoro: oltre ad essere distratto,
-				non sempre è disposto a sacrificarsi! Ama la libertà e l'indipendenza, ma anche le letture, i viaggi e tutto quanto può stimolare la sua 
-				curiosità. Possiede una grande facilità di parola ed è ambizioso, ha molto brio e ottime possibilità a livello mentale. È molto difficile 
+				non sempre è disposto a sacrificarsi! Ama la libertà e l'indipendenza, ma anche le letture, i viaggi e tutto quanto può stimolare la sua
+				curiosità. Possiede una grande facilità di parola ed è ambizioso, ha molto brio e ottime possibilità a livello mentale. È molto difficile
 				in amore e vive una vita piena di litigi. Non sempre in amore è fortunato.
 			</p>
 
-			<h2><strong>17 GIUGNO</strong> - dal <strong>27°</strong> al <strong>28° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado di tristezza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>17 GIUGNO</b> - dal <b>27°</b> al <b>28° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado di tristezza</b></h2>
+			<p>
 				<u>Un uomo e una donna in piedi piangenti</u>.<br>
 				Distacchi dolorosi, disgrazie improvvise. Dei momenti tristi si alternano a periodi di fortuna e vantaggi materiali.<br>
-				<strong>Carattere</strong> sensibile, dolce, buono, intellettuale, magnetico, geniale, perspicace e dinamico, scaltro nel lavoro e negli
-				affari. Oltre ad essere serio e responsabile è competente e ben organizzato per questo motivo spesso gli vengono affidati dei ruoli 
-				direttivi. Ha grande facilità di dialogo, mille interessi e mille curiosità. Nel modo di comportarsi con gli altri dimostra molta diplomazia 
-				è un artista preminente e anche in una professione più comune attirerà sempre l'attenzione degli altri per il suo modo di fare le cose, che 
-				indica grande intelligenza e doti non comuni. Nella sfera privata è assai protettivo nei confronti delle persone care e verso le quali 
-				dimostra lealtà e affidabilità. È abile ed eclettico ma un pò superficiale. Ama il prossimo anche se non è sempre disposto a sopportarlo 
-				può riuscire nella carriera politica e diplomatica. Molto energico, mantiene la giovinezza fino a tarda età. La sfera affettiva è vissuta 
+				<b>Carattere</b> sensibile, dolce, buono, intellettuale, magnetico, geniale, perspicace e dinamico, scaltro nel lavoro e negli
+				affari. Oltre ad essere serio e responsabile è competente e ben organizzato per questo motivo spesso gli vengono affidati dei ruoli
+				direttivi. Ha grande facilità di dialogo, mille interessi e mille curiosità. Nel modo di comportarsi con gli altri dimostra molta diplomazia
+				è un artista preminente e anche in una professione più comune attirerà sempre l'attenzione degli altri per il suo modo di fare le cose, che
+				indica grande intelligenza e doti non comuni. Nella sfera privata è assai protettivo nei confronti delle persone care e verso le quali
+				dimostra lealtà e affidabilità. È abile ed eclettico ma un pò superficiale. Ama il prossimo anche se non è sempre disposto a sopportarlo
+				può riuscire nella carriera politica e diplomatica. Molto energico, mantiene la giovinezza fino a tarda età. La sfera affettiva è vissuta
 				in modo molto intenso, anche se un pò sofferto.
 			</p>
 
-			<h2><strong>18 GIUGNO</strong> - dal <strong>28°</strong> al <strong>29° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado di fecondità di lotte</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>18 GIUGNO</b> - dal <b>28°</b> al <b>29° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado di fecondità di lotte</b></h2>
+			<p>
 				<u>Una grande distesa di terra ben coltivata. Uno stormo di merli vola in un cielo pieno di nuvole</u>.<br>
 				Numerosi progetti ma mutevolezza. Lavoro mal remunerato.<br>
-				<strong>Carattere</strong> versatile, socievole, intelligente e sicuro di sé, oltre ad essere ricettivo, generoso e ottimista, un po&#39; 
-				stravagante e contraddittoria ma fascinosa, aperta e socievole. Positivo e autoritario ha idee brillanti tanto che arriva al successo grazie 
-				a imprese insolite. Alti e bassi, alternanze di fortuna e sfortuna, ha vantaggi grazie ai genitori e alle capacità artistiche. Ha un forte 
-				senso del ritmo una buona musicalità e la possibilità di far uso della parola parlata e scritta. Scrive e comunica con molta spigliatezza, 
-				ed è attratto da tutto quello che è tecnologico e innovativo. In amore ha spesso degli alti e bassi. Cerca un partner che lo stimoli 
-				intellettualmente, oltre che affettivamente, pur essendo irrequieto, dispersivo e introverso e per niente disponibile ai rapporti 
+				<b>Carattere</b> versatile, socievole, intelligente e sicuro di sé, oltre ad essere ricettivo, generoso e ottimista, un po'
+				stravagante e contraddittoria ma fascinosa, aperta e socievole. Positivo e autoritario ha idee brillanti tanto che arriva al successo grazie
+				a imprese insolite. Alti e bassi, alternanze di fortuna e sfortuna, ha vantaggi grazie ai genitori e alle capacità artistiche. Ha un forte
+				senso del ritmo una buona musicalità e la possibilità di far uso della parola parlata e scritta. Scrive e comunica con molta spigliatezza,
+				ed è attratto da tutto quello che è tecnologico e innovativo. In amore ha spesso degli alti e bassi. Cerca un partner che lo stimoli
+				intellettualmente, oltre che affettivamente, pur essendo irrequieto, dispersivo e introverso e per niente disponibile ai rapporti
 				tradizionali e abitudinari.<br>
 				Caso di gemelli probabile in famiglia.
 			</p>
 
-			<h2><strong>19 GIUGNO</strong> - dal <strong>29°</strong> al <strong>30° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado di dubbio e di cambiamento</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>19 GIUGNO</b> - dal <b>29°</b> al <b>30° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado di dubbio e di cambiamento</b></h2>
+			<p>
 				<u>Tre cani corrono in senso contrario. Un cielo cupo pieno di nuvole che sono spinte dal vento</u>.<br>
 				Disaccordo in famiglia o fra colleghi, mancanza di fiducia.<br>
-				<strong>Carattere</strong> volubile, versatile, intelligente e socievole, suscita molta simpatia e interesse attorno a sé. È gentile ma 
-				qualche volta è preso da malinconia e sfiducia, ha talento nel fare le cose, ricco di doti morali, ha una ferrea volontà gli consente di 
-				superare ogni ostacolo. Forte temperamento con una grande volontà ma è discontinuo, illogico e confusionario. Ambizione, curiosità e 
-				percezione, permette successo in campo professionale e lo spinge allo studio della letteratura e della musica. Dotato di umorismo sottile 
-				che sfoggia con una dialettica brillante e interessante. Qualità che consente di mettersi in vista in campo sociale e sentimentale, che sarà 
+				<b>Carattere</b> volubile, versatile, intelligente e socievole, suscita molta simpatia e interesse attorno a sé. È gentile ma
+				qualche volta è preso da malinconia e sfiducia, ha talento nel fare le cose, ricco di doti morali, ha una ferrea volontà gli consente di
+				superare ogni ostacolo. Forte temperamento con una grande volontà ma è discontinuo, illogico e confusionario. Ambizione, curiosità e
+				percezione, permette successo in campo professionale e lo spinge allo studio della letteratura e della musica. Dotato di umorismo sottile
+				che sfoggia con una dialettica brillante e interessante. Qualità che consente di mettersi in vista in campo sociale e sentimentale, che sarà
 				movimentato da molteplici flirt e avventure anche da brucianti delusioni a causa di amori impossibili. Visiterà gran parte del mondo, molte
 				avventure durante i viaggi. È un compagno molto difficile anche se piace molto.
 			</p>
 
-			<h2><strong>20 GIUGNO - 30° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado d'opportunismo e delusione</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>20 GIUGNO - 30° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado d'opportunismo e delusione</b></h2>
+			<p>
 				<u>Due uomini conducono ciascuno un cane. Un lupo segue una pecora lungo un sentiero solitario</u>.<br>
 				Intrighi, imbrogli, collaborazione sleale.<br>
-				<strong>Carattere</strong> forte, deciso e versatile, intuitivo, intelligente e socievole, suscita simpatia e interesse attorno a sé. Ha un 
-				buon senso organizzativo, capace e laborioso, non lo spaventa il lavoro continuo e pesante. Ha la tendenza a preoccuparsi troppo di tutto. 
+				<b>Carattere</b> forte, deciso e versatile, intuitivo, intelligente e socievole, suscita simpatia e interesse attorno a sé. Ha un
+				buon senso organizzativo, capace e laborioso, non lo spaventa il lavoro continuo e pesante. Ha la tendenza a preoccuparsi troppo di tutto.
 				Ha una gran facilità di parola, parla molto ma molte volte a sproposito. Abile, opportunista ed intellettuale, poco socievole, vanitoso,
-				superficiale e a volte spiritoso. La personalità affascinante unita ad uno spiccato senso dell'umorismo attira molte amicizie. Possibilità 
-				di vivere alle dipendenze degli altri sa come attaccarsi per suo profitto a persone influenti. Amante dell'avventura, preferisce una attività 
-				frenetica in continuo movimento e in perenne stato d&#39;agitazione. È fortunato e longevo, con un cammino di vita fantastico, straordinario 
+				superficiale e a volte spiritoso. La personalità affascinante unita ad uno spiccato senso dell'umorismo attira molte amicizie. Possibilità
+				di vivere alle dipendenze degli altri sa come attaccarsi per suo profitto a persone influenti. Amante dell'avventura, preferisce una attività
+				frenetica in continuo movimento e in perenne stato d'agitazione. È fortunato e longevo, con un cammino di vita fantastico, straordinario
 				e avventuroso.
 			</p>
 
 			<p class="sCenter">
-				<img src="GOLDLINE3.gif" width="350" height="35">&nbsp;&nbsp;&nbsp;
-				<img src="GOLDLINE3.gif" width="350" height="35">
+				<img src="GOLDLINE3.gif" width="350" height="35" alt="">&nbsp;&nbsp;&nbsp;
+				<img src="GOLDLINE3.gif" width="350" height="35" alt="">
 			</p>
 
-			<h2><strong>21 GIUGNO</strong> - dal <strong>0°</strong> al <strong>1° <span class="sBlue">CANCRO</span></strong> = <strong>Grado d'attaccamento e simpatia</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>21 GIUGNO</b> - dal <b>0°</b> al <b>1° <span class="sBlue">CANCRO</span></b> = <b>Grado d'attaccamento e simpatia</b></h2>
+			<p>
 				<u>Un uomo e una donna si tengono per mano. Una vigna con molti frutti si stende al sole</u>.<br>
 				Matrimonio felice, armonia famigliare, amori senza nubi.<br>
-				<strong>Carattere</strong> simpatico, geniale, ricco di comunicativa. Abile, logico, battagliero e sempre portato all&#8217;attacco. È dotato
-				di un grande intuito, di una mente fertile di idee: qualità che danno la possibilità di raggiungere posizioni di prestigio in campo 
+				<b>Carattere</b> simpatico, geniale, ricco di comunicativa. Abile, logico, battagliero e sempre portato all'attacco. È dotato
+				di un grande intuito, di una mente fertile di idee: qualità che danno la possibilità di raggiungere posizioni di prestigio in campo
 				professionale. Ha grandi doti intellettive ed è incline agli studi e ricerche. Riesce con molta abilità ad imporsi agli altri ed è sovente
-				presuntuoso. Il temperamento artistico e la sua intelligente ambizione lo rende più adatto alla carriera artistica e professionale che quella 
+				presuntuoso. Il temperamento artistico e la sua intelligente ambizione lo rende più adatto alla carriera artistica e professionale che quella
 				impiegatizia. Essendo gentile e cordiale, riesce a gestire abilmente i rapporti interpersonali, forieri di contatti importanti e utili, nel
-				lavoro e nella sfera privata. Entusiasmo e idealismo può portarlo a prendere parte a varie imprese interessanti, che si riveleranno anche 
-				redditizie. Vive una vita affettiva molto complicata e con un po' di difficoltà i rapporti interpersonali, tuttavia se riesce a guardarsi 
+				lavoro e nella sfera privata. Entusiasmo e idealismo può portarlo a prendere parte a varie imprese interessanti, che si riveleranno anche
+				redditizie. Vive una vita affettiva molto complicata e con un po' di difficoltà i rapporti interpersonali, tuttavia se riesce a guardarsi
 				dentro è in grado di tirare fuori doti eccezionali. Raffinato nei gusti e desideroso di popolarità, avrà sempre molto successo in società.
 				Cerca un partner che oltre all'affetto condivida i suoi molti interessi.
 			</p>
 
-			<h2><strong>22 GIUGNO</strong> - dal <strong>1°</strong> al <strong>2° <span class="sBlue">CANCRO</span></strong> = <strong>Grado di proprietà contestata, indolenza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>22 GIUGNO</b> - dal <b>1°</b> al <b>2° <span class="sBlue">CANCRO</span></b> = <b>Grado di proprietà contestata, indolenza</b></h2>
+			<p>
 				<u>Due donne si guardano in faccia. Un cane difende un osso da due altri affamati</u>.<br>
 				Strenua difesa dei propri beni, disaccordi con donne.<br>
-				<strong>Carattere</strong> socievole, affabile e vivace, brillante, intelligente, gioviale, orgoglioso, sensibile e intuitivo, mutevole, 
-				amabile e incline ai piaceri. Di larghe vedute, polemico con il senso della giustizia molto sviluppato. Qualità che gli consente di capire 
-				subito il pensiero e le esigenze degli altri ma anche di realizzarsi in modo soddisfacente in attività artistiche o assistenziali. Esiste 
-				la possibilità di riuscire in qualche professione artistica dove c'entrano i colori e la musica. Possiede un sottile intuito che sa di 
-				preveggenza e l'aiuta nella professione. Il successo e la popolarità inaspettati permettono una vita raffinata e dei viaggi sul mare. Ha 
-				una natura comprensiva arricchita da una profonda emotività, calore nei sentimenti, amore della vita e del prossimo. Molto importante il 
+				<b>Carattere</b> socievole, affabile e vivace, brillante, intelligente, gioviale, orgoglioso, sensibile e intuitivo, mutevole,
+				amabile e incline ai piaceri. Di larghe vedute, polemico con il senso della giustizia molto sviluppato. Qualità che gli consente di capire
+				subito il pensiero e le esigenze degli altri ma anche di realizzarsi in modo soddisfacente in attività artistiche o assistenziali. Esiste
+				la possibilità di riuscire in qualche professione artistica dove c'entrano i colori e la musica. Possiede un sottile intuito che sa di
+				preveggenza e l'aiuta nella professione. Il successo e la popolarità inaspettati permettono una vita raffinata e dei viaggi sul mare. Ha
+				una natura comprensiva arricchita da una profonda emotività, calore nei sentimenti, amore della vita e del prossimo. Molto importante il
 				matrimonio che sarà felice, molti amici e parenti che sono anche amici. Sensualità.
 			</p>
 
-			<h2><strong>23 GIUGNO</strong> - dal <strong>2°</strong> al <strong>3° <span class="sBlue">CANCRO</span></strong> = <strong>Grado di vita appassionata</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>23 GIUGNO</b> - dal <b>2°</b> al <b>3° <span class="sBlue">CANCRO</span></b> = <b>Grado di vita appassionata</b></h2>
+			<p>
 				<u>Una fanciulla piangente e spettinata, stringe fiori appassiti tra cui rose e gigli</u>.<br>
 				Debole volontà e forti sentimenti, passioni e abbandoni, rimpianti. Schiavitù.<br>
-				<strong>Carattere</strong> sottile, serio e ambizioso, sensibile e ricettivo, amabile, tenero, fantasioso e socievole, simpatico e attento
-				alle esigenze degli altri. Dotato di spiccate qualità mentali, profondo e pratico, ha un enorme senso d&#39;indipendenza. Una mente 
-				splendida, un'intelligenza spiccata, un umorismo brillante e una memoria eccezionale. È un artista e la gente lo ama per la gentilezza, il 
-				tatto e la diplomazia con i quali tratta gli amici. Sente continuamente il bisogno di apprendere e aggiornarsi, oltre che di dedicare tempo 
+				<b>Carattere</b> sottile, serio e ambizioso, sensibile e ricettivo, amabile, tenero, fantasioso e socievole, simpatico e attento
+				alle esigenze degli altri. Dotato di spiccate qualità mentali, profondo e pratico, ha un enorme senso d'indipendenza. Una mente
+				splendida, un'intelligenza spiccata, un umorismo brillante e una memoria eccezionale. È un artista e la gente lo ama per la gentilezza, il
+				tatto e la diplomazia con i quali tratta gli amici. Sente continuamente il bisogno di apprendere e aggiornarsi, oltre che di dedicare tempo
 				e interesse all'arte e allo spettacolo, settori molto importanti nella sua vita. Adora in maniera viscerale il lusso e si lascia tentare da
-				ogni esperienza. Si interessa di parapsicologia con sensibilità, ma la morte di parenti influisce sulla sua vita e lo rende più riflessivo e 
-				maturo. Pigrizia e indolenza sono i lati negativi più evidenti. Vive con un grande trasporto le relazioni amorose, stabili e soddisfacenti 
+				ogni esperienza. Si interessa di parapsicologia con sensibilità, ma la morte di parenti influisce sulla sua vita e lo rende più riflessivo e
+				maturo. Pigrizia e indolenza sono i lati negativi più evidenti. Vive con un grande trasporto le relazioni amorose, stabili e soddisfacenti
 				da tutti i punti di vista.
 			</p>
 
-			<h2><strong>24 GIUGNO</strong> - dal <strong>3°</strong> al <strong>4° <span class="sBlue">CANCRO</span></strong> = <strong>Grado di sensualità, di sottomissione in amore</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>24 GIUGNO</b> - dal <b>3°</b> al <b>4° <span class="sBlue">CANCRO</span></b> = <b>Grado di sensualità, di sottomissione in amore</b></h2>
+			<p>
 				<u>Una donna in piedi immobile aspetta un uomo. Una tavola piena dei resti di un festino</u>.<br>
 				Tendenze mondane, inclinazione agli eccessi.<br>
-				<strong>Carattere</strong> sensibile, sensitivo, emotivo, intuitivo, sensuale, affascinante, mutevole, socievole e simpatico, ricettivo e 
-				abile nel cogliere al volo le occasioni. È pigro, dolce e duro contemporaneamente ma nonostante la timidezza e la sensibilità ben evidenziate 
-				nel suo carattere di base si mostra ambizioso, deciso a raggiungere posizioni di prestigio. Ama il teatro, l'arte, e il cinema, i luoghi di 
-				divertimento o locali pubblici. Severo verso se stesso prima che verso gli altri, schivo e casto, potrà avere successo e vantaggi grazie a 
-				quadri, disegni e stampe di ogni tipo. Ha uno senso sviluppato della giustizia, e questo a volte porta a frustrazioni profonde perché non 
+				<b>Carattere</b> sensibile, sensitivo, emotivo, intuitivo, sensuale, affascinante, mutevole, socievole e simpatico, ricettivo e
+				abile nel cogliere al volo le occasioni. È pigro, dolce e duro contemporaneamente ma nonostante la timidezza e la sensibilità ben evidenziate
+				nel suo carattere di base si mostra ambizioso, deciso a raggiungere posizioni di prestigio. Ama il teatro, l'arte, e il cinema, i luoghi di
+				divertimento o locali pubblici. Severo verso se stesso prima che verso gli altri, schivo e casto, potrà avere successo e vantaggi grazie a
+				quadri, disegni e stampe di ogni tipo. Ha uno senso sviluppato della giustizia, e questo a volte porta a frustrazioni profonde perché non
 				riesce ad accettare la realtà delle cose. Cerca un partner intelligente pieno di inventiva e simpatico ma che sposa dopo molti ripensamenti.
 				Se incontra un compagno adatto si rivela uno tra i migliori partner.
 			</p>
 
-			<h2><strong>25 GIUGNO</strong> - dal <strong>4°</strong> al <strong>5° <span class="sBlue">CANCRO</span></strong> = <strong>Grado di tradimento</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>25 GIUGNO</b> - dal <b>4°</b> al <b>5° <span class="sBlue">CANCRO</span></b> = <b>Grado di tradimento</b></h2>
+			<p>
 				<u>Un giovane albero piegato a metà cresce di traverso. Una ragazza in piedi aspetta un uomo</u>.<br>
 				Tendenza a riporre male la propria fiducia. Legami segreti.<br>
-				<strong>Carattere</strong> simpatico, allegro, versatile, originale e intraprendente, affascinante, amante del lusso e la bella vita. 
-				Possiede una natura socievole anche se un pò riservata. Questo consente di agire con pizzico di cautela e di valutare attentamente le 
-				situazioni che incontra, anche le meno difficili. La necessità di cose raffinate e belle sono in contrasto con i suoi concetti ascetici e 
-				progressisti. Ha un temperamento sereno e bonario ama le sensazioni buone della vita, eloquente con una mente profonda. Può interessarsi 
-				di parapsicologia e scienze occulte. Ha una percezione strabiliante dell&#39;atmosfera che lo circonda e si adatta istintivamente. Ha 
-				un'intelligenza viva e attiva, e una mentalità aperta, elastica, facilmente adattabile. Energico e dinamico, amante della vita lussuosa. 
-				Si tiene sempre aggiornato su tutto. È passionale e vive con drammaticità l'amore, caratterizzato da imprevisti e da colpi di scena. 
+				<b>Carattere</b> simpatico, allegro, versatile, originale e intraprendente, affascinante, amante del lusso e la bella vita.
+				Possiede una natura socievole anche se un pò riservata. Questo consente di agire con pizzico di cautela e di valutare attentamente le
+				situazioni che incontra, anche le meno difficili. La necessità di cose raffinate e belle sono in contrasto con i suoi concetti ascetici e
+				progressisti. Ha un temperamento sereno e bonario ama le sensazioni buone della vita, eloquente con una mente profonda. Può interessarsi
+				di parapsicologia e scienze occulte. Ha una percezione strabiliante dell'atmosfera che lo circonda e si adatta istintivamente. Ha
+				un'intelligenza viva e attiva, e una mentalità aperta, elastica, facilmente adattabile. Energico e dinamico, amante della vita lussuosa.
+				Si tiene sempre aggiornato su tutto. È passionale e vive con drammaticità l'amore, caratterizzato da imprevisti e da colpi di scena.
 				L'amore arriverà inaspettato e la persona amata sarà o molto più giovane o molto più anziana di lui.
 			</p>
 
-			<h2><strong>26 GIUGNO</strong> - dal <strong>5°</strong> al <strong>6° <span class="sBlue">CANCRO</span></strong> = <strong>Grado d'apparenza, di brutalità superflua</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>26 GIUGNO</b> - dal <b>5°</b> al <b>6° <span class="sBlue">CANCRO</span></b> = <b>Grado d'apparenza, di brutalità superflua</b></h2>
+			<p>
 				<u>Una donna riccamente vestita che gioca con dei gioielli. Un uomo che tuffa una capra in una caldaia</u>.<br>
 				Sprechi inutili, crudeltà irragionata.<br>
-				<strong>Carattere</strong> sensibile, pieno di fantasia, un po' stravagante bizzarro e isterico, intelligente, amante delle cose belle ed è 
-				ben disposto verso gli altri. Sempre alla ricerca di emozioni forti che appaghino la sete di esperienze e di curiosità, ma anche di argomenti 
-				stimolanti che catturino veramente il suo interesse e la sua immaginazione. Dotato di una personalità gradevole e di straordinarie facoltà 
-				intuitive, la sua natura fortemente emotiva può però degenerare in un temperamento collerico. Dotato di una buona fantasia, di inventiva e 
-				di immaginazione che se sa usare bene può farlo diventare un bravo scrittore, regista, attore e inventore. Simpatico, ma quando è in 
-				famiglia tende ad essere musone e pantofolaio. Fedele e disponibile ma un pò distratto negli affetti forse a causa di una certa avversione 
+				<b>Carattere</b> sensibile, pieno di fantasia, un po' stravagante bizzarro e isterico, intelligente, amante delle cose belle ed è
+				ben disposto verso gli altri. Sempre alla ricerca di emozioni forti che appaghino la sete di esperienze e di curiosità, ma anche di argomenti
+				stimolanti che catturino veramente il suo interesse e la sua immaginazione. Dotato di una personalità gradevole e di straordinarie facoltà
+				intuitive, la sua natura fortemente emotiva può però degenerare in un temperamento collerico. Dotato di una buona fantasia, di inventiva e
+				di immaginazione che se sa usare bene può farlo diventare un bravo scrittore, regista, attore e inventore. Simpatico, ma quando è in
+				famiglia tende ad essere musone e pantofolaio. Fedele e disponibile ma un pò distratto negli affetti forse a causa di una certa avversione
 				a rivelare i suoi sentimenti. Problemi e sofferenze a causa di donne.
 			</p>
 
-			<h2><strong>27 GIUGNO</strong> - dal <strong>6°</strong> al <strong>7° <span class="sBlue">CANCRO</span></strong> = <strong>Grado d'affermazione di se stessi</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>27 GIUGNO</b> - dal <b>6°</b> al <b>7° <span class="sBlue">CANCRO</span></b> = <b>Grado d'affermazione di se stessi</b></h2>
+			<p>
 				<u>Un guanto di ferro, una spada e una frusta sono riuniti su un ceppo</u>.<br>
 				Destino di asserzione e di affermazione. Mano vigorosa, bontà e indulgenza.<br>
-				<strong>Carattere</strong> duttile e buono, gentile, simpatico, sensibile e intuitivo, bello, piacevole e molto intelligente. Ha un gran 
+				<b>Carattere</b> duttile e buono, gentile, simpatico, sensibile e intuitivo, bello, piacevole e molto intelligente. Ha un gran
 				senso del dovere, sa essere altruista anche se si aspetta sempre di essere ampiamente ripagato. Personalità forte, un'intelligenza ricca
 				d'immaginazione che porta all'affermazione nella vita, ma a volte si rivela arrendevole e generoso al punto da nuocere a se stesso. Dovrebbe
-				essere più cauto e imparare ad apprezzare il valore della prudenza e la tendenza a spendere troppo. Si mostra responsabile nel lavoro e 
-				attribuisce grande importanza alla casa e famiglia, attento alle necessità altrui. Ama la recitazione ed è naturalmente attirato e dotato 
+				essere più cauto e imparare ad apprezzare il valore della prudenza e la tendenza a spendere troppo. Si mostra responsabile nel lavoro e
+				attribuisce grande importanza alla casa e famiglia, attento alle necessità altrui. Ama la recitazione ed è naturalmente attirato e dotato
 				dal mondo dello spettacolo. Ha bisogno di continui stimoli intellettuali, ama viaggiare, conoscere culture e usanze di altre paesi. Sembra
-				superficiale rigido e introverso ma il suo modo di fare è dovuto solo a un cattivo rapporto con la sua parte più intima. Gioie durante i 
-				viaggi grazie a un acuto spirito di osservazione, capta bene gli influssi esterni e ha doti extra sensoriali. Amante eccezionale, si stanca 
+				superficiale rigido e introverso ma il suo modo di fare è dovuto solo a un cattivo rapporto con la sua parte più intima. Gioie durante i
+				viaggi grazie a un acuto spirito di osservazione, capta bene gli influssi esterni e ha doti extra sensoriali. Amante eccezionale, si stanca
 				molto presto e difficilmente è fedele.
 			</p>
 
-			<h2><strong>28 GIUGNO</strong> - dal <strong>7°</strong> al <strong>8° <span class="sBlue">CANCRO</span></strong> = <strong>Grado di abbandono alle tentazioni</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>28 GIUGNO</b> - dal <b>7°</b> al <b>8° <span class="sBlue">CANCRO</span></b> = <b>Grado di abbandono alle tentazioni</b></h2>
+			<p>
 				<u>Un serpente sopra ad un albero si prepara ad aggredire un colombo posato a terra</u>.<br>
 				Noie famigliari, discrezione, curiosità, menzogna, astuzia.<br>
-				<strong>Carattere</strong> sensibile, buono, indulgente, intuitivo, fantasioso, socievole, versatile e creativo. Ha una personalità 
-				fortemente magnetica, crea il proprio destino, il successo potrà arridergli facilmente visto che è ambizioso e non teme né problemi, né 
+				<b>Carattere</b> sensibile, buono, indulgente, intuitivo, fantasioso, socievole, versatile e creativo. Ha una personalità
+				fortemente magnetica, crea il proprio destino, il successo potrà arridergli facilmente visto che è ambizioso e non teme né problemi, né
 				ostacoli e né avversari. Detesta però di essere dominato e comandato, possiede una viva e fervida intelligenza unita ad una straordinaria
-				capacità di concentrazione. Ha uno spiccato senso della giustizia è bravo nell'agganciare, riunire le persone e portato a creare piacevoli 
-				atmosfere. Di poche parole, è un osservatore attento e molto prudente. Nonostante l'ansia e una insicurezza di fondo, riesce a stabilire 
+				capacità di concentrazione. Ha uno spiccato senso della giustizia è bravo nell'agganciare, riunire le persone e portato a creare piacevoli
+				atmosfere. Di poche parole, è un osservatore attento e molto prudente. Nonostante l'ansia e una insicurezza di fondo, riesce a stabilire
 				rapporti di amicizia con persone influenti che lo sostengono nel lavoro e nella sfera privata. È un'intellettuale nato e con una vita
-				interiore molto interessante. Ama la musica, i viaggi che entrambi si rivelano fonte di molte nuove esperienze. Deve essere gentile e non 
-				tormentare il prossimo con i suoi problemi. Essendo distratto dai tanti interessi, non trascura il settore affettivo e tende a sacrificarsi 
+				interiore molto interessante. Ama la musica, i viaggi che entrambi si rivelano fonte di molte nuove esperienze. Deve essere gentile e non
+				tormentare il prossimo con i suoi problemi. Essendo distratto dai tanti interessi, non trascura il settore affettivo e tende a sacrificarsi
 				per la persona che ama.
 			</p>
 
-			<h2><strong>29 GIUGNO</strong> - dal <strong>8°</strong> al <strong>9° <span class="sBlue">CANCRO</span></strong> = <strong>Grado di soddisfazione di costruttività</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>29 GIUGNO</b> - dal <b>8°</b> al <b>9° <span class="sBlue">CANCRO</span></b> = <b>Grado di soddisfazione di costruttività</b></h2>
+			<p>
 				<u>Un paesino in una valle fertile. Una giovane vestita da contadina, fila la lana</u>.<br>
 				Spirito attivo e onesto. Realizzazioni modeste di grandi idee.<br>
-				<strong>Carattere</strong> laborioso, semplice, modesto, deciso, intraprendente, concreto, dinamico, mostra grande diligenza nell'eseguire 
-				ogni compito. Molto intelligente e affascinante ma estremamente vulnerabile sul piano emotivo. In compagnia è simpatico, elegante ben curato 
-				e molto attraente. Pratico ed efficiente in tutto ciò che fa, diplomatico con una mente piena di risorse e grande abilità manageriali. Ha un 
-				umorismo brillante e un forte senso della giustizia. Deve scegliere con cura gli amici e i conoscenti, che a volte tratta con una certa 
-				diffidenza. Perseveranza e tenacia di fronte alle difficoltà, gli assicura successo e indipendenza economica. Talvolta è nervoso e soggetto 
-				a slanci improvvisi e a scatti incontrollati. A volte è dispersivo e inconcludente. Vive serenamente la vita matrimoniale, pur essendo 
+				<b>Carattere</b> laborioso, semplice, modesto, deciso, intraprendente, concreto, dinamico, mostra grande diligenza nell'eseguire
+				ogni compito. Molto intelligente e affascinante ma estremamente vulnerabile sul piano emotivo. In compagnia è simpatico, elegante ben curato
+				e molto attraente. Pratico ed efficiente in tutto ciò che fa, diplomatico con una mente piena di risorse e grande abilità manageriali. Ha un
+				umorismo brillante e un forte senso della giustizia. Deve scegliere con cura gli amici e i conoscenti, che a volte tratta con una certa
+				diffidenza. Perseveranza e tenacia di fronte alle difficoltà, gli assicura successo e indipendenza economica. Talvolta è nervoso e soggetto
+				a slanci improvvisi e a scatti incontrollati. A volte è dispersivo e inconcludente. Vive serenamente la vita matrimoniale, pur essendo
 				ammirato e corteggiato.
 			</p>
 
-			<h2><strong>30 GIUGNO</strong> - dal <strong>9°</strong> al <strong>10° <span class="sBlue">CANCRO</span></strong> = <strong>Grado di fertilità, di forza generosa</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
+			<h2><b>30 GIUGNO</b> - dal <b>9°</b> al <b>10° <span class="sBlue">CANCRO</span></b> = <b>Grado di fertilità, di forza generosa</b></h2>
+			<p>
 				<u>Molti passeri cinguettano attorno ad una quercia. Un uomo tiene nella mano destra un cesto di fiori e nell'altra del grano</u>.<br>
 				Successo famigliare. In vecchiaia godrà il frutto delle fatiche. Protezione e amicizie aiutano nella riuscita.<br>
-				<strong>Carattere</strong> sensibile, timido, idealista, cordiale e generoso, ambizioso, attivo e dinamico. Se riesce a superare la timidezza
-				diventa eloquente e affiora la sua saggezza e intelligenza. Spirito laborioso e pacifico che trarrà grandi vantaggi dalla sua attività. 
-				Attivo e lavoratore, modesto e poco ambizioso, ma sa come essere felice con poco. Sa cogliere al volo le occasioni favorevoli ed è sempre 
+				<b>Carattere</b> sensibile, timido, idealista, cordiale e generoso, ambizioso, attivo e dinamico. Se riesce a superare la timidezza
+				diventa eloquente e affiora la sua saggezza e intelligenza. Spirito laborioso e pacifico che trarrà grandi vantaggi dalla sua attività.
+				Attivo e lavoratore, modesto e poco ambizioso, ma sa come essere felice con poco. Sa cogliere al volo le occasioni favorevoli ed è sempre
 				alla ricerca di emozioni e sensazioni nuove, anche se tradizionalista attaccato alla casa e famiglia. Sembra indifferente e disinteressato,
-				ma se gli date un dito rischiate che si prenda tutto il braccio. Temperamento gentile e comprensivo, l'intelligenza vivace e la natura 
-				caritatevole lo rendono simpatico a tutti. Ha talento artistico e letterario. Ama la compagnia e le lunghe chiacchierate con gli amici. Ha 
-				una vita sentimentale un po' complicata. È tuttavia incline ai piaceri, ma tende a eccedere nei peccati di gola con la conseguenza che ciò 
+				ma se gli date un dito rischiate che si prenda tutto il braccio. Temperamento gentile e comprensivo, l'intelligenza vivace e la natura
+				caritatevole lo rendono simpatico a tutti. Ha talento artistico e letterario. Ama la compagnia e le lunghe chiacchierate con gli amici. Ha
+				una vita sentimentale un po' complicata. È tuttavia incline ai piaceri, ma tende a eccedere nei peccati di gola con la conseguenza che ciò
 				va a discapito della sua bellezza estetica.
 			</p>
 
 		<p class="sCenter">
 			<br>
-			<img src="GOLDLINE3.gif" width="350" height="35">&nbsp;&nbsp;
-			<img src="GOLDLINE3.gif" width="350" height="35">
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">&nbsp;&nbsp;
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">
 		</p>
 
-		<p class="sSmall sBlack sCenter">
-			<img src="email-box.gif"    width="35"  height="35">
+		<p class="sCenter">
+			<img src="email-box.gif"    width="35" height="35" alt="">
 			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
-			<img src="TelefonoC164.gif" width="35" height="35">&nbsp;
-			oppure Telefona: <strong>0125 631175 - Cell. 347 0417409<br><br>
-			Sei il visitatore n°&nbsp;</strong>
+			<img src="TelefonoC164.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+
+			<b>Sei il visitatore n°&nbsp;</b>
 		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1351762431-wvsw3d4r2" border=0></a>
-			&nbsp;(Contenuto Aggiornato 29/07/2020)<br><br>
+			&nbsp;(Contenuto Aggiornato <time datetime="2020-07-29">29/07/2020</time>)<br><br>
 		</p>
-					</td></tr></table>
-				</td></tr></table>
-			</td></tr></table>
-		</td></tr></table>
-	</td></tr></table>
+
 </td></tr></table>
-<p class="sXXSmall sBlack sBold sCenter">
-	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati. 
-	Senza il consenso dell&#39;autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
-</p>
+</td></tr></table>
+</td></tr></table>
+<footer>
+	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
+	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
+</footer>
 </body>
 </html>

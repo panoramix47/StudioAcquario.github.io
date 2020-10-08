@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" dir="ltr">
 <head>
 <meta charset="UTF-8">
-<title>Gradi Solari: Maggio</title>
+<title>Gradi Solari: Maggio - Studio Acquario</title>
 <link rel="icon" type="image/gif" href="favicon32.gif">
 <meta name="description" content="Studio Acquario: Gradi Solari dello Zodiaco: Maggio">
-<meta name="keywords" content="astrologia, gradi, solari, zodiaco, maggio">
+<meta name="keywords" content="astrologia, studio, acquario, gradi, solari, zodiaco, maggio">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
 <meta name="language" content="it">
 <meta http-equiv="imagetoolbar" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="29/07/2020">
-<meta name="revised" content="05/08/2020">
+<meta name="revised" content="08/10/2020">
 
 <style type="text/css">
-BODY {
-	SCROLLBAR-ARROW-COLOR: #51327d; 
-	SCROLLBAR-TRACK-COLOR: #a89470; 
-	SCROLLBAR-BASE-COLOR: #e0d0a8; 
+body {
+	SCROLLBAR-ARROW-COLOR: #51327d;
+	SCROLLBAR-TRACK-COLOR: #a89470;
+	SCROLLBAR-BASE-COLOR: #e0d0a8;
 	scrollbar-dark-shadow-color: #E7C1CE;
 
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
@@ -25,31 +26,100 @@ BODY {
 	background-image: url('GRback02.jpg');
 	background-color: #FFFFCC; /* Cream */
 }
-a {
+a:link {
 	color: #000000;
 }
-A:link {
-	text-decoration:none;
+a:visited {
+	color: #000000;
+}
+a:hover {
+	color: #FF0000;
+}
+a:active {
+	color: #000000;
 }
 h1 {
 	font-size: xx-large;
-	color: #000000;
 	font-weight: bold;
+	color: #000000;
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 h2 {
 	font-size: medium;
-	color: #000000;
 	font-weight: normal;
+	color: #000000;
 	text-align: center;
-	margin-top: 0.65cm;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-top: 35px;
 }
-.sLogoBanner {
+header {
 	font-size: xx-large;
 	font-weight: bold;
 	color: #FFFFFF; /* White */
 	text-shadow: 1px 1px 5px #0000FF; /* Blue */
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
+}
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #000000; /* Black */
+	/* text-shadow: 1px 1px 1px #0000FF; Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
+}
+p {
+	font-size: small;
+	color: #000000; /* Black */
+	text-align: justify;
+	padding-left: 35px;
+	padding-right: 35px;
+	line-height: 125%;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.sNavigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 180%;
+}
+.sNavigation a {
+	font-size: medium;
+	font-weight: bold;
+	padding:.42em;
+	color: black;
+	margin-left: 2px;
+	background: #CEC18C; /* Winter Hazel */
+	text-decoration: none;
+}
+.sNavigation a:hover {
+	color: #FFFFFF; /* White */
+	background: #996D3D; /* Buttered Rum */
+}
+#PagCorrente {
+	border-bottom: 2.5px solid brown;
+}
+.sHomeIcon {
+	vertical-align: bottom;
+	margin-bottom: 1px;
+	height: 25px;
+	width: 25px;
 }
 .sBorder1s-Olive {
 				border: 1px solid #666600;
@@ -66,18 +136,11 @@ h2 {
 .sRed {
 				color: #FF0000;
 }
-.sYellow {
-				color: #FFFF00; 
-				text-shadow: 1px 1px 0px #DD8500; /* Tangerine */				
+.sGoldenBrown {
+				color: #996600;
 }
 .sWhite {
 				color: #FFFFFF;
-}
-.sBGPigPink {
-				background-color: #F6D2DE;
-}
-.sBGWhite {
-				background-color: #FFFFFF;
 }
 .sCenter {
 				text-align: center;
@@ -86,8 +149,8 @@ h2 {
 				text-align: justify;
 }
 .sPadding {
-				padding-left: 40px;
-				padding-right: 40px;
+				padding-left: 35px;
+				padding-right: 35px;
 }
 .sBold {
 				font-weight: bold;
@@ -116,542 +179,536 @@ h2 {
 </style>
 </head>
 
-<body vlink="purple" alink="red">
-<p class="sLogoBanner">Studio di Astrologia "Acquario"</p>
+<body>
+<header>Studio di Astrologia &quot;Acquario&quot;</header>
 
-<table background="GRbronze.jpg" cellspacing="0" cellpadding="0" width="95%" class="sBorder1s-Olive" align="center">
-  <tr><td>
+<table background="GRbronze.jpg" cellspacing="0" cellpadding="0" class="sBorder1s-Olive" width="95%" align="center">
+<tr><td background="GRorochiaro.jpg">
 
-	<table background="GRorochiaro.jpg" cellspacing="0" cellpadding="0" width="100%" border="0" class="sBorder1s-Olive">
-	  <tr><td>
+<table background="GRbronze.jpg" cellspacing="14" cellpadding="14" class="sBorder1s-Olive" width="100%">
+<tr><td background="GRorochiaro.jpg">
 
-		<table background="GRbronze.jpg" cellspacing="7" cellpadding="7" width="100%" class="sBorder1s-Olive">
-		  <tr><td>
-
-			<table background="GRorochiaro.jpg" cellspacing="7" cellpadding="7" width="100%" class="sBorder1s-Olive">
-			  <tr><td>
-
-				<table background="GRbronze.jpg" cellspacing="7" cellpadding="7" width="100%" class="sBorder1s-Olive">
-				  <tr><td>
-
-					<table background="GRback04.jpg" bgcolor="#FFF0D0" bordercolor="#FFFFFF" width="100%" border="0">
-					  <tr><td>
+<table background="GRbronze.jpg" cellspacing="14" cellpadding="7" class="sBorder1s-Olive" bgcolor="#FFF0D0" bordercolor="#FFFFFF" width="100%">
+<tr><td background="GRback04.jpg">
 
 		<h1>I GRADI SOLARI DELLO ZODIACO</h1>
 
 		<p class="sCenter">
-			<img src="GOLDLINE3.gif" width="350" height="35">&nbsp;&nbsp; 
-			<img src="GOLDLINE3.gif" width="350" height="35">					
+			<br>
+			<img src="GR.B.05May.gif"  width="371" height="238" alt="Maggio">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="GR.DA.2toro.gif" width="130" height="130" alt="Toro">
 		</p>
 
-		<p class="sMedium sBlack sJustify sPadding">
-			Lo <strong>Zodiaco</strong> è suddiviso in <strong>12</strong> segni, <strong>36</strong> decadi e <strong>360</strong> gradi. 
-			Ogni <strong>grado</strong> ha un valore e un significato. Ad ognuno dei 360 gradi corrisponde un aforisma. 
-			Conoscere il giorno di nascita non è quindi sufficiente: occorre anche sapere quale é il grado.    
-		</p>
-					
-		<p class="sBlack sSmall sCenter sBold">
-			<br><span class="sBGWhite">&nbsp;
-			<a href="GradiSolari1.htm">Gennaio</a> |
-			<a href="GradiSolari2.htm">Febbraio</a> |
-			<a href="GradiSolari3.htm">Marzo</a> |
-			<a href="GradiSolari4.htm">Aprile</a> |</span><span class="sBGPigPink">
-			<a href="GradiSolari5.htm">Maggio</a> |</span><span class="sBGWhite">
-			<a href="GradiSolari6.htm">Giugno</a> |
-			<a href="GradiSolari7.htm">Luglio</a> |
-			<a href="GradiSolari8.htm">Agosto</a> |
-			<a href="GradiSolari9.htm">Settembre</a> |
-			<a href="GradiSolari10.htm">Ottobre</a> |
-			<a href="GradiSolari11.htm">Novembre</a> |
-			<a href="GradiSolari12.htm">Dicembre</a> |
-			<a href="index.html">Pagina&nbsp;Iniziale</a>&nbsp;</span><br>
+		<nav class="sLarge sCenter">
+			<br>
+			<ul class="sNavigation">
+				<li><a href="GradiSolari1.htm">Gennaio</a></li>
+				<li><a href="GradiSolari2.htm">Febbraio</a></li>
+				<li><a href="GradiSolari3.htm">Marzo</a></li>
+				<li><a href="GradiSolari4.htm">Aprile</a></li>
+				<li><a href="GradiSolari5.htm" id="PagCorrente">Maggio</a></li>
+				<li><a href="GradiSolari6.htm">Giugno</a></li>
+				<li><a href="GradiSolari7.htm">Luglio</a></li>
+				<li><a href="GradiSolari8.htm">Agosto</a></li>
+				<li><a href="GradiSolari9.htm">Settembre</a></li>
+				<li><a href="GradiSolari10.htm">Ottobre</a></li>
+				<li><a href="GradiSolari11.htm">Novembre</a></li>
+				<li><a href="GradiSolari12.htm">Dicembre</a></li>
+				<li><a href="index.html"><img src="favicon32.gif" class="sHomeIcon"></a></li>
+			</ul>
+			<br>
+		</nav>
+
+		<p class="sMedium">
+			Lo <b>Zodiaco</b> è suddiviso in <b>12</b> segni, <b>36</b> decadi e <b>360</b> gradi.
+			Ogni <b>grado</b> ha un valore e un significato. Ad ognuno dei 360 gradi corrisponde un aforisma.
+			Conoscere il giorno di nascita non è quindi sufficiente: occorre anche sapere quale é il grado.
 		</p>
 
 		<p class="sCenter">
-			<br>
-			<img src="GR.B.05May.gif"  width="371" height="238">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="GR.DA.2toro.gif" width="130" height="130">
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">&nbsp;&nbsp;
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">
 		</p>
 
-		<p class="sLarge sBlack sBold sCenter">
-			NATO A&nbsp;<img src="A.5Maggio.gif" width="176" height="100">
+		<p class="sXLarge sBold sCenter">
+			NATO A&nbsp;<img src="A.5Maggio.gif" width="176" height="100" alt="Maggio">
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding">
-			Ostinato, non si arrende finché non ottiene ciò che vuole. Non passa mai inosservato, è b ello fisicamente e mentalmente, ha una personalità 
+		<p>
+			Ostinato, non si arrende finché non ottiene ciò che vuole. Non passa mai inosservato, è b ello fisicamente e mentalmente, ha una personalità
 			molto speciale. Si esprime bene, e ama parlare con persone provenienti da tutti i ceti sociali. È un buon intenditore, ma si irrita facilmente.
-			Ha una vita sociale attiva e non gli piace passare il suo tempo da solo. Tende ad essere molto volubile. Ha in genere grandi attitudini per i 
-			lavori manuali e quelli intellettuali. Adora sognare, è intuitivo, con una buona immaginazione, piace l'arte e la letteratura. Grazie alle sue 
-			facoltà intellettuali arriva sovente al successo. Non ama stare da solo, nonostante il fatto che abbia un carattere instabile. La sua memoria 
+			Ha una vita sociale attiva e non gli piace passare il suo tempo da solo. Tende ad essere molto volubile. Ha in genere grandi attitudini per i
+			lavori manuali e quelli intellettuali. Adora sognare, è intuitivo, con una buona immaginazione, piace l'arte e la letteratura. Grazie alle sue
+			facoltà intellettuali arriva sovente al successo. Non ama stare da solo, nonostante il fatto che abbia un carattere instabile. La sua memoria
 			è notevole e questo dipende il segreto della sua eloquenza. Laborioso e vivace, ma un po' spendaccione. Non lascia mai le cose a metà, ma porta
-			a compimento qualsiasi sfida gli venga offerta. Disponibile al dialogo anche con persone appartenenti a culture e ceti differenti. Riflessivo e 
-			determinato, facilmente consolabile. Ha sentimenti profondi, è deciso, volitivo e molto motivato. Forte chiaroveggenza. Comprensivo e 
-			infaticabile. Piace molto viaggiare. Non gli piace l'idea di avere molti figli. Attrae gli altri e ama l'attenzione. Ama molto i piaceri della 
+			a compimento qualsiasi sfida gli venga offerta. Disponibile al dialogo anche con persone appartenenti a culture e ceti differenti. Riflessivo e
+			determinato, facilmente consolabile. Ha sentimenti profondi, è deciso, volitivo e molto motivato. Forte chiaroveggenza. Comprensivo e
+			infaticabile. Piace molto viaggiare. Non gli piace l'idea di avere molti figli. Attrae gli altri e ama l'attenzione. Ama molto i piaceri della
 			vita. Respirazione debole. In genere si ammala dell'udito e del collo.<br>
-			La <strong>donna</strong> è molto persistente e non rinuncia mai ai suoi principi. Spesso è fisicamente molto attraente, perché tira fuori un 
-			carattere eventualmente difficile e questo è pericoloso per ogni uomo che s'innamora. È memorabile nel senso che ha una grande forza di 
+			La <b>donna</b> è molto persistente e non rinuncia mai ai suoi principi. Spesso è fisicamente molto attraente, perché tira fuori un
+			carattere eventualmente difficile e questo è pericoloso per ogni uomo che s'innamora. È memorabile nel senso che ha una grande forza di
 			volontà ed è bellissima.<br>
-			Il <strong>bambino</strong> è intelligente e facile da capire, ma non bisogna sforzarlo troppo allo studio. Gli si deve insegnare a compiere 
-			prontamente e con gioia i suoi doveri. A ma stare con gli adulti che lo stimolino a livello intellettuale, ha anche bisogno di divertimento 
+			Il <b>bambino</b> è intelligente e facile da capire, ma non bisogna sforzarlo troppo allo studio. Gli si deve insegnare a compiere
+			prontamente e con gioia i suoi doveri. A ma stare con gli adulti che lo stimolino a livello intellettuale, ha anche bisogno di divertimento
 			ed eccitazione. Si annoia facilmente, e cerca costantemente nuovi modi per divertirsi.
 		</p>
 
 		<p class="sCenter">
-			<img src="GOLDLINE3.gif" width="350" height="35">&nbsp;&nbsp;&nbsp;
-			<img src="GOLDLINE3.gif" width="350" height="35">
+			<br>
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">
 		</p>
 
-			<h2><strong>1° MAGGIO</strong> - dal <strong>11°</strong> al <strong>12° <span class="sGreen">TORO</span></strong> = <strong>Grado di reciprocità</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Due farfalle sono posate su dei fiori d'arancio. Due donne con le mani intrecciate</u>.<br>
-				Benevolenza, scambio di simpatia, amicizie utili, cordialità, vita tranquilla.<br>
-				<strong>Carattere</strong> simpatico, paziente e pacifico, pignolo e preciso. Natura affettuosa, aperta, semplice, vivace e non gli manca
-				inoltre grande bontà d'animo, generosità e desiderio di aiutare il prossimo. Pratico e laborioso, dotato di buon senso e di spirito
-				imprenditoriale è caratterizzato da una brillante intelligenza, dall'abilità di cogliere al volo le occasioni vincenti e da un incredibile 
-				fiuto per gli affari. In complesso è una persona insostituibile. Nel lavoro è molto abile, ingegnoso con un marcato spirito di iniziativa. 
-				È ben visto dagli amici e conoscenti per i suoi modi simpatici e la comunicativa. In amore è amabile, caldo e passionale. Ha gusto per 
-				l'arte, la bellezza, il lusso, ed è bisognoso di attenzioni e di affetto. Matrimonio e associazioni soddisfacenti. Grande amore per la vita 
-				famigliare e dotato di una notevole capacità di persuasione.
-			</p>
+		<h2><b>1° MAGGIO</b> - dal <b>11°</b> al <b>12° <span class="sGreen">TORO</span></b> = <b>Grado di reciprocità</b></h2>
+		<p>
+			<u>Due farfalle sono posate su dei fiori d'arancio. Due donne con le mani intrecciate</u>.<br>
+			Benevolenza, scambio di simpatia, amicizie utili, cordialità, vita tranquilla.<br>
+			<b>Carattere</b> simpatico, paziente e pacifico, pignolo e preciso. Natura affettuosa, aperta, semplice, vivace e non gli manca
+			inoltre grande bontà d'animo, generosità e desiderio di aiutare il prossimo. Pratico e laborioso, dotato di buon senso e di spirito
+			imprenditoriale è caratterizzato da una brillante intelligenza, dall'abilità di cogliere al volo le occasioni vincenti e da un incredibile
+			fiuto per gli affari. In complesso è una persona insostituibile. Nel lavoro è molto abile, ingegnoso con un marcato spirito di iniziativa.
+			È ben visto dagli amici e conoscenti per i suoi modi simpatici e la comunicativa. In amore è amabile, caldo e passionale. Ha gusto per
+			l'arte, la bellezza, il lusso, ed è bisognoso di attenzioni e di affetto. Matrimonio e associazioni soddisfacenti. Grande amore per la vita
+			famigliare e dotato di una notevole capacità di persuasione.
+		</p>
 
-			<h2><strong>2 MAGGIO</strong> - dal <strong>12°</strong> al <strong>13° <span class="sGreen">TORO</span></strong> = <strong>Grado di possessività egoista</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Due donne che si picchiano. Due cani corrono: uno ha un osso, l'altro lo insegue</u>.<br>
-				Spirito attaccabrighe, litigioso, risse, gelosie e violenze pericolose.<br>
-				<strong>Carattere</strong> ardente e generoso, curioso e dotato di fantasia. Abile e ambizioso, con temperamento artistico, una mente 
-				eclettica e uno spiccato interesse per i problemi sociali. Sempre pronto a parole, svolge con impegno e responsabilità il proprio lavoro, 
-				che gli consente di ottenere i risultati desiderati, soprattutto dal punto di vista economico. Oltre a questo, è anche emotivo e sensibile,
-				romantico e idealista in amore; disponibile ad aiutare i più bisognosi. Questo gli permette di raggiungere grandi successi e riconoscimenti 
-				nell'ambito del settore pubblico. Sente forte il bisogno di socializzare e di ottenere l'attenzione e l'approvazione del prossimo. Ama le 
-				cose semplici e genuine della vita e crede nei valori autentici. Amato o addirittura odiato dagli altri, capace, raffinato nei gusti, ma 
-				invidioso. Desideri insoddisfatti e raramente ha un matrimonio felice.
-			</p>
+		<h2><b>2 MAGGIO</b> - dal <b>12°</b> al <b>13° <span class="sGreen">TORO</span></b> = <b>Grado di possessività egoista</b></h2>
+		<p>
+			<u>Due donne che si picchiano. Due cani corrono: uno ha un osso, l'altro lo insegue</u>.<br>
+			Spirito attaccabrighe, litigioso, risse, gelosie e violenze pericolose.<br>
+			<b>Carattere</b> ardente e generoso, curioso e dotato di fantasia. Abile e ambizioso, con temperamento artistico, una mente
+			eclettica e uno spiccato interesse per i problemi sociali. Sempre pronto a parole, svolge con impegno e responsabilità il proprio lavoro,
+			che gli consente di ottenere i risultati desiderati, soprattutto dal punto di vista economico. Oltre a questo, è anche emotivo e sensibile,
+			romantico e idealista in amore; disponibile ad aiutare i più bisognosi. Questo gli permette di raggiungere grandi successi e riconoscimenti
+			nell'ambito del settore pubblico. Sente forte il bisogno di socializzare e di ottenere l'attenzione e l'approvazione del prossimo. Ama le
+			cose semplici e genuine della vita e crede nei valori autentici. Amato o addirittura odiato dagli altri, capace, raffinato nei gusti, ma
+			invidioso. Desideri insoddisfatti e raramente ha un matrimonio felice.
+		</p>
 
-			<h2><strong>3 MAGGIO</strong> - dal <strong>13°</strong> al <strong>14° <span class="sGreen">TORO</span></strong> = <strong>Grado di liberalità, di serenità di cuore</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un uomo tiene un bastone per traverso. Su una tavola ci sono una squadra e un piano</u>.<br>
-				Spirito giusto ed equo, senso della giustizia, rettitudine.<br>
-				<strong>Carattere</strong> forte e conciliante, mistico, sensibile, leale e sincero, pratico, determinato e fantasioso. È dotato di finezza 
-				nei sentimenti, un'intelligenza pratica, scientifica e piena di risorse. Agisce con gentilezza e diplomazia, dando l'impressione d'essere 
-				una persona affidabile, vincente e sicura di sé. Riscuote successo in attività a contatto con il pubblico e si mostra disponibile, generoso 
-				e magnanimo con chi ama. Ambizioso, sempre in cerca della grande e inaspettata fortuna. Sa anche essere semplice, dolce e socievole, 
-				all'occorrenza pratico. È nato per comandare e organizzare, coscienzioso, onesto, sa come conquistarsi il rispetto e la stima di quanti lo 
-				circondano. È un artista amante delle cose belle. Ama la tranquillità e della giusta atmosfera delle cose semplici e sane della vita. Può 
-				diventare mistico, occultista o studioso del, paranormale. In amore è caldo, leale, e altruista. Matrimonio difficile ma costruttivo.
-			</p>
+		<h2><b>3 MAGGIO</b> - dal <b>13°</b> al <b>14° <span class="sGreen">TORO</span></b> = <b>Grado di liberalità, di serenità di cuore</b></h2>
+		<p>
+			<u>Un uomo tiene un bastone per traverso. Su una tavola ci sono una squadra e un piano</u>.<br>
+			Spirito giusto ed equo, senso della giustizia, rettitudine.<br>
+			<b>Carattere</b> forte e conciliante, mistico, sensibile, leale e sincero, pratico, determinato e fantasioso. È dotato di finezza
+			nei sentimenti, un'intelligenza pratica, scientifica e piena di risorse. Agisce con gentilezza e diplomazia, dando l'impressione d'essere
+			una persona affidabile, vincente e sicura di sé. Riscuote successo in attività a contatto con il pubblico e si mostra disponibile, generoso
+			e magnanimo con chi ama. Ambizioso, sempre in cerca della grande e inaspettata fortuna. Sa anche essere semplice, dolce e socievole,
+			all'occorrenza pratico. È nato per comandare e organizzare, coscienzioso, onesto, sa come conquistarsi il rispetto e la stima di quanti lo
+			circondano. È un artista amante delle cose belle. Ama la tranquillità e della giusta atmosfera delle cose semplici e sane della vita. Può
+			diventare mistico, occultista o studioso del, paranormale. In amore è caldo, leale, e altruista. Matrimonio difficile ma costruttivo.
+		</p>
 
-			<h2><strong>4 MAGGIO</strong> - dal <strong>14°</strong> al <strong>15° <span class="sGreen">TORO</span></strong> = <strong>Grado di mistero e del destino</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Sette ibis che volano a tiro d'ali. Su di un tavolo vi sono strumenti scientifici e molti libri accanto ad un uomo venerando</u>.<br>
-				Spirito religioso, alte conoscenze, mistero e isolamento. Capacità di penetrare nei segreti della natura.<br>
-				<strong>Carattere</strong> intuitivo, simpatico, una natura sensibile e artistica. Dotato di una mente vivace e creativa in grado di 
-				cogliere al volo idee e informazioni, da un fascino irresistibile che lo agevola nella sfera privata e in quella sociale. Ha la tendenza a
-				diventare irritabile e impaziente se qualcosa intralcia i suoi piani e desideri. Capisce il prossimo al primo sguardo, ed è dotato di 
-				un'intelligenza straordinariamente viva, di fervida immaginazione e di gran talento letterario, può diventare un famoso scrittore o uomo 
-				politico. Passionale, con una parlantina brillante e acuta, ma molte volte ha qualche difficoltà a coltivare in modo sereno e costruttivo i 
-				rapporti sociali. Pur riscuotendo successo nell'amore e nelle amicizie, ama ritrarsi e vivere momenti in completa solitudine. Con tutti è 
-				molto gentile, sa farsi apprezzare per lo spirito di concordia.
-			</p>
+		<h2><b>4 MAGGIO</b> - dal <b>14°</b> al <b>15° <span class="sGreen">TORO</span></b> = <b>Grado di mistero e del destino</b></h2>
+		<p>
+			<u>Sette ibis che volano a tiro d'ali. Su di un tavolo vi sono strumenti scientifici e molti libri accanto ad un uomo venerando</u>.<br>
+			Spirito religioso, alte conoscenze, mistero e isolamento. Capacità di penetrare nei segreti della natura.<br>
+			<b>Carattere</b> intuitivo, simpatico, una natura sensibile e artistica. Dotato di una mente vivace e creativa in grado di
+			cogliere al volo idee e informazioni, da un fascino irresistibile che lo agevola nella sfera privata e in quella sociale. Ha la tendenza a
+			diventare irritabile e impaziente se qualcosa intralcia i suoi piani e desideri. Capisce il prossimo al primo sguardo, ed è dotato di
+			un'intelligenza straordinariamente viva, di fervida immaginazione e di gran talento letterario, può diventare un famoso scrittore o uomo
+			politico. Passionale, con una parlantina brillante e acuta, ma molte volte ha qualche difficoltà a coltivare in modo sereno e costruttivo i
+			rapporti sociali. Pur riscuotendo successo nell'amore e nelle amicizie, ama ritrarsi e vivere momenti in completa solitudine. Con tutti è
+			molto gentile, sa farsi apprezzare per lo spirito di concordia.
+		</p>
 
-			<h2><strong>5 MAGGIO</strong> - dal <strong>15°</strong> al <strong>16° <span class="sGreen">TORO</span></strong> = <strong>Grado di rilassatezza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Due mucche bianche pascolano, dietro loro una tigre è pronta a balzarle addosso</u>.<br>
-				Imprevisti di vario genere, pericolo d'esilio e di ricovero. Serenità turbata.<br>
-				<strong>Carattere</strong> forte, tenace, resistente, deciso, osservatore e riflessivo che controlla e valuta ogni cosa. È dotato di una 
-				mente spirituale, d'intelligenza geniale, una natura intuitiva e penetrante, sensibile e un'acuta capacità di giudizio. Efficiente e pratico, 
-				coscienzioso, responsabile e ben organizzato, ha bisogno di molto ordine per sentirsi veramente tranquillo! Ama leggere e informarsi, e 
-				ricerca nel matrimonio la sicurezza e la stabilità. Si arrabbia difficilmente, ma se arriva a questo.... semina il terrore, deve combattere 
-				la tendenza a essere troppo calmo e lento e anche pigro. Ha un animo aristocratico ma anche un grande cuore. Sa sempre come scegliere il 
-				meglio al momento giusto. Ha bisogno di serenità, di amicizie solide e e sincere. È amante della natura. In amore è romantico, sensuale, 
-				un buon amatore ma d'umore troppo spesso variabile. Ama la buona tavola è fortunato nell'amore e nel matrimonio.
-			</p>
+		<h2><b>5 MAGGIO</b> - dal <b>15°</b> al <b>16° <span class="sGreen">TORO</span></b> = <b>Grado di rilassatezza</b></h2>
+		<p>
+			<u>Due mucche bianche pascolano, dietro loro una tigre è pronta a balzarle addosso</u>.<br>
+			Imprevisti di vario genere, pericolo d'esilio e di ricovero. Serenità turbata.<br>
+			<b>Carattere</b> forte, tenace, resistente, deciso, osservatore e riflessivo che controlla e valuta ogni cosa. È dotato di una
+			mente spirituale, d'intelligenza geniale, una natura intuitiva e penetrante, sensibile e un'acuta capacità di giudizio. Efficiente e pratico,
+			coscienzioso, responsabile e ben organizzato, ha bisogno di molto ordine per sentirsi veramente tranquillo! Ama leggere e informarsi, e
+			ricerca nel matrimonio la sicurezza e la stabilità. Si arrabbia difficilmente, ma se arriva a questo.... semina il terrore, deve combattere
+			la tendenza a essere troppo calmo e lento e anche pigro. Ha un animo aristocratico ma anche un grande cuore. Sa sempre come scegliere il
+			meglio al momento giusto. Ha bisogno di serenità, di amicizie solide e e sincere. È amante della natura. In amore è romantico, sensuale,
+			un buon amatore ma d'umore troppo spesso variabile. Ama la buona tavola è fortunato nell'amore e nel matrimonio.
+		</p>
 
-			<h2><strong>6 MAGGIO</strong> - dal <strong>16°</strong> al <strong>17° <span class="sGreen">TORO</span></strong> = <strong>Grado di inefficienza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un uomo nuota controcorrente senza riuscire ad andare avanti</u>.<br>
-				Sforzi impotenti nella vita, rischio d'impopolarità e d'insuccesso dopo un lungo sforzo.<br>
-				<strong>Carattere</strong> sensibile, comprensivo, progressista, moderno, influente, acuto osservatore sono attributi di una donna e di un 
-				uomo di successo. Volonteroso e determinato, intellettualmente in grado di cogliere al volo le situazioni più vantaggiose, specie dal punto
-				di vista finanziario. Mente perspicace, creativa, originale ha un vivo interesse per l'arte e la letteratura, ha particolare abilità nello 
-				scrivere che permette di divenire un autore famoso. Fantasioso, ha un'inclinazione spiccata per l'arte, anche se eccelle sempre nel campo 
-				scientifico, della ricerca e di tutto ciò che è razionalità e ragionamento. È una vera miniera d'idee di trovate originali che lo aiutano 
-				in ogni circostanza. Pur essendo libero e indipendente, cerca amore e stabilità. Nonostante ciò, prova anche il desiderio d'approfondire 
-				temi sociali, umanitari, politici e spirituali. Da molto in amore e desidera essere ripagato con la stessa moneta, se questo non avviene 
-				può diventare aggressivo e testardo.
-			</p>
+		<h2><b>6 MAGGIO</b> - dal <b>16°</b> al <b>17° <span class="sGreen">TORO</span></b> = <b>Grado di inefficienza</b></h2>
+		<p>
+			<u>Un uomo nuota controcorrente senza riuscire ad andare avanti</u>.<br>
+			Sforzi impotenti nella vita, rischio d'impopolarità e d'insuccesso dopo un lungo sforzo.<br>
+			<b>Carattere</b> sensibile, comprensivo, progressista, moderno, influente, acuto osservatore sono attributi di una donna e di un
+			uomo di successo. Volonteroso e determinato, intellettualmente in grado di cogliere al volo le situazioni più vantaggiose, specie dal punto
+			di vista finanziario. Mente perspicace, creativa, originale ha un vivo interesse per l'arte e la letteratura, ha particolare abilità nello
+			scrivere che permette di divenire un autore famoso. Fantasioso, ha un'inclinazione spiccata per l'arte, anche se eccelle sempre nel campo
+			scientifico, della ricerca e di tutto ciò che è razionalità e ragionamento. È una vera miniera d'idee di trovate originali che lo aiutano
+			in ogni circostanza. Pur essendo libero e indipendente, cerca amore e stabilità. Nonostante ciò, prova anche il desiderio d'approfondire
+			temi sociali, umanitari, politici e spirituali. Da molto in amore e desidera essere ripagato con la stessa moneta, se questo non avviene
+			può diventare aggressivo e testardo.
+		</p>
 
-			<h2><strong>7 MAGGIO</strong> - dal <strong>17°</strong> al <strong>18° <span class="sGreen">TORO</span></strong> = <strong>Grado di lotta, di contestazioni</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Due tori che si battono a colpi di testa</u>.<br>
-				Lotte e vita avventurosa, pericolo di ferite e di violenza. Due diverse ideologie che si combattono.<br>
-				<strong>Carattere</strong> caritatevole, generoso e tollerante da una parte, dall'altra irascibile, combattivo e guerriero. Di larghe vedute 
-				e di grande generosità, comprende gli uomini perciò è capace di perdonare. Ha capacità di comando e gran comunicativa: che gli consente di 
-				stabilire ottime intese, in ambito sociale e in quello privato! Mostra abilità negli affari e interesse verso tutto ciò che è tecnologico e
-				innovativo. È attratto dalle persone intelligenti, colte e stimolanti, sa divertirsi e apprezza i piaceri della vita. Ha modi naturalmente 
-				aristocratici e raffinati, tiene in gran conto il riconoscimento sociale e piace fare colpo sugli estranei, qualche volta si lascia prendere 
-				dall'ira e allora diventa antipatico e violento. Ha una gran facilità di parola e una dialettica facile e convincente. Ha delle grandi doti
-				d'apprendimento di simpatia, spigliatezza e adattabilità. Nella rincorsa ai grandi ideali è molto abile nel fingere bene nel momento giusto. 
-				Per questi motivi la sua esistenza scorre in maniera abbastanza facile.
-			</p>
+		<h2><b>7 MAGGIO</b> - dal <b>17°</b> al <b>18° <span class="sGreen">TORO</span></b> = <b>Grado di lotta, di contestazioni</b></h2>
+		<p>
+			<u>Due tori che si battono a colpi di testa</u>.<br>
+			Lotte e vita avventurosa, pericolo di ferite e di violenza. Due diverse ideologie che si combattono.<br>
+			<b>Carattere</b> caritatevole, generoso e tollerante da una parte, dall'altra irascibile, combattivo e guerriero. Di larghe vedute
+			e di grande generosità, comprende gli uomini perciò è capace di perdonare. Ha capacità di comando e gran comunicativa: che gli consente di
+			stabilire ottime intese, in ambito sociale e in quello privato! Mostra abilità negli affari e interesse verso tutto ciò che è tecnologico e
+			innovativo. È attratto dalle persone intelligenti, colte e stimolanti, sa divertirsi e apprezza i piaceri della vita. Ha modi naturalmente
+			aristocratici e raffinati, tiene in gran conto il riconoscimento sociale e piace fare colpo sugli estranei, qualche volta si lascia prendere
+			dall'ira e allora diventa antipatico e violento. Ha una gran facilità di parola e una dialettica facile e convincente. Ha delle grandi doti
+			d'apprendimento di simpatia, spigliatezza e adattabilità. Nella rincorsa ai grandi ideali è molto abile nel fingere bene nel momento giusto.
+			Per questi motivi la sua esistenza scorre in maniera abbastanza facile.
+		</p>
 
-			<h2><strong>8 MAGGIO</strong> - dal <strong>18°</strong> al <strong>19° <span class="sGreen">TORO</span></strong> = <strong>Grado d'inutilità piacevole, d'incompetenza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Una donna vestita con abiti leggeri sdraiata su un campo in mezzo a fiori viola</u>.<br>
-				Trasformazioni radicali e piacevoli nella vita. Apostolato.<br>
-				<strong>Carattere</strong> leale, cangiante, mite, pieghevole, accomodante, comprensivo e onesto. D'animo molto buono, dolce, amabile, 
-				intellettuale, radioso, dotato di grande senso estetico. È ambizioso, competitivo, diligente, meticoloso e riflessivo, dotato di senso 
-				pratico e di carattere forte. Gentile, sa come trattare la gente, ha un vivo desiderio di aiutare coloro che versano in condizioni difficili. 
-				È idealista, apprezza la natura e gli alti principi. Molto esigente, mira sempre in alto anche se a volte le cose per lui non vanno sempre
-				bene. Riesce a raggiungere buoni risultati in campo professionale, grazie all'impegno e ad eccellenti doti organizzative. L'ipersensibilità 
-				può trasformarsi in un complesso d'inferiorità se non vive in un ambiente adatto e circondato da amici giusti. Ha uno spirito abile e 
-				organizzativo una mente speculativa ma ha qualche difficoltà a prendere decisioni. Molto esigente, mira sempre in alto anche se purtroppo 
-				le cose per lui non vanno sempre bene.
-			</p>
+		<h2><b>8 MAGGIO</b> - dal <b>18°</b> al <b>19° <span class="sGreen">TORO</span></b> = <b>Grado d'inutilità piacevole, d'incompetenza</b></h2>
+		<p>
+			<u>Una donna vestita con abiti leggeri sdraiata su un campo in mezzo a fiori viola</u>.<br>
+			Trasformazioni radicali e piacevoli nella vita. Apostolato.<br>
+			<b>Carattere</b> leale, cangiante, mite, pieghevole, accomodante, comprensivo e onesto. D'animo molto buono, dolce, amabile,
+			intellettuale, radioso, dotato di grande senso estetico. È ambizioso, competitivo, diligente, meticoloso e riflessivo, dotato di senso
+			pratico e di carattere forte. Gentile, sa come trattare la gente, ha un vivo desiderio di aiutare coloro che versano in condizioni difficili.
+			È idealista, apprezza la natura e gli alti principi. Molto esigente, mira sempre in alto anche se a volte le cose per lui non vanno sempre
+			bene. Riesce a raggiungere buoni risultati in campo professionale, grazie all'impegno e ad eccellenti doti organizzative. L'ipersensibilità
+			può trasformarsi in un complesso d'inferiorità se non vive in un ambiente adatto e circondato da amici giusti. Ha uno spirito abile e
+			organizzativo una mente speculativa ma ha qualche difficoltà a prendere decisioni. Molto esigente, mira sempre in alto anche se purtroppo
+			le cose per lui non vanno sempre bene.
+		</p>
 
-			<h2><strong>9 MAGGIO</strong> - dal <strong>19°</strong> al <strong>20° <span class="sGreen">TORO</span></strong> = <strong>Grado d'invidia e astuzia</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un corvo in piedi su una brocca d'acqua. Due cani che si mordono</u>.<br>
-				Contestazioni inutili. Spirito invidioso e rabbioso, violente battaglie con rivali.<br>
-				<strong>Carattere</strong> ambizioso, energico, collerico e iracondo, volonteroso, irrequieto, impaziente, poco organizzato. Sa guadagnare
-				denaro, rendersi utile, affascinare gli altri e migliorare la propria immagine sociale. Di pronta intelligenza ma poco sincero, tende a 
-				dare una versione dei fatti del tutto personale e fantasiosa. È abile intermediario o consigliere, la fortuna l'assiste in varie fasi 
-				dell'esistenza e non dovrà sorprendersi se un giorno si ritroverà ricco. Comportamento sicuro di sé, energico, autosufficiente, pieno di 
-				risorse si crea il proprio destino. Ire e rabbie ingiustificate che unite ad arroganza e impulsività rivelano un carattere indifferente e a
-				volte pericoloso. Un po' troppo dipendente dalla famiglia di origine, non cresce mai completamente e rimane un eterno bambino. Si dimostra 
-				gentile e affettuoso con chi ama ma la mette in secondo piano rispetto al lavoro e agli affari.
-			</p>
+		<h2><b>9 MAGGIO</b> - dal <b>19°</b> al <b>20° <span class="sGreen">TORO</span></b> = <b>Grado d'invidia e astuzia</b></h2>
+		<p>
+			<u>Un corvo in piedi su una brocca d'acqua. Due cani che si mordono</u>.<br>
+			Contestazioni inutili. Spirito invidioso e rabbioso, violente battaglie con rivali.<br>
+			<b>Carattere</b> ambizioso, energico, collerico e iracondo, volonteroso, irrequieto, impaziente, poco organizzato. Sa guadagnare
+			denaro, rendersi utile, affascinare gli altri e migliorare la propria immagine sociale. Di pronta intelligenza ma poco sincero, tende a
+			dare una versione dei fatti del tutto personale e fantasiosa. È abile intermediario o consigliere, la fortuna l'assiste in varie fasi
+			dell'esistenza e non dovrà sorprendersi se un giorno si ritroverà ricco. Comportamento sicuro di sé, energico, autosufficiente, pieno di
+			risorse si crea il proprio destino. Ire e rabbie ingiustificate che unite ad arroganza e impulsività rivelano un carattere indifferente e a
+			volte pericoloso. Un po' troppo dipendente dalla famiglia di origine, non cresce mai completamente e rimane un eterno bambino. Si dimostra
+			gentile e affettuoso con chi ama ma la mette in secondo piano rispetto al lavoro e agli affari.
+		</p>
 
-			<h2><strong>10 MAGGIO</strong> - dal <strong>20°</strong> al <strong>21° <span class="sGreen">TORO</span></strong> = <strong>Grado di vigilanza continua</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un gufo appollaiato su un albero. Orso che si volge indietro e mostra i denti</u>.<br>
-				Natura prudente ed astuta, dotata per l'occultismo e la meteorologia. Inimicizie.<br>
-				<strong>Carattere</strong> taciturno, diffidente, misantropo, intuitivo e prudente. Intelligente, pieno di slancio e di energia, deciso più 
-				che mai a raggiungere gli obiettivi desiderati in campo sociale o professionale. Mente molto profonda, abile nel parlare e nello scrivere e 
-				può scegliere una professione che ha come base la parola scritta o parlata. Ha grande spirito di adattamento e una straordinaria capacità di
-				imitazione e riproduzione. Sviluppa idee e progetti interessanti e mostra grande abilità nel valutare rapidamente persone e situazioni, 
-				anche molto complesse. Spesso è chiuso, manca di fiducia nel prossimo, sarà amato appassionatamente dagli altri. È permaloso, sospettoso e 
-				testardo, molto puntiglioso e tenace. Socializza con gran facilità e stabilisce rapporti amorosi non sempre soddisfacenti: si mostra 
-				pretenzioso e tende a dominare il partner! Dice sempre la verità ed è responsabile di quello che fa. In amore è un ottimo compagno, ha però 
-				difficoltà nell'intesa con la persona amata, pur essendo capace di grandi sentimenti e di grande fedeltà.
-			</p>
+		<h2><b>10 MAGGIO</b> - dal <b>20°</b> al <b>21° <span class="sGreen">TORO</span></b> = <b>Grado di vigilanza continua</b></h2>
+		<p>
+			<u>Un gufo appollaiato su un albero. Orso che si volge indietro e mostra i denti</u>.<br>
+			Natura prudente ed astuta, dotata per l'occultismo e la meteorologia. Inimicizie.<br>
+			<b>Carattere</b> taciturno, diffidente, misantropo, intuitivo e prudente. Intelligente, pieno di slancio e di energia, deciso più
+			che mai a raggiungere gli obiettivi desiderati in campo sociale o professionale. Mente molto profonda, abile nel parlare e nello scrivere e
+			può scegliere una professione che ha come base la parola scritta o parlata. Ha grande spirito di adattamento e una straordinaria capacità di
+			imitazione e riproduzione. Sviluppa idee e progetti interessanti e mostra grande abilità nel valutare rapidamente persone e situazioni,
+			anche molto complesse. Spesso è chiuso, manca di fiducia nel prossimo, sarà amato appassionatamente dagli altri. È permaloso, sospettoso e
+			testardo, molto puntiglioso e tenace. Socializza con gran facilità e stabilisce rapporti amorosi non sempre soddisfacenti: si mostra
+			pretenzioso e tende a dominare il partner! Dice sempre la verità ed è responsabile di quello che fa. In amore è un ottimo compagno, ha però
+			difficoltà nell'intesa con la persona amata, pur essendo capace di grandi sentimenti e di grande fedeltà.
+		</p>
 
-			<h2><strong>11 MAGGIO</strong> - dal <strong>21°</strong> al <strong>22° <span class="sGreen">TORO</span></strong> = <strong>Grado d'utilità personale</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un campo d'erba folta, un albero circondato da uno sciame d'api. Tre uomini che si tengono per mano</u>.<br>
-				Acquisizione, lavoro ed economia, società segrete.<br>
-				<strong>Carattere</strong> ambizioso, versatile e sensibile, affabile, un pò introverso. Riservato e prudente, pratico, impegnato, razionale 
-				e indipendente, predisposto allo studio di materie scientifiche. È dotato di un grande potere mentale, è abile e potrà fare molte cose, le 
-				sue mani sono belle e creative. È molto ambizioso nel lavoro, fermo nelle decisioni, critico ed esigente nei rapporti sociali. Lo 
-				caratterizza una certa organizzazione nel lavoro, che può riguardare la tecnica, la ricerca, la precisione. Da l'impressione di non provare 
-				emozioni, in realtà possiede una natura gentile e passionale. Potrà avere successo con un lavoro artistico o nell'artigianato si muove nel
-				mondo degli artisti dello spettacolo nella moda e bellezza. È fortunato nelle amicizie ed è un compagno simpatico e allegro. Soci utili e 
-				produttivi, amici sinceri sempre disposti ad aiutare o assistere e farà molti viaggi interessanti. Nella vita famigliare sovente incontra 
-				ostacoli e deve subire molte sofferenze.
-			</p>
+		<h2><b>11 MAGGIO</b> - dal <b>21°</b> al <b>22° <span class="sGreen">TORO</span></b> = <b>Grado d'utilità personale</b></h2>
+		<p>
+			<u>Un campo d'erba folta, un albero circondato da uno sciame d'api. Tre uomini che si tengono per mano</u>.<br>
+			Acquisizione, lavoro ed economia, società segrete.<br>
+			<b>Carattere</b> ambizioso, versatile e sensibile, affabile, un pò introverso. Riservato e prudente, pratico, impegnato, razionale
+			e indipendente, predisposto allo studio di materie scientifiche. È dotato di un grande potere mentale, è abile e potrà fare molte cose, le
+			sue mani sono belle e creative. È molto ambizioso nel lavoro, fermo nelle decisioni, critico ed esigente nei rapporti sociali. Lo
+			caratterizza una certa organizzazione nel lavoro, che può riguardare la tecnica, la ricerca, la precisione. Da l'impressione di non provare
+			emozioni, in realtà possiede una natura gentile e passionale. Potrà avere successo con un lavoro artistico o nell'artigianato si muove nel
+			mondo degli artisti dello spettacolo nella moda e bellezza. È fortunato nelle amicizie ed è un compagno simpatico e allegro. Soci utili e
+			produttivi, amici sinceri sempre disposti ad aiutare o assistere e farà molti viaggi interessanti. Nella vita famigliare sovente incontra
+			ostacoli e deve subire molte sofferenze.
+		</p>
 
-			<h2><strong>12 MAGGIO</strong> - dal <strong>22°</strong> al <strong>23° <span class="sGreen">TORO</span></strong> = <strong>Grado di caduta e crollo</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un Re seduto sul trono, dietro, in piedi una figura velata di nero. Uomo che cade e sulla schiena</u>.<br>
-				Rovescio di fortuna o fallimento al sommo della carriera.<br>
-				<strong>Carattere</strong> aperto e leale, intelligente, ambizioso e idealista. Volenteroso, determinato e ambizioso. Riesce a raggiungere 
-				traguardi prestigiosi, anche costo di grandi sacrifici. Soprattutto nel lavoro dimostra una capacità organizzativa fuori dal comune, 
-				riflessi rapidi e grande abilità nel gestire i rapporti interpersonali. È generoso, spontaneo, pieno di entusiasmo e dotato d'intelligenza 
-				immediata e attiva. Temperamento passionale, focoso, ha spirito di avventura e un insopprimibile desiderio di viaggiare e di conoscere 
-				luoghi nuovi e lontani. Ama la libertà, l'indipendenza e l'avventura, le cose semplici e sane, tutti i piaceri che la vita offre. La sua 
-				natura decisa elimina tutte le difficoltà e permette di conquistare notorietà in ogni professione. Ama l'arte e la musica, si mostra tenero
-				e leale negli affetti. Ha un entusiasmo esuberante e capacità di vedere il lato migliore in tutto ciò che la vita gli presenta. In amore ha 
-				difficoltà a trovare la persona giusta capace di farlo innamorare.
-			</p>
+		<h2><b>12 MAGGIO</b> - dal <b>22°</b> al <b>23° <span class="sGreen">TORO</span></b> = <b>Grado di caduta e crollo</b></h2>
+		<p>
+			<u>Un Re seduto sul trono, dietro, in piedi una figura velata di nero. Uomo che cade e sulla schiena</u>.<br>
+			Rovescio di fortuna o fallimento al sommo della carriera.<br>
+			<b>Carattere</b> aperto e leale, intelligente, ambizioso e idealista. Volenteroso, determinato e ambizioso. Riesce a raggiungere
+			traguardi prestigiosi, anche costo di grandi sacrifici. Soprattutto nel lavoro dimostra una capacità organizzativa fuori dal comune,
+			riflessi rapidi e grande abilità nel gestire i rapporti interpersonali. È generoso, spontaneo, pieno di entusiasmo e dotato d'intelligenza
+			immediata e attiva. Temperamento passionale, focoso, ha spirito di avventura e un insopprimibile desiderio di viaggiare e di conoscere
+			luoghi nuovi e lontani. Ama la libertà, l'indipendenza e l'avventura, le cose semplici e sane, tutti i piaceri che la vita offre. La sua
+			natura decisa elimina tutte le difficoltà e permette di conquistare notorietà in ogni professione. Ama l'arte e la musica, si mostra tenero
+			e leale negli affetti. Ha un entusiasmo esuberante e capacità di vedere il lato migliore in tutto ciò che la vita gli presenta. In amore ha
+			difficoltà a trovare la persona giusta capace di farlo innamorare.
+		</p>
 
-			<h2><strong>13 MAGGIO</strong> - dal <strong>23°</strong> al <strong>24° <span class="sGreen">TORO</span></strong> = <strong>Grado di declino, di speranze deluse</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un gruppo di cornacchie sulle rive di un fiume in secca che cercano cibo</u>.<br>
-				Tradimenti, solitudine, fiducia mal riposta, rettitudine, laboriosità.<br>
-				<strong>Carattere</strong> buono, gentile, onesto e puro, orgoglioso e intuitivo, caloroso e spontaneo, oltre che infaticabile nel lavoro 
-				nel quale concentra la sua attenzione e le aspettative. Fiori all'occhiello sono senso di responsabilità e ottima organizzazione, gli 
-				consentono di conseguire eccellenti risultati, particolarmente gratificanti anche sotto il profilo economico. Riesce nelle più svariate
-				attività, ponendosi ai gradini superiori dei valori sociali. È un brillante ed eccellente oratore, riesce ad attirare sempre l'attenzione 
-				altrui. La gran sensibilità lo porta a reagire con prontezza all'ambiente che lo circonda. Ha un'ottima intelligenza ma spesso non è 
-				consapevole delle sue capacità. La sua pazienza e il desiderio di fare di realizzare gli porterà vantaggi notevoli. Temperamento 
-				appassionato, ambizioso, indipendente capace di perseguire i suoi obiettivi senza dover ricorrere ad aiuti e influenze esterne. La sua 
-				pazienza e il desiderio di fare di realizzare gli porterà vantaggi notevoli. Vive la sua vita con poco equilibrio e questo lo porta a 
-				disperdere energie preziose.
-			</p>
+		<h2><b>13 MAGGIO</b> - dal <b>23°</b> al <b>24° <span class="sGreen">TORO</span></b> = <b>Grado di declino, di speranze deluse</b></h2>
+		<p>
+			<u>Un gruppo di cornacchie sulle rive di un fiume in secca che cercano cibo</u>.<br>
+			Tradimenti, solitudine, fiducia mal riposta, rettitudine, laboriosità.<br>
+			<b>Carattere</b> buono, gentile, onesto e puro, orgoglioso e intuitivo, caloroso e spontaneo, oltre che infaticabile nel lavoro
+			nel quale concentra la sua attenzione e le aspettative. Fiori all'occhiello sono senso di responsabilità e ottima organizzazione, gli
+			consentono di conseguire eccellenti risultati, particolarmente gratificanti anche sotto il profilo economico. Riesce nelle più svariate
+			attività, ponendosi ai gradini superiori dei valori sociali. È un brillante ed eccellente oratore, riesce ad attirare sempre l'attenzione
+			altrui. La gran sensibilità lo porta a reagire con prontezza all'ambiente che lo circonda. Ha un'ottima intelligenza ma spesso non è
+			consapevole delle sue capacità. La sua pazienza e il desiderio di fare di realizzare gli porterà vantaggi notevoli. Temperamento
+			appassionato, ambizioso, indipendente capace di perseguire i suoi obiettivi senza dover ricorrere ad aiuti e influenze esterne. La sua
+			pazienza e il desiderio di fare di realizzare gli porterà vantaggi notevoli. Vive la sua vita con poco equilibrio e questo lo porta a
+			disperdere energie preziose.
+		</p>
 
-			<h2><strong>14 MAGGIO</strong> - dal <strong>24°</strong> al <strong>25° <span class="sGreen">TORO</span></strong> = <strong>Grado di fierezza e fermezza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Uomo in piedi appoggiato ad un bastone. Un leone eretto sulla cima di una montagna</u>.<br>
-				Riuscita per l'energia e la grande fiducia in sé.<br>
-				<strong>Carattere</strong> forte e orgoglioso, dignitoso, gentile, cordiale, abile nel gestire i rapporti sociali, essendo paziente e 
-				tollerante. Dominatore, a volte è anche presuntuoso ed esigente. Mostra impegno e senso di responsabilità nel lavoro, si prende cura dei 
-				problemi altrui come se fossero i propri. Cerca di farsi rispettare con la forza mostrando risolutezza e intraprendenza. Ha talento per le 
-				belle arti, può ottenere successo come scrittore, poeta o paroliere di canzoni. Sa ragionare molto bene e nelle decisioni importanti è 
-				l'intuito a dare le indicazioni giuste. Ha un'intelligenza e uno spirito molto attivo e ha sempre bisogno di forti e nuovi stimoli. Spesso 
-				è taciturno e distratto, nasconde molta ostinazione, a volte è troppo intollerante e tende a isolarsi e soffrire. Ha un temperamento 
-				assolutista e difficile. È autoritario, sicuro e impassibile, ed è consapevole di valere e fiero della sua forza. Si aspetta grandi cose 
-				dal partner e dal rapporto di coppia.
-			</p>
+		<h2><b>14 MAGGIO</b> - dal <b>24°</b> al <b>25° <span class="sGreen">TORO</span></b> = <b>Grado di fierezza e fermezza</b></h2>
+		<p>
+			<u>Uomo in piedi appoggiato ad un bastone. Un leone eretto sulla cima di una montagna</u>.<br>
+			Riuscita per l'energia e la grande fiducia in sé.<br>
+			<b>Carattere</b> forte e orgoglioso, dignitoso, gentile, cordiale, abile nel gestire i rapporti sociali, essendo paziente e
+			tollerante. Dominatore, a volte è anche presuntuoso ed esigente. Mostra impegno e senso di responsabilità nel lavoro, si prende cura dei
+			problemi altrui come se fossero i propri. Cerca di farsi rispettare con la forza mostrando risolutezza e intraprendenza. Ha talento per le
+			belle arti, può ottenere successo come scrittore, poeta o paroliere di canzoni. Sa ragionare molto bene e nelle decisioni importanti è
+			l'intuito a dare le indicazioni giuste. Ha un'intelligenza e uno spirito molto attivo e ha sempre bisogno di forti e nuovi stimoli. Spesso
+			è taciturno e distratto, nasconde molta ostinazione, a volte è troppo intollerante e tende a isolarsi e soffrire. Ha un temperamento
+			assolutista e difficile. È autoritario, sicuro e impassibile, ed è consapevole di valere e fiero della sua forza. Si aspetta grandi cose
+			dal partner e dal rapporto di coppia.
+		</p>
 
-			<h2><strong>15 MAGGIO</strong> - dal <strong>25°</strong> al <strong>26° <span class="sGreen">TORO</span></strong> = <strong>Grado di concordia, di bontà spontanea</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un uomo in piedi con la mano tesa. Una donna tiene un bimbo per mano</u>.<br>
-				Persona che si prodiga per gli altri. Dolcezza e socievolezza.<br>
-				<strong>Carattere</strong> forte, fermo e autorevole, potente, deciso e orgoglioso. Conciliante, diplomatico, amante della pace e serenità.
-				Vita calma, spirito benevolo e pacifico ma all'occorrenza dimostra un'ostinazione notevole. Sa farsi valere con gentilezza e in caso di
-				necessità con autorità. Instancabile nel lavoro, il settore più importante della sua vita, è ambizioso e voglioso di raggiungere una
-				soddisfacente sicurezza economica. Riesce anche a stabilire buone intese amichevoli e sentimentali. È un saggio e le stelle gli hanno donato 
-				un senso spiccato di bellezza e di armonia, ama la natura, le cose belle, la musica e la poesia. Nel lavoro è molto attivo, e riesce sempre 
-				bene in tutte le iniziative. Pur avendo parecchi problemi da risolvere e grandi ostacoli sul suo cammino, non perde mai la fiducia, la 
-				speranza e la pazienza. La buona sorte l'aiuterà sempre e risulterà vincitore nonostante tutto senza tanto affannarsi. Per essere felice 
-				dovrebbe vivere in campagna aperta o vicino al mare. La sua personalità magnetica lo rende molto amato dal sesso opposto.
-			</p>
+		<h2><b>15 MAGGIO</b> - dal <b>25°</b> al <b>26° <span class="sGreen">TORO</span></b> = <b>Grado di concordia, di bontà spontanea</b></h2>
+		<p>
+			<u>Un uomo in piedi con la mano tesa. Una donna tiene un bimbo per mano</u>.<br>
+			Persona che si prodiga per gli altri. Dolcezza e socievolezza.<br>
+			<b>Carattere</b> forte, fermo e autorevole, potente, deciso e orgoglioso. Conciliante, diplomatico, amante della pace e serenità.
+			Vita calma, spirito benevolo e pacifico ma all'occorrenza dimostra un'ostinazione notevole. Sa farsi valere con gentilezza e in caso di
+			necessità con autorità. Instancabile nel lavoro, il settore più importante della sua vita, è ambizioso e voglioso di raggiungere una
+			soddisfacente sicurezza economica. Riesce anche a stabilire buone intese amichevoli e sentimentali. È un saggio e le stelle gli hanno donato
+			un senso spiccato di bellezza e di armonia, ama la natura, le cose belle, la musica e la poesia. Nel lavoro è molto attivo, e riesce sempre
+			bene in tutte le iniziative. Pur avendo parecchi problemi da risolvere e grandi ostacoli sul suo cammino, non perde mai la fiducia, la
+			speranza e la pazienza. La buona sorte l'aiuterà sempre e risulterà vincitore nonostante tutto senza tanto affannarsi. Per essere felice
+			dovrebbe vivere in campagna aperta o vicino al mare. La sua personalità magnetica lo rende molto amato dal sesso opposto.
+		</p>
 
-			<h2><strong>16 MAGGIO</strong> - dal <strong>26°</strong> al <strong>27° <span class="sGreen">TORO</span></strong> = <strong>Grado di benessere, di successo</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Alchimista al lavoro, c'è molto oro sul suo tavolo. Campi coperti di fasci di grano</u>.<br>
-				Abbondanza di beni, ricchezze, riuscita, godimento facile delle fatiche.<br>
-				<strong>Carattere</strong> sensibile, concreto e misterioso, profondo, audace, deciso e convincente. Abile e ingegnoso, dotato di grandi 
-				capacità artistiche. La sua forza sta nella possibilità di convincere gli altri del suo punto di vista, costi quel che costi vuole 
-				raggiungere gli obiettivi desiderati, sia sotto il profilo pratico sia finanziario, nonostante ciò è generoso con chi lo merita. Non gli 
-				sarà difficile arrivare al successo o acquistare beni e una buona posizione. Grazie alle doti innate riesce a superare felicemente le grandi 
-				difficoltà che incontra durante la vita. La sua ambizione lo porta ad avere una grande ascesa sociale. Inclinazione all'occultismo, nei 
-				piaceri della vita, prova delle forti emozioni per le persone che ama. Il matrimonio è felice e potrà portargli dei vantaggi morali e 
-				materiali. È molto attratto dal fascino del denaro. Per questo motivo vive una vita piena di ostacoli.
-			</p>
+		<h2><b>16 MAGGIO</b> - dal <b>26°</b> al <b>27° <span class="sGreen">TORO</span></b> = <b>Grado di benessere, di successo</b></h2>
+		<p>
+			<u>Alchimista al lavoro, c'è molto oro sul suo tavolo. Campi coperti di fasci di grano</u>.<br>
+			Abbondanza di beni, ricchezze, riuscita, godimento facile delle fatiche.<br>
+			<b>Carattere</b> sensibile, concreto e misterioso, profondo, audace, deciso e convincente. Abile e ingegnoso, dotato di grandi
+			capacità artistiche. La sua forza sta nella possibilità di convincere gli altri del suo punto di vista, costi quel che costi vuole
+			raggiungere gli obiettivi desiderati, sia sotto il profilo pratico sia finanziario, nonostante ciò è generoso con chi lo merita. Non gli
+			sarà difficile arrivare al successo o acquistare beni e una buona posizione. Grazie alle doti innate riesce a superare felicemente le grandi
+			difficoltà che incontra durante la vita. La sua ambizione lo porta ad avere una grande ascesa sociale. Inclinazione all'occultismo, nei
+			piaceri della vita, prova delle forti emozioni per le persone che ama. Il matrimonio è felice e potrà portargli dei vantaggi morali e
+			materiali. È molto attratto dal fascino del denaro. Per questo motivo vive una vita piena di ostacoli.
+		</p>
 
-			<h2><strong>17 MAGGIO</strong> - dal <strong>27°</strong> al <strong>28° <span class="sGreen">TORO</span></strong> = <strong>Grado di chimera, d'incompetenza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un uomo si arrampica su un palo posto in elevazione. Una donna tira un cavallo per la briglia</u>.<br>
-				Grandi sforzi per arrivare alla meta, spirito velleitario.<br>
-				<strong>Carattere</strong> ambizioso, presuntuoso, dispotico, capace e duttile nello stesso tempo. Ha un'intelligenza pronta e razionale e
-				si diletta quasi sempre a studiare cose al di fuori dalla norma. Mostra una grande abilità negli affari e senso dell'humour, che gli consente
-				di avvicinare persone interessanti e preparate culturalmente. Eloquente e persuasivo, desidera realizzarsi e di raggiungere traguardi sociali
-				e professionali, anche molto difficoltosi. Dotato di fervida fantasia, ama l'arte, la musica e le cose belle e raffinate della vita. 
-				Persegue con costanza uno scopo ma sa anche afferrare al volo l'occasione propizia e cambiare direzione. Professione di successo che 
-				richiede intelligenza, inventiva e notevole preparazione psicologica. Ama la solitudine e vive con qualche preoccupazione la vita di coppia. 
-				Sensuale, un po' nervoso con spiccato senso analitico. La sua vita è lunga e felice. Non è molto fedele ma, pretende dedizione e fedeltà 
-				assoluta dalla sua compagna. È affidabile e degno di grande rispetto.
-			</p>
+		<h2><b>17 MAGGIO</b> - dal <b>27°</b> al <b>28° <span class="sGreen">TORO</span></b> = <b>Grado di chimera, d'incompetenza</b></h2>
+		<p>
+			<u>Un uomo si arrampica su un palo posto in elevazione. Una donna tira un cavallo per la briglia</u>.<br>
+			Grandi sforzi per arrivare alla meta, spirito velleitario.<br>
+			<b>Carattere</b> ambizioso, presuntuoso, dispotico, capace e duttile nello stesso tempo. Ha un'intelligenza pronta e razionale e
+			si diletta quasi sempre a studiare cose al di fuori dalla norma. Mostra una grande abilità negli affari e senso dell'humour, che gli consente
+			di avvicinare persone interessanti e preparate culturalmente. Eloquente e persuasivo, desidera realizzarsi e di raggiungere traguardi sociali
+			e professionali, anche molto difficoltosi. Dotato di fervida fantasia, ama l'arte, la musica e le cose belle e raffinate della vita.
+			Persegue con costanza uno scopo ma sa anche afferrare al volo l'occasione propizia e cambiare direzione. Professione di successo che
+			richiede intelligenza, inventiva e notevole preparazione psicologica. Ama la solitudine e vive con qualche preoccupazione la vita di coppia.
+			Sensuale, un po' nervoso con spiccato senso analitico. La sua vita è lunga e felice. Non è molto fedele ma, pretende dedizione e fedeltà
+			assoluta dalla sua compagna. È affidabile e degno di grande rispetto.
+		</p>
 
-			<h2><strong>18 MAGGIO</strong> - dal <strong>28°</strong> al <strong>29° <span class="sGreen">TORO</span></strong> = <strong>Grado di dispotismo, di litigiosità</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Donna che trascina un montone per le corna. Un uomo potente frusta due schiavi chini davanti a lui</u>.<br>
-				Vocazione militare, femmina dominatrice.<br>
-				<strong>Carattere</strong> dispotico, presuntuoso, costante, equilibrato, preciso, pignolo e tenace. Ha molto senso pratico e per questo ha 
-				molte possibilità di riuscire e diventare famoso. La forte volontà e l'abilità organizzativa ne fanno una persona efficiente. Ha una 
-				dialettica brillante, tagliente e ama la discussione e i dibattiti. Ha grande sete di sapere. Intelligente e ambizioso, con una fertile 
-				fantasia. La natura piacevole e seducente conquista molte amicizie sincere, una vita carica di eventi più o meno romantici. Entusiasta e 
-				determinato, assai convinto delle sue idee e deciso più che mai a raggiungere dei traguardi ambiziosi, per poter godere di prestigio e 
-				benessere. Fortunato riesce ad essere ammirato anche per la sua simpatia. Ama la natura e possiede uno spiccato senso artistico. 
-				Socializza facilmente, ama divertirsi ed è molto generoso con le persone che ama.
-			</p>
+		<h2><b>18 MAGGIO</b> - dal <b>28°</b> al <b>29° <span class="sGreen">TORO</span></b> = <b>Grado di dispotismo, di litigiosità</b></h2>
+		<p>
+			<u>Donna che trascina un montone per le corna. Un uomo potente frusta due schiavi chini davanti a lui</u>.<br>
+			Vocazione militare, femmina dominatrice.<br>
+			<b>Carattere</b> dispotico, presuntuoso, costante, equilibrato, preciso, pignolo e tenace. Ha molto senso pratico e per questo ha
+			molte possibilità di riuscire e diventare famoso. La forte volontà e l'abilità organizzativa ne fanno una persona efficiente. Ha una
+			dialettica brillante, tagliente e ama la discussione e i dibattiti. Ha grande sete di sapere. Intelligente e ambizioso, con una fertile
+			fantasia. La natura piacevole e seducente conquista molte amicizie sincere, una vita carica di eventi più o meno romantici. Entusiasta e
+			determinato, assai convinto delle sue idee e deciso più che mai a raggiungere dei traguardi ambiziosi, per poter godere di prestigio e
+			benessere. Fortunato riesce ad essere ammirato anche per la sua simpatia. Ama la natura e possiede uno spiccato senso artistico.
+			Socializza facilmente, ama divertirsi ed è molto generoso con le persone che ama.
+		</p>
 
-			<h2><strong>19 MAGGIO</strong> - dal <strong>29°</strong> al <strong>30° <span class="sGreen">TORO</span></strong> = <strong>Grado di voluttà, di soddisfazioni materiali</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un uomo bruno che riposa sul divano, circondato da servitori e cortigiani</u>.<br>
-				Amore del lusso, del decoro del confort, della famiglia, della casa.<br>
-				<strong>Carattere</strong> benevolo, prudente, abile, simpatico, attraente, calmo e previdente. È raffinato e artistico unito ad una grande 
-				intelligenza, pur essendo cordiale si mostra fermo e determinato, sempre pronto a cogliere le opportunità più vantaggiose e a costruirsi 
-				una solida posizione economica. Molto fortunato soprattutto con le cose materiali, ha buon gusto nel vestire e nel scegliere oggetti belli. 
-				Ha tanti interessi, che condivide con gli amici, va alla ricerca dell'anima gemella che, oltre a stimarlo deve essere disposto ad accettare 
-				il suo innato bisogno di libertà e indipendenza. Ama il suo prossimo anche se qualche volta è nervoso e intollerabile. Amici influenti e 
-				importanti gli garantiscono un'ottima affermazione. Ha abilità nel trattare con la gente gli fa conquistare la loro fiducia. Ama la vita 
-				in tutti i suoi aspetti, il buon cibo e l'aria pura, gli affetti veri sicuri e duraturi nel tempo. Dotato di grande carica sensuale.
-			</p>
+		<h2><b>19 MAGGIO</b> - dal <b>29°</b> al <b>30° <span class="sGreen">TORO</span></b> = <b>Grado di voluttà, di soddisfazioni materiali</b></h2>
+		<p>
+			<u>Un uomo bruno che riposa sul divano, circondato da servitori e cortigiani</u>.<br>
+			Amore del lusso, del decoro del confort, della famiglia, della casa.<br>
+			<b>Carattere</b> benevolo, prudente, abile, simpatico, attraente, calmo e previdente. È raffinato e artistico unito ad una grande
+			intelligenza, pur essendo cordiale si mostra fermo e determinato, sempre pronto a cogliere le opportunità più vantaggiose e a costruirsi
+			una solida posizione economica. Molto fortunato soprattutto con le cose materiali, ha buon gusto nel vestire e nel scegliere oggetti belli.
+			Ha tanti interessi, che condivide con gli amici, va alla ricerca dell'anima gemella che, oltre a stimarlo deve essere disposto ad accettare
+			il suo innato bisogno di libertà e indipendenza. Ama il suo prossimo anche se qualche volta è nervoso e intollerabile. Amici influenti e
+			importanti gli garantiscono un'ottima affermazione. Ha abilità nel trattare con la gente gli fa conquistare la loro fiducia. Ama la vita
+			in tutti i suoi aspetti, il buon cibo e l'aria pura, gli affetti veri sicuri e duraturi nel tempo. Dotato di grande carica sensuale.
+		</p>
 
-			<p class="sCenter">
-				<img src="GOLDLINE3.gif" width="350" height="35">&nbsp;&nbsp;&nbsp;
-				<img src="GOLDLINE3.gif" width="350" height="35">
-			</p>
+		<p class="sCenter">
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">
+		</p>
 
-			<h2><strong>20 MAGGIO</strong> - dal <strong>0°</strong> al <strong>1° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado di sicurezza e tranquillità</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Due fiori germogliano all'ombra d'un albero rigoglioso. Due uomini che si tengono per mano</u>.<br>
-				Protezione da un amico influente. Legami costanti.<br>
-				<strong>Carattere</strong> amabile, intuitivo, sveglio, paziente e intraprendente. Simpatico, galante e sicuramente affascinante, dotato di 
-				intelligenza spiccata anche se molto spesso non ben gestita. Dotato di straordinarie facoltà intellettuali e intuitive, ha una ottima 
-				memoria, è capace di arrivare al sodo in ogni situazione con chiarezza e rapidità. Ha un temperamento sensibile e idealista, una natura 
-				amichevole e generosa. La sua fortuna è quasi sempre soggetta alle sue amicizie, ha un buon occhio per le occasioni e ha un eccellente 
-				fiuto per gli affari. Amore dei viaggi per mare. Lavora sodo e quando si sente motivato nella realizzazione di un progetto che ritiene 
-				vincente, tanto da risultare egoista e poco interessato ai rapporti personali. Amante eccezionale trova il giusto equilibrio nell'età 
-				matura, deve tuttavia trovare la via migliore per divenire un pò più fedele e presente. Protegge in tutti i modi le persone a lui care.
-			</p>
+		<h2><b>20 MAGGIO</b> - dal <b>0°</b> al <b>1° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado di sicurezza e tranquillità</b></h2>
+		<p>
+			<u>Due fiori germogliano all'ombra d'un albero rigoglioso. Due uomini che si tengono per mano</u>.<br>
+			Protezione da un amico influente. Legami costanti.<br>
+			<b>Carattere</b> amabile, intuitivo, sveglio, paziente e intraprendente. Simpatico, galante e sicuramente affascinante, dotato di
+			intelligenza spiccata anche se molto spesso non ben gestita. Dotato di straordinarie facoltà intellettuali e intuitive, ha una ottima
+			memoria, è capace di arrivare al sodo in ogni situazione con chiarezza e rapidità. Ha un temperamento sensibile e idealista, una natura
+			amichevole e generosa. La sua fortuna è quasi sempre soggetta alle sue amicizie, ha un buon occhio per le occasioni e ha un eccellente
+			fiuto per gli affari. Amore dei viaggi per mare. Lavora sodo e quando si sente motivato nella realizzazione di un progetto che ritiene
+			vincente, tanto da risultare egoista e poco interessato ai rapporti personali. Amante eccezionale trova il giusto equilibrio nell'età
+			matura, deve tuttavia trovare la via migliore per divenire un pò più fedele e presente. Protegge in tutti i modi le persone a lui care.
+		</p>
 
-			<h2><strong>21 MAGGIO</strong> - dal <strong>1°</strong> al <strong>2° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado di prodezza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Uomo armato che trascina due prigionieri. Un uomo scala un muro grazie ad una scala di corda</u>.<br>
-				Grandi vittorie sui propri nemici, crudeltà, tirannia, battaglia.<br>
-				<strong>Carattere</strong> versatile, vivace, piacevole, buono di cuore, leale e fedele, con tante idee geniali. È simpatico, energico, 
-				molto attivo e tenace, dinamico e abile nel relazionarsi agli altri e nel stringere amicizie importanti e utili, sia nella sfera privata 
-				che in quella professionale. È molto intelligente, dimostra notevole intraprendenza e ottiene l'appoggio di amici influenti. Portato a 
-				lavorare per il comune benessere, cosa che lo rende molto popolare fra gli amici, colleghi o soci. Ha una natura temeraria, ardita e 
-				destinata a vincere gli ostacoli e i nemici. È ricco di una eccezionale forza interiore, che si manifesta a piccole dosi ma sarà continua 
-				e l'aiuterà a vincere tutte le battaglie e a trionfare su tutti i fronti. Crede nell'amicizia e su questo sentimento basa la sua vita. 
-				Sa essere spiritoso e diretto, ha abilità negli affari e una certa devozione al compagno col quale condivide un'infinità d'interessi. 
-				In amore è passionale, ardente ma anche ingenuo e fiducioso.
-			</p>
+		<h2><b>21 MAGGIO</b> - dal <b>1°</b> al <b>2° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado di prodezza</b></h2>
+		<p>
+			<u>Uomo armato che trascina due prigionieri. Un uomo scala un muro grazie ad una scala di corda</u>.<br>
+			Grandi vittorie sui propri nemici, crudeltà, tirannia, battaglia.<br>
+			<b>Carattere</b> versatile, vivace, piacevole, buono di cuore, leale e fedele, con tante idee geniali. È simpatico, energico,
+			molto attivo e tenace, dinamico e abile nel relazionarsi agli altri e nel stringere amicizie importanti e utili, sia nella sfera privata
+			che in quella professionale. È molto intelligente, dimostra notevole intraprendenza e ottiene l'appoggio di amici influenti. Portato a
+			lavorare per il comune benessere, cosa che lo rende molto popolare fra gli amici, colleghi o soci. Ha una natura temeraria, ardita e
+			destinata a vincere gli ostacoli e i nemici. È ricco di una eccezionale forza interiore, che si manifesta a piccole dosi ma sarà continua
+			e l'aiuterà a vincere tutte le battaglie e a trionfare su tutti i fronti. Crede nell'amicizia e su questo sentimento basa la sua vita.
+			Sa essere spiritoso e diretto, ha abilità negli affari e una certa devozione al compagno col quale condivide un'infinità d'interessi.
+			In amore è passionale, ardente ma anche ingenuo e fiducioso.
+		</p>
 
-			<h2><strong>22 MAGGIO</strong> - dal <strong>2°</strong> al <strong>3° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado di armonia</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un uomo che suona la lira</u>.<br>
-				Disposizioni artistiche e musicali.<br>
-				<strong>Carattere</strong> fantasioso, bohemien, idealista, originale ed eloquente. Affascinante e intelligente, con eccezionale capacità 
-				di apprendimento oltre a essere ambizioso, in grado di trovare uno sbocco adeguato alle sue capacità. Ha un temperamento pratico e 
-				materialista, obiettivi ambiziosi e propositi irremovibili. È pronto di riflessi, ha talento oratorio e la sua voce è ben impostata, denota 
-				una predisposizione alla carriera nel settore pubblico. Grande immaginazione, prontezza di riflessi e sa fare molte cose, ama l'arte, lo 
-				spettacolo, il palcoscenico. Di gusti un po' strani è fortunato e vincente in tutto quello che intraprende. Riesce a capire a fondo il
-				comportamento degli altri e a soddisfare la forte curiosità intellettuale che lo spinge ad avventurarsi in territori sempre nuovi e 
-				avvincenti. Essendo libero ed indipendente, ama il flirt e l'avventura. Riesce sempre a gestirsi molto bene. Conduce una vita tranquilla e 
-				agiata. Fortunato in amore e nel matrimonio, sempre vincente.
-			</p>
+		<h2><b>22 MAGGIO</b> - dal <b>2°</b> al <b>3° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado di armonia</b></h2>
+		<p>
+			<u>Un uomo che suona la lira</u>.<br>
+			Disposizioni artistiche e musicali.<br>
+			<b>Carattere</b> fantasioso, bohemien, idealista, originale ed eloquente. Affascinante e intelligente, con eccezionale capacità
+			di apprendimento oltre a essere ambizioso, in grado di trovare uno sbocco adeguato alle sue capacità. Ha un temperamento pratico e
+			materialista, obiettivi ambiziosi e propositi irremovibili. È pronto di riflessi, ha talento oratorio e la sua voce è ben impostata, denota
+			una predisposizione alla carriera nel settore pubblico. Grande immaginazione, prontezza di riflessi e sa fare molte cose, ama l'arte, lo
+			spettacolo, il palcoscenico. Di gusti un po' strani è fortunato e vincente in tutto quello che intraprende. Riesce a capire a fondo il
+			comportamento degli altri e a soddisfare la forte curiosità intellettuale che lo spinge ad avventurarsi in territori sempre nuovi e
+			avvincenti. Essendo libero ed indipendente, ama il flirt e l'avventura. Riesce sempre a gestirsi molto bene. Conduce una vita tranquilla e
+			agiata. Fortunato in amore e nel matrimonio, sempre vincente.
+		</p>
 
-			<h2><strong>23 MAGGIO</strong> - dal <strong>3°</strong> al <strong>4° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado di dignità, di potenza</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un uomo d'aspetto venerando e benevolo vestito come un Ministro di stato</u>.<br>
-				Magnanimità e fiducia dei potenti. Permette di accedere ad alte posizioni.<br>
-				<strong>Carattere</strong> forte, romantico e sognatore, socievole, schietto e sincero, pigro ma simpatico. Grande oratore e con un grande 
-				fascino. Ha un'intelligenza vigile e perspicace, parla bene è pratico e preciso, accurato, dimostra qualche talento fuori del comune. Un 
-				artista dotato di grandi mezzi e di un'enorme versatilità, anche se spesso è indeciso e dubbioso, in verità sa molto bene ciò che vuole e
-				riesce in genere a ottenere quello che desidera. Tenace, talvolta ostinato riesce a raggiungere i suoi obiettivi con caparbietà e capacità. 
-				È un diplomatico nato, riesce a dire la cosa più sgradevole con tatto e sensibilità. È un amante sensibile e passionale sa essere un ottimo 
-				compagno di vita. Si realizza bene economicamente per garantire a se stesso e a chi ama un clima armonioso anche a costo di sacrifici. Ama 
-				conversare e circondarsi di persone intelligenti, senza mai tralasciare la persona amata che copre di attenzioni e dolcezze. Mantiene il 
-				suo fascino anche in età matura.
-			</p>
+		<h2><b>23 MAGGIO</b> - dal <b>3°</b> al <b>4° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado di dignità, di potenza</b></h2>
+		<p>
+			<u>Un uomo d'aspetto venerando e benevolo vestito come un Ministro di stato</u>.<br>
+			Magnanimità e fiducia dei potenti. Permette di accedere ad alte posizioni.<br>
+			<b>Carattere</b> forte, romantico e sognatore, socievole, schietto e sincero, pigro ma simpatico. Grande oratore e con un grande
+			fascino. Ha un'intelligenza vigile e perspicace, parla bene è pratico e preciso, accurato, dimostra qualche talento fuori del comune. Un
+			artista dotato di grandi mezzi e di un'enorme versatilità, anche se spesso è indeciso e dubbioso, in verità sa molto bene ciò che vuole e
+			riesce in genere a ottenere quello che desidera. Tenace, talvolta ostinato riesce a raggiungere i suoi obiettivi con caparbietà e capacità.
+			È un diplomatico nato, riesce a dire la cosa più sgradevole con tatto e sensibilità. È un amante sensibile e passionale sa essere un ottimo
+			compagno di vita. Si realizza bene economicamente per garantire a se stesso e a chi ama un clima armonioso anche a costo di sacrifici. Ama
+			conversare e circondarsi di persone intelligenti, senza mai tralasciare la persona amata che copre di attenzioni e dolcezze. Mantiene il
+			suo fascino anche in età matura.
+		</p>
 
-			<h2><strong>24 MAGGIO</strong> - dal <strong>4°</strong> al <strong>5° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado di fortuna</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Due uomini si battono a duello in una foresta. Fra di loro c'è una cassa colma di ori e di gioielli</u>.<br>
-				Rivincita su rivali e successi militari. Combattimenti rischiosi, alti onori.<br>
-				<strong>Carattere</strong> buono, dolce, idealista, generoso, curioso, originale, pieno di fantasia, comprensivo e molto umano, a volte può 
-				rivelarsi anche avido di possedere, ambiguo e anche leggero. Dotato di un'intelligenza brillante e vivace che permette di cogliere al volo, 
-				il nocciolo d'ogni questione e le occasioni favorevoli. Può diventare un oratore brillante o scrittore fecondo con una memoria formidabile 
-				e pieno di verve, di dinamismo e resistenza. Raggiunge posizioni sociali molto ambite che oltre a meritare conserva anche nel tempo. Dotato 
-				di personalità magnetica, attraente e stravagante. Ingegnoso e pieno di idee sempre nuove che lo rende vincente e apprezzato nel lavoro. 
-				Pur di ottenere e conservare il suo posto di comando usa bontà, benevolenza e indulgenza verso i dipendenti. Non dimentica mai la famiglia 
-				e la persona che ama che ricopre di calore e tenerezza. È un buon osservatore e sa agire sempre al momento giusto. Fortunato in amore e 
-				forse contrarrà due matrimoni tutti e due felici.
-			</p>
+		<h2><b>24 MAGGIO</b> - dal <b>4°</b> al <b>5° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado di fortuna</b></h2>
+		<p>
+			<u>Due uomini si battono a duello in una foresta. Fra di loro c'è una cassa colma di ori e di gioielli</u>.<br>
+			Rivincita su rivali e successi militari. Combattimenti rischiosi, alti onori.<br>
+			<b>Carattere</b> buono, dolce, idealista, generoso, curioso, originale, pieno di fantasia, comprensivo e molto umano, a volte può
+			rivelarsi anche avido di possedere, ambiguo e anche leggero. Dotato di un'intelligenza brillante e vivace che permette di cogliere al volo,
+			il nocciolo d'ogni questione e le occasioni favorevoli. Può diventare un oratore brillante o scrittore fecondo con una memoria formidabile
+			e pieno di verve, di dinamismo e resistenza. Raggiunge posizioni sociali molto ambite che oltre a meritare conserva anche nel tempo. Dotato
+			di personalità magnetica, attraente e stravagante. Ingegnoso e pieno di idee sempre nuove che lo rende vincente e apprezzato nel lavoro.
+			Pur di ottenere e conservare il suo posto di comando usa bontà, benevolenza e indulgenza verso i dipendenti. Non dimentica mai la famiglia
+			e la persona che ama che ricopre di calore e tenerezza. È un buon osservatore e sa agire sempre al momento giusto. Fortunato in amore e
+			forse contrarrà due matrimoni tutti e due felici.
+		</p>
 
-			<h2><strong>25 MAGGIO</strong> - dal <strong>5°</strong> al <strong>6° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado di giudizio, di vigore</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Donna in piedi con un libro in una mano e una bilancia nell'altra</u>.<br>
-				Rettitudine, giudizio imparziale, attitudine alle scienze legislative, successi sportivi.<br>
-				<strong>Carattere</strong> buono, comprensivo, armonioso e onesto, abile, solare, affascinante e incline ai piaceri. Dotato di straordinarie 
-				doti intellettuali, che consentono di cogliere al volo le opportunità in ogni ambito della vita. Un temperamento espressivo acuto, critico, 
-				qualche volta si dimostra tagliente e pungente. Ama la libertà e detesta ogni tipo di restrizione. Personalità artistica e straordinarie 
-				qualità letterarie, viaggerà per terre straniere. Molto intelligente, a volte disperde energie preziose in progetti che non potrà mai
-				realizzare. Alta posizione in un ufficio pubblico, ministero o ente importante. La riuscita sarà grazie ad una vocazione. È spesso 
-				discontinuo e illogico ma allo stesso tempo ha una precisione quasi maniacale. Agisce con determinazione e gestisce con abilità incarichi 
-				di fiducia e di responsabilità. Pur avendo uno spirito libero, si mostra leale e fedele in amore. Fortunato nella vita, avrà pochi amore 
-				ma profondi.
-			</p>
+		<h2><b>25 MAGGIO</b> - dal <b>5°</b> al <b>6° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado di giudizio, di vigore</b></h2>
+		<p>
+			<u>Donna in piedi con un libro in una mano e una bilancia nell'altra</u>.<br>
+			Rettitudine, giudizio imparziale, attitudine alle scienze legislative, successi sportivi.<br>
+			<b>Carattere</b> buono, comprensivo, armonioso e onesto, abile, solare, affascinante e incline ai piaceri. Dotato di straordinarie
+			doti intellettuali, che consentono di cogliere al volo le opportunità in ogni ambito della vita. Un temperamento espressivo acuto, critico,
+			qualche volta si dimostra tagliente e pungente. Ama la libertà e detesta ogni tipo di restrizione. Personalità artistica e straordinarie
+			qualità letterarie, viaggerà per terre straniere. Molto intelligente, a volte disperde energie preziose in progetti che non potrà mai
+			realizzare. Alta posizione in un ufficio pubblico, ministero o ente importante. La riuscita sarà grazie ad una vocazione. È spesso
+			discontinuo e illogico ma allo stesso tempo ha una precisione quasi maniacale. Agisce con determinazione e gestisce con abilità incarichi
+			di fiducia e di responsabilità. Pur avendo uno spirito libero, si mostra leale e fedele in amore. Fortunato nella vita, avrà pochi amore
+			ma profondi.
+		</p>
 
-			<h2><strong>26 MAGGIO</strong> - dal <strong>6°</strong> al <strong>7° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado di pace, di valore personale</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Una valle tranquilla e un lago dove nuota un cigno, sullo sfondo un'alta montagna</u>.<br>
-				Spirito contemplativo e destino sereno, equilibrio, equità.<br>
-				<strong>Carattere</strong> affabile, emotivo, sensitivo e ricettivo, intuitivo, serio, virtuoso, retto, ponderato, giusto. È dotato di una
-				mente ricettiva che lo agevola in molteplici campi. Intelligente, sensibile, brillante, simpatico, dinamico, sa esattamente ciò che vuole 
-				dalla vita senza tuttavia prevaricare mai gli altri. È amato per ciò che è anche se arriva alla notorietà o alla ricchezza con la facilità
-				verbale e l'eloquenza, può essere un bravo avvocato o giornalista, per il forte senso di giustizia può anche essere un eccellente giudice 
-				o notaio. Socievolezza e facilità espressiva che tanto lo caratterizza lo favorisce nelle relazioni pubbliche, nel giornalismo o nei 
-				settori della comunicazione. Amore per la natura e gli animali. Bello, affascinante e molto piacente, ama le cose belle, così pure le 
-				gioie del sesso. Incontra, però, qualche difficoltà nell'assumersi responsabilità in amore.
-			</p>
+		<h2><b>26 MAGGIO</b> - dal <b>6°</b> al <b>7° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado di pace, di valore personale</b></h2>
+		<p>
+			<u>Una valle tranquilla e un lago dove nuota un cigno, sullo sfondo un'alta montagna</u>.<br>
+			Spirito contemplativo e destino sereno, equilibrio, equità.<br>
+			<b>Carattere</b> affabile, emotivo, sensitivo e ricettivo, intuitivo, serio, virtuoso, retto, ponderato, giusto. È dotato di una
+			mente ricettiva che lo agevola in molteplici campi. Intelligente, sensibile, brillante, simpatico, dinamico, sa esattamente ciò che vuole
+			dalla vita senza tuttavia prevaricare mai gli altri. È amato per ciò che è anche se arriva alla notorietà o alla ricchezza con la facilità
+			verbale e l'eloquenza, può essere un bravo avvocato o giornalista, per il forte senso di giustizia può anche essere un eccellente giudice
+			o notaio. Socievolezza e facilità espressiva che tanto lo caratterizza lo favorisce nelle relazioni pubbliche, nel giornalismo o nei
+			settori della comunicazione. Amore per la natura e gli animali. Bello, affascinante e molto piacente, ama le cose belle, così pure le
+			gioie del sesso. Incontra, però, qualche difficoltà nell'assumersi responsabilità in amore.
+		</p>
 
-			<h2><strong>27 MAGGIO</strong> - dal <strong>7°</strong> al <strong>8° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado di lotta, d'amore e fiducia</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Due ragazze si tengono per mano. Una casa in fiamme nella notte</u>.<br>
-				Vita calma in amore, gaiezza. Tendenza alla distruzione, vita domestica turbata.<br>
-				<strong>Carattere</strong> allegro, simpatico, dinamico, cortese e sereno. Dotato di un'intelligenza vivace che lo porta a ricercare sempre
-				cose nuove ed emozionanti. Socievole, brillante con fascino e fantasia. Normalmente ha una natura tranquilla, conciliante e malleabile.
-				Personalità fortemente magnetica e intraprendente, molto sensibile e delicata. Ha talento nello scrivere e nel parlare, può riuscire nella 
-				vita come artista, scrittore, disegnatore, umorista, musicista o altri mestieri simili. Ha la tempra del leader e il successo gli giungerà
-				grazie a qualche impresa o idea originale. Mostra abilità nel lavoro e ancora di più nel maneggiare e amministrare il proprio denaro. È 
-				molto attaccato alla casa e alla famiglia. Ha molta fortuna in amore, per questo la sua vita trascorre lieta e tranquilla, soprattutto 
-				nell'età adulta. In amore cerca un partner intellettuale e che sia realmente meritevole di amore e fiducia.
-			</p>
+		<h2><b>27 MAGGIO</b> - dal <b>7°</b> al <b>8° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado di lotta, d'amore e fiducia</b></h2>
+		<p>
+			<u>Due ragazze si tengono per mano. Una casa in fiamme nella notte</u>.<br>
+			Vita calma in amore, gaiezza. Tendenza alla distruzione, vita domestica turbata.<br>
+			<b>Carattere</b> allegro, simpatico, dinamico, cortese e sereno. Dotato di un'intelligenza vivace che lo porta a ricercare sempre
+			cose nuove ed emozionanti. Socievole, brillante con fascino e fantasia. Normalmente ha una natura tranquilla, conciliante e malleabile.
+			Personalità fortemente magnetica e intraprendente, molto sensibile e delicata. Ha talento nello scrivere e nel parlare, può riuscire nella
+			vita come artista, scrittore, disegnatore, umorista, musicista o altri mestieri simili. Ha la tempra del leader e il successo gli giungerà
+			grazie a qualche impresa o idea originale. Mostra abilità nel lavoro e ancora di più nel maneggiare e amministrare il proprio denaro. È
+			molto attaccato alla casa e alla famiglia. Ha molta fortuna in amore, per questo la sua vita trascorre lieta e tranquilla, soprattutto
+			nell'età adulta. In amore cerca un partner intellettuale e che sia realmente meritevole di amore e fiducia.
+		</p>
 
-			<h2><strong>28 MAGGIO</strong> - dal <strong>8°</strong> al <strong>9° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado di dominio, di sprechi</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Figura di una donna che tiene in mano un globo e uno scettro. Un fabbro batte il ferro</u>.<br>
-				Posizione importante, incarico governativo. Fortuna e successo.<br>
-				<strong>Carattere</strong> difficile, pungente, sveglio, furbo, molto irritabile, irascibile, impaziente e intollerante. Un idealista 
-				strategico, intelligente, acuto, scaltro, perde non poche chances per il vezzo di piantare grane. Colto con una fervida immaginazione, molta 
-				fantasia, deciso ma impossibile. Sono poche le persone che riescono a capirlo, e in fondo nemmeno lui si capisce bene. Abile nel settore del 
-				lavoro dove può eccellere. Possiede una particolare e raffinata personalità, uno spirito brioso che lo fa restare giovane fino a tarda età.
-				Ama il rischio e l'avventura, e si lascia attrarre da persone e relazioni fuori dalla norma. Quando si tratta di dimostrare il proprio 
-				carattere e le sue capacità, non passa certo inosservato. Questo grado dà la possibilità di comandare, organizzare o dirigere anche 
-				un'azienda. A volte un incarico governativo prestigioso. Indica il raggiungimento di una posizione sociale importante. Nato per vincere, 
-				essere capo, organizzare ogni cosa con disciplina, è responsabile ma irremovibile. Socievole e affascinante, atletico, energico, adorabile 
-				e insieme odioso. In amore è molto delicato e paziente.
-			</p>
+		<h2><b>28 MAGGIO</b> - dal <b>8°</b> al <b>9° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado di dominio, di sprechi</b></h2>
+		<p>
+			<u>Figura di una donna che tiene in mano un globo e uno scettro. Un fabbro batte il ferro</u>.<br>
+			Posizione importante, incarico governativo. Fortuna e successo.<br>
+			<b>Carattere</b> difficile, pungente, sveglio, furbo, molto irritabile, irascibile, impaziente e intollerante. Un idealista
+			strategico, intelligente, acuto, scaltro, perde non poche chances per il vezzo di piantare grane. Colto con una fervida immaginazione, molta
+			fantasia, deciso ma impossibile. Sono poche le persone che riescono a capirlo, e in fondo nemmeno lui si capisce bene. Abile nel settore del
+			lavoro dove può eccellere. Possiede una particolare e raffinata personalità, uno spirito brioso che lo fa restare giovane fino a tarda età.
+			Ama il rischio e l'avventura, e si lascia attrarre da persone e relazioni fuori dalla norma. Quando si tratta di dimostrare il proprio
+			carattere e le sue capacità, non passa certo inosservato. Questo grado dà la possibilità di comandare, organizzare o dirigere anche
+			un'azienda. A volte un incarico governativo prestigioso. Indica il raggiungimento di una posizione sociale importante. Nato per vincere,
+			essere capo, organizzare ogni cosa con disciplina, è responsabile ma irremovibile. Socievole e affascinante, atletico, energico, adorabile
+			e insieme odioso. In amore è molto delicato e paziente.
+		</p>
 
-			<h2><strong>29 MAGGIO</strong> - dal <strong>9°</strong> al <strong>10° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado d'ascesa costante, di guarigione</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Donna dall'aspetto gradevole, offre un bicchiere colmo di liquido ad un bambino</u>.<br>
-				Qualità taumaturgiche, potere spirituale, alta elevazione.<br>
-				<strong>Carattere</strong> caritatevole, espansivo e raffinato, libero da pregiudizi. Gentile, ambizioso, affascinante, socievole, simpatico,
-				bello dentro e fuori, desidera farsi ammirare. È intelligente, un ottimo osservatore è molto sincero, la natura romantica lo porta a essere 
-				sognatore o idealista. Ha una preferenza spiccata per la compagnia di gente sofisticata e persone influenti. La possibilità di fare fortuna
-				supera la media. Qualità che gli consente di avvicinare persone che gli torneranno utili nel lavoro e nella sfera privata. Mostra talento in 
-				molti campi ed è capace di grandi sacrifici nella vita amorosa. Può riuscire come detective, venditore, psicologo, insegnante, può risolvere
-				misteri ed enigmi con grande facilità. Raggiunge successi in campo lavorativo, perché ha acume per gli affari. Riesce molto bene a 
-				realizzare i suoi progetti perché è una persona valida ma anche perché è nato fortunato. Usa tutti i mezzi per riuscire e vincere. Pur 
-				essendo un pò arido nei sentimenti è fortunato in amore e nel matrimonio che quasi sempre lo porta a raggiungere una certa agiatezza.
-			</p>
+		<h2><b>29 MAGGIO</b> - dal <b>9°</b> al <b>10° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado d'ascesa costante, di guarigione</b></h2>
+		<p>
+			<u>Donna dall'aspetto gradevole, offre un bicchiere colmo di liquido ad un bambino</u>.<br>
+			Qualità taumaturgiche, potere spirituale, alta elevazione.<br>
+			<b>Carattere</b> caritatevole, espansivo e raffinato, libero da pregiudizi. Gentile, ambizioso, affascinante, socievole, simpatico,
+			bello dentro e fuori, desidera farsi ammirare. È intelligente, un ottimo osservatore è molto sincero, la natura romantica lo porta a essere
+			sognatore o idealista. Ha una preferenza spiccata per la compagnia di gente sofisticata e persone influenti. La possibilità di fare fortuna
+			supera la media. Qualità che gli consente di avvicinare persone che gli torneranno utili nel lavoro e nella sfera privata. Mostra talento in
+			molti campi ed è capace di grandi sacrifici nella vita amorosa. Può riuscire come detective, venditore, psicologo, insegnante, può risolvere
+			misteri ed enigmi con grande facilità. Raggiunge successi in campo lavorativo, perché ha acume per gli affari. Riesce molto bene a
+			realizzare i suoi progetti perché è una persona valida ma anche perché è nato fortunato. Usa tutti i mezzi per riuscire e vincere. Pur
+			essendo un pò arido nei sentimenti è fortunato in amore e nel matrimonio che quasi sempre lo porta a raggiungere una certa agiatezza.
+		</p>
 
-			<h2><strong>30 MAGGIO</strong> - dal <strong>10°</strong> al <strong>11° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado di eccesso, di sollecitudine</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Un uomo che aiuta un anziano ad alzarsi. Gruppo di vagabondi seduti attorno a una pentola dove si prepara del cibo</u>.<br>
-				Fortuna instabile, filantropia.<br>
-				<strong>Carattere</strong> versatile e ingegnoso, generoso, sensitivo, socievole, simpatico ed espansivo. È intellettuale e molto spirituale, 
-				istintivo e fantasioso. Affascinante, ha delle qualità che gli consentono di avvicinare persone che gli torneranno utili nel lavoro e nella
-				sfera privata. Dotato di senso sociale, di responsabilità, dell'umorismo, non fa mai pesare le proprie qualità. Possiede un forte magnetismo 
-				unito ad una natura artistica, originalità d'idee e spirito d'iniziativa. Talvolta è superficiale e ambiguo. Pur essendo portato ad agire 
-				non è certamente il desiderio di guadagno o la ricerca di consensi che lo sprona a questo. Probabilità di un matrimonio o di un rapporto di 
-				società sicuramente vantaggioso. È un amante dell'avventura. Farà dei lunghi viaggi e avrà molti amici influenti. Mostra talento in molti 
-				campi ed è capace di grandi sacrifici nella vita amorosa. È fortunato in amore.
-			</p>
+		<h2><b>30 MAGGIO</b> - dal <b>10°</b> al <b>11° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado di eccesso, di sollecitudine</b></h2>
+		<p>
+			<u>Un uomo che aiuta un anziano ad alzarsi. Gruppo di vagabondi seduti attorno a una pentola dove si prepara del cibo</u>.<br>
+			Fortuna instabile, filantropia.<br>
+			<b>Carattere</b> versatile e ingegnoso, generoso, sensitivo, socievole, simpatico ed espansivo. È intellettuale e molto spirituale,
+			istintivo e fantasioso. Affascinante, ha delle qualità che gli consentono di avvicinare persone che gli torneranno utili nel lavoro e nella
+			sfera privata. Dotato di senso sociale, di responsabilità, dell'umorismo, non fa mai pesare le proprie qualità. Possiede un forte magnetismo
+			unito ad una natura artistica, originalità d'idee e spirito d'iniziativa. Talvolta è superficiale e ambiguo. Pur essendo portato ad agire
+			non è certamente il desiderio di guadagno o la ricerca di consensi che lo sprona a questo. Probabilità di un matrimonio o di un rapporto di
+			società sicuramente vantaggioso. È un amante dell'avventura. Farà dei lunghi viaggi e avrà molti amici influenti. Mostra talento in molti
+			campi ed è capace di grandi sacrifici nella vita amorosa. È fortunato in amore.
+		</p>
 
-			<h2><strong>31 MAGGIO</strong> - dal <strong>11°</strong> al <strong>12° <span class="sYellow">GEMELLI</span></strong> = <strong>Grado d'indipendenza minacciata</strong></h2>
-			<p class="sBlack sSmall sJustify sPadding">		
-				<u>Giovane alloro spezzato dal vento giace a terra appassito. Un'aquila volteggia sopra tre aquilotti</u>.<br>
-				Amore per la famiglia, vigilanza costante, zelo.<br>
-				<strong>Carattere</strong> socievole, bonario e gentile, generoso, versatile e divertente, realista e costruttivo. Un'altra sua 
-				caratteristica è l'originalità piace realizzare le cose che più interessano senza tenere conto della loro praticità. Affabile e ambizioso 
-				con un temperamento sereno e allegro, è ammirato per la sua intelligenza oppure per la scaltrezza in grado di affrontare qualsiasi 
-				situazione e di raggiungere obiettivi professionali anche ambiziosi. Ha fortuna di riuscire praticamente in tutto quello che può 
-				intraprendere, una forza magica lo protegge durante tutta la vita. Ha predisposizioni curative, comprensione e carità verso gli altri, bravo
-				chirurgo o veterinario. Portato ad aiutare e amare il suo prossimo ha una particolare inclinazione per la professione medica. Non ha nessuna
-				difficoltà a stringere amicizie e neppure ad avvicinare e a sedurre la persona che più lo interessa. Entusiasta fino a tarda età.
-			</p>
+		<h2><b>31 MAGGIO</b> - dal <b>11°</b> al <b>12° <span class="sGoldenBrown">GEMELLI</span></b> = <b>Grado d'indipendenza minacciata</b></h2>
+		<p>
+			<u>Giovane alloro spezzato dal vento giace a terra appassito. Un'aquila volteggia sopra tre aquilotti</u>.<br>
+			Amore per la famiglia, vigilanza costante, zelo.<br>
+			<b>Carattere</b> socievole, bonario e gentile, generoso, versatile e divertente, realista e costruttivo. Un'altra sua
+			caratteristica è l'originalità piace realizzare le cose che più interessano senza tenere conto della loro praticità. Affabile e ambizioso
+			con un temperamento sereno e allegro, è ammirato per la sua intelligenza oppure per la scaltrezza in grado di affrontare qualsiasi
+			situazione e di raggiungere obiettivi professionali anche ambiziosi. Ha fortuna di riuscire praticamente in tutto quello che può
+			intraprendere, una forza magica lo protegge durante tutta la vita. Ha predisposizioni curative, comprensione e carità verso gli altri, bravo
+			chirurgo o veterinario. Portato ad aiutare e amare il suo prossimo ha una particolare inclinazione per la professione medica. Non ha nessuna
+			difficoltà a stringere amicizie e neppure ad avvicinare e a sedurre la persona che più lo interessa. Entusiasta fino a tarda età.
+		</p>
 
 		<p class="sCenter">
 			<br>
-			<img src="GOLDLINE3.gif" width="350" height="35">&nbsp;&nbsp;
-			<img src="GOLDLINE3.gif" width="350" height="35">
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">&nbsp;&nbsp;
+			<img src="GOLDLINE3.gif" width="350" height="35" alt="">
 		</p>
 
-		<p class="sSmall sBlack sCenter">
-			<img src="email-box.gif"    width="35"  height="35">
+		<p class="sCenter">
+			<img src="email-box.gif"    width="35" height="35" alt="">
 			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
-			<img src="TelefonoC164.gif" width="35" height="35">&nbsp;
-			oppure Telefona: <strong>0125 631175 - Cell. 347 0417409<br><br>
-			Sei il visitatore n°&nbsp;</strong>
+			<img src="TelefonoC164.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+
+			<b>Sei il visitatore n°&nbsp;</b>
 		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1351762431-wvsw3d4r2" border=0></a>
-			&nbsp;(Contenuto Aggiornato 29/07/2020)<br><br>
+			&nbsp;(Contenuto Aggiornato <time datetime="2020-07-29">29/07/2020</time>)<br><br>
 		</p>
-					</td></tr></table>
-				</td></tr></table>
-			</td></tr></table>
-		</td></tr></table>
-	</td></tr></table>
+
 </td></tr></table>
-<p class="sXXSmall sBlack sBold sCenter">
-	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati. 
-	Senza il consenso dell&#39;autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
-</p>
+</td></tr></table>
+</td></tr></table>
+<footer>
+	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
+	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
+</footer>
 </body>
 </html>
