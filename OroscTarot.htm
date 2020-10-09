@@ -1,63 +1,85 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" dir="ltr">
 <head>
 <meta charset="UTF-8">
-<title>Oroscopo con i Tarocchi</title>
+<title>Oroscopo con i Tarocchi - Studio Acquario</title>
 <link rel="icon" type="image/gif" href="favicon32.gif">
 <meta name="description" content="Studio Acquario: Oroscopo con i Tarocchi">
-<meta name="keywords" lang="it" content="astrologia, oroscopo, tarocchi">
+<meta name="keywords" lang="it" content="astrologia, studio acquario, oroscopo, tarocchi">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
 <meta name="language" content="it">
-<meta http-equiv="imagetoolbar" CONTENT="no">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="18/12/2017">
-<meta name="revised" content="22/07/2020">
+<meta name="revised" content="09/10/2020">
 
 <style type="text/css">
 body {
 	scrollbar-arrow-color: #35260E;
-	scrollbar-base-color: #E4D7B9;
+	scrollbar-base-color: #E4D7B9; /* Wheatfield */
 	scrollbar-dark-shadow-color: #E4D7B9;
-	scrollbar-track-color: #E4D7B9;
+	scrollbar-track-color: #E9DFC7; /* Pearl Lusta */
+
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 	color: #35260E; /* Black Magic */
 	background-image: url("TAfondexter.gif");
 	background-color: #E4D7B9; /* Wheatfield */
 }
-A {
-	COLOR: #665C30; 
-	TEXT-DECORATION: none;
-}
-A:hover { 
-	COLOR: #594B0D; 
-	background: #E4D7B9;
-	TEXT-DECORATION: none; 
-	border-bottom-style: dotted; 
-	border-bottom-width: 1 px;
-	border-top-style: dotted; 
-	border-top-width: 1 px;
+a:link {
+	color: #000000;
 }
 a:visited {
-	color: #800080;
+	color: #000000;
+}
+a:hover {
+	color: #FF0000;
+}
+a:active {
+	color: #000000;
 }
 h1 {
-		font-size: xx-large;
-		color: #482424; /* Espresso */
-		text-align: center;
-		font-weight: bold;
+	font-size: xx-large;
+	font-weight: bold;
+	color: #482424; /* Espresso */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 h2 {
-		font-size: medium;
-		color: #0000FF; /* Blu */
-		text-align: center;
-		font-weight: bold;
+	font-size: medium;
+	color: #0000FF; /* Blu */
+	font-weight: bold;
+	text-align: center;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-top: 30px;
 }
-.sLogoBanner {
+header {
 	font-size: xx-large;
 	font-weight: bold;
 	color: #FFFFFF; /* White */
-	text-shadow: 1px 1px 5px #0000FF; /* Blue */
+	/* text-shadow: 1px 1px 5px #0000FF; Blue */
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
+}
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	/* text-shadow: 1px 1px 1px #0000FF; Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
+}
+img {
+	max-width: 100%;
+	height: auto;
 }
 .sBorder1s {
 				border-width: 1px;
@@ -67,17 +89,8 @@ h2 {
 				border-width: 3px;
 				border-style: solid;
 }
-.sBorder2s-Espresso {
-				border: 2px solid #482424;
-}
-.sBorder2s-PersianPlum {
-				border: 2px solid #633232;
-}
-.sBorder2s-SanguineBrown {
-				border: 2px solid #703838;
-}
-.sBGWhite {
-				background-color: #FFFFFF;
+.sBorder6d-SanguineBrown {
+				border: 6px double #703838;
 }
 .sBlack {
 				color: #000000;
@@ -106,6 +119,9 @@ h2 {
 .sWhite {
 				color: #FFFFFF;
 }
+.sBGWhite {
+				background-color: #FFFFFF;
+}
 .sCenter {
 				text-align: center;
 }
@@ -113,8 +129,8 @@ h2 {
 				text-align: justify;
 }
 .sPadding {
-				padding-left: 40px;
-				padding-right: 40px;
+				padding-left: 35px;
+				padding-right: 35px;
 }
 .sBold {
 				font-weight: bold;
@@ -134,77 +150,51 @@ h2 {
 </style>
 </head>
 
-<body link="#808080" alink="#FFFFFF">
-<p class="sLogoBanner">Studio di Astrologia "Acquario"</p>
+<body>
+<header>Studio di Astrologia &quot;Acquario&quot;</header>
 
-<table background="TArubanfonce.jpg" cellSpacing="10" cellPadding="0" borderColorDark="#9E8F6F" borderColorLight="#F4E5C5" width="95%" class="sBorder1s" align="center">
-  <tr><td>
+<table background="TArubanfonce.jpg" cellSpacing="10" cellPadding="2" class="sBorder1s" borderColorDark="#9E8F6F" borderColorLight="#F4E5C5" width="95%" align="center">
+<tr><td background="TArubanmetal.jpg">
 
-<table background="TArubanmetal.jpg" cellSpacing="1" cellPadding="0" width="100%" border="0">
-  <tr><td>
+<table background="TArubanfonce.jpg" cellspacing="5" cellPadding="2" border="1" borderColorDark="#9E8F6F" borderColorLight="#F4E5C5" width="100%">
+<tr><td background="TArubanmetal.jpg">
 
-<table background="TArubanfonce.jpg" cellspacing="5" cellPadding="0" borderColorDark="#9E8F6F" borderColorLight="#F4E5C5" width="100%" border="1">
-  <tr><td>
+<table background="TArubanfonce.jpg" cellSpacing="2" cellPadding="5" border="1" borderColorDark="#9E8F6F" borderColorLight="#F4E5C5" width="100%">
+<tr><td background="TArubanclair.jpg">
 
-<table background="TArubanmetal.jpg" cellSpacing="1" cellPadding="0" width="100%" border="0">
-  <tr><td>
+<table background="TAfondmilieu02.gif" cellPadding="5" class="sBorder1s" borderColorDark="#9E8F6F" borderColorLight="#F4E5C5" width="100%">
+<tr><td>
 
-<table background="TArubanfonce.jpg" cellSpacing="2" cellPadding="0" borderColorDark="#9E8F6F" borderColorLight="#F4E5C5" width="100%" border="1">
-  <tr><td>
-
-<table background="TArubanclair.jpg" cellSpacing="5" cellPadding="0" width="100%" border="0">
-  <tr><td>
-
-<table background="TAfondmilieu02.gif" cellPadding="13" bgcolor="#E4D7B9" borderColorDark="#9E8F6F" borderColorLight="#F4E5C5" width="100%" class="sBorder1s">
-  <tr><td>
-						
 		<h1>OROSCOPO CON I TAROCCHI</h1>
-		
+
 		<p class="sCenter">
-			<img src="TAligne04.gif" width="390" height="44">
-			<img src="TAligne02.gif" width="331" height="46">
-			<img src="TAligne04.gif" width="390" height="44">
-		</p>
-		<p class="sCenter">
-			<img src="Taro1.gif" width="100" height="200">&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="Taro2.gif" width="100" height="200">&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="Taro3.gif" width="100" height="200">&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="Taro4.gif" width="100" height="200">&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="Taro5.gif" width="100" height="200">&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="Taro6.gif" width="100" height="200">&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="Taro7.gif" width="100" height="200">&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="Taro8.gif" width="100" height="200">
+			<br>
+			<img src="TarotLineaA3A1.gif" width="464" height="70" alt="">
+			<img src="TarotLineaA3A1.gif" width="464" height="70" alt="">
+			<br>
 		</p>
 
-		<p align="center">
-			<img src="TAligne02.gif" width="331" height="46">&nbsp;&nbsp;&nbsp;
-			<img src="TAligne02.gif" width="331" height="46">&nbsp;&nbsp;&nbsp;
-		</p>
+		<table bgcolor="#FFF3E8" cellspacing="1" cellpadding="5" class="sBorder6d-SanguineBrown" width="90%" align="center">
+		<tr><td>
 
-	<table cellspacing="1" cellpadding="5" bgcolor="#FFF3E8" class="sBorder2s-Espresso" width="90%" align="center">
-		<tr><td class="sBorder2s-PersianPlum">
-			<p class="sSmall sEspresso sJustify sPadding">
-				Il simbolo esoterico dei <strong>TAROCCHI</strong> collega ad ogni arcano un segno zodiacale e un pianeta.<br>
+			<p class="sMedium sEspresso sJustify sPadding">
+				Il simbolo esoterico dei <b>TAROCCHI</b> collega ad ogni arcano un segno zodiacale e un pianeta.<br>
 				Cercate nella tabella l'arcano del vostro segno zodiacale e quello che rappresenta il suo governatore.<br>
-				Ad esempio: <span class="sRed sBold">MARTE</span> per l'<span class="sRed sBold">ARIETE</span>, <span class="sRed sBold">VENERE</span> per il 
+				Ad esempio: <span class="sRed sBold">MARTE</span> per l'<span class="sRed sBold">ARIETE</span>, <span class="sRed sBold">VENERE</span> per il
 				<span class="sGreen sBold">TORO</span>, <span class="sRed sBold">MERCURIO</span> per i <span class="sMaroon sBold">GEMELLI</span>, ecc..<br>
-				Potete anche cercare l'arcano dell'anno sommando la data di nascita, oppure con le lettere (in numeri) del nome e cognome più l'anno 
-				corrente, ad esempio per il <span class="sRed sBold">2017</span> = 2 + 0 + 1 + 7 = <span class="sRed sBold">10</span> --&gt; 
-				<span class="sRed sBold">1</span>. La tabella con la corrispondenza lettere/numeri, è a fondo pagina.
+				Potete anche cercare l'arcano dell'anno sommando la data di nascita, oppure con le lettere (in numeri) del nome e cognome più l'anno
+				corrente, ad esempio per il <span class="sRed sBold">2017</span> = 2 + 0 + 1 + 7 = <span class="sRed sBold">10</span> --&gt;
+				<span class="sRed sBold">1</span>.<br>
+				La tabella con la corrispondenza lettere/numeri, è a fondo pagina.
 			</p>
 
-			<p class="sCenter">
-				<br>
-				<img src="TarotLineaA3A1.gif" width="464" height="70">
-				<br>
+			<p class="sMedium sBlack sJustify sPadding">
+				Ecco i <span class="sRed sBold">22</span> arcani maggiori abbinati ai <span class="sRed sBold">12</span> segni zodiacali e ai
+				<span class="sRed sBold">10</span> pianeti.
 			</p>
 
-			<p class="sSmall sBlack sBold sJustify sPadding">
-				Ecco i <span class="sRed">22</span> arcani maggiori abbinati ai <span class="sRed">12</span> segni zodiacali e ai 
-				<span class="sRed">10</span> pianeti.
-			</p>
 			<table cellSpacing="0" cellPadding="5" border="0" width="75%" align="center">
-			  <tbody class="sSmall sBlack sBold">
+			<tbody class="sMedium sBlack sBold">
 				<tr>
 					<td class="sRed" width="20%">ARIETE</td>
 					<td width="35%">IL BAGATTO n° 1</td>
@@ -277,475 +267,496 @@ h2 {
 					<td class="sRed">NETTUNO</td>
 					<td>Il GIUDIZIO n° 20</td>
 				</tr>
-			  </tbody>
+			</tbody>
 			</table>
 
-			<p class="sEspresso sSmall sJustify sPadding">
-				Fate la somma del numero dell'arcano del vostro <strong>segno zodiacale</strong>, più l'arcano del <strong>pianeta</strong> corrispondente
-				ed infine sommate l'arcano dell'<strong>anno</strong> corrente. Sottraete <span class="sRed sBold">22</span> se è superiore a 
+			<p class="sMedium sEspresso sJustify sPadding">
+				Fate la somma del numero dell'arcano del vostro <b>segno zodiacale</b>, più l'arcano del <b>pianeta</b> corrispondente
+				ed infine sommate l'arcano dell'<b>anno</b> corrente. Sottraete <span class="sRed sBold">22</span> se è superiore a
 				<span class="sRed sBold">22</span>.<br><br>
 				Esempio, per una nascita del segno del <span class="sRed sBold">LEONE</span>:<br>
 				- L'arcano del segno zodiacale è la <span class="sRed sBold">FORZA</span> n° <span class="sRed sBold">11</span>;<br>
 				- L'arcano del pianeta è il <span class="sRed sBold">SOLE</span> n° <span class="sRed sBold">19</span>;<br>
-				- A questi si unisce l'Arcano dell'anno, ad esempio, <span class="sRed sBold">2017</span> = 2 + 0 + 1 + 7 = 
+				- A questi si unisce l'Arcano dell'anno, ad esempio, <span class="sRed sBold">2017</span> = 2 + 0 + 1 + 7 =
 				<span class="sRed sBold">10/1</span>;<br>
-				- Poi sommate <span class="sRed sBold">11 + 19 + 1</span> = <span class="sRed sBold"><u>31</u></span> - 22 = 
+				- Poi sommate <span class="sRed sBold">11 + 19 + 1</span> = <span class="sRed sBold"><u>31</u></span> - 22 =
 				<span class="sRed sBold"><u>9</u></span> risultato finale.<br>
 				Quindi, per una nascita nel segno del <span class="sRed sBold">LEONE</span>, per l'anno <span class="sRed sBold">2017</span>, l'arcano è
 				il <span class="sRed sBold">9 - L'EREMITA</span>.
 			</p>
 		</td></tr>
-	</table>
+		</table>
 
-	<p class="sCenter">
-		<br>
-		<img src="TarotLineaA3A1.gif" width="464" height="70">
-		<br>
-	</p>
+		<p class="sCenter">
+			<img src="TAligne02.gif" width="331" height="46" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="TAligne02.gif" width="331" height="46" alt="">
+		</p>
 
-	<table cellspacing="1" cellpadding="5" bgcolor="#FFF3E8" class="sBorder2s-SanguineBrown" width="90%" align="center">
-		<tr><td class="sBorder2s-PersianPlum">
-
-			<h2><span class="sRed">1</span> - IL BAGATTO</h2>
-			<p class="sSmall sPersianPlum sJustify sPadding">
+		<table bgcolor="#FFF3E8" cellspacing="3" cellpadding="15" class="sBorder6d-SanguineBrown" width="90%" align="center">
+		<tbody class="sSmall sPersianPlum sJustify sPadding" valign="bottom">
+		<tr>
+			<td><img src="Taro1.gif" width="100" height="200" alt="Tarocco 1"></td>
+			<td>
+				<h2><span class="sRed">1</span> - IL BAGATTO</h2>
 				<span class="sRed sBold">GENERALE</span>: è un anno di sfida, di successo, di cambiamento, di raggiungimento dei tuoi obiettivi. In questo
 				anno sarai più grintoso e dinamico che mai, ti sentirai padrone assoluto del tuo destino. Preferirai misurarti attivamente con la realtà
 				e fronteggerai le prove con piglio deciso. Sarai molto coraggioso e intraprendente, ma attento! Perché la fretta con cui affronti persone
 				e situazioni può trasformarsi in impulsività e imprudenza.<br>
-            	<span class="sRed sBold">AMORE</span>: se non è ancora entrato nella tua vita, irromperà con la maliziosa violenza di un fulmine. Il potere 
-				d'attrazione che saprai esercitare sull'altro sesso ti assicura una strage di cuori. Ricorda però che, a furia di giocare con il fuoco, 
+            	<span class="sRed sBold">AMORE</span>: se non è ancora entrato nella tua vita, irromperà con la maliziosa violenza di un fulmine. Il potere
+				d'attrazione che saprai esercitare sull'altro sesso ti assicura una strage di cuori. Ricorda però che, a furia di giocare con il fuoco,
 				si finisce per scottarsi.<br>
-            	<span class="sRed sBold">LAVORO</span>: buone notizie nel campo del lavoro, un'iniziativa può offrire nuove e insperate opportunità di 
-				guadagno. Potrai fare un investimento, ma ti converrà azzardare anche a costo di richiedere dei finanziamenti esterni, contratti da 
+            	<span class="sRed sBold">LAVORO</span>: buone notizie nel campo del lavoro, un'iniziativa può offrire nuove e insperate opportunità di
+				guadagno. Potrai fare un investimento, ma ti converrà azzardare anche a costo di richiedere dei finanziamenti esterni, contratti da
 				stipulare senza pensarci due volte. Non devi strafare disperdendo tempo ed energia.
-			</p>
-
-			<h2><span class="sRed">2</span> - LA PAPESSA</h2>
-			<p class="sSmall sPersianPlum sJustify sPadding">
+			</td>
+		</tr>
+		<tr>
+			<td><img src="Taro2.gif" width="100" height="200" alt="Tarocco 2"></td>
+			<td>
+				<h2><span class="sRed">2</span> - LA PAPESSA</h2>
 				<span class="sRed sBold">GENERALE</span>: pazienza, costanza e cautela sono le armi segrete a cui dovrai ricorrere per ottenere il massimo.
-				I frutti ci saranno e li raccogli a piene mani. Realizzare un progetto a cui tieni molto sarà possibile a patto però d'incanalare 
+				I frutti ci saranno e li raccogli a piene mani. Realizzare un progetto a cui tieni molto sarà possibile a patto però d'incanalare
 				costruttivamente le emozioni. Nell'anno tutto cresce lentamente attraverso un profondo processo di trasformazione. Gli altri non devono
 				sapere, impara a mantenere il segreto.<br>
-				<span class="sRed sBold">AMORE</span>: il rapporto di coppia veleggia lento ma sicuro verso il matrimonio. Forse manca un pochino il 
-				brivido dell'eccitazione ma in compenso i tuoi sentimenti si fanno di giorno in giorno più profondi. Attento a non dare nulla per 
+				<span class="sRed sBold">AMORE</span>: il rapporto di coppia veleggia lento ma sicuro verso il matrimonio. Forse manca un pochino il
+				brivido dell'eccitazione ma in compenso i tuoi sentimenti si fanno di giorno in giorno più profondi. Attento a non dare nulla per
 				scontato, manifestando con chiarezza le tue emozioni al compagno, lo farai sentire più amato. Favorevole alla casa e famiglia.<br>
 				<span class="sRed sBold">LAVORO</span>: prima di metterti in gioco cura di programmare le tue scelte e fai tesoro dei suggerimenti altrui,
-				in modo particolare se chi ti consiglia è una saggia e matura signora. Non sono da escludere qualche investimento proficuo, che tuttavia 
+				in modo particolare se chi ti consiglia è una saggia e matura signora. Non sono da escludere qualche investimento proficuo, che tuttavia
 				maturerà lentamente. Non sperare nel colpo di fortuna, il successo quest'anno è subordinato dal tuo impegno.
-			</p>
-
-			<h2><span class="sRed">3</span> - L'IMPERATRICE</h2>
-			<p class="sSmall sPersianPlum sJustify sPadding">
-				<span class="sRed sBold">GENERALE</span>: questo è un anno favoloso da vivere all'insegna dei dinamismo e della chiarezza d'idee. 
+			</td>
+		</tr>
+		<tr>
+			<td><img src="Taro3.gif" width="100" height="200" alt="Tarocco 3"></td>
+			<td>
+				<h2><span class="sRed">3</span> - L'IMPERATRICE</h2>
+				<span class="sRed sBold">GENERALE</span>: questo è un anno favoloso da vivere all'insegna dei dinamismo e della chiarezza d'idee.
 				Un eccellente risultato ottenuto grazie all'intelligenza, alla volontà e a un pizzico di charme. Tutto ciò che è stato deciso razionalmente
-				andrà a buon fine. La comunicazione primeggia in tutte le forme dal dialogo alla lettera, alla telefonata ai collegamenti informatici 
-				via cavo. Può trattarsi di un successo scolastico, professionale o della vittoria sulle avversità, di una liberazione o del compimento 
+				andrà a buon fine. La comunicazione primeggia in tutte le forme dal dialogo alla lettera, alla telefonata ai collegamenti informatici
+				via cavo. Può trattarsi di un successo scolastico, professionale o della vittoria sulle avversità, di una liberazione o del compimento
 				di un progetto.<br>
-				<span class="sRed sBold">AMORE</span>: ad un meeting, tra la folla a scuola riconoscerai subito la persona che aspettavi da tempo e potrà 
-				nascere un rapporto che potrebbe iniziare all'insegna della dolcezza e della lealtà. Una svolta sentimentale decisiva potrebbe far decidere 
+				<span class="sRed sBold">AMORE</span>: ad un meeting, tra la folla a scuola riconoscerai subito la persona che aspettavi da tempo e potrà
+				nascere un rapporto che potrebbe iniziare all'insegna della dolcezza e della lealtà. Una svolta sentimentale decisiva potrebbe far decidere
 				per il matrimonio, alla coppia già collaudata è tempo di pensare ad un bebè.<br>
-				<span class="sRed sBold">LAVORO</span>: se sei alla ricerca di un nuovo lavoro stabile, bando alle incertezze e lanciati in qualsiasi 
-				concorso. Se operi con intelligenza e metodo, il successo si presenta rapido e i tuoi meriti saranno riconosciuti con una promozione o 
-				un aumento di stipendio. Un affare concluso con intelligenza e con abilità potrà garantirti benessere economico, progresso e un aumento 
+				<span class="sRed sBold">LAVORO</span>: se sei alla ricerca di un nuovo lavoro stabile, bando alle incertezze e lanciati in qualsiasi
+				concorso. Se operi con intelligenza e metodo, il successo si presenta rapido e i tuoi meriti saranno riconosciuti con una promozione o
+				un aumento di stipendio. Un affare concluso con intelligenza e con abilità potrà garantirti benessere economico, progresso e un aumento
 				dei guadagni.
-			</p>
-
-			<h2><span class="sRed">4</span> - L'IMPERATORE</h2>
-			<p class="sSmall sPersianPlum sJustify sPadding">
-				<span class="sRed sBold">GENERALE</span>: tutto quello che inizia sotto gli auspici della sua forza e del suo equilibrio è destinato a 
-				durare. Cammina diritto per la tua strada, sicuro del risultato, tanto più che favori e protezioni non ti verranno mai a mancare. 
+			</td>
+		</tr>
+		<tr>
+			<td><img src="Taro4.gif" width="100" height="200" alt="Tarocco 4"></td>
+			<td>
+				<h2><span class="sRed">4</span> - L'IMPERATORE</h2>
+				<span class="sRed sBold">GENERALE</span>: tutto quello che inizia sotto gli auspici della sua forza e del suo equilibrio è destinato a
+				durare. Cammina diritto per la tua strada, sicuro del risultato, tanto più che favori e protezioni non ti verranno mai a mancare.
 				Impegno, rigore, lealtà: ecco gli unici imperativi cui non dovrai mai venire meno. Grazie alla volontà e al sangue freddo, puoi raggiungere
 				una posizione ben definita, che vivrai con ottimismo e il giusto orgoglio, ma senza quello sfoggio di potere che tanto t'intriga.<br>
 				<span class="sRed sBold">AMORE</span>: una relazione di vecchia data si consolida, se però stai attraversando una fase difficile sul fronte
-				del cuore, è giunto il momento della tregua. Inutile tergiversare sul grande passo nell'aria c'è un profumo di confetti. Finalmente 
+				del cuore, è giunto il momento della tregua. Inutile tergiversare sul grande passo nell'aria c'è un profumo di confetti. Finalmente
 				chiarite le reciproche posizioni, ritroverete la magica intesa di un tempo.<br>
-				<span class="sRed sBold">LAVORO</span>: è in arrivo una notizia che ti darà sollievo, in particolare se hai delle trattative commerciali 
-				in sospeso. Grazie al superamento di un esame o un concorso vedrai la tua posizione consolidarsi. Un problema può trovare una soluzione 
-				all'improvviso grazie ad un' eredità o a una vincita. L'estero svolge un ruolo di primo piano, soprattutto per gli studi e le iniziative 
+				<span class="sRed sBold">LAVORO</span>: è in arrivo una notizia che ti darà sollievo, in particolare se hai delle trattative commerciali
+				in sospeso. Grazie al superamento di un esame o un concorso vedrai la tua posizione consolidarsi. Un problema può trovare una soluzione
+				all'improvviso grazie ad un' eredità o a una vincita. L'estero svolge un ruolo di primo piano, soprattutto per gli studi e le iniziative
 				professionali.
-			</p>
-
-			<h2><span class="sRed">5</span> - IL PAPA</h2>
-			<p class="sSmall sPersianPlum sJustify sPadding">
+			</td>
+		</tr>
+		<tr>
+			<td><img src="Taro5.gif" width="100" height="200" alt="Tarocco 5"></td>
+			<td>
+				<h2><span class="sRed">5</span> - IL PAPA</h2>
 				<span class="sRed sBold">GENERALE</span>: quello che ti accade, di piacevole o meno, ha la sua ragione di essere e va rispettato e accettato.
 				Fidati delle influenze misteriose e benefiche del destino, grazie alle quali la questione più spinosa può essere chiarita. L'essenziale è
-				agire con serietà e dedizione, con il massimo impegno, senza quantificarne egoisticamente i risultati. Molto meglio se hai dalla tua parte 
+				agire con serietà e dedizione, con il massimo impegno, senza quantificarne egoisticamente i risultati. Molto meglio se hai dalla tua parte
 				un mediatore abile e influente, garante di diplomazia e di legalità, di contatti vantaggiosi con l'ambiente.<br>
-				<span class="sRed sBold">AMORE</span>: il compagno, molto compreso nel suo ruolo di guida, non verrà meno alle sue promesse. Non hai di 
-				che lamentarti, considerato che il sentimento che ti lega al tuo compagno è tranquillo e profondo. Sarete molto impegnati a dare un tocco 
+				<span class="sRed sBold">AMORE</span>: il compagno, molto compreso nel suo ruolo di guida, non verrà meno alle sue promesse. Non hai di
+				che lamentarti, considerato che il sentimento che ti lega al tuo compagno è tranquillo e profondo. Sarete molto impegnati a dare un tocco
 				di novità al ménage.<br>
-				<span class="sRed sBold">LAVORO</span>: grazie ad una persona influente, stai per raggiungere una posizione invidiabile. Sarà in modo 
+				<span class="sRed sBold">LAVORO</span>: grazie ad una persona influente, stai per raggiungere una posizione invidiabile. Sarà in modo
 				particolare negli affari dove un'occasione fortunata svelerà la sua portata soltanto col tempo.
-			</p>
-
-			<h2><span class="sRed">6</span> - GLI AMANTI</h2>
-			<p class="sSmall sPersianPlum sJustify sPadding">
-				<span class="sRed sBold">GENERALE</span>: è l'anno della svolta imperniato su una scelta che non può essere rimandata. Potrebbe trattarsi 
-				di una libera scelta da compiere in tutta calma, oppure di un dilemma non privo di contrasti e ripensamenti, proposto dal destino, può 
-				chiedere coraggio e discernimento. Vivi sospeso in una parentesi d'attesa, con tutta la tensione che precede ogni inizio e ogni prova. 
-				Ti trovi di fronte a una decisione molto importante, il cui esito potrà dipendere l'esistenza futura o almeno un settore molto 
+			</td>
+		</tr>
+		<tr>
+			<td><img src="Taro6.gif" width="100" height="200" alt="Tarocco 6"></td>
+			<td>
+				<h2><span class="sRed">6</span> - GLI AMANTI</h2>
+				<span class="sRed sBold">GENERALE</span>: è l'anno della svolta imperniato su una scelta che non può essere rimandata. Potrebbe trattarsi
+				di una libera scelta da compiere in tutta calma, oppure di un dilemma non privo di contrasti e ripensamenti, proposto dal destino, può
+				chiedere coraggio e discernimento. Vivi sospeso in una parentesi d'attesa, con tutta la tensione che precede ogni inizio e ogni prova.
+				Ti trovi di fronte a una decisione molto importante, il cui esito potrà dipendere l'esistenza futura o almeno un settore molto
 				significativo di essa. Attento a non lasciarti sopraffare da dubbi, esitazioni e incertezze.<br>
 				<span class="sRed sBold">AMORE</span>: stai attraversando una fase d'innamoramento densa di scelte e di progetti che coinvolgono un'altra
 				persona, forse perfino due se il problema ruota attorno al dilemma sentimentale o alla scelta fra due persone molto appetibili ed
 				affascinanti. Ricorda di rinnovare ogni giorno l'impegno affettivo che ti sei assunto e non trascurare il partner.<br>
-				<span class="sRed sBold">LAVORO</span>: sei alle prese con esami, concorsi, passaggi di livello e nonostante le tue idee brillanti, la 
-				fatica è tanta. Hai dalla tua parte un ambiente professionale o scolastico cordiale e bello, capace di sostenerti nel momento di un 
+				<span class="sRed sBold">LAVORO</span>: sei alle prese con esami, concorsi, passaggi di livello e nonostante le tue idee brillanti, la
+				fatica è tanta. Hai dalla tua parte un ambiente professionale o scolastico cordiale e bello, capace di sostenerti nel momento di un
 				superlavoro. Punta tutto sull'arte e la fantasia, cerca utili alleanze sul piano pratico.
-			</p>
-
-			<h2><span class="sRed">7</span> - IL CARRO</h2>
-			<p class="sSmall sPersianPlum sJustify sPadding">
+			</td>
+		</tr>
+		<tr>
+			<td><img src="Taro7.gif" width="100" height="200" alt="Tarocco 7"></td>
+			<td>
+				<h2><span class="sRed">7</span> - IL CARRO</h2>
 				<span class="sRed sBold">GENERALE</span>: maturato attraverso le scelte e le prove degli anni passati, ora sperimenti un'inedita condizione
-				di consapevolezza, di fiducia nelle tue capacità. Affronterai con coraggio le tue mete, che vivi con grande entusiasmo come sfide contro 
-				te stesso. Per fortuna gli aiuti insperati, le protezioni e gli appoggi non ti verranno a mancare. Una nuova fase energica e attiva 
-				dell'esistenza, dunque, ricca di progetti di conquiste e di successi sui rivali. A meno che tu non in incominci a sottovalutare, oltre alle 
+				di consapevolezza, di fiducia nelle tue capacità. Affronterai con coraggio le tue mete, che vivi con grande entusiasmo come sfide contro
+				te stesso. Per fortuna gli aiuti insperati, le protezioni e gli appoggi non ti verranno a mancare. Una nuova fase energica e attiva
+				dell'esistenza, dunque, ricca di progetti di conquiste e di successi sui rivali. A meno che tu non in incominci a sottovalutare, oltre alle
 				difficoltà, i diritti altrui.<br>
-				<span class="sRed sBold">AMORE</span>: puoi contare su un affetto sincero nonostante un po' di prepotenza insito nel partner causa del 
-				ménage un po' instabile a volte surriscaldato. Se invece sei a caccia dell'anima gemella, ancora meglio delle novità entusiasmanti e 
-				avventure pepate si stanno delineando all'orizzonte. Il momento è favorevole all'inizio di un'esistenza a due, per il matrimonio o per 
+				<span class="sRed sBold">AMORE</span>: puoi contare su un affetto sincero nonostante un po' di prepotenza insito nel partner causa del
+				ménage un po' instabile a volte surriscaldato. Se invece sei a caccia dell'anima gemella, ancora meglio delle novità entusiasmanti e
+				avventure pepate si stanno delineando all'orizzonte. Il momento è favorevole all'inizio di un'esistenza a due, per il matrimonio o per
 				una riconciliazione.<br>
-				<span class="sRed sBold">LAVORO</span>: numerose saranno le occasioni favorevoli, da non lasciarsi scappare. Se sei ancora uno studente, buttati sugli esami più impegnativi e avrai il vento in poppa. Grazie alla grinta e al potere decisionale di cui stai dando prova, tutto 
+				<span class="sRed sBold">LAVORO</span>: numerose saranno le occasioni favorevoli, da non lasciarsi scappare. Se sei ancora uno studente, buttati sugli esami più impegnativi e avrai il vento in poppa. Grazie alla grinta e al potere decisionale di cui stai dando prova, tutto
 				ti riesce alla perfezione. Non escludere qualche rischio.
-			</p>
-
-			<h2><span class="sRed">8</span> - LA GIUSTIZIA</h2>
-			<p class="sSmall sPersianPlum sJustify sPadding">
+			</td>
+		</tr>
+		<tr>
+			<td><img src="Taro8.gif" width="100" height="200" alt="Tarocco 8"></td>
+			<td>
+				<h2><span class="sRed">8</span> - LA GIUSTIZIA</h2>
 				<span class="sRed sBold">GENERALE</span>: sia buono o a cattivo, ognuno raccoglie quello che ha seminato. Dalla qualità dell'anno che stai
 				vivendo potrai trarre conclusioni sulle tue scelte passate. Anche una situazione difficile può essere tenuta sotto controllo, se l'affronti
-				con onestà con rigore e spirito organizzativo. Abbandona gli atteggiamenti troppo conservatori, l'intolleranza i pregiudizi e la fortuna 
-				ti sorride. Ma comunque vadano le cose, la consapevolezza d'aver agito per il meglio, ti assicura una perfetta armonia con te stesso e 
+				con onestà con rigore e spirito organizzativo. Abbandona gli atteggiamenti troppo conservatori, l'intolleranza i pregiudizi e la fortuna
+				ti sorride. Ma comunque vadano le cose, la consapevolezza d'aver agito per il meglio, ti assicura una perfetta armonia con te stesso e
 				gli altri.<br>
 				<span class="sRed sBold">AMORE</span>: amore e legge in quest'anno vanno a braccetto. Non sottovalutate un problema causato da una persona
 				sentimentalmente non libera. Può trattarsi della legalizzazione d'un rapporto o il ritorno di fiamma dopo un periodo un po' burrascoso
 				o la fine benefica d'un legame divenuto ormai sterile e soffocante.<br>
-				<span class="sRed sBold">LAVORO</span>: poiché il motivo dominante dell'anno è la legge, puoi attenderti dei contratti conformi alle 
-				clausole, affari proficui, eredità e ricorsi legali fruttuosi. Attenzione alle truffe! Grazie ad un impegno portato avanti con metodo 
-				non arrenderti di fronte ad un esame rinviato o ad una piccola sconfitta, significa solo che occorrerà lavorare ancora ad un progetto 
+				<span class="sRed sBold">LAVORO</span>: poiché il motivo dominante dell'anno è la legge, puoi attenderti dei contratti conformi alle
+				clausole, affari proficui, eredità e ricorsi legali fruttuosi. Attenzione alle truffe! Grazie ad un impegno portato avanti con metodo
+				non arrenderti di fronte ad un esame rinviato o ad una piccola sconfitta, significa solo che occorrerà lavorare ancora ad un progetto
 				per renderlo veramente perfetto.
-			</p>
-
-			<h2><span class="sRed">9</span> - L'EREMITA</h2>
-			<p class="sSmall sPersianPlum sJustify sPadding">
-				<span class="sRed sBold">GENERALE</span>: il momento non è dei migliori, l'evoluzione degli eventi è lenta e segreta ma profonda. Devi 
-				agire con molta pazienza e discrezione, con prudenza e moderazione, tutte doti meravigliose anche se non brillanti. Grazie a una protezione 
+			</td>
+		</tr>
+		<tr>
+			<td><img src="Taro9.gif" width="100" height="200" alt="Tarocco 9"></td>
+			<td>
+				<h2><span class="sRed">9</span> - L'EREMITA</h2>
+				<span class="sRed sBold">GENERALE</span>: il momento non è dei migliori, l'evoluzione degli eventi è lenta e segreta ma profonda. Devi
+				agire con molta pazienza e discrezione, con prudenza e moderazione, tutte doti meravigliose anche se non brillanti. Grazie a una protezione
 				invisibile, ogni tentativo malvagio a tuo danno sarà sventato. Non temere questa temporanea battuta di arresto, i ritardi di oggi saranno
 				sicuramente i successi di domani. La condizione ideale è l'isolamento, un momento di solitudine e di riflessione.<br>
 				<span class="sRed sBold">AMORE</span>: una parentesi di solitudine per vedere chiaro in te non ti dovrebbe far male. La paura del
 				coinvolgimento e delle responsabilità affettive gioca a tuo sfavore, tanto più che le scelte che stai per compiere dureranno per sempre
 				e vanno meditate con cura.<br>
-				<span class="sRed sBold">LAVORO</span>: i risultati non immediati ma confortanti t'invitano a perseverare nello studio e nel lavoro, 
+				<span class="sRed sBold">LAVORO</span>: i risultati non immediati ma confortanti t'invitano a perseverare nello studio e nel lavoro,
 				anche se sarà faticoso o poco remunerato, senza avanzare pretese azzardate. Punta su investimenti sicuri e non protestare se la necessità
 				di risparmiare t'impone uno stile di vita più semplice. Denaro in arrivo.
-			</p>
-
-			<h2><span class="sRed">10</span> - LA RUOTA DELLA FORTUNA</h2>
-			<p class="sSmall sPersianPlum sJustify sPadding">
-				<span class="sRed sBold">GENERALE</span>: circostanze esterne e un po' imprevedibili, ti spingono verso l'attività e l'avventura. Stai 
-				vivendo una fase dinamica di mutamento, cui farai bene ad approfittare ora che la sorte ti offre tante occasioni di progresso. Una 
+			</td>
+		</tr>
+		<tr>
+			<td><img src="Taro10.gif" width="100" height="200" alt="Tarocco 10"></td>
+			<td>
+				<h2><span class="sRed">10</span> - LA RUOTA DELLA FORTUNA</h2>
+				<span class="sRed sBold">GENERALE</span>: circostanze esterne e un po' imprevedibili, ti spingono verso l'attività e l'avventura. Stai
+				vivendo una fase dinamica di mutamento, cui farai bene ad approfittare ora che la sorte ti offre tante occasioni di progresso. Una
 				misteriosa e sottile protezione ti affianca aiutandoti a superare gli ostacoli e a scansare i pericoli. Tieni conto, che l'abilità e
 				l'intelligenza non basteranno, la fortuna bisogna sapersela meritare. Ricorda che chi sale troppo in fretta, in fretta scende.<br>
-				<span class="sRed sBold">AMORE</span>: se sei ancora un single un incontro determinante si sta avvicinando all'orizzonte. Ma anche se 
+				<span class="sRed sBold">AMORE</span>: se sei ancora un single un incontro determinante si sta avvicinando all'orizzonte. Ma anche se
 				sei accoppiato, le cose vanno a gonfie vele, con la realizzazione di eventi a lungo desiderati. Fa in maniera di non mancare di rispetto
 				al compagno e di prendere un impegno con troppa leggerezza.<br>
 				<span class="sRed sBold">LAVORO</span> è arrivato il momento della riscossa, le circostanze sono favorevoli agli sforzi, ai tentativi audaci
-				che si riveleranno ricchi di frutti: successi, promozioni, avanzamenti di carriera. Tieni d'occhio gli eventi esterni che sono indipendenti 
-				dalla tua volontà e sono responsabili d'eventuali fluttuazioni. Con il favore della Dea bendata, guadagni e vincite si presentano 
+				che si riveleranno ricchi di frutti: successi, promozioni, avanzamenti di carriera. Tieni d'occhio gli eventi esterni che sono indipendenti
+				dalla tua volontà e sono responsabili di eventuali fluttuazioni. Con il favore della Dea bendata, guadagni e vincite si presentano
 				improvvisi e inattesi.
-			</p>
-
-			<h2><span class="sRed">11</span> - LA FORZA</h2>
-			<p class="sSmall sPersianPlum sJustify sPadding">
+			</td>
+		</tr>
+		<tr>
+			<td><img src="Taro11.gif" width="100" height="200" alt="Tarocco 11"></td>
+			<td>
+				<h2><span class="sRed">11</span> - LA FORZA</h2>
 				<span class="sRed sBold">GENERALE</span>: sei protagonista della situazione con una volontà ben costruita in grado di dominare gli eventi e
 				i capricci del caso. Ricorda che per quanto numerosi e grossi siano gli ostacoli sarai sempre tu a spuntarla se accetterai la sfida,
-				affrontali con intelligenza, fermezza e coraggio. Dalla tua parte hai l'energia necessaria per andare avanti, perché sei ambizioso, 
+				affrontali con intelligenza, fermezza e coraggio. Dalla tua parte hai l'energia necessaria per andare avanti, perché sei ambizioso,
 				autonomo, deciso. I tuoi desideri saranno esauditi e le promesse mantenute a patto che nella foga di arrivare non perdi il controllo.<br>
-				<span class="sRed sBold">AMORE</span>: non hai nulla di cui dubitare sulla sincerità e la fedeltà del compagno, casomai, quello che lascia 
+				<span class="sRed sBold">AMORE</span>: non hai nulla di cui dubitare sulla sincerità e la fedeltà del compagno, casomai, quello che lascia
 				un po' a desiderare sei proprio tu, possessivo, orgoglioso e deciso ad avere l'ultima parola. Se sei single avrai conquiste fiammeggianti,
 				passione e tenacia nei sentimenti miste a qualche infuocato bisticcio.<br>
-				<span class="sRed sBold">LAVORO</span>: la professione è destinata ad allargarsi con un'attività d'équipe. Devi attenderti momenti duri, 
-				appesantiti da critiche e rivalità se però t'impegni al massimo, senza lasciare nulla d'intentato, riuscirai ad avere la meglio. Buone 
+				<span class="sRed sBold">LAVORO</span>: la professione è destinata ad allargarsi con un'attività d'équipe. Devi attenderti momenti duri,
+				appesantiti da critiche e rivalità se però t'impegni al massimo, senza lasciare nulla d'intentato, riuscirai ad avere la meglio. Buone
 				le notizie sul fronte finanziario, il merito può scaturire da una tua speculazione fortunata o da una piccola vincita che interviene a riassettare la situazione.
-			</p>
-		</td></tr>
-    </table>
+			</td>
+		</tr><tbody></table>
 
-     <p align="center">
-		<br>
-		<img src="Taro9.gif"  width="100" height="200">&nbsp;&nbsp;
-		<img src="Taro10.gif" width="100" height="200">&nbsp;&nbsp;
-		<img src="Taro11.gif" width="100" height="200">&nbsp;&nbsp;
-		<img src="Taro12.gif" width="100" height="200">&nbsp;&nbsp;
-		<img src="Taro13.gif" width="100" height="200">&nbsp;&nbsp;
-		<img src="Taro14.gif" width="100" height="200">&nbsp;&nbsp;
-		<img src="Taro15.gif" width="100" height="200">
-		<br>
-	</p>
+		<p class="sCenter">
+			<img src="TAligne02.gif" width="331" height="46" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="TAligne02.gif" width="331" height="46" alt="">
+		</p>
 
-	<table cellspacing="1" cellpadding="5" bgcolor="#FFF3E8" class="sBorder2s-SanguineBrown" width="90%" align="center">
-        <tr><td class="sBorder2s-PersianPlum">
-
-			<h2><span class="sRed">12</span> - L'APPESO</h2>
-			<p class="sSmall sPersianPlum sJustify sPadding">
-				<span class="sRed sBold">GENERALE</span>: non è tempo di azione ma di attesa e di prudenza. Dovrai prendere tutto con calma e rivedere nei 
-				dettagli le situazioni e i progetti. Qualsiasi ostacolo o ritardo ha una ragione nascosta e va interpretato come un felice avviso. Molto 
-				dovrà essere sacrificato a una persona o ad una causa, senza aspettarsi in cambio ricompense, perché è la prova, il passaggio necessario 
+		<table bgcolor="#FFF3E8" cellspacing="3" cellpadding="15" class="sBorder6d-SanguineBrown" width="90%" align="center">
+		<tbody class="sSmall sPersianPlum sJustify sPadding" valign="bottom">
+		<tr>
+			<td><img src="Taro12.gif" width="100" height="200" alt="Tarocco 12"></td>
+			<td>
+				<h2><span class="sRed">12</span> - L'APPESO</h2>
+				<span class="sRed sBold">GENERALE</span>: non è tempo di azione ma di attesa e di prudenza. Dovrai prendere tutto con calma e rivedere nei
+				dettagli le situazioni e i progetti. Qualsiasi ostacolo o ritardo ha una ragione nascosta e va interpretato come un felice avviso. Molto
+				dovrà essere sacrificato a una persona o ad una causa, senza aspettarsi in cambio ricompense, perché è la prova, il passaggio necessario
 				verso un futuro miglioramento. La situazione attuale è destinata a capovolgersi a subire mutamenti e svolte negativi solo in apparenza.<br>
 				<span class="sRed sBold">AMORE</span>: quello che ti farà danzare fra le nuvole è un amore segreto, dolce e romantico o magari platonico.
-				Solo se è costruito con paziente attesa, l'unione avrà basi solide che consentirà di durare nel tempo. A meno che non sia solo di un sogno 
-				di un'illusione in cui lasciarti cullare per sfuggire la realtà. La tua separazione temporanea dalla persona del cuore consentirà al 
+				Solo se è costruito con paziente attesa, l'unione avrà basi solide che consentirà di durare nel tempo. A meno che non sia solo di un sogno
+				di un'illusione in cui lasciarti cullare per sfuggire la realtà. La tua separazione temporanea dalla persona del cuore consentirà al
 				rapporto di ripartire su basi più responsabili e mature.<br>
 				<span class="sRed sBold">LAVORO</span>: ti senti arrivato a un punto morto e tuttavia fatica a metterti in discussione e ad accettare le
-				inevitabili responsabilità. Stretto da una serie infinita di dubbi e incertezze, tendi a preoccuparti più del dovuto. Quello attuale ti 
+				inevitabili responsabilità. Stretto da una serie infinita di dubbi e incertezze, tendi a preoccuparti più del dovuto. Quello attuale ti
 				va un po' stretto e vorresti ca mbiare l'ambiente professionale ma le occasioni sono poche e i progetti non abbastanza solidi.
-			</p>
-
-			<h2><span class="sRed">13</span> - LA MORTE</h2>
-			<p class="sSmall sPersianPlum sJustify sPadding">
-				<span class="sRed sBold">GENERALE</span>: provieni probabilmente da una fase tutt'altro che facile. Ma ciò che doveva accadere è già 
-				accaduto e ormai non ti resta più nulla da temere. Nuovi desideri e nuove sicurezze ti attendono, ma dopo che ti sarai sottomesso alla 
+			</td>
+		</tr>
+		<tr>
+			<td><img src="Taro13.gif" width="100" height="200" alt="Tarocco 13"></td>
+			<td>
+				<h2><span class="sRed">13</span> - LA MORTE</h2>
+				<span class="sRed sBold">GENERALE</span>: provieni probabilmente da una fase tutt'altro che facile. Ma ciò che doveva accadere è già
+				accaduto e ormai non ti resta più nulla da temere. Nuovi desideri e nuove sicurezze ti attendono, ma dopo che ti sarai sottomesso alla
 				necessaria trasformazione: un'evoluzione magari inattesa, un salto di qualità di fronte al quale ti senti impreparato. Rivolgi uno sguardo
 				al passato alla sua eredità culturale. La liberazione dal passato ti consentirà di accedere ad un futuro pieno di promesse.<br>
 				<span class="sRed sBold">AMORE</span>: un cambiamento drastico s'impone all'interno del rapporto a due, nel senso di un' azione forte, un
-				chiarimento riequilibratore, se questo non fosse possibile, un doloroso allontanamento ma liberatorio. Da una separazione o da un momento 
-				di solitudine è utile per guardarsi dentro, germina una visione de rapporto e un'apertura verso l'altro molto più responsabile e matura. 
+				chiarimento riequilibratore, se questo non fosse possibile, un doloroso allontanamento ma liberatorio. Da una separazione o da un momento
+				di solitudine è utile per guardarsi dentro, germina una visione de rapporto e un'apertura verso l'altro molto più responsabile e matura.
 				Un nuovo amore prende il posto del vecchio.<br>
-				<span class="sRed sBold">LAVORO</span>: facendo leva sugl'insegnamenti del passato, riuscirai a condurre a termine un'impresa cui da tempo
-				miravi, ma che non sei riuscito a portare avanti per mancanza di sicurezza in te stesso. Per i progetti che ritenevi irrealizzabili c'è 
-				in serbo un'improvvisa e inattesa realizzazione. Non sono da escludere un cambiamento di residenza, di casa o un trasferimento per lavoro 
+				<span class="sRed sBold">LAVORO</span>: facendo leva sugli insegnamenti del passato, riuscirai a condurre a termine un'impresa cui da tempo
+				miravi, ma che non sei riuscito a portare avanti per mancanza di sicurezza in te stesso. Per i progetti che ritenevi irrealizzabili c'è
+				in serbo un'improvvisa e inattesa realizzazione. Non sono da escludere un cambiamento di residenza, di casa o un trasferimento per lavoro
 				o studio.
-			</p>
-
-			<h2><span class="sRed">14</span> - LA TEMPERANZA</h2>
-			<p class="sSmall sPersianPlum sJustify sPadding">
+			</td>
+		</tr>
+		<tr>
+			<td><img src="Taro14.gif" width="100" height="200" alt="Tarocco 14"></td>
+			<td>
+				<h2><span class="sRed">14</span> - LA TEMPERANZA</h2>
 				<span class="sRed sBold">GENERALE</span>: ti senti ora appagato e in pace con te stesso, tolleranza e spirito d'adattamento alle situazioni
-				ecco su cosa dovrai puntare. Se una trasformazione repentina c'è già stata, adesso è il momento di goderti l'equilibrio raggiunto, ma se 
+				ecco su cosa dovrai puntare. Se una trasformazione repentina c'è già stata, adesso è il momento di goderti l'equilibrio raggiunto, ma se
 				stai ancora aspettando, magari sei un po' stanco di questo periodo di fiacca, preparati al miglioramento graduale a una rigenerazione dolce
 				e paziente, da realizzare senza fretta, all'insegna della frugalità e della moderazione.<br>
-				<span class="sRed sBold">AMORE</span>: praticamente senza problemi, l'amore scorre davanti ai tuoi occhi come un film romantico. La coppia, 
-				non sembra mancare di alcuna prerogativa che consente all'unione di mantenersi sempre giovane. Se però la fiamma della passione si fosse 
+				<span class="sRed sBold">AMORE</span>: praticamente senza problemi, l'amore scorre davanti ai tuoi occhi come un film romantico. La coppia,
+				non sembra mancare di alcuna prerogativa che consente all'unione di mantenersi sempre giovane. Se però la fiamma della passione si fosse
 				un po' affievolita ci potranno essere delle ottime opportunità per ricreare un bel rapporto.<br>
 				<span class="sRed sBold">LAVORO</span>: le circostanze sono favorevoli a nuove imprese, tanto più che puoi contare sull'appoggio dei colleghi
 				e dei superiori. Per migliorare la tua posizione, punta sulla professione libera, a contatto col pubblico, oppure impegnati a seguire corsi
 				specializzati magari in scienze della comunicazione o informatica.
-			</p>
-
-			<h2><span class="sRed">15</span> - IL DIAVOLO</h2>
-			<p class="sSmall sPersianPlum sJustify sPadding">
+			</td>
+		</tr>
+		<tr>
+			<td><img src="Taro15.gif" width="100" height="200" alt="Tarocco 15"></td>
+			<td>
+				<h2><span class="sRed">15</span> - IL DIAVOLO</h2>
 				<span class="sRed sBold">GENERALE</span>: sai bene di esercitare sugli altri una forte attrazione e la sai sfruttare a tuo vantaggio
-				attingendo dall'oscurità della tua psiche eloquenza, carisma e capacità telepatiche. Con la complicità del destino in questo anno ti 
-				diverrà possibile: eventi inattesi e misteriosi, bruschi mutamenti della situazione, imprevisti da cogliere al volo. Ma per quanto le forze 
+				attingendo dall'oscurità della tua psiche eloquenza, carisma e capacità telepatiche. Con la complicità del destino in questo anno ti
+				diverrà possibile: eventi inattesi e misteriosi, bruschi mutamenti della situazione, imprevisti da cogliere al volo. Ma per quanto le forze
 				dell'avversario sembrino cospirarti contro, alla fine a spuntarla sarai comunque tu, a patto che non ti abbandoni al gusto eccessivo.<br>
-				<span class="sRed sBold">AMORE</span>: preparati ad un incontro esplosivo, tutto sesso e voluttà. Dalla tua parte hai la complicità della 
-				passione, della disponibilità e della fortuna, e di un fascino galeotto da brigante o da maliarda. Una fase così vulcanica della tua vita, 
+				<span class="sRed sBold">AMORE</span>: preparati ad un incontro esplosivo, tutto sesso e voluttà. Dalla tua parte hai la complicità della
+				passione, della disponibilità e della fortuna, e di un fascino galeotto da brigante o da maliarda. Una fase così vulcanica della tua vita,
 				dominata da una sessualità intensa, costringerti alla fedeltà sarebbe assurdo.<br>
-				<span class="sRed sBold">LAVORO</span>: va tutto a gonfie vele per quanto concerne investimenti, affari e denaro, sempre utilizzato come 
-				strumento di potere e di conquista. Devi comunque fare i conti con molti no: critiche, rivalità e appoggi promessi e poi negati. Senza 
-				contare i prestiti arrischiati, l'avidità e la fortuna al gioco che non guarda sempre dalla tua parte. Con la buona volontà indomita che 
+				<span class="sRed sBold">LAVORO</span>: va tutto a gonfie vele per quanto concerne investimenti, affari e denaro, sempre utilizzato come
+				strumento di potere e di conquista. Devi comunque fare i conti con molti no: critiche, rivalità e appoggi promessi e poi negati. Senza
+				contare i prestiti arrischiati, l'avidità e la fortuna al gioco che non guarda sempre dalla tua parte. Con la buona volontà indomita che
 				ti ritrovi puoi raggiungere qualsiasi obiettivo, più tutto d'ordine economico.
-			</p>
-
-			<h2><span class="sRed">16</span> - LA TORRE</h2>
-			<p class="sSmall sPersianPlum sJustify sPadding">
-				<span class="sRed sBold">GENERALE</span>: potrebbe trattarsi di una punizione per aver mirato troppo in alto o più semplicemente di un 
-				avviso di pericolo, che non deve essere sottovalutato. Può trattarsi di un conflitto doloroso ma necessario, uno sconvolgimento ai fini 
+			</td>
+		</tr>
+		<tr>
+			<td><img src="Taro16.gif" width="100" height="200" alt="Tarocco 16"></td>
+			<td>
+				<h2><span class="sRed">16</span> - LA TORRE</h2>
+				<span class="sRed sBold">GENERALE</span>: potrebbe trattarsi di una punizione per aver mirato troppo in alto o più semplicemente di un
+				avviso di pericolo, che non deve essere sottovalutato. Può trattarsi di un conflitto doloroso ma necessario, uno sconvolgimento ai fini
 				di un futuro riassetto un risultato negativo che ti permette di ripartire con il piede giusto. Per uscire da una situazione critica divenuta
 				insostenibile, la mossa più saggia è distruggere un equilibrio ormai stagnante e accettare il cambiamento. Quanto nella vita è ingiusto,
 				vincolante, stonato, sta per avere fine.<br>
-				<span class="sRed sBold">AMORE</span>: l'inatteso spazza via ciò che esiste e innesca quello che non esiste ancora. Il tuo rapporto è un 
+				<span class="sRed sBold">AMORE</span>: l'inatteso spazza via ciò che esiste e innesca quello che non esiste ancora. Il tuo rapporto è un
 				po' contrastato ma molto stimolante. Potrai attenderti indifferentemente un colpo di fulmine o un ribaltone salutare, che non separa la
 				coppia ma può rinnovarla con una ventata chiarificatrice.<br>
-				<span class="sRed sBold">LAVORO</span>: da una sconfitta, che ti aiuterà a valutare meglio le tue potenzialità, nascerà un qualcosa di 
-				valido. Può trattarsi della rottura d'un contratto o una brusca interruzione di un rapporto di lavoro o una delusione nella scalata al 
+				<span class="sRed sBold">LAVORO</span>: da una sconfitta, che ti aiuterà a valutare meglio le tue potenzialità, nascerà un qualcosa di
+				valido. Può trattarsi della rottura d'un contratto o una brusca interruzione di un rapporto di lavoro o una delusione nella scalata al
 				successo, dalla quale puoi ripartire più pimpante che mai verso una direzione più soddisfacente.
-			</p>
-
-			<h2><span class="sRed">17</span> - LE STELLE</h2>
-			<p class="sSmall sPersianPlum sJustify sPadding">
-				<span class="sRed sBold">GENERALE</span>: col favore delle stelle, uscirai vincente da una situazione difficile. Dopo una fase statica e 
-				irta di contrasti, la strada verso la realizzazione appare sgombra. Si tratta forse della conclusione di una vicenda oppure d'un nuovo 
-				inizio, ma tira un'aria di ottimismo e di allegria. Qualunque prova, affrontata con spirito romantico e altruista, ti lascia sempre aperta 
-				la porta alla speranza. Contatti sociali proficui, armonia, benessere, intuizioni e sogni che ti converrà fare tesoro. Come può andarti 
+			</td>
+		</tr>
+		<tr>
+			<td><img src="Taro17.gif" width="100" height="200" alt="Tarocco 17"></td>
+			<td>
+				<h2><span class="sRed">17</span> - LE STELLE</h2>
+				<span class="sRed sBold">GENERALE</span>: col favore delle stelle, uscirai vincente da una situazione difficile. Dopo una fase statica e
+				irta di contrasti, la strada verso la realizzazione appare sgombra. Si tratta forse della conclusione di una vicenda oppure d'un nuovo
+				inizio, ma tira un'aria di ottimismo e di allegria. Qualunque prova, affrontata con spirito romantico e altruista, ti lascia sempre aperta
+				la porta alla speranza. Contatti sociali proficui, armonia, benessere, intuizioni e sogni che ti converrà fare tesoro. Come può andarti
 				male se sei tu stesso, con la forza del pensiero positivo a costruire la tua fortuna?<br>
-				<span class="sRed sBold">AMORE</span>: nulla turba il fronte del cuore. Stai attraversando un momento di rara fortuna sentimentale, dove 
-				il romanticismo e la tenerezza s'uniscono ad un profondo coinvolgimento fisico. Se poi desideri assaggiare l'esperienza della paternità 
+				<span class="sRed sBold">AMORE</span>: nulla turba il fronte del cuore. Stai attraversando un momento di rara fortuna sentimentale, dove
+				il romanticismo e la tenerezza s'uniscono ad un profondo coinvolgimento fisico. Se poi desideri assaggiare l'esperienza della paternità
 				o maternità, potrai essere accontentato.<br>
-				<span class="sRed sBold">LAVORO</span>: godi di tutte le prerogative offerte da una professione interessante, magari non molto ben 
-				remunerata, che comunque svolgi con passione e con ottime possibilità di successo. Tanto più che davanti a te si spalancando nuove 
+				<span class="sRed sBold">LAVORO</span>: godi di tutte le prerogative offerte da una professione interessante, magari non molto ben
+				remunerata, che comunque svolgi con passione e con ottime possibilità di successo. Tanto più che davanti a te si spalancando nuove
 				opportunità e occasioni sociali grazie alle quali puoi mettere a frutto la tua raffinata vena creativa.
-			</p>
-
-			<h2><span class="sRed">18</span> - LA LUNA</h2>
-			<p class="sSmall sPersianPlum sJustify sPadding">
-				<span class="sRed sBold">GENERALE</span>: il passato ritorna a farsi sentire, insieme alle forze segrete, alle antiche paure e a dei 
-				desideri inconfessati. Forse hai ancora da liquidare un ricordo, un rimpianto legato ad una persona che non hai mai dimenticato. Risolvere 
-				una questione di vecchia data diverrà possibile, se accetterai di affidarti all'intuito e se farai uno sforzo per liberarti dai pregiudizi 
+			</td>
+		</tr>
+		<tr>
+			<td><img src="Taro18.gif" width="100" height="200" alt="Tarocco 18"></td>
+			<td>
+				<h2><span class="sRed">18</span> - LA LUNA</h2>
+				<span class="sRed sBold">GENERALE</span>: il passato ritorna a farsi sentire, insieme alle forze segrete, alle antiche paure e a dei
+				desideri inconfessati. Forse hai ancora da liquidare un ricordo, un rimpianto legato ad una persona che non hai mai dimenticato. Risolvere
+				una questione di vecchia data diverrà possibile, se accetterai di affidarti all'intuito e se farai uno sforzo per liberarti dai pregiudizi
 				e dai limiti del tuo ambiente. Si tratta di un periodo un po' strano e confuso, cerca di darti da fare.<br>
-				<span class="sRed sBold">AMORE</span>: l'attenzione è puntata sulla casa e famiglia sono in atto alcuni cambiamenti, può trattarsi di un 
-				trasloco, di un acquisto immobiliare oppure di una nascita. Un equivoco sarà da chiarire al più presto, se farai un po' d'ordine nella 
+				<span class="sRed sBold">AMORE</span>: l'attenzione è puntata sulla casa e famiglia sono in atto alcuni cambiamenti, può trattarsi di un
+				trasloco, di un acquisto immobiliare oppure di una nascita. Un equivoco sarà da chiarire al più presto, se farai un po' d'ordine nella
 				tua vita e nelle idee tutto ti apparirà in una prospettiva diversa. A risentirne potrà essere la vita di coppia, probabilmente ti senti
 				insoddisfatto del partner anche tu hai i tuoi torti: cerca di accontentarti.<br>
 				<span class="sRed sBold">LAVORO</span>: il contatto col pubblico ti facilita la vita soprattutto se per lavoro hai a che fare con donne o
-				i bambini. Non super soddisfacenti sembrano gli altri settori, cerca di capire se la strada che hai preso è proprio quella giusta. Occhio 
+				i bambini. Non super soddisfacenti sembrano gli altri settori, cerca di capire se la strada che hai preso è proprio quella giusta. Occhio
 				alle proposte finanziarie che appaiono troppo allettanti, ma che potrebbero nascondere un inganno. Situazioni economiche da risolvere.
-			</p>
-
-			<h2><span class="sRed">19</span> - IL SOLE</h2>
-			<p class="sSmall sPersianPlum sJustify sPadding">
-				<span class="sRed sBold">GENERALE</span>: ecco un anno ricchissimo di successi e di conferme su tutti i fronti. Dalla tua parte hai la 
-				meravigliosa capacità di accontentarti di quello che hai, e questo è il segreto della tua felicità che condividi ogni giorno con la persona 
-				amata. Approfitta di questo momento magico e delle sorprese che il destino ha in serbo per te come: benessere, serenità, conquiste, 
+			</td>
+		</tr>
+		<tr>
+			<td><img src="Taro19.gif" width="100" height="200" alt="Tarocco 19"></td>
+			<td>
+				<h2><span class="sRed">19</span> - IL SOLE</h2>
+				<span class="sRed sBold">GENERALE</span>: ecco un anno ricchissimo di successi e di conferme su tutti i fronti. Dalla tua parte hai la
+				meravigliosa capacità di accontentarti di quello che hai, e questo è il segreto della tua felicità che condividi ogni giorno con la persona
+				amata. Approfitta di questo momento magico e delle sorprese che il destino ha in serbo per te come: benessere, serenità, conquiste,
 				progressi e sicurezza. Un problema di vecchia data trova finalmente la soluzione.<br>
-				<span class="sRed sBold">AMORE</span>: un amore esaltante è pronto a decollare verso uno stile di rapporto più serio e maturo e armonioso 
-				sul piano del sentimento, caldo e totale per ciò che riguarda l'eros. Dopo la burrasca, la vita famigliare guadagna momenti di grande 
+				<span class="sRed sBold">AMORE</span>: un amore esaltante è pronto a decollare verso uno stile di rapporto più serio e maturo e armonioso
+				sul piano del sentimento, caldo e totale per ciò che riguarda l'eros. Dopo la burrasca, la vita famigliare guadagna momenti di grande
 				serenità, che culmina con un impegno affettivo come: fidanzamento, matrimonio convivenza o la previsione di un bebè.<br>
 				<span class="sRed sBold">LAVORO</span>: si sta profilando all'orizzonte un viaggio di lavoro durante il quale avrai modo di dare il massimo,
-				con risvolti d'eccezione per la tua carriera. Novità entusiasmanti per gli studenti, in modo particolare se sono prossimi al diploma o 
-				alla laurea e per gli artisti. Il successo può riguardarti in prima persona oppure coinvolgere il partner i figli. Affari e guadagni del 
+				con risvolti d'eccezione per la tua carriera. Novità entusiasmanti per gli studenti, in modo particolare se sono prossimi al diploma o
+				alla laurea e per gli artisti. Il successo può riguardarti in prima persona oppure coinvolgere il partner i figli. Affari e guadagni del
 				tutto meritati grande anche la situazione finanziaria, incrementata da vincite.
-			</p>
-
-			<h2><span class="sRed">20</span> - IL GIUDIZIO</h2>
-			<p class="sSmall sPersianPlum sJustify sPadding">
+			</td>
+		</tr>
+		<tr>
+			<td><img src="Taro20.gif" width="100" height="200" alt="Tarocco 20"></td>
+			<td>
+				<h2><span class="sRed">20</span> - IL GIUDIZIO</h2>
 				<span class="sRed sBold">GENERALE</span>: è tempo di dare una svolta decisiva agli eventi, tanto che da una decisione immediata, non avrai
-				il tempo di vagliare, potranno dipendere le soddisfazioni future. L'inatteso sta per arrivare nella tua vita e ti creerà un piacevole 
-				scompiglio. Può essere qualcosa che desideravi da tempo, ma in cui non speravi più. Cogli l'attimo fuggente e metti subito in piedi una 
+				il tempo di vagliare, potranno dipendere le soddisfazioni future. L'inatteso sta per arrivare nella tua vita e ti creerà un piacevole
+				scompiglio. Può essere qualcosa che desideravi da tempo, ma in cui non speravi più. Cogli l'attimo fuggente e metti subito in piedi una
 				nuova iniziativa, i conti si chiuderanno in attivo per te, i tuoi sforzi saranno premiati.<br>
-				<span class="sRed sBold">AMORE</span>: c'è nell'aria un colpo di fulmine, un incontro, un nuovo amore, e se un compagno nella tua vita c'è 
-				già, allora si tratterà probabilmente di una svolta nel vostro rapporto, di una trasformazione in cui occorrerà tener conto delle 
+				<span class="sRed sBold">AMORE</span>: c'è nell'aria un colpo di fulmine, un incontro, un nuovo amore, e se un compagno nella tua vita c'è
+				già, allora si tratterà probabilmente di una svolta nel vostro rapporto, di una trasformazione in cui occorrerà tener conto delle
 				reciproche libertà personali. L'incontro con un amico che non vedi da anni ti sorprenderà.<br>
-				<span class="sRed sBold">LAVORO</span>: hai del talento da mettere a frutto e ora i tempi sono maturi per la svolta. Puoi attenderti un 
-				mutamento importante come promozione negli studi o nel lavoro ottenuta rispolverando vecchi progetti ormai ritenuti inservibili. Frequenti 
+				<span class="sRed sBold">LAVORO</span>: hai del talento da mettere a frutto e ora i tempi sono maturi per la svolta. Puoi attenderti un
+				mutamento importante come promozione negli studi o nel lavoro ottenuta rispolverando vecchi progetti ormai ritenuti inservibili. Frequenti
 				viaggi in aereo per motivi di lavoro, un solo neo c'é la tendenza a prendere le situazioni un po' di petto.
-			</p>
-
-			<h2><span class="sRed">21</span> - IL MONDO</h2>
-			<p class="sSmall sPersianPlum sJustify sPadding">
-				<span class="sRed sBold">GENERALE</span>: le situazioni si evolveranno a tuo favore, con la complicità di circostanze favorevoli, il 
-				successo è completo e duraturo e la vittoria sugli ostacoli schiacciante. Tutti i tuoi desideri saranno pienamente appagati in un clima 
-				di perfetto rilassamento di armonia e di dolcezza. Insomma, non avrai nulla da temere, la strada intrapresa appare la migliore. Devi solo 
-				cercare d'impegnarti un po' per modulare la tendenza alla possessività, alla ghiottoneria e pigrizia, che rischia di farti fermare a mezza 
+			</td>
+		</tr>
+		<tr>
+			<td><img src="Taro21.gif" width="100" height="200" alt="Tarocco 21"></td>
+			<td>
+				<h2><span class="sRed">21</span> - IL MONDO</h2>
+				<span class="sRed sBold">GENERALE</span>: le situazioni si evolveranno a tuo favore, con la complicità di circostanze favorevoli, il
+				successo è completo e duraturo e la vittoria sugli ostacoli schiacciante. Tutti i tuoi desideri saranno pienamente appagati in un clima
+				di perfetto rilassamento di armonia e di dolcezza. Insomma, non avrai nulla da temere, la strada intrapresa appare la migliore. Devi solo
+				cercare d'impegnarti un po' per modulare la tendenza alla possessività, alla ghiottoneria e pigrizia, che rischia di farti fermare a mezza
 				via e t'induce a credere di essere arrivato in cima.<br>
 				<span class="sRed sBold">AMORE</span>: non potrebbe andarti meglio, tanto più che c'è in vista il coronamento d'un sogno d'amore. La tua
-				appare un'unione perfetta e protetta dal destino un bimbo da tempo desiderato, può arrivare a completare l'armonia della coppia, non vi 
+				appare un'unione perfetta e protetta dal destino un bimbo da tempo desiderato, può arrivare a completare l'armonia della coppia, non vi
 				sarà nulla che potrà comprometterne la stabilità.<br>
-				<span class="sRed sBold">LAVORO</span>: ecco per te una situazione professionale solida e redditizia, tieni conto che la regolarità e 
-				impegno saranno premiati. Se cerchi un orientamento, devi puntare su una professione a carattere finanziario, artistico o agricolo. Per 
+				<span class="sRed sBold">LAVORO</span>: ecco per te una situazione professionale solida e redditizia, tieni conto che la regolarità e
+				impegno saranno premiati. Se cerchi un orientamento, devi puntare su una professione a carattere finanziario, artistico o agricolo. Per
 				la realizzazione di un progetto, occorrerà ricorrere a dei mutui e finanziamenti, favoriti acquisti immobiliari e piccole vincite.
-			</p>
-
-			<h2><span class="sRed">22</span> - IL MATTO</h2>
-			<p class="sSmall sPersianPlum sJustify sPadding">
-				<span class="sRed sBold">GENERALE</span>: c'è una sottile linea di confine che devi imparare a riconoscere, al di qua della quale sei un 
-				saggio e al di là un folle. Per prima cosa non devi opporre resistenza e piegarti al cambiamento. Segui tutte le indicazioni del cuore, 
-				forse le più illogiche ma sono quelle vincenti. Sai apprezzare le emozioni e i colpi di scena, in situazioni ancora tutte da costruire, 
+			</td>
+		</tr>
+		<tr>
+			<td><img src="Taro22.gif" width="100" height="200" alt="Tarocco 22"></td>
+			<td>
+				<h2><span class="sRed">22</span> - IL MATTO</h2>
+				<span class="sRed sBold">GENERALE</span>: c'è una sottile linea di confine che devi imparare a riconoscere, al di qua della quale sei un
+				saggio e al di là un folle. Per prima cosa non devi opporre resistenza e piegarti al cambiamento. Segui tutte le indicazioni del cuore,
+				forse le più illogiche ma sono quelle vincenti. Sai apprezzare le emozioni e i colpi di scena, in situazioni ancora tutte da costruire,
 				ti trovi di fronte alla libera scelta. Opta per l'avventura e non te ne pentirai.<br>
-				<span class="sRed sBold">AMORE</span>: pur amando il compagno e la famiglia, non sai rinunciare ai tuoi spazi. Tanto più che le tue 
-				avventure possono essere numerose e intriganti. Il rischio, forse si nasconderà nell' esagerazione che potrà trasformare un rapporto 
-				inizialmente frizzante in una storia un po' superficiale. In questo caso la paura d'impegnarti potrà indurti a fuggire da una persona 
+				<span class="sRed sBold">AMORE</span>: pur amando il compagno e la famiglia, non sai rinunciare ai tuoi spazi. Tanto più che le tue
+				avventure possono essere numerose e intriganti. Il rischio, forse si nasconderà nell'esagerazione che potrà trasformare un rapporto
+				inizialmente frizzante in una storia un po' superficiale. In questo caso la paura d'impegnarti potrà indurti a fuggire da una persona
 				cara. Cerca dunque di non fuggire da te stesso e ascolta il tuo cuore.<br>
-				<span class="sRed sBold">LAVORO</span>: si progetti sono molti e altrettante le opportunità. Pur avendo idee, coraggio e grinta da vendere, 
-				rischi di deludere chi ha riposto la sua fiducia in te. Sforzati di fissare per tempo scadenze e obiettivi e fai tesoro delle critiche, 
+				<span class="sRed sBold">LAVORO</span>: si progetti sono molti e altrettante le opportunità. Pur avendo idee, coraggio e grinta da vendere,
+				rischi di deludere chi ha riposto la sua fiducia in te. Sforzati di fissare per tempo scadenze e obiettivi e fai tesoro delle critiche,
 				talvolta meritate che ti vengono mosse. Con autodisciplina in più realizzerai perfino l'impossibile.
-			</p>
-		</td></tr>
-    </table>
+			</td>
+		</tr>
+		</tbody></table>
 
-	<p class="sCenter">
-		<br>
-		<img src="Taro16.gif"    width="100" height="200">&nbsp;&nbsp;&nbsp;
-		<img src="Taro17.gif"    width="100" height="200">&nbsp;&nbsp;&nbsp;
-		<img src="Taro18.gif"    width="100" height="200">&nbsp;&nbsp;&nbsp;
-		<img src="Taro19.gif"    width="100" height="200">&nbsp;&nbsp;&nbsp;
-		<img src="Taro20.gif"    width="100" height="200">&nbsp;&nbsp;&nbsp;
-		<img src="Taro21.gif"    width="100" height="200">&nbsp;&nbsp;&nbsp;
-		<img src="Taro22.gif"    width="100" height="200"><br><br>
-	</p>
+		<p class="sCenter">
+			<br><br>
+			<img src="TarotLineaA3A1.gif" width="464" height="70" alt="Linea Tarocchi">
+		</p>
 
-	<p class="sBakerChoc sSmall sBold sCenter">
-		<br>
-		Cerca nella tabella i numeri corrispondenti alle lettere del nome e del cognome.
-		<br>
-	</p>					
+		<p class="sMedium sBakerChoc sBold sCenter">
+			<br>
+			Cerca nella tabella i numeri corrispondenti alle lettere del nome e del cognome.
+			<br>
+		</p>
 
-	<table cellpadding="4" cellspacing="0" bordercolor="#800000" bordercolordark="#800000" bordercolorlight="#800000" width="40%" class="sBorder3s" align="center">
-    <tbody class="sMedium sBakerChoc sCenter sBGWhite sBold">
-      <tr class="sRed">
-        <td width="11%">1</td>
-        <td width="11%">2</td>
-        <td width="11%">3</td>
-        <td width="11%">4</td>
-        <td width="11%">5</td>
-        <td width="11%">6</td>
-        <td width="11%">7</td>
-        <td width="11%">8</td>
-        <td width="11%">9</td>
-      </tr>
-      <tr>
-        <td>A</td>
-        <td>B</td>
-        <td>C</td>
-        <td>D</td>
-        <td>E</td>
-        <td>F</td>
-        <td>G</td>
-        <td>H</td>
-        <td>I</td>
-      </tr>
-      <tr>
-        <td>J</td>
-        <td>K</td>
-        <td>L</td>
-        <td>M</td>
-        <td>N</td>
-        <td>O</td>
-        <td>P</td>
-        <td>Q</td>
-        <td>R</td>
-      </tr>
-      <tr>
-        <td>S</td>
-        <td>T</td>
-        <td>U</td>
-        <td>V</td>
-        <td>W</td>
-        <td>X</td>
-        <td>Y</td>
-        <td>Z</td>
-        <td>&nbsp;</td>
-      </tr>
-	</tbody>
-	</table>
+		<table cellpadding="4" cellspacing="0" class="sBorder3s" bordercolor="#800000" bordercolordark="#800000" bordercolorlight="#800000" width="40%" align="center">
+		<tbody class="sMedium sBakerChoc sCenter sBGWhite sBold">
+			<tr class="sRed">
+				<td width="11%">1</td>
+				<td width="11%">2</td>
+				<td width="11%">3</td>
+				<td width="11%">4</td>
+				<td width="11%">5</td>
+				<td width="11%">6</td>
+				<td width="11%">7</td>
+				<td width="11%">8</td>
+				<td width="11%">9</td>
+			</tr>
+			<tr>
+				<td>A</td>
+				<td>B</td>
+				<td>C</td>
+				<td>D</td>
+				<td>E</td>
+				<td>F</td>
+				<td>G</td>
+				<td>H</td>
+				<td>I</td>
+			</tr>
+			<tr>
+				<td>J</td>
+				<td>K</td>
+				<td>L</td>
+				<td>M</td>
+				<td>N</td>
+				<td>O</td>
+				<td>P</td>
+				<td>Q</td>
+				<td>R</td>
+			</tr>
+			<tr>
+				<td>S</td>
+				<td>T</td>
+				<td>U</td>
+				<td>V</td>
+				<td>W</td>
+				<td>X</td>
+				<td>Y</td>
+				<td>Z</td>
+				<td>&nbsp;</td>
+			</tr>
+		</tbody>
+		</table>
 
-	<p align="center" class="sEspresso sSmall">
-		<br><br>
-		<img src="TarotLineaA3A1.gif" width="464" height="70">
-		<br><br>
+		<p class="sCenter">
+			<br><br>
+			<img src="TAligne04.gif" width="390" height="44" alt="Linea Tarocchi">&nbsp;&nbsp;&nbsp;
+			<img src="TAligne04.gif" width="390" height="44" alt="">
+		</p>
 
-		<img src="TAligne04.gif" width="390" height="44">&nbsp;&nbsp;&nbsp; 
-		<img src="TAligne04.gif" width="390" height="44"><br><br>
+		<p class="sSmall sEspresso sCenter">
+			<img src="email-box.gif"    width="35" height="35" alt="">
+			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
+			<img src="TelefonoC164.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
 
-		<img src="email-box.gif"    width="35" height="35">
-		Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold sBlack">studio.acquario@libero.it</a><br><br>
-		<img src="TelefonoC164.gif" width="35" height="35">&nbsp;
-		oppure Telefona: <strong>0125 631175 - Cell. 347 0417409<br><br>
-
-		Sei il visitatore n°</strong>&nbsp;
-	<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220429435-nyxibl" border=0></a>
-		&nbsp;(Contenuto Aggiornato 18/12/2017)<br><br>
-		<img src="TAligne04.gif" width="390" height="44">&nbsp;&nbsp;&nbsp;   
-		<img src="TAligne04.gif" width="390" height="44">
-	</p>
+			<b>Sei il visitatore n°</b>&nbsp;
+		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220429435-nyxibl" border=0></a>
+			&nbsp;(Contenuto Aggiornato <time datetime="2017-12-18">18/12/2017</time>)<br><br>
+		</p>
 
 </td></tr></TBODY></table>
 </td></tr></TBODY></table>
 </td></tr></TBODY></table>
 </td></tr></TBODY></table>
-</td></tr></TBODY></table>
-</td></tr></TBODY></table>
-</td></tr></TBODY></table>
-<p class="sCenter sXXSmall sWhite">
-	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati. 
-	Senza il consenso dell&#39;autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
-</p>
+<footer>
+	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
+	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
+</footer>
 </body>
 </html>
