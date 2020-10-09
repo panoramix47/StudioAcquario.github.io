@@ -1,53 +1,129 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" dir="ltr">
 <head>
 <meta charset="UTF-8">
-<title>Stelle Fisse: Gemelli e Cancro</title>
+<title>Stelle Fisse: Gemelli e Cancro - Studio Acquario</title>
 <link rel="icon" type="image/gif" href="favicon32.gif">
 <meta name="description" content="Studio Acquario: Le Stelle Fisse: Gemelli e Cancro">
-<meta name="keywords" lang="it" content="astrologia, stelle fisse, gemelli, cancro">
+<meta name="keywords" lang="it" content="astrologia, studio acquario, stelle fisse, gemelli, cancro">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
 <meta name="language" content="it">
-<meta http-equiv="imagetoolbar" CONTENT="no">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="26/09/2017">
-<meta name="revised" content="14/07/2020">
+<meta name="revised" content="09/10/2020">
 
 <style type="text/css">
-BODY {
-	SCROLLBAR-ARROW-COLOR: #ffffff; 
-	SCROLLBAR-TRACK-COLOR: #b0cbeb; 
-	SCROLLBAR-BASE-COLOR: #b0cbeb; 
+body {
+	SCROLLBAR-ARROW-COLOR: #ffffff;
+	SCROLLBAR-TRACK-COLOR: #C0D5EF; /* Periwinkle */
+	SCROLLBAR-BASE-COLOR: #B0CBEB; /* Tropical Blue */
 	scrollbar-dark-shadow-color: #A5C2F1;
+
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 	color: #000000; /* Black */
 	background-image: url("Colorstars.gif");
 }
+a:hover {
+	color: #FF0000;
+}
 h1 {
-	font-size: x-large; /* niente colore, varia */
+	font-size: xx-large;
 	font-weight: bold;
+	color: #0000FF;	/* Blue */
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 h2 {
-	font-size: medium;
-	color:#000000; /* Black */
+	font-size: x-large;
 	font-weight: bold;
+	/* niente colore, varia */
 	text-align: center;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-top: 30px;
+}
+h3 {
+	font-size: medium;
+	font-weight: bold;
+	color:#000000; /* Black */
+	text-align: center;
+	padding-left: 35px;
+	padding-right: 35px;
 	margin-top: 1.25em;
 }
-.sLogoBanner {
+header {
 	font-size: xx-large;
 	font-weight: bold;
 	color: #4169E1; /* Royal Blue */
+	/* text-shadow: 1px 1px 5px #0000FF; Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
+}
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #000000; /* White */
 	/* text-shadow: 1px 1px 1px #0000FF; Blue */
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
+}
+p {
+	font-size: small;
+	/* color: #FFFFFF; White prende quello definito in body*/
+	text-align: justify;
+	padding-left: 35px;
+	padding-right: 35px;
+	line-height: 125%;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.sNavigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 180%;
+}
+.sNavigation a {
+	font-size: medium;
+	font-weight: bold;
+	padding:.42em;
+	color: #000000; /* White */
+	margin-left: 2px;
+	background: #FFF0E1; /* Linen */
+	text-decoration: none;
+	border: 01px dotted #A0A0FF;
+}
+.sNavigation a:hover {
+	color: #000000; /* Black */
+	background: #D8D8FF; /* Quartz */
+}
+#PagCorrente {
+	border-bottom: 2.5px solid #FF0000; /* red */
+}
+.sHomeIcon {
+	vertical-align: bottom;
+	margin-bottom: 1px;
+	height: 25px;
+	width: 25px;
 }
 .sBorder2s {
 				border-style: solid;
 				border-width: 2px;
-}
-.sBlack {
-				color: #000000;
 }
 .sBlue {
 				color: #0000FF;
@@ -55,45 +131,26 @@ h2 {
 .sGreen {
 				color: #008000;
 }
-.sMaroon {
-				color: #800000;
-}
-.sGold {
-				color: #FFD700;
-}
 .sRed {
 				color: #FF0000;
 }
+.sRedOrange {
+				color: #FF2D2D;
+}
+.sDarkGoldenrod {
+				color: #B58E00;
+}
 .sBGWhite {
-	background-color: #FFFFFF;
+				background-color: #FFFFFF;
 }
 .sCenter {
 				text-align: center;
-}
-.sJustify {
-				text-align: justify;
-}
-.sPadding {
-				padding-left: 40px;
-				padding-right: 40px;
 }
 .sNormal {
 				font-weight: normal;
 }
 .sBold {
 				font-weight: bold;
-}
-.sTxtDecNo {
-				text-decoration: none;
-}
-.sXXSmall {
-				font-size: xx-small;
-}
-.sSmall {
-				font-size: small;
-}
-.sXXLarge {
-				font-size: xx-large;
 }
 .sLarger {
 				font-size: larger;
@@ -102,277 +159,294 @@ h2 {
 </head>
 
 <body>
-<p class="sLogoBanner"><span class="sBGWhite">Studio di Astrologia "Acquario"</span></p>
+<header><span class="sBGWhite">Studio di Astrologia &quot;Acquario&quot;</span></header>
 
-<table background="stelle-magiche_rosa.jpg" cellspacing="0" cellpadding="5" bgcolor="#FFFFFF" bordercolor="#0000FF" width="97%" class="sBorder2s" align="center">
-  <tr><td class="sBorder2s">
+<table background="stelle-magiche_rosa.jpg" cellspacing="0" cellpadding="5" bgcolor="#FFFFFF" bordercolor="#0000FF" class="sBorder2s" width="97%" align="center">
+<tr><td class="sBorder2s">
 
-	<p class="sXXLarge sBold sBlue sCenter">LE STELLE NEI SEGNI</p>
- 
-	<h1><span class="sGold">GEMELLI</span></h1>
-		
-	<h2><span class="sLarger">ALDEBARAN</span> Alfa Tauri<span class="sNormal"> (natura di </span><span class="sRed">MARTE</span><span class="sNormal">)
-	(grado </span>09°47' <span class="sGold">GEMELLI</span><span class="sNormal">)</span>
-	</h2>
-		
-	<p class="sSmall sJustify sPadding">
-		Conferisce un carattere ribelle e inquieto, popolarità e notorietà, un'intelligenza e un'eloquenza convincente. Aiuta ad avere prontezza ed acume
-		per cogliere al volo le opportunità che portano successo, ricchezza e onori, oltre a favorire un'elevata posizione sociale. Saldi principi morali, 
-		coraggio, audacia, conquista del potere e della ricchezza con l'aiuto altrui, ma non sempre durevoli. Una posizione sociale di riguardo, pubblici 
-		riconoscimenti. Comporta anche pericolo di malattia o di rischi personali. Scarse amicizie.<br><br>
-		Con il <span class="sRed sBold">SOLE</span>: pericoli per delle contese legali e processi, onori e ricchezze che si tramutano in fonte di 
-		problemi o che vanno in rovina. Grande energia personale, perseveranza e importanti riconoscimenti materiali.<br>
-		Con il <span class="sRed sBold">SOLE</span>: buon fiuto per gli affari e i commerci, facili riconoscimenti e guadagni, possibilità di
-		godere del credito altrui specie se si trova in 1° o in 10° casa, ma anche pericolo di rovesci. Fortuna in ambito famigliare, ma pericolo di 
-		morte violenta.<br>
-		Con <span class="sRed sBold">MERCURIO</span>: guadagni, molti amici fidati. problemi di salute o della vita
-		famigliare.<br>
-		Con <span class="sRed sBold">VENERE</span>: fama per meriti letterari, musicali o artistici. Forti capacità creative, matrimonio riuscito, buona 
-		salute.<br>
-		Con <span class="sRed sBold">MARTE</span>: riconoscimenti in campo militare, professionale o gerarchico in genere. Possibili incidenti, o malattie 
-		impreviste o morte improvvisa.<br>
-		Con <span class="sRed sBold">GIOVE</span>: riconoscimenti nella carriera lavorativa, specialmente nel campo giuridico o legale.<br>
-		Con <span class="sRed sBold">SATURNO</span>: mentalità eclettica, sarcasmo, eloquenza, buona memoria. Grandi problemi personali da risolvere.<br>
-		Con <span class="sRed sBold">URANO</span>: amore per la scienza e per la natura, spirito critici ma giusto, successo in politica oppure buon 
-		accordo nell'ambito famigliare. Riconoscimenti pubblici, interesse per l'occultismo.
-	</p>
+		<h1>LE STELLE NEI SEGNI</h1>
 
-	<h2><span class="sLarger">RIGEL</span> Beta Orione<span class="sNormal"> (natura di </span><span class="sRed">MARTE/GIOVE/SATURNO</span><span class="sNormal">)
-	(grado </span>16°50’ <span class="sGold">GEMELLI</span><span class="sNormal">)</span>
-	</h2>
+		<nav class="sCenter">
+			<br>
+			<ul class="sNavigation">
+				<li><a href="Stelle1.htm"><span class="sRed">Ariete</span> e <span class="sGreen">Toro</span></a></li>
+				<li><a href="Stelle2.htm" id="PagCorrente"><span class="sDarkGoldenrod">Gemelli</span> e <span class="sBlue">Cancro</span></a></li>
+				<li><a href="Stelle3.htm"><span class="sRed">Leone</span> e <span class="sGreen">Vergine</span></a></li>
+				<li><a href="Stelle4.htm"><span class="sDarkGoldenrod">Bilancia</span> e <span class="sBlue">Scorpione</span></a></li>
+				<li><a href="Stelle5.htm"><span class="sRed">Sagittario</span> e <span class="sGreen">Capricorno</span></a></li>
+				<li><a href="Stelle6.htm"><span class="sDarkGoldenrod">Acquario</span> e <span class="sBlue">Pesci</span></a></li>
+				<li><a href="Stelle.htm">Stelle</a></li>
+				<li><a href="index.html"><img src="favicon32.gif" class="sHomeIcon"></a></li>
+			</ul>
+			<br>
+		</nav>
 
-	<p class="sSmall sJustify sPadding">
-		Conferisce doti d'inventiva e di abilità manuale. Porta onori, successo e prosperità, coraggio e spirito intraprendente. I doni consistono nel
-		temperamento spontaneo e aperto verso il prossimo, premiato da consensi e benefici materiali. Senso di dignità e onore piuttosto marcato, bisogno
-		di esercitare l'autorità, e anche di esteriorizzare le proprie energie di imporsi in un conflitto o in una competizione.<br>
-		Sull'<span class="sRed sBold">ASC</span>: buona fortuna, consensi e riconoscimenti, risultati positivi di tipo duraturo.<br>
-		Con il <span class="sRed sBold">SOLE</span>: carattere intraprendente, vivace e coraggioso, sicuro di sé. Temperamento un po' insofferente, 
-		tende a agire in fretta o riflettendo poco. Molti nemici, ma di cui finirà con l'aver ragione. Successo in carriera. Buona fortuna cospicua e
-		duratura.<br>
-		Con la <span class="sRed sBold">LUNA</span>: momenti di ansia e delusione per la realizzazione di alcuni desideri personali. Periodi di
-		bassa fortuna, talora legati a non perfette condizioni fisiche. Problemi di salute di uno dei genitori o del coniuge.<br>
-		Con <span class="sRed sBold">MERCURIO</span>: predisposizione per lo studio di materie scientifiche o tecniche. Posizione di prestigio 
-		conseguita a seguito di iniziative commerciali o attività letterarie.<br>
-		Con <span class="sRed sBold">VENERE</span>: riconoscimenti e consensi nel corso della mezza età. Matrimonio con persona ricca di elevata posizione 
-		sociale, specialmente per le donne.<br>
-		Con <span class="sRed sBold">MARTE</span>: temperamento intraprendente, ingegnoso ma un po' sregolato. Discreta abilità per le attività manuali
-		o tecniche, buona posizione nel campo lavorativo o professionale.<br>
-		Con <span class="sRed sBold">GIOVE</span>: benefici e guadagni provenienti dal contatto con persone o paesi lontani. Molti sono viaggi anche connessi 
-		al lavoro. Matrimonio molto fortunato e affermazione nella carriera.<br>
-		Con <span class="sRed sBold">SATURNO</span>:benefici economici o lasciti provenienti da persone anziane. Carattere calmo, tranquillo e ... 
-		riflessivo. Buona salute fisica e psichica, eccezionale longevità.<br>
-		Con <span class="sRed sBold">URANO</span>: temperamento romantico e nostalgico, amante delle cose antiche. Disavventure personali comportano 
-		soluzioni forzose o difficili. Precoci delusioni amorose ma un buon matrimonio dopo i 29/30 anni.
-	</p>
+		<h2><span class="sDarkGoldenrod">GEMELLI</span></h2>
 
-	<h2><span class="sLarger">BELLATRIX</span> Gamma Orione<span class="sNormal"> (natura di </span><span class="sRed">MERCURIO/MARTE</span><span class="sNormal">)
-	(grado </span>20°57’ <span class="sGold">GEMELLI</span><span class="sNormal">)</span>
-	</h2>
+		<h3><span class="sLarger">ALDEBARAN</span> Alfa Tauri<span class="sNormal"> (natura di </span><span class="sRedOrange">MARTE</span><span class="sNormal">)
+		(grado </span>09°47' <span class="sDarkGoldenrod">GEMELLI</span><span class="sNormal">)</span>
+		</h3>
 
-	<p class="sSmall sJustify sPadding">
-		Aiuta ad avere ricchezza e fortuna, rapidi e brillanti successi in campo sociale o nella carriera, può comportare con la stessa rapidità momenti di 
-		difficoltà. Favorisce amicizie altolocate, spirito combattivo, coraggio e intraprendenza. Conferisce una voce tagliente e fastidiosa, molto 
-		accentuata nella donna la loquacità ed il pettegolezzo.<br>
-		Con il <span class="sRed sBold">SOLE</span>: carattere mutevole e indeciso. Buone capacità manuali. Ma ha poca bravura negli affari o nei commerci. 
-		Ricchezza e onori conquistati precocemente, ma possibilità di grossi rovesci di fortuna. Problemi di vista, malattie o traumi agli occhi. Salute 
-		precaria.<br>
-		Con la <span class="sRed sBold">LUNA</span>: amore del lusso, dell'ostentazione e dello spreco. Ambizioni caratterizzate dalla vanità. Posizione 
-		di prestigio e ricchezza conquistata con fatica. Notevole coraggio nell'agire. Problemi o malattie agli occhi.<br>
-		Con <span class="sRed sBold">MERCURIO</span>: riconoscimenti sociali o professionali. Successi nelle amicizie e nelle relazioni sociali.<br>
-		Con <span class="sRed sBold">VENERE</span>: notevoli patimenti dovuti a situazioni sentimentali difficili o insostenibili. Amori impossibili.<br>
-		Con <span class="sRed sBold">MARTE</span>: notevoli doti di forza ed energia psicofisica. Successo in campo lavorativo o nella carriera. Possibilità 
-		di traumi o d'incidenti.<br>
-		Con <span class="sRed sBold">GIOVE</span>: posizione di rilievo in campo sociale o professionale. Tende a sostenere delle idee fanatiche o fisse.<br>
-		Con <span class="sRed sBold">SATURNO</span>: vita ritirata e contemplativa, interessi culturali. Modo d'agire riservato e calmo. Tende a non 
-		sposarsi. Vecchiaia all'insegna di qualche difficoltà economica.<br>
-		Con <span class="sRed sBold">URANO</span>: interessi culturali un po' insoliti o poco pratici. Insofferenza verso i parenti e vicini. Disturbi
-		psichici o esaurimento nervoso. Tendenza a ripetere gli stessi errori.
-	</p>
+		<p>
+			Conferisce un carattere ribelle e inquieto, popolarità e notorietà, un'intelligenza e un'eloquenza convincente. Aiuta ad avere prontezza ed acume
+			per cogliere al volo le opportunità che portano successo, ricchezza e onori, oltre a favorire un'elevata posizione sociale. Saldi principi morali,
+			coraggio, audacia, conquista del potere e della ricchezza con l'aiuto altrui, ma non sempre durevoli. Una posizione sociale di riguardo, pubblici
+			riconoscimenti. Comporta anche pericolo di malattia o di rischi personali. Scarse amicizie.<br><br>
+			Con il <span class="sRedOrange sBold">SOLE</span>: pericoli per delle contese legali e processi, onori e ricchezze che si tramutano in fonte di
+			problemi o che vanno in rovina. Grande energia personale, perseveranza e importanti riconoscimenti materiali.<br>
+			Con il <span class="sRedOrange sBold">SOLE</span>: buon fiuto per gli affari e i commerci, facili riconoscimenti e guadagni, possibilità di
+			godere del credito altrui specie se si trova in 1° o in 10° casa, ma anche pericolo di rovesci. Fortuna in ambito famigliare, ma pericolo di
+			morte violenta.<br>
+			Con <span class="sRedOrange sBold">MERCURIO</span>: guadagni, molti amici fidati. problemi di salute o della vita
+			famigliare.<br>
+			Con <span class="sRedOrange sBold">VENERE</span>: fama per meriti letterari, musicali o artistici. Forti capacità creative, matrimonio riuscito,
+			buona salute.<br>
+			Con <span class="sRedOrange sBold">MARTE</span>: riconoscimenti in campo militare, professionale o gerarchico in genere. Possibili incidenti,
+			o malattie impreviste o morte improvvisa.<br>
+			Con <span class="sRedOrange sBold">GIOVE</span>: riconoscimenti nella carriera lavorativa, specialmente nel campo giuridico o legale.<br>
+			Con <span class="sRedOrange sBold">SATURNO</span>: mentalità eclettica, sarcasmo, eloquenza, buona memoria. Grandi problemi personali da
+			risolvere.<br>
+			Con <span class="sRedOrange sBold">URANO</span>: amore per la scienza e per la natura, spirito critici ma giusto, successo in politica oppure buon
+			accordo nell'ambito famigliare. Riconoscimenti pubblici, interesse per l'occultismo.
+		</p>
 
-	<h2><span class="sLarger">BETELGEUSE</span> Alfa Orione<span class="sNormal"> (natura di </span><span class="sRed">MARTE</span><span class="sNormal">)
-	(grado </span>28°45’ <span class="sGold">GEMELLI</span><span class="sNormal">)</span>
-	</h2>
+		<h3><span class="sLarger">RIGEL</span> Beta Orione<span class="sNormal"> (natura di </span><span class="sRedOrange">MARTE/GIOVE/SATURNO</span><span class="sNormal">)
+		(grado </span>16°50’ <span class="sDarkGoldenrod">GEMELLI</span><span class="sNormal">)</span>
+		</h3>
 
-	<p class="sSmall sJustify sPadding">
-		Conferisce onori, fama e successo, rende capaci d'agire in modo intelligente ed efficace, audaci e intraprendenti. Dona fiducia in sé e nelle 
-		proprie qualità, grande potere di azione. Riconoscimenti vari, fortuna e ricchezza. Affermazione in campo sociale o professionale.<br>
-		Con il <span class="sRed sBold">SOLE</span>: interesse per le tematiche legate all'occulto, alla filosofia e all'astrologia. Problemi di salute 
-		inattesi e a decorso acuto.<br>
-		Con la <span class="sRed sBold">LUNA</span>: intelletto acuto, fortissima volontà. Carattere turbolento e ribelle ad ogni forma di autorità. 
-		Successo nel lavoro o nella carriera professionale, ma dei forti contrasti con i superiori o persone altolocate. Onori e/o ricchezze di vario
-		genere.<br>
-		Con <span class="sRed sBold">MERCURIO</span>: interessi per lo studio e le attività intellettuali. Rinomanza acquisita per meriti letterari o
-		artistici. Guadagni instabili o difficili. Buona salute, con possibilità di amministrarla male.<br>
-		Con <span class="sRed sBold">VENERE</span>: carattere un po' schivo e riservato. Grande abilità manuale e o artistico. Buoni guadagni o comunque 
-		facilitati.<br>
-		Con <span class="sRed sBold">MARTE</span>: carattere prudente e riservato. Grandi capacità organizzative, fama, rinomanza in una professione, ove 
-		si acquisirà una posizione di predominio.<br>
-		Con <span class="sRed sBold">GIOVE</span>: carattere serio e calmo, capace di applicarsi. Riconoscimenti professionali o lavorativi. Interessi 
-		culturali . Ottime capacità commerciali e lavorative, specie dove occorra una facile eloquenza.<br>
-		Con <span class="sRed sBold">SATURNO</span>: numerosi alti e bassi nel corso della vita. Apprezzabili risultati finanziari in età avanzata. 
-		Insincerità nei confronti di amici.<br>
-		Con <span class="sRed sBold">URANO</span>: ottima intelligenza pronta e vivace ma sovente indirizzata nella direzione sbagliata. Capacità 
-		lavorative. Generosità che sconfina in eccessiva prodigalità o nell'esibizionismo. Doti psichiche.
-	</p>
+		<p>
+			Conferisce doti d'inventiva e di abilità manuale. Porta onori, successo e prosperità, coraggio e spirito intraprendente. I doni consistono nel
+			temperamento spontaneo e aperto verso il prossimo, premiato da consensi e benefici materiali. Senso di dignità e onore piuttosto marcato, bisogno
+			di esercitare l'autorità, e anche di esteriorizzare le proprie energie di imporsi in un conflitto o in una competizione.<br>
+			Sull'<span class="sRedOrange sBold">ASC</span>: buona fortuna, consensi e riconoscimenti, risultati positivi di tipo duraturo.<br>
+			Con il <span class="sRedOrange sBold">SOLE</span>: carattere intraprendente, vivace e coraggioso, sicuro di sé. Temperamento un po' insofferente,
+			tende a agire in fretta o riflettendo poco. Molti nemici, ma di cui finirà con l'aver ragione. Successo in carriera. Buona fortuna cospicua e
+			duratura.<br>
+			Con la <span class="sRedOrange sBold">LUNA</span>: momenti di ansia e delusione per la realizzazione di alcuni desideri personali. Periodi di
+			bassa fortuna, talora legati a non perfette condizioni fisiche. Problemi di salute di uno dei genitori o del coniuge.<br>
+			Con <span class="sRedOrange sBold">MERCURIO</span>: predisposizione per lo studio di materie scientifiche o tecniche. Posizione di prestigio
+			conseguita a seguito di iniziative commerciali o attività letterarie.<br>
+			Con <span class="sRedOrange sBold">VENERE</span>: riconoscimenti e consensi nel corso della mezza età. Matrimonio con persona ricca di elevata
+			posizione sociale, specialmente per le donne.<br>
+			Con <span class="sRedOrange sBold">MARTE</span>: temperamento intraprendente, ingegnoso ma un po' sregolato. Discreta abilità per le attività
+			manuali o tecniche, buona posizione nel campo lavorativo o professionale.<br>
+			Con <span class="sRedOrange sBold">GIOVE</span>: benefici e guadagni provenienti dal contatto con persone o paesi lontani. Molti sono viaggi
+			anche connessi al lavoro. Matrimonio molto fortunato e affermazione nella carriera.<br>
+			Con <span class="sRedOrange sBold">SATURNO</span>:benefici economici o lasciti provenienti da persone anziane. Carattere calmo, tranquillo e ...
+			riflessivo. Buona salute fisica e psichica, eccezionale longevità.<br>
+			Con <span class="sRedOrange sBold">URANO</span>: temperamento romantico e nostalgico, amante delle cose antiche. Disavventure personali comportano
+			soluzioni forzose o difficili. Precoci delusioni amorose ma un buon matrimonio dopo i 29/30 anni.
+		</p>
 
-	<h1><span class="sBlue">CANCRO</span></h1>
-		
-	<h2><span class="sLarger">ALHENA</span><span class="sNormal"> (natura di </span><span class="sRed">MERCURIO/VENERE</span><span class="sNormal">)
-	(grado </span>09°08’ <span class="sBlue">CANCRO</span><span class="sNormal">)</span>
-	</h2>
+		<h3><span class="sLarger">BELLATRIX</span> Gamma Orione<span class="sNormal"> (natura di </span><span class="sRedOrange">MERCURIO/MARTE</span><span class="sNormal">)
+		(grado </span>20°57’ <span class="sDarkGoldenrod">GEMELLI</span><span class="sNormal">)</span>
+		</h3>
 
-	<p class="sSmall sJustify sPadding">
-		Rende socievoli e comunicativi, abili nell'argomentare e nel convincere, diplomatici e portati al commercio, e spesso stimola l'amore per le 
-		scienze e la ricerca. Attitudini scientifiche, artistiche e spirituali.<br>
-		Con il <span class="sRed sBold">SOLE</span>: fortissimo orgoglio, amore per la bella vita, il lusso ed i piaceri.<br>
-		Con la <span class="sRed sBold">LUNA</span>: onori o ricchezze di varia entità, fortuna nella vita sociale, buone condizioni della famiglia di 
-		origine e di salute.<br>
-		Con <span class="sRed sBold">MERCURIO</span>: popolarità o fama. Favori o benefici grazie a persone di sesso opposto, talento musicale o 
-		artistico, raramente riconosciuto. Armonia in seno alla famiglia.<br>
-		Con <span class="sRed sBold">VENERE</span>: forte interesse del denaro, amore delle cose costose. Talento artistico o musicale.<br>
-		Con <span class="sRed sBold">MARTE</span>: incostante o superficiale. Continua ricerca del piacere degli agi del lusso. Ostentazione di ricchezza e 
-		futilità.<br>
-		Con <span class="sRed sBold">GIOVE</span>: conquista d'elevata posizione sociale caratterizzata dal successo. Degli interessi filosofici ma forte 
-		gusto dell'ostentazione.<br>
-		Con <span class="sRed sBold">SATURNO</span>: rinomanza nel campo delle scienze o delle arti. Possibilità di discordie in ambito famigliare, problemi
-		di salute dei figli. Cattive condizioni di salute nella vecchiaia. Prudenza, riservatezza, carattere riflessivo.<br>
-		Con <span class="sRed sBold">URANO</span>: carattere timido o sospettoso incline all'egoismo. Emotività, instabilità poco senso pratico. Matrimonio 
-		seguito da divorzio e da nuovo matrimonio, sovente più infelice. Nella donna poca propensione a occuparsi della casa e dei figli.
-	</p>
+		<p>
+			Aiuta ad avere ricchezza e fortuna, rapidi e brillanti successi in campo sociale o nella carriera, può comportare con la stessa rapidità momenti
+			di difficoltà. Favorisce amicizie altolocate, spirito combattivo, coraggio e intraprendenza. Conferisce una voce tagliente e fastidiosa, molto
+			accentuata nella donna la loquacità ed il pettegolezzo.<br>
+			Con il <span class="sRedOrange sBold">SOLE</span>: carattere mutevole e indeciso. Buone capacità manuali. Ma ha poca bravura negli affari o nei
+			commerci. Ricchezza e onori conquistati precocemente, ma possibilità di grossi rovesci di fortuna. Problemi di vista, malattie o traumi agli
+			occhi. Salute precaria.<br>
+			Con la <span class="sRedOrange sBold">LUNA</span>: amore del lusso, dell'ostentazione e dello spreco. Ambizioni caratterizzate dalla vanità.
+			Posizione di prestigio e ricchezza conquistata con fatica. Notevole coraggio nell'agire. Problemi o malattie agli occhi.<br>
+			Con <span class="sRedOrange sBold">MERCURIO</span>: riconoscimenti sociali o professionali. Successi nelle amicizie e nelle relazioni sociali.<br>
+			Con <span class="sRedOrange sBold">VENERE</span>: notevoli patimenti dovuti a situazioni sentimentali difficili o insostenibili. Amori
+			impossibili.<br>
+			Con <span class="sRedOrange sBold">MARTE</span>: notevoli doti di forza ed energia psicofisica. Successo in campo lavorativo o nella carriera.
+			Possibilità di traumi o d'incidenti.<br>
+			Con <span class="sRedOrange sBold">GIOVE</span>: posizione di rilievo in campo sociale o professionale. Tende a sostenere delle idee fanatiche
+			o fisse.<br>
+			Con <span class="sRedOrange sBold">SATURNO</span>: vita ritirata e contemplativa, interessi culturali. Modo d'agire riservato e calmo. Tende a non
+			sposarsi. Vecchiaia all'insegna di qualche difficoltà economica.<br>
+			Con <span class="sRedOrange sBold">URANO</span>: interessi culturali un po' insoliti o poco pratici. Insofferenza verso i parenti e vicini.
+			Disturbi psichici o esaurimento nervoso. Tendenza a ripetere gli stessi errori.
+		</p>
 
-	<h2><span class="sLarger">SIRIO</span> Cane Maggiore<span class="sNormal"> (natura di </span><span class="sRed">GIOVE/MARTE</span><span class="sNormal">)
-	(grado </span>14°05’ <span class="sBlue">CANCRO</span><span class="sNormal">)</span>
-	</h2>
+		<h3><span class="sLarger">BETELGEUSE</span> Alfa Orione<span class="sNormal"> (natura di </span><span class="sRedOrange">MARTE</span><span class="sNormal">)
+		(grado </span>28°45’ <span class="sDarkGoldenrod">GEMELLI</span><span class="sNormal">)</span>
+		</h3>
 
-	<p class="sSmall sJustify sPadding">
-		Conferisce entusiasmo e impetuosità, carattere appassionato, ambizioso, intraprendente. Rende audaci e orgogliosi, eccessivi e autoritari, 
-		spirito di iniziativa. Doti psichiche. Vigore fisico, onori e ricchezza. Carriera militare. Favorisce la reputazione e il successo.<br>
-		Con il <span class="sRed sBold">SOLE</span>: eccezionale prestigio sociale ed economico. Successo nel commercio, negli affari e nel lavoro in 
-		genere. Notevole armonia famigliare.<br>
-		Con la <span class="sRed sBold">LUNA</span>: amicizie importanti ed influenti, specie del sesso opposto. Buon successo negli affari o nei 
-		commerci. Buone condizioni di salute.<br>
-		Con <span class="sRed sBold">MERCURIO</span>: notevole successo negli affari nel commercio e in attività mercuriane. Appoggi o aiuti da parte 
-		di persone influenti ed altolocate. Incidenti o traumi imprevisti.<br>
-		Con <span class="sRed sBold">VENERE</span>: comportamento un po' eccentrico. Accrescimento del proprio patrimonio tramite lasciti o eredità. 
-		Vita facile, buone ricchezze e molti agi.<br>
-		Con <span class="sRed sBold">MARTE</span>: carattere coraggioso, generoso e sincero, intraprendente e sicuro di sé. Attitudini alla carriera 
-		militare o giuridica.<br>
-		Con <span class="sRed sBold">GIOVE</span>: ottima affermazione finanziaria e sociale grazie alla propria attività o commerciale. Aiuti ed appoggi 
-		provengono dai parenti.<br>
-		Con <span class="sRed sBold">SATURNO</span>: carattere fermo e sicuro, riservato con notevoli doti di diplomazia e spiccato senso di giustizia. 
-		Forza di volontà e perseveranza. Possibili lasciti o donazioni. Vita famigliare armoniosa.<br>
-		Con <span class="sRed sBold">URANO</span>: ottima affermazione sul piano economico, nell'attività imprenditoriale o tecnica. Buon matrimonio, 
-		ma problemi di salute improvvisi in età avanzata. Longevità.
-	</p>
+		<p>
+			Conferisce onori, fama e successo, rende capaci d'agire in modo intelligente ed efficace, audaci e intraprendenti. Dona fiducia in sé e nelle
+			proprie qualità, grande potere di azione. Riconoscimenti vari, fortuna e ricchezza. Affermazione in campo sociale o professionale.<br>
+			Con il <span class="sRedOrange sBold">SOLE</span>: interesse per le tematiche legate all'occulto, alla filosofia e all'astrologia. Problemi di
+			salute inattesi e a decorso acuto.<br>
+			Con la <span class="sRedOrange sBold">LUNA</span>: intelletto acuto, fortissima volontà. Carattere turbolento e ribelle ad ogni forma di autorità.
+			Successo nel lavoro o nella carriera professionale, ma dei forti contrasti con i superiori o persone altolocate. Onori e/o ricchezze di vario
+			genere.<br>
+			Con <span class="sRedOrange sBold">MERCURIO</span>: interessi per lo studio e le attività intellettuali. Rinomanza acquisita per meriti letterari o
+			artistici. Guadagni instabili o difficili. Buona salute, con possibilità di amministrarla male.<br>
+			Con <span class="sRedOrange sBold">VENERE</span>: carattere un po' schivo e riservato. Grande abilità manuale e o artistico. Buoni guadagni o
+			comunque facilitati.<br>
+			Con <span class="sRedOrange sBold">MARTE</span>: carattere prudente e riservato. Grandi capacità organizzative, fama, rinomanza in una
+			professione, ove si acquisirà una posizione di predominio.<br>
+			Con <span class="sRedOrange sBold">GIOVE</span>: carattere serio e calmo, capace di applicarsi. Riconoscimenti professionali o lavorativi.
+			Interessi culturali. Ottime capacità commerciali e lavorative, specie dove occorra una facile eloquenza.<br>
+			Con <span class="sRedOrange sBold">SATURNO</span>: numerosi alti e bassi nel corso della vita. Apprezzabili risultati finanziari in età avanzata.
+			Insincerità nei confronti di amici.<br>
+			Con <span class="sRedOrange sBold">URANO</span>: ottima intelligenza pronta e vivace ma sovente indirizzata nella direzione sbagliata. Capacità
+			lavorative. Generosità che sconfina in eccessiva prodigalità o nell'esibizionismo. Doti psichiche.
+		</p>
 
-	<h2><span class="sLarger">CASTOR</span><span class="sNormal"> (natura di </span><span class="sRed">MERCURIO/GIOVE</span><span class="sNormal">)
-	(grado </span>20°01’ <span class="sBlue">CANCRO</span><span class="sNormal">)</span>
-	</h2>
+		<h2><span class="sBlue">CANCRO</span></h2>
 
-	<p class="sSmall sJustify sPadding">
-		Favorisce il successo in campo intellettuale. Stimola il desiderio di benessere materiale. Carattere aggressivo, deciso e pronto a realizzare i 
-		suoi obiettivi ad ogni costo. Spirito combattivo e polemico, un'attività cerebrale brillante ma un po' agitata, gusto della lotta e per 
-		l'affermazione delle proprie idee. Dona lucidità, obiettività e intelligenza acuta e raffinatezza. Possibile successo in una carriera giuridica
-		o in attività editoriali o legate a scritti. Amore per la natura.<br>
-		Sull'<b><span class="sRed">ASC</span></b>: problemi di vista o malattie degli occhi. Ferite al viso. Esito negativo di contese legali o 
-		processi.<br>
-		Con il <span class="sRed sBold">SOLE</span>: tendenza a interessarsi dell'occulto. Contatti lavorativi e professionali con dei paesi lontani. Questioni legali. Problemi di salute traumatici o imprevisti, o malattie a carattere infiammatorio.<br>
-		Con la <span class="sRed sBold">LUNA</span>: carattere timido e sensibile. Scarsa autostima o notevole insicurezza. Forti doti intuitive. 
-		Alti e bassi nella fortuna o nelle relazioni sociali. Possibili malattie agli occhi.<br>
-		Con <span class="sRed sBold">MERCURIO</span>: forti poteri psichici. Buone prospettive di affermazione economica.<br>
-		Con <span class="sRed sBold">VENERE</span>: gusti e tendenze eccentrici. Parecchi alti e bassi sia finanziari sia sociali nel corso della vita. Possibilità di fare un matrimonio non felice o non bene riuscito.<br>
-		Con <span class="sRed sBold">MARTE</span>: lavoro impegnativo o faticoso, obiettivi personali poco chiari e fluttuanti, numerosi alti e bassi.<br>
-		Con <span class="sRed sBold">GIOVE</span>: interessi per la filosofia e l'occulto. Esito favorevole sul piano finanziario di processi o di cause 
-		legali. Speculazioni finanziarie o viaggi.<br>
-		Con <span class="sRed sBold">SATURNO</span>: carattere timido e impacciato e una notevole insicurezza. Una mente originale ma che trova difficoltà
-		ad esprimersi pienamente. Migliore abilità nello scrivere che nel parlare. Ansie per la salute dei figli. Miglioramento delle condizioni economiche 
-		in età adulta, in virtù di un duro lavoro.<br>
-		Con <span class="sRed sBold">URANO</span>: carattere sensibile e impressionabile, aperto ai condizionamenti esterni. Fortuna nel matrimonio e nei 
-		guadagni provenienti dal lavoro. Pochi figli ma ottimi rapporti affettivi con essi. Doti psichiche. Problemi di salute dei genitori.
-	</p>
+		<h3><span class="sLarger">ALHENA</span><span class="sNormal"> (natura di </span><span class="sRedOrange">MERCURIO/VENERE</span><span class="sNormal">)
+		(grado </span>09°08’ <span class="sBlue">CANCRO</span><span class="sNormal">)</span>
+		</h3>
 
-	<h2><span class="sLarger">POLLUX</span><span class="sNormal"> (natura di </span><span class="sRed">MARTE</span><span class="sNormal">)
-	(grado </span>23°14’ <span class="sBlue">CANCRO</span><span class="sNormal">)</span>
-	</h2>
+		<p>
+			Rende socievoli e comunicativi, abili nell'argomentare e nel convincere, diplomatici e portati al commercio, e spesso stimola l'amore per le
+			scienze e la ricerca. Attitudini scientifiche, artistiche e spirituali.<br>
+			Con il <span class="sRedOrange sBold">SOLE</span>: fortissimo orgoglio, amore per la bella vita, il lusso ed i piaceri.<br>
+			Con la <span class="sRedOrange sBold">LUNA</span>: onori o ricchezze di varia entità, fortuna nella vita sociale, buone condizioni della
+			famiglia di origine e di salute.<br>
+			Con <span class="sRedOrange sBold">MERCURIO</span>: popolarità o fama. Favori o benefici grazie a persone di sesso opposto, talento musicale o
+			artistico, raramente riconosciuto. Armonia in seno alla famiglia.<br>
+			Con <span class="sRedOrange sBold">VENERE</span>: forte interesse del denaro, amore delle cose costose. Talento artistico o musicale.<br>
+			Con <span class="sRedOrange sBold">MARTE</span>: incostante o superficiale. Continua ricerca del piacere degli agi del lusso. Ostentazione di
+			ricchezza e futilità.<br>
+			Con <span class="sRedOrange sBold">GIOVE</span>: conquista d'elevata posizione sociale caratterizzata dal successo. Degli interessi filosofici
+			ma forte gusto dell'ostentazione.<br>
+			Con <span class="sRedOrange sBold">SATURNO</span>: rinomanza nel campo delle scienze o delle arti. Possibilità di discordie in ambito famigliare,
+			problemi di salute dei figli. Cattive condizioni di salute nella vecchiaia. Prudenza, riservatezza, carattere riflessivo.<br>
+			Con <span class="sRedOrange sBold">URANO</span>: carattere timido o sospettoso incline all'egoismo. Emotività, instabilità poco senso pratico.
+			Matrimonio seguito da divorzio e da nuovo matrimonio, sovente più infelice. Nella donna poca propensione a occuparsi della casa e dei figli.
+		</p>
 
-	<p class="sSmall sJustify sPadding">
-		Conferisce un intelletto eccezionale superiore alla media, grandi doti personali una buona abilità manuale. Temerario, incline all'animosità, 
-		eloquente, combattivo e convincente. temperamento ardito e coraggioso ma anche insofferente e impulsivo, astuto, audace, imprudente. 
-		Adattabilità anche nelle situazioni meno rosee.<br>
-		Sull'<span class="sRed sBold">ASC</span>: ascesa effimera o molto faticosa da conservare. Problemi alla vista o malattie agli occhi, ferite o traumi
-		al viso. Disavventure con la giustizia.<br>
-		Con il <span class="sRed sBold">SOLE</span>: ricchezze e dei riconoscimenti anche cospicui, che però sarà difficile da conservare a causa di 
-		qualche forte rovescio di fortuna. Possibilità di passare periodi di patimento o di stenti dovuti alle colpe degli altri. Eccessiva litigiosità e 
-		conflittualità con gli altri. Interessi per lo studio della filosofia, religioni e dell'occulto. Salute instabile, probabili disturbi o malattie 
-		allo stomaco, agli occhi. Possibili ferite o traumi al viso.<br>
-		Con la <span class="sRed sBold">LUNA</span>: temperamento fine e sensibile, ma che odia tutte le cose volgari. Carattere orgoglioso e desideroso 
-		di affermarsi, ma dei problemi di salute o momenti di sfortuna possono rallentare l'ascesa. Pericolo o danni causati da donne o da persone 
-		disoneste. Problemi di vista o malattie agli occhi, o dei traumi al viso.<br>
-		Con <span class="sRed sBold">MERCURIO</span>: carattere instabile, impulsivo e aggressivo, dispersivo e svogliato, poco amato dagli altri. 
-		Problemi con la famiglia d'origine o comunque disaccordo con essa. Temperamento ansioso.<br>
-		Con <span class="sRed sBold">VENERE</span>: passionalità accentuata e confusa, vita amorosa e sentimentale disordinata. Per la donna c'é il 
-		rischio di essere sedotta e abbandonata. Per l'uomo perdite finanziarie a causa di relazioni poco chiare o impossibili. Rischio di malattie 
-		contagiose o di intossicazioni.<br>
-		Con <span class="sRed sBold">MARTE</span>: carattere violento, aggressivo. Conseguimento di un'invidiabile posizione sociale e/o finanziaria, 
-		ma col rischio di perderla facilmente per propria colpa.<br>
-		Con <span class="sRed sBold">GIOVE</span>: perdite finanziarie dovute a problemi legali. Buona posizione sociale e economica, ma rischio di 
-		perderla a causa di un momento di bassa fortuna. Problemi nell'ambito della parentela.<br>
-		Con <span class="sRed sBold">SATURNO</span>: carattere scontroso, sarcastico, incostante, amante della solitudine, ma incline all'egoismo. 
-		Problemi legali con parenti acquisiti. Consensi e aiuti da parte di amici. Problemi di salute o traumi agli arti, incidenti legati a qualche 
-		attività sportiva.<br>
-		Con <span class="sRed sBold">URANO</span>: carattere orgoglioso ed egoista, accentratore e competitivo. Nella professione possibilità di conseguire 
-		una posizione di prestigio. Interessi in campo delle scienze occulte o dell'astrologia. Matrimonio ben riuscito, fortuna con i figli, vecchiaia 
-		non così fortunata come la gioventù e la mezza età.
-	</p>
-		
-	<h2><span class="sLarger">PROCYON</span> Cane Minore<span class="sNormal"> (natura di </span><span class="sRed">MARTE/MERCURIO</span><span class="sNormal">)
-	(grado </span>25°47’ <span class="sBlue">CANCRO</span><span class="sNormal">)</span>
-	</h2>
+		<h3><span class="sLarger">SIRIO</span> Cane Maggiore<span class="sNormal"> (natura di </span><span class="sRedOrange">GIOVE/MARTE</span><span class="sNormal">)
+		(grado </span>14°05’ <span class="sBlue">CANCRO</span><span class="sNormal">)</span>
+		</h3>
 
-	<p class="sSmall sJustify sPadding">
-		Aggressività petulante, competitiva ed eccessiva. Carattere irrequieto, violento, instabile, con uno spirito combattivo e battagliero. La mente 
-		è viva e attiva, critica e provocatrice, con notevole curiosità intellettuale.<br>
-		Sull'<span class="sRed sBold">ASC</span>: carattere astuto, intraprendente, irrequieto, molto curioso. Amore del lusso, di una vita frivola o 
-		dissipata, all'insegna della liberalità eccessiva. Buona posizione nell'ambito d'una gerarchia di lavoro, ma in continuo disaccordo con gli 
-		altri.  <br>
-		Con il <span class="sRed sBold">SOLE</span>: consensi e aiuti da parte di amici, possibile eredità, donazioni o lasciti. Necessità di affrontare 
-		persone che poi si rivelano ostili. Possibile rapida ascesa ma seguita da un declino altrettanto rapido.<br>
-		Con la <span class="sRed sBold">LUNA</span>: interessi per l'occulto ed il trascendente in genere. Carattere irrequieto e incapace di restare a 
-		lungo in uno stesso posto. Possibili discordie con amici o dei collaboratori o con il coniuge.<br>
-		Con <span class="sRed sBold">MERCURIO</span>: interessi per il mondo dell'occulto. Ottime prospettive di guadagni tramite un'attività commerciale. 
-		Ottime prospettive finanziarie. Problemi o rischio di scandalo a causa d'una relazione amore.<br>
-		Con <span class="sRed sBold">VENERE</span>: molti consensi o benefici da amici importanti o ricchi. Ottime prospettive finanziarie.<br>
-		Con <span class="sRed sBold">MARTE</span>: carattere crudele, insensibile, incline alla violenza. Momenti di bassa fortuna.<br>
-		Con <span class="sRed sBold">GIOVE</span>: molti viaggi, per diporto e necessità. Noie legali o giuridiche. Aiuto da parte di amici influenti. 
-		Problemi di convivenza con parenti o congiunti.<br>
-		Con <span class="sRed sBold">SATURNO</span>: ottima capacità di giudizio e mente pronta. Possibili eredità o benefici finanziari da persone non 
-		della famiglia. Notevole posizione socio economica. Matrimonio con persona di ceto sociale più elevato. Buone condizioni di salute.<br>
-		Con <span class="sRed sBold">URANO</span>: carattere disponibile, cordiale e liberale. Armonia e benessere nell'ambiente famigliare. Molti 
-		consensi dagli altri e molte amicizie. Ottime prospettive nel campo culturale, giornalistico o editoriale.
-	</p>
-		
-	<p class="sSmall sCenter">
-		<br>
-		<a href="Stelle3.htm" class="sTxtDecNo"><strong>Clicca qui</strong></a> per le Stelle nei segni <span class="sRed sBold">Leone</span> e 
-		<span class="sGreen sBold">Vergine</span>
-	</p>
-				
+		<p>
+			Conferisce entusiasmo e impetuosità, carattere appassionato, ambizioso, intraprendente. Rende audaci e orgogliosi, eccessivi e autoritari,
+			spirito di iniziativa. Doti psichiche. Vigore fisico, onori e ricchezza. Carriera militare. Favorisce la reputazione e il successo.<br>
+			Con il <span class="sRedOrange sBold">SOLE</span>: eccezionale prestigio sociale ed economico. Successo nel commercio, negli affari e nel lavoro
+			in genere. Notevole armonia famigliare.<br>
+			Con la <span class="sRedOrange sBold">LUNA</span>: amicizie importanti ed influenti, specie del sesso opposto. Buon successo negli affari o nei
+			commerci. Buone condizioni di salute.<br>
+			Con <span class="sRedOrange sBold">MERCURIO</span>: notevole successo negli affari nel commercio e in attività
+			<span class="sRedOrange sBold">mercuriane</span>. Appoggi o aiuti da parte di persone influenti ed altolocate. Incidenti o traumi imprevisti.<br>
+			Con <span class="sRedOrange sBold">VENERE</span>: comportamento un po' eccentrico. Accrescimento del proprio patrimonio tramite lasciti o eredità.
+			Vita facile, buone ricchezze e molti agi.<br>
+			Con <span class="sRedOrange sBold">MARTE</span>: carattere coraggioso, generoso e sincero, intraprendente e sicuro di sé. Attitudini alla carriera
+			militare o giuridica.<br>
+			Con <span class="sRedOrange sBold">GIOVE</span>: ottima affermazione finanziaria e sociale grazie alla propria attività o commerciale. Aiuti
+			ed appoggi provengono dai parenti.<br>
+			Con <span class="sRedOrange sBold">SATURNO</span>: carattere fermo e sicuro, riservato con notevoli doti di diplomazia e spiccato senso di
+			giustizia. Forza di volontà e perseveranza. Possibili lasciti o donazioni. Vita famigliare armoniosa.<br>
+			Con <span class="sRedOrange sBold">URANO</span>: ottima affermazione sul piano economico, nell'attività imprenditoriale o tecnica. Buon
+			matrimonio, ma problemi di salute improvvisi in età avanzata. Longevità.
+		</p>
+
+		<h3><span class="sLarger">CASTOR</span><span class="sNormal"> (natura di </span><span class="sRedOrange">MERCURIO/GIOVE</span><span class="sNormal">)
+		(grado </span>20°01’ <span class="sBlue">CANCRO</span><span class="sNormal">)</span>
+		</h3>
+
+		<p>
+			Favorisce il successo in campo intellettuale. Stimola il desiderio di benessere materiale. Carattere aggressivo, deciso e pronto a realizzare i
+			suoi obiettivi ad ogni costo. Spirito combattivo e polemico, un'attività cerebrale brillante ma un po' agitata, gusto della lotta e per
+			l'affermazione delle proprie idee. Dona lucidità, obiettività e intelligenza acuta e raffinatezza. Possibile successo in una carriera giuridica
+			o in attività editoriali o legate a scritti. Amore per la natura.<br>
+			Sull'<b><span class="sRedOrange">ASC</span></b>: problemi di vista o malattie degli occhi. Ferite al viso. Esito negativo di contese legali o
+			processi.<br>
+			Con il <span class="sRedOrange sBold">SOLE</span>: tendenza a interessarsi dell'occulto. Contatti lavorativi e professionali con dei paesi
+			lontani. Questioni legali. Problemi di salute traumatici o imprevisti, o malattie a carattere infiammatorio.<br>
+			Con la <span class="sRedOrange sBold">LUNA</span>: carattere timido e sensibile. Scarsa autostima o notevole insicurezza. Forti doti intuitive.
+			Alti e bassi nella fortuna o nelle relazioni sociali. Possibili malattie agli occhi.<br>
+			Con <span class="sRedOrange sBold">MERCURIO</span>: forti poteri psichici. Buone prospettive di affermazione economica.<br>
+			Con <span class="sRedOrange sBold">VENERE</span>: gusti e tendenze eccentrici. Parecchi alti e bassi sia finanziari sia sociali nel corso della
+			vita. Possibilità di fare un matrimonio non felice o non bene riuscito.<br>
+			Con <span class="sRedOrange sBold">MARTE</span>: lavoro impegnativo o faticoso, obiettivi personali poco chiari e fluttuanti, numerosi alti
+			e bassi.<br>
+			Con <span class="sRedOrange sBold">GIOVE</span>: interessi per la filosofia e l'occulto. Esito favorevole sul piano finanziario di processi
+			o di cause legali. Speculazioni finanziarie o viaggi.<br>
+			Con <span class="sRedOrange sBold">SATURNO</span>: carattere timido e impacciato e una notevole insicurezza. Una mente originale ma che trova
+			difficoltà ad esprimersi pienamente. Migliore abilità nello scrivere che nel parlare. Ansie per la salute dei figli. Miglioramento delle
+			condizioni economiche in età adulta, in virtù di un duro lavoro.<br>
+			Con <span class="sRedOrange sBold">URANO</span>: carattere sensibile e impressionabile, aperto ai condizionamenti esterni. Fortuna nel
+			matrimonio e nei guadagni provenienti dal lavoro. Pochi figli ma ottimi rapporti affettivi con essi. Doti psichiche. Problemi di salute dei
+			genitori.
+		</p>
+
+		<h3><span class="sLarger">POLLUX</span><span class="sNormal"> (natura di </span><span class="sRedOrange">MARTE</span><span class="sNormal">)
+		(grado </span>23°14’ <span class="sBlue">CANCRO</span><span class="sNormal">)</span>
+		</h3>
+
+		<p>
+			Conferisce un intelletto eccezionale superiore alla media, grandi doti personali una buona abilità manuale. Temerario, incline all'animosità,
+			eloquente, combattivo e convincente. temperamento ardito e coraggioso ma anche insofferente e impulsivo, astuto, audace, imprudente.
+			Adattabilità anche nelle situazioni meno rosee.<br>
+			Sull'<span class="sRedOrange sBold">ASC</span>: ascesa effimera o molto faticosa da conservare. Problemi alla vista o malattie agli occhi,
+			ferite o traumi al viso. Disavventure con la giustizia.<br>
+			Con il <span class="sRedOrange sBold">SOLE</span>: ricchezze e dei riconoscimenti anche cospicui, che però sarà difficile da conservare a causa di
+			qualche forte rovescio di fortuna. Possibilità di passare periodi di patimento o di stenti dovuti alle colpe degli altri. Eccessiva litigiosità e
+			conflittualità con gli altri. Interessi per lo studio della filosofia, religioni e dell'occulto. Salute instabile, probabili disturbi o malattie
+			allo stomaco, agli occhi. Possibili ferite o traumi al viso.<br>
+			Con la <span class="sRedOrange sBold">LUNA</span>: temperamento fine e sensibile, ma che odia tutte le cose volgari. Carattere orgoglioso e
+			desideroso di affermarsi, ma dei problemi di salute o momenti di sfortuna possono rallentare l'ascesa. Pericolo o danni causati da donne o da
+			persone disoneste. Problemi di vista o malattie agli occhi, o dei traumi al viso.<br>
+			Con <span class="sRedOrange sBold">MERCURIO</span>: carattere instabile, impulsivo e aggressivo, dispersivo e svogliato, poco amato dagli altri.
+			Problemi con la famiglia d'origine o comunque disaccordo con essa. Temperamento ansioso.<br>
+			Con <span class="sRedOrange sBold">VENERE</span>: passionalità accentuata e confusa, vita amorosa e sentimentale disordinata. Per la donna c'è il
+			rischio di essere sedotta e abbandonata. Per l'uomo perdite finanziarie a causa di relazioni poco chiare o impossibili. Rischio di malattie
+			contagiose o di intossicazioni.<br>
+			Con <span class="sRedOrange sBold">MARTE</span>: carattere violento, aggressivo. Conseguimento di un'invidiabile posizione sociale e/o
+			finanziaria, ma col rischio di perderla facilmente per propria colpa.<br>
+			Con <span class="sRedOrange sBold">GIOVE</span>: perdite finanziarie dovute a problemi legali. Buona posizione sociale e economica, ma rischio di
+			perderla a causa di un momento di bassa fortuna. Problemi nell'ambito della parentela.<br>
+			Con <span class="sRedOrange sBold">SATURNO</span>: carattere scontroso, sarcastico, incostante, amante della solitudine, ma incline all'egoismo.
+			Problemi legali con parenti acquisiti. Consensi e aiuti da parte di amici. Problemi di salute o traumi agli arti, incidenti legati a qualche
+			attività sportiva.<br>
+			Con <span class="sRedOrange sBold">URANO</span>: carattere orgoglioso ed egoista, accentratore e competitivo. Nella professione possibilità di
+			conseguire una posizione di prestigio. Interessi in campo delle scienze occulte o dell'astrologia. Matrimonio ben riuscito, fortuna con i figli,
+			vecchiaia non così fortunata come la gioventù e la mezza età.
+		</p>
+
+		<h3><span class="sLarger">PROCYON</span> Cane Minore<span class="sNormal"> (natura di </span><span class="sRedOrange">MARTE/MERCURIO</span><span class="sNormal">)
+		(grado </span>25°47’ <span class="sBlue">CANCRO</span><span class="sNormal">)</span>
+		</h3>
+
+		<p>
+			Aggressività petulante, competitiva ed eccessiva. Carattere irrequieto, violento, instabile, con uno spirito combattivo e battagliero. La mente
+			è viva e attiva, critica e provocatrice, con notevole curiosità intellettuale.<br>
+			Sull'<span class="sRedOrange sBold">ASC</span>: carattere astuto, intraprendente, irrequieto, molto curioso. Amore del lusso, di una vita
+			frivola o dissipata, all'insegna della liberalità eccessiva. Buona posizione nell'ambito d'una gerarchia di lavoro, ma in continuo disaccordo
+			con gli altri.<br>
+			Con il <span class="sRedOrange sBold">SOLE</span>: consensi e aiuti da parte di amici, possibile eredità, donazioni o lasciti. Necessità di
+			affrontare persone che poi si rivelano ostili. Possibile rapida ascesa ma seguita da un declino altrettanto rapido.<br>
+			Con la <span class="sRedOrange sBold">LUNA</span>: interessi per l'occulto ed il trascendente in genere. Carattere irrequieto e incapace di
+			restare a lungo in uno stesso posto. Possibili discordie con amici o dei collaboratori o con il coniuge.<br>
+			Con <span class="sRedOrange sBold">MERCURIO</span>: interessi per il mondo dell'occulto. Ottime prospettive di guadagni tramite un'attività
+			commerciale. Ottime prospettive finanziarie. Problemi o rischio di scandalo a causa d'una relazione amore.<br>
+			Con <span class="sRedOrange sBold">VENERE</span>: molti consensi o benefici da amici importanti o ricchi. Ottime prospettive finanziarie.<br>
+			Con <span class="sRedOrange sBold">MARTE</span>: carattere crudele, insensibile, incline alla violenza. Momenti di bassa fortuna.<br>
+			Con <span class="sRedOrange sBold">GIOVE</span>: molti viaggi, per diporto e necessità. Noie legali o giuridiche. Aiuto da parte di amici
+			influenti. Problemi di convivenza con parenti o congiunti.<br>
+			Con <span class="sRedOrange sBold">SATURNO</span>: ottima capacità di giudizio e mente pronta. Possibili eredità o benefici finanziari da persone
+			non della famiglia. Notevole posizione socio economica. Matrimonio con persona di ceto sociale più elevato. Buone condizioni di salute.<br>
+			Con <span class="sRedOrange sBold">URANO</span>: carattere disponibile, cordiale e liberale. Armonia e benessere nell'ambiente famigliare. Molti
+			consensi dagli altri e molte amicizie. Ottime prospettive nel campo culturale, giornalistico o editoriale.
+		</p>
+
  </td></tr>
 </table>
 
-<p class="sCenter sBlack"><span class="sBGWhite">
-	<img src="email-box.gif"    width="35" height="35">
-	<strong>Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sTxtDecNo sBold">studio.acquario@libero.it</a><br><br>
-	<img src="TelefonoC164.gif"  width="35" height="35">
-	&nbsp;Oppure Telefona: 0125 631175 - Cell. 347 0417409<br><br>
-	
-	Sei il visitatore n°</strong>&nbsp;
-	<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1267629148-detnsg" border=0></a>
-	&nbsp;(Contenuto Aggiornato 26/09/2017)</span></br></br>
-</p>
-<p class="sCenter sXXSmall sBlack"><span class="sBGWhite">
-	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati. 
-	Senza il consenso dell&#39;autrice, è vietata ogni riproduzione parziale o totale dei contenuti.</span>
-</p>
+	<p class="sCenter"><span class="sBGWhite">
+		<img src="email-box.gif"    width="35" height="35" alt="">
+		Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
+		<img src="TelefonoC164.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+		- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+
+		<b>Sei il visitatore n°&nbsp;</b>
+		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1267629148-detnsg" border=0></a>
+		&nbsp;(Contenuto Aggiornato <time datetime="2017-09-26">26/09/2017</time>)</span><br><br>
+	</p>
+
+<footer>
+	<span class="sBGWhite">Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
+	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.</span>
+</footer>
 </body>
 </html>
