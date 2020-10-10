@@ -1,832 +1,732 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" dir="ltr">
 <head>
 <meta charset="UTF-8">
-<title>Oroscopo Celtico</title>
+<title>Oroscopo Celtico - Studio Acquario</title>
 <link rel="icon" type="image/gif" href="favicon32.gif">
 <meta name="description" content="Studio Acquario: Oroscopo Celtico">
-<meta name="keywords" content="astrologia, oroscopo, celtico">
+<meta name="keywords" content="astrologia, studio acquario, oroscopo, celtico">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
 <meta name="language" content="it">
 <meta http-equiv="imagetoolbar" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="09/04/2020">
-<meta name="revised" content="23/07/2020">
+<meta name="revised" content="10/10/2020">
 
 <style type="text/css">
 body {
-	scrollbar-arrow-color: #D9C671;			/* Chenin */
-	scrollbar-base-color: #1C391B;			/* Myrtle */
-	scrollbar-dark-shadow-color: #2B391B;	/* Pine Tree */
-	scrollbar-track-color: #2B391B;			/* Pine Tree */
+	scrollbar-arrow-color: #D9C671; /* Chenin */
+	scrollbar-base-color: #1C391B; /* Myrtle */
+	scrollbar-dark-shadow-color: #2B391B; /* Pine Tree */
+	scrollbar-track-color: #496149;	/* Nandor */
+
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 	color: #D9C671; /* Chenin */
 	background-image: url("CWfondexterieur.gif");
 	background-color: #2B391B; /* Pine Tree */
 }
-A:link {
-	color: #D4C8A5;
-	text-decoration: none;
+a:link {
+	color: #FFFF00; /* Yellow */
 }
-A:visited {
-	color: #D4C8A5;
-	text-decoration: none;
+a:visited {
+	color: #FFFF00;
 }
-A:hover {
-	color: #FFFBEF;
-	text-decoration: none;
+a:hover {
+	color: #FF0000;
+}
+a:active {
+	color: #FFFF00;
 }
 h1 {
 	font-size: xx-large;
 	font-weight: bold;
 	color: #E6FFE7; /* Aqua Spring */
-	text-align:center;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 h2 {
 	font-size: large;
 	font-weight: bold;
 	color: #E6FFE7; /* Aqua Spring */
 	text-align: center;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-top: 30px;
+	clear: both;	/* disabilita float precedenti */
 }
 h3 {
-	font-size: medium;
-	font-weight: bold;
-	color: #E6FFE7; /* Aqua Spring */
-	text-align: center;
-}
-h4 {
 	font-size: medium;
 	font-weight: normal;
 	color: #E6FFE7; /* Aqua Spring */
 	text-align: center;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-top: 0px;
 }
-.sLogoBanner {
+header {
 	font-size: xx-large;
 	font-weight: bold;
 	color: #FFFFFF; /* White */
-	text-shadow: 1px 1px 5px #0000FF; /* Blue */
+	/* text-shadow: 1px 1px 5px #0000FF; Blue */
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
 }
-.sBorder2 {
-				border-width: 2px;
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	/* text-shadow: 1px 1px 1px #0000FF; Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
+}
+p {
+	font-size: small;
+	color: #FFF0D0; /* Varden */
+	text-align: justify;
+	padding-left: 35px;
+	padding-right: 35px;
+	line-height: 125%;
+}
+img {
+	max-width: 100%;
+	height: auto;
 }
 .sBorder2s {
-				border-width: 2px;
-				border-style: solid;
+			border-width: 2px;
+			border-style: solid;
 }
 .sBlack {
-				color: #000000;
-}
-.sHalfColonialWhite {
-				color: #ECE3B9;
+			color: #000000;
 }
 .sVarden {
-				color: #FFF0D0;
+			color: #FFF0D0;
 }
 .sWhite {
-				color: #FFFFFF;
-}
-.sPadding20 {
-				padding-left: 20px;
-				padding-right: 20px;
-}
-.sPadding40 {
-				padding-left: 40px;
-				padding-right: 40px;
-}
-.sJustify {
-				text-align: justify;
+			color: #FFFFFF;
 }
 .sCenter {
-				text-align: center;
+			text-align: center;
 }
 .sBold {
-				font-weight: bold;
-}
-.sXXSmall {
-				font-size: xx-small;
-}
-.sXSmall {
-				font-size: x-small;
-}
-.sSmall {
-				font-size: small;
+			font-weight: bold;
 }
 .sMedium {
-				font-size: medium;
+			font-size: medium;
 }
 .sLarge {
-				font-size: large;
+			font-size: large;
 }
 .sXLarge {
-				font-size: x-large;
+			font-size: x-large;
 }
 .sXXLarge {
-				font-size: xx-large;
+			font-size: xx-large;
+}
+.sSmaller {
+			font-size: smaller; /* più piccolo del font "corrente" */
+}
+.sSmallCaps {
+			font-variant: small-caps;
+}
+.sFloatL {
+			float: left;
+			padding: 0 20px 5px 0;
+			align: top;
+}
+.sFloatR {
+			float: right;
+			padding: 0 0 5px 20px;
+			align: top;
 }
 </style>
 </head>
 
 <body>
-<p class="sLogoBanner">Studio di Astrologia "Acquario"</p>
+<header>Studio di Astrologia &quot;Acquario&quot;</header>
 
-<table background="CWrubakissdesign.gif" cellspacing="5" cellpadding="0" bordercolordark="#2C391A" bordercolorlight="#8DAA69" width="95%" align="center">
-  <tr><td>
+<table background="CWrubakissdesign.gif" cellspacing="5" cellpadding="3" bordercolordark="#2C391A" bordercolorlight="#8DAA69" width="95%" align="center">
+<tr><td background="CWdoreondule.jpg">
 
-<table background="CWdoreondule.jpg" cellpadding="0" width="100%" border="0">
-  <tr><td>
+<table background="CWrubakissdesign.gif" cellspacing="5" cellpadding="3" border="1" bordercolorlight="#8DAA69" bordercolordark="#2C391A" width="100%">
+<tr><td background="CWdoreondule.jpg">
 
-<table background="CWrubakissdesign.gif" cellspacing="0" cellpadding="5" bordercolorlight="#8DAA69" bordercolordark="#2C391A" width="100%" border="1">
-  <tr><td>
+<table background="CWfondmilieu.jpg" bgcolor="#2B391B" cellspacing="0" cellpadding="5" class="sBorder2s" bordercolorlight="#2C391A" bordercolordark="#8DAA69" width="100%">
+<tr><td>
 
-<table background="CWdoreondule.jpg" cellpadding="0" width="100%" border="0">
-  <tr><td>
-
-<table background="CWfondmilieu.jpg" cellspacing="0" cellpadding="5" bgcolor="#2B391B" bordercolorlight="#2C391A" bordercolordark="#8DAA69" width="100%" class="sBorder2s">
-  <tr><td>
- 
 		<h1>L'OROSCOPO CELTICO</h1>
 
-		<table background="CWimagepourlehaut.jpg" cellspacing="8" cellpadding="0" width="95%" border="0" align="center">
+		<table background="CWimagepourlehaut.jpg" cellspacing="8" cellpadding="0" border="0" width="95%" align="center">
 		  <tr>
 			<td width="100%" align="center">
-				<img src="spacer.gif" width="3" height="236"> <!-- il file non esiste ma serve per far apparire bene il "banner" -->
+				<img src="spacer.gif" width="210" height="362" alt=""> <!-- il file non esiste +/- ma serve per far apparire bene il "banner" -->
 			</td>
 		  </tr>
 		</table>
-		<p class="sCenter">
-			<br>
-			<img src="CWlignepetite.gif" width="108" height="22">
-			<img src="CWlignepetite.gif" width="108" height="22">
-			<img src="CWlignepetite.gif" width="108" height="22">
-			<img src="CWlignepetite.gif" width="108" height="22">
-			<img src="CWlignepetite.gif" width="108" height="22">
-			<img src="CWlignepetite.gif" width="108" height="22">
-			<img src="CWlignepetite.gif" width="108" height="22">
-			<img src="CWlignepetite.gif" width="108" height="22"><br><br><br>
 
-			<img src="CWAstroceltico.jpg" width="354" height="352">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="CWBetulla.gif"      width="250" height="281">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="Celtico.jpg"        width="353" height="343">
-		</p>
 		<p class="sCenter">
-			<img src="AlberiBD173.gif" width="457" height="92" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="AlberiAC370.gif" width="466" height="115">
+			<img src="CWlignepetite.gif" width="108" height="22" alt="">
+			<img src="CWlignepetite.gif" width="108" height="22" alt="">
+			<img src="CWlignepetite.gif" width="108" height="22" alt="">
+			<img src="CWlignepetite.gif" width="108" height="22" alt="">
+			<br><br><br>
+			<img src="CWAstroceltico.jpg" width="354" height="352" alt="Atro Celtico">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="CWBetulla.gif"      width="250" height="281" alt="Betulla">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="Celtico.jpg"        width="353" height="343" alt="Celtico">
 		</p>
-			
-		<p class="sVarden sMedium sJustify sPadding20">
+
+		<p class="sMedium">
 			L'Oroscopo Celtico, detto anche Oroscopo degli alberi, creato dai Druidi antichi sacerdoti Celtici che abitavano la Gallia. È stato tramandato
-			nei secoli dagli antichi indovini Celti (origine indo europea) a differenza del nostro oroscopo tradizionale che divide l'anno in 12 segni 
+			nei secoli dagli antichi indovini Celti (origine indo-europea) a differenza del nostro oroscopo tradizionale che divide l'anno in 12 segni
 			zodiacali. I Celti divisero l'anno e assegnarono ad ogni decade del mese il simbolo di un Albero che in quel periodo ha un influsso particolare
 			sulla natura e su tutti gli esseri umani.<br><br>
 			A fine pagina leggete l'albero del mese di nascita di Laura.
 		</p>
-		<P class="sCenter">
-			<img src="CWlignepetite.gif" width="108" height="22">
-			<img src="CWlignepetite.gif" width="108" height="22">
-			<img src="CWlignepetite.gif" width="108" height="22">
-			<img src="CWlignepetite.gif" width="108" height="22">
-		</P>
-
-		<table cellspacing="0" cellpadding="0" width="95%" border="0" align="center">
-		  <tbody class="sVarden sSmall sJustify">
-		  <tr>
-			<td class="sCenter"><img src="B1AbeteA.jpg" width="140" height="163"></td>
-			<td>
-				<h2>ABETE</h2>
-				<h3>BISBETICO MA APPASSIONATO</h3>
-				<h4>Dal <strong>2</strong> all'<strong>11 gennaio</strong>, dal <strong>5</strong> al <strong>14 luglio</strong></h4>
-				<p class="sPadding20">
-					L'<strong>Abete</strong> è una delle piante più signorili e raffinate, ama l'isolamento e la maestosità. È di una bellezza spesso un po'
-					fredda e severa, ama i viaggi e i gioielli, piacciono le luci soffuse e i mobili antichi. Ha una grande ambizione e generosità di animo, 
-					un fascino discreto e un romanticismo notturno. Non è facile nei rapporti è un po' capriccioso e riesce ad isolarsi anche in mezzo alla 
-					folla. Ha un'eccezionale intelligenza, uno spirito analitico e amore per gli studi, la carriera è lenta ma sicura, originale e prestigiosa.
-					Scrupoloso, coscienzioso, sgobbone, non è superficiale. Poco influenzabile, non esprime facilmente le sue opinioni, ma vuole riuscire ad 
-					ogni costo. La sua premura che sa dimostrare nei confronti delle persone care è quasi infinita e per questo si può contare su di lui. 
-					Freddo, ma se si innamora è capace di perdere la testa, è un po' insicuro, ha bisogno di continue conferme. Il concreto
-					<strong>Castagno</strong> è in grado di dare un ulteriore sano vigore al segno, e di fornire le spinte necessarie per migliorare e 
-					progredire.
-				</p>
-			</td>
-		  </tr>
-		  <tr>
-			<td class="sCenter"><img src="B2OlmoA.jpg" width="140" height="163"></td>
-			<td>
-				<h2>OLMO</h2>
-				<h3>IDEALISTA E MORALISTA</h3>
-				<h4>Dal <strong>12</strong> al <strong>24 gennaio</strong>, dal <strong>15</strong> al <strong>24 luglio</strong></h4>
-				<p class="sPadding20">
-					Alto, bello e ben fatto, ci si volta volentieri per strada ad osservarlo. Ma, l'<strong>Olmo</strong> con questi bei vantaggi fisici non
-					cerca mai di mettersi in mostra, spesso è un po' trascurato si veste con disinvoltura. Ha una intelligenza profonda, pratica e concreta,
-					è molto abile di mano ed è valido nelle professioni intellettuali. Si lascia trascinare dalle idee grandiose e nutre alti ideali, però 
-					sa anche rimanere con i piedi ben piantati in terra. Affronta tutto con serenità e si adopera finché coloro che ama siano felici. 
-					Le cause che difende sono sempre giuste, è persuaso che i suoi diritti presto o tardi saranno riconosciuti. Purtroppo tende ad 
-					appesantirsi con l'età, s'accontenta di poco non si complica la vita. Fervido innamorato, caldo e appassionato, può fare durare il suo
-					matrimonio oltre le nozze di diamante. Nonostante le apparenze, è un tipo tranquillo e calmo, spesso un po' fragile di salute, quasi 
-					mai qualcosa di grave. Ha bisogno di un partner molto presente che lo colmi di attenzioni e di affetto. In amore è un compagno fedele 
-					e generoso. L'imponenza del <strong>Fico</strong> spesso spaventa l'<strong>Olmo</strong> che deve accostarsi ad esso con fiducia.
-				</p>
-			</td>
-		  </tr>
-		  <tr>
-			<td class="sCenter"><img src="B3CipressoA.jpg" width="140" height="163"></td>
-			<td>
-				<h2>CIPRESSO</h2>
-				<h3>RUSTICO E SEVERO</h3>
-				<h4>Dal <strong>25 gennaio</strong> al <strong>3 febbraio</strong>, dal <strong>26 luglio</strong> al <strong>4 agosto</strong></h4>
-				<p class="sPadding20">
-					Alto, slanciato, elegante, con un gran bel portamento, si presenta molto bene, ma in fondo rimane un rustico, un semplice e sano 
-					contadino. Apprezza le piccole gioie quotidiane, si sente bene quando è a contatto con la natura. Si accontenta di poco e si adatta 
-					alle circostanze, sa vivere in ogni condizione ed essere felice, perché bastano le comodità minime. È autosufficiente, ottimista e
-					ambizioso. La sua intelligenza è riflessiva e posata, molto portato alla meditazione, in genere non ha sogni di successo, di ricchezza 
-					e gloria, lo lasciano indifferente, non desidera altro che la sua felicità. La sua presenza è riposante qualche volta anche troppo, 
-					fa in modo d'essere circondato da una famiglia numerosa. Molto precoce, spicca presto il volo, ama fare lunghe passeggiate in campagna 
-					e adora gli animali, la caccia e la pesca, detesta la solitudine. Trascorre serenamente la sua vita intera a fianco d'una 
-					<strong>Betulla</strong> mentre la compagnia trainante dell'<strong>Olmo</strong> non è adatta. Ha bisogno di un partner che gli stia
-					molto vicino, e che lo ami senza riserve. Desidera avere dei bambini. È fedele come pochi, forte nell'animo e nello spirito, egli 
-					detesta la solitudine ed è molto passionale.
-				</p>
-			</td>
-		  </tr>
-		  <tr>
-			<td class="sCenter"><img src="B4PioppoA.jpg" width="140" height="163"></td>
-			<td>
-				<h2>PIOPPO</h2>
-				<h3>SENSIBILE E PESSIMISTA</h3>
-				<h4>Dal <strong>4</strong> al <strong>8 febbraio</strong>, dal <strong>1°</strong> al <strong>14 maggio</strong>, 
-				dal <strong>5</strong> al <strong>13 agosto</strong>, dal <strong>3</strong> al <strong>11 novembre</strong></h4>
-				<p class="sPadding20">
-					Attraente, bello e decorativo agli inizi, ma invecchia male cede e si lascia andare, si scoraggia facilmente. Questo suo atteggiamento 
-					un po' superficiale si coniuga con un'intelligenza sottile e una gran lucidità. In genere è degno di fiducia e sa come esprimere la sua 
-					gentilezza e il senso di responsabilità. Ha una spiccata sensibilità, soffre per le più piccole cose e tutto può ferirlo. È coraggioso,
-					non è materialista, ma molto capace di fare soldi, sensibile al denaro, organizzato e indipendente, raggiunge presto un' ottima 
-					posizione economica. Ha uno spirito vivo e critico e può approfittarne nella vita professionale. Tra le cose più importanti della vita
-					al primo posto mette di sicuro la coppia, ha bisogno di avere un partner che lo stimoli, lo faccia ridere e distrarre. Ha un gran 
-					bisogno di compagnia ma detesta la promiscuità, è orgoglioso e suscettibile, affronta ogni ostacolo a viso aperto. Leale come amico, 
-					ma non lo è altrettanto come amante. Se il suo partner non è sensibile e intelligente, difficilmente trova la felicità. Tende a 
-					rinchiudersi in se stesso, questo atteggiamento va combattuto frequentando il solido <strong>Melo</strong> che è ricco di energia.
-				</p>
-			</td>
-		  </tr>
-		  <tr>
-			<td class="sCenter"><img src="B5BagolaroA.jpg" width="140" height="163"></td>
-			<td>
-				<h2>BAGOLARO</h2>
-				<h3>INGUARIBILE OTTIMISTA</h3>
-				<h4>Dal <strong>9</strong> al <strong>18 febbraio</strong>, dal <strong>14</strong> al <strong>23 agosto</strong></h4>
-				<p class="sPadding20">
-					Albero solido, largo e potente, ben piantato e possente, è una bella pianta ma quasi mai di razza, è un brevilineo. Ha spesso una vita
-					inconsueta e affascinante e rimane scolpito nella memoria di chi gli vive accanto. Vuole brillare in società e sovente spreca le sue 
-					energie pur di farsi notare. Sa adattarsi ad ogni circostanza e si trova a suo agio dappertutto, ignora la parola timidezza. È quello 
-					che parla e decide e che brilla, sotto un'apparenza da gradasso, è influenzabile ma intelligente, orgoglioso, generoso e ambizioso, 
-					dotato di spirito di sintesi, riflette e poi decide con una rapidità sorprendente, ha un forte talento artistico, è portato per la 
-					musica e ha in ogni caso un grande senso del ritmo. È un ottimista, ed è proprio l'ottimismo a fargli commettere le peggiori imprudenze. 
-					Ama stupire, essere al centro dell'attenzione, per arrivare non indietreggia mai di fronte a nessun sacrificio. Ha bisogno di un partner
-					che ami una vita movimentata e sia pronto ad accompagnarlo ovunque e per molto tempo. È affascinato dal <strong>Pino</strong> ma solo 
-					la calma rassicurante del <strong>Frassino</strong> può bilanciare in modo efficace la sua mente effervescente.
-				</p>
-			</td>
-		  </tr>
-		  <tr>
-			<td class="sCenter"><img src="B6PinoA.jpg" width="140" height="163"></td>
-			<td>
-				<h2>PINO</h2>
-				<h3>PERFEZIONISTA RAFFINATO</h3>
-				<h4>Dal <strong>19</strong> al <strong>29 febbraio</strong>, dal <strong>24 agosto</strong> al <strong>2 settembre</strong></h4>
-				<p class="sPadding20">
-					Il <strong>Pino</strong> è bello, decorativo e raffinato, sa come valorizzarsi. È molto coraggioso, accetta le avversità con dignità e
-					gusto del rischio, unito a grande audacia ne fa un essere che va avanti e brucia le tappe. Può emergere in tutti i campi non si lascia 
-					abbattere e riesce a cavarsela dalle situazioni più spinose. Intelligente, ma anche implacabile, conduce i suoi affari amore carriera 
-					senza un minimo segno di cedimento. Degno di fiducia pratico aspetta sempre di incontrare l'altra metà del cuore. Molto gentile e
-					amichevole, di buona compagnia, non è generoso, prova gran repulsione verso tutto ciò che considera sordido come la sporcizia, la 
-					povertà, la volgarità e le privazioni. Non sa stare fermo e s'innamora facilmente, ma anche facilmente rinuncia. Ama essere circondato 
-					da persone gradevoli, riesce a rendere la vita confortevole. Ha bisogno di un partner tranquillo che porti sicurezza e conforto. Ama la
-					casa i bei mobili e gli oggetti preziosi. È un buon compagno anche se non sempre amichevole, ogni cosa lo delude finche trova il suo
-					ideale fidato e pratico. Possiede un certo potere per trasformare la natura in meglio.
-				</p>
-			</td>
-		  </tr>
-		  <tr>
-			<td class="sCenter"><img src="B7SaliceA.jpg" width="140" height="163"></td>
-			<td>
-				<h2>SALICE</h2>
-				<h3>MALINCONICO E POETICO</h3>
-				<h4>Dal <strong>1°</strong> al <strong>10 marzo</strong>, dal <strong>3</strong> al <strong>12 settembre</strong></h4>
-				<p class="sPadding20">
-					È un albero che si abbandona ai capricci del vento, da sempre è il simbolo di nostalgia, e tende alla malinconia. È bello ma triste
-					all'apparenza, languido, morbido e vulnerabile che costituisce il suo fascino. Attraente e carismatico ama ogni cosa bella e di buon
-					gusto, è un sognatore, instancabile e capriccioso, onesto e può essere influenzabile, non è certo facile vivere con lui. Attrae molti 
-					per l'aria di mistero e del sorriso un po' triste e per la sua gentilezza un po' impacciata. Non fidatevi dell'aspetto dolce in realtà 
-					è deciso e molto coraggioso, sa sempre ciò che vuole ma non impone nulla agli altri. Sa approfittare del momento presente, e non si
-					lascia scappare nessuna occasione di gioia. Ha un carattere volitivo e finisce sempre per ottenere quello che desidera. È intelligente,
-					con uno sviluppato senso artistico, ha una grande immaginazione e intuizione. Amante un po' infedele ma in cambio riesce a dare un amore 
-					tenero e sensuale, assapora con voluttà profonda ogni piccolo piacere che poi colora di delicata poesia. Ama il calore, i profumi, il
-					contatto con l'acqua e viaggiare. Poco sentimentale ma è un gran romantico esprime l'amore in maniera appassionata e piena di poesia. 
-					La vita sentimentale sarebbe tranquilla se non avesse il gusto perverso per gli amori complicati.
-				</p>
-			</td>
-		  </tr>
-		  <tr>
-			<td class="sCenter"><img src="B8TiglioA.jpg" width="140" height="202"></td>
-			<td>
-				<h2>TIGLIO</h2>
-				<h3>BUGIARDO E INSODDISFATTO</h3>
-				<h4>Dall'<strong>11</strong> al <strong>20 marzo</strong>, dal <strong>13</strong> al <strong>22 settembre</strong></h4>
-				<p class="sPadding20">
-					Il <strong>Tiglio</strong> dedica all'amicizia e alla compassione per gli altri buona parte della vita. È un segno che ha forti legami
-					col sonno e l'ipnosi, sa come rendersi indispensabile, creando con facilità una certa dipendenza negli altri. Grande e bello ha del 
-					fascino e se ne serve, ha un forte erotismo e un grande amor proprio. Ha un carattere che attira la simpatia e l'amicizia. Ha la 
-					tendenza a disperdersi e può trovarsi in situazioni delicate. Abile e intelligente, pratico, preciso e ingegnoso, è un maniaco 
-					dell'ordine un po' pignolo, portato alle attività manuali, ma manca di chiarezza. È capace d' incantare chiunque perché, sa mentire 
-					come pochi. Tranquillo e sereno in superficie, ma la sua nemica è la fatica, almeno così sembra, bisogna parlare di una pigrizia vera
-					e propria. È circondato da tanti amici a cui dà molto e dai quali ha tante sorprese. Furbo e sensibile, non è indifferente 
-					all'adulazione e sa servirsi egli stesso, in caso di bisogno. Piange a tutti i film d'amore, si commuove con facilità, si sacrifica 
-					per gli amici, è particolarmente geloso del compagno. Ha bisogno di un partner delicato, tenero organizzato che abbia buon senso e 
-					lo riporti sulla terra.
-				</p>
-			</td>
-		  </tr>
-		  <tr>
-			<td class="sCenter"><img src="B9NoccioloA.jpg" width="140" height="163"></td>
-			<td>
-				<h2>NOCCIOLO</h2>
-				<h3>FAVOLOSO ISTRIONE</h3>
-				<h4>Dal <strong>21</strong> al <strong>31 marzo</strong>, dal <strong>23 settembre</strong> al <strong>3 ottobre</strong></h4>
-				<p class="sPadding20">
-					Il <strong>Nocciolo</strong> sembra non avere difetti è tollerante, sensibile per le questioni sociali e poco esigente. Ha una grande 
-					capacità nel capire gli altri e quindi sa fare una buona impressione. Presenta fattezze lineari, sottili, nel volto nel corpo e 
-					dall'apparenza delicata, e non lo si può avvicinare senza avvertire il fluido che scorre da lui. Non fidatevi troppo della sua 
-					espressione attenta, a volte sembra che vi ascolti, ma invece pensa ad altro. La sua intelligenza è eccezionale e affascina, sottile 
-					e intuitiva, lo sostiene una gran capacità di adattamento alle varie situazioni e una memoria prodigiosa. È un ottimo psicologo, molto
-					bravo a indovinare i pensieri segreti degli altri. Ma può anche essere nocivo, cattivo e perfino diabolico nei confronti di chi non 
-					gli va a genio. Sa piacere e farsi amare, e se lo merita perché in fondo è buono, generoso e servizievole. Si lascia sovente avvicinare
-					da altre persone, come dal <strong>Salice</strong> e dal <strong>Tiglio</strong> chiede amore e dolcezza, sfruttando le doti 
-					telepatiche. Il rassicurante <strong>Melo</strong> può aiutarlo a ristabilire il contatto con gli altri. La sua vita amorosa è assai 
-					movimentata è tanto affettuoso quanto indifferente, è imprevedibile e può essere il migliore o il peggiore dei partner, affascinante 
-					e dolce è difficile regolarsi con lui. In amore può alle volte essere un po' capriccioso come un bambino ma è onesto, con un forte 
-					senso di giudizio.
-				</p>
-			</td>
-		  </tr>
-		  <tr>
-			<td class="sCenter"><img src="B10SorboA.jpg" width="140" height="177"></td>
-			<td>
-				<h2>SORBO</h2>
-				<h3>SENSIBILE E COMPLICATO</h3>
-				<h4>Dal <strong>1°</strong> al <strong>10 aprile</strong>, dal <strong>4</strong> al <strong>13 ottobre</strong></h4>
-				<p class="sPadding20">
-					Forte e infaticabile, molto resistente, si adatta facilmente a tutte le varie situazioni, non è egoista, ma egocentrico e un po'
-					narcisista. Amabile, gentile e affascinante si muove con grazia, è piacevole osservarlo perché i suoi gesti sono armoniosi, sul suo 
-					volto c'è sempre un sorriso anche nei momenti più difficili. È essenziale fino all'ossessione ma può diventare una persona importante, 
-					lasciare una traccia di sé, inventare o creare qualcosa di nuovo. È leale e onesto su lui si può sempre contare, dotato di molto 
-					talento artistico, molto intelligente, può fare scintille perché ha qualcosa di magico e di veggente. Non è difficile restarne 
-					attratti perché è pieno di fascino e talento. A volte è un po' sprovveduto e si lascia imbrogliare con una certa facilità, perché se 
-					è vero che lui sa mentire, ha l'ingenuità di credere che gli venga sempre detta la verità. Il mondo dell'arte l'attira come le 
-					situazioni complesse e delicate. Tende ad acuire la sensibilità a vivere le bellezze del quotidiano come una pena molto faticosa, 
-					è delicato, candido, irrequieto, intuitivo e introverso, detesta le liti, la volgarità e l'aggressività Il carattere caldo e raffinato
-					è fatto per sedurre il suo entourage. È un grande romantico, passionale e questo piace molto. L'amore è al centro della sua vita, 
-					è imprevedibile, sa dare molto ma chiede altrettanto in cambio. La sua vita sentimentale sarà agitata, perché non esita mai a
-					ricominciare da capo anche in età avanzata.
-				</p>
-			</td>
-		  </tr>
-		  <tr>
-			<td class="sCenter"><img src="B11AceroA.jpg" width="140" height="163"></td>
-			<td>
-				<h2>ACERO</h2>
-				<h3>CEREBRALE E INSAZIABILE</h3>
-				<h4>Dall'<strong>11</strong> al <strong>20 aprile</strong>, dal <strong>14</strong> al <strong>23 ottobre</strong></h4>
-				<p class="sPadding20">
-					Il legno dell'<strong>Acero</strong> robusto e leggero, fin dai tempi antichi è stato usato per la realizzazione di archi da caccia e 
-					da battaglia. Anticonformista e originale, sempre in ordine, sovente è vanitoso ma ha molta cura della sua persona. Non bisogna farsi
-					ingannare dall'apparente fragilità perché è in realtà molto forte. Ha anche un ottimo buon senso che lo ancora alla realtà e gli fa 
-					ottenere ciò che desidera. Non è certo un tipo comune, è forte e instancabile, ha e una grande resistenza, riservato e po' chiuso e 
-					timido di natura può diventare audace se spinto da una curiosità insaziabile che lo distingue. Ha capacità deduttive, è un'autodidatta
-					erudito, un cerebrale malgrado l'intelligenza riflessiva, non manca né d'immaginazione, né d'intuizione, è brillante, lucido e dotato,
-					però non sa usare queste doti per fini generosi e immediati. Per creare un equilibrio ideale all'<strong>Acero</strong> è ideale un
-					compagno del <strong>Melo</strong>. Sicuro di sé ad oltranza è davvero fuori del comune, in lui trova posto la fantasia e 
-					l'originalità, ha un'ottima memoria e riservatezza. In amore è molto complicato, poco attirato per la vita famigliare deve soddisfare 
-					le sue esigenze di libertà. Ma se trova il partner ideale, che condivida queste sue tendenze, allora sarà felice e far felice il 
-					fortunato compagno.
-				</p>
-			</td>
-		  </tr>
-		  <tr>
-			<td class="sCenter"><img src="B12NoceA.jpg" width="140" height="163"></td>
-			<td>
-				<h2>NOCE</h2>
-				<h3>STRATEGA UN PO' LUNATICO</h3>
-				<h4>Dal <strong>21</strong> al <strong>30 aprile</strong>, dal <strong>24 ottobre</strong> al <strong>2 novembre</strong></h4>
-				<p class="sPadding20">
-					Il <strong>Noce</strong> si nota per la presenza imponente un po' dappertutto, bello e raffinato, prezioso, ma anche un po' goffo,
-					tarchiato e scostante, è perfino un po' rustico ma in entrambi i casi non è spontaneo perché in realtà è un grande timido che adotta
-					l'uno o l'altro travestimento. La natura tenace gli permette di realizzare ciò che desidera, il suo essere testardo può avere dei
-					risvolti positivi è un amico e protettore dei più saggi. Pieno di contraddizioni a volte un po' crudele, ma è generoso di ampie vedute
-					e ospitale. Anticonformista e originale, sempre in ordine, spesso vanitoso, cura moltissimo la propria persona. È nello stesso tempo
-					leale, disonesto, fedele e incostante ma quello che gli manca è soprattutto la lucidità. Il fascino e un'intelligenza vivace attirano
-					subito l'attenzione, ma è un po' lunatico, ama piangere e far soffrire, è geloso ed esclusivo, tenero e violento, ma è poco 
-					equilibrato. Nei rapporti sentimentali è un po' complicato, piacciono le situazioni insolite e non piace la vita famigliare, vuole 
-					soddisfare le sue esigenze di libertà. Dà e riprende, senza alcuna ragione logica, la sua amicizia e anche il suo amore. Se però trova
-					il partner ideale che condivida queste tendenze, allora sarà felice e farà felice il fortunato compagno. Il suo partner deve lasciargli 
-					una certa libertà e indipendenza e sapersi dimostrare discreto.
-				</p>
-			</td>
-		  </tr>
-		  <tr>
-			<td class="sCenter"><img src="B22Tasso.jpg" width="191" height="153"></td>
-			<td>
-				<h2>TASSO</h2>
-				<h3>SENSIBILE E COMPLICATO</h3>
-				<h4>Dal <strong>1°</strong> al <strong>14 maggio</strong>, dal <strong>3</strong> all'<strong>11 novembre</strong></h4>
-				<p class="sPadding20">
-					<strong>Tasso</strong> (la Confidenza) di rara bellezza, accomodante, di buona salute, non da ultimo timido, tende a guardare con 
-					disprezzo gli altri, convinto di se, determinato, impaziente, ama impressionare gli altri, ha molte doti, sa prendere in fretta le
-					decisioni, ha un sano ottimismo e aspetta l'unico vero amore. Il <strong>Tasso</strong> è forte e coraggioso ad oltranza, apologista,
-					capace di difendere a spada tratta i propri ideali e principi, capace di ascoltare e osservare con grande attenzione. Cerca di 
-					lasciare un'impronta del suo passaggio terreno a chi verrà dopo di lui. Forte e infaticabile, è molto resistente e si adatta 
-					facilmente a tutte le varie situazioni, non è un egoista, però è egocentrico e piuttosto narcisista. Amabile, gentile, affascinante
-					si muove con grazia, è piacevole osservarlo i suoi gesti sono armoniosi e sul suo volto c'è sempre un sorriso, anche nei momenti più 
-					difficili. Leale e onesto, si può sempre contare su di lui, è dotato di molto talento artistico, è molto intelligente, può fare 
-					scintille e ha qualcosa di magico e di veggente. Il suo principale punto di forza è di certo l'inventiva, la capacità di ideare e di
-					pensare cose originali che, il più delle volte, riesce a mettere in pratica impressionando tutti. L'amore è al centro della sua vita,
-					sa dare molto ma chiede altrettanto in cambio, la sua vita sentimentale sarà agitata, perché non esiterà mai a ricominciare da capo 
-					anche in età avanzata. La sessualità avrà sempre una grande importanza e non potrà mai farne meno. Spesso è vittima di alti e bassi
-					a livello emotivo, che lo porta ad abbandonare la sua naturale tranquillità a favore della pedanteria, aggressività e sarcasmo. Ha 
-					bisogno di persone intorno a se che lo supportino, lo incoraggino e infondano il giusto ottimismo per portare avanti i progetti su 
-					cui lavora. Per questo motivo, il suo partner ideale è quello che rispetta la sua originalità che lo faccia uscire dai suoi castelli
-					di pensieri e gli faccia godere un po' la vita, se è in coppia con una persona estroversa, riesce a tirare fuori una voglia di 
-					avventura, una passionalità e una leggerezza a dir poco inaspettate!
-				</p>
-			</td>
-		  </tr>
-		  <tr>
-			<td class="sCenter"><img src="B13CastagnoA.jpg" width="140" height="163"></td>
-			<td>
-				<h2>CASTAGNO</h2>
-				<h3>CAMPIONE DI GIUSTIZIA</h3>
-				<h4>Dal <strong>15</strong> al <strong>24 maggio</strong>, dal <strong>12</strong> al <strong>21 novembre</strong></h4>
-				<p class="sPadding20">
-					È generalmente molto bello, decorativo, anche se può mancare di grazia, ma benché sia robusto non è immune da malattie ma resiste, 
-					per crescere bene ha bisogno di molto spazio. È impulsivo e un po' collerico un rivoluzionario il suo senso di giustizia è eccezionale
-					e i suoi principi morali sono saldi. Filosofo costruttivo che sa tradurre i suoi sogni in realtà. L'intelligenza è concreta, si basa
-					sull'esperienza e osservazione, raramente ha immaginazione ma il fatto che sia preciso e capace di pensare non impedisce di sognare. 
-					Sensibile, emotivo nello stesso tempo debole e tenace, è testardo e un po' ostinato, ma conserva un gusto inaspettato delle comodità
-					e il lusso. Ha un carattere volenteroso e uno spiccato senso di responsabilità, soprattutto nei suoi primi anni di vita . Mantiene ad
-					ogni modo un versante previdente e saggio, il suo destino dipende più dagli altri che da lui. Ha un grande bisogno di amore e di 
-					affetto, ma ha sempre paura che non lo si ami e perciò rimane rigido. Avido di amore, non amerà che una sola volta, di conseguenza 
-					sarà difficile raggiungere la felicità, il sesso l'attirerà sempre moltissimo. Ha bisogno di un compagno solido che lo sostenga nei 
-					momenti difficili, che apprezzi la sua franchezza. L'idea di avere una grande famiglia piace e seduce.
-				</p>
-			</td>
-		  </tr>
-		  <tr>
-			<td class="sCenter"><img src="B14FrassinoA.jpg" width="140" height="163"></td>
-			<td>
-				<h2>FRASSINO</h2>
-				<h3>GRANDE FATALISTA</h3>
-				<h4>Dal <strong>25 maggio</strong> al <strong>3 giugno</strong>, dal <strong>22 novembre</strong> al <strong>1° dicembre</strong></h4>
-				<p class="sPadding20">
-					È piacevole da vedere, ha stile ed è slanciato e disinvolto, un po' impacciato, piace molto e non è per niente facile vivere con lui.
-					Ambizioso per quello che riguarda la sua felicità, che per lui è essenziale, ha dentro di sé una dose sufficiente di sano egoismo per
-					ottenerla. È troppo esigente vuole le sue comodità, pretende che lo si coccoli e che si pensi sempre a lui, ama vivere come gli pare 
-					a non darsi troppo da fare, desidera sbadigliare, dormire sognare. Si può credere che vedendolo così distratto e con la testa nelle 
-					nuvole, sia un tipo su cui non si possa contare, un debole un indeciso. Al contrario! Sa bene ciò che vuole, ma soprattutto ciò che 
-					non vuole. Impulsivo ed esigente, soprattutto non teme le critiche in quanto è cosciente di avere una spiccata intelligenza e un 
-					talento da vendere, per questo può essere, spesso un narcisista. È attraente oltre la norma, vivace, impulsivo ed esigente, non si 
-					cura delle critiche ama giocare col destino, può essere egoista, molto fidato e attendibile, fedele e prudente in amore, a volte in 
-					lui la mente domina sul cuore ma prende molto seriamente le relazioni. Lo si potrebbe definire un saggio egoista, ma è generoso e 
-					divide tutto anche il suo compagno. La sua intelligenza è tutta fatta di intuizione è molto fantasioso e originale, a volte lontano 
-					dalla cerebralità e per queste sue doti come il <strong>Salice</strong> il <strong>Nocciolo</strong> e il <strong>Sorbo</strong> è un
-					po' mago. Vuole una famiglia non troppo numerosa che lo lasci libero di agire come vuole.
-				</p>
-			</td>
-		  </tr>
-		  <tr>
-			<td class="sCenter"><img src="B15CarpinoA.jpg" width="140" height="163"></td>
-			<td>
-				<h2>CARPINO</h2>
-				<h3>SOFISTICATO ESTETA</h3>
-				<h4>Dal <strong>4</strong> al <strong>13 giugno</strong>, dal <strong>2</strong> all'<strong>11 dicembre</strong></h4>
-				<p class="sPadding20">
-					Fin dall'antichità il legno bianco del <strong>Carpino</strong> è sempre stato usato per la costruzione di carri, abitazioni e templi.
-					Visto come simbolo dei trasporti e dell'utilità, è un abile mercante e viaggiatore. Ha una personalità meditativa con un senso 
-					accentuato dell'armonia. Ha sempre un atteggiamento di vaga superiorità, per cui non s'interessa quasi a niente, eccetto forse della 
-					sua bellezza. Ha un fascino naturale che attira un nugolo di ammiratori. Disprezza il superficiale e l'improvvisatore, è rigoroso, 
-					si attiene rigidamente alla morale e non sopporta deviazioni di condotta perché ha uno spiccato senso della disciplina e dell'obbedienza.
-					È un grande salutista fissato con la forma fisica, è un esteta e perfezionista quasi un maniaco. Raramente prende iniziative, perché
-					detesta le responsabilità e non ama prendere decisioni, ha sempre paura di sbagliare e preferisce di gran lunga obbedire, forte è il 
-					suo senso del dovere, farà carriera nell'ambito di una grande azienda. Quando è giovane spesso è troppo bello per essere vero, e poi 
-					invecchiando diventa sofisticato. Ha bisogno di un partner che condivida le visioni idealiste mantenendo saldi i piedi per terra. 
-					Sono d'aiuto il <strong>Pioppo</strong> e il <strong>Bagolaro</strong> la loro serietà è fondamentale. Considera l'amore una cosa 
-					rara che non conviene trattare alla leggera, sessualmente dà l'impressione di mettersi in posa è più ossessionato dalla bellezza del 
-					gesto che dal piacere. Piacciono molto i bambini.
-				</p>
-			</td>
-		  </tr>
-		  <tr>
-			<td class="sCenter"><img src="B16FicoA.jpg" width="140" height="163"></td>
-			<td>
-				<h2>FICO</h2>
-				<h3>INSTABILE E SENSIBILE</h3>
-				<h4>Dal <strong>14</strong> al <strong>24 giugno</strong>, dal <strong>12</strong> al <strong>21 dicembre</strong></h4>
-				<p class="sPadding20">
-					Non lo si può propriamente definire bello, ma certo non passa inosservato. Sensibile e un po' complessato, non sta bene dappertutto, 
-					ha bisogno di spazio, di calore umano, di libertà e del contatto con la sua famiglia. Non sopporta le avversità, tende a deprimersi 
-					quando si trova in ristrettezze e costrizioni, è pratico e lucido, la sua intelligenza ha sempre un pizzico di humour. Apprezza le 
-					gioie della famiglia, è socievole e generoso, purtroppo però tende a troncare le discussioni e i problemi in maniera assai autoritaria
-					e prepotente lasciandosi trascinare nel tranciare giudizi precisi e prevedibili, moralista e prevaricatore. Per arginare la sua 
-					prepotenza deve unirsi ad un compagno gentile ma fermo, come nel <strong>Pino</strong> che può riuscire a costringerlo a mostrare solo
-					la sua gentilezza. In tre parole potremo dire: pratico, testardo, pigro. Piantate un albero di <strong>Fico</strong> nel vostro 
-					giardino e abbiatene cura, non ve ne pentirete perché è una pianta da sposare. È molto benefico per la famiglia, i suoi sforzi portano 
-					sempre i loro frutti. È un compagno impagabile e un amico meraviglioso, sentimentale e molto dolce, è presente sessualmente, funziona
-					bene, qualche volta un po' troppo. Il <strong>Fico</strong> è molto amabile soprattutto con bambini e animali.
-				</p>
-			</td>
-		  </tr>
-		  <tr>
-			<td class="sCenter"><img src="B17MeloA.jpg" width="140" height="163"></td>
-			<td>
-				<h2>MELO</h2>
-				<h3>L'INCANTATORE</h3>
-				<h4>Dal <strong>25 giugno</strong> al <strong>4 luglio</strong>, dal <strong>23 dicembre</strong> al <strong>1° gennaio</strong></h4>
-				<p class="sPadding20">
-					Osservare un <strong>Melo</strong> con la sua struttura imponente, la sua familiarità riposa nello sguardo. È generoso, ingenuo e 
-					incapace del calcolo più elementare per gli amici darebbe anche la camicia. Semplice ma non sprovveduto è saggio e filosofo, 
-					intelligente e riflessivo, ha capacità deduttive e interesse per le scienze, legge tutto ciò che gli capita in questo settore 
-					avidamente, è sempre molto bene informato, e non ostenta quello che sa. Ha un carattere forte e i piaceri di questo mondo fanno parte
-					delle sue priorità. La sua cultura è spesso vasta e approfondita, difficilmente ne fa un uso per stupire gli altri. Traboccante di
-					tenerezza e gentilezza, è piacevole e raggiante, sprigiona fascino e sex appeal, in una parola stupendo e gradevole nell'aspetto. 
-					Il <strong>Melo</strong> presenta caratteristiche d'animo delicate e affascinanti, riesce a confortare le anime tormentate, facili da 
-					trovare soprattutto nel <strong>Pioppo</strong>. La vita affettiva è po' movimentata. Può rassegnarsi a un matrimonio senza passione,
-					perché è molto saggio. In amore è irresistibile ma anche molto sensuale, ama l'amore sopra ogni cosa, non rinuncerà mai ad amare e 
-					ad essere amato, se per caso trova un partner della sua misura, sarà idilliaco.
-				</p>
-			</td>
-		  </tr>
-		  <tr>
-			<td class="sCenter"><img src="B18QuerciaA.jpg" width="140" height="163"></td>
-			<td>
-				<h2>QUERCIA</h2>
-				<h3>FORZA E SOLIDITA'</h3>
-				<h4><strong>21 marzo</strong> - <strong>Equinozio di primavera</strong></h4>
-				<p class="sPadding20">
-					La <strong>Quercia</strong> è un albero benefico che promette fortuna e vita felice. Maestoso e solido, vigoroso, potente e la sua
-					bellezza non ha nulla di fragile. È ragionevole, robusto, coraggioso, volenteroso, molto tenace arriva sempre dove vuole, non cede mai,
-					ed è meglio non prenderlo di petto. Una natura nobile, indipendente e sensibile, non ama i cambiamenti, ha la testa sulle spalle e i 
-					piedi per terra, una persona d'azione. La dote migliore che può usare è la saldezza e perseveranza. Ospitale e amichevole, e fedele 
-					nell'amicizia rispetta sempre la libertà degli altri, poiché egli stesso non riesce a sopportare costrizioni di nessun tipo. La sua 
-					intelligenza è concreta, pratica e lucida, molto indipendente, non sopporta né limiti né ostacoli. Apprezza condividere con gli altri
-					gli svaghi e obblighi dato che è fedele alla parola data. Adora concedersi agli agi e agli ozi della buona compagnia e sa condividere
-					gli obblighi e i doveri che l'esistenza impone. In amore passa con molta disinvoltura da un colpo di fulmine all'altro ma se c'è una 
-					tempesta un ciclone e una bufera sopravvive comunque. Con il matrimonio e l'età mette la testa a partito in fondo ha solide e profonde
-					radici ed è piuttosto conservatore.
-				</p>
-			</td>
-		  </tr>
-		  <tr>
-			<td class="sCenter"><img src="B19BetullaA.jpg" width="140" height="163"></td>
-			<td>
-				<h2>BETULLA</h2>
-				<h3>SOBRIA E CREATIVA</h3>
-				<h4>21 giugno</strong> - <strong>Solstizio d'estate</strong></h4>
-				<p class="sPadding20">
-					L'inizio dell'estate segna inevitabilmente il nato <strong>Betulla</strong>, il quale mostra un'istintività molto creativa e aperto 
-					agli influssi del mondo esterno. Attraente ed elegante, amichevole, senza pretese, modesto, non ama gli eccessi, ama la vita nella 
-					natura e nella pace, è poco ambizioso, ma sa creare attorno a se un'atmosfera di calma e di serenità. Sobrio e un po' puritano, fine 
-					di razza, distinto e superiore. La sua compagnia è molto ricercata, ma non approfitta mai delle situazioni si adatta a qualsiasi
-					condizione di vita. La sua intelligenza è eccezionale e non pone limiti alla immaginazione e all'inventiva, sintetico e originale,
-					potrebbe realizzare grandi cose. La sua creatività, lo spirito di sintesi, la sua fantasia in aggiunta alla potenza del suo lavoro 
-					potrebbe aprirgli ogni porta. Detesta la volgarità e la confusione, le compagnie troppo chiassose, ma a dispetto della apparenza 
-					fragile è un grande lavoratore, poco socievole, non ama il lavoro di gruppo. Riesce ad affascinare per la sua naturale eleganza, 
-					sembra che non abbia molta ambizione, è perché preferisce restare lontano da tutto quello che possa indurre all'agitazione. La 
-					<strong>Betulla</strong> incarna l'equilibrio, ama la vita calma e a contatto con la natura. Se ha possibilità d'incontrare il grande
-					equilibrio di un <strong>Olmo</strong>, avrà un amore stupefacente per sensibilità e sincerità. Non è un amante appassionato, 
-					la sensualità è misurata, fedele, può rendere felice il coniuge.
-				</p>
-			</td>
-		  </tr>
-		  <tr>
-			<td class="sCenter"><img src="B20OlivoA.jpg" width="140" height="163"></td>
-			<td>
-				<h2>OLIVO</h2>
-				<h3>GOFFO E PACIFICO</h3>
-				<h4><strong>23 settembre</strong> - <strong>Equinozio d'autunno</strong></h4>
-				<p class="sPadding20">
-					L'<strong>Olivo</strong> rappresenta il simbolo del fuoco che brucia e purifica mentre da vita ed energia con il suo calore. È saggio,
-					severo e pacifico, detesta complicarsi l'esistenza. Intelligente e riflessivo, ama leggere e istruirsi e coltivare i suoi svariati
-					interessi. Vuole vivere secondo il proprio gusto e come gli pare, ma in cambio lascia anche vivere gli altri come preferiscono senza 
-					mai intervenire è la discrezione fatta persona, si può perfino credere che sia indifferente. Ama il sole, il calore, è ragionevole 
-					ed equilibrato, tollerante e allegro, rifugge l'aggressività e la violenza, ha un senso della giustizia molto sviluppato. È buono e 
-					clemente, ma è troppo psicologo e saggio per lasciarsi prendere in giro. Dotato di gran forza l'<strong>Olivo</strong> deve essere 
-					cresciuto con amore altrimenti non può assolvere il suo compito di essere portatore di generosità e dispensatore di pace, altruista 
-					nell'intento di mettere la sua forza al servizio degli altri. È un albero benefico l'<strong>Olivo</strong>, è portatore di felicità
-					e di pace a chiunque l'avvicina, potrà contare su un portamento regale e un'ottima salute causa principale di longevità. Ha sviluppato
-					una sintonia con i segni affini, come l'<strong>Olmo</strong> e il <strong>Cipresso</strong>. In amore rispetta la libertà del 
-					compagno, anche quando ne soffre, è poco incline alle discussioni sacrifica l'amor proprio al quieto vivere. Non è né debole né 
-					rassegnato, guarda la vita con serenità e fiducia.
-				</p>
-			</td>
-		  </tr>
-		  <tr>
-			<td class="sCenter"><img src="B21FaggioA.jpg" width="140" height="163"></td>
-			<td>
-				<h2>FAGGIO</h2>
-				<h3>PROSPERO E ORGOGLIOSO</h3>
-				<h4><strong>22 dicembre</strong> - <strong>Solstizio d'inverno</strong></h4>
-				<p class="sPadding20">
-					È un albero importante poiché il suo giorno coincide col solstizio invernale. Slanciato e bello è il nobile vegliardo del bosco, 
-					ingegnoso e molto ben organizzato, pratico e costante. Accomodante, di buona salute, non da ultimo un po' timido, è molto convinto 
-					di se, determinato e impaziente, ama impressionare gli altri, ha molte doti è prende rapidamente le decisioni, ha un sano ottimismo,
-					e aspetta l'unico vero amore. La sua intelligenza è certamente al servizio del suo benessere, industrioso vuole essere ricco e felice.
-					È un amabile conversatore, sempre avvincente e interessante per queste sue qualità il suo lavoro ideale sarà correlato all'arte 
-					oratoria. Onesto ed economo, ma non ama condividere con gli altri quello che gli appartiene. Il <strong>Faggio</strong> è amante 
-					dell'eloquenza dato anche da uno stretto legame con le sue capacità di memoria. C'è chi apprezza la compagnia confortante del 
-					<strong>Faggio</strong>, ad esempio come l'<strong>Abete</strong> e la <strong>Betulla</strong>. La natura pragmatica può essere 
-					malvista dai sognatori <strong>Olmo</strong> e <strong>Salice</strong>, che possono spingersi a definire il <strong>Faggio</strong>
-					come mosso solo da egoismo e insensibilità. In amore non ha molta fantasia, i suoi sentimenti sono sinceri, ma il comportamento è 
-					convenzionale. Ottimo compagno e genitore, aspira ad avere dei bambini, una casetta in montagna. In età matura si concederà qualche
-					scappatella extraconiugale senza storia.
-				</p>
-			</td>
-		  </tr></tbody>
-		</table>
 
 		<p class="sCenter">
-			<br>
-			<img src="AlberiBD173.gif"   width="457" height="92">
-			<img src="AlberiAC370.gif"   width="466" height="115"><br><br>
-			<img src="CWlignepetite.gif" width="108" height="22">
-			<img src="CWlignepetite.gif" width="108" height="22">
-			<img src="CWlignepetite.gif" width="108" height="22">
-			<img src="CWlignepetite.gif" width="108" height="22"><br><br>
+			<img src="AlberiBD173.gif" width="457" height="92"  alt="Alberi banner 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="AlberiAC370.gif" width="466" height="115" alt="Alberi banner 2">
 		</p>
 
-		<h3>ABETE - NATI IN GENNAIO</h3>
-		<p class="sSmall sVarden sJustify sPadding40">
-			<i>Tendenze psichiche</i>: L'<strong>Abete</strong> è una delle piante più signorili e raffinate, ama l'isolamento e la maestosità. Ama ogni 
-			cosa bella, è sofisticato di gusti straordinari, ha dignità, è lunatico, ostinato, tende all'egoismo ma ha cura di chi gli è vicino, è molto 
-			ambizioso, dotato di talento, industrioso, incontentabile in amore, ha molti amici e nemici ma è affidabile. Sincerità e gentilezza 
-			caratterizzano l'<strong>Abete</strong> un vero combattente, spesso tende a nascondere le sue e emozioni dietro ad una corazza. Il suo 
-			influsso determina un forte individualismo che permane anche nei soggetti più socievoli e semplici. Dona generosità di animo, fascino 
-			discreto, romanticismo. Stimola forti ambizioni e fa desiderare una casa lussuosa e amicizie importanti, attività originali e prestigiose. 
+		<h2>ABETE: <span class="sSmaller sSmallCaps">Bisbetico ma Appassionato</span></h2>
+		<h3>Dal <b>2</b> all'<b>11 gennaio</b>, dal <b>5</b> al <b>14 luglio</b></h3>
+		<p>
+			<img src="B1AbeteA.jpg" width="140" height="163" alt="Abete" class="sFloatL">
+			L'<b>Abete</b> è una delle piante più signorili e raffinate, ama l'isolamento e la maestosità. È di una bellezza spesso un po'
+			fredda e severa, ama i viaggi e i gioielli, piacciono le luci soffuse e i mobili antichi. Ha una grande ambizione e generosità di animo,
+			un fascino discreto e un romanticismo notturno. Non è facile nei rapporti è un po' capriccioso e riesce ad isolarsi anche in mezzo alla
+			folla. Ha un'eccezionale intelligenza, uno spirito analitico e amore per gli studi, la carriera è lenta ma sicura, originale e prestigiosa.
+			Scrupoloso, coscienzioso, sgobbone, non è superficiale. Poco influenzabile, non esprime facilmente le sue opinioni, ma vuole riuscire ad
+			ogni costo. La sua premura che sa dimostrare nei confronti delle persone care è quasi infinita e per questo si può contare su di lui.
+			Freddo, ma se si innamora è capace di perdere la testa, è un po' insicuro, ha bisogno di continue conferme. Il concreto
+			<b>Castagno</b> è in grado di dare un ulteriore sano vigore al segno, e di fornire le spinte necessarie per migliorare e
+			progredire.
+		</p>
+
+		<h2>OLMO: <span class="sSmaller sSmallCaps">Idealista e Moralista</span></h2>
+		<h3>Dal <b>12</b> al <b>24 gennaio</b>, dal <b>15</b> al <b>24 luglio</b></h3>
+		<p>
+			<img src="B2OlmoA.jpg" width="140" height="163" alt="Olmo" class="sFloatR">
+			Alto, bello e ben fatto, ci si volta volentieri per strada ad osservarlo. Ma, l'<b>Olmo</b> con questi bei vantaggi fisici non
+			cerca mai di mettersi in mostra, spesso è un po' trascurato si veste con disinvoltura. Ha una intelligenza profonda, pratica e concreta,
+			è molto abile di mano ed è valido nelle professioni intellettuali. Si lascia trascinare dalle idee grandiose e nutre alti ideali, però
+			sa anche rimanere con i piedi ben piantati in terra. Affronta tutto con serenità e si adopera finché coloro che ama siano felici.
+			Le cause che difende sono sempre giuste, è persuaso che i suoi diritti presto o tardi saranno riconosciuti. Purtroppo tende ad
+			appesantirsi con l'età, s'accontenta di poco non si complica la vita. Fervido innamorato, caldo e appassionato, può fare durare il suo
+			matrimonio oltre le nozze di diamante. Nonostante le apparenze, è un tipo tranquillo e calmo, spesso un po' fragile di salute, quasi
+			mai qualcosa di grave. Ha bisogno di un partner molto presente che lo colmi di attenzioni e di affetto. In amore è un compagno fedele
+			e generoso. L'imponenza del <b>Fico</b> spesso spaventa l'<b>Olmo</b> che deve accostarsi ad esso con fiducia.
+		</p>
+
+		<h2>CIPRESSO: <span class="sSmaller sSmallCaps">Rustico e Severo</span></h2>
+		<h3>Dal <b>25 gennaio</b> al <b>3 febbraio</b>, dal <b>26 luglio</b> al <b>4 agosto</b></h3>
+		<p>
+			<img src="B3CipressoA.jpg" width="140" height="163" alt="Cipresso" class="sFloatL">
+			Alto, slanciato, elegante, con un gran bel portamento, si presenta molto bene, ma in fondo rimane un rustico, un semplice e sano
+			contadino. Apprezza le piccole gioie quotidiane, si sente bene quando è a contatto con la natura. Si accontenta di poco e si adatta
+			alle circostanze, sa vivere in ogni condizione ed essere felice, perché bastano le comodità minime. È autosufficiente, ottimista e
+			ambizioso. La sua intelligenza è riflessiva e posata, molto portato alla meditazione, in genere non ha sogni di successo, di ricchezza
+			e gloria, lo lasciano indifferente, non desidera altro che la sua felicità. La sua presenza è riposante qualche volta anche troppo,
+			fa in modo d'essere circondato da una famiglia numerosa. Molto precoce, spicca presto il volo, ama fare lunghe passeggiate in campagna
+			e adora gli animali, la caccia e la pesca, detesta la solitudine. Trascorre serenamente la sua vita intera a fianco d'una
+			<b>Betulla</b> mentre la compagnia trainante dell'<b>Olmo</b> non è adatta. Ha bisogno di un partner che gli stia
+			molto vicino, e che lo ami senza riserve. Desidera avere dei bambini. È fedele come pochi, forte nell'animo e nello spirito, egli
+			detesta la solitudine ed è molto passionale.
+		</p>
+
+		<h2>PIOPPO: <span class="sSmaller sSmallCaps">Sensibile e Pessimista</span></h2>
+		<h3>Dal <b>4</b> al <b>8 febbraio</b>, dal <b>1°</b> al <b>14 maggio</b>,
+		dal <b>5</b> al <b>13 agosto</b>, dal <b>3</b> al <b>11 novembre</b></h3>
+		<p>
+			<img src="B4PioppoA.jpg" width="140" height="163" alt="Pioppo" class="sFloatR">
+			Attraente, bello e decorativo agli inizi, ma invecchia male cede e si lascia andare, si scoraggia facilmente. Questo suo atteggiamento
+			un po' superficiale si coniuga con un'intelligenza sottile e una gran lucidità. In genere è degno di fiducia e sa come esprimere la sua
+			gentilezza e il senso di responsabilità. Ha una spiccata sensibilità, soffre per le più piccole cose e tutto può ferirlo. È coraggioso,
+			non è materialista, ma molto capace di fare soldi, sensibile al denaro, organizzato e indipendente, raggiunge presto un' ottima
+			posizione economica. Ha uno spirito vivo e critico e può approfittarne nella vita professionale. Tra le cose più importanti della vita
+			al primo posto mette di sicuro la coppia, ha bisogno di avere un partner che lo stimoli, lo faccia ridere e distrarre. Ha un gran
+			bisogno di compagnia ma detesta la promiscuità, è orgoglioso e suscettibile, affronta ogni ostacolo a viso aperto. Leale come amico,
+			ma non lo è altrettanto come amante. Se il suo partner non è sensibile e intelligente, difficilmente trova la felicità. Tende a
+			rinchiudersi in se stesso, questo atteggiamento va combattuto frequentando il solido <b>Melo</b> che è ricco di energia.
+		</p>
+
+		<h2>BAGOLARO: <span class="sSmaller sSmallCaps">Inguaribile Ottimista</span></h2>
+		<h3>Dal <b>9</b> al <b>18 febbraio</b>, dal <b>14</b> al <b>23 agosto</b></h3>
+		<p>
+			<img src="B5BagolaroA.jpg" width="140" height="163" alt="Bagolaro" class="sFloatL">
+			Albero solido, largo e potente, ben piantato e possente, è una bella pianta ma quasi mai di razza, è un brevilineo. Ha spesso una vita
+			inconsueta e affascinante e rimane scolpito nella memoria di chi gli vive accanto. Vuole brillare in società e sovente spreca le sue
+			energie pur di farsi notare. Sa adattarsi ad ogni circostanza e si trova a suo agio dappertutto, ignora la parola timidezza. È quello
+			che parla e decide e che brilla, sotto un'apparenza da gradasso, è influenzabile ma intelligente, orgoglioso, generoso e ambizioso,
+			dotato di spirito di sintesi, riflette e poi decide con una rapidità sorprendente, ha un forte talento artistico, è portato per la
+			musica e ha in ogni caso un grande senso del ritmo. È un ottimista, ed è proprio l'ottimismo a fargli commettere le peggiori imprudenze.
+			Ama stupire, essere al centro dell'attenzione, per arrivare non indietreggia mai di fronte a nessun sacrificio. Ha bisogno di un partner
+			che ami una vita movimentata e sia pronto ad accompagnarlo ovunque e per molto tempo. È affascinato dal <b>Pino</b> ma solo
+			la calma rassicurante del <b>Frassino</b> può bilanciare in modo efficace la sua mente effervescente.
+		</p>
+
+		<h2>PINO: <span class="sSmaller sSmallCaps">Perfezionista Raffinato</span></h2>
+		<h3>Dal <b>19</b> al <b>29 febbraio</b>, dal <b>24 agosto</b> al <b>2 settembre</b></h3>
+		<p>
+			<img src="B6PinoA.jpg" width="140" height="163" alt="Pino" class="sFloatR">
+			Il <b>Pino</b> è bello, decorativo e raffinato, sa come valorizzarsi. È molto coraggioso, accetta le avversità con dignità e
+			gusto del rischio, unito a grande audacia ne fa un essere che va avanti e brucia le tappe. Può emergere in tutti i campi non si lascia
+			abbattere e riesce a cavarsela dalle situazioni più spinose. Intelligente, ma anche implacabile, conduce i suoi affari amore carriera
+			senza un minimo segno di cedimento. Degno di fiducia pratico aspetta sempre di incontrare l'altra metà del cuore. Molto gentile e
+			amichevole, di buona compagnia, non è generoso, prova gran repulsione verso tutto ciò che considera sordido come la sporcizia, la
+			povertà, la volgarità e le privazioni. Non sa stare fermo e s'innamora facilmente, ma anche facilmente rinuncia. Ama essere circondato
+			da persone gradevoli, riesce a rendere la vita confortevole. Ha bisogno di un partner tranquillo che porti sicurezza e conforto. Ama la
+			casa i bei mobili e gli oggetti preziosi. È un buon compagno anche se non sempre amichevole, ogni cosa lo delude finche trova il suo
+			ideale fidato e pratico. Possiede un certo potere per trasformare la natura in meglio.
+		</p>
+
+		<h2>SALICE: <span class="sSmaller sSmallCaps">Malinconico e Poetico</span></h2>
+		<h3>Dal <b>1°</b> al <b>10 marzo</b>, dal <b>3</b> al <b>12 settembre</b></h3>
+		<p>
+			<img src="B7SaliceA.jpg" width="140" height="163" alt="Salice" class="sFloatL">
+			È un albero che si abbandona ai capricci del vento, da sempre è il simbolo di nostalgia, e tende alla malinconia. È bello ma triste
+			all'apparenza, languido, morbido e vulnerabile che costituisce il suo fascino. Attraente e carismatico ama ogni cosa bella e di buon
+			gusto, è un sognatore, instancabile e capriccioso, onesto e può essere influenzabile, non è certo facile vivere con lui. Attrae molti
+			per l'aria di mistero e del sorriso un po' triste e per la sua gentilezza un po' impacciata. Non fidatevi dell'aspetto dolce in realtà
+			è deciso e molto coraggioso, sa sempre ciò che vuole ma non impone nulla agli altri. Sa approfittare del momento presente, e non si
+			lascia scappare nessuna occasione di gioia. Ha un carattere volitivo e finisce sempre per ottenere quello che desidera. È intelligente,
+			con uno sviluppato senso artistico, ha una grande immaginazione e intuizione. Amante un po' infedele ma in cambio riesce a dare un amore
+			tenero e sensuale, assapora con voluttà profonda ogni piccolo piacere che poi colora di delicata poesia. Ama il calore, i profumi, il
+			contatto con l'acqua e viaggiare. Poco sentimentale ma è un gran romantico esprime l'amore in maniera appassionata e piena di poesia.
+			La vita sentimentale sarebbe tranquilla se non avesse il gusto perverso per gli amori complicati.
+		</p>
+
+		<h2>TIGLIO: <span class="sSmaller sSmallCaps">Bugiardo e Insoddisfatto</span></h2>
+		<h3>Dall'<b>11</b> al <b>20 marzo</b>, dal <b>13</b> al <b>22 settembre</b></h3>
+		<p>
+			<img src="B8TiglioA.jpg" width="140" height="202" alt="Tiglio" class="sFloatR">
+			Il <b>Tiglio</b> dedica all'amicizia e alla compassione per gli altri buona parte della vita. È un segno che ha forti legami
+			col sonno e l'ipnosi, sa come rendersi indispensabile, creando con facilità una certa dipendenza negli altri. Grande e bello ha del
+			fascino e se ne serve, ha un forte erotismo e un grande amor proprio. Ha un carattere che attira la simpatia e l'amicizia. Ha la
+			tendenza a disperdersi e può trovarsi in situazioni delicate. Abile e intelligente, pratico, preciso e ingegnoso, è un maniaco
+			dell'ordine un po' pignolo, portato alle attività manuali, ma manca di chiarezza. È capace d' incantare chiunque perché, sa mentire
+			come pochi. Tranquillo e sereno in superficie, ma la sua nemica è la fatica, almeno così sembra, bisogna parlare di una pigrizia vera
+			e propria. È circondato da tanti amici a cui dà molto e dai quali ha tante sorprese. Furbo e sensibile, non è indifferente
+			all'adulazione e sa servirsi egli stesso, in caso di bisogno. Piange a tutti i film d'amore, si commuove con facilità, si sacrifica
+			per gli amici, è particolarmente geloso del compagno. Ha bisogno di un partner delicato, tenero organizzato che abbia buon senso e
+			lo riporti sulla terra.
+		</p>
+
+		<h2>NOCCIOLO: <span class="sSmaller sSmallCaps">Favoloso Istrione</span></h2>
+		<h3>Dal <b>21</b> al <b>31 marzo</b>, dal <b>23 settembre</b> al <b>3 ottobre</b></h3>
+		<p>
+			<img src="B9NoccioloA.jpg" width="140" height="163" alt="Nocciolo" class="sFloatL">
+			Il <b>Nocciolo</b> sembra non avere difetti è tollerante, sensibile per le questioni sociali e poco esigente. Ha una grande
+			capacità nel capire gli altri e quindi sa fare una buona impressione. Presenta fattezze lineari, sottili, nel volto nel corpo e
+			dall'apparenza delicata, e non lo si può avvicinare senza avvertire il fluido che scorre da lui. Non fidatevi troppo della sua
+			espressione attenta, a volte sembra che vi ascolti, ma invece pensa ad altro. La sua intelligenza è eccezionale e affascina, sottile
+			e intuitiva, lo sostiene una gran capacità di adattamento alle varie situazioni e una memoria prodigiosa. È un ottimo psicologo, molto
+			bravo a indovinare i pensieri segreti degli altri. Ma può anche essere nocivo, cattivo e perfino diabolico nei confronti di chi non
+			gli va a genio. Sa piacere e farsi amare, e se lo merita perché in fondo è buono, generoso e servizievole. Si lascia sovente avvicinare
+			da altre persone, come dal <b>Salice</b> e dal <b>Tiglio</b> chiede amore e dolcezza, sfruttando le doti
+			telepatiche. Il rassicurante <b>Melo</b> può aiutarlo a ristabilire il contatto con gli altri. La sua vita amorosa è assai
+			movimentata è tanto affettuoso quanto indifferente, è imprevedibile e può essere il migliore o il peggiore dei partner, affascinante
+			e dolce è difficile regolarsi con lui. In amore può alle volte essere un po' capriccioso come un bambino ma è onesto, con un forte
+			senso di giudizio.
+		</p>
+
+		<h2>SORBO: <span class="sSmaller sSmallCaps">Sensibile e Complicato</span></h2>
+		<h3>Dal <b>1°</b> al <b>10 aprile</b>, dal <b>4</b> al <b>13 ottobre</b></h3>
+		<p>
+			<img src="B10SorboA.jpg" width="140" height="177" alt="Sorbo" class="sFloatR">
+			Forte e infaticabile, molto resistente, si adatta facilmente a tutte le varie situazioni, non è egoista, ma egocentrico e un po'
+			narcisista. Amabile, gentile e affascinante si muove con grazia, è piacevole osservarlo perché i suoi gesti sono armoniosi, sul suo
+			volto c'è sempre un sorriso anche nei momenti più difficili. È essenziale fino all'ossessione ma può diventare una persona importante,
+			lasciare una traccia di sé, inventare o creare qualcosa di nuovo. È leale e onesto su lui si può sempre contare, dotato di molto
+			talento artistico, molto intelligente, può fare scintille perché ha qualcosa di magico e di veggente. Non è difficile restarne
+			attratti perché è pieno di fascino e talento. A volte è un po' sprovveduto e si lascia imbrogliare con una certa facilità, perché se
+			è vero che lui sa mentire, ha l'ingenuità di credere che gli venga sempre detta la verità. Il mondo dell'arte l'attira come le
+			situazioni complesse e delicate. Tende ad acuire la sensibilità a vivere le bellezze del quotidiano come una pena molto faticosa,
+			è delicato, candido, irrequieto, intuitivo e introverso, detesta le liti, la volgarità e l'aggressività Il carattere caldo e raffinato
+			è fatto per sedurre il suo entourage. È un grande romantico, passionale e questo piace molto. L'amore è al centro della sua vita,
+			è imprevedibile, sa dare molto ma chiede altrettanto in cambio. La sua vita sentimentale sarà agitata, perché non esita mai a
+			ricominciare da capo anche in età avanzata.
+		</p>
+
+		<h2>ACERO: <span class="sSmaller sSmallCaps">Cerebrale e Insaziabile</span></h2>
+		<h3>Dall'<b>11</b> al <b>20 aprile</b>, dal <b>14</b> al <b>23 ottobre</b></h3>
+		<p>
+			<img src="B11AceroA.jpg" width="140" height="163" alt="Acero" class="sFloatL">
+			Il legno dell'<b>Acero</b> robusto e leggero, fin dai tempi antichi è stato usato per la realizzazione di archi da caccia e
+			da battaglia. Anticonformista e originale, sempre in ordine, sovente è vanitoso ma ha molta cura della sua persona. Non bisogna farsi
+			ingannare dall'apparente fragilità perché è in realtà molto forte. Ha anche un ottimo buon senso che lo ancora alla realtà e gli fa
+			ottenere ciò che desidera. Non è certo un tipo comune, è forte e instancabile, ha e una grande resistenza, riservato e po' chiuso e
+			timido di natura può diventare audace se spinto da una curiosità insaziabile che lo distingue. Ha capacità deduttive, è un'autodidatta
+			erudito, un cerebrale malgrado l'intelligenza riflessiva, non manca né d'immaginazione, né d'intuizione, è brillante, lucido e dotato,
+			però non sa usare queste doti per fini generosi e immediati. Per creare un equilibrio ideale all'<b>Acero</b> è ideale un
+			compagno del <b>Melo</b>. Sicuro di sé ad oltranza è davvero fuori del comune, in lui trova posto la fantasia e
+			l'originalità, ha un'ottima memoria e riservatezza. In amore è molto complicato, poco attirato per la vita famigliare deve soddisfare
+			le sue esigenze di libertà. Ma se trova il partner ideale, che condivida queste sue tendenze, allora sarà felice e far felice il
+			fortunato compagno.
+		</p>
+
+		<h2>NOCE: <span class="sSmaller sSmallCaps">Stratega un po' Lunatico</span></h2>
+		<h3>Dal <b>21</b> al <b>30 aprile</b>, dal <b>24 ottobre</b> al <b>2 novembre</b></h3>
+		<p>
+			<img src="B12NoceA.jpg" width="140" height="163" alt="Noce" class="sFloatR">
+			Il <b>Noce</b> si nota per la presenza imponente un po' dappertutto, bello e raffinato, prezioso, ma anche un po' goffo,
+			tarchiato e scostante, è perfino un po' rustico ma in entrambi i casi non è spontaneo perché in realtà è un grande timido che adotta
+			l'uno o l'altro travestimento. La natura tenace gli permette di realizzare ciò che desidera, il suo essere testardo può avere dei
+			risvolti positivi è un amico e protettore dei più saggi. Pieno di contraddizioni a volte un po' crudele, ma è generoso di ampie vedute
+			e ospitale. Anticonformista e originale, sempre in ordine, spesso vanitoso, cura moltissimo la propria persona. È nello stesso tempo
+			leale, disonesto, fedele e incostante ma quello che gli manca è soprattutto la lucidità. Il fascino e un'intelligenza vivace attirano
+			subito l'attenzione, ma è un po' lunatico, ama piangere e far soffrire, è geloso ed esclusivo, tenero e violento, ma è poco
+			equilibrato. Nei rapporti sentimentali è un po' complicato, piacciono le situazioni insolite e non piace la vita famigliare, vuole
+			soddisfare le sue esigenze di libertà. Dà e riprende, senza alcuna ragione logica, la sua amicizia e anche il suo amore. Se però trova
+			il partner ideale che condivida queste tendenze, allora sarà felice e farà felice il fortunato compagno. Il suo partner deve lasciargli
+			una certa libertà e indipendenza e sapersi dimostrare discreto.
+		</p>
+
+		<h2>TASSO: <span class="sSmaller sSmallCaps">Sensibile e Complicato</span></h2>
+		<h3>Dal <b>1°</b> al <b>14 maggio</b>, dal <b>3</b> all'<b>11 novembre</b></h3>
+		<p>
+			<img src="B22Tasso.jpg" width="191" height="153" alt="Tasso" class="sFloatL">
+			<b>Tasso</b> (la Confidenza) di rara bellezza, accomodante, di buona salute, non da ultimo timido, tende a guardare con
+			disprezzo gli altri, convinto di se, determinato, impaziente, ama impressionare gli altri, ha molte doti, sa prendere in fretta le
+			decisioni, ha un sano ottimismo e aspetta l'unico vero amore. Il <b>Tasso</b> è forte e coraggioso ad oltranza, apologista,
+			capace di difendere a spada tratta i propri ideali e principi, capace di ascoltare e osservare con grande attenzione. Cerca di
+			lasciare un'impronta del suo passaggio terreno a chi verrà dopo di lui. Forte e infaticabile, è molto resistente e si adatta
+			facilmente a tutte le varie situazioni, non è un egoista, però è egocentrico e piuttosto narcisista. Amabile, gentile, affascinante
+			si muove con grazia, è piacevole osservarlo i suoi gesti sono armoniosi e sul suo volto c'è sempre un sorriso, anche nei momenti più
+			difficili. Leale e onesto, si può sempre contare su di lui, è dotato di molto talento artistico, è molto intelligente, può fare
+			scintille e ha qualcosa di magico e di veggente. Il suo principale punto di forza è di certo l'inventiva, la capacità di ideare e di
+			pensare cose originali che, il più delle volte, riesce a mettere in pratica impressionando tutti. L'amore è al centro della sua vita,
+			sa dare molto ma chiede altrettanto in cambio, la sua vita sentimentale sarà agitata, perché non esiterà mai a ricominciare da capo
+			anche in età avanzata. La sessualità avrà sempre una grande importanza e non potrà mai farne meno. Spesso è vittima di alti e bassi
+			a livello emotivo, che lo porta ad abbandonare la sua naturale tranquillità a favore della pedanteria, aggressività e sarcasmo. Ha
+			bisogno di persone intorno a se che lo supportino, lo incoraggino e infondano il giusto ottimismo per portare avanti i progetti su
+			cui lavora. Per questo motivo, il suo partner ideale è quello che rispetta la sua originalità che lo faccia uscire dai suoi castelli
+			di pensieri e gli faccia godere un po' la vita, se è in coppia con una persona estroversa, riesce a tirare fuori una voglia di
+			avventura, una passionalità e una leggerezza a dir poco inaspettate!
+		</p>
+
+		<h2>CASTAGNO: <span class="sSmaller sSmallCaps">Campione di Giustizia</span></h2>
+		<h3>Dal <b>15</b> al <b>24 maggio</b>, dal <b>12</b> al <b>21 novembre</b></h3>
+		<p>
+			<img src="B13CastagnoA.jpg" width="140" height="163" alt="Castagno" class="sFloatR">
+			È generalmente molto bello, decorativo, anche se può mancare di grazia, ma benché sia robusto non è immune da malattie ma resiste,
+			per crescere bene ha bisogno di molto spazio. È impulsivo e un po' collerico un rivoluzionario il suo senso di giustizia è eccezionale
+			e i suoi principi morali sono saldi. Filosofo costruttivo che sa tradurre i suoi sogni in realtà. L'intelligenza è concreta, si basa
+			sull'esperienza e osservazione, raramente ha immaginazione ma il fatto che sia preciso e capace di pensare non impedisce di sognare.
+			Sensibile, emotivo nello stesso tempo debole e tenace, è testardo e un po' ostinato, ma conserva un gusto inaspettato delle comodità
+			e il lusso. Ha un carattere volenteroso e uno spiccato senso di responsabilità, soprattutto nei suoi primi anni di vita . Mantiene ad
+			ogni modo un versante previdente e saggio, il suo destino dipende più dagli altri che da lui. Ha un grande bisogno di amore e di
+			affetto, ma ha sempre paura che non lo si ami e perciò rimane rigido. Avido di amore, non amerà che una sola volta, di conseguenza
+			sarà difficile raggiungere la felicità, il sesso l'attirerà sempre moltissimo. Ha bisogno di un compagno solido che lo sostenga nei
+			momenti difficili, che apprezzi la sua franchezza. L'idea di avere una grande famiglia piace e seduce.
+		</p>
+
+		<h2>FRASSINO: <span class="sSmaller sSmallCaps">Grande Fatalista</span></h2>
+		<h3>Dal <b>25 maggio</b> al <b>3 giugno</b>, dal <b>22 novembre</b> al <b>1° dicembre</b></h3>
+		<p>
+			<img src="B14FrassinoA.jpg" width="140" height="163" alt="Frassino" class="sFloatL">
+			È piacevole da vedere, ha stile ed è slanciato e disinvolto, un po' impacciato, piace molto e non è per niente facile vivere con lui.
+			Ambizioso per quello che riguarda la sua felicità, che per lui è essenziale, ha dentro di sé una dose sufficiente di sano egoismo per
+			ottenerla. È troppo esigente vuole le sue comodità, pretende che lo si coccoli e che si pensi sempre a lui, ama vivere come gli pare
+			a non darsi troppo da fare, desidera sbadigliare, dormire sognare. Si può credere che vedendolo così distratto e con la testa nelle
+			nuvole, sia un tipo su cui non si possa contare, un debole un indeciso. Al contrario! Sa bene ciò che vuole, ma soprattutto ciò che
+			non vuole. Impulsivo ed esigente, soprattutto non teme le critiche in quanto è cosciente di avere una spiccata intelligenza e un
+			talento da vendere, per questo può essere, spesso un narcisista. È attraente oltre la norma, vivace, impulsivo ed esigente, non si
+			cura delle critiche ama giocare col destino, può essere egoista, molto fidato e attendibile, fedele e prudente in amore, a volte in
+			lui la mente domina sul cuore ma prende molto seriamente le relazioni. Lo si potrebbe definire un saggio egoista, ma è generoso e
+			divide tutto anche il suo compagno. La sua intelligenza è tutta fatta di intuizione è molto fantasioso e originale, a volte lontano
+			dalla cerebralità e per queste sue doti come il <b>Salice</b> il <b>Nocciolo</b> e il <b>Sorbo</b> è un
+			po' mago. Vuole una famiglia non troppo numerosa che lo lasci libero di agire come vuole.
+		</p>
+
+		<h2>CARPINO: <span class="sSmaller sSmallCaps">Sofisticato Esteta</span></h2>
+		<h3>Dal <b>4</b> al <b>13 giugno</b>, dal <b>2</b> all'<b>11 dicembre</b></h3>
+		<p>
+			<img src="B15CarpinoA.jpg" width="140" height="163" alt="Carpino" class="sFloatR">
+			Fin dall'antichità il legno bianco del <b>Carpino</b> è sempre stato usato per la costruzione di carri, abitazioni e templi.
+			Visto come simbolo dei trasporti e dell'utilità, è un abile mercante e viaggiatore. Ha una personalità meditativa con un senso
+			accentuato dell'armonia. Ha sempre un atteggiamento di vaga superiorità, per cui non s'interessa quasi a niente, eccetto forse della
+			sua bellezza. Ha un fascino naturale che attira un nugolo di ammiratori. Disprezza il superficiale e l'improvvisatore, è rigoroso,
+			si attiene rigidamente alla morale e non sopporta deviazioni di condotta perché ha uno spiccato senso della disciplina e dell'obbedienza.
+			È un grande salutista fissato con la forma fisica, è un esteta e perfezionista quasi un maniaco. Raramente prende iniziative, perché
+			detesta le responsabilità e non ama prendere decisioni, ha sempre paura di sbagliare e preferisce di gran lunga obbedire, forte è il
+			suo senso del dovere, farà carriera nell'ambito di una grande azienda. Quando è giovane spesso è troppo bello per essere vero, e poi
+			invecchiando diventa sofisticato. Ha bisogno di un partner che condivida le visioni idealiste mantenendo saldi i piedi per terra.
+			Sono d'aiuto il <b>Pioppo</b> e il <b>Bagolaro</b> la loro serietà è fondamentale. Considera l'amore una cosa
+			rara che non conviene trattare alla leggera, sessualmente dà l'impressione di mettersi in posa è più ossessionato dalla bellezza del
+			gesto che dal piacere. Piacciono molto i bambini.
+		</p>
+
+		<h2>FICO: <span class="sSmaller sSmallCaps">Instabile e Sensibile</span></h2>
+		<h3>Dal <b>14</b> al <b>24 giugno</b>, dal <b>12</b> al <b>21 dicembre</b></h3>
+		<p>
+			<img src="B16FicoA.jpg" width="140" height="163" alt="Fico" class="sFloatL">
+			Non lo si può propriamente definire bello, ma certo non passa inosservato. Sensibile e un po' complessato, non sta bene dappertutto,
+			ha bisogno di spazio, di calore umano, di libertà e del contatto con la sua famiglia. Non sopporta le avversità, tende a deprimersi
+			quando si trova in ristrettezze e costrizioni, è pratico e lucido, la sua intelligenza ha sempre un pizzico di humour. Apprezza le
+			gioie della famiglia, è socievole e generoso, purtroppo però tende a troncare le discussioni e i problemi in maniera assai autoritaria
+			e prepotente lasciandosi trascinare nel tranciare giudizi precisi e prevedibili, moralista e prevaricatore. Per arginare la sua
+			prepotenza deve unirsi ad un compagno gentile ma fermo, come nel <b>Pino</b> che può riuscire a costringerlo a mostrare solo
+			la sua gentilezza. In tre parole potremo dire: pratico, testardo, pigro. Piantate un albero di <b>Fico</b> nel vostro
+			giardino e abbiatene cura, non ve ne pentirete perché è una pianta da sposare. È molto benefico per la famiglia, i suoi sforzi portano
+			sempre i loro frutti. È un compagno impagabile e un amico meraviglioso, sentimentale e molto dolce, è presente sessualmente, funziona
+			bene, qualche volta un po' troppo. Il <b>Fico</b> è molto amabile soprattutto con bambini e animali.
+		</p>
+
+		<h2>MELO: <span class="sSmaller sSmallCaps">L'Incantatore</span></h2>
+		<h3>Dal <b>25 giugno</b> al <b>4 luglio</b>, dal <b>23 dicembre</b> al <b>1° gennaio</b></h3>
+		<p>
+			<img src="B17MeloA.jpg" width="140" height="163" alt="Melo" class="sFloatR">
+			Osservare un <b>Melo</b> con la sua struttura imponente, la sua familiarità riposa nello sguardo. È generoso, ingenuo e
+			incapace del calcolo più elementare per gli amici darebbe anche la camicia. Semplice ma non sprovveduto è saggio e filosofo,
+			intelligente e riflessivo, ha capacità deduttive e interesse per le scienze, legge tutto ciò che gli capita in questo settore
+			avidamente, è sempre molto bene informato, e non ostenta quello che sa. Ha un carattere forte e i piaceri di questo mondo fanno parte
+			delle sue priorità. La sua cultura è spesso vasta e approfondita, difficilmente ne fa un uso per stupire gli altri. Traboccante di
+			tenerezza e gentilezza, è piacevole e raggiante, sprigiona fascino e sex appeal, in una parola stupendo e gradevole nell'aspetto.
+			Il <b>Melo</b> presenta caratteristiche d'animo delicate e affascinanti, riesce a confortare le anime tormentate, facili da
+			trovare soprattutto nel <b>Pioppo</b>. La vita affettiva è po' movimentata. Può rassegnarsi a un matrimonio senza passione,
+			perché è molto saggio. In amore è irresistibile ma anche molto sensuale, ama l'amore sopra ogni cosa, non rinuncerà mai ad amare e
+			ad essere amato, se per caso trova un partner della sua misura, sarà idilliaco.
+		</p>
+
+		<h2>QUERCIA: <span class="sSmaller sSmallCaps">Forza e Solidità</span></h2>
+		<h3><b>21 marzo</b> - <b>Equinozio di primavera</b></h3>
+		<p>
+			<img src="B18QuerciaA.jpg" width="140" height="163" alt="Quercia" class="sFloatL">
+			La <b>Quercia</b> è un albero benefico che promette fortuna e vita felice. Maestoso e solido, vigoroso, potente e la sua
+			bellezza non ha nulla di fragile. È ragionevole, robusto, coraggioso, volenteroso, molto tenace arriva sempre dove vuole, non cede mai,
+			ed è meglio non prenderlo di petto. Una natura nobile, indipendente e sensibile, non ama i cambiamenti, ha la testa sulle spalle e i
+			piedi per terra, una persona d'azione. La dote migliore che può usare è la saldezza e perseveranza. Ospitale e amichevole, e fedele
+			nell'amicizia rispetta sempre la libertà degli altri, poiché egli stesso non riesce a sopportare costrizioni di nessun tipo. La sua
+			intelligenza è concreta, pratica e lucida, molto indipendente, non sopporta né limiti né ostacoli. Apprezza condividere con gli altri
+			gli svaghi e obblighi dato che è fedele alla parola data. Adora concedersi agli agi e agli ozi della buona compagnia e sa condividere
+			gli obblighi e i doveri che l'esistenza impone. In amore passa con molta disinvoltura da un colpo di fulmine all'altro ma se c'è una
+			tempesta un ciclone e una bufera sopravvive comunque. Con il matrimonio e l'età mette la testa a partito in fondo ha solide e profonde
+			radici ed è piuttosto conservatore.
+		</p>
+
+		<h2>BETULLA: <span class="sSmaller sSmallCaps">Sobria e Creativa</span></h2>
+		<h3>21 giugno</b> - <b>Solstizio d'estate</b></h3>
+		<p>
+			<img src="B19BetullaA.jpg" width="140" height="163" alt="Betulla" class="sFloatR">
+			L'inizio dell'estate segna inevitabilmente il nato <b>Betulla</b>, il quale mostra un'istintività molto creativa e aperto
+			agli influssi del mondo esterno. Attraente ed elegante, amichevole, senza pretese, modesto, non ama gli eccessi, ama la vita nella
+			natura e nella pace, è poco ambizioso, ma sa creare attorno a se un'atmosfera di calma e di serenità. Sobrio e un po' puritano, fine
+			di razza, distinto e superiore. La sua compagnia è molto ricercata, ma non approfitta mai delle situazioni si adatta a qualsiasi
+			condizione di vita. La sua intelligenza è eccezionale e non pone limiti alla immaginazione e all'inventiva, sintetico e originale,
+			potrebbe realizzare grandi cose. La sua creatività, lo spirito di sintesi, la sua fantasia in aggiunta alla potenza del suo lavoro
+			potrebbe aprirgli ogni porta. Detesta la volgarità e la confusione, le compagnie troppo chiassose, ma a dispetto della apparenza
+			fragile è un grande lavoratore, poco socievole, non ama il lavoro di gruppo. Riesce ad affascinare per la sua naturale eleganza,
+			sembra che non abbia molta ambizione, è perché preferisce restare lontano da tutto quello che possa indurre all'agitazione. La
+			<b>Betulla</b> incarna l'equilibrio, ama la vita calma e a contatto con la natura. Se ha possibilità d'incontrare il grande
+			equilibrio di un <b>Olmo</b>, avrà un amore stupefacente per sensibilità e sincerità. Non è un amante appassionato,
+			la sensualità è misurata, fedele, può rendere felice il coniuge.
+		</p>
+
+		<h2>OLIVO: <span class="sSmaller sSmallCaps">Goffo e Pacifico</span></h2>
+		<h3><b>23 settembre</b> - <b>Equinozio d'autunno</b></h3>
+		<p>
+			<img src="B20OlivoA.jpg" width="140" height="163" alt="Olivo" class="sFloatL">
+			L'<b>Olivo</b> rappresenta il simbolo del fuoco che brucia e purifica mentre da vita ed energia con il suo calore. È saggio,
+			severo e pacifico, detesta complicarsi l'esistenza. Intelligente e riflessivo, ama leggere e istruirsi e coltivare i suoi svariati
+			interessi. Vuole vivere secondo il proprio gusto e come gli pare, ma in cambio lascia anche vivere gli altri come preferiscono senza
+			mai intervenire è la discrezione fatta persona, si può perfino credere che sia indifferente. Ama il sole, il calore, è ragionevole
+			ed equilibrato, tollerante e allegro, rifugge l'aggressività e la violenza, ha un senso della giustizia molto sviluppato. È buono e
+			clemente, ma è troppo psicologo e saggio per lasciarsi prendere in giro. Dotato di gran forza l'<b>Olivo</b> deve essere
+			cresciuto con amore altrimenti non può assolvere il suo compito di essere portatore di generosità e dispensatore di pace, altruista
+			nell'intento di mettere la sua forza al servizio degli altri. È un albero benefico l'<b>Olivo</b>, è portatore di felicità
+			e di pace a chiunque l'avvicina, potrà contare su un portamento regale e un'ottima salute causa principale di longevità. Ha sviluppato
+			una sintonia con i segni affini, come l'<b>Olmo</b> e il <b>Cipresso</b>. In amore rispetta la libertà del
+			compagno, anche quando ne soffre, è poco incline alle discussioni sacrifica l'amor proprio al quieto vivere. Non è né debole né
+			rassegnato, guarda la vita con serenità e fiducia.
+		</p>
+
+		<h2>FAGGIO: <span class="sSmaller sSmallCaps">Prospero e Orgoglioso</span></h2>
+		<h3><b>22 dicembre</b> - <b>Solstizio d'inverno</b></h3>
+		<p>
+			<img src="B21FaggioA.jpg" width="140" height="163" alt="Faggio" class="sFloatR">
+			È un albero importante poiché il suo giorno coincide col solstizio invernale. Slanciato e bello è il nobile vegliardo del bosco,
+			ingegnoso e molto ben organizzato, pratico e costante. Accomodante, di buona salute, non da ultimo un po' timido, è molto convinto
+			di se, determinato e impaziente, ama impressionare gli altri, ha molte doti è prende rapidamente le decisioni, ha un sano ottimismo,
+			e aspetta l'unico vero amore. La sua intelligenza è certamente al servizio del suo benessere, industrioso vuole essere ricco e felice.
+			È un amabile conversatore, sempre avvincente e interessante per queste sue qualità il suo lavoro ideale sarà correlato all'arte
+			oratoria. Onesto ed economo, ma non ama condividere con gli altri quello che gli appartiene. Il <b>Faggio</b> è amante
+			dell'eloquenza dato anche da uno stretto legame con le sue capacità di memoria. C'è chi apprezza la compagnia confortante del
+			<b>Faggio</b>, ad esempio come l'<b>Abete</b> e la <b>Betulla</b>. La natura pragmatica può essere
+			malvista dai sognatori <b>Olmo</b> e <b>Salice</b>, che possono spingersi a definire il <b>Faggio</b>
+			come mosso solo da egoismo e insensibilità. In amore non ha molta fantasia, i suoi sentimenti sono sinceri, ma il comportamento è
+			convenzionale. Ottimo compagno e genitore, aspira ad avere dei bambini, una casetta in montagna. In età matura si concederà qualche
+			scappatella extraconiugale senza storia.
+		</p>
+
+		<p class="sCenter">
+			<br><br>
+			<img src="AlberiBD173.gif"   width="457" height="92"  alt="Alberi Banner 1">
+			<img src="AlberiAC370.gif"   width="466" height="115" alt="Alberi Banner 2">
+			<br><br>
+		</p>
+
+		<h2>ABETE - NATI IN GENNAIO</h2>
+		<p>
+			<i>Tendenze psichiche</i>: L'<b>Abete</b> è una delle piante più signorili e raffinate, ama l'isolamento e la maestosità. Ama ogni
+			cosa bella, è sofisticato di gusti straordinari, ha dignità, è lunatico, ostinato, tende all'egoismo ma ha cura di chi gli è vicino, è molto
+			ambizioso, dotato di talento, industrioso, incontentabile in amore, ha molti amici e nemici ma è affidabile. Sincerità e gentilezza
+			caratterizzano l'<b>Abete</b> un vero combattente, spesso tende a nascondere le sue e emozioni dietro ad una corazza. Il suo
+			influsso determina un forte individualismo che permane anche nei soggetti più socievoli e semplici. Dona generosità di animo, fascino
+			discreto, romanticismo. Stimola forti ambizioni e fa desiderare una casa lussuosa e amicizie importanti, attività originali e prestigiose.
 			La carriera è un po' lenta ma sicura. La scelta del partner è basata sull'aspetto fisico.
 		</p>
 
-		<h3>MANDORLO - NATI IN FEBBRAIO</h3>
-		<p class="sSmall sVarden sJustify sPadding40">
-			<i>Tendenze psichiche</i>: Il <strong>Mandorlo</strong> dà forza, longevità ma anche fragilità nervosa. Il suo fiore è il più precoce ed esige
-			un clima caldo. Rivela già nell'adolescenza un forte bisogno di espansione e di affetto, unito ad una estrema sensibilità. Facilità a subire 
-			degli stress a rompere repentinamente i legami. Gli amori più belli si vivranno nella prima giovinezza e decideranno di tutto l'avvenire. 
-			È destinato a un'esistenza dolceamara che alterna in eguale misura gioie e pene. È sempre in attività, non ama stare fermo, tanto da amare 
-			quasi le complicazioni che la vita mette di fronte. Non si vergogna delle proprie emozioni che esprime liberamente. Ha un'indole artistica è 
-			molto spiccata che viene influenzata dalla grande sensibilità che possiede. Il <strong>Mandorlo</strong> è ricco di incanto e di magia, 
+		<h2>MANDORLO - NATI IN FEBBRAIO</h2>
+		<p>
+			<i>Tendenze psichiche</i>: Il <b>Mandorlo</b> dà forza, longevità ma anche fragilità nervosa. Il suo fiore è il più precoce ed esige
+			un clima caldo. Rivela già nell'adolescenza un forte bisogno di espansione e di affetto, unito ad una estrema sensibilità. Facilità a subire
+			degli stress a rompere repentinamente i legami. Gli amori più belli si vivranno nella prima giovinezza e decideranno di tutto l'avvenire.
+			È destinato a un'esistenza dolceamara che alterna in eguale misura gioie e pene. È sempre in attività, non ama stare fermo, tanto da amare
+			quasi le complicazioni che la vita mette di fronte. Non si vergogna delle proprie emozioni che esprime liberamente. Ha un'indole artistica è
+			molto spiccata che viene influenzata dalla grande sensibilità che possiede. Il <b>Mandorlo</b> è ricco di incanto e di magia,
 			è allegro e dà senza nutrire personali aspettative, in pratica è sensibile e altruista.
 		</p>
 
-		<h3>MIMOSA - NATI IN MARZO</h3>
-		<p class="sSmall sVarden sJustify sPadding40">
+		<h2>MIMOSA - NATI IN MARZO</h2>
+		<p>
 			<i>Tendenze psichiche</i>: È una pianta sensitiva la cui foglia si ritrae al minimo urto, dona ai nati una natura molto suscettibile e delicata.
 			È una persona coraggiosa, implacabile e indipendente, nasconde però un animo sensibile. Non ama i cambiamenti e cerca sempre di tenere i piedi
-			ben piantati a terra. Sa di non raggiungere alti traguardi, ma nel suo ristretto ambito riesce a distinguersi e ad imporsi. Legami instabili 
+			ben piantati a terra. Sa di non raggiungere alti traguardi, ma nel suo ristretto ambito riesce a distinguersi e ad imporsi. Legami instabili
 			nella giovinezza a causa di timori o indecisioni. Attrazione e paura verso il sesso: per pudore nasconde i sentimenti, salvo poi lasciarsi
 			travolgere da passioni fatali. La donna nella maternità si rivelerà dolcissima.
 		</p>
 
-		<h3>IPPOCASTANO - NATI IN APRILE</h3>
-		<p class="sSmall sVarden sJustify sPadding40">
-			<i>Tendenze psichiche</i>: Questa bella pianta dal fusto alto diritto e robusto apporta vitalità e fierezza. I fiori sono maschili e femminili 
-			così pure chi nasce sotto la sua protezione. Ispira slanci sinceri, amori sensuali e il desiderio di salire nelle alte sfere della scala 
-			sociale. Ha un carattere complesso: odia litigare, lo stress e il lavoro, ma nel contempo respinge la pigrizia e l'ozio, è soave e sa cedere 
-			ai piaceri, ma contemporaneamente fa sacrifici per gli amici. L'<strong>Ippocastano</strong> favorisce le migliori occasioni in campo pratico
+		<h2>IPPOCASTANO - NATI IN APRILE</h2>
+		<p>
+			<i>Tendenze psichiche</i>: Questa bella pianta dal fusto alto diritto e robusto apporta vitalità e fierezza. I fiori sono maschili e femminili
+			così pure chi nasce sotto la sua protezione. Ispira slanci sinceri, amori sensuali e il desiderio di salire nelle alte sfere della scala
+			sociale. Ha un carattere complesso: odia litigare, lo stress e il lavoro, ma nel contempo respinge la pigrizia e l'ozio, è soave e sa cedere
+			ai piaceri, ma contemporaneamente fa sacrifici per gli amici. L'<b>Ippocastano</b> favorisce le migliori occasioni in campo pratico
 			ed economico. Sa distinguersi in attività che richiedano socievolezza e simpatia. È dotato di molti talenti, ma non ha la tenacia di portarli
 			avanti, si lamenta spesso. In amore è molto geloso, ma leale. Lunghi viaggi ed esperienze sentimentali molto varie.
 		</p>
 
-		<h3>CILIEGIO - NATI IN MAGGIO</h3>
-		<p class="sSmall sVarden sJustify sPadding40">
-			<i>Tendenze psichiche</i>: Il <strong>Ciliegio</strong> sa resistere ai climi più freddi, capace di difendersi dalle asprezze dell'esistenza. 
+		<h2>CILIEGIO - NATI IN MAGGIO</h2>
+		<p>
+			<i>Tendenze psichiche</i>: Il <b>Ciliegio</b> sa resistere ai climi più freddi, capace di difendersi dalle asprezze dell'esistenza.
 			Una pianta elegante, ornamentale dal legno pregiato, simbolo di un carattere fine e affettuoso. Una forza interiore lo sorregge dalle delusioni
-			amorose e lo porta ad uno stato di grande saggezza e serenità. È un albero attraente, intelligente e pieno di talenti vivace, impulsivo, 
-			esigente e ambizioso. Possibilità d'affermazione in campo teatrale, nel cinema e televisione. Ha molta importanza l'amicizia, i ricordi, 
-			le cose del passato. Permaloso non sopporta le critiche. In amore il <strong>Ciliegio</strong> è molto affidabile, prende seriamente ogni sua 
+			amorose e lo porta ad uno stato di grande saggezza e serenità. È un albero attraente, intelligente e pieno di talenti vivace, impulsivo,
+			esigente e ambizioso. Possibilità d'affermazione in campo teatrale, nel cinema e televisione. Ha molta importanza l'amicizia, i ricordi,
+			le cose del passato. Permaloso non sopporta le critiche. In amore il <b>Ciliegio</b> è molto affidabile, prende seriamente ogni sua
 			relazione, è degno di fiducia, fedele e prudente.
 		</p>
 
-		<h3>CASTAGNO - NATI IN GIUGNO</h3>
-		<p class="sSmall sVarden sJustify sPadding40">
-			<i>Tendenze psichiche</i>: Il <strong>Castagno</strong> ha uno sviluppo lento, ma poi è molto longevo. Ha una infanzia difficile ma si 
-			irrobustisce col tempo. La caratteristica di questa pianta è la necessità di molto calore solare per dare frutti, e allo stesso modo, chi 
-			riceve il suo influsso non è facile alle avventure ma ha bisogno di un lungo periodo di confidenza e di affiatamento prima di innamorarsi. 
-			È altruista, gentile, amabile e generoso, tende ad aiutare tutti intorno a lui affinché possano trovare la felicità. Il nato del 
-			<strong>Castagno</strong> ha l'anima del navigatore e del poeta. Non conoscerà mai la miseria poiché sa essere previdente e lungimirante. 
+		<h2>CASTAGNO - NATI IN GIUGNO</h2>
+		<p>
+			<i>Tendenze psichiche</i>: Il <b>Castagno</b> ha uno sviluppo lento, ma poi è molto longevo. Ha una infanzia difficile ma si
+			irrobustisce col tempo. La caratteristica di questa pianta è la necessità di molto calore solare per dare frutti, e allo stesso modo, chi
+			riceve il suo influsso non è facile alle avventure ma ha bisogno di un lungo periodo di confidenza e di affiatamento prima di innamorarsi.
+			È altruista, gentile, amabile e generoso, tende ad aiutare tutti intorno a lui affinché possano trovare la felicità. Il nato del
+			<b>Castagno</b> ha l'anima del navigatore e del poeta. Non conoscerà mai la miseria poiché sa essere previdente e lungimirante.
 			Buona armonia nei rapporti famigliari e la capacità di educare i figli con criteri moderni.
 		</p>
 
-		<h3>TIGLIO - NATI IN LUGLIO</h3>
-		<p class="sSmall sVarden sJustify sPadding40">
-			<i>Tendenze psichiche</i>: È una pianta maestosa ma un po' fragile, il profumato <strong>Tiglio</strong> sintetizza le principali qualità e 
-			difetti; fascino esteriore, un forte erotismo, grande amor proprio e debolezza di carattere. Induce alla pigrizia e all'instabilità, allo 
-			sperpero e all'inganno. Dotato di un'intelligenza razionale, dunque molto pratica, ha in genere un carattere calmo e delicato, incapace di 
-			mentire e di sembrare troppo diplomatico. Riesce sempre a riconquistare tutti con le sue eccezionali doti di simpatia e magnetismo. Sa 
-			penetrare negli ambienti mondani e si mette in luce anche per le sue qualità interiori. Preoccupazione un po' per tutti, sempre alla ricerca 
+		<h2>TIGLIO - NATI IN LUGLIO</h2>
+		<p>
+			<i>Tendenze psichiche</i>: È una pianta maestosa ma un po' fragile, il profumato <b>Tiglio</b> sintetizza le principali qualità e
+			difetti; fascino esteriore, un forte erotismo, grande amor proprio e debolezza di carattere. Induce alla pigrizia e all'instabilità, allo
+			sperpero e all'inganno. Dotato di un'intelligenza razionale, dunque molto pratica, ha in genere un carattere calmo e delicato, incapace di
+			mentire e di sembrare troppo diplomatico. Riesce sempre a riconquistare tutti con le sue eccezionali doti di simpatia e magnetismo. Sa
+			penetrare negli ambienti mondani e si mette in luce anche per le sue qualità interiori. Preoccupazione un po' per tutti, sempre alla ricerca
 			della felicità, è una persona empatica ed emotiva, molto altruista. Fortuna nelle attività creative e improvvisate.
 		</p>
 
-		<h3>MELO - NATI IN AGOSTO</h3>
-		<p class="sSmall sVarden sJustify sPadding40">
-			<i>Tendenze psichiche</i>: Il <strong>Melo</strong> sa infondere un notevole sex-appeal. Simbolo dell'amore e della bellezza. L'amore è la 
-			cosa più importante, si dona senza calcolo ed esige sentimenti altrettanto appassionati. Creativo e portato per il risolvere i problemi, 
-			formidabile consigliere. Con la sua fermezza ottiene risultati eccezionali. Non accetta la vita piatta e monotona, cerca l'insolito e il 
-			romanzesco. Persona eclettica con potenzialità in ambito di studio, lavoro e amore. Alle volte si butta in imprese rischiose, ma sa pagare 
-			di persona. Sembra inaccessibile ma in realtà è solo indipendente, originale e desidera esperienze diverse. La serenità verrà raggiunta 
+		<h2>MELO - NATI IN AGOSTO</h2>
+		<p>
+			<i>Tendenze psichiche</i>: Il <b>Melo</b> sa infondere un notevole sex-appeal. Simbolo dell'amore e della bellezza. L'amore è la
+			cosa più importante, si dona senza calcolo ed esige sentimenti altrettanto appassionati. Creativo e portato per il risolvere i problemi,
+			formidabile consigliere. Con la sua fermezza ottiene risultati eccezionali. Non accetta la vita piatta e monotona, cerca l'insolito e il
+			romanzesco. Persona eclettica con potenzialità in ambito di studio, lavoro e amore. Alle volte si butta in imprese rischiose, ma sa pagare
+			di persona. Sembra inaccessibile ma in realtà è solo indipendente, originale e desidera esperienze diverse. La serenità verrà raggiunta
 			vivendo a contatto della natura. Alti e bassi economici, unioni precoci e fughe romantiche.
 		</p>
 
-		<h3>FICO - NATI IN SETTEMBRE</h3>
-		<p class="sSmall sVarden sJustify sPadding40">
-			<i>Tendenze psichiche</i>: Per il suo fusto breve e i rami tortuosi, il <strong>Fico</strong> non attira l'attenzione; ma i suoi frutti sono 
+		<h2>FICO - NATI IN SETTEMBRE</h2>
+		<p>
+			<i>Tendenze psichiche</i>: Per il suo fusto breve e i rami tortuosi, il <b>Fico</b> non attira l'attenzione; ma i suoi frutti sono
 			succosi e dolcissimi. Così il nativo non colpisce di primo acchito ma poi conquista con la forza della sua personalità. Il suo carattere è un
-			po' complicato, segretamente erotico e malizioso, s'innamora più volte e rende difficile la vita al partner. Però sa donare molta tenerezza e, 
-			all'occorrenza, sa sacrificarsi in modo totale. Non sopporta povertà e privazioni ha bisogno di libertà e fantasia. Un po' insicuro e 
-			bisognoso del supporto altrui è molto emotivo. Ha una esistenza abbastanza accidentata che alterna splendore e difficoltà. Attenzione a non 
+			po' complicato, segretamente erotico e malizioso, s'innamora più volte e rende difficile la vita al partner. Però sa donare molta tenerezza e,
+			all'occorrenza, sa sacrificarsi in modo totale. Non sopporta povertà e privazioni ha bisogno di libertà e fantasia. Un po' insicuro e
+			bisognoso del supporto altrui è molto emotivo. Ha una esistenza abbastanza accidentata che alterna splendore e difficoltà. Attenzione a non
 			lasciarsi andare alla pigrizia o allo scoraggiamento. Persona creativa e innovativa, sempre alla ricerca delle novità.
 		</p>
 
-		<h3>ULIVO - NATI IN OTTOBRE</h3>
-		<p class="sSmall sVarden sJustify sPadding40">
-			<i>Tendenze psichiche</i>: Pianta sempreverde, scultorea e robusta, che cerca tranquillità e un clima mite. Il nato è di costituzione forte 
+		<h2>ULIVO - NATI IN OTTOBRE</h2>
+		<p>
+			<i>Tendenze psichiche</i>: Pianta sempreverde, scultorea e robusta, che cerca tranquillità e un clima mite. Il nato è di costituzione forte
 			ma soggetto a piccole crisi psicofisiche. C'è in lui una segreta smania di perfezione che lo porta verso traguardi invidiabili. Sa amare con
-			dedizione ma chiede fedeltà a ssoluta. Persona di successo generosa, ma determinata, decisa e introspettiva, pronta ad aiutare a risolvere i 
-			problemi a chi lo circonda. È tollerante e calmo, e ha un senso ben sviluppato della giustizia. Essendo molto suscettibile ha bisogno di un 
-			partner che sia docile e comprensivo. Sensibile in amore non conosce gelosie estreme. Matrimonio riuscito ma non facile il rapporto con i 
+			dedizione ma chiede fedeltà a ssoluta. Persona di successo generosa, ma determinata, decisa e introspettiva, pronta ad aiutare a risolvere i
+			problemi a chi lo circonda. È tollerante e calmo, e ha un senso ben sviluppato della giustizia. Essendo molto suscettibile ha bisogno di un
+			partner che sia docile e comprensivo. Sensibile in amore non conosce gelosie estreme. Matrimonio riuscito ma non facile il rapporto con i
 			figli. Troverà la stabilità solamente dopo la seconda giovinezza.
 		</p>
 
-		<h3>FAGGIO - NATI IN NOVEMBRE</h3>
-		<p class="sSmall sVarden sJustify sPadding40">
-			<i>Tendenze psichiche</i>: È l'albero più bello e suggestivo del bosco. L'influsso dona una eleganza innata, attrazione erotica e un'arte 
-			consumata nei giochi amorosi. Il nato sa godere delle piccole cose d'ogni giorno e creare rapporti stabili nell'amicizia e negli affetti 
-			famigliari. È un ottimo affarista, riesce ad accumulare quattrini e ad assicurarsi un avvenire tranquillo. La prima metà della vita è 
-			movimentata e divertente. In seguito sa circondarsi di comfort e amici sinceri. È radicato nelle sue convinzioni, conservatore, 
-			tradizionalista, legato al passato ma non tecnologico. Sa organizzare la sua vita al meglio, non corre mai rischi non necessari, è un 
+		<h2>FAGGIO - NATI IN NOVEMBRE</h2>
+		<p>
+			<i>Tendenze psichiche</i>: È l'albero più bello e suggestivo del bosco. L'influsso dona una eleganza innata, attrazione erotica e un'arte
+			consumata nei giochi amorosi. Il nato sa godere delle piccole cose d'ogni giorno e creare rapporti stabili nell'amicizia e negli affetti
+			famigliari. È un ottimo affarista, riesce ad accumulare quattrini e ad assicurarsi un avvenire tranquillo. La prima metà della vita è
+			movimentata e divertente. In seguito sa circondarsi di comfort e amici sinceri. È radicato nelle sue convinzioni, conservatore,
+			tradizionalista, legato al passato ma non tecnologico. Sa organizzare la sua vita al meglio, non corre mai rischi non necessari, è un
 			leader e splendido compagno di vita.
 		</p>
 
-		<h3>NOCE - NATI IN DICEMBRE</h3>
-		<p class="sSmall sVarden sJustify sPadding40">
-			<i>Tendenze psichiche</i>: Il <strong>Noce</strong> è una pianta alta dalla scorza dura e dal legno pregiato, un frutto saporito chiuso nel 
-			suo guscio coriaceo. Il carattere è aperto energico e attivo, a prima vista sembra aperto ma in realtà è quasi impenetrabile. Volontà di 
-			imporre ad ogni costo le proprie idee e decisioni. Quando si innamora sa abbandonarsi con sincerità e slancio. Ha molti flirt ma un unico 
+		<h2>NOCE - NATI IN DICEMBRE</h2>
+		<p>
+			<i>Tendenze psichiche</i>: Il <b>Noce</b> è una pianta alta dalla scorza dura e dal legno pregiato, un frutto saporito chiuso nel
+			suo guscio coriaceo. Il carattere è aperto energico e attivo, a prima vista sembra aperto ma in realtà è quasi impenetrabile. Volontà di
+			imporre ad ogni costo le proprie idee e decisioni. Quando si innamora sa abbandonarsi con sincerità e slancio. Ha molti flirt ma un unico
 			grande amore, è possessivo ed esclusivo, impavido e coraggioso, fronteggia le difficoltà e i problemi senza battere ciglio. È un amante fedele
 			e passionale, quando riesce ad avere un'intesa totale col partner questa deve basarsi sulla reciproca comprensione. Ha un grande rispetto per
 			le unioni, per la famiglia in genere che ritiene una fonte di protezione.
 		</p>
 
-		<p align="center">
-			<br>
-			<img src="AlberiBD173.gif" width="457" height="92">&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="AlberiBD173.gif" width="457" height="92">
-		</p>
-		<p align="center" class="sHalfColonialWhite sSmall">
-			<strong>Olmo</strong>&nbsp;&nbsp;&nbsp;
-			<img src="CWOlmo.jpg"       width="82"  height="96" >&nbsp;&nbsp;&nbsp;
-			<img src="LauraAB2016..jpg" width="148" height="238">&nbsp;&nbsp;&nbsp;
-			<img src="CWAbete.jpg"      width="68"  height="100">&nbsp;&nbsp;&nbsp;
-			<strong>Abete</strong><br><br>
-			<strong>Laura 22 gennaio</strong>
+		<p class="sCenter">
+			<br><br>
+			<img src="AlberiBD173.gif" width="457" height="92" alt="">&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="AlberiBD173.gif" width="457" height="92" alt="">
+			<br><br>
 		</p>
 
-		<p class="sCenter sHalfColonialWhite sSmall">
-			<img src="email-box.gif"    width="35" height="35">
-			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold sBlack">studio.acquario@libero.it</a><br><br>
-			<img src="TelefonoC164.gif" width="35" height="35">&nbsp;
-			oppure Telefona: <strong>0125 631175 - Cell. 347 0417409<br><br>
-		
-			Sei il Visitatore N°&nbsp;</strong>
-		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220365762-d7ng91df" border=0></a> 
-			&nbsp;(Contenuto Aggiornato 09/04/2020)
-		</p>
 		<p class="sCenter">
-			<img src="CWlignepetite.gif"   width="108" height="22">
-			<img src="CWlignepetite.gif"   width="108" height="22">
-			<img src="CWlignepetite.gif"   width="108" height="22">
-			<img src="CWlignepetite.gif"   width="108" height="22">&nbsp;&nbsp;
-			<img src="CWfeuillegauche.gif" width="49"  height="26">
-			<img src="CWcoeurexplode.gif"  width="43"  height="35">
-			<img src="CWfeuilledroite.gif" width="49"  height="26">&nbsp;&nbsp;
-			<img src="CWlignepetite.gif"   width="108" height="22">
-			<img src="CWlignepetite.gif"   width="108" height="22">
-			<img src="CWlignepetite.gif"   width="108" height="22">
-			<img src="CWlignepetite.gif"   width="108" height="22">
+			<b>Olmo</b>&nbsp;&nbsp;&nbsp;
+			<img src="CWOlmo.jpg"          width="82"  height="96"  alt="Olmo">&nbsp;&nbsp;&nbsp;
+			<img src="photo/Laura2020.jpg" width="250" height="277" alt="Laura Lencia - 2020">&nbsp;&nbsp;&nbsp;
+			<img src="CWAbete.jpg"         width="68"  height="100" alt="Abete">&nbsp;&nbsp;&nbsp;
+			<b>Abete</b><br><br>
+			<b>Laura 22 gennaio</b>
 		</p>
-				</td></tr></table>
-			</td></tr></table>
-		</td></tr></table>
-	</td></tr></table>
+
+		<p class="sCenter">
+			<img src="email-box.gif"    width="35" height="35" alt="">
+			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
+			<img src="TelefonoC164.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+
+			<b>Sei il visitatore n°&nbsp;</b>
+		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220365762-d7ng91df" border=0></a>
+			&nbsp;(Contenuto Aggiornato <time datetime="2020-04-09">09/04/2020</time>)<br><br>
+		</p>
+
 </td></tr></table>
-<p class="sCenter sXXSmall sWhite">
-	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati. 
-	Senza il consenso dell&#39;autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
-</p>
+</td></tr></table>
+</td></tr></table>
+<footer>
+	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
+	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
+</footer>
 </body>
 </html>
