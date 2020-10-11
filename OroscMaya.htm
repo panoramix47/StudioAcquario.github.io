@@ -1,107 +1,122 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" dir="ltr">
 <head>
 <meta charset="UTF-8">
-<title>Oroscopo Maya</title>
+<title>Oroscopo Maya - Studio Acquario</title>
 <link rel="icon" type="image/gif" href="favicon32.gif">
 <meta name="description" content="Studio Acquario: Oroscopo Maya">
-<meta name="keywords" content="astrologia, oroscopo, maya">
+<meta name="keywords" lang="it" content="astrologia, studio acquario, oroscopo, maya">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
 <meta name="language" content="it">
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="30/11/2018">
-<meta name="revised" content="29/07/2020">
+<meta name="revised" content="11/10/2020">
 
 <style type="text/css">
 BODY {
-	SCROLLBAR-FACE-COLOR: #b8b4d9; 
-	SCROLLBAR-HIGHLIGHT-COLOR: #e5e2fd; 
-	SCROLLBAR-SHADOW-COLOR: #e5e2fd; 
-	SCROLLBAR-ARROW-COLOR: #e5e2fd; 
-	SCROLLBAR-TRACK-COLOR: #b8b4d9; 
-	SCROLLBAR-BASE-COLOR: #b8b4d9; 
-	scrollbar-3d-light-color: #B8B4D9; 
+	SCROLLBAR-FACE-COLOR: #b8b4d9;
+	SCROLLBAR-HIGHLIGHT-COLOR: #e5e2fd;
+	SCROLLBAR-SHADOW-COLOR: #e5e2fd;
+	SCROLLBAR-ARROW-COLOR: #e5e2fd;
+	SCROLLBAR-TRACK-COLOR: #C6C3E1; /* Lavender Grey ... più chiaro */
+	SCROLLBAR-BASE-COLOR: #B8B4D9; /* Lavender Grey */
+	scrollbar-3d-light-color: #B8B4D9;
 	scrollbar-dark-shadow-color: #E5E2FD;
 
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 	color: #443F6B; /* Corn Flower Blue */
-	background-image: url("AHc01.jpeg");
+	background-image: url('AHc01.jpeg');
 	background-color: #BEBADB; /* Lavender Grey */
+}
+a:link {
+	color: #5A5582; /* Victoria */
+}
+a:visited {
+	color: #5A5582;
+}
+a:hover {
+	color: #FF0000;
+}
+a:active {
+	color: #5A5582;
 }
 h1 {
 	font-size: xx-large;
 	font-weight: bold;
 	color: #1A2B0A; /* Pine Tree */
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 h2 {
+	clear: both; /* clear float */
 	font-size: medium;
 	font-weight: bold;
 	color: #1A2B0A; /* Pine Tree */
 	text-align: center;
-	margin-top: 1.25em;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-top: 1.25em; /* 30px; */
 }
 h3 {
 	font-size: medium;
-	font-weight: normal;
+	font-weight: bold;
 	color: #1A2B0A; /* Pine Tree */
 	text-align: center;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-top: 0px;
 }
-.sLogoBanner {
+header {
 	font-size: xx-large;
 	font-weight: bold;
 	color: #FFFFFF; /* White */
 	text-shadow: 1px 1px 5px #0000FF; /* Blue */
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
 }
-.sBorder0-BGPersianIndigo {
-				border-color: #330066;
-				border-width: 0;
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	text-shadow: 1px 1px 1px #0000FF; /* Blue #1A2B0A;*/
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
+}
+p {
+	font-size: small;
+	color: #000000; /* Black */
+	text-align: justify;
+	padding-left: 35px;
+	padding-right: 35px;
+	line-height: 125%;
+}
+img {
+	max-width: 100%;
+	height: auto;
 }
 .sBorder1s-PersianIndigo {
 				border: 1px solid #330066;
 }
-.sBorderS {
-				border-style: solid;
+.sBlue {
+				color: #0000FF;
 }
-.sBorder1s-DeepKoamaru {
-				border: 1px solid #333366;
-}
-.sTxtDecNo {
-				text-decoration: none;
-}
-.sBlack {
-				color: #000000;
-}
-.sWhite {
-				color: #FFFFFF;
-}
-.sShadowCR {
-				text-shadow: 1px 1px 5px #1A2B0A;
+.sRed {
+				color: #FF0000;
 }
 .sCenter {
 				text-align: center;
 }
 .sBold {
 				font-weight: bold;
-}
-.sJustify {
-				text-align: justify;
-}
-.sPadding {
-				padding-left: 40px;
-				padding-right: 40px;
-}
-.sXXSmall {
-				font-size: xx-small;
-}
-.sXSmall {
-				font-size: x-small;
-}
-.sSmall {
-				font-size: small;
 }
 .sMedium {
 				font-size: medium;
@@ -128,441 +143,438 @@ h3 {
 </style>
 </head>
 
-<body vlink="#5a5582" alink="#5a5582" link="#474078">
-<p class="sLogoBanner">Studio di Astrologia "Acquario"</p>
+<body>
+<header>Studio di Astrologia &quot;Acquario&quot;</header>
 
-<table background="AHstrip02.jpg" cellspacing="5" cellpadding="5" bgcolor="#9086bd" bordercolor="#111111" width="95%" class="sBorder1s-PersianIndigo" border="0" align="center">
-  <TBODY><tr><td class="sBorderS">
+<table background="AHstrip02.jpg" bgcolor="#9086bd" cellspacing="10" cellpadding="8" class="sBorder1s-PersianIndigo" border="0" bordercolor="#111111" width="95%" align="center">
+<TBODY><tr><td background="AHstrip01.jpg">
 
-<table background="AHstrip01.jpg" cellspacing="4" cellpadding="4" bgcolor="#e4e1ea" bordercolor="#111111" width="100%" class="sBorder1s-DeepKoamaru" border="0">
-  <TBODY><tr><td>
+<table background="AHstrip02.jpg" bgcolor="#9086bd" cellspacing="10" cellpadding="6" border="0" bordercolor="#111111" width="100%">
+<TBODY><tr><td background="AHstrip01.jpg">
 
-<table background="AHstrip02.jpg" cellspacing="8" cellpadding="8" bgcolor="#9086bd" bordercolor="#111111" width="100%" border="0">
-  <TBODY><tr><td>
-
-<table background="AHstrip01.jpg" cellspacing="3" cellpadding="3" bgcolor="#e4e1ea" bordercolor="#111111" width="100%" class="sBorder0-BGPersianIndigo" border="0">
-  <TBODY><tr><td>
-
-<table background="AHtile.jpg" cellspacing="0" cellpadding="0" bgcolor="#9086bd" bordercolor="#111111" width="100%" border="0">
-  <TBODY><tr><td>
+<table background="AHtile.jpg" bgcolor="#9086bd" cellspacing="0" cellpadding="0" border="0" bordercolor="#111111" width="100%">
+<TBODY><tr><td>
 
 		<h1>OROSCOPO MAYA</h1>
 
 		<p class="sCenter">
-			<img src="AHbar2.gif" width="366" height="50" border="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="AHdeco.gif" width="123" height="73" border="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="AHbar2.gif" width="366" height="50" border="0"><br>
+			<img src="AHbar2.gif" width="366" height="50" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="AHdeco.gif" width="123" height="73" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="AHbar2.gif" width="366" height="50" alt=""><br>
 		</p>
 
 		<h2>SCIMMIA</h2>
 		<h3>11 gennaio - 7 febbraio: Indipendenza e allegria</h3>
-		<p class="sSmall sBlack sJustify sPadding">
-			<img src="AH.1Scimmia.jpg" width="148" height="111" class="sFloatL">
-			È molto socievole e disinvolto sa anche essere romantico ma spesso pecca di superficialità in campo affettivo. Anche se a volte può sembrare 
-			un po' irruente, è molto coraggioso ed è spesso motivato da ottimi e onorevoli propositi: è il paladino dell'allegria. Adattabilità e senso 
-			dell'umorismo sono le due principali caratteristiche della <strong>SCIMMIA</strong>. In ogni situazione sa districarsi ed emergere con 
-			successo, e se proprio non c'è via d'uscita è sempre pronto ad affrontare la situazione con ironia. Ma perde facilmente interesse e non 
+		<p>
+			<img src="AH.1Scimmia.jpg" width="148" height="111" alt="Scimmia" class="sFloatL">
+			È molto socievole e disinvolto sa anche essere romantico ma spesso pecca di superficialità in campo affettivo. Anche se a volte può sembrare
+			un po' irruente, è molto coraggioso ed è spesso motivato da ottimi e onorevoli propositi: è il paladino dell'allegria. Adattabilità e senso
+			dell'umorismo sono le due principali caratteristiche della <b>SCIMMIA</b>. In ogni situazione sa districarsi ed emergere con
+			successo, e se proprio non c'è via d'uscita è sempre pronto ad affrontare la situazione con ironia. Ma perde facilmente interesse e non
 			utilizza pienamente le buone qualità di cui è dotato. È un eccellente pubblicitario, venditore, programmatore informatico. È forte nel corpo
-			e nello spirito, ha una mente aperta ed è tendenzialmente libero e indipendente, soprattutto nel lavoro. La sua energia, la forza e la 
-			resistenza fisica sono una sicurezza, ma se non è contenuta può portare a grossi danni che spesso si ripercuotono proprio su se stesso. Per 
-			la sua natura avventurosa e curiosa ama molto viaggiare e conoscere persone e situazioni nuove. A volte è fin troppo irrequieto ama essere 
-			indipendente sin da giovane, e il suo concetto di libertà deve trovare sfogo altrimenti diventa irascibile con le persone che lo circondano. 
-			Sa farsi voler bene ed è sempre alla ricerca di nuove avventure, scoprire nuovi luoghi, viaggiare e conoscere nuova gente. Per la stranezza 
-			e il modo di comportarsi può apparire non adatto per lavori seri, ma è un errore perché è dotato di grandi capacità di concentrazione e di 
-			idee innovative. La fantasia deve essere il traino delle sue molte qualità, anche se deve frenare il suo nervosismo che rischierebbe di 
+			e nello spirito, ha una mente aperta ed è tendenzialmente libero e indipendente, soprattutto nel lavoro. La sua energia, la forza e la
+			resistenza fisica sono una sicurezza, ma se non è contenuta può portare a grossi danni che spesso si ripercuotono proprio su se stesso. Per
+			la sua natura avventurosa e curiosa ama molto viaggiare e conoscere persone e situazioni nuove. A volte è fin troppo irrequieto ama essere
+			indipendente sin da giovane, e il suo concetto di libertà deve trovare sfogo altrimenti diventa irascibile con le persone che lo circondano.
+			Sa farsi voler bene ed è sempre alla ricerca di nuove avventure, scoprire nuovi luoghi, viaggiare e conoscere nuova gente. Per la stranezza
+			e il modo di comportarsi può apparire non adatto per lavori seri, ma è un errore perché è dotato di grandi capacità di concentrazione e di
+			idee innovative. La fantasia deve essere il traino delle sue molte qualità, anche se deve frenare il suo nervosismo che rischierebbe di
 			offuscarle. Anche nell'amore è un grande seduttore, anche se in alcuni momenti particolari, un po' di serietà non guasterebbe. Il suo ambito
 			lavorativo ideale è nel campo della comunicazione o dello spettacolo.<br>
-			La <strong>donna</strong> è divertente e simpatica, riesce ad attrarre l'attenzione di tutti anche senza volerlo. È molto indipendente e la sua
-			libertà la difende con le unghie e con i denti. È romantica e superficiale e questo è il suo maggiore problema. Ama flirtare con chiunque per
-			mettere alla prova il suo fascino, tiene all'aspetto fisico e sa essere molto seducente. Sembra che sia nata per fare l'attrice, riesce sempre
-			a catturare l'attenzione di tutti quelli che la circondano. Vede la vita come facile e vivrà attimi di intensa magia. Anche quando arrivano i
-			brutti momenti, saprà allietarli ridendo dei suoi problemi. Nell'arredamento della casa è creativa e s'ingegna per avere una splendida casa.
-			Tutto ciò che chiede per essere felice è di sentirsi carina e un divertimento costante. S'innamora con grande facilità, ma, con altrettanta
-			facilità si disinnamora.<br>
-			L'<strong>uomo</strong> è molto indipendente e ama la sua libertà più d'ogni altra cosa. Intraprendente e molto ambizioso, s'imbarca spesso 
-			in imprese ardue sfidando tutte le possibilità e contraddicendo le previsioni negative. Ama affrontare grandi imprese e rifugge la mediocrità. 
-			Ha una grande vivacità che trascina tutti gli altri. È carino e piuttosto donnaiolo, sa dire sempre ciò che una donna vuole ascoltare ma la 
-			stessa cosa la dice a tutte le altre. Non sopporta la monotonia e la routine e ha quindi bisogno di un lavoro che dia sempre stimoli nuovi. 
-			È poco portato per rapporti esclusivi perché, innanzitutto, è innamorato in primis della sua indipendenza e poi del resto. Dotato di una grande
-			energia, è sempre proiettato verso il futuro e lungimirante. Curioso e irrequieto, è capace di cambiare spesso professione, dedicandosi anche 
-			ad attività del tutto antitetiche. Ha una grande forza d'animo, è molto geloso della propria indipendenza, ma ha anche di solito un favoloso
-			senso dell'umorismo. Riuscirebbero a scherzare su qualunque cosa. Ama l'avventura e i viaggi, praticamente vive sempre con lo zaino pronto.
+			La <span class="sRed sBold">donna</span> è divertente e simpatica, riesce ad attrarre l'attenzione di tutti anche senza volerlo. È molto
+			indipendente e la sua libertà la difende con le unghie e con i denti. È romantica e superficiale e questo è il suo maggiore problema. Ama
+			flirtare con chiunque per mettere alla prova il suo fascino, tiene all'aspetto fisico e sa essere molto seducente. Sembra che sia nata per
+			fare l'attrice, riesce sempre a catturare l'attenzione di tutti quelli che la circondano. Vede la vita come facile e vivrà attimi di intensa
+			magia. Anche quando arrivano i brutti momenti, saprà allietarli ridendo dei suoi problemi. Nell'arredamento della casa è creativa e s'ingegna
+			per avere una splendida casa. Tutto ciò che chiede per essere felice è di sentirsi carina e un divertimento costante. S'innamora con grande
+			facilità, ma, con altrettanta facilità si disinnamora.<br>
+			L'<span class="sBlue sBold">uomo</span> è molto indipendente e ama la sua libertà più d'ogni altra cosa. Intraprendente e molto ambizioso,
+			s'imbarca spesso in imprese ardue sfidando tutte le possibilità e contraddicendo le previsioni negative. Ama affrontare grandi imprese e
+			rifugge la mediocrità. Ha una grande vivacità che trascina tutti gli altri. È carino e piuttosto donnaiolo, sa dire sempre ciò che una donna
+			vuole ascoltare ma la stessa cosa la dice a tutte le altre. Non sopporta la monotonia e la routine e ha quindi bisogno di un lavoro che dia
+			sempre stimoli nuovi. È poco portato per rapporti esclusivi perché, innanzitutto, è innamorato in primis della sua indipendenza e poi del resto.
+			Dotato di una grande energia, è sempre proiettato verso il futuro e lungimirante. Curioso e irrequieto, è capace di cambiare spesso professione,
+			dedicandosi anche ad attività del tutto antitetiche. Ha una grande forza d'animo, è molto geloso della propria indipendenza, ma ha anche di
+			solito un favoloso senso dell'umorismo. Riuscirebbero a scherzare su qualunque cosa. Ama l'avventura e i viaggi, praticamente vive sempre con
+			lo zaino pronto.
 		</p>
 
 		<h2>FALCO</h2>
 		<h3>8 febbraio - 8 marzo: Energia e ambizione</h3>
-		<p class="sSmall sBlack sJustify sPadding">
-			<img src="AH.2Falco%20.jpg" width="144" height="120" class="sFloatR">
-			Il <strong>FALCO</strong> è dotato di uno spirito tenace e vuole raggiungere gli obiettivi a tutti i costi. Il suo carattere è molto forte e 
-			con grande ambizione, infatti può ritenersi fortunato, perché non solo godrà di una sorte eccezionale per tutta la vita, ma perché tale 
-			influsso ricadrà positivamente su tutti i suoi parenti. Forte e ambizioso, dotato di senso del dovere e molto responsabile. Ambizioso quindi 
-			e volitivo può assumere posti di comando, fare il leader per il bene di tutti. Pur avendo un senso del dovere molto forte, detesta ricevere 
+		<p>
+			<img src="AH.2Falco%20.jpg" width="144" height="120" alt="Falco" class="sFloatR">
+			Il <b>FALCO</b> è dotato di uno spirito tenace e vuole raggiungere gli obiettivi a tutti i costi. Il suo carattere è molto forte e
+			con grande ambizione, infatti può ritenersi fortunato, perché non solo godrà di una sorte eccezionale per tutta la vita, ma perché tale
+			influsso ricadrà positivamente su tutti i suoi parenti. Forte e ambizioso, dotato di senso del dovere e molto responsabile. Ambizioso quindi
+			e volitivo può assumere posti di comando, fare il leader per il bene di tutti. Pur avendo un senso del dovere molto forte, detesta ricevere
 			ordini e tende alla massima indipendenza, che può sfociare in aperta ribellione. Dotato di una mente pronta e brillante, apprende con facilità
 			aiutato da una memoria fotografica. L'ambizione e l'attitudine al comando fa sì che prediliga una attività che consenta di dominare sugli altri,
 			si prende cura di quanti lo circondano. Chi conosce questo segno sa che è una persona molto intelligente e che punta più che su un approccio
-			fisco su uno mentale. Il senso di responsabilità e di dovere è un po' messo a confronto, ma prima di preoccuparsi di sé si preoccupa degli 
+			fisco su uno mentale. Il senso di responsabilità e di dovere è un po' messo a confronto, ma prima di preoccuparsi di sé si preoccupa degli
 			altri, odia ricevere ordini ed è nato per comandare. Ama molto i divertimenti e soprattutto godere delle cose costose e quindi chi lo corteggia
-			deve rendersi conto che dovrà buttare via denaro se vuole conquistarlo. Possiede gusti complessi in amore e se volete colpirlo dovete essere 
+			deve rendersi conto che dovrà buttare via denaro se vuole conquistarlo. Possiede gusti complessi in amore e se volete colpirlo dovete essere
 			per lui/lei attraenti sotto il profilo intellettuale. Decisione, forza fisica e rettitudine morale sono i suoi tratti dominanti.<br>
-			La <strong>donna</strong> non ha un carattere facile ed è molto esigente: le persone del suo entourage devono avere qualche cosa di speciale. 
-			Ama tutto ciò che è bello, raffinato e costoso. Per attirare la sua attenzione bisogna essere intellettualmente stimolanti e sempre disposti 
-			ad assecondare le sue curiosità. È piuttosto complicata, esigente e pretende di avere al fianco persone uniche come lei. Per guadagnare la sua 
-			ammirazione, occorre avere una serie importante di requisiti, come coltivare diversi interessi intellettuali, amare i viaggi e ad avere 
-			un'ampia informazione dell'attualità. Ha una attitudine particolare per l'arte e benché non ha doti di artista, è in grado di lasciare gli 
-			altri stupefatti cimentandosi nella pittura o nella musica con innata abilità e chi la vuole conquistare basta che l'inviti alla migliore 
-			galleria d'arte della città.<br>
-			L'<strong>uomo</strong> per accettare un radicale cambiamento di vita, deve essere convinto che ne valga veramente la pena, poiché cambia 
-			sovente opinione, è difficile sapere che cosa vuole e per sedurlo bisogna essere in grado di sorprenderlo in continuazione. Ama circondarsi di 
-			belle donne, ama l'arte in tutte le sue espressioni, chi vuole conquistarlo non deve possedere un corpo scultoreo, bensì anche una 
-			conversazione interessante, e se non ha niente da dire è meglio che rimanga silenziosa. Gli eccessi dei piaceri carnali possono frenare la sua
-			forza. Malgrado un'apparente mente aperta e moderna nasconde un animo abbastanza maschilista e all'antica. Ambizioso con un senso del dovere
-			fortissimo. È un ottimo studente, va bene a scuola, anche grazie a un'eccellente memoria. Il suo spirito di ribellione a volte può però 
-			metterlo nei guai.
+			La <span class="sRed sBold">donna</span> non ha un carattere facile ed è molto esigente: le persone del suo entourage devono avere qualche cosa
+			di speciale. Ama tutto ciò che è bello, raffinato e costoso. Per attirare la sua attenzione bisogna essere intellettualmente stimolanti e sempre
+			disposti ad assecondare le sue curiosità. È piuttosto complicata, esigente e pretende di avere al fianco persone uniche come lei. Per guadagnare
+			la sua ammirazione, occorre avere una serie importante di requisiti, come coltivare diversi interessi intellettuali, amare i viaggi e ad avere
+			un'ampia informazione dell'attualità. Ha una attitudine particolare per l'arte e benché non ha doti di artista, è in grado di lasciare gli altri
+			stupefatti cimentandosi nella pittura o nella musica con innata abilità e chi la vuole conquistare basta che l'inviti alla migliore galleria
+			d'arte della città.<br>
+			L'<span class="sBlue sBold">uomo</span> per accettare un radicale cambiamento di vita, deve essere convinto che ne valga veramente la pena,
+			poiché cambia sovente opinione, è difficile sapere che cosa vuole e per sedurlo bisogna essere in grado di sorprenderlo in continuazione. Ama
+			circondarsi di belle donne, ama l'arte in tutte le sue espressioni, chi vuole conquistarlo non deve possedere un corpo scultoreo, bensì anche
+			una conversazione interessante, e se non ha niente da dire è meglio che rimanga silenziosa. Gli eccessi dei piaceri carnali possono frenare la
+			sua forza. Malgrado un'apparente mente aperta e moderna nasconde un animo abbastanza maschilista e all'antica. Ambizioso con un senso del dovere
+			fortissimo. È un ottimo studente, va bene a scuola, anche grazie a un'eccellente memoria. Il suo spirito di ribellione a volte può però metterlo
+			nei guai.
 		</p>
 
 		<h2>GIAGUARO</h2>
 		<h3>9 marzo - 5 aprile: Determinazione e compassione</h3>
-		<p class="sSmall sBlack sJustify sPadding">
-			<img src="AH.3Giaguaro.jpg" width="155" height="137" class="sFloatL">
-			Le doti del <strong>GIAGUARO</strong> sono il coraggio, l'altruismo e la capacità di offrire un aiuto senza condizioni ai propri cari. Ha le 
-			sue idee, spesso non sono condivisibili, ma le porta sempre fino in fondo senza guardarsi mai indietro. Sa essere un abile imprenditore, 
-			riesce bene nel mondo dello spettacolo, in particolare nel campo della regia, e può avere successo anche nella carriera militare e nello 
+		<p>
+			<img src="AH.3Giaguaro.jpg" width="155" height="137" alt="Giaguaro" class="sFloatL">
+			Le doti del <b>GIAGUARO</b> sono il coraggio, l'altruismo e la capacità di offrire un aiuto senza condizioni ai propri cari. Ha le
+			sue idee, spesso non sono condivisibili, ma le porta sempre fino in fondo senza guardarsi mai indietro. Sa essere un abile imprenditore,
+			riesce bene nel mondo dello spettacolo, in particolare nel campo della regia, e può avere successo anche nella carriera militare e nello
 			sport professionistico. È favorito nei lavori di creatività sociali e di gruppo. A volte capire i suoi pensieri e gli umori può essere molto
-			difficile ma questo aspetto è parte di una personalità particolare e costantemente alla ricerca di novità e di nuove sfide. È difficile che 
-			possa trovarsi in difficoltà economica nella vita perché conosce il valore del denaro. Temerario e indipendente, ma è anche molto generoso 
+			difficile ma questo aspetto è parte di una personalità particolare e costantemente alla ricerca di novità e di nuove sfide. È difficile che
+			possa trovarsi in difficoltà economica nella vita perché conosce il valore del denaro. Temerario e indipendente, ma è anche molto generoso
 			fino al punto di donarsi agli altri senza volere nulla in cambio. Ha una forte capacità di ripresa nelle situazioni di crisi; ma dopo ogni
-			sconfitta riesce sempre a rinascere a vita nuova. È un passionale, con un forte senso della giustizia e si presta ad aiutare i più deboli. 
-			La sua personalità è ribelle e istintiva; amante dell'avventura e dell'attività fisica, è il prototipo del perfetto seduttore. È molto 
+			sconfitta riesce sempre a rinascere a vita nuova. È un passionale, con un forte senso della giustizia e si presta ad aiutare i più deboli.
+			La sua personalità è ribelle e istintiva; amante dell'avventura e dell'attività fisica, è il prototipo del perfetto seduttore. È molto
 			seducente e narcisista e per questo vuole sempre essere lui al centro di tutto.<br>
-			La <strong>donna</strong> ha capacità mimetica e si adatta perfettamente all'ambiente che la circonda. È indipendente e ama sentirsi libera,
-			desidera anche avere al fianco un partner capace di proteggerla e di difenderla, anche se spesso ostenta un atteggiamento aggressivo che 
-			spaventa gli uomini. Cerca senz'altro un uomo che la domini: infatti, quando qualcuno s'avvicina per consolarla ruggisce come un leone ed i 
-			suoi pretendenti fuggono impauriti. È una leonessa selvaggia che adora la propria libertà se messa in gabbia diventa una donna risentita e 
-			frustrata. Cattura l'attenzione altrui con lo sguardo, ha un potere enorme nei suoi occhi: a volte ha uno sguardo innocente, altre volte 
-			lascia intravedere un barlume di tristezza, è provocatorio e lo utilizza come un'arma segreta, per attrarre le sue vittime. Cambia secondo 
-			le situazioni che deve affrontare.<br>
-			L'<strong>uomo</strong> non è facile da conquistare perché è convinto di essere il padrone del mondo. Mette sempre molto impeto e passione 
-			nel lavoro che sceglie, che è di solito piuttosto movimentato. È un grande seduttore con capacità di mettere l'anima in ogni storia che 
-			porta avanti. Il desiderio di libertà lo porta alla fuga dalle proprie responsabilità. Gli piace pensare di essere re dell'universo, per 
-			questo ama conquistare le sue prede. Bisogna quindi ignorarlo per attirare la sua attenzione. Predilige una donna divertente, che sappia 
-			farlo ridere e sorprendere con nuove trovate. Il partner dovrà avere una dose molto alta di creatività, per mantenersi sempre interessato 
-			ed attivo. Bisogna essere telépatico per sapere quello che pensa, e ci sarà sempre una parte della sua personalità a cui non si potrà mai
-			arrivare. Dietro la sua aria feroce, si nasconde un gattino spaventato, ma non l'ammetterai mai.
+			La <span class="sRed sBold">donna</span> ha capacità mimetica e si adatta perfettamente all'ambiente che la circonda. È indipendente e ama
+			sentirsi libera, desidera anche avere al fianco un partner capace di proteggerla e di difenderla, anche se spesso ostenta un atteggiamento
+			aggressivo che spaventa gli uomini. Cerca senz'altro un uomo che la domini: infatti, quando qualcuno s'avvicina per consolarla ruggisce come
+			un leone ed i suoi pretendenti fuggono impauriti. È una leonessa selvaggia che adora la propria libertà se messa in gabbia diventa una donna
+			risentita e frustrata. Cattura l'attenzione altrui con lo sguardo, ha un potere enorme nei suoi occhi: a volte ha uno sguardo innocente, altre
+			volte lascia intravedere un barlume di tristezza, è provocatorio e lo utilizza come un'arma segreta, per attrarre le sue vittime. Cambia
+			secondo le situazioni che deve affrontare.<br>
+			L'<span class="sBlue sBold">uomo</span> non è facile da conquistare perché è convinto di essere il padrone del mondo. Mette sempre molto impeto
+			e passione nel lavoro che sceglie, che è di solito piuttosto movimentato. È un grande seduttore con capacità di mettere l'anima in ogni storia
+			che porta avanti. Il desiderio di libertà lo porta alla fuga dalle proprie responsabilità. Gli piace pensare di essere re dell'universo, per
+			questo ama conquistare le sue prede. Bisogna quindi ignorarlo per attirare la sua attenzione. Predilige una donna divertente, che sappia farlo
+			ridere e sorprendere con nuove trovate. Il partner dovrà avere una dose molto alta di creatività, per mantenersi sempre interessato ed attivo.
+			Bisogna essere telepatico per sapere quello che pensa, e ci sarà sempre una parte della sua personalità a cui non si potrà mai arrivare. Dietro
+			la sua aria feroce, si nasconde un gattino spaventato, ma non l'ammetterai mai.
 		</p>
 
 		<h2>VOLPE</h2>
 		<h3>6 aprile - 3 maggio: Timidezza e altruismo</h3>
-		<p class="sSmall sBlack sJustify sPadding">
-			<img src="AH.4Volpe.jpg" width="191" height="131" class="sFloatR">
-			La <strong>VOLPE</strong> è sveglia, ingegnosa e ricca d'intuito, porta in sé un cuore d'oro, intenzioni oneste come pochi altri e molta 
-			discrezione. Dotato di grande intelligenza, è sempre pronto ad affrontare e superare ogni difficoltà. Ha una naturale timidezza, che sa 
+		<p>
+			<img src="AH.4Volpe.jpg" width="191" height="131" alt="Volpe" class="sFloatR">
+			La <b>VOLPE</b> è sveglia, ingegnosa e ricca d'intuito, porta in sé un cuore d'oro, intenzioni oneste come pochi altri e molta
+			discrezione. Dotato di grande intelligenza, è sempre pronto ad affrontare e superare ogni difficoltà. Ha una naturale timidezza, che sa
 			sempre superare quando si tratta di aiutare qualcuno in difficoltà, questo perché ha una grande capacità di empatia di sentire le sofferenze
-			degli altri come proprie. Spesso è fortunato e amato dalla gente per il suo cuore d'oro. Si mette volentieri a disposizione degli altri, 
+			degli altri come proprie. Spesso è fortunato e amato dalla gente per il suo cuore d'oro. Si mette volentieri a disposizione degli altri,
 			alle volte arrivando a dimenticare le proprie esigenze perché sente profondamente le sofferenze altrui. Molto legato alle convenzioni e alle
-			tradizioni e preferisce uno stile di vita semplice senza eccessive pretese. Potrebbero risultare particolarmente adatto per le attività legali 
-			e le professioni di tipo sociale. Ha una lealtà e un senso di responsabilità che lo fa apprezzare da tutti quelli che lo conoscono. È adatto 
-			per tutti quei lavori dove vi sia una forte necessità di collaborare per raggiungere risultati essendo molto socievole. Spesso confonde 
-			l'amicizia con l'amore e le sue manifestazioni di affetto ed aiuto possono essere mal interpretate da persone che cercano di entrare nelle 
-			sue grazie. Inutile dire che in amore è fedele, affabile e sincero, infatti di rado agisce d'impulso ma lavora nelle sue scelte, anche 
-			sentimentali con la testa. Ama la tranquillità della propria casa, rifugge le luci della ribalta e preferisce il focolare domestico e un 
-			partner serio e affidabile, anche a costo di rischiare di trascorrere una vita un po' monotona. In campo affettivo si concede pochissimi colpi 
-			di testa, si affeziona, si sposa e vive felice e contento di solo amore.<br>  
-			La <strong>donna</strong> è generosa, ma sa anche servirsi della propria astuzia per ottenere ciò che desidera. Il suo maggior pregio è 
-			l'adattabilità a ogni situazione e la mancanza di pretese. Talvolta risulta imprevedibile e il suo comportamento non è sempre coerente o 
-			costante. Raggiunge sempre gli obiettivi che si prefigge, anche se le sue intenzioni sono buone, non sempre i mezzi che adotta sono ortodossi.
+			tradizioni e preferisce uno stile di vita semplice senza eccessive pretese. Potrebbero risultare particolarmente adatto per le attività legali
+			e le professioni di tipo sociale. Ha una lealtà e un senso di responsabilità che lo fa apprezzare da tutti quelli che lo conoscono. È adatto
+			per tutti quei lavori dove vi sia una forte necessità di collaborare per raggiungere risultati essendo molto socievole. Spesso confonde
+			l'amicizia con l'amore e le sue manifestazioni di affetto ed aiuto possono essere mal interpretate da persone che cercano di entrare nelle
+			sue grazie. Inutile dire che in amore è fedele, affabile e sincero, infatti di rado agisce d'impulso ma lavora nelle sue scelte, anche
+			sentimentali con la testa. Ama la tranquillità della propria casa, rifugge le luci della ribalta e preferisce il focolare domestico e un
+			partner serio e affidabile, anche a costo di rischiare di trascorrere una vita un po' monotona. In campo affettivo si concede pochissimi colpi
+			di testa, si affeziona, si sposa e vive felice e contento di solo amore.<br>
+			La <span class="sRed sBold">donna</span> è generosa, ma sa anche servirsi della propria astuzia per ottenere ciò che desidera. Il suo maggior
+			pregio è l'adattabilità a ogni situazione e la mancanza di pretese. Talvolta risulta imprevedibile e il suo comportamento non è sempre coerente
+			o costante. Raggiunge sempre gli obiettivi che si prefigge, anche se le sue intenzioni sono buone, non sempre i mezzi che adotta sono ortodossi.
 			Ama gli ambienti semplici e poco pretenziosi. Alle volte si caccia nei guai da cui poi non sa come uscirne, è loquace e spontanea e questo la
-			porta spesso ad intromettersi in fatti che non la riguardano.<br> 
-			L'<strong>uomo</strong> ha spesso una visione romantica della vita e non sopporta le ingiustizie, specialmente nei confronti dei più deboli. 
-			Può diventare velleitario e porsi dei traguardi senza avere i mezzi necessari per poterli raggiungerli. Si lascia facilmente conquistare da 
-			una donna che dimostra di avere bisogno di lui. In campo sentimentale si concede pochi colpi di testa, si affeziona, si sposa e vive felice e
-			contento di solo amore! Ha una visione romantica della vita, coltiva ideali nobili e i diritti umani. È troppo sognatore e le sue idee non si 
-			combinano con la realtà. La sua filosofia di vita è rubare ai ricchi per dare ai poveri, benché usi mezzi borghesi per raggiungere i suoi 
-			obiettivi. Ama uno stile di vita sobrio e semplice.
+			porta spesso ad intromettersi in fatti che non la riguardano.<br>
+			L'<span class="sBlue sBold">uomo</span> ha spesso una visione romantica della vita e non sopporta le ingiustizie, specialmente nei confronti
+			dei più deboli. Può diventare velleitario e porsi dei traguardi senza avere i mezzi necessari per poterli raggiungerli. Si lascia facilmente
+			conquistare da una donna che dimostra di avere bisogno di lui. In campo sentimentale si concede pochi colpi di testa, si affeziona, si sposa e
+			vive felice e contento di solo amore! Ha una visione romantica della vita, coltiva ideali nobili e i diritti umani. È troppo sognatore e le sue
+			idee non si combinano con la realtà. La sua filosofia di vita è rubare ai ricchi per dare ai poveri, benché usi mezzi borghesi per raggiungere
+			i suoi obiettivi. Ama uno stile di vita sobrio e semplice.
 		</p>
 
 		<h2>SERPENTE</h2>
 		<h3>4 maggio - 31 maggio: Lealtà e caparbietà</h3>
-		<p class="sSmall sBlack sJustify sPadding">
-			<img src="AH.5Serpente.jpg" width="165" height="90" class="sFloatL">
-			Esteta, raffinato e anche un po' snob riesce sempre ad emergere per le sue doti e lo charme. Molto difficile nei gusti, è sovente ricercato 
-			per il suo savoir-faire e il carisma irresistibile. È generoso, dotato di una mente molto aperta e con sensibilità artistica, è naturalmente
-			autorevole. Ambizioso, quando si impone dei traguardi da raggiungere non molla mai, va avanti con estrema serietà e costanza. Può essere un 
-			ottimo insegnante, professore proprio per la sua capacità di essere persona saggia, riflessiva e seria. Sa maneggiare davvero molto bene il 
-			denaro, oltre che il proprio anche l'altrui e quindi tutti i lavori collegati alle banche ed al commercio possono essere l'ideale. 
-			È intelligente e ama vivere bene, ma con ciò la sua etica esemplare è sempre in primo piano. La sua correttezza lo rende molto affidabile sia
-			come amico che come socio d'affari. È perfetto per intraprendere un'iniziativa imprenditoriale, ma soprattutto in un ruolo commerciale o di 
-			rappresentanza, che gli permette di sfoggiare il suo charme e la sua cultura. Ama le cose belle, le comodità, ed è dotato di una naturale 
-			eleganza. Persona generosa, dotata di una mente molto aperta e con sensibilità artistica, ama vivere bene, è naturalmente autorevole e
-			considerato depositario della saggezza cosmica. In amore è molto esigente una volta conquistato un partner o fattosi conquistare vuole 
-			continuamente attenzioni e mette sempre alla prova l'altra metà. Ha la passione dentro davvero a livelli molto alti ed è un ottimo amante, 
-			sotto le lenzuola però odia che in un rapporto a comandare sia il partner e non lui. Il partner dovrà quindi essere all'altezza dei suoi gusti 
-			raffinati: anche la minima traccia di volgarità e ignoranza lo mette subito in fuga.<br>
-			La <strong>donna</strong> sa essere molto raffinata e muoversi nel suo ambiente come una regina. È molto decisa e determinata a realizzarsi 
-			con i propri mezzi, usando l'intelligenza vivace e la sua mente brillante. È molto indipendente, capace di diventare una brava imprenditrice, 
-			in grado di competere con l'uomo e anche superandolo. Preferisce guadagnarsi il posto per le sue capacità e per la sua brillante intelligenza 
-			ma se non l'ottiene con le buone, allora affila le unghie e usa ogni mezzo e guai a chi s'intromette. Non è fatta per lavare piatti e cambiare 
-			pannolini, e se lo fa è perché non le rimane altro da fare. In amore è appassionata, esigente con il suo compagno e impone continue prove
-			affinché gli si dimostri che merita stare al suo fianco. È romantica, dai molteplici amori impossibili, di quelli che non si dimenticano mai.
-			Generalmente vive due vite: da una parte la dolce vita di casa, e dall'altra un amore proibito che magari esiste solo nella sua immaginazione.<br>
-			L'<strong>uomo</strong> è un vincente ed è abilissimo negli affari. Il successo e il denaro sono sempre al primo posto e la donna che gli st
-			a accanto deve accettare questa realtà. Non ammette in amore, che la donna gli possa essere superiore, perciò deve adattarsi ad assumere un 
-			ruolo sottomesso. È adatto a ogni tipo di attività che implichi il movimento di denaro. Ha spesso un vero e proprio talento finanziario e 
-			conosce il linguaggio dei numeri come nessun altro. Comunicatore abile, riesce bene nell'insegnamento e nelle attività legate all'informazione. 
-			A volte può sembrare avaro, ma non è così, sa quanto costa guadagnare ogni centesimo e non è disposto a scialacquare il suo denaro. La sua
-			debolezza è la buona tavola, accompagnata da un ottimo vino nonché dal sesso. La sessualità accentuata talvolta lo rende schiavo delle passioni.
+		<p>
+			<img src="AH.5Serpente.jpg" width="165" height="90" alt="Serpente" class="sFloatL">
+			Esteta, raffinato e anche un po' snob riesce sempre ad emergere per le sue doti e lo charme. Molto difficile nei gusti, è sovente ricercato per
+			il suo <i>savoir-faire</i> e il carisma irresistibile. È generoso, dotato di una mente molto aperta e con sensibilità artistica, è naturalmente
+			autorevole. Ambizioso, quando si impone dei traguardi da raggiungere non molla mai, va avanti con estrema serietà e costanza. Può essere un
+			ottimo insegnante, professore proprio per la sua capacità di essere persona saggia, riflessiva e seria. Sa maneggiare davvero molto bene il
+			denaro, oltre che il proprio anche l'altrui e quindi tutti i lavori collegati alle banche ed al commercio possono essere l'ideale. È intelligente
+			e ama vivere bene, ma con ciò la sua etica esemplare è sempre in primo piano. La sua correttezza lo rende molto affidabile sia come amico che
+			come socio d'affari. È perfetto per intraprendere un'iniziativa imprenditoriale, ma soprattutto in un ruolo commerciale o di rappresentanza, che
+			gli permette di sfoggiare il suo charme e la sua cultura. Ama le cose belle, le comodità, ed è dotato di una naturale eleganza. Persona generosa,
+			dotata di una mente molto aperta e con sensibilità artistica, ama vivere bene, è naturalmente autorevole e considerato depositario della
+			saggezza cosmica. In amore è molto esigente una volta conquistato un partner o fattosi conquistare vuole continuamente attenzioni e mette sempre
+			alla prova l'altra metà. Ha la passione dentro davvero a livelli molto alti ed è un ottimo amante, sotto le lenzuola però odia che in un
+			rapporto a comandare sia il partner e non lui. Il partner dovrà quindi essere all'altezza dei suoi gusti raffinati: anche la minima traccia di
+			volgarità e ignoranza lo mette subito in fuga.<br>
+			La <span class="sRed sBold">donna</span> sa essere molto raffinata e muoversi nel suo ambiente come una regina. È molto decisa e determinata
+			a realizzarsi con i propri mezzi, usando l'intelligenza vivace e la sua mente brillante. È molto indipendente, capace di diventare una brava
+			imprenditrice, in grado di competere con l'uomo e anche superandolo. Preferisce guadagnarsi il posto per le sue capacità e per la sua brillante
+			intelligenza ma se non l'ottiene con le buone, allora affila le unghie e usa ogni mezzo e guai a chi s'intromette. Non è fatta per lavare piatti
+			e cambiare pannolini, e se lo fa è perché non le rimane altro da fare. In amore è appassionata, esigente con il suo compagno e impone continue
+			prove affinché gli si dimostri che merita stare al suo fianco. È romantica, dai molteplici amori impossibili, di quelli che non si dimenticano
+			mai. Generalmente vive due vite: da una parte la dolce vita di casa, e dall'altra un amore proibito che magari esiste solo nella sua
+			immaginazione.<br>
+			L'<span class="sBlue sBold">uomo</span> è un vincente ed è abilissimo negli affari. Il successo e il denaro sono sempre al primo posto e la
+			donna che gli sta accanto deve accettare questa realtà. Non ammette in amore, che la donna gli possa essere superiore, perciò deve adattarsi
+			ad assumere un ruolo sottomesso. È adatto a ogni tipo di attività che implichi il movimento di denaro. Ha spesso un vero e proprio talento
+			finanziario e conosce il linguaggio dei numeri come nessun altro. Comunicatore abile, riesce bene nell'insegnamento e nelle attività legate
+			all'informazione. A volte può sembrare avaro, ma non è così, sa quanto costa guadagnare ogni centesimo e non è disposto a scialacquare il suo
+			denaro. La sua debolezza è la buona tavola, accompagnata da un ottimo vino nonché dal sesso. La sessualità accentuata talvolta lo rende
+			schiavo delle passioni.
 		</p>
 
 		<h2>LEPRE</h2>
 		<h3>1 giugno - 28 giugno: Vivacità e intelligenza</h3>
-		<p class="sSmall sBlack sJustify sPadding">
-			<img src="AH.6Lepre.jpg" width="138" height="143" class="sFloatR">
-			Attivo e pieno di energia odia la solitudine: lo priva di charme. Una sua caratteristica è la tendenza a fantasticare e a sognare ad occhi 
-			aperti. Spesso i suoi sogni si trasformano in realtà! La <strong>LEPRE</strong> eccelle nell'arte della comunicazione e primeggia in tutti i
-			lavori a lei connessa come le relazioni pubbliche. Ama avere un'intensa vita sociale, all'insegna di feste e uscite con gli amici; odia la 
+		<p>
+			<img src="AH.6Lepre.jpg" width="138" height="143" alt="Lepre" class="sFloatR">
+			Attivo e pieno di energia odia la solitudine: lo priva di charme. Una sua caratteristica è la tendenza a fantasticare e a sognare ad occhi
+			aperti. Spesso i suoi sogni si trasformano in realtà! La <b>LEPRE</b> eccelle nell'arte della comunicazione e primeggia in tutti i
+			lavori a lei connessa come le relazioni pubbliche. Ama avere un'intensa vita sociale, all'insegna di feste e uscite con gli amici; odia la
 			solitudine. Per l'abilità nel comunicare, è spesso un abile venditore ed eccellente addetto alle relazioni pubbliche. La fantasia può fargli
 			cambiare spesso opinione anche se, grazie alla sua vita sociale intensa, considera l'amicizia sacra. Instancabile ottimista cerca sempre una
-			ragione positiva per andare avanti, lotta per un futuro migliore e ciò l'avvantaggia nell'affrontare la vita. Dà un gran valore alla amicizia 
-			ed è spesso disposto a cambiare idea o a cedere a compromessi per favorire chi vuole bene. Anche questo segno sembra essere dotato di doti 
-			sensitive e sembra saper leggere il proprio ed altrui futuro. Ideali i lavori in cui vi è molto contatto con la gente e quelli in cui 
-			comunicare è fondamentale. Potrebbe svolgere tranquillamente lavori legati al giornalismo, alla vendita di prodotti a porta o in televisione. 
-			La sua priorità è costruirsene proprio una quando si sente matura per farlo dato che è una persona davvero molto affidabile e concreta. 
-			È di solito affascinante e ben voluto, ha successo in amore e nelle amicizie. Può impostare il suo rapporto d'amore più a livello 
+			ragione positiva per andare avanti, lotta per un futuro migliore e ciò l'avvantaggia nell'affrontare la vita. Dà un gran valore alla amicizia
+			ed è spesso disposto a cambiare idea o a cedere a compromessi per favorire chi vuole bene. Anche questo segno sembra essere dotato di doti
+			sensitive e sembra saper leggere il proprio ed altrui futuro. Ideali i lavori in cui vi è molto contatto con la gente e quelli in cui
+			comunicare è fondamentale. Potrebbe svolgere tranquillamente lavori legati al giornalismo, alla vendita di prodotti a porta o in televisione.
+			La sua priorità è costruirsene proprio una quando si sente matura per farlo dato che è una persona davvero molto affidabile e concreta.
+			È di solito affascinante e ben voluto, ha successo in amore e nelle amicizie. Può impostare il suo rapporto d'amore più a livello
 			intellettuale che passionale.<br>
-			La <strong>donna</strong> è spesso la quintessenza della femminilità, da un punto di vista sia fisico che mentale. È dotata di molta 
-			femminilità, è molto seducente ed attraente. Ama il suo ruolo di Regina e lo porta avanti alla perfezione. Vive la vita come una gran commedia 
-			di cui lei è la protagonista assoluta. Ha gran talento come attrice e benché non segua un corso di recitazione, agisce sul palcoscenico come 
-			nella vita giornaliera. Dato il suo buon carattere ha tantissimi amici ed è ricercata in compagnia. Ama occuparsi di sé, della casa, della
+			La <span class="sRed sBold">donna</span> è spesso la quintessenza della femminilità, da un punto di vista sia fisico che mentale. È dotata di
+			molta femminilità, è molto seducente ed attraente. Ama il suo ruolo di Regina e lo porta avanti alla perfezione. Vive la vita come una gran
+			commedia di cui lei è la protagonista assoluta. Ha gran talento come attrice e benché non segua un corso di recitazione, agisce sul palcoscenico
+			come nella vita giornaliera. Dato il suo buon carattere ha tantissimi amici ed è ricercata in compagnia. Ama occuparsi di sé, della casa, della
 			famiglia, è un vero e proprio angelo del focolare.<br>
-			L'<strong>uomo</strong> si destreggia bene in qualsiasi situazione ed è sempre alla ricerca di nuove opportunità. Indole tollerante, è dotato 
-			di fervida immaginazione che lo porta a inventare e raccontare storie alle quali finisce per credere lui stesso. Tuttavia non s'impegna al 
-			massimo per ottenere il successo, preferendo una vita semplice e comoda. È ingegnoso e benché ammiri quelli che hanno successo, non si lascia
-			abbagliare dal lusso che la società impone. Riesce bene come cronista, giornalista, artista dello spettacolo, commerciante. Lavora per vivere, 
-			ma non rincorre mete ambiziose. Non perde tempo criticando o giudicando gli altri: chi è senza peccato scagli la prima pietra. Ama gli sport 
-			e segue con passione la sua squadra preferita. È un <i>bohémien</i>, un idealista, e chi apprezza queste cose scoprirà in lui un essere tenero
-			e di grande cuore.
+			L'<span class="sBlue sBold">uomo</span> si destreggia bene in qualsiasi situazione ed è sempre alla ricerca di nuove opportunità. Indole
+			tollerante, è dotato di fervida immaginazione che lo porta a inventare e raccontare storie alle quali finisce per credere lui stesso. Tuttavia
+			non s'impegna al massimo per ottenere il successo, preferendo una vita semplice e comoda. È ingegnoso e benché ammiri quelli che hanno
+			successo, non si lascia abbagliare dal lusso che la società impone. Riesce bene come cronista, giornalista, artista dello spettacolo,
+			commerciante. Lavora per vivere, ma non rincorre mete ambiziose. Non perde tempo criticando o giudicando gli altri: chi è senza peccato scagli
+			la prima pietra. Ama gli sport e segue con passione la sua squadra preferita. È un <i>bohémien</i>, un idealista, e chi apprezza queste cose
+			scoprirà in lui un essere tenero e di grande cuore.
 		</p>
 
 		<h2>TARTARUGA</h2>
 		<h3>29 giugno - 26 luglio: Calma e tradizione</h3>
-		<p class="sSmall sBlack sJustify sPadding">
-			<img src="AH.7Tartaruga.jpg" width="150" height="116" class="sFloatR">
+		<p>
+			<img src="AH.7Tartaruga.jpg" width="150" height="116" alt="Tartaruga" class="sFloatR">
 			È tenace, non raggiunge tutto e subito ma col tempo è capace di arrivare a traguardi che non lo spodesteranno più. La pazienza è la virtù di
-			questo segno, infatti è saggio per eccellenza. Occorre impegnarsi molto per farlo arrabbiare, ma se mai ci riuscirete, occorre temere il 
-			peggio, la sua ira è..... terribile. È riflessivo, saggio e sereno, difficilmente perde la calma, ma quando succede è meglio non essere lì 
+			questo segno, infatti è saggio per eccellenza. Occorre impegnarsi molto per farlo arrabbiare, ma se mai ci riuscirete, occorre temere il
+			peggio, la sua ira è ... terribile. È riflessivo, saggio e sereno, difficilmente perde la calma, ma quando succede è meglio non essere lì
 			vicino. Nutre un'autentica passione per le piccole bellezze della vita e sa approfittare anche dei momenti meno positivi per godersi il riposo
 			e la tranquillità. Il tempo è il miglior alleato e avendo coscienza di questo sa che può ottenere tutto quello che vuole senza correre.
-			Professore per natura, sa essere umile e donare la sua conoscenza e un'incondizionato aiuto agli altri che lo circondano. Attenzione però è 
-			anche capace d'imporsi con convinzione quando è toccato nei propri valori, paziente si, ma non burlatevi di lui o sono grossi guai. Non si 
-			apre facilmente agli altri e si mostra duro, quasi insensibile, con un cuore di pietra ma questo solo perché si considera fragile. In caso di 
-			difficoltà si defila in fretta. È molto controllato, tollerante, serafico: sembra che nulla possa scalfirlo. Spesso ha successo nel lavoro 
-			perché è paziente e perseverante e prima o poi riesce a tagliare il traguardo. Per la capacità di spiegare e rispiegare un concetto senza mai 
-			spazientirsi, è un'insegnante ideale, capace di usare mille metafore per trasmettere il suo sapere con la massima efficacia. Eccellente medico, 
-			assistente sociale insegnante, psicologo. Emerge in attività in cui può esprimere la sua vocazione al servizio del prossimo. Non si lascia 
-			andare ai sentimenti con facilità, è un compagno serio e affidabile e rassicurante. In amore preferisce decisamente i rapporti stabili e 
-			duraturi.<br>   
-			La <strong>donna</strong> ama molto prendersi cura della propria casa che, per lei, è la cosa più importante insieme alla sua famiglia. È la
-			casalinga ideale che ogni uomo desidera trovare affinché sia la madre dei suoi figli. Dotata di grande sensibilità, è anche piuttosto 
-			vulnerabile: spesso, per questo motivo, tende a stare sulla difensiva. In generale si sposa giovane, almeno quello è il suo desiderio ed avrà 
-			presto il suo bebè. È affettuosa ma all'inizio mette una corazza per difendersi perché è molto sensibile.<br>
-			L'<strong>uomo</strong> è molto riservato, non ama sentirsi sotto i riflettori o al centro dell'attenzione. Socievole, ma non smette mai di 
-			parlare. In amore è timido e mai aggressivo, un fedele compagno e un ottimo confidente. Lavoratore instancabile, tutto il denaro che guadagna
-			lo impiega per la casa. Farà sentire la sua compagna come una regina, ma sarà geloso ed esigente. È molto leale, un amico fedele ed
-			incondizionato. Un po' maschilista, per lui le donne sono nate per stare in cucina e non per parlare di indipendenza.
+			Professore per natura, sa essere umile e donare la sua conoscenza e un incondizionato aiuto agli altri che lo circondano. Attenzione però è
+			anche capace d'imporsi con convinzione quando è toccato nei propri valori, paziente si, ma non burlatevi di lui o sono grossi guai. Non si
+			apre facilmente agli altri e si mostra duro, quasi insensibile, con un cuore di pietra ma questo solo perché si considera fragile. In caso di
+			difficoltà si defila in fretta. È molto controllato, tollerante, serafico: sembra che nulla possa scalfirlo. Spesso ha successo nel lavoro
+			perché è paziente e perseverante e prima o poi riesce a tagliare il traguardo. Per la capacità di spiegare e rispiegare un concetto senza mai
+			spazientirsi, è un'insegnante ideale, capace di usare mille metafore per trasmettere il suo sapere con la massima efficacia. Eccellente medico,
+			assistente sociale insegnante, psicologo. Emerge in attività in cui può esprimere la sua vocazione al servizio del prossimo. Non si lascia
+			andare ai sentimenti con facilità, è un compagno serio e affidabile e rassicurante. In amore preferisce decisamente i rapporti stabili e
+			duraturi.<br>
+			La <span class="sRed sBold">donna</span> ama molto prendersi cura della propria casa che, per lei, è la cosa più importante insieme alla sua
+			famiglia. È la casalinga ideale che ogni uomo desidera trovare affinché sia la madre dei suoi figli. Dotata di grande sensibilità, è anche
+			piuttosto vulnerabile: spesso, per questo motivo, tende a stare sulla difensiva. In generale si sposa giovane, almeno quello è il suo desiderio
+			ed avrà presto il suo bebè. È affettuosa ma all'inizio mette una corazza per difendersi perché è molto sensibile.<br>
+			L'<span class="sBlue sBold">uomo</span> è molto riservato, non ama sentirsi sotto i riflettori o al centro dell'attenzione. Socievole, ma non
+			smette mai di parlare. In amore è timido e mai aggressivo, un fedele compagno e un ottimo confidente. Lavoratore instancabile, tutto il denaro
+			che guadagna lo impiega per la casa. Farà sentire la sua compagna come una regina, ma sarà geloso ed esigente. È molto leale, un amico fedele
+			ed incondizionato. Un po' maschilista, per lui le donne sono nate per stare in cucina e non per parlare di indipendenza.
 		</p>
 
 		<h2>PIPISTRELLO</h2>
 		<h3>27 luglio - 23 agosto: Sfida e istinto</h3>
-		<p class="sSmall sBlack sJustify sPadding">
-			<img src="AH.8Pipistrello.jpg" width="109" height="137" class="sFloatL">
-			Se pensate di avere a che fare con una persona che legge nella vostra mente, che capisce, intuisce quello che state pensando e magari vi ruba 
-			le idee per progetti e lavori, allora forse di fronte avete un <strong>PIPISTRELLO</strong>. Realmente dotato di un forte sesto senso che lo
+		<p>
+			<img src="AH.8Pipistrello.jpg" width="109" height="137" alt="Pipistrello" class="sFloatL">
+			Se pensate di avere a che fare con una persona che legge nella vostra mente, che capisce, intuisce quello che state pensando e magari vi ruba
+			le idee per progetti e lavori, allora forse di fronte avete un <b>PIPISTRELLO</b>. Realmente dotato di un forte sesto senso che lo
 			porta ad agire più che con la ragione con l'istinto ma raramente si sbaglia nelle scelte e decisioni da prendere che si rivelano poi alla fine
-			azzeccate. Nel lavoro sa cos'è la fatica ed affronta eventuali ostacoli di petto. Per questo è molto apprezzato dai colleghi che lo vedono 
+			azzeccate. Nel lavoro sa cos'è la fatica ed affronta eventuali ostacoli di petto. Per questo è molto apprezzato dai colleghi che lo vedono
 			come leader. Molto spirituale ma concreto nella vita dal punto di vista economico e sentimentale. È spesso sconsiderato nei suoi atteggiamenti
-			ma in lui regna sempre un grande equilibrio. Cerca e trova rispetto in ogni contesto e situazione. Nel lavoro spicca per le sue doti ma è 
+			ma in lui regna sempre un grande equilibrio. Cerca e trova rispetto in ogni contesto e situazione. Nel lavoro spicca per le sue doti ma è
 			difficile che riesca ad accettare la subordinazione, preferisce mansioni che gli garantiscono autonomia nelle decisioni. Grande trascinatore,
-			dotato di forza e di equilibrio, ha il potere di affascinare amici e nemici. La sua forza fisica e mentale lo rende perfetto per l'attività 
+			dotato di forza e di equilibrio, ha il potere di affascinare amici e nemici. La sua forza fisica e mentale lo rende perfetto per l'attività
 			sportiva agonistica, in cui non avrà alcun problema ad eccellere. È un capo nato e riscuote l'approvazione dei propri sottoposti, un lottatore,
 			dotato di carattere forte e deciso che lo rende leader in qualunque circostanza. Sa sempre per istinto che cosa deve fare o come agire, non ha
 			bisogno di programmi o di piani strategici come se avesse qualità telepatiche. Non è facile a concedersi anche perché cerca un partner fedele
-			come sa essere lui. Ama essere indipendente e deve ricercare un partner con la stessa qualità e che quindi conosca l'importanza di dare e 
+			come sa essere lui. Ama essere indipendente e deve ricercare un partner con la stessa qualità e che quindi conosca l'importanza di dare e
 			lasciare spazi nella vita di coppia.<br>
-			La <strong>donna</strong> è un tipo originale, non ama essere uguale agli altri e fa di tutto per distinguersi. Brillante e simpatica ama 
-			avere gli uomini ai suoi piedi, ma da innamorata è sostanzialmente fedele. Non è facile conquistarla occorre agire con molta furbizia e 
-			pazienza per ottenere accesso al suo cuore. Benché esternamente sembri contraddittoria, possiede una logica propria. Odia fare tutto quanto 
-			fanno gli altri, la massa, pertanto cerca di differenziarsi il più possibile e ci riesce sempre. È di sicuro una persona speciale, originale, 
-			seducente, simpatica, dall'umore variabile, con un pizzico di ironia. In amore, si perde a cercare per tutta la vita il suo principe azzurro, 
-			e non si accontenta di amori mediocri. Arrivare al suo cuore non è un compito semplice, chi tenta quell'avventura, dovrà armarsi di pazienza. 
-			In casa sarà quella che prende le decisioni, facendo magari la vittima, o spontaneamente dando ordini, ma si farà sempre quello che dice.<br>
-			L'<strong>uomo</strong> mette una grande passione in tutto quello che fa, è molto esigente, tanto con se stesso quanto con gli altri. Piace 
-			comandare; cercherà quindi di emergere nella propria professione. In linea di massima predilige tutte le attività autonome con ampia libertà decisionale. L'incoscienza accentuata spesso l'induce a mettersi in situazioni pericolose. In amore ha sempre il timore d'essere privato 
-			della sua libertà, di conseguenza può essere conquistato solo da una donna che sia altrettanto amante della propria indipendenza e che 
-			rispetti la sua. Il tipo di donna che desidera al suo fianco è quella con molti progetti, che lavora, studia, va dal parrucchiere, va a 
+			La <span class="sRed sBold">donna</span> è un tipo originale, non ama essere uguale agli altri e fa di tutto per distinguersi. Brillante e
+			simpatica ama avere gli uomini ai suoi piedi, ma da innamorata è sostanzialmente fedele. Non è facile conquistarla occorre agire con molta
+			furbizia e pazienza per ottenere accesso al suo cuore. Benché esternamente sembri contraddittoria, possiede una logica propria. Odia fare
+			tutto quanto fanno gli altri, la massa, pertanto cerca di differenziarsi il più possibile e ci riesce sempre. È di sicuro una persona speciale,
+			originale, seducente, simpatica, dall'umore variabile, con un pizzico di ironia. In amore, si perde a cercare per tutta la vita il suo principe
+			azzurro, e non si accontenta di amori mediocri. Arrivare al suo cuore non è un compito semplice, chi tenta quell'avventura, dovrà armarsi di
+			pazienza. In casa sarà quella che prende le decisioni, facendo magari la vittima, o spontaneamente dando ordini, ma si farà sempre quello che
+			dice.<br>
+			L'<span class="sBlue sBold">uomo</span> mette una grande passione in tutto quello che fa, è molto esigente, tanto con se stesso quanto con gli
+			altri. Piace comandare; cercherà quindi di emergere nella propria professione. In linea di massima predilige tutte le attività autonome con
+			ampia libertà decisionale. L'incoscienza accentuata spesso l'induce a mettersi in situazioni pericolose. In amore ha sempre il timore d'essere
+			privato della sua libertà, di conseguenza può essere conquistato solo da una donna che sia altrettanto amante della propria indipendenza e che
+			rispetti la sua. Il tipo di donna che desidera al suo fianco è quella con molti progetti, che lavora, studia, va dal parrucchiere, va a
 			convegni d'arte orientale ed inoltre sa cambiare le prese elettriche!
 		</p>
 
 		<h2>SCORPIONE</h2>
 		<h3>24 agosto - 20 settembre: Carisma e acutezza</h3>
-		<p class="sSmall sBlack sJustify sPadding">
-			<img src="AH.9Scorpione.jpg" width="148" height="118" class="sFloatR">
-			Molto intelligente sin da piccolo dimostra delle spiccate doti mentali e stupisce coi suoi ragionamenti sempre sensati. Possiede anche una 
+		<p>
+			<img src="AH.9Scorpione.jpg" width="148" height="118" alt="Scorpione" class="sFloatR">
+			Molto intelligente sin da piccolo dimostra delle spiccate doti mentali e stupisce coi suoi ragionamenti sempre sensati. Possiede anche una
 			grande capacità di non scordare le cattiverie subite. È spesso chiuso e timido ma con una grande serenità interiore. Dotato di una memoria
-			eccellente e questo lo porta a non dimenticare mai nessuna offesa anche se non è vendicativo. Perseveranza e prontezza sono le sue 
-			caratteristiche: per raggiungere il suo obiettivo, è capace di sopportare grossi carichi di lavoro di coesistere a lungo con situazioni 
-			negative e frustranti, pronto a reagire e scattare verso la meta al momento giusto. Non passa mai inosservato e riesce a farsi notare senza 
-			fare nulla di particolare. È un acuto spirito di osservazione che lo mette in grado di comprendere perfettamente persone e situazioni. 
+			eccellente e questo lo porta a non dimenticare mai nessuna offesa anche se non è vendicativo. Perseveranza e prontezza sono le sue
+			caratteristiche: per raggiungere il suo obiettivo, è capace di sopportare grossi carichi di lavoro di coesistere a lungo con situazioni
+			negative e frustranti, pronto a reagire e scattare verso la meta al momento giusto. Non passa mai inosservato e riesce a farsi notare senza
+			fare nulla di particolare. È un acuto spirito di osservazione che lo mette in grado di comprendere perfettamente persone e situazioni.
 			La sua metodicità lo rende perfetto per professioni dove sono richieste grande precisione, come il chirurgo, l'orafo o il revisore contabile,
 			le attività amministrative, bancarie e tutte le forme di assistenza sociale. Ma è grande in occupazioni legate all'organizzazione. Tipo
-			carismatico lo <strong>SCORPIONE</strong> che riesce ad ottenere il consenso di quasi tutte le persone che conosce e questo nel lavoro e anche
-			nelle amicizie. Ha grandi capacità di analisi e notevole senso dei dettagli e molto spesso sono questi ultimi che fanno la differenza. 
-			Nel lavoro e in amore è razionale e costante, porta grande serenità a chi lo frequenta. La possessività irriducibile spesso l'induce a far 
-			soffrire anche le persone che ama. Sa essere anche molto geloso nel rapporto e pretende infatti numerose attenzioni prima di capitolare. 
+			carismatico lo <b>SCORPIONE</b> che riesce ad ottenere il consenso di quasi tutte le persone che conosce e questo nel lavoro e anche
+			nelle amicizie. Ha grandi capacità di analisi e notevole senso dei dettagli e molto spesso sono questi ultimi che fanno la differenza.
+			Nel lavoro e in amore è razionale e costante, porta grande serenità a chi lo frequenta. La possessività irriducibile spesso l'induce a far
+			soffrire anche le persone che ama. Sa essere anche molto geloso nel rapporto e pretende infatti numerose attenzioni prima di capitolare.
 			Generalmente non mette facilmente in campo la vita affettiva dove preferisce essere lui a comandare. È un ottimo partner a letto.<br>
-			La <strong>donna</strong> non si lascia conquistare facilmente, è molto esigente, mette alla prova chi la corteggia e non cede finché non è
-			sicura che l’altro meriti la sua dedizione totale ed esclusiva. In amore le occorre tempo per innamorarsi, fino a quando non è sicura dei suoi
-			sentimenti e del suo compagno. Non perdona il tradimento e preferisce l'uomo semplice, concreto, dotato di sani valori. Non ama le parole a 
-			volte è difficile conoscere i suoi sentimenti. Mette costantemente alla prova chi gli sta accanto sperando che li indovini.<br>
-			L'<strong>uomo</strong> ha un gran pudore dei propri sentimenti, li manifesta raramente e ben difficilmente in pubblico. Questo può farlo 
-			sembrare freddo, ma non è così. Sceglie una donna che non dimostri mai superiorità nei suoi confronti e che gli consenta di avere (o di 
-			credere di avere) il controllo della situazione. È piuttosto timido, ma una volta che acquista fiducia, diventa un vero leone. Può sorprendere
-			gli altri con uscite poco comuni e lasciarli con la bocca aperta con la sua specialità. Ma mentre gli altri si vantano, lui preferisce 
-			lasciare orme incancellabili in sua moglie.
+			La <span class="sRed sBold">donna</span> non si lascia conquistare facilmente, è molto esigente, mette alla prova chi la corteggia e non cede
+			finché non è sicura che l’altro meriti la sua dedizione totale ed esclusiva. In amore le occorre tempo per innamorarsi, fino a quando non è
+			sicura dei suoi sentimenti e del suo compagno. Non perdona il tradimento e preferisce l'uomo semplice, concreto, dotato di sani valori. Non ama
+			le parole a volte è difficile conoscere i suoi sentimenti. Mette costantemente alla prova chi gli sta accanto sperando che li indovini.<br>
+			L'<span class="sBlue sBold">uomo</span> ha un gran pudore dei propri sentimenti, li manifesta raramente e ben difficilmente in pubblico. Questo
+			può farlo sembrare freddo, ma non è così. Sceglie una donna che non dimostri mai superiorità nei suoi confronti e che gli consenta di avere
+			(o di credere di avere) il controllo della situazione. È piuttosto timido, ma una volta che acquista fiducia, diventa un vero leone. Può
+			sorprendere gli altri con uscite poco comuni e lasciarli con la bocca aperta con la sua specialità. Ma mentre gli altri si vantano, lui
+			preferisce lasciare orme incancellabili in sua moglie.
 		</p>
 
 		<h2>CERVO</h2>
 		<h3>21 settembre - 18 ottobre: Creatività e fascino</h3>
-		<p class="sSmall sBlack sJustify sPadding">
-			<img src="AH.10Cervo.jpg" width="134" height="141" class="sFloatL">
-			I tratti principali sono l'empatia e l'incantevole capacità di presentarsi al meglio. È una persona eccezionale, con una grande sensibilità 
-			nei confronti degli altri. Alle volte è un po' presuntuoso e sicuramente poco puntuale, spesso può infastidire quelli poco pazienti. È però 
+		<p>
+			<img src="AH.10Cervo.jpg" width="134" height="141" alt="Cervo" class="sFloatL">
+			I tratti principali sono l'empatia e l'incantevole capacità di presentarsi al meglio. È una persona eccezionale, con una grande sensibilità
+			nei confronti degli altri. Alle volte è un po' presuntuoso e sicuramente poco puntuale, spesso può infastidire quelli poco pazienti. È però
 			vero che fa molta fatica ad accettare un'offesa e soffre molto per i torti subiti. Da non sottovalutare l'incredibile capacità di attrarre che,
-			insieme al <strong>GIAGUARO</strong>, è il più pericoloso per quanto riguarda i rapporti di coppia o in ogni caso sentimentali: si può impazzire
-			per un <strong>CERVO</strong>! È piuttosto timido, dotato di creatività e amante degli spazi aperti, è molto sensibile e riesce a farsi voler
-			bene grazie ai modi gentili e pacifici. Le situazioni difficili o pericolose lo spaventano e l'induce a rinunciare a qualsiasi tentativo di 
-			lotta. Una dote è la creatività, spesso abbinata al talento artistico. È possibile quindi che si indirizzi verso professioni legate al mondo 
+			insieme al <b>GIAGUARO</b>, è il più pericoloso per quanto riguarda i rapporti di coppia o in ogni caso sentimentali: si può impazzire
+			per un <b>CERVO</b>! È piuttosto timido, dotato di creatività e amante degli spazi aperti, è molto sensibile e riesce a farsi voler
+			bene grazie ai modi gentili e pacifici. Le situazioni difficili o pericolose lo spaventano e l'induce a rinunciare a qualsiasi tentativo di
+			lotta. Una dote è la creatività, spesso abbinata al talento artistico. È possibile quindi che si indirizzi verso professioni legate al mondo
 			dell'arte o spettacolo. Punto forte è la fantasia, la dialettica e una grande immaginazione, domina come nessun altro l'arte del conversare.
-			Spesso è fragile e suggestionabile, sempre dotato di un grande fascino che lo fa sembrare bello anche se non lo è. Il <strong>CERVO</strong>
-			è un gran seduttore anche se deve ammettere di essere un po' vanitoso. Non è molto fedele e necessita di unirsi a partner che si renda conto 
+			Spesso è fragile e suggestionabile, sempre dotato di un grande fascino che lo fa sembrare bello anche se non lo è. Il <b>CERVO</b>
+			è un gran seduttore anche se deve ammettere di essere un po' vanitoso. Non è molto fedele e necessita di unirsi a partner che si renda conto
 			della sensibilità che ha.<br>
-			La <strong>donna</strong> ha una natura fortemente romantica e mette al centro della sua vita l'amore, che insegue spesso finendo con 
-			l'idealizzare troppo le persone o le situazioni, col rischio di subire delle delusioni. È romantica di natura, possiede un cuore da poeta ed
+			La <span class="sRed sBold">donna</span> ha una natura fortemente romantica e mette al centro della sua vita l'amore, che insegue spesso finendo con l'idealizzare troppo le persone o le situazioni, col rischio di subire delle delusioni. È romantica di natura, possiede un cuore da poeta ed
 			è nata per fare della vita un romanzo d'amore. Predilige la pace e la tranquillità ed evita ogni genere di conflitto. L'amore è al centro
 			della sua esistenza e tutto girerà attorno ai tuoi affetti. Una volta sposata si dedicherà completamente ai suoi figli.<br>
-			L'<strong>uomo</strong> ama molto la sua libertà e ha un sacro terrore dei legami per timore di dover soffrire. Sensibilissimo, è anche pieno
-			di dubbi, specie in amore. Ha molto da dare sul piano affettivo, ma difficilmente riesce ad accontentarsi di una sola compagna, cosicché il
-			rischio di infedeltà è molto alto. È uno degli uomini più difficili da sposare. Ha paura del matrimonio e di tutto quanto rappresenti un 
-			compromesso. L'amore non può quindi essere rivolto esclusivamente ad una donna. Chi lo vuole conquistare deve armarsi di pazienza ed 
-			avvicinarsi segretamente, ma una volta conquistato è l'uomo più affettuoso e sensibile del mondo.
+			L'<span class="sBlue sBold">uomo</span> ama molto la sua libertà e ha un sacro terrore dei legami per timore di dover soffrire. Sensibilissimo,
+			è anche pieno di dubbi, specie in amore. Ha molto da dare sul piano affettivo, ma difficilmente riesce ad accontentarsi di una sola compagna,
+			cosicché il rischio di infedeltà è molto alto. È uno degli uomini più difficili da sposare. Ha paura del matrimonio e di tutto quanto
+			rappresenti un compromesso. L'amore non può quindi essere rivolto esclusivamente ad una donna. Chi lo vuole conquistare deve armarsi di pazienza
+			ed avvicinarsi segretamente, ma una volta conquistato è l'uomo più affettuoso e sensibile del mondo.
 		</p>
 
 		<h2>CIVETTA</h2>
 		<h3>19 ottobre - 15 novembre: Estrosità e intuito</h3>
-		<p class="sSmall sBlack sJustify sPadding">
-			<img src="AH.11Civetta.jpg" width="165" height="121" class="sFloatR">
-			Restio ad aprirsi, quando lo fa è assolutamente adorabile e ricco di esperienze interessanti. In assoluto il segno più profondo e misterioso, 
+		<p>
+			<img src="AH.11Civetta.jpg" width="165" height="121" alt="Civetta" class="sFloatR">
+			Restio ad aprirsi, quando lo fa è assolutamente adorabile e ricco di esperienze interessanti. In assoluto il segno più profondo e misterioso,
 			è in grado di intuire pensieri e personalità anche solo con una rapida occhiata ai movimenti e alle espressioni delle persone. A volte appare
-			timido e riservato al primo impatto, ma quando poi entra in confidenza si dimostra spontaneo e molto comunicativo. Spesso il successo delle 
-			sue scelte è dovuto alla sua grande cultura ed esperienza, maturate nei viaggi che lo portano spesso in giro per il mondo, a contatto con 
-			persone e culture diverse. Ha la prerogativa di prevedere il male che proviene dagli altri e raramente le sue predizioni sono sbagliate, forse 
-			per l'intuito quasi infallibile di cui è fornito. I lavori più indicati sono quelli legati alla percezione delle necessità umane: medicina o 
-			psicologia. È particolarmente adatto a tutte le attività del settore medico e paramedico; talvolta si orienta alla botanica e all'ecologia. 
-			Prima di entrare in confidenza con lui/lei è necessario conquistare la sua stima e fiducia: quando sarete nelle sue grazie, fedeltà e sincera 
+			timido e riservato al primo impatto, ma quando poi entra in confidenza si dimostra spontaneo e molto comunicativo. Spesso il successo delle
+			sue scelte è dovuto alla sua grande cultura ed esperienza, maturate nei viaggi che lo portano spesso in giro per il mondo, a contatto con
+			persone e culture diverse. Ha la prerogativa di prevedere il male che proviene dagli altri e raramente le sue predizioni sono sbagliate, forse
+			per l'intuito quasi infallibile di cui è fornito. I lavori più indicati sono quelli legati alla percezione delle necessità umane: medicina o
+			psicologia. È particolarmente adatto a tutte le attività del settore medico e paramedico; talvolta si orienta alla botanica e all'ecologia.
+			Prima di entrare in confidenza con lui/lei è necessario conquistare la sua stima e fiducia: quando sarete nelle sue grazie, fedeltà e sincera
 			amicizia sono assicurate! È inizialmente freddo ma riesce a dare il meglio di sé quando si sente davvero apprezzato e amato. In amore non ama
 			prendere l'iniziativa ma preferisce che siano gli altri a farsi sotto!<br>
-			La <strong>donna</strong> è molto sensibile e desidera essere trattata con dolcezza. Sembra possedere la capacità di conoscere quello che uno
-			pensa o sente e questo la rende un'ottima amica o compagna. La fedeltà è per lei fondamentale, così come la sincerità. Ama divertirsi e fare
-			sempre nuove esperienze, perciò può essere difficile da conquistare soprattutto quando è molto giovane. Ha la capacità speciale di percepire 
-			ciò che gli altri sentono, per questo motivo è un'ottima amica, prodiga di consigli. Sarà fedele e sincera fino al fine. Le piace stare comoda
-			nei vestiti, per questo motivo preferisce capi d'abbigliamento ampi: ama anche gli accessori, così si riempie di braccialetti e collane: 
-			ha un'anima da gitana.<br>  
-			L'<strong>uomo</strong> è dotato di fiuto e di tempismo e nel lavoro casca sempre in piedi. La sua estrema sensibilità lo rende troppo 
-			percettivo ai problemi di tutti ed emotivamente fragile. Con la maturità è più facile che senta il desiderio di fermarsi e di formarsi una
-			famiglia, anche se la fedeltà non è la sua dote principale. Ama la famiglia, ma ha una maniera molto personale di concepirla; gli sembra 
+			La <span class="sRed sBold">donna</span> è molto sensibile e desidera essere trattata con dolcezza. Sembra possedere la capacità di conoscere
+			quello che uno pensa o sente e questo la rende un'ottima amica o compagna. La fedeltà è per lei fondamentale, così come la sincerità. Ama
+			divertirsi e fare sempre nuove esperienze, perciò può essere difficile da conquistare soprattutto quando è molto giovane. Ha la capacità
+			speciale di percepire ciò che gli altri sentono, per questo motivo è un'ottima amica, prodiga di consigli. Sarà fedele e sincera fino al fine.
+			Le piace stare comoda nei vestiti, per questo motivo preferisce capi d'abbigliamento ampi: ama anche gli accessori, così si riempie di
+			braccialetti e collane: ha un'anima da gitana.<br>
+			L'<span class="sBlue sBold">uomo</span> è dotato di fiuto e di tempismo e nel lavoro casca sempre in piedi. La sua estrema sensibilità lo rende
+			troppo percettivo ai problemi di tutti ed emotivamente fragile. Con la maturità è più facile che senta il desiderio di fermarsi e di formarsi
+			una famiglia, anche se la fedeltà non è la sua dote principale. Ama la famiglia, ma ha una maniera molto personale di concepirla; gli sembra
 			barbaro che sua moglie abbia molti figli e rimanga ad accudirli mentre lui esce a divertirsi. Conquistarlo è difficile ma molto appagante.
 		</p>
 
 		<h2>PAVONE</h2>
 		<h3>16 novembre - 13 dicembre: Protagonismo e originalità</h3>
-		<p class="sSmall sBlack sJustify sPadding">
-			<img src="AH.12Pavone.jpg" width="159" height="120" class="sFloatL">
+		<p>
+			<img src="AH.12Pavone.jpg" width="159" height="120" alt="Pavone" class="sFloatL">
 			Estroverso, carismatico, è nato per brillare, o almeno così crede. Tiene molto alla sua figura e ad apparire sempre in forma in ogni occasione.
 			Propenso a comandare ma smisurato in molti comportamenti, tendenza a spiccare in società grazie alla sua capacità di trovarsi sempre al centro
 			dell'attenzione. Non ama scendere a compromessi o a sottostare alla volontà altrui: ha un'autentica passione per il comando anche se non sempre
 			ha saggezza e misura per esercitare il potere. Molto fiducioso nelle proprie capacità, è originale e creativo e ha uno straordinario senso
 			dell'umorismo. Sa però essere competitivo e desidera sempre migliorarsi. Ama essere protagonista in ogni situazione e guai a rubargli la scena.
-			Riesce bene nelle mansioni che richiedono capacità di comunicazione e di persuasione. L'eccessivo ottimismo può indurlo a vedere soltanto 
-			l'aspetto piacevole delle situazioni e a non prepararsi alle difficoltà della vita. È capace di costruirsi grandi fortune, per poi dilapidarle 
+			Riesce bene nelle mansioni che richiedono capacità di comunicazione e di persuasione. L'eccessivo ottimismo può indurlo a vedere soltanto
+			l'aspetto piacevole delle situazioni e a non prepararsi alle difficoltà della vita. È capace di costruirsi grandi fortune, per poi dilapidarle
 			e ricominciare da zero. Ama primeggiare, è competitivo sul lavoro e si sente il migliore in tutto, originale e creativo ama brillare di luce
 			propria, è per questo che non passa inosservato. In amore vuole essere protagonista anche nella vita di coppia, cerca persone che non siano
-			monotone ma anzi piene di iniziativa e che sappiano badare a se stesse ed essere indipendenti e non dipendere da lui. Passionalità e la 
+			monotone ma anzi piene di iniziativa e che sappiano badare a se stesse ed essere indipendenti e non dipendere da lui. Passionalità e la
 			dedizione caratterizzano il suo amore, è capace di competere con chiunque per ottenere le sua preda.<br>
-			La <strong>donna</strong> è attenta alla sua immagine, vestita sempre in modo impeccabile e personale, ama abiti discreti ma molto eleganti. 
-			Non è una donna facile in amore, e lo sa. Deve capire che la protagonista è lei, altrimenti il rapporto diventa una guerra spietata per 
-			dimostrare chi è il migliore. La professione di modella o indossatrice è l'ideale, come quella di stilista di moda. Non si concede facilmente 
-			all'amore perché vuole accanto un uomo che sia alla sua altezza ma che, nello stesso tempo, non la metta in ombra. Insomma, vuole un uomo 
-			forte, ma disposto a lasciarsi guidare da lei. Se capisce questa contraddizione e accetta l'amore dell'uomo che ha al fianco, troverà il 
+			La <span class="sRed sBold">donna</span> è attenta alla sua immagine, vestita sempre in modo impeccabile e personale, ama abiti discreti ma
+			molto eleganti. Non è una donna facile in amore, e lo sa. Deve capire che la protagonista è lei, altrimenti il rapporto diventa una guerra
+			spietata per dimostrare chi è il migliore. La professione di modella o indossatrice è l'ideale, come quella di stilista di moda. Non si concede
+			facilmente all'amore perché vuole accanto un uomo che sia alla sua altezza ma che, nello stesso tempo, non la metta in ombra. Insomma, vuole un
+			uomo forte, ma disposto a lasciarsi guidare da lei. Se capisce questa contraddizione e accetta l'amore dell'uomo che ha al fianco, troverà il
 			grande amore della sua vita.<br>
-			L'<strong>uomo</strong> è un leader nato dotato d'intelligenza e di carisma quanto basta per avere presa sugli altri. Ha ben chiaro che non
-			importa ciò che fa sarà il migliore, e si prepara intensamente per esserlo. Talvolta è troppo fiducioso dei propri mezzi e rischia di
-			sottovalutare persone e situazioni. In amore è piuttosto esigente e cerca una compagna che sappia seguirlo in tutte le sue imprese avventurose,
-			ma che sappia sempre sorprenderlo per creatività e autonomia. Vive la vita seguendo gli impulsi, così sorgono le sue idee più meravigliose ed
-			a volte si caccia anche in guai da cui lui stesso sa come uscire. In amore è abbastanza esigente. La donna che sta al suo fianco deve essere
-			una segretaria perfetta ed un gioiello che brilli tra i suoi amici.
+			L'<span class="sBlue sBold">uomo</span> è un leader nato dotato d'intelligenza e di carisma quanto basta per avere presa sugli altri. Ha ben
+			chiaro che non importa ciò che fa sarà il migliore, e si prepara intensamente per esserlo. Talvolta è troppo fiducioso dei propri mezzi e
+			rischia di sottovalutare persone e situazioni. In amore è piuttosto esigente e cerca una compagna che sappia seguirlo in tutte le sue imprese
+			avventurose, ma che sappia sempre sorprenderlo per creatività e autonomia. Vive la vita seguendo gli impulsi, così sorgono le sue idee più
+			meravigliose ed a volte si caccia anche in guai da cui lui stesso sa come uscire. In amore è abbastanza esigente. La donna che sta al suo fianco
+			deve essere una segretaria perfetta ed un gioiello che brilli tra i suoi amici.
 		</p>
 
 		<h2>LUCERTOLA</h2>
 		<h3>14 dicembre - 10 gennaio: Variabilità e generosità</h3>
-		<p class="sSmall sBlack sJustify sPadding">
-			<img src="AH.13Lucertola.jpg" width="148" height="111" class="sFloatR">
-			Mai doma la <strong>LUCERTOLA</strong> ha una sola regola, non fermarsi mai, trovare sempre qualcosa di meglio, e rendere migliore la propria
-			vita. È sempre in movimento, alla ricerca della felicità, sia in amore, nel lavoro e più in generale nella vita. Inquieto e insofferente, 
+		<p>
+			<img src="AH.13Lucertola.jpg" width="148" height="111" alt="Lucertola" class="sFloatR">
+			Mai doma la <b>LUCERTOLA</b> ha una sola regola, non fermarsi mai, trovare sempre qualcosa di meglio, e rendere migliore la propria
+			vita. È sempre in movimento, alla ricerca della felicità, sia in amore, nel lavoro e più in generale nella vita. Inquieto e insofferente,
 			dotato d'intelligenza sopra la media, è costantemente alla ricerca di nuovi stimoli. È in genere molto gentile e ama aiutare il prossimo ma
-			soprattutto fedele al suo dovere sia lavorativo che affettivo. La personalità è in continua evoluzione, per tutta la sua esistenza va alla 
+			soprattutto fedele al suo dovere sia lavorativo che affettivo. La personalità è in continua evoluzione, per tutta la sua esistenza va alla
 			ricerca di se stesso. Non sorprende che cambi spesso casa, ambiente, lavoro e stile di vita. La professione che meglio soddisfa la sua continua
 			necessità di cercare se stesso nel mondo può essere ad esempio l'archeologia, ideale sarebbe in una compagnia aerea o in ambito internazionale,
-			così da poter placare il desiderio di perenne movimento. È portato per lavori dove bisogna utilizzare la memoria ed avere molta concentrazione, 
-			spirito di analisi e tutto quello che concerne le tecnologie e la scienza va benissimo. Ha tuttavia una certa inclinazione per la scrittura. 
-			Generoso ma anche provocatore, nel desiderio di compiacere gli altri, a volte può rinunciare a essere se stesso. Le principali caratteristiche 
-			del segno sono l'innocenza e la capacità di donarsi agli altri. Odia essere tradito e ingannato dal proprio partner a cui chiede molta 
+			così da poter placare il desiderio di perenne movimento. È portato per lavori dove bisogna utilizzare la memoria ed avere molta concentrazione,
+			spirito di analisi e tutto quello che concerne le tecnologie e la scienza va benissimo. Ha tuttavia una certa inclinazione per la scrittura.
+			Generoso ma anche provocatore, nel desiderio di compiacere gli altri, a volte può rinunciare a essere se stesso. Le principali caratteristiche
+			del segno sono l'innocenza e la capacità di donarsi agli altri. Odia essere tradito e ingannato dal proprio partner a cui chiede molta
 			devozione. Ama la libertà e quindi deve cercare un partner che sappia dargli gli spazi giusti al momento giusto.<br>
-			La <strong>donna</strong> è un'ottima amministratrice della casa, in grado di gestire, con la massima precisione il bilancio familiare. Adora
-			il sole, l'estate ed è capace di trascorrere ore ad abbronzarsi. Le vacanze preferite sono quindi vicino al mare, su una spiaggia di sabbia 
-			bianca. È fanatica della pulizia e la sua casa brillerà sempre come uno specchio. Insegna ai suoi figli ad essere responsabili e indipendenti,
-			mostrando loro il senso pratico della vita. Il suo motto è sincerità ad ogni costo e ben difficilmente perdona chi l'ha ingannata.<br>
-			L'<strong>uomo</strong> non si rivela mai del tutto, di rado si apre completamente davanti a un'altra persona, avendo sempre bisogno dei suoi
-			spazi e dei suoi momenti di solitudine. È misterioso, ha paura di mostrarsi vulnerabile se fa emergere i suoi segreti. Ha bisogno di momenti 
-			di solitudine e facilmente si dedica a qualche hobby o sport. È importante che rispetti questi tempi, altrimenti si sentirà soffocato. Molto 
-			ordinato, quasi pignolo ma nelle questioni della casa è abbastanza pigro. La sua donna deve essere capace di un grande rispetto per i suoi 
-			lati nascosti e per i suoi momenti di libertà. In amore è generoso e spontaneo, ma è difficile per lui mantenere una relazione duratura.
+			La <span class="sRed sBold">donna</span> è un'ottima amministratrice della casa, in grado di gestire, con la massima precisione il bilancio
+			familiare. Adora il sole, l'estate ed è capace di trascorrere ore ad abbronzarsi. Le vacanze preferite sono quindi vicino al mare, su una
+			spiaggia di sabbia bianca. È fanatica della pulizia e la sua casa brillerà sempre come uno specchio. Insegna ai suoi figli ad essere
+			responsabili e indipendenti, mostrando loro il senso pratico della vita. Il suo motto è sincerità ad ogni costo e ben difficilmente perdona
+			chi l'ha ingannata.<br>
+			L'<span class="sBlue sBold">uomo</span> non si rivela mai del tutto, di rado si apre completamente davanti a un'altra persona, avendo sempre
+			bisogno dei suoi spazi e dei suoi momenti di solitudine. È misterioso, ha paura di mostrarsi vulnerabile se fa emergere i suoi segreti. Ha
+			bisogno di momenti di solitudine e facilmente si dedica a qualche hobby o sport. È importante che rispetti questi tempi, altrimenti si sentirà
+			soffocato. Molto ordinato, quasi pignolo ma nelle questioni della casa è abbastanza pigro. La sua donna deve essere capace di un grande rispetto
+			per i suoi lati nascosti e per i suoi momenti di libertà. In amore è generoso e spontaneo, ma è difficile per lui mantenere una relazione duratura.
 		</p>
 
 		<p class="sCenter">
-			<img src="AHbar2.gif" width="366" height="50" border="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-			<img src="AHdeco.gif" width="123" height="73" border="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-			<img src="AHbar2.gif" width="366" height="50" border="0">
+			<img src="AHbar2.gif" width="366" height="50" border="0" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="AHdeco.gif" width="123" height="73" border="0" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="AHbar2.gif" width="366" height="50" border="0" alt="">
 		</p>
 
-		<p class="sBlack sSmall sCenter">
-			<img src="email-box.gif"    width="35"  height="35">
+		<p class="sCenter">
+			<img src="email-box.gif"    width="35" height="35" alt="">
 			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
-			<img src="TelefonoC164.gif" width="35" height="35">&nbsp;
-			oppure Telefona: <strong>0125 631175 - Cell. 347 0417409<br><br>
+			<img src="TelefonoC164.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
 
-			<a href="index.html" class="sTxtDecNo">Home page - Pagina iniziale</a>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			Sei il visitatore n°&nbsp;</strong>
-		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1447865356-71dzbxd18" border=0></a>
-			&nbsp;(Contenuto Aggiornato 30/11/2018)<br><br>
+			<a href="index.html" class="sBold">Pagina iniziale <img src="favicon32.gif" width="32" height="32"> Home page</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<b>Sei il visitatore n°&nbsp;</b>
+		<a href="http://www.retecivica.milano.it"><img src="xxhttp://www.retecivica.milano.it/counter/counter.php?link=1447865356-71dzbxd18" border=0></a>
+			&nbsp;(Contenuto Aggiornato <time datetime="2018-11-30">30/11/2018</time>)<br><br>
 		</p>
-				</td></tr></TBODY></table>
-			</td></tr></TBODY></table>
-		</td></tr></TBODY></table>
-	</td></tr></TBODY></table>
+
 </td></tr></TBODY></table>
-<p class="sCenter sXXSmall sWhite sShadowCR sBold">
-	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati. 
-	Senza il consenso dell&#39;autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
-</p>
+</td></tr></TBODY></table>
+</td></tr></TBODY></table>
+<footer>
+	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
+	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
+</footer>
 </body>
 </html>
