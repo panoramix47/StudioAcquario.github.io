@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" dir="ltr">
 <head>
 <meta charset="UTF-8">
-<title>Oroscopo del Bambino</title>
+<title>Oroscopo del Bambino - Studio Acquario</title>
 <link rel="icon" type="image/gif" href="favicon32.gif">
 <meta name="description" content="Studio Acquario: L'Oroscopo del Bambino">
-<meta name="keywords" content="studio, acquario, astrologia, oroscopo, bambino">
+<meta name="keywords" lang="it" content="astrologia, studio acquario, oroscopo, bambino">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
 <meta name="language" content="it">
 <meta http-equiv="imagetoolbar" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="07/09/2019">
-<meta name="revised" content="18/08/2020">
+<meta name="revised" content="12/10/2020">
 
-<style type="text/css"> 
-BODY {
-	SCROLLBAR-FACE-COLOR: #4a578a; 
-	SCROLLBAR-HIGHLIGHT-COLOR: #7b8ac6; 
-	SCROLLBAR-SHADOW-COLOR: #000000; 
-	SCROLLBAR-ARROW-COLOR: #7b8ac6; 
-	SCROLLBAR-BASE-COLOR: #000000;
- 	scrollbar-track-color: #181c39;
-	scrollbar-3d-light-color: #b5dbef; 
+<style type="text/css">
+body {
+	SCROLLBAR-FACE-COLOR: #4a578a;
+	SCROLLBAR-HIGHLIGHT-COLOR: #7b8ac6;
+	SCROLLBAR-SHADOW-COLOR: #000000;
+	SCROLLBAR-ARROW-COLOR: #7b8ac6;
+	SCROLLBAR-BASE-COLOR: #000000; /* Black */
+ 	scrollbar-track-color: #181C39; /* Midnight Express */
+	scrollbar-3d-light-color: #b5dbef;
 	scrollbar-dark-shadow-color: #000000;
 
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
@@ -30,35 +31,73 @@ BODY {
 	background-color: #000000; /* Black */
 	background-attachment: fixed;
 }
-a:link{ 
-	color: #FFFFFF;
-	text-decoration: none;
-} 
-a {
-	color: #FFFFFF;
+a:link {
+	color: #B2BEE4; /* Perano */
+}
+a:visited {
+	color: #B2BEE4;
+}
+a:hover {
+	color: #FF0000;
+}
+a:active {
+	color: #B2BEE4;
 }
 h1 {
 	font-size: xx-large;
-	color: #FFFFCC; /* Cream */
 	font-weight: bold;
+	color: #FFFFCC; /* Cream */
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 140%;
 }
 h2 {
-	font-size: medium;
-	color: #FFFFCC; /* Cream */
+	clear: both; /* disabilita float */
+	font-size: large;
 	font-weight: bold;
+	color: #FFFFCC; /* Cream */
 	text-align: center;
+	padding-left: 35px;
+	padding-right: 35px;
 	margin-top: 30px;
 }
 figcaption {
 	margin-top: 15px;
 }
-.sLogoBanner {
+header {
 	font-size: xx-large;
 	font-weight: bold;
 	color: #FFFFFF; /* White */
 	text-shadow: 1px 1px 5px #0000FF; /* Blue */
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
+}
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	/* text-shadow: 1px 1px 1px #0000FF; Blue #1A2B0A;*/
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
+}
+p {
+	font-size: small;
+	color: #FFFFCC; /* Cream */
+	text-align: justify;
+	padding-left: 35px;
+	padding-right: 35px;
+	line-height: 125%;
+}
+img {
+	max-width: 100%;
+	height: auto;
 }
 .sBorder1s {
 				border-style: solid;
@@ -79,30 +118,11 @@ figcaption {
 .sCream {
 				color: #FFFFCC;
 }
-.sLtYellow {
-				color: #FFFFDD;
-}
-.sWhite {
-				color: #FFFFFF;
-}
 .sBold {
 				font-weight: bold;
 }
 .sCenter {
 				text-align: center;
-}
-.sJustify {
-				text-align: justify;
-}
-.sPadding {
-				padding-left: 40px;
-				padding-right: 40px;
-}
-.sXXSmall {
-				font-size: xx-small;
-}
-.sXSmall {
-				font-size: x-small;
 }
 .sSmall {
 				font-size: small;
@@ -136,153 +156,151 @@ figcaption {
 </style>
 </head>
 
-<body link="#B2BEE4" vlink="#A8B0D0" alink="#C5CDE4">
-<p class="sLogoBanner">Studio di Astrologia "Acquario"</p>
+<body>
+<header>Studio di Astrologia "Acquario"</header>
 
-<table background="ABcube.jpg" cellspacing="4" bordercolordark="black" bordercolorlight="black" width="95%" border="1" align="center">
-<tr><td>
+<table background="ABcube.jpg" cellspacing="5" cellpadding="25" border="1" bordercolordark="black" bordercolorlight="black" width="95%" align="center">
+<tr><td background="ABdecostrip.jpg">
 
-<table background="ABdecostrip.jpg" cellspacing="25" cellpadding="0" bordercolordark="black" bordercolorlight="black" border="1" width="100%">
-<tr><td>
-
-<table background="ABbackgr.jpeg" cellspacing="1" width="100%" bgcolor="#212842" class="sBorder1s">
+<table background="ABbackgr.jpeg" bgcolor="#212842" cellspacing="1" class="sBorder1s" width="100%">
 <tr><td>
 
 		<h1>L'OROSCOPO DEL BAMBINO</h1>
+
 		<p class="sCenter">
-			<img src="ABsepara.gif" width="230" height="40" border="0">
-			<img src="ABsepara.gif" width="230" height="40" border="0"> 
-			<img src="ABsepara.gif" width="230" height="40" border="0">
+			<img src="ABsepara.gif" width="230" height="40" alt="">
+			<img src="ABsepara.gif" width="230" height="40" alt="">
+			<img src="ABsepara.gif" width="230" height="40" alt="">
 		</p>
 
 		<h2><span class="sRed">ARIETE</span></h2>
-		<p class="sSmall sCream sJustify sPadding" style="line-height: 125%">
-			<img src="FFDo01.gif"   width="76" height="147" class="sFloatL">
-			<img src="V1Ariete.gif" width="96" height="100" class="sFloatR">
+		<p>
+			<img src="FFDo01.gif"   width="76" height="147" alt="Donna Ariete" class="sFloatL">
+			<img src="V1Ariete.gif" width="96" height="100" alt="Ariete" class="sFloatR">
 			Il bambino <span class="sRed sBold">ARIETE</span> è molto precoce e determinato. Intelligente, vivace e scatenato, riesce a fare amicizia con
 			tutti. Sincero, aperto e spontaneo, leale e simpatico, dimostra una gran gioia di vivere, è sempre sorridente e molto generoso ma difficile da
 			indirizzare nella vita. Quando arriva un bimbo <span class="sRed sBold">Ariete</span>, state pur certi che in casa arriva una vera rivoluzione.
-			Non vi sarà difficile conoscerlo, ma non lasciatevi ingannare dalla sua aria sicura e indipendente, perché in fondo è un tenerone, molto 
+			Non vi sarà difficile conoscerlo, ma non lasciatevi ingannare dalla sua aria sicura e indipendente, perché in fondo è un tenerone, molto
 			sensibile e bisognoso di rassicurazioni. È iperattivo e vivacissimo è dinamite pura maneggiare quindi con molta cautela. Il comportamento è
 			baldanzoso un ribelle per natura, impulsivo e inquieto, ma molto sicuro di sé, un po' superficiale, ama il pericolo e cerca la sfida, è portato
-			ad attaccare per difendersi. Ha una forte tendenza verso il comando ed è assai difficile che qualcuno gli tenga testa. Non sopporta la 
+			ad attaccare per difendersi. Ha una forte tendenza verso il comando ed è assai difficile che qualcuno gli tenga testa. Non sopporta la
 			costrizione e il comando, la personalità è ricca di fascino, è disposto a riconoscere i suoi torti. Preferisce tutto quello che è rapido e gli
-			lascia del tempo libero ed essendo molto indipendente state pur certi che farà di testa propria. Attenzione! per gli studi non sarà facile 
-			indirizzarlo verso quelli molto impegnativi. Molto curioso, attratto da tutto quello che è nuovo e diverso, non ha nessun interesse per i giochi 
+			lascia del tempo libero ed essendo molto indipendente state pur certi che farà di testa propria. Attenzione! per gli studi non sarà facile
+			indirizzarlo verso quelli molto impegnativi. Molto curioso, attratto da tutto quello che è nuovo e diverso, non ha nessun interesse per i giochi
 			di pazienza e di hobby sedentari vuole vedere subito i risultati delle sue azioni. Ha bisogno di movimento e di attività fisica, eccelle nello
-			sport, dove può sfogare la sua energia. Adottate un metodo educativo improntato più sull'amicizia che sull'autorità perché vi sfiderebbe a 
+			sport, dove può sfogare la sua energia. Adottate un metodo educativo improntato più sull'amicizia che sull'autorità perché vi sfiderebbe a
 			duello, nonostante si presenti come un vero &quot;Giamburrasca&quot; è facilmente suggestionabile. È più attirato da attività manuali e dallo
 			sport che non dallo studio. Alla minima contrarietà è subito impaziente e agitato, soggetto a collere memorabili. Affronta con entusiasmo ogni
 			situazioni e ha molti interessi che però spesso durano poco, perché è sempre pronto a tuffarsi in qualcosa di nuovo. Ma dato che adora recitare,
-			incoraggiatelo a farlo, lo aiuterete ad affermare se stesso al meglio. La bambina <span class="sRed sBold">Ariete</span> ha un temperamento 
-			coraggioso, da vera amazzone indipendente. La pazienza non è un suo punto forte e i successi non sono molto regolari.   
+			incoraggiatelo a farlo, lo aiuterete ad affermare se stesso al meglio. La bambina <span class="sRed sBold">Ariete</span> ha un temperamento
+			coraggioso, da vera amazzone indipendente. La pazienza non è un suo punto forte e i successi non sono molto regolari.
 		</p>
 
 		<h2><span class="sLime">TORO</span></h2>
-		<p class="sSmall sCream sJustify sPadding" style="line-height: 125%">
-			<img src="FFDo02.gif" width="64"  height="145" class="sFloatL">
-			<img src="V2Toro.gif" width="104" height="100" class="sFloatR">
-			Il bambino del <span class="sLime sBold">TORO</span> è il più facile da allevare, almeno nell'infanzia, è affettuoso e simpatico, desidera 
+		<p>
+			<img src="FFDo02.gif" width="64"  height="145" alt="Donna Toro" class="sFloatL">
+			<img src="V2Toro.gif" width="104" height="100" alt="Toro" class="sFloatR">
+			Il bambino del <span class="sLime sBold">TORO</span> è il più facile da allevare, almeno nell'infanzia, è affettuoso e simpatico, desidera
 			costruire un rapporto positivo con la famiglia. Ostinato e volenteroso, se prende una decisione è molto difficile riuscire a fargli cambiare
 			idea. Ama molto gli animali tenetene conto, un cucciolo lo rende felice e diventa il suo compagno di giochi. È buono, ma è un po' pigro, dovete
 			adottare il classico pugno di ferro in guanto di velluto, per farvi ubbidire e fare in maniera che accetti i vostri insegnamenti. È un po' lento
-			nell'imparare, ma non è un problema perché quando impara qualcosa lo fa fino in fondo. La disciplina è importante, desidera vivere all'interno 
+			nell'imparare, ma non è un problema perché quando impara qualcosa lo fa fino in fondo. La disciplina è importante, desidera vivere all'interno
 			di una struttura salda e sicura, non ama il rischio. È più profondo che brillante, più riflessivo che dinamico. È fin troppo sincero quasi
 			ingenuo è difficile mentire o nascondere qualcosa, per ottenere quello che gli piace usa il buon umore e la pazienza, è molto tenace e rigoroso
 			nelle sue scelte. Ha inclinazioni artistiche e in particolare un grande amore per la musica. Il contatto con la natura è molto importante,
-			tenetelo il più possibile all'aria aperta. Sempre contento e sorridente. È molto vanitoso, geloso dei fratelli e delle sorelle, cerca in ogni 
+			tenetelo il più possibile all'aria aperta. Sempre contento e sorridente. È molto vanitoso, geloso dei fratelli e delle sorelle, cerca in ogni
 			sua manifestazione la massima naturalezza e tranquillità. Se è preso con le buone è molto ubbidiente e malleabile, se è preso di petto riesce a
 			ostinarsi fino a diventare inamovibile dalle sue posizioni. Ha possibilità di dedicarsi agli studi artistici, scientifici, zootecnia e le scienze
 			che permettono di combinare i gusti col bisogno di spazi aperti, ma state certi che con la grande tenacia di cui è dotato, potrà arrivare
-			lontano. Può diventare cocciuto e testardo, ha bisogno di armonia e di dolcezza, piange poco e sorride facilmente, è portato ad uniformare il 
+			lontano. Può diventare cocciuto e testardo, ha bisogno di armonia e di dolcezza, piange poco e sorride facilmente, è portato ad uniformare il
 			suo comportamento con l'edonismo e il bisogno di sicurezza. È molto legato ai genitori da un'intensa affettività.
 		</p>
 
 		<h2><span class="sYellow">GEMELLI</span></h2>
-		<p class="sSmall sCream sJustify sPadding" style="line-height: 125%">
-			<img src="FFDo03.gif"    width="109" height="139" class="sFloatL">
-			<img src="V3Gemelli.gif" width="119" height="105" class="sFloatR">
+		<p>
+			<img src="FFDo03.gif"    width="109" height="139" alt="Donna Gemelli" class="sFloatL">
+			<img src="V3Gemelli.gif" width="119" height="105" alt="Gemelli" class="sFloatR">
 			Il bambino <span class="sYellow sBold">GEMELLI</span> è irrequieto, fragile, superficiale, dal carattere mutevole. È vivace e anche precoce
 			interessato a tutto, insistente nel voler soddisfare le innumerevoli curiosità. Si agita facilmente, ma altrettanto presto si calma e non serba
-			mai rancore. Simpatico e allegro come sa essere vive sempre circondato da amici. Se lo desiderate responsabile è necessario che lo guidiate, 
-			perché per natura è superficiale e facilone. La sua memoria è un po' scarsa e non potete farci affidamento, però sull'intelligenza potete certo 
+			mai rancore. Simpatico e allegro come sa essere vive sempre circondato da amici. Se lo desiderate responsabile è necessario che lo guidiate,
+			perché per natura è superficiale e facilone. La sua memoria è un po' scarsa e non potete farci affidamento, però sull'intelligenza potete certo
 			contare. È molto difficile da allevare ed educare, tende a essere rumoroso, capriccioso e rompiscatole, ha il senso dell'umorismo molto spiccato,
-			riesce a essere autoironico. È molto socievole, sempre circondato da amici, ma chiacchiera senza problemi anche con gli adulti. La sua 
+			riesce a essere auto-ironico. È molto socievole, sempre circondato da amici, ma chiacchiera senza problemi anche con gli adulti. La sua
 			propensione a disubbidire, a fare il contrario di quello che gli viene imposto è assai marcata. È molto egoista anche se in fondo è leale tiene
-			poco conto d elle esigenze degli altri. Non è un bimbo di tutto riposo, bisogna sempre inventare nuovi giochi, leggergli le favole diverse e 
-			rispondere alle sue domande. Comunicativo e sempre pieno di domande. Ama leggere e studiare, ma si stanca facilmente e passa da un argomento 
-			all'altro senza approfondire ciò che fa. Dovete solo incoraggiarlo ma tenerlo d'occhio da lontano per impedirgli eccessi dovuti alla 
+			poco conto d elle esigenze degli altri. Non è un bimbo di tutto riposo, bisogna sempre inventare nuovi giochi, leggergli le favole diverse e
+			rispondere alle sue domande. Comunicativo e sempre pieno di domande. Ama leggere e studiare, ma si stanca facilmente e passa da un argomento
+			all'altro senza approfondire ciò che fa. Dovete solo incoraggiarlo ma tenerlo d'occhio da lontano per impedirgli eccessi dovuti alla
 			superficialità e al piacere di mentire, che a volte prende il sopravvento sulla logica.
 		</p>
 
 		<h2><span class="sAqua">CANCRO</span></h2>
-		<p class="sSmall sCream sJustify sPadding" style="line-height: 125%">
-			<img src="FFDo04.gif"   width="72"  height="148" class="sFloatL">
-			<img src="V4Cancro.gif" width="112" height="105" class="sFloatR">
-			Il bimbo <span class="sAqua sBold">CANCRO</span> è molto timido, ansioso, timoroso, piuttosto impaurito della vita. Non è un bimbo facile da 
-			allevare, fargli superare le ansie e paure è un compito assai difficile il rifiuto delle responsabilità è molto marcato. La permalosità e la 
-			capricciosità sono i suoi difetti maggiori, non lasciatevi intenerire né dai pianti più sconsolati, né dalle disperazioni ha solo bisogno di 
-			sentirsi amato. Sono tutti mezzi per attirare la vostra attenzione, ma se cedete siete perduti e soprattutto gli fate del male. Ha una ricca 
+		<p>
+			<img src="FFDo04.gif"   width="72"  height="148" alt="Donna Cancro" class="sFloatL">
+			<img src="V4Cancro.gif" width="112" height="105" alt="Cancro" class="sFloatR">
+			Il bimbo <span class="sAqua sBold">CANCRO</span> è molto timido, ansioso, timoroso, piuttosto impaurito della vita. Non è un bimbo facile da
+			allevare, fargli superare le ansie e paure è un compito assai difficile il rifiuto delle responsabilità è molto marcato. La permalosità e la
+			capricciosità sono i suoi difetti maggiori, non lasciatevi intenerire né dai pianti più sconsolati, né dalle disperazioni ha solo bisogno di
+			sentirsi amato. Sono tutti mezzi per attirare la vostra attenzione, ma se cedete siete perduti e soprattutto gli fate del male. Ha una ricca
 			immaginazione che sa sfruttare con grande abilità a suo vantaggio. Ha un'ottima memoria e crescendo, sembra che sappia meglio il passato che il
-			presente. Affettuoso e spontaneo, molto emotivo è anche molto sensibile e facilmente portato al pianto. Attenzione però a non farsi fuorviare: 
+			presente. Affettuoso e spontaneo, molto emotivo è anche molto sensibile e facilmente portato al pianto. Attenzione però a non farsi fuorviare:
 			il <span class="sAqua sBold">Cancro</span> è un furbo e spesso usa le lacrime come arma di ricatto pur di ottenere ciò che desidera. Certamente
 			non gli fa difetto la sua fantasia ed è portato naturalmente al mondo dell'arte, della musica, pittura ecc. Non ama i giochi e gli sport troppo
-			violenti, ricerca la compagnia di amici tranquilli. Sogna cose impossibili e sa accontentarsi di poco, non riesce a vivere senza l'affetto di 
+			violenti, ricerca la compagnia di amici tranquilli. Sogna cose impossibili e sa accontentarsi di poco, non riesce a vivere senza l'affetto di
 			chi gli sta vicino, perché se si sente abbandonato e incompreso diventa taciturno e un po' cattivo. Si lega profondamente all'ambiente famigliare
-			dove ricerca armonia e protezione. Ha bisogno di sicurezza e di protezione ed essendo molto timido tende a rifugiarsi sempre tra le braccia 
+			dove ricerca armonia e protezione. Ha bisogno di sicurezza e di protezione ed essendo molto timido tende a rifugiarsi sempre tra le braccia
 			amorevoli dei genitori da cui gli riesce difficile staccarsi è apprensivo e soffre facilmente d'inferiorità. Ama la natura è molto affascinato
 			dal mare, può essere un buon nuotatore. È il bambino per eccellenza, ha sempre bisogno d'essere protetto da qualcuno. Di sentimenti delicati e
 			una grande sensibilità è un bambino da trattare con cautela.
 		</p>
 
 		<h2><span class="sRed">LEONE</span></h2>
-		<p class="sSmall sCream sJustify sPadding" style="line-height: 125%">
-			<img src="FFDo05.gif"  width="74" height="141" class="sFloatL">
-			<img src="V5Leone.gif" width="89" height="105" class="sFloatR">
-			Il bimbo <span class="sRed sBold">LEONE</span> è pieno di energia, esigente, estroverso, audace e combattivo. Il suo temperamento è vivace e 
-			non tarda a mostrare l'inclinazione al comando precocemente mettendosi alla guida diuna schiera nelle sue reazioni, non ammette le mezze misure 
+		<p>
+			<img src="FFDo05.gif"  width="74" height="141" alt="Donna Leone" class="sFloatL">
+			<img src="V5Leone.gif" width="89" height="105" alt="Leone" class="sFloatR">
+			Il bimbo <span class="sRed sBold">LEONE</span> è pieno di energia, esigente, estroverso, audace e combattivo. Il suo temperamento è vivace e
+			non tarda a mostrare l'inclinazione al comando precocemente mettendosi alla guida diuna schiera nelle sue reazioni, non ammette le mezze misure
 			e vuole tutto o niente. La personalità solare e gioiosa del  <span class="sRed sBold">Leone</span> si manifesta subito nella sua affettuosità
 			espansiva e nella passione con cui vive tutte le esperienze. Ha un comportamento spesso impulsivo, un carattere allegro, luminoso, entusiasta,
 			caratterizzato da una forte aggressività e competitività, un costante bisogno di fare movimento di avere sempre situazioni stimolanti. Tende a
 			farsi costantemente notare, ad emergere, riesce comunque ad ottenere tutto ciò che desidera dalle persone che gli vivono vicino, sa come farsi
 			benvolere, mettendo a frutto il suo fascino e magnetismo. Indipendente, molto dignitoso, coraggioso, ambizioso e capace di difendere le proprie
 			idee. Buono e generoso, ama prendere le difese di amici più deboli e indifesi, che difende con spirito da vero paladino. Non ha problemi nel
-			stringere legami, gli è molto difficile sottomettersi, deve sempre dimostrare quello di cui è capace. Dietro a tanta sicurezza però, si cela 
-			una gran suscettibilità e guai a non rispettare il suo temperamento, ne potrebbe venir alterato il suo processo formativo. Amante del lo sport, 
+			stringere legami, gli è molto difficile sottomettersi, deve sempre dimostrare quello di cui è capace. Dietro a tanta sicurezza però, si cela
+			una gran suscettibilità e guai a non rispettare il suo temperamento, ne potrebbe venir alterato il suo processo formativo. Amante del lo sport,
 			è un ottimo sciatore o un abile nuotatore, il movimento gli è indispensabile. Sicuro di sé, un po' suscettibile, può stancarsi per eccesso di
 			vitalità. È un leader nato e non faticherà molto ad affermarsi nel mondo degli adulti.
 		</p>
 
 		<h2><span class="sLime">VERGINE</span></h2>
-		<p class="sSmall sCream sJustify sPadding" style="line-height: 125%">
-			<img src="FFDo06.gif"    width="67" height="139" class="sFloatL">
-			<img src="V6Vergine.gif" width="79" height="100" class="sFloatR">
-			Il bambino <span class="sLime sBold">VERGINE</span> è per natura tranquillo e ubbidiente, anzi ci tiene a dare il meglio di sé. Timido e 
-			riservato, fa fatica ad allacciare rapporti con i coetanei, ma quando si lega a qualche amico, questi rimarrà tale per tutta la vita. Gentile 
+		<p>
+			<img src="FFDo06.gif"    width="67" height="139" alt="Donna Vergine" class="sFloatL">
+			<img src="V6Vergine.gif" width="79" height="100" alt="Vergine" class="sFloatR">
+			Il bambino <span class="sLime sBold">VERGINE</span> è per natura tranquillo e ubbidiente, anzi ci tiene a dare il meglio di sé. Timido e
+			riservato, fa fatica ad allacciare rapporti con i coetanei, ma quando si lega a qualche amico, questi rimarrà tale per tutta la vita. Gentile
 			di animo, con un'indole dolce, il carattere è un po' chiuso, calmo e riflessivo, può soffrire facilmente di un complesso di inferiorità, che lo
-			fa sentire frustrato. Ordinato e metodico, un vero perfezionista, ama le cose ben fatte è meticoloso e preciso. Dotato di un rigoroso senso 
-			morale, di una forte volontà e una saggezza profonda, un gran desiderio di rendersi utile. È riservato, non ama le compagnie troppo chiassose, 
-			assume più un ruolo di gregario lasciandosi indirizzare e trascinare da compagni più intraprendenti. Fa presto amicizia, è molto generoso e 
-			altruista, maturo, saggio e si adegua al suo ambiente, fa di tutto per non avere nemici e supera la sua innata timidezza con le sole forze. 
-			Ragionevole e tranquillo, non ama le competizioni e i giochi violenti perché non ha una particolare aggressività da sfogare. È un bimbo molto 
-			pignolo e preciso per cui non faticherete ad insegnargli a riordinare le proprie cose, né tanto meno ricordargli di lavare le mani. Ha una mente 
+			fa sentire frustrato. Ordinato e metodico, un vero perfezionista, ama le cose ben fatte è meticoloso e preciso. Dotato di un rigoroso senso
+			morale, di una forte volontà e una saggezza profonda, un gran desiderio di rendersi utile. È riservato, non ama le compagnie troppo chiassose,
+			assume più un ruolo di gregario lasciandosi indirizzare e trascinare da compagni più intraprendenti. Fa presto amicizia, è molto generoso e
+			altruista, maturo, saggio e si adegua al suo ambiente, fa di tutto per non avere nemici e supera la sua innata timidezza con le sole forze.
+			Ragionevole e tranquillo, non ama le competizioni e i giochi violenti perché non ha una particolare aggressività da sfogare. È un bimbo molto
+			pignolo e preciso per cui non faticherete ad insegnargli a riordinare le proprie cose, né tanto meno ricordargli di lavare le mani. Ha una mente
 			critica ed analitica che consente di brillare soprattutto nelle materie scientifiche: matematica, chimica e scienze. Forse è un po' nervoso
 			tuttavia non è mai scalmanato o scavezzacollo. Ha bisogno d'essere educato con molto tatto e comprensione, senza rigidezza o di idee ristrette.
-			Deve vivere in un ambiente familiare tranquillo e sereno, dove possa avere rapporti equilibrati per non intaccare il carattere un po' 
+			Deve vivere in un ambiente familiare tranquillo e sereno, dove possa avere rapporti equilibrati per non intaccare il carattere un po'
 			impressionabile. Molto attaccato ai genitori, non rappresenta quasi mai un grosso problema.
 		</p>
 
 		<h2><span class="sYellow">BILANCIA</span></h2>
-		<p class="sSmall sCream sJustify sPadding" style="line-height: 125%">
-			<img src="FFDo07.gif"     width="87" height="139" class="sFloatL">
-			<img src="V7Bilancia.gif" width="93" height="100" class="sFloatR">
+		<p>
+			<img src="FFDo07.gif"     width="87" height="139" alt="Donna Bilancia" class="sFloatL">
+			<img src="V7Bilancia.gif" width="93" height="100" alt="Bilancia" class="sFloatR">
 			Il bimbo <span class="sYellow sBold">BILANCIA</span> è bello, delicato, spontaneo e gentile. Spesso è molto indeciso e non sa quello che vuole,
-			va educato ad essere più sicuro di se stesso e soprattutto ad essere più volitivo di quanto gli verrebbe naturale. È facile essere troppo 
+			va educato ad essere più sicuro di se stesso e soprattutto ad essere più volitivo di quanto gli verrebbe naturale. È facile essere troppo
 			indulgenti con lui e cedere alla dolcezza e all'indubbia capacità di persuasione. Attirato da tutto ciò che è bello, è sensibile alla musica,
 			all'arte alla bellezza della natura più di qualunque altro bambino è il riflesso della sua famiglia. Il carattere è allegro, affettuoso e sempre
-			sorridente, naturale e ottimista, attira subito simpatia e protezione. Molto facile da educare, sopporta senza mai scomporsi i cambiamenti, 
+			sorridente, naturale e ottimista, attira subito simpatia e protezione. Molto facile da educare, sopporta senza mai scomporsi i cambiamenti,
 			sempre teso ad osservare, a captare le correnti che lo circondano, ad esplorare l'ambiente in cui è inserito. Sa facilmente farsi benvolere dai
-			coetanei e dagli adulti perché è furbo, intelligente e intraprendente, buono e generoso. È piuttosto vanitoso ci tiene ad essere sempre ben 
+			coetanei e dagli adulti perché è furbo, intelligente e intraprendente, buono e generoso. È piuttosto vanitoso ci tiene ad essere sempre ben
 			vestito, in ordine e ben pettinato. Deve essere invogliato e stimolato a fare determinate cose perché tende alla pigrizia, si trova spesse volte
 			a chiedere ai suoi genitori cosa deve fare. Può anche scegliere una professione giuridica, diplomatica o politica non fa differenza, purché gli
 			piaccia. Ama la vita collettiva e rifugge dalla solitudine, vuole essere sempre presente nella gestione delle faccende famigliari. Stimolate la
@@ -291,138 +309,141 @@ figcaption {
 		</p>
 
 		<h2><span class="sAqua">SCORPIONE</span></h2>
-		<p class="sSmall sCream sJustify sPadding" style="line-height: 125%">
-			<img src="FFDo08.gif"      width="77" height="141" class="sFloatL">
-			<img src="V8Scorpione.gif" width="97" height="110" class="sFloatR">
+		<p>
+			<img src="FFDo08.gif"      width="77" height="141" alt="Donna Scorpione" class="sFloatL">
+			<img src="V8Scorpione.gif" width="97" height="110" alt="Scorpione" class="sFloatR">
 			Il bambino <span class="sAqua sBold">SCORPIONE</span> ha un carattere molto forte, coraggioso, predisposto alla spericolatezza. Vivacissimo e
 			scatenato, ha un fondo d'introversione che lo porta a chiudersi in se stesso quando entra in conflitto col mondo esterno o se non si sente
 			compreso. Se lo ferite diventa aggressivo e violento ha una prodigiosa memoria, non dimentica mai un torto subito. Nel comportamento è poco
 			espansivo ma non è che non è sensibile, è che lo nasconde abilmente, fingete di non averlo capito. Natura ribelle e ostinata, se preso con le
 			buone maniere può diventare molto dolce, non è però un bambino facile. È realista e intraprendente, capace di dare dei giudizi precisi che si
 			rivelano sempre esatti. È un bimbo temerario, non ha paura di nulla e molto presto comincerà a sfidarvi solo per il puro gusto di farlo. Dotato
-			di senso pratico molto sviluppato, sa rendersi utile a tutti, va seguito con attenzione perché può diventare vendicativo. Intuitivo e 
-			intelligente, un buon ascoltatore e un abile indagatore in grado di mettere a fuoco in un lampo il profilo caratteriale delle persone che ha 
+			di senso pratico molto sviluppato, sa rendersi utile a tutti, va seguito con attenzione perché può diventare vendicativo. Intuitivo e
+			intelligente, un buon ascoltatore e un abile indagatore in grado di mettere a fuoco in un lampo il profilo caratteriale delle persone che ha
 			davanti. Ha un vasto mondo interiore dove si alternano sensazioni, emotività e sentimenti vissuti all'estremo in chiave molto forte. È molto
-			orgoglioso e possessivo più di quanto non sembri, la menzogna e il tradimento degli altri lo feriscono profondamente. Ama lo lo studio ed 
+			orgoglioso e possessivo più di quanto non sembri, la menzogna e il tradimento degli altri lo feriscono profondamente. Ama lo lo studio ed
 			eccelle nei calcoli matematici, può indirizzarsi verso la psichiatria o la chirurgia, la fisica. Tende a stabilire una supremazia, è necessario
 			avere mano ferma in guanto di velluto, renderlo partecipe e responsabile può rendere felice la sua infanzia.
 		</p>
 
 		<h2><span class="sRed">SAGITTARIO</span></h2>
-		<p class="sSmall sCream sJustify sPadding" style="line-height: 125%">
-			<img src="FFDo09.gif"      width="74" height="137" class="sFloatL">
-			<img src="V9agittario.gif" width="88" height="115" class="sFloatR">
+		<p>
+			<img src="FFDo09.gif"      width="74" height="137" alt="Donna Sagittario" class="sFloatL">
+			<img src="V9agittario.gif" width="88" height="115" alt="Sagittario" class="sFloatR">
 			Il bimbo <span class="sRed sBold">SAGITTARIO</span> è un'entusiasta, sincero, felice di vivere, irrequieto, vivace, sicuro di sé, pieno di
 			curiosità. È molto intelligente e socievole, allegro e ottimista, si entusiasma facilmente. La casa dei genitori sarà sempre piena di amichetti
-			chiassosi e turbolenti. Fin da piccolo, è sempre in movimento, alla scoperta delle cose nuove ed eccitanti. Non conosce il pericolo e 
-			costringerà i genitori a vivere costantemente con l'ansia di vederlo tornare a casa tutto incerottato. A volte può essere impulsivo e 
+			chiassosi e turbolenti. Fin da piccolo, è sempre in movimento, alla scoperta delle cose nuove ed eccitanti. Non conosce il pericolo e
+			costringerà i genitori a vivere costantemente con l'ansia di vederlo tornare a casa tutto incerottato. A volte può essere impulsivo e
 			battagliero, ma è anche allegro e felice delle sue piccole conquiste, abile nel volgere ogni cosa a proprio vantaggio. Buono e goloso il suo
-			problema principale è quello di non restare mai con il pancino vuoto!  <span class="sRed sBold">Giove</span> influenza non solo il carattere ma
-			anche nelle dosi non indifferenti di appetito: cibo, latte e calore della mamma fanno parte dei piaceri della vita, e non vorrà mai rinunciare.
-			È aperto e sta molto volentieri con chiunque abbia voglia di occuparsi di lui, fa subito amicizia coi coetanei grazie alla sua gran simpatia e
-			disponibilità. Si butta nelle cose con energia e volontà anche con una certa approssimazione e ingenuità. È molto rumoroso e turbolento,
-			spericolato e coraggioso, adora rischiare un po' incosciente, non smette di agitarsi, di gesticolare, il suo dinamismo è sempre colmo e spesso 
-			un po' disordinato. È un bimbo molto simpatico, allegro e accattivante con la sua spontaneità è anche dotato di una comunicativa straordinaria.
-			Si caccia facilmente nei guai perché vuol fare ciò che vuole, presume che tutto sia facile, è bene impegnarlo in cose difficili. Ama molto 
-			natura e animali e tutto ciò che è movimento la compagnia e il gioco. Negli studi è attratto dalla geografia e scienze naturali, lasciatelo 
-			fare non ve ne pentirete.
+			problema principale è quello di non restare mai con il <i>pancino</i> vuoto!  <span class="sRed sBold">Giove</span> influenza non solo il
+			carattere ma anche nelle dosi non indifferenti di appetito: cibo, latte e calore della mamma fanno parte dei piaceri della vita, e non vorrà
+			mai rinunciare. È aperto e sta molto volentieri con chiunque abbia voglia di occuparsi di lui, fa subito amicizia coi coetanei grazie alla sua
+			gran simpatia e disponibilità. Si butta nelle cose con energia e volontà anche con una certa approssimazione e ingenuità. È molto rumoroso e
+			turbolento, spericolato e coraggioso, adora rischiare un po' incosciente, non smette di agitarsi, di gesticolare, il suo dinamismo è sempre
+			colmo e spesso un po' disordinato. È un bimbo molto simpatico, allegro e accattivante con la sua spontaneità è anche dotato di una comunicativa
+			straordinaria. Si caccia facilmente nei guai perché vuol fare ciò che vuole, presume che tutto sia facile, è bene impegnarlo in cose difficili.
+			Ama molto natura e animali e tutto ciò che è movimento la compagnia e il gioco. Negli studi è attratto dalla geografia e scienze naturali,
+			lasciatelo fare non ve ne pentirete.
 		</p>
 
 		<h2><span class="sLime">CAPRICORNO</span></h2>
-		<p class="sSmall sCream sJustify sPadding" style="line-height: 125%">
-			<img src="FFDo10.gif"        width="69"  height="192" class="sFloatL">
-			<img src="V10Capricorno.gif" width="105" height="100" class="sFloatR">
+		<p>
+			<img src="FFDo10.gif"        width="69"  height="192" alt="Donna Capricorno" class="sFloatL">
+			<img src="V10Capricorno.gif" width="105" height="100" alt="Capricorno" class="sFloatR">
 			Il bambino <span class="sLime sBold">CAPRICORNO</span> è molto tenace, paziente e determinato a raggiungere i propri scopi in qualsiasi maniera.
 			È calmo ponderato, riflessivo, taciturno, appare più maturo rispetto alla sua età. Ha tendenza a rinchiudersi ma è sempre misurato. È molto
-			fermo e deciso, riesce a valorizzare pienamente le sue qualità fin dai primi anni di vita. Aiutato da una viva intelligenza, una buona memoria, 
+			fermo e deciso, riesce a valorizzare pienamente le sue qualità fin dai primi anni di vita. Aiutato da una viva intelligenza, una buona memoria,
 			un ottimo intuito e capacità di applicarsi. Dotato di una gran generosità che lo spinge ad aiutare tutti quelli che soffrono. Per natura rifugge
 			dalle azioni azzardate e dalle fantasie pericolose, è ambizioso, intuitivo e ipersensibile, ma per pudore nasconde i suoi sentimenti. Carattere
-			stabile e solitario non è mai né superficiale né frivolo, non prende mai con leggerezza alcun avvertimento della vita. Il 
-			<span class="sLime sBold">Capricorno</span> è il segno dei leader di chi è capace d'imporsi nella vita grazie alla determinazione e 
-			d'inesauribile forza di volontà, razionalità, senso critico e il desiderio di affermazione e d'autonomia. Molto ubbidiente, onesto, 
+			stabile e solitario non è mai né superficiale né frivolo, non prende mai con leggerezza alcun avvertimento della vita. Il
+			<span class="sLime sBold">Capricorno</span> è il segno dei leader di chi è capace d'imporsi nella vita grazie alla determinazione e
+			d'inesauribile forza di volontà, razionalità, senso critico e il desiderio di affermazione e d'autonomia. Molto ubbidiente, onesto,
 			convenzionale, ha bisogno di sentirsi orgoglioso dei suoi genitori, ma accetta di buon grado le regole e gli orari che gli sono imposti, prende
-			tutto molto sul serio. Ha un grande senso del dovere e una sua disciplina personale, oltre al senso pratico che lo mette in grado di cavarsela 
-			da solo in ogni situazione. È un bimbo cui si possono affidare dei compiti di una certa responsabilità e di chiedere il massimo impegno nello 
+			tutto molto sul serio. Ha un grande senso del dovere e una sua disciplina personale, oltre al senso pratico che lo mette in grado di cavarsela
+			da solo in ogni situazione. È un bimbo cui si possono affidare dei compiti di una certa responsabilità e di chiedere il massimo impegno nello
 			studio perché ha gran capacità di applicazione. Molto adatti gli studi scientifici ed economici, lui comunque mirerà in alto.
 		</p>
 
 		<h2><span class="sYellow">ACQUARIO</span></h2>
-		<p class="sSmall sCream sJustify sPadding" style="line-height: 125%">
-			<img src="FFDo11.gif"      width="72" height="174" class="sFloatL">
-			<img src="V11Acquario.gif" width="97" height="105" class="sFloatR">
+		<p>
+			<img src="FFDo11.gif"      width="72" height="174" alt="Donna Acquario" class="sFloatL">
+			<img src="V11Acquario.gif" width="97" height="105" alt="Acquario" class="sFloatR">
 			Il bimbo <span class="sYellow sBold">ACQUARIO</span> è gentile, timido, dolce e pacifico è molto gradevole vivere con lui, conquista la simpatia
 			degli adulti con cortesia e socievolezza, allo stesso tempo con molta serietà. È un indipendente nato, poco ricettivo ai comandi e soprattutto
-			non tollera una educazione restrittiva che non rispetti i suoi bisogni di spazi aperti. Intraprendente, imprevedibile e pieno di nuove idee, 
-			alla costante ricerca del nuovo e del diverso. Un po' pigro ma deciso ad ottenere molto dalla vita, dagli altri e dalla famiglia, può diventare 
-			una peste perché è molto abile nel conseguire ciò che desidera. Intraprendente, imprevedibile e sempre pieno di nuove idee, alla costante 
-			ricerca del nuovo e del diverso. È un'opportunista ma dotato di una grande abilità manuale, è il tipico bambino che ama smontare i giocattoli 
+			non tollera una educazione restrittiva che non rispetti i suoi bisogni di spazi aperti. Intraprendente, imprevedibile e pieno di nuove idee,
+			alla costante ricerca del nuovo e del diverso. Un po' pigro ma deciso ad ottenere molto dalla vita, dagli altri e dalla famiglia, può diventare
+			una peste perché è molto abile nel conseguire ciò che desidera. Intraprendente, imprevedibile e sempre pieno di nuove idee, alla costante
+			ricerca del nuovo e del diverso. È un'opportunista ma dotato di una grande abilità manuale, è il tipico bambino che ama smontare i giocattoli
 			per vedere come sono fatti dentro. Portato per la tecnologia avanzata, lo vedremo facilmente sventrare il giocattolo nuovo, per capire cosa
-			contiene e come è stato costruito, ma poi sa ricostruirlo come e meglio di prima. È molto generoso cerca sempre ciò che potrebbe far piacere 
+			contiene e come è stato costruito, ma poi sa ricostruirlo come e meglio di prima. È molto generoso cerca sempre ciò che potrebbe far piacere
 			agli altri, ama il gioco, ed è anche capace d'inventarseli da solo. È affascinato da tutto quanto rivela la tecnica, l'ingegneria e il progresso
 			e conoscerà di più un telecomando dei videogiochi che un tradizionale orsacchiotto di peluche, presto userà il mouse meglio di una matita da
-			disegno. Non tiene mai il broncio, va d'accordo con tutti, discute molto e non litiga mai, sin da piccolo dimostra la sua indipendenza. Forse 
-			a scuola può avere non poche difficoltà per adattarsi agli schemi educativi, alla regolarità degli orari, ma lasciatelo fare, è abilissimo a 
+			disegno. Non tiene mai il broncio, va d'accordo con tutti, discute molto e non litiga mai, sin da piccolo dimostra la sua indipendenza. Forse
+			a scuola può avere non poche difficoltà per adattarsi agli schemi educativi, alla regolarità degli orari, ma lasciatelo fare, è abilissimo a
 			cogliere al volo ogni opportunità per volgere la realtà a proprio vantaggio.
 		</p>
 
 		<h2><span class="sAqua">PESCI</span></h2>
-		<p class="sSmall sCream sJustify sPadding" style="line-height: 125%">
-			<img src="FFDo12.gif"   width="64" height="165" class="sFloatL">
-			<img src="V12Pesci.gif" width="86" height="105" class="sFloatR">
-			Il bimbo <span class="sAqua sBold">PESCI</span> è il più sensibile, impressionabile, emotivo e tenero dei bambini. Dolcissimo e amabile, un po' 
-			sempre con la testa nelle nuvole a sognare ad occhi aperti mondi di favola. Intelligente ma pigro, non sempre sa mettere a giusto frutto le 
-			proprie qualità. Dotato di memoria straordinaria, sa conquistarsi la simpatia degli adulti. Ha un carattere poco stabile e coerente e può 
-			mostrarsi molto diverso secondo le persone con le quali si trova. Ha nell'animo molta gentilezza ed è pieno di attenzioni, cerca sempre di far 
-			piacere agli altri. Ricettivo e facile alla commozione, d'indole buona e straordinariamente generosa, si sente un amico di tutti coloro che 
-			soffrono e può arrivare a regalare ad un povero tutto quello che possiede. È pieno di buone qualità, ma che non sa sfruttare nel modo più 
-			conveniente. Occorre avere molto tatto perché si scoraggia se lo sgridate troppo pensa di non valere nulla e rinuncia a combattere. Spesso 
-			soffre di malinconie ingiustificate, ma sa essere irresistibile per le sue trovate spiritose quanto imprevedibili. Deve essere costantemente 
-			seguito con affetto e fermezza per aiutarlo a essere più concreto e positivo. Dotato di estro e fantasia eccelle nelle materie artistiche o 
-			letterarie, o scegliere anche una professione di tipo tecnico o fare addirittura il marinaio e andare per mare. Molto attaccato ai genitori ha 
-			bisogno della loro protezione e affettuosa presenza per sentirsi rassicurato, dategli l'esempio del coraggio, della fermezza e della sincerità.   
+		<p>
+			<img src="FFDo12.gif"   width="64" height="165" alt="Donna Pesci" class="sFloatL">
+			<img src="V12Pesci.gif" width="86" height="105" alt="Pesci" class="sFloatR">
+			Il bimbo <span class="sAqua sBold">PESCI</span> è il più sensibile, impressionabile, emotivo e tenero dei bambini. Dolcissimo e amabile, un po'
+			sempre con la testa nelle nuvole a sognare ad occhi aperti mondi di favola. Intelligente ma pigro, non sempre sa mettere a giusto frutto le
+			proprie qualità. Dotato di memoria straordinaria, sa conquistarsi la simpatia degli adulti. Ha un carattere poco stabile e coerente e può
+			mostrarsi molto diverso secondo le persone con le quali si trova. Ha nell'animo molta gentilezza ed è pieno di attenzioni, cerca sempre di far
+			piacere agli altri. Ricettivo e facile alla commozione, d'indole buona e straordinariamente generosa, si sente un amico di tutti coloro che
+			soffrono e può arrivare a regalare ad un povero tutto quello che possiede. È pieno di buone qualità, ma che non sa sfruttare nel modo più
+			conveniente. Occorre avere molto tatto perché si scoraggia se lo sgridate troppo pensa di non valere nulla e rinuncia a combattere. Spesso
+			soffre di malinconie ingiustificate, ma sa essere irresistibile per le sue trovate spiritose quanto imprevedibili. Deve essere costantemente
+			seguito con affetto e fermezza per aiutarlo a essere più concreto e positivo. Dotato di estro e fantasia eccelle nelle materie artistiche o
+			letterarie, o scegliere anche una professione di tipo tecnico o fare addirittura il marinaio e andare per mare. Molto attaccato ai genitori ha
+			bisogno della loro protezione e affettuosa presenza per sentirsi rassicurato, dategli l'esempio del coraggio, della fermezza e della sincerità.
 		</p>
 
-		<p class="sCenter">
-			<img src="ABsepara.gif" width="230" height="40" border="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-			<img src="ABsepara.gif" width="230" height="40" border="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="ABsepara.gif" width="230" height="40" border="0">
+		<p class="sCenter" style="clear: both;">
+			<img src="ABsepara.gif" width="230" height="40" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="ABsepara.gif" width="230" height="40" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="ABsepara.gif" width="230" height="40" alt="">
 		</p>
 
-		<p class="sXLarge sCream sCenter">
-			<strong>I miei nipoti (ancora bambini)</strong>
+		<p class="sXLarge sCenter">
+			<b>I miei nipoti (ancora bambini)</b>
 		</p>
 		<div class="sSmall sCream sBold sCenter">
 			<figure class="sImmagine">
-				<img src="Connor2015.jpg"      width="395" height="400"> 
+				<img src="Connor2015.jpg"      width="395" height="400" alt="Connor">
 				<figcaption>CONNOR <span class="sLime">Vergine</span></figcaption>
 			</figure>
 			<figure class="sImmagine">
-				<img src="FFA.Vale13Mar16.jpg" width="336" height="392">
+				<img src="FFA.Vale13Mar16.jpg" width="336" height="392" alt="Valeria">
 				<figcaption>VALERIA <span class="sRed">Ariete</span></figcaption>
 			</figure>
 		</div>
 
-		<p align="center">
-			<img src="ABsepara.gif" width="230" height="40" border="0">&nbsp;&nbsp;&nbsp; 
-			<img src="ABsepara.gif" width="230" height="40" border="0">&nbsp;&nbsp;&nbsp; 
-			<img src="ABsepara.gif" width="230" height="40" border="0">
+		<p class="sCenter">
+			<img src="ABsepara.gif" width="230" height="40" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="ABsepara.gif" width="230" height="40" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="ABsepara.gif" width="230" height="40" alt="">
 		</p>
 
-		<p class="sSmall sLtYellow sCenter">
-			<img src="email-box.gif"    width="35"  height="35">
+		<p class="sCenter">
+			<img src="email-box.gif"    width="35" height="35" alt="">
 			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
-			<img src="TelefonoC164.gif" width="35" height="35">&nbsp;
-			oppure Telefona: <strong>0125 631175 - Cell. 347 0417409<br><br>
-			Sei il visitatore n°&nbsp;</strong>
+			<img src="TelefonoC164.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+
+			<a href="index.html" class="sBold">Pagina iniziale <img src="favicon32.gif" width="32" height="32"> Home page</a>
+			&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+			<b>Sei il visitatore n°&nbsp;</b>
 		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220365515-55mh33f3a" border=0></a>
-			&nbsp;(Contenuto Aggiornato 07/09/2019)<br><br>
+			&nbsp;(Contenuto Aggiornato <time datetime="2019-09-07">07/09/2019</time>)<br><br>
 		</p>
-		</td></tr></table>
-	</td></tr></table>
+
 </td></tr></table>
-<p class="sXXSmall sWhite sBold sCenter">
-	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati. 
+</td></tr></table>
+<footer>
+	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
 	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
-</p>
+</footer>
 </body>
 </html>

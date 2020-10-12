@@ -1,48 +1,132 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" dir="ltr">
 <head>
 <meta charset="UTF-8">
-<title>La Ruota della vita, 2a parte</title>
+<title>La Ruota della vita, 2a parte - Studio Acquario</title>
 <link rel="icon" type="image/gif" href="favicon32.gif">
 <meta name="description" content="Studio Acquario: La Ruota della vita, 2a parte">
-<meta name="keywords" content="astrologia, zodiaco, ruota vita, ascendente, case">
+<meta name="keywords" lang="it" content="astrologia, studio acquario, zodiaco, ruota vita, ascendente, case">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
 <meta name="language" content="it">
 <meta http-equiv="imagetoolbar" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="15/05/2019">
-<meta name="revised" content="15/08/2020">
+<meta name="revised" content="12/10/2020">
 
 <style type="text/css">
-BODY {
-	scrollbar-3d-light-color:#fac100; 
+body {
+	scrollbar-3d-light-color:#fac100;
 	scrollbar-arrow-color:#fac100;
-	scrollbar-base-color:#fac100; 
+	scrollbar-base-color:#FAC100; /* Golden Poppy */
 	scrollbar-dark-shadow-color:#fac100;
-	scrollbar-face-color:#2931ba; 
+	scrollbar-face-color:#2931ba;
 	scrollbar-highlight-color:#fac100;
-	scrollbar-track-color:#545AC8; 
+	scrollbar-track-color:#545AC8; /* Free Speech Blue */
 	scrollbar-shadow-color:#1c2186;
 
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-	color: #fac100; /* Golden Poppy */
+	color: #FAC100; /* Golden Poppy */
 	background-image: url('SVLblutile3.jpg');
 	background-color: #e1d5d9; /* Prim */
 	background-attachment: fixed;
 }
-A {
-	text-decoration:none;
+a:link {
+	color: #FFFFFF;
 }
-A:hover {
-	text-transform: capitalize; 
-	letter-spacing: 1pt; 
-} 
-.sLogoBanner {
+a:visited {
+	color: #FFFFFF;
+}
+a:hover {
+	color: #FF0000;
+}
+a:active {
+	color: #FFFFFF;
+}
+h1 {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #FEE15C; /* Mustard */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 140%;
+}
+h2 {
+	clear: both; /* disabilita float */
+	font-size: medium;
+	font-weight: bold;
+	color: #FEE15C; /* Mustard */
+	text-align: left;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-top: 30px;
+}
+header {
 	font-size: xx-large;
 	font-weight: bold;
 	color: #FFFFFF; /* White */
 	text-shadow: 1px 1px 5px #0000FF; /* Blue */
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
+}
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	/* text-shadow: 1px 1px 1px #0000FF; Blue #1A2B0A;*/
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
+}
+p {
+	font-size: small;
+	color: #FEE15C; /* Mustard */
+	text-align: justify;
+	padding-left: 35px;
+	padding-right: 35px;
+	line-height: 125%;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.sNavigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 180%;
+}
+.sNavigation a {
+	font-size: medium;
+	font-weight: bold;
+	padding:.42em;
+	color: #FFFFFF; /* White */
+	margin-left: 2px;
+	background: #0000FF;  /* Blue */
+	text-decoration: none;
+}
+.sNavigation a:hover {
+	color: #000000; /* Black */
+	background: #AFB6C9; /* Echo Blue */
+}
+#PagCorrente {
+	border-bottom: 2.5px solid #FF0000; /* Red */
+}
+.sHomeIcon {
+	vertical-align: bottom;
+	margin-bottom: 1px;
+	height: 25px;
+	width: 25px;
 }
 .sBorder1s {
 				border-style: solid;
@@ -54,55 +138,17 @@ A:hover {
 .sAqua {
 				color: #00FFFF;
 }
-.sMustard {
-				color: #FEE15C;
-}
 .sRed {
 				color: #FF0000;
 }
 .sYellow {
 				color: #FFFF00;
 }
-.sWhite {
-				color: #FFFFFF;
-}
-.sBGCurrent {
-				background-color: #2D7395;
-}
-.sBGOther {
-				background-color: #0000FF;
-}
-.sUnderline {
-				text-decoration: underline;
-}
 .sBold {
 				font-weight: bold;
 }
 .sCenter {
 				text-align: center;
-}
-.sJustify {
-				text-align: justify;
-}
-.sLeft {
-				text-align: left;
-}
-.sMarginsTB {
-				margin-top: 1.5em;
-				margin-bottom: 0;
-}
-.sPadding {
-				padding-left: 40px;
-				padding-right: 40px;
-}
-.sXXSmall {
-				font-size: xx-small;
-}
-.sXSmall {
-				font-size: x-small;
-}
-.sSmall {
-				font-size: small;
 }
 .sMedium {
 				font-size: medium;
@@ -119,328 +165,303 @@ A:hover {
 </style>
 </head>
 
-<body link="#FFFFFF" alink="#FFFFFF" vlink="#FFFFFF">
-<p class="sLogoBanner">Studio di Astrologia "Acquario"</p>
+<body>
+<header>Studio di Astrologia "Acquario"</header>
 
-<table background="SVLblutile2.jpg" cellspacing="10" cellpadding="0" bordercolorlight="#f6c224" bordercolordark="#fac100" width="95%" class="sBorder1s" align="center">
-<tr><td>
+<table background="SVLblutile2.jpg" cellspacing="6" cellpadding="12" class="sBorder1s" bordercolorlight="#f6c224" bordercolordark="#fac100" width="95%" align="center">
+<tr><td background="SVLblustrip5.jpg">
 
-<table background="SVLblustrip5.jpg" cellspacing="10" cellpadding="0" bordercolorlight="#f6c224" bordercolordark="#fac100" border="1" width="100%">
-<tr><td>
+<table background="SVLblutile2.jpg" cellspacing="6" cellpadding="0" border="1" bordercolorlight="#fac100" bordercolordark="#f6c224" width="100%">
+<tr><td background="SVLblutile1.jpg">
 
-<table background="SVLblutile2.jpg" cellspacing="10" cellpadding="0" bordercolorlight="#fac100" bordercolordark="#f6c224" border="1" width="100%">
-<tr><td>
+		<h1>LA RUOTA DELLA VITA<br>Seconda Parte: Bilancia-Pesci</h1>
 
-<table background="SVLblustrip5.jpg" cellspacing="0" cellpadding="0" bordercolorlight="#f6c224" bordercolordark="#fac100" border="0" width="100%">
-<tr><td>
-
-<table background="SVLblutile1.jpg" cellspacing="0" cellpadding="0" bgcolor="#0000FF" bordercolorlight="#f6c224" bordercolordark="#fac100" border="0" width="100%">
-<tr><td>
-
-		<p class="sMustard sXLarge sBold sCenter">
-			LA RUOTA DELLA VITA</p>
-			
 		<p class="sCenter">
-			<img src="Zodiaoro.jpg"        width="410" height="409"><br><br>
+			<img src="Zodiaoro.jpg" width="410" height="409" alt="Lo Zodiaco dorato">
+			<br><br>
 		</p>
-		<p class="sMedium sMustard sJustify sPadding">
-			Il cerchio zodiacale per la sua forma e per la suddivisione in <strong>12</strong> Case, a cui corrispondono i <strong>12</strong> segni, può
+
+		<p class="sMedium">
+			Il cerchio zodiacale per la sua forma e per la suddivisione in <b>12</b> Case, a cui corrispondono i <b>12</b> segni, può
 			essere definito la <span class="sUnderline sBold">Ruota della vita</span>.<br>
-			Ogni casa rappresenta un settore della vita di un individuo è influenzata dal segno zodiacale nel quale si trova a cadere. Il primo elemento 
+			Ogni casa rappresenta un settore della vita di un individuo è influenzata dal segno zodiacale nel quale si trova a cadere. Il primo elemento
 			del tema natale (o carta del cielo) è l'<span class="sRed sBold">Ascendente</span> che determina anche la <span class="sRed sBold">I</span> Casa.
 			Gli altri punti cardine sono: il discendente o (<span class="sRed sBold">VII</span> Casa), il fondo cielo (<span class="sRed sBold">IV</span>
 			Casa) il <span class="sAqua sBold">Medio Cielo</span> (<span class="sRed sBold">X</span> Casa).<br>
 			L'<span class="sRed sBold">ASC</span> o la <span class="sRed sBold">I</span> Casa: rappresenta l'insieme delle caratteristiche psicofisiche che
 			ci distinguono e delineano i tratti esteriori della personalità e il comportamento.
-			La <span class="sRed sBold">VII</span> Casa: è il punto opposto all'<span class="sRed sBold">ASC</span> e rappresenta il nostro atteggiamento 
+			La <span class="sRed sBold">VII</span> Casa: è il punto opposto all'<span class="sRed sBold">ASC</span> e rappresenta il nostro atteggiamento
 			nei confronti degli altri, la società, il matrimonio, le associazioni in genere.
 			La <span class="sRed sBold">IV</span> Casa: rappresenta il rapporto con l'ambiente famigliare, l'impostazione che una volta da adulto darà alla
 			propria vita privata.
 			La <span class="sRed sBold">X</span> Casa o <span class="sAqua sBold">MC</span>: indica il modo di muoversi sulla strada del successo, le
 			potenzialità e le attività per cui si è più tagliati.<br>
 			Se conoscete il segno in cui cade l'<span class="sRed sBold">ASC</span> o la <span class="sRed sBold">I</span> Casa, è facile stabilire i segni
-			in cui si trovano la <span class="sRed sBold">VII</span>, la <span class="sRed sBold">IV</span> e la <span class="sRed sBold">X</span> o 
-			<span class="sAqua sBold">MC</span> Casa. Quando la <span class="sRed sBold">I</span> casa o <span class="sRed sBold">ASC</span> cade negli 
+			in cui si trovano la <span class="sRed sBold">VII</span>, la <span class="sRed sBold">IV</span> e la <span class="sRed sBold">X</span> o
+			<span class="sAqua sBold">MC</span> Casa. Quando la <span class="sRed sBold">I</span> casa o <span class="sRed sBold">ASC</span> cade negli
 			ultimi gradi di un segno a volte le case sono diverse, è necessario erigere il tema di nascita.
 		</p>
 
 		<p class="sCenter">
 			<br>
-			<img src="astrology.gif" width="439" height="36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="astrology.gif" width="439" height="36">
+			<img src="astrology.gif" width="439" height="36" alt="Barra segni zodiacali">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="astrology.gif" width="439" height="36" alt="">
 			<br><br>
 		</p>
-		<p class="sSmall sBold sCenter">
-			</span><span class="sBGOther">&nbsp;
-			<a href="LaRuotaA.htm">Dall'<span class="sRed">ARIETE</span> alla <span class="sLime">VERGINE</span></a> |<span class="sBGCurrent">
-			<a href="LaRuotaB.htm">Dalla <span class="sYellow">BILANCIA</span> ai <span class="sAqua">PESCI</span></a> |</span><span class="sBGOther">
-			<a href="index.html">Pagina&nbsp;Iniziale</a>&nbsp;</span><br>
-		</p>
+
+		<nav class="sLarge sCenter">
+			<ul class="sNavigation">
+				<li><a href="LaRuotaA.htm">Dall'<span class="sRed">ARIETE</span> alla <span class="sLime">VERGINE</span></a></li>
+				<li><a href="LaRuotaB.htm" id="PagCorrente">Dalla <span class="sYellow">BILANCIA</span> ai <span class="sAqua">PESCI</span></a></li>
+				<li><a href="index.html"><img src="favicon32.gif" class="sHomeIcon" alt="Pagina Principale"></a></li>
+			</ul>
+			<br>
+		</nav>
 
 		<p class="sCenter">
 			<br>
-			<img src="Blink7Libra.gif" width="290" height="74">
+			<img src="Blink7Libra.gif" width="290" height="74" alt="Bilancia">
 		</p>
-		<p class="sMedium sMustard sBold sLeft sPadding sMarginsTB">
-			<span class="sRed">ASC</span> in <span class="sYellow">BILANCIA</span>: la personalità</p>
-		<p class="sSmall sMustard sJustify sPadding">
+		<h2><span class="sRed">ASC</span> in <span class="sYellow">BILANCIA</span>: la personalità</h2>
+		<p>
 			È originale quella naturale eleganza, quel fare garbato e spigliatezza non invadente che distingue certe persone, possono avere solo l'etichetta
-			<span class="sRed sBold">Venusiana</span>. È l'<span class="sRed sBold">ASC</span> ideale per addolcire i segni forti, riscaldare quelli un po' freddi, dare una vernice brillante a quelli troppo severi. Nell'arte di suscitare simpatia sono tutti ferrati, perché sanno dire la parola 
-			giusta e lasciare spazio agli altri. Per loro la vita deve essere una festa raffinata in cui tutto funziona in modo perfetto. Il tipo Doc ha sovente una dose di fascino in più, per via di un aspetto fisico molto attraente.
+			<span class="sRed sBold">Venusiana</span>. È l'<span class="sRed sBold">ASC</span> ideale per addolcire i segni forti, riscaldare quelli un po'
+			freddi, dare una vernice brillante a quelli troppo severi. Nell'arte di suscitare simpatia sono tutti ferrati, perché sanno dire la parola
+			giusta e lasciare spazio agli altri. Per loro la vita deve essere una festa raffinata in cui tutto funziona in modo perfetto. Il tipo "Doc" ha
+			sovente una dose di fascino in più, per via di un aspetto fisico molto attraente.
 		</p>
-		<p class="sMedium sMustard sBold sLeft sPadding sMarginsTB">
-			<span class="sRed">VII</span> in <span class="sRed">ARIETE</span>: i rapporti</p>
-		<p class="sSmall sMustard sJustify sPadding">
-			Le unioni sono precoci, vissute rapidamente, e concluse in tempi rapidi, perché l'esaltazione iniziale si perde o perché l'altro si rivela 
+		<h2><span class="sRed">VII</span> in <span class="sRed">ARIETE</span>: i rapporti</h2>
+		<p>
+			Le unioni sono precoci, vissute rapidamente, e concluse in tempi rapidi, perché l'esaltazione iniziale si perde o perché l'altro si rivela
 			troppo...altro. Se gli amori, le amicizie, le sue relazioni &quot;tengono&quot; si vive in simbiosi stimolante, se no si riparte da capo e ogni
 			volta è la prima volta. Basta poco per infiammarsi e convincersi di vivere un rapporto ideale e magari non ci si preoccupa di verificarne la
-			qualità. Sull'asse <span class="sYellow sBold">Bilancia</span>/<span class="sRed sBold">Ariete</span> lavorano forze attive, impetuose che 
+			qualità. Sull'asse <span class="sYellow sBold">Bilancia</span>/<span class="sRed sBold">Ariete</span> lavorano forze attive, impetuose che
 			mirano a un legame assoluto e appassionato.
 		</p>
-		<p class="sMedium sMustard sBold sLeft sPadding sMarginsTB">
-			<span class="sRed">IV</span> in <span class="sLime">CAPRICORNO</span>: le radici</p>
-		<p class="sSmall sMustard sJustify sPadding">
-			Il rispetto di certe regole diviene un punto fermo nell'esistenza, così come lo stile di vita un po' austero e la necessità di mettere radici 
-			proprie. La dimensione del passato perde la tenerezza nostalgica per poi assumere la scarna espressività 
+		<h2><span class="sRed">IV</span> in <span class="sLime">CAPRICORNO</span>: le radici</h2>
+		<p>
+			Il rispetto di certe regole diviene un punto fermo nell'esistenza, così come lo stile di vita un po' austero e la necessità di mettere radici
+			proprie. La dimensione del passato perde la tenerezza nostalgica per poi assumere la scarna espressività
 			<span class="sRed sBold">Saturnina</span>. Indica che il desiderio di fama e di fortuna è soddisfatto dal riconoscimento pubblico. C'è un clima
-			rigido alle spalle e l'ambiente famigliare originario ha posto il veto su alcune scelte o continua indirettamente ad azionare certi freni 
+			rigido alle spalle e l'ambiente famigliare originario ha posto il veto su alcune scelte o continua indirettamente ad azionare certi freni
 			inibitori. Alle volte emerge l'egotismo del <span class="sLime sBold">Capricorno</span> che taglia i ponti definitivamente.
 		</p>
-		<p class="sMedium sMustard sBold sLeft sPadding sMarginsTB">
-			<span class="sRed">X</span> o <span class="sAqua">MC</span> in <span class="sAqua">CANCRO</span>: il successo</p>
-		<p class="sSmall sMustard sJustify sPadding">
-			Indica applicazione, astuzia e insistenza. Ricerca il successo per alimentare la sicurezza di cui sente la necessità, può indicare una carriera 
-			negli affari o nei pubblici uffici. L'ambizione spiccata, la tempra del lavoratore non manca, però spesso affiorano esitazioni improvvise che 
+		<h2><span class="sRed">X</span> o <span class="sAqua">MC</span> in <span class="sAqua">CANCRO</span>: il successo</h2>
+		<p>
+			Indica applicazione, astuzia e insistenza. Ricerca il successo per alimentare la sicurezza di cui sente la necessità, può indicare una carriera
+			negli affari o nei pubblici uffici. L'ambizione spiccata, la tempra del lavoratore non manca, però spesso affiorano esitazioni improvvise che
 			fanno dileguare rapidamente le buone occasioni. Quello che può mancare nel privato è recuperato nel pubblico. Al suo ambiente socio professionale
-			si rivolge una richiesta di protezione e affetto la conquista del successo diviene anche una questione di sentimenti e d'intese positive con gli 
+			si rivolge una richiesta di protezione e affetto la conquista del successo diviene anche una questione di sentimenti e di intese positive con gli
 			altri. La mutevolezza gioca a favore della varietà nel campo d'azione. L'immagine proiettata al mondo conterrà elementi che appartengono al lato
 			protettivo, rassicurante, accogliente del segno.
 		</p>
 
 		<p class="sCenter">
 			<br>
-			<img src="Blink8Scorpio.gif" width="290" height="74"></p>
+			<img src="Blink8Scorpio.gif" width="290" height="74" alt="Scorpione">
 		</p>
-		<p class="sMedium sMustard sBold sLeft sPadding sMarginsTB">
-			<span class="sRed">ASC</span> in <span class="sAqua">SCORPIONE</span>: la personalità</p>
-		<p class="sSmall sMustard sJustify sPadding">
-			Intraprendente e ingegnoso, determinato, passionale. Ma, osservandolo attentamente ci si accorge che non ha speciali attrattive che spieghino 
-			quel fascino particolare, è questione di magnetismo puro, che usa inconsciamente. Non è facile capirlo, c'è sempre un angolo inaccessibile nella 
-			sua personalità, Può essere la persona più socievole o la più taciturna, disponibile o indifferente. È un po' pesante quando s'accanisce su 
-			un'idea, ma inimitabile quando deve affrontare situazioni intricate. Può darsi che ci sia un involucro tenero dietro questa dura scorza, ma ce 
+		<h2><span class="sRed">ASC</span> in <span class="sAqua">SCORPIONE</span>: la personalità</h2>
+		<p>
+			Intraprendente e ingegnoso, determinato, passionale. Ma, osservandolo attentamente ci si accorge che non ha speciali attrattive che spieghino
+			quel fascino particolare, è questione di magnetismo puro, che usa inconsciamente. Non è facile capirlo, c'è sempre un angolo inaccessibile nella
+			sua personalità, Può essere la persona più socievole o la più taciturna, disponibile o indifferente. È un po' pesante quando s'accanisce su
+			un'idea, ma inimitabile quando deve affrontare situazioni intricate. Può darsi che ci sia un involucro tenero dietro questa dura scorza, ma ce
 			ne vuole prima di accorgersene!
 		</p>
-		<p class="sMedium sMustard sBold sLeft sPadding sMarginsTB">
-			<span class="sRed">VII</span> in <span class="sLime">TORO</span>: i rapporti</p>
-		<p class="sSmall sMustard sJustify sPadding">
-			Normalmente si orienta verso le persone che condividono analoghi programmi di vita, a meno che non intervenga la passione Taurina scatenata e 
-			cieca, che ingaggia dure lotte per conquistare i partner più improponibili. Magari ci riesce trasformando l'unione in una perpetua bufera. La 
-			gelosia e la possessività si sprecano e sono escluse le mutue concessioni, anche se in questo clima acceso c'è posto anche per una solida 
+		<h2><span class="sRed">VII</span> in <span class="sLime">TORO</span>: i rapporti</h2>
+		<p>
+			Normalmente si orienta verso le persone che condividono analoghi programmi di vita, a meno che non intervenga la passione Taurina scatenata e
+			cieca, che ingaggia dure lotte per conquistare i partner più improponibili. Magari ci riesce trasformando l'unione in una perpetua bufera. La
+			gelosia e la possessività si sprecano e sono escluse le mutue concessioni, anche se in questo clima acceso c'è posto anche per una solida
 			gestione mentre il conto in banca cresce.
 		</p>
-		<p class="sMedium sMustard sBold sLeft sPadding sMarginsTB">
-			<span class="sRed">IV</span> in <span class="sYellow">ACQUARIO</span>: le radici</p>
-		<p class="sSmall sMustard sJustify sPadding">
-			Delinea un ambiente in cui conta l'iniziativa individuale, in cui si respira aria di libertà, in cui ogni idea e ogni persona trova circuiti 
+		<h2><span class="sRed">IV</span> in <span class="sYellow">ACQUARIO</span>: le radici</h2>
+		<p>
+			Delinea un ambiente in cui conta l'iniziativa individuale, in cui si respira aria di libertà, in cui ogni idea e ogni persona trova circuiti
 			aperti. I ricordi sono del tutto privi di pathos, le tradizioni di famiglia non esistono. Indica il bisogno di farsi partecipe di grandi problemi
-			sociali nelle ambizioni personali. Sono un po' inconsuete queste radici, ma la spiegazione è molto semplice: sono state predisposte proprio per 
+			sociali nelle ambizioni personali. Sono un po' inconsuete queste radici, ma la spiegazione è molto semplice: sono state predisposte proprio per
 			la massima adattabilità.
 		</p>
-		<p class="sMedium sMustard sBold sLeft sPadding sMarginsTB">
-			<span class="sRed">X</span> o <span class="sAqua">MC</span> in <span class="sRed">LEONE</span>: il successo</p>
-		<p class="sSmall sMustard sJustify sPadding">
+		<h2><span class="sRed">X</span> o <span class="sAqua">MC</span> in <span class="sRed">LEONE</span>: il successo</h2>
+		<p>
 			Si distingue per la genialità, la fiducia in se stesso, e una disinvolta sicurezza nel cercare d'accaparrarsi posti di comando. L'esuberante
 			vitalità <span class="sRed sBold">Solare</span> è un buon carburante, che rende rombante il motore nella corsa. Animato da grandi ambizioni, se
-			la riuscita non è pari alle ambizioni, è un po' duro adattarsi, ma in genere fino all'età della pensione si continua ad attendere 
+			la riuscita non è pari alle ambizioni, è un po' duro adattarsi, ma in genere fino all'età della pensione si continua ad attendere
 			ottimisticamente la grande occasione. Capita spesso che con un medio cielo nel <span class="sRed sBold">Leone</span></b> il successo sia una
 			realtà tangibile. L'immagine che si presenta al mondo contiene elementi di magnanimità, fierezza, generosità e a volte anche arroganza.
 		</p>
 
 		<p class="sCenter">
 			<br>
-			<img src="Blink9Sagitta.gif" width="290" height="74">
+			<img src="Blink9Sagitta.gif" width="290" height="74" alt="Sagittario">
 		</p>
-		<p class="sMedium sMustard sBold sLeft sPadding sMarginsTB">
-			<span class="sRed">ASC</span> in <span class="sRed">SAGITTARIO</span>: la personalità</p>
-		<p class="sSmall sMustard sJustify sPadding">
+		<h2><span class="sRed">ASC</span> in <span class="sRed">SAGITTARIO</span>: la personalità</h2>
+		<p>
 			Ottimista, di larghe vedute, allegro, attivo. Di un tipo così si percepisce per prima cosa il calore, poi la gran carica vitale. Si percepisce
-			per prima cosa il calore poi una grande carica vitale. Nel <span class="sRed sBold">Sagittario</span> c'è un fuoco meno bruciante e più caldo 
+			per prima cosa il calore poi una grande carica vitale. Nel <span class="sRed sBold">Sagittario</span> c'è un fuoco meno bruciante e più caldo
 			di quello che non prorompe ma che scoppietta generoso. È uno che spende le energie con larghezza, vivendo intensamente le sue emozioni e affronta
 			con slancio ogni esperienza. Ama trascinare gli altri nelle sue imprese e nulla, neanche una risposta troppo prudente, lo scoraggia. A livello
 			fisico manifesta una notevole scioltezza di movimenti e una elegante disinvoltura di chi sta bene dentro la propria pelle.
 		</p>
-		<p class="sMedium sMustard sBold sLeft sPadding sMarginsTB">
-			<span class="sRed">VII</span> in <span class="sYellow">GEMELLI</span>: i rapporti</p>
-		<p class="sSmall sMustard sJustify sPadding">
-			Lo spirito d'adattamento e l'elasticità permette di smussare le asprezze della convivenza, c'è anche una innata tendenza a scrollarsi di dosso le complicazioni , ciò contribuisce a mantenere situazioni distese e piacevolmente aperte, anche se il concetto della libertà non è pari al rispetto dei sentimenti dell'altro. Il pericolo di unioni <span class="sYellow sBold">Gemelli</span> è la noia e alle prime avvisaglie che si comincia a curiosare un po' troppo fuori casa.
+		<h2><span class="sRed">VII</span> in <span class="sYellow">GEMELLI</span>: i rapporti</h2>
+		<p>
+			Lo spirito d'adattamento e l'elasticità permette di smussare le asprezze della convivenza, c'è anche una innata tendenza a scrollarsi di dosso
+			le complicazioni , ciò contribuisce a mantenere situazioni distese e piacevolmente aperte, anche se il concetto della libertà non è pari al
+			rispetto dei sentimenti dell'altro. Il pericolo di unioni <span class="sYellow sBold">Gemelli</span> è la noia e alle prime avvisaglie che si
+			comincia a curiosare un po' troppo fuori casa.
 		</p>
-		<p class="sMedium sMustard sBold sLeft sPadding sMarginsTB">
-			<span class="sRed">IV</span> in <span class="sAqua">PESCI</span>: le radici</p>
-		<p class="sSmall sMustard sJustify sPadding">
-			Questa <span class="sRed sBold">IV</span> casa può trasferire nella fase adulta del nativo l'irrequietezza che spinge a cercare continui 
-			mutamenti, a volte suggerisce di cambiare spesso mobilio, a volte può dare una inclinazione spiccata per un tipo di vita alternativo. Questo è 
-			un mondo di affetti, di sensazioni e di atmosfere famigliari che non rappresentano luoghi o persone definite. S'attenua una certa stabilità, 
-			intesa come delle situazioni tradizionali di vita e come regolarità di abitudini, s'accentua anche la possibilità di un nucleo originario poco 
+		<h2><span class="sRed">IV</span> in <span class="sAqua">PESCI</span>: le radici</h2>
+		<p>
+			Questa <span class="sRed sBold">IV</span> casa può trasferire nella fase adulta del nativo l'irrequietezza che spinge a cercare continui
+			mutamenti, a volte suggerisce di cambiare spesso mobilio, a volte può dare una inclinazione spiccata per un tipo di vita alternativo. Questo è
+			un mondo di affetti, di sensazioni e di atmosfere famigliari che non rappresentano luoghi o persone definite. S'attenua una certa stabilità,
+			intesa come delle situazioni tradizionali di vita e come regolarità di abitudini, s'accentua anche la possibilità di un nucleo originario poco
 			organizzato, libero da schemi e con dei rapporti emotivi intensi, ma in assoluto non condizionati.
 		</p>
-		<p class="sMedium sMustard sBold sLeft sPadding sMarginsTB">
-			<span class="sRed">X</span> o <span class="sAqua">MC</span> in <span class="sLime">VERGINE</span>: il successo</p>
-		<p class="sSmall sMustard sJustify sPadding">
-			Di fronte ad una <span class="sRed sBold">IV</span> casa un po' improvvisatrice, troviamo un <span class="sAqua sBold">MC</span> super 
-			pianificato in cui il metodo e la programmazione sono rigidamente applicati. C'è la legge che compensa e che interviene a equilibrare le cose. 
+		<h2><span class="sRed">X</span> o <span class="sAqua">MC</span> in <span class="sLime">VERGINE</span>: il successo</h2>
+		<p>
+			Di fronte ad una <span class="sRed sBold">IV</span> casa un po' improvvisatrice, troviamo un <span class="sAqua sBold">MC</span> super
+			pianificato in cui il metodo e la programmazione sono rigidamente applicati. C'è la legge che compensa e che interviene a equilibrare le cose.
 			Lo spirito un po' rinunciatario della <span class="sLime sBold">Vergine</span> traspare dietro a scelte che garantiscono sicurezza, ma ne
-			spengono l'inventiva personale. Nel settore professionale si muove con prudenza e con abilità, assicurandosi prima ancora di concepire che le 
-			ambizioni siano realizzabili, ma di fronte agli ostacoli si procede con paziente attesa oppure si modificano i progetti, tentando altre 
+			spengono l'inventiva personale. Nel settore professionale si muove con prudenza e con abilità, assicurandosi prima ancora di concepire che le
+			ambizioni siano realizzabili, ma di fronte agli ostacoli si procede con paziente attesa oppure si modificano i progetti, tentando altre
 			strategie. E se si tratta di amministrare le finanze, si risveglia brillantemente.
 		</p>
 
 		<p class="sCenter">
 			<br>
-			<img src="Blink10Capric.gif" width="290" height="74"> 
+			<img src="Blink10Capric.gif" width="290" height="74" alt="Capricorno">
 		</p>
-		<p class="sMedium sMustard sBold sLeft sPadding sMarginsTB">
-			<span class="sRed">ASC</span> in <span class="sLime">CAPRICORNO</span>: la personalità</p>
-		<p class="sSmall sMustard sJustify sPadding">
-			Chi ha questo <span class="sRed sBold">ASC</span> sa di essere una persona su cui si può contare, in grado di reagire con fermezza ad ogni 
-			situazioni, forse piacerebbe essere un po' più sciolto meno taciturno e ogni tanto lasciarsi andare. Vive sempre sotto pressione, e impegna 
+		<h2><span class="sRed">ASC</span> in <span class="sLime">CAPRICORNO</span>: la personalità</h2>
+		<p>
+			Chi ha questo <span class="sRed sBold">ASC</span> sa di essere una persona su cui si può contare, in grado di reagire con fermezza ad ogni
+			situazioni, forse piacerebbe essere un po' più sciolto meno taciturno e ogni tanto lasciarsi andare. Vive sempre sotto pressione, e impegna
 			tutte le sue energie in ogni compito, questo potrebbe spiegare la sua serietà, alle volte eccessiva. L'<span class="sRed sBold">ASC</span> è
-			molto positivo per chi ha un segno di nascita estroverso e allegro, meno per un segno già complesso e riflessivo per conto suo in cui provoca 
+			molto positivo per chi ha un segno di nascita estroverso e allegro, meno per un segno già complesso e riflessivo per conto suo in cui provoca
 			appesantimento. Dà spesso la sensazione d'indossare un'armatura e anche all'esterno può offrire una immagine corazzata di se stesso.
 		</p>
-		<p class="sMedium sMustard sBold sLeft sPadding sMarginsTB">
-			<span class="sRed">VII</span> in <span class="sAqua">CANCRO</span>: i rapporti</p>
-		<p class="sSmall sMustard sJustify sPadding">
+		<h2><span class="sRed">VII</span> in <span class="sAqua">CANCRO</span>: i rapporti</h2>
+		<p>
 			L'obiettivo è uno solo: avere il massimo della sicurezza e delle gratificazioni affettive nei rapporti che contano. Le vie per raggiungerlo sono
-			due: o ci si lega ad una persona che aspira ad una vita tranquilla e felice di farsi proteggere, oppure si cede all'altro il ruolo attivo per 
-			godersi in santa pace i vantaggi di un ménage senza scontri e conflitti. La profondità dei sentimenti compensa il carattere abitudinario che 
-			assume questa unione, certi riti quotidiani servono a dare una fisionomia precisa alle proprie relazioni e assicurarne la continuità. Se 
+			due: o ci si lega ad una persona che aspira ad una vita tranquilla e felice di farsi proteggere, oppure si cede all'altro il ruolo attivo per
+			godersi in santa pace i vantaggi di un ménage senza scontri e conflitti. La profondità dei sentimenti compensa il carattere abitudinario che
+			assume questa unione, certi riti quotidiani servono a dare una fisionomia precisa alle proprie relazioni e assicurarne la continuità. Se
 			qualcosa non funziona o se si profilano distacchi si entra subito in crisi.
 		</p>
-		<p class="sMedium sMustard sBold sLeft sPadding sMarginsTB">
-			<span class="sRed">IV</span> in <span class="sRed">ARIETE</span>: le radici</p>
-		<p class="sSmall sMustard sJustify sPadding">
-			Educato all'azione e alla lotta per conquistar si i propri spazi vitali, si procede puntando all'essenziale e con forza d'urto che regge alti 
-			e bassi. L'impronta <span class="sRed sBold">Marziana</span> nella casa <span class="sRed sBold">IV</span> della famiglia, alimenta il suo 
-			desiderio imperioso d'autosufficienza e quindi i canoni della tradizione, che vede genitori e figli su degli opposti schieramenti, trovano un 
+		<h2><span class="sRed">IV</span> in <span class="sRed">ARIETE</span>: le radici</h2>
+		<p>
+			Educato all'azione e alla lotta per conquistar si i propri spazi vitali, si procede puntando all'essenziale e con forza d'urto che regge alti
+			e bassi. L'impronta <span class="sRed sBold">Marziana</span> nella casa <span class="sRed sBold">IV</span> della famiglia, alimenta il suo
+			desiderio imperioso d'autosufficienza e quindi i canoni della tradizione, che vede genitori e figli su degli opposti schieramenti, trovano un
 			certo riscontro. Si proviene da un mondo un po' spartano dove non c'è posto per le coccole e i sentimenti inutili, in fondo se ne è piuttosto
 			fieri.
 		</p>
-		<p class="sMedium sMustard sBold sLeft sPadding sMarginsTB">
-			<span class="sRed">X</span> o <span class="sAqua">MC</span> in <span class="sYellow">BILANCIA</span>: il successo</p>
-		<p class="sSmall sMustard sJustify sPadding">
+		<h2><span class="sRed">X</span> o <span class="sAqua">MC</span> in <span class="sYellow">BILANCIA</span>: il successo</h2>
+		<p>
 			<span class="sRed sBold">Venere</span> e <span class="sRed sBold">Saturno</span> consentono di percorrere la strada del successo con
 			un'eccellente stile; quando la diplomazia e il rispetto per gli altri s'unisce alla determinazione e alla limpida volontà di potere la meta non
 			è così ardua. I problemi nascono se invece di procedere di pari passo avanzano separatamente, la sua ambizione si può smarrire nell'esigenza di
-			appoggio e di sostegno e, mentre si soppesano i vari pro e contro prima di una decisione importante per la carriera, il tempo.... è già 
+			appoggio e di sostegno e, mentre si soppesano i vari pro e contro prima di una decisione importante per la carriera, il tempo ... è già
 			scaduto. Il lavoro svolto è in genere una fonte di soddisfazione e offre l'opportunità di qualche incontro sentimentale.
 		</p>
 
 		<p class="sCenter">
 			<br>
-			<img src="Blink11Acqu.gif" width="290" height="74">
+			<img src="Blink11Acqu.gif" width="290" height="74" alt="Acquario">
 		</p>
-		<p class="sMedium sMustard sBold sLeft sPadding sMarginsTB">
-			<span class="sRed">ASC</span> in <span class="sYellow">ACQUARIO</span>: la personalità</p>
-		<p class="sSmall sMustard sJustify sPadding">
-			Indipendente, razionale, cavilloso, costruttivo, imprevedibile. Sovente disorienta perché ora si mostra partecipe e attento, poi all'improvviso sembra assente, ma è un pensatore, ha grande immaginazione, che fa fatica ad amministrare le molte d'idee e stati d'animo che si agitano dentro. Si distingue per la sua originalità, ma anche se non fa nulla per farsi notare, cattura ugualmente l' attenzione, forse sarà perché si permette reazioni e messaggi di una spontaneità che si vede poco in giro. Ha grande abilità a prevedere le situazioni. È meglio non provocare discussioni con lui perché può procedere imperterrito fino al totale esaurimento del suo interlocutore. Per quanto gentile e socievole sia, ha un certo distacco che lo isola dal gruppo.
+		<h2><span class="sRed">ASC</span> in <span class="sYellow">ACQUARIO</span>: la personalità</h2>
+		<p>
+			Indipendente, razionale, cavilloso, costruttivo, imprevedibile. Sovente disorienta perché ora si mostra partecipe e attento, poi all'improvviso
+			sembra assente, ma è un pensatore, ha grande immaginazione, che fa fatica ad amministrare le molte d'idee e stati d'animo che si agitano dentro.
+			Si distingue per la sua originalità, ma anche se non fa nulla per farsi notare, cattura ugualmente l' attenzione, forse sarà perché si permette
+			reazioni e messaggi di una spontaneità che si vede poco in giro. Ha grande abilità a prevedere le situazioni. È meglio non provocare discussioni
+			con lui perché può procedere imperterrito fino al totale esaurimento del suo interlocutore. Per quanto gentile e socievole sia, ha un certo
+			distacco che lo isola dal gruppo.
 		</p>
-		<p class="sMedium sMustard sBold sLeft sPadding sMarginsTB">
-			<span class="sRed">VII</span> in <span class="sRed">LEONE</span>: i rapporti</p>
-		<p class="sSmall sMustard sJustify sPadding">
-			Chi ha questa <span class="sRed sBold">VII</span> casa è attratto dalle personalità spiccate che, con il loro affetto diano un gratificante 
-			riconoscimento del suo valore. Chi tiene il bastone del comando in questa coppia? La questione rimarrà sempre aperta e irrisolta, forse è 
-			proprio questo che mantiene vivo e ben nutrito il dialogo. La coppia si sintonizza sempre sui toni alti, anche nei suoi momenti più difficili 
-			la brillante atmosfera s'incupisce. Investire le energie <span class="sRed sBold">Solari</span> nel settore delle unioni significa puntare a 
+		<h2><span class="sRed">VII</span> in <span class="sRed">LEONE</span>: i rapporti</h2>
+		<p>
+			Chi ha questa <span class="sRed sBold">VII</span> casa è attratto dalle personalità spiccate che, con il loro affetto diano un gratificante
+			riconoscimento del suo valore. Chi tiene il bastone del comando in questa coppia? La questione rimarrà sempre aperta e irrisolta, forse è
+			proprio questo che mantiene vivo e ben nutrito il dialogo. La coppia si sintonizza sempre sui toni alti, anche nei suoi momenti più difficili
+			la brillante atmosfera s'incupisce. Investire le energie <span class="sRed sBold">Solari</span> nel settore delle unioni significa puntare a
 			rapporti eccitanti e appassionati.
 		</p>
-		<p class="sMedium sMustard sBold sLeft sPadding sMarginsTB">
-			<span class="sRed">IV</span> in <span class="sLime">TORO</span>: le radici</p>
-		<p class="sSmall sMustard sJustify sPadding">
+		<h2><span class="sRed">IV</span> in <span class="sLime">TORO</span>: le radici</h2>
+		<p>
 			Un solido senso pratico permette di capitalizzare non solo affetti e ricordi, ma i beni della famiglia. Dal proprio ambiente d'origine si è
 			acquisito un sano amore per la casa, per la propria intimità e un sano piacere di vivere che genera ottimismo e fiducia, ma anche un meno
-			gradevole egoismo, perché non si ama spartire il proprio territorio con troppi concorrenti. Ad amici fidati alle persone del proprio clan si 
+			gradevole egoismo, perché non si ama spartire il proprio territorio con troppi concorrenti. Ad amici fidati alle persone del proprio clan si
 			offre l'allegra ospitalità di una casa confortevole.
 		</p>
-		<p class="sMedium sMustard sBold sLeft sPadding sMarginsTB">
-			<span class="sRed">X</span> o <span class="sAqua">MC</span> in <span class="sAqua">SCORPIONE</span>: il successo</p>
-		<p class="sSmall sMustard sJustify sPadding">
-			Deciso, perseverante e laborioso, ama avere le situazioni sotto controllo, ha il coraggio di demolire per potere ricostruire. Quello che conta 
-			è creare, mettere alla prova le proprie capacità. Alle volte ci si può sentire un po' perseguitati dall'avversa fortuna, e gli strumenti per 
-			reagire non mancano. Le professioni più adatte sono quelle che lasciano un ampio margine di libertà d'iniziativa. Ad una vita così protetta e 
-			riposante, ecco opporsi una vita pubblica combattuta, ricca di colpi di scena, d'ombre e di luci. Tende a proiettare un'immagine carica di 
+		<h2><span class="sRed">X</span> o <span class="sAqua">MC</span> in <span class="sAqua">SCORPIONE</span>: il successo</h2>
+		<p>
+			Deciso, perseverante e laborioso, ama avere le situazioni sotto controllo, ha il coraggio di demolire per potere ricostruire. Quello che conta
+			è creare, mettere alla prova le proprie capacità. Alle volte ci si può sentire un po' perseguitati dall'avversa fortuna, e gli strumenti per
+			reagire non mancano. Le professioni più adatte sono quelle che lasciano un ampio margine di libertà d'iniziativa. Ad una vita così protetta e
+			riposante, ecco opporsi una vita pubblica combattuta, ricca di colpi di scena, di ombre e di luci. Tende a proiettare un'immagine carica di
 			sessualità, anche se l'individuo può esserne totalmente inconsapevole.
 		</p>
 
 		<p class="sCenter">
 			<br>
-			<img src="Blink12Pesci.gif" width="290" height="74">
+			<img src="Blink12Pesci.gif" width="290" height="74" alt="Pesci">
 		</p>
-		<p class="sMedium sMustard sBold sLeft sPadding sMarginsTB">
-			<span class="sRed">ASC</span> in <span class="sAqua">PESCI</span>: la personalità</p>
-		<p class="sSmall sMustard sJustify sPadding">
+		<h2><span class="sRed">ASC</span> in <span class="sAqua">PESCI</span>: la personalità</h2>
+		<p>
 			Fantasioso, ricettivo, sensibile, dotato di un'enorme impulso creativo. Può essere molto adattabile, quella che non discute che accetta ogni
-			proposta, che vi asseconda con incredibile sollecitudine. Le distrazioni e dimenticanze a volte l'irritano e lo lascia esterrefatto quando 
-			coglie con precisione il suo stato d'animo o anticipa un evento che lì a poco si realizzerà puntualmente. L'espressione sognante e sfuggente 
-			desta qualche dubbio sulla effettiva partecipazione. Con un'intuizione sottile e la sensibilità così vibrante pare proprio dotato di un senso 
+			proposta, che vi asseconda con incredibile sollecitudine. Le distrazioni e dimenticanze a volte l'irritano e lo lascia esterrefatto quando
+			coglie con precisione il suo stato d'animo o anticipa un evento che lì a poco si realizzerà puntualmente. L'espressione sognante e sfuggente
+			desta qualche dubbio sulla effettiva partecipazione. Con un'intuizione sottile e la sensibilità così vibrante pare proprio dotato di un senso
 			in più, peccato che sia un po' indolente.
 		</p>
-		<p class="sMedium sMustard sBold sLeft sPadding sMarginsTB">
-			<span class="sRed">VII</span> in <span class="sLime">VERGINE</span>: i rapporti</p>
-		<p class="sSmall sMustard sJustify sPadding">
-			Tende teoricamente a unioni tranquille, sbandamenti emotivi, soprattutto ha bisogno di un partner che gli sistemi la vita, che si prenda a 
-			cuore i suoi problemi, specialmente quelli pratici. Di solito l'obiettivo è raggiunto, dato che lo spirito d'adattamento è davvero illimitato 
-			e l'amore per il quieto vivere calma i contrasti. Sarà il desiderio di darsi una regolata che spinge a cercare un compagno tra i più 
+		<h2><span class="sRed">VII</span> in <span class="sLime">VERGINE</span>: i rapporti</h2>
+		<p>
+			Tende teoricamente a unioni tranquille, sbandamenti emotivi, soprattutto ha bisogno di un partner che gli sistemi la vita, che si prenda a
+			cuore i suoi problemi, specialmente quelli pratici. Di solito l'obiettivo è raggiunto, dato che lo spirito d'adattamento è davvero illimitato
+			e l'amore per il quieto vivere calma i contrasti. Sarà il desiderio di darsi una regolata che spinge a cercare un compagno tra i più
 			organizzati e concreti. A volte può affacciarsi il sospetto di essersi adagiati troppo in una quotidianità che spegne la fantasia.
 		</p>
-		<p class="sMedium sMustard sBold sLeft sPadding sMarginsTB">
-			<span class="sRed">IV</span> in <span class="sYellow">GEMELLI</span>: le radici</p>
-		<p class="sSmall sMustard sJustify sPadding">
+		<h2><span class="sRed">IV</span> in <span class="sYellow">GEMELLI</span>: le radici</h2>
+		<p>
 			Il vantaggio di questa situazione è che poi ci si può trapiantare in qualsiasi condizione di vita, sta bene dappertutto e con chiunque, lo
 			dimostra l'allegra e informale ospitalità che viene accordata a tutti. Nella mobilità le radici non trovano un terreno che le imprigioni, il
 			mondo famigliare è molto vivace e aperto, vissuto con disinvoltura. Lo svantaggio di quest'ambiente originario è che a volte lascia in eredità
-			uno stile, per così dire adolescenziale di vita, che non è facile mantenere illimitatamente. Si va e si viene in piena libertà anche se ci 
+			uno stile, per così dire adolescenziale di vita, che non è facile mantenere illimitatamente. Si va e si viene in piena libertà anche se ci
 			sono genitori un po' incombenti.
 		</p>
-		<p class="sMedium sMustard sBold sLeft sPadding sMarginsTB">
-			<span class="sRed">X</span> o <span class="sAqua">MC</span> in <span class="sRed">SAGITTARIO</span>: il successo</p>
-		<p class="sSmall sMustard sJustify sPadding">
+		<h2><span class="sRed">X</span> o <span class="sAqua">MC</span> in <span class="sRed">SAGITTARIO</span>: il successo</h2>
+		<p>
 			Non ci sono vere e proprie ambizioni di potere da soddisfare o per lo meno ad esse si rinuncia solo se il prezzo da pagare è la propria libertà.
-			La conquista del successo può essere intesa come un'avventura in cui cimentarsi con intraprendenza, il lato 
-			<span class="sRed sBold">Gioviano</span> del segno tiene d'occhio anche le conferme sociali, il prestigio. È un ottimista, magnanimo e 
-			lungimirante, capacità manageriali o fiuto per gli affari. Indica la tendenza a proiettare verso il mondo esterno un'immagine di rettitudine 
+			La conquista del successo può essere intesa come un'avventura in cui cimentarsi con intraprendenza, il lato
+			<span class="sRed sBold">Gioviano</span> del segno tiene d'occhio anche le conferme sociali, il prestigio. È un ottimista, magnanimo e
+			lungimirante, capacità manageriali o fiuto per gli affari. Indica la tendenza a proiettare verso il mondo esterno un'immagine di rettitudine
 			e sincerità, insieme ad uno spirito giovanile e avventuroso.
 		</p>
 
 		<p class="sCenter">
 			<br>
-			<img src="astrology.gif" width="439" height="36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="astrology.gif" width="439" height="36">
+			<img src="astrology.gif" width="439" height="36" alt="Barra segni zodiacali">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="astrology.gif" width="439" height="36" alt="">
 			<br><br>
 		</p>
 
-		<p class="sMustard sSmall sCenter">
-			<img src="email-box.gif"    width="35"  height="35">
+		<p class="sCenter">
+			<img src="email-box.gif"    width="35" height="35" alt="">
 			Scrivi allo <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a>
 			se vuoi conoscere la posizione esatta delle tue case.<br><br>
-			<img src="TelefonoC164.gif" width="35" height="35">&nbsp;
-			oppure Telefona: <strong>0125 631175 - Cell. 347 0417409<br><br>
-			Sei il visitatore n°&nbsp;</strong>
-			<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220429068-yh74lyl" border=0></a>
-			&nbsp;(Contenuto Aggiornato 15/05/2019)<br><br>
+			<img src="TelefonoC164.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+
+			<b>Sei il visitatore n°&nbsp;</b>
+		<a href="http://www.retecivica.milano.it"><img src="xxhttp://www.retecivica.milano.it/counter/counter.php?link=1220429068-yh74lyl" border=0></a>
+			&nbsp;(Contenuto Aggiornato <time datetime="2019-05-15">15/05/2019</time>)<br><br>
 		</p>
 
-		<p class="sCenter">
-			<img src="divisorioAmalia.gif" width="426" height="56">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="divisorioAmalia.gif" width="426" height="56">
-		</p>
-				</td></tr></table>
-			</td></tr></table>
-		</td></tr></table>
-	</td></tr></table>
 </td></tr></table>
-<p class="sXXSmall sWhite sBold sCenter">
-	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati. 
+</td></tr></table>
+<footer>
+	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
 	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
-</p>
+</footer>
 </body>
 </html>

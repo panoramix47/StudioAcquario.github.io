@@ -1,61 +1,105 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" dir="ltr">
 <head>
 <meta charset="UTF-8">
-<title>I Quattro Elementi della Coppia</title>
+<title>I Quattro Elementi della Coppia - Studio Acquario</title>
 <link rel="icon" type="image/gif" href="favicon32.gif">
 <meta name="description" content="Studio Acquario: I Quattro Elementi della coppia">
-<meta name="keywords" content="astrologia, zodiaco, quattro, elementi, coppia, aria, terra, fuoco, acqua">
+<meta name="keywords" lang="it" content="astrologia, studio acquario, zodiaco, quattro, elementi, coppia, aria, terra, fuoco, acqua">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
-<meta name="language" content="it,">
+<meta name="language" content="it">
 <meta http-equiv="imagetoolbar" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="30/12/2017">
-<meta name="revised" content="15/08/2020">
+<meta name="revised" content="12/10/2020">
 
-<style type="text/css"> 
+<style type="text/css">
 body {
 	scrollbar-arrow-color: #27436F;
-	scrollbar-base-color: #99BCF2;
+	scrollbar-base-color: #99BCF2; /* Tropical Blue */
 	scrollbar-dark-shadow-color: #99BCF2;
-	scrollbar-track-color: #CCE1FF;
+	scrollbar-track-color: #CCE1FF; /* Hawkes Blue */
 
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 	color: #3B5E93; /* Mariner */
 	background-image: url('ELmisc3bk1.jpg');
 	background-color: #C6D5EC; /* Periwinkle */
 }
-.sLogoBanner {
-	font-size: xx-large;
-	font-weight: bold;
-	color: #FFFFFF; /* White */
-	text-shadow: 1px 1px 5px #0000FF; /* Blue */
-	text-align: center;
-}
-a:hover {
-	color: #FFFFFF;
-}
 A:link {
-	text-decoration:none;
+	color: #3B5E93; /* Mariner */
+}
+A:visited {
+	color: #3B5E93;
+}
+A:hover {
+	color: #FF0000; /* #FFFFFF; */
+}
+a:active {
+	color: #3B5E93;
 }
 h1 {
 	font-size: xx-large;
+	font-weight: bold;
 	color: #000080; /* Navy */
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 140%;
 }
 h2 {
+	clear: both; /* disabilita float */
 	font-size: large;
+	font-weight: bold;
 	color: #000080; /* Navy */
 	text-align: center;
-	margin-top: .9em;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-top: .9em; /* 30px; */
 	margin-bottom: 0;
 }
 h3 {
 	font-size: medium;
 	color: #000080; /* Navy */
 	text-align: center;
+	padding-left: 35px;
+	padding-right: 35px;
 	margin-top: 0.45em;
 	margin-bottom: 0;
+}
+header {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	text-shadow: 1px 1px 5px #0000FF; /* Blue */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
+}
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #000000; /* Black */
+	/* text-shadow: 1px 1px 1px #0000FF; Blue #1A2B0A;*/
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
+}
+p {
+	font-size: small;
+	color: #000080; /* Navy */
+	text-align: justify;
+	padding-left: 35px;
+	padding-right: 35px;
+	line-height: 125%;
+}
+img {
+	max-width: 100%;
+	height: auto;
 }
 .sBorder1s-Periwinkle {
 				border: 1px solid #C6D5EC;
@@ -67,27 +111,18 @@ h3 {
 .sBlack {
 				color: #000000;
 }
-.sNavy {
-				color: #000080;
-}
 .sBlue {
 				color: #0000FF;
 }
 .sGreen {
 				color: #008000;
 }
-.sMaroon {
-				color: #800000;
-}
 .sRed {
 				color: #FF0000;
 }
 .sYellow {
-				color: #FFFF00; 
-				text-shadow: 1px 1px 0px #DD8500; /* Tangerine */
-}
-.sWhite {
-				color: #FFFFFF;
+				color: #CCA000; /* Yellow= #FFFF00, mentre questo è in realtà Gamboge */
+				/* text-shadow: 1px 1px 0px #DD8500; Tangerine */
 }
 .sBGWhite {
 				background-color: #FFFFFF;
@@ -95,24 +130,8 @@ h3 {
 .sBold {
 				font-weight: bold;
 }
-.sJustify {
-				text-align: justify;
-}
 .sCenter {
 				text-align: center;
-}
-.sPadding {
-				padding-left: 40px;
-				padding-right: 40px;
-}
-.sXXSmall {
-				font-size: xx-small;
-}
-.sXSmall {
-				font-size: x-small;
-}
-.sSmall {
-				font-size: small;
 }
 .sMedium {
 				font-size: medium;
@@ -137,120 +156,111 @@ h3 {
 			align: top;
 }
 </style>
-</HEAD>
- 
-<BODY LINK="#3B5E93"  ALINK="#3B5E93"  VLINK="#3B5E93">
-<p class="sLogoBanner">Studio di Astrologia "Acquario"</p>
+</head>
 
-<TABLE BACKGROUND="ELmisc3bk2.jpg" CELLSPACING="0" CELLPADDING="15" BORDERCOLOR="#C7D7EF" BORDERCOLORDARK="#4B6995" width="95%" class="sBorder2s" align="center">
-<TR><TD>
+<body>
+<header>Studio di Astrologia "Acquario"</header>
 
-<TABLE BACKGROUND="ELmisc3bk3.jpg" CELLSPACING="0" CELLPADDING="15" BORDERCOLOR="#C7D7EF" BORDERCOLORDARK="#4B6995" WIDTH="100%" BORDER="1">
-<TR><TD>
+<TABLE BACKGROUND="ELmisc3bk2.jpg" CELLSPACING="15" CELLPADDING="15" class="sBorder2s" BORDERCOLOR="#C7D7EF" BORDERCOLORDARK="#4B6995" width="95%" align="center">
+<TR><TD BACKGROUND="ELmisc3bk3.jpg">
 
-<TABLE BACKGROUND="ELmisc3bk4.jpg" CELLSPACING="0" CELLPADDING="0" WIDTH="100%" class="sBorder1s-Periwinkle">
+<TABLE BACKGROUND="ELmisc3bk4.jpg" CELLSPACING="0" CELLPADDING="0" class="sBorder1s-Periwinkle" WIDTH="100%">
 <TR><TD>
 
 		<h1>I QUATTRO ELEMENTI NELLA COPPIA</h1>
 
-		<P class="sCenter">
+		<div class="sCenter"> <!-- così non sottostà alle regole del paragrafo -->
 			<br>
-			<img src="A.4ElementiE.png" width="205" height="205">&nbsp;&nbsp;
-			<img src="A.ElementiC.jpg"  width="243" height="244">&nbsp;&nbsp;
-			<img src="A.ElementiA.jpg"  width="213" height="212">&nbsp;&nbsp;
-			<img src="A.4ElementiA.jpg" width="240" height="249">&nbsp;&nbsp;
-			<img src="A.ElementiD.jpg"  width="185" height="197">
+			<img src="A.4ElementiE.png" width="205" height="205" alt="Ruota degli Elementi">&nbsp;
+			<img src="A.ElementiC.jpg"  width="243" height="244" alt="Elementi">&nbsp;
+			<img src="A.ElementiA.jpg"  width="213" height="212" alt="">&nbsp;
+			<img src="A.4ElementiA.jpg" width="240" height="249" alt="">&nbsp;
+			<img src="A.ElementiD.jpg"  width="185" height="197" alt="">
 			<br><br>
-		</p>
-		
-		<p class="sMedium sNavy sCenter">
+		</div>
+
+		<p class="sMedium sCenter">
 			Osservando come gli Elementi naturali si combinano tra di loro, si possono dedurre diverse varie combinazioni e compatibilità.<br><br>
 		</p>
 
 		<p class="sCenter">
-			<img src="A.2ElemFuoco.jpg" width="105" height="115">
-			<img src="A.1ElemTerra.jpg" width="110" height="115">
-			<img src="A.4ElemAriaA.jpg" width="122" height="115">
-			<img src="A.3ElemAcqua.jpg" width="106" height="115">
-			<img src="A.2ElemFuoco.jpg" width="105" height="115">
-			<img src="A.1ElemTerra.jpg" width="110" height="115">
-			<img src="A.4ElemAriaA.jpg" width="125" height="116">
-			<img src="A.3ElemAcqua.jpg" width="108" height="115">
-			<br><br>
+			<img src="A.2ElemFuoco.jpg" width="105" height="115" alt="Elemento Fuoco">
+			<img src="A.1ElemTerra.jpg" width="110" height="115" alt="Elemento Terra">
+			<img src="A.4ElemAriaA.jpg" width="122" height="115" alt="Elemento Aria">
+			<img src="A.3ElemAcqua.jpg" width="106" height="115" alt="Elemento Acqua">
 		</p>
 
 		<h2><span class="sRed">FUOCO ( ARIETE - LEONE - SAGITTARIO )</span></h2>
 		<h3>La scintilla della vita</h3>
-		<p class="sSmall sNavy sJustify sPadding">
-			<img src="A.ElemenFuoco.jpg" width="76" height="76" class="sFloatL">
+		<p>
+			<img src="A.ElemenFuoco.jpg" width="76" height="76" alt="Elemento Fuoco" class="sFloatL">
 			Di calore, generosità ed entusiasmo ne ha da vendere, ma guai a chi tenta di frenarlo perché diventa subito bellicoso, esagerato egocentrico e
-			incontenibile. Domina l'energia. La vita perde valore ai suoi occhi, se non è appassionato, intenso e forse anche un po' spericolato. È super 
+			incontenibile. Domina l'energia. La vita perde valore ai suoi occhi, se non è appassionato, intenso e forse anche un po' spericolato. È super
 			estroverso, possiede spirito di conquista e il desiderio d'imporsi e di condurre il rapporto. Si farà sempre notare nella maniera più diretta
 			possibile, ma può anche essere audace, eccitante, amante dell'avventura. Slancio dinamico ed esuberanza caratterizzano l'agire. La sicurezza e
-			l'individualismo accrescono la volontà di potere. Le reazioni sono immediate e spesso eccessive. Vitalità e ambizione, sempre alla ricerca di 
-			qualcosa di nuovo. Collerico con reazioni rapide a volte violente. La mente è attiva, creativa, dimostrativa, conquistatrice, con alte 
+			l'individualismo accrescono la volontà di potere. Le reazioni sono immediate e spesso eccessive. Vitalità e ambizione, sempre alla ricerca di
+			qualcosa di nuovo. Collerico con reazioni rapide a volte violente. La mente è attiva, creativa, dimostrativa, conquistatrice, con alte
 			aspirazioni. Sincero ma impulsivo, ha bisogno di molta libertà per potersi esprimere in modo naturale, capacità di sapere dirigere la volontà
-			verso una meta, l'azione è molto importante.  
+			verso una meta, l'azione è molto importante.
 		</p>
 
 		<h2><span class="sGreen">TERRA ( TORO - VERGINE - CAPRICORNO )</span></h2>
 		<h3>Il contenuto della vita</h3>
-		<p class="sSmall sNavy sJustify sPadding">
-			<img src="A.ElemenTerra.jpg" width="93" height="75" class="sFloatR">
-			Costante, affidabile, forse un po' prevedibile, vive con i piedi ben piantati per terra, arriva sempre puntuale agli appuntamenti e non 
-			dimentica mai i suoi impegni. Se ferito si raffredda, chiudendosi in un ostinato mutismo. Ha forti ambizioni professionali, è alla ricerca 
-			spasmodica di certezze contro le incognite del domani. La sua natura costante e tenace è di grande aiuto. Una volta che adotta un piano d'azione 
-			niente al mondo può distoglierlo. Dotati di fermezza, spirito pratico costruttivo, laboriosità, metodo e concentrazione. È un elemento che 
-			conferisce serietà, prudenza e obbedienza. Sa come fare per guadagnarsi da vivere e per soddisfare le sue necessità, interesse materiale, 
-			bisogno di sicurezza e desiderio di economizzare. È possibile che l'attaccamento alle cose concrete e al lavoro limiti la fantasia e 
-			l'immaginazione. Concretezza, spirito di conservazione, perseveranza. Il bisogno di sicurezza impone ordine e rispetto delle abitudini. 
+		<p>
+			<img src="A.ElemenTerra.jpg" width="93" height="75" alt="Elemento Terra" class="sFloatR">
+			Costante, affidabile, forse un po' prevedibile, vive con i piedi ben piantati per terra, arriva sempre puntuale agli appuntamenti e non
+			dimentica mai i suoi impegni. Se ferito si raffredda, chiudendosi in un ostinato mutismo. Ha forti ambizioni professionali, è alla ricerca
+			spasmodica di certezze contro le incognite del domani. La sua natura costante e tenace è di grande aiuto. Una volta che adotta un piano d'azione
+			niente al mondo può distoglierlo. Dotati di fermezza, spirito pratico costruttivo, laboriosità, metodo e concentrazione. È un elemento che
+			conferisce serietà, prudenza e obbedienza. Sa come fare per guadagnarsi da vivere e per soddisfare le sue necessità, interesse materiale,
+			bisogno di sicurezza e desiderio di economizzare. È possibile che l'attaccamento alle cose concrete e al lavoro limiti la fantasia e
+			l'immaginazione. Concretezza, spirito di conservazione, perseveranza. Il bisogno di sicurezza impone ordine e rispetto delle abitudini.
 			La metodicità può scadere nella pignoleria, la tenacia nell'ostinazione.
 		</p>
 
 		<h2><span class="sYellow">ARIA ( GEMELLI - BILANCIA - ACQUARIO )</span></h2>
 		<h3>Il soffio della vita</h3>
-		<p class="sSmall sNavy sJustify sPadding">
-			<img src="A.ElemenAria.jpg" width="115" height="53" class="sFloatL">
-			È una persona interessante che può volgere a suo favore qualsiasi situazione ma raramente rimane in una situazione abbastanza da poter cogliere 
-			riconoscimenti a lungo termine. È intelligente e sveglio, vivace, versatile, tende a disperdere fin troppo la sua abilità mentale. Ama imparare 
-			o tentare di fare ogni cosa che sottoponga a sforzo la sua mente indagatrice. Versatilità di spirito, capacità di adattamento, esigenza di 
-			contatti umani, di rinnovamento continuo delle esperienze. All'attivo ha una meravigliosa capacità di comunicazione, di simpatia, disinvoltura 
-			e fascino. Amore dello studio, la conoscenza, la diffusione, grande esigenza di contatti umani, rinnovamento continuo delle esperienze. Capace 
-			d'inventare, creare, di dedurre e ragionare, riesce a giudicare con obbiettività ciò che gli altri pensano. Ha la capacità più di altri di 
-			staccarsi dalle preoccupazioni quotidiane, ciò permette di lavorare facilmente con ogni tipo di persona. Rischia di cadere nella superficialità, 
-			di disperdere le sue energie per mancanza di coerenza interiore. La dimensione concreta e materiale dell'esistenza lo deprime, soffocando i suoi 
-			ideali che invece si vivificano a contatto con gli altri. Ha gusto per l'avventura, orizzonti culturali amplissimi, ma timore degli impegni e 
+		<p>
+			<img src="A.ElemenAria.jpg" width="115" height="53" alt="Elemento Aria" class="sFloatL">
+			È una persona interessante che può volgere a suo favore qualsiasi situazione ma raramente rimane in una situazione abbastanza da poter cogliere
+			riconoscimenti a lungo termine. È intelligente e sveglio, vivace, versatile, tende a disperdere fin troppo la sua abilità mentale. Ama imparare
+			o tentare di fare ogni cosa che sottoponga a sforzo la sua mente indagatrice. Versatilità di spirito, capacità di adattamento, esigenza di
+			contatti umani, di rinnovamento continuo delle esperienze. All'attivo ha una meravigliosa capacità di comunicazione, di simpatia, disinvoltura
+			e fascino. Amore dello studio, la conoscenza, la diffusione, grande esigenza di contatti umani, rinnovamento continuo delle esperienze. Capace
+			d'inventare, creare, di dedurre e ragionare, riesce a giudicare con obbiettività ciò che gli altri pensano. Ha la capacità più di altri di
+			staccarsi dalle preoccupazioni quotidiane, ciò permette di lavorare facilmente con ogni tipo di persona. Rischia di cadere nella superficialità,
+			di disperdere le sue energie per mancanza di coerenza interiore. La dimensione concreta e materiale dell'esistenza lo deprime, soffocando i suoi
+			ideali che invece si vivificano a contatto con gli altri. Ha gusto per l'avventura, orizzonti culturali amplissimi, ma timore degli impegni e
 			delle responsabilità.
 		</p>
 
 		<h2><span class="sBlue">ACQUA ( CANCRO - SCORPIONE - PESCI )</span></h2>
 		<h3>Lo scorrere della vita</h3>
-		<p class="sSmall sNavy sJustify sPadding">
-			<img src="A.ElemenAcqua.jpg" width="92" height="65" class="sFloatR">
-			Pieno di fantasia, tende a sognare, come nessun altro sa leggere nel cuore dei suoi simili. È impressionabile e suggestionabile. Affabile ed 
-			emotivo, vive proiettato in un mondo di sogni. È disorganizzato, creativo, portato ad agire per gli altri, sacrificando volentieri se stesso. 
-			Il suo tallone d'Achille è la suscettibilità; basta una sciocchezza per ferirlo, scatenando una crisi emotiva coi fiocchi. La realtà gli va 
-			stretta, tuttavia si appoggia volentieri a qualcuno disposto ad occuparsi di se. Ha memoria e fantasia, intuizione, ricettività e calma, 
-			fluidità, istinto conservatore, emotività, misticismo e occultismo. L'energia è rigenerante, vitale, feconda, procreante e meditativa. Quando 
+		<p>
+			<img src="A.ElemenAcqua.jpg" width="92" height="65" alt="Elemento Acqua" class="sFloatR">
+			Pieno di fantasia, tende a sognare, come nessun altro sa leggere nel cuore dei suoi simili. È impressionabile e suggestionabile. Affabile ed
+			emotivo, vive proiettato in un mondo di sogni. È disorganizzato, creativo, portato ad agire per gli altri, sacrificando volentieri se stesso.
+			Il suo tallone d'Achille è la suscettibilità; basta una sciocchezza per ferirlo, scatenando una crisi emotiva coi fiocchi. La realtà gli va
+			stretta, tuttavia si appoggia volentieri a qualcuno disposto ad occuparsi di se. Ha memoria e fantasia, intuizione, ricettività e calma,
+			fluidità, istinto conservatore, emotività, misticismo e occultismo. L'energia è rigenerante, vitale, feconda, procreante e meditativa. Quando
 			esprime il suo lato migliore elargisce protezione, altruismo e compassione. Sapendo di essere vulnerabile non mira direttamente, all'obiettivo,
 			ma gira intorno con apparente indifferenza, afferrandolo solo quando sono sicuri della riuscita. Cerca anche di conseguire i suoi fini facendo
 			leva sulle emozioni degli altri, e con una grande agilità, arriva al centro del suo cuore, con maniere gentili e affettuose.
 		</p>
 
-		<p class="sNavy sXSmall sCenter">
+		<p class="sCenter">
 			<br>
-			<img src="A.4Elementi.jpg" width="348" height="92">&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="A.4Elementi.jpg" width="348" height="92">
+			<img src="A.4Elementi.jpg" width="348" height="92" alt="Barra Elementi">
 			<br>
 		</p>
 
 		<h2><span class="sRed">FUOCO</span> - <span class="sRed">FUOCO</span> = Coppia idealista, passionale</h2>
 		<h3><span class="sRed">Frase chiave</span>: noi ardiamo</h3>
-		<p class="sSmall sNavy sJustify sPadding">
-			Sono una coppia dinamica, passionale, incapace di fermarsi e guardare dentro. Hanno in comune entusiasmo, energia, e spirito di avventura, 
-			nonché l'avversione al compromesso e l'incapacità di cooperare che possono creare dei disaccordi. I segni di 
-			<span class="sRed sBold">Fuoco</span> tendono ad essere sempre in competizione gli uni con gli altri. Vogliono comandare, essere rispettati, 
-			ed essere il numero <strong>Uno</strong>, anche se in modi diversi. Il rapporto tra due i segni di <span class="sRed sBold">Fuoco</span> non è
+		<p>
+			Sono una coppia dinamica, passionale, incapace di fermarsi e guardare dentro. Hanno in comune entusiasmo, energia, e spirito di avventura,
+			nonché l'avversione al compromesso e l'incapacità di cooperare che possono creare dei disaccordi. I segni di
+			<span class="sRed sBold">Fuoco</span> tendono ad essere sempre in competizione gli uni con gli altri. Vogliono comandare, essere rispettati,
+			ed essere il numero <b>Uno</b>, anche se in modi diversi. Il rapporto tra due i segni di <span class="sRed sBold">Fuoco</span> non è
 			mai semplice le battaglie sono all'ordine del giorno. Con un altro segno di <span class="sRed sBold">Fuoco</span> è molto meglio prevenire
 			l'insorgere dei problemi invece di doverli poi curare. Usate quindi la fiamma del fuoco per temprarvi al fine di fare un ottimo lavoro quando vi
 			troverete a dover gestire un compagno che appartiene allo stesso elemento. Spalleggiandovi, guadagnerete in generosità, altruismo ed estroversione.
@@ -258,79 +268,79 @@ h3 {
 
 		<h2><span class="sRed">FUOCO</span> - <span class="sGreen">TERRA</span> = Coppia attiva, ambiziosa</h2>
 		<h3><span class="sRed">Frase chiave</span>: noi produciamo</h3>
-		<p class="sSmall sNavy sJustify sPadding">
+		<p>
 			Combinazione assai interessante poiché per ironia della sorte, l'attrazione tra questi elementi ha le sue radici nelle loro profonde differenze.
-			L'energica persona <span class="sRed sBold">Fuoco</span> è capace di dare libero sfogo agli istinti avventurosi del suo elemento, e sa 
+			L'energica persona <span class="sRed sBold">Fuoco</span> è capace di dare libero sfogo agli istinti avventurosi del suo elemento, e sa
 			perfettamente che il partner di <span class="sGreen sBold">Terra</span> le fornirà sicurezza, continuità e stabilità, e per loro stabilità,
-			fermezza, tradizione e affidabilità sono tutto. Potreste serbare rancore, arrabbiarvi profondamente con loro, ma non potete negare che 
-			rappresentano il focolare perfetto per il vostro fuoco. Il partner <span class="sGreen sBold">Terra</span> non gradisce il continuo e impulsivo 
-			desiderio di cambiamenti del partner <span class="sRed sBold">Fuoco</span>, che a sua volta può irritarsi terribilmente per la sua mancanza di 
-			ambizioni. La <span class="sGreen sBold">Terra</span> può apprezzare enormemente l'energia e l'entusiasmo del 
+			fermezza, tradizione e affidabilità sono tutto. Potreste serbare rancore, arrabbiarvi profondamente con loro, ma non potete negare che
+			rappresentano il focolare perfetto per il vostro fuoco. Il partner <span class="sGreen sBold">Terra</span> non gradisce il continuo e impulsivo
+			desiderio di cambiamenti del partner <span class="sRed sBold">Fuoco</span>, che a sua volta può irritarsi terribilmente per la sua mancanza di
+			ambizioni. La <span class="sGreen sBold">Terra</span> può apprezzare enormemente l'energia e l'entusiasmo del
 			<span class="sRed sBold">Fuoco</span> ma è molto facile che un segno di <span class="sRed sBold">Fuoco</span> sia eccessivo per un tipico segno
-			di <span class="sGreen sBold">Terra</span>. Forse lo trovate troppo pieno di sé, esigente, rumoroso e insopportabile. Potrebbe sembrarvi 
-			scortese, insensibile e grossolano. La <span class="sGreen sBold">Terra</span> vuole rilassarsi, mentre il <span class="sRed sBold">Fuoco</span> 
+			di <span class="sGreen sBold">Terra</span>. Forse lo trovate troppo pieno di sé, esigente, rumoroso e insopportabile. Potrebbe sembrarvi
+			scortese, insensibile e grossolano. La <span class="sGreen sBold">Terra</span> vuole rilassarsi, mentre il <span class="sRed sBold">Fuoco</span>
 			vuole essere sempre impegnato in qualunque cosa. Godetevi la passione, l'entusiasmo e la fiamma che vi caratterizza, e scoprirete che non è poi
 			così male come sembra.
 		</p>
 
 		<h2><span class="sRed">FUOCO</span> - <span class="sYellow">ARIA</span> = Coppia sportiva, avventurosa</h2>
 		<h3><span class="sRed">Frase chiave</span>: noi esploriamo</h3>
-		<p class="sSmall sNavy sJustify sPadding">
-			Le differenze si conciliano rapidamente. Tendono a vivere maggiormente a livello mentale. Ma le difficoltà nell'esprimere i propri sentimenti 
-			e la tendenza a ignorare le necessità pratiche possono produrre dei problemi a lungo termine. Il rapporto è di solito molto vivace, perché 
-			l'intelligenza dell'<span class="sYellow sBold">Aria</span> e l'entusiasmo del <span class="sRed sBold">Fuoco</span> creano idee interessanti 
-			e volontà di cambiamenti. Come segno d'<span class="sYellow sBold">Aria</span> apprezza molto la compagnia del 
+		<p>
+			Le differenze si conciliano rapidamente. Tendono a vivere maggiormente a livello mentale. Ma le difficoltà nell'esprimere i propri sentimenti
+			e la tendenza a ignorare le necessità pratiche possono produrre dei problemi a lungo termine. Il rapporto è di solito molto vivace, perché
+			l'intelligenza dell'<span class="sYellow sBold">Aria</span> e l'entusiasmo del <span class="sRed sBold">Fuoco</span> creano idee interessanti
+			e volontà di cambiamenti. Come segno d'<span class="sYellow sBold">Aria</span> apprezza molto la compagnia del
 			<span class="sRed sBold">Fuoco</span>. Può sentirsi particolarmente frustrato in sua compagnia perché gli sembra troppo intenso, eccessivamente
 			zelante e passionale. Le difficoltà a stabilire un rapporto con il segno d'<span class="sYellow sBold">Aria</span> può dipendere dalla mancanza
 			di passionalità, dall'eccessiva approssimazione o dallo scarso impegno che mette in tutto ciò che fa. Preferisce agire invece che parlare. Se
-			avrete la pazienza di invecchiare insieme, scriverete una delle più belle pagine d'amore della storia, molto intrigante, avventurosa, speziata 
-			sotto tutti i punti di vista, dal fisico al mentale. Godetevi il calore e l'entusiasmo del <span class="sRed sBold">Fuoco</span>, ma non 
+			avrete la pazienza di invecchiare insieme, scriverete una delle più belle pagine d'amore della storia, molto intrigante, avventurosa, speziata
+			sotto tutti i punti di vista, dal fisico al mentale. Godetevi il calore e l'entusiasmo del <span class="sRed sBold">Fuoco</span>, ma non
 			lasciate che trasformino la vita in un incendio.
 		</p>
 
 		<h2><span class="sRed">FUOCO</span> - <span class="sBlue">ACQUA</span> = Coppia dialettica, magnetica</h2>
 		<h3><span class="sRed">Frase chiave</span>: noi costruiamo</h3>
-		<p class="sSmall sNavy sJustify sPadding">
+		<p>
 			Sono una coppia frizzante, ben protetta da un grande ombrello giallo sotto un cielo burrascoso. Questi elementi hanno in comune delle emozioni
-			potenti, ma i loro sentimenti sono molto diversi ed è più probabile la mancanza di comprensione che la reciproca comprensione. 
-			L'<span class="sBlue sBold">Acqua</span> è terrorizzata dalla totale mancanza di sensibilità del <span class="sRed sBold">Fuoco</span>, che a 
-			sua volta e sconcertato dal riserbo, dalla tranquillità e dalla introversione dell'<span class="sBlue sBold">Acqua</span> nonché dall'apparente 
-			mancanza di ambizioni mondane. Con l'<span class="sBlue sBold">Acqua</span> funziona meglio un <span class="sRed sBold">Fuoco</span> duraturo. 
-			Le amicizie casuali funzionano meglio dei rapporti stretti, in quanto questi ultimi possono portare a dei profondi conflitti emotivi. Può 
-			apparirvi misterioso e complesso, in un modo che secondo voi è del tutto immotivato. Perché l'acqua può spegnere il fuoco in qualsiasi momento. 
+			potenti, ma i loro sentimenti sono molto diversi ed è più probabile la mancanza di comprensione che la reciproca comprensione.
+			L'<span class="sBlue sBold">Acqua</span> è terrorizzata dalla totale mancanza di sensibilità del <span class="sRed sBold">Fuoco</span>, che a
+			sua volta e sconcertato dal riserbo, dalla tranquillità e dalla introversione dell'<span class="sBlue sBold">Acqua</span> nonché dall'apparente
+			mancanza di ambizioni mondane. Con l'<span class="sBlue sBold">Acqua</span> funziona meglio un <span class="sRed sBold">Fuoco</span> duraturo.
+			Le amicizie casuali funzionano meglio dei rapporti stretti, in quanto questi ultimi possono portare a dei profondi conflitti emotivi. Può
+			apparirvi misterioso e complesso, in un modo che secondo voi è del tutto immotivato. Perché l'acqua può spegnere il fuoco in qualsiasi momento.
 			Vi sentirete molto attratto dal <span class="sRed sBold">Fuoco</span> ma l'attrazione e la comprensione di questi due segni sono cose ben
-			diverse. Esiste la possibilità concreta che, come segno d'<span class="sBlue sBold">Acqua</span> diventi piuttosto arrogante nella vostra 
-			convinzione di capire sempre tutto e tutti. Quasi certamente avete molto più intuito e capirete un segno di <span class="sRed sBold">Fuoco</span> 
+			diverse. Esiste la possibilità concreta che, come segno d'<span class="sBlue sBold">Acqua</span> diventi piuttosto arrogante nella vostra
+			convinzione di capire sempre tutto e tutti. Quasi certamente avete molto più intuito e capirete un segno di <span class="sRed sBold">Fuoco</span>
 			molto meglio di quanto sia in grado di capire voi. Affidarvi unicamente all'intuito e alle sensazioni potrebbe non essere sufficiente.
 		</p>
 
 		<h2><span class="sGreen">TERRA</span> - <span class="sGreen">TERRA</span> = Coppia concreta, pragmatica</h2>
 		<h3><span class="sRed">Frase chiave</span>: noi costruiamo</h3>
-		<p class="sSmall sNavy sJustify sPadding">
+		<p>
 			La complicità e l'onestà garantiscono un'intesa ottimale. Portati ad una fedeltà a prova di bomba, non si arrendono neppure alla delusione più
-			cocente, sanno insistere, perdonare, pazientare, affrontando tutti i problemi interni ed esterni alla coppia con un sentimento inossidabile. 
+			cocente, sanno insistere, perdonare, pazientare, affrontando tutti i problemi interni ed esterni alla coppia con un sentimento inossidabile.
 			Due persone con lo stesso elemento <span class="sGreen sBold">Terra</span> avranno in comune il loro amore per la stabilità, e la routine può
 			portare a relazioni molto durature. Ci può essere però la mancanza di stimoli, di profondità emotiva e di ambizioni e, nelle relazioni durature
 			potrà mancare il vero sentimento. Potreste sentirvi davvero a vostro agio in compagnia di altri segni di <span class="sGreen sBold">Terra</span>
 			e molto probabilmente vorrete trascorrere la maggior parte del vostro tempo con loro. Tuttavia ci sono momenti in cui li troverete convenzionali,
-			noiosi e ottusi. Se riuscirete a dimenticarvi di analizzare tutto almeno per un po' e deciderete di godervi le attività che vi accomunano, e 
-			probabilmente avrete trovato il compagno perfetto. Se ancora non lo è, la vostra diventerà una storia di vecchia data, destinata a migliorare 
+			noiosi e ottusi. Se riuscirete a dimenticarvi di analizzare tutto almeno per un po' e deciderete di godervi le attività che vi accomunano, e
+			probabilmente avrete trovato il compagno perfetto. Se ancora non lo è, la vostra diventerà una storia di vecchia data, destinata a migliorare
 			col tempo.
 		</p>
 
 		<h2><span class="sGreen">TERRA</span> - <span class="sYellow">ARIA</span> = Coppia cerebrale, comunicativa</h2>
 		<h3><span class="sRed">Frase chiave</span>: noi dialoghiamo</h3>
-		<p class="sSmall sNavy sJustify sPadding">
+		<p>
 			Al segno di <span class="sGreen sBold">Terra</span> l'<span class="sYellow sBold">Aria</span> sembra sempre troppo leggera e frivola, troppo
-			effimera e priva di consistenza. La <span class="sGreen sBold">Terra</span> trae un grande beneficio dalle idee 
-			dell'<span class="sYellow sBold">Aria</span> che acquisisce dalla <span class="sGreen sBold">Terra</span> le capacità pratiche. La 
-			<span class="sGreen sBold">Terra</span> apprezza la stabilità e la tradizione, mentre la flessibilità e adattabilità 
+			effimera e priva di consistenza. La <span class="sGreen sBold">Terra</span> trae un grande beneficio dalle idee
+			dell'<span class="sYellow sBold">Aria</span> che acquisisce dalla <span class="sGreen sBold">Terra</span> le capacità pratiche. La
+			<span class="sGreen sBold">Terra</span> apprezza la stabilità e la tradizione, mentre la flessibilità e adattabilità
 			dell'<span class="sYellow sBold">Aria</span> potranno apparire poco rispettose e troppo capricciose. La <span class="sGreen sBold">Terra</span>
 			vuole che l'<span class="sYellow sBold">Aria</span> fosse più seria e profonda, mentre l'<span class="sYellow sBold">Aria</span> tende a ridere
 			in faccia a tali pretese &quot;terrestri&quot;. Forse deve aprire uno spiraglio consentendo ad una brezzolina frivola di accarezzare la vostra
-			vita. Il rapporto che li lega può essere interessante. La <span class="sGreen sBold">Terra</span> è femminile, fredda e asciutta, 
-			l'<span class="sYellow sBold">Aria</span> è maschile, calda e umida. L'<span class="sYellow sBold">Aria</span> ama la teoria, adora pensare e 
-			parlare, la <span class="sGreen sBold">Terra</span> è pratica, ama fare e rilassarsi. L'<span class="sYellow sBold">Aria</span> trova la 
+			vita. Il rapporto che li lega può essere interessante. La <span class="sGreen sBold">Terra</span> è femminile, fredda e asciutta,
+			l'<span class="sYellow sBold">Aria</span> è maschile, calda e umida. L'<span class="sYellow sBold">Aria</span> ama la teoria, adora pensare e
+			parlare, la <span class="sGreen sBold">Terra</span> è pratica, ama fare e rilassarsi. L'<span class="sYellow sBold">Aria</span> trova la
 			<span class="sGreen sBold">Terra</span> particolarmente ottusa, lenta e noiosa. Può sentire che è troppo rigida, persino soffocante o limitante.
 			Ma le sue qualità spesso sono tutto ciò di cui l'<span class="sYellow sBold">Aria</span> ha bisogno ma spesso non se ne rende conto e le serba
 			rancore invece di mostrarle gratitudine.
@@ -338,96 +348,92 @@ h3 {
 
 		<h2><span class="sGreen">TERRA</span> - <span class="sBlue">ACQUA</span> = Coppia tradizionale, soccorrevole</h2>
 		<h3><span class="sRed">Frase chiave</span>: noi conserviamo</h3>
-		<p class="sSmall sNavy sJustify sPadding">
-			Vista dall'esterno, appare la classica coppia prevedibile e pantofolaia, magari fin troppo chiusa, e tenacemente attaccata alla casa e alla 
-			propria privacy. Non vanno pazzi per le novità, l'imprevisto provoca ansia. Si trovano a loro agio l'uno con l'altro e mentre 
-			l'<span class="sBlue sBold">Acqua</span> ammira le capacità pratiche della <span class="sGreen sBold">Terra</span> che è affascinata dalla 
-			profondità emotiva dell'<span class="sBlue sBold">Acqua</span> e dalla sua sensibilità. Ma, in una relazione stretta, potrebbe nascere una 
-			certa irritazione, la <span class="sGreen sBold">Terra</span> perde la pazienza di fronte alla mancanza di praticità 
-			dell'<span class="sBlue sBold">Acqua</span> si annoia, si stanca dell'amore che la <span class="sGreen sBold">Terra</span> nutre per l'ordine 
-			e la routine. Quando la <span class="sGreen sBold">Terra</span> e l'<span class="sBlue sBold">Acqua</span> uniscono le loro forze, possono 
+		<p>
+			Vista dall'esterno, appare la classica coppia prevedibile e pantofolaia, magari fin troppo chiusa, e tenacemente attaccata alla casa e alla
+			propria privacy. Non vanno pazzi per le novità, l'imprevisto provoca ansia. Si trovano a loro agio l'uno con l'altro e mentre
+			l'<span class="sBlue sBold">Acqua</span> ammira le capacità pratiche della <span class="sGreen sBold">Terra</span> che è affascinata dalla
+			profondità emotiva dell'<span class="sBlue sBold">Acqua</span> e dalla sua sensibilità. Ma, in una relazione stretta, potrebbe nascere una
+			certa irritazione, la <span class="sGreen sBold">Terra</span> perde la pazienza di fronte alla mancanza di praticità
+			dell'<span class="sBlue sBold">Acqua</span> si annoia, si stanca dell'amore che la <span class="sGreen sBold">Terra</span> nutre per l'ordine
+			e la routine. Quando la <span class="sGreen sBold">Terra</span> e l'<span class="sBlue sBold">Acqua</span> uniscono le loro forze, possono
 			essere troppo foschi, freddi e depressi. La <span class="sGreen sBold">Terra</span> pone confini e l'<span class="sBlue sBold">Acqua</span> li
 			sommerge e lei si sente trascinata via dalla corrente. Talvolta l'<span class="sBlue sBold">Acqua</span> non si preoccupa di rispettare i limiti
-			degli altri e cerca di emergere, come un fiume in piena. Lottate per la vostra integrità e insegnate all'<span class="sBlue sBold">Acqua</span> 
+			degli altri e cerca di emergere, come un fiume in piena. Lottate per la vostra integrità e insegnate all'<span class="sBlue sBold">Acqua</span>
 			a rispettare il vostro spazio personale.
 		</p>
 
 		<h2><span class="sYellow">ARIA</span> - <span class="sYellow">ARIA</span> = Coppia fantasiosa, trasgressiva</h2>
 		<h3><span class="sRed">Frase chiave</span>: noi ci divertiamo</h3>
-		<p class="sSmall sNavy sJustify sPadding"> 
+		<p>
 			Siete una coppia aperta, originale, disinibita non fate mistero anzi adorate le trasgressioni. Probabilmente vi trovate molto bene con i segni
-			dello stesso elemento, li trovate decisamente &quot;facili&quot; rispetto ai segni di qualsiasi altro elemento. Di solito, c'è molta 
-			comunicazione tra di voi, ma i sentimenti più profondi sono ignorati con troppa facilità, col risultato che, a lungo termine possono sorgere 
+			dello stesso elemento, li trovate decisamente &quot;facili&quot; rispetto ai segni di qualsiasi altro elemento. Di solito, c'è molta
+			comunicazione tra di voi, ma i sentimenti più profondi sono ignorati con troppa facilità, col risultato che, a lungo termine possono sorgere
 			dei problemi. Avete un approccio curioso e vivace alla vita e potete trovarvi reciprocamente molto stimolanti. Irrequieti e i mprevedibili come
 			siete, non fate mai programmi per il futuro. Cercate di apprezzare le loro idee per la novità che rappresentano e per lo stimolo che sanno
-			fornire al vostro personale modo di pensare. Il rapporto tende a mancare di praticità, benché ciò non costituisca un problema. In amore 
+			fornire al vostro personale modo di pensare. Il rapporto tende a mancare di praticità, benché ciò non costituisca un problema. In amore
 			ragionato solo al presente, vi godete l'attimo fuggente, ma senza impegno; tanto più che le catene e le responsabilità vi terrorizzano.
 		</p>
 
 		<h2><span class="sYellow">ARIA</span> - <span class="sBlue">ACQUA</span> = Coppia creativa, romantica</h2>
 		<h3><span class="sRed">Frase chiave</span>: noi espiriamo</h3>
-		<p class="sSmall sNavy sJustify sPadding">
-			Combinazione stimolante, la razionalità dell'<span class="sYellow sBold">Aria</span> e l'intuizione e la sensibilità 
+		<p>
+			Combinazione stimolante, la razionalità dell'<span class="sYellow sBold">Aria</span> e l'intuizione e la sensibilità
 			dell'<span class="sBlue sBold">Acqua</span> producono un rapporto interessante e immaginativo. L'<span class="sYellow sBold">Aria</span> è di
 			solito estroverso, socievole e pensa, mentre l'<span class="sBlue sBold">Acqua</span> sente e ha maggiore tendenza all'introspezione e
-			riservatezza, sono molto più sensibili agli stati d'animo, ai sentimenti e impressioni che a parole e pensieri. Siate pazienti con loro e 
+			riservatezza, sono molto più sensibili agli stati d'animo, ai sentimenti e impressioni che a parole e pensieri. Siate pazienti con loro e
 			potrete infine trovare comprensione e rispetto reciproco. Possono sorgere delle incomprensioni nelle relazioni più strette, che si aggiungono
-			alle difficoltà nell'affrontare le questioni pratiche. L'<span class="sBlue sBold">Acqua</span> deve fare molta attenzione a ciò che dice, 
-			perché l'<span class="sYellow sBold">Aria</span> è maestro nell'arte della parola, mentre l'<span class="sBlue sBold">Acqua</span> tende a 
+			alle difficoltà nell'affrontare le questioni pratiche. L'<span class="sBlue sBold">Acqua</span> deve fare molta attenzione a ciò che dice,
+			perché l'<span class="sYellow sBold">Aria</span> è maestro nell'arte della parola, mentre l'<span class="sBlue sBold">Acqua</span> tende a
 			comunicare di più attraverso sentimenti e impressioni, dando per scontato che gli altri siano in grado di capire perfettamente le sue intenzioni
-			anche se quello che dice non descrive esattamente ciò che vuole dire. Il segno d'<span class="sYellow sBold">Aria</span> vive per le parole, 
+			anche se quello che dice non descrive esattamente ciò che vuole dire. Il segno d'<span class="sYellow sBold">Aria</span> vive per le parole,
 			il linguaggio, il pensiero e le idee. Potrebbero tormentarvi, sottoponendovi ad un interrogatorio in piena regola. Ma è molto probabile che un
-			segno d'<span class="sYellow sBold">Aria</span> ricordi perfettamente le vostre parole, cercare di scegliere con attenzione quando parlate con 
+			segno d'<span class="sYellow sBold">Aria</span> ricordi perfettamente le vostre parole, cercare di scegliere con attenzione quando parlate con
 			un esponente di questo elemento.
 		</p>
 
 		<h2><span class="sBlue">ACQUA</span> - <span class="sBlue">ACQUA</span> = Coppia spirituale, emotiva</h2>
 		<h3><span class="sRed">Frase chiave</span>: noi percepiamo</h3>
-		<p class="sSmall sNavy sJustify sPadding">
-			La comprensione reciproca è profonda e il comune desiderio di un amore romantico può portare queste persone in un mondo di sogni e fantasie. 
-			In società vi muovete come una coppia timida e chiusa, anche un po' passiva, poco interessata a prendere delle decisioni. Ma non appena al 
+		<p>
+			La comprensione reciproca è profonda e il comune desiderio di un amore romantico può portare queste persone in un mondo di sogni e fantasie.
+			In società vi muovete come una coppia timida e chiusa, anche un po' passiva, poco interessata a prendere delle decisioni. Ma non appena al
 			riparo da orecchi indiscreti, nell'intimità di casa vostra, vi abbandonate a un dialogo tenerissimo. Generalmente ama la compagnia d'altri segni
 			d'<span class="sBlue sBold">Acqua</span>. L'<span class="sBlue sBold">Acqua</span> è spesso lunatico o depresso, potreste trovare davvero troppo
-			semplice accanirvi sul lato negativo della vostra controparte d'<span class="sBlue sBold">Acqua</span>. E, se le cose vanno male, tendete a 
-			crogiolarvi nei vostri problemi. Potreste sentire che un altro segno d'<span class="sBlue sBold">Acqua</span> stimola troppo il vostro lato 
-			emotivo. In tal caso, allontanatevi per un po' e trascorrete un po' di tempo con segni di <span class="sRed sBold">Fuoco</span>, 
-			<span class="sYellow sBold">Aria</span> o <span class="sGreen sBold">Terra</span>.     
+			semplice accanirvi sul lato negativo della vostra controparte d'<span class="sBlue sBold">Acqua</span>. E, se le cose vanno male, tendete a
+			crogiolarvi nei vostri problemi. Potreste sentire che un altro segno d'<span class="sBlue sBold">Acqua</span> stimola troppo il vostro lato
+			emotivo. In tal caso, allontanatevi per un po' e trascorrete un po' di tempo con segni di <span class="sRed sBold">Fuoco</span>,
+			<span class="sYellow sBold">Aria</span> o <span class="sGreen sBold">Terra</span>.
 		</p>
- 
+
 		<P class="sCenter">
 			<br>
-			<img src="A.4Elementi.jpg" width="348" height="92">&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="A.4Elementi.jpg" width="348" height="92">
+			<img src="A.Elementibarra.jpg" width="254" height="73" alt="Barra Elementi">
 			<br><br>
 		</p>
-				
+
 		<p class="sCenter">
-			<img src="ARacquario.gif"   width="146" height="141">&nbsp;&nbsp;&nbsp;
-			<img src="LauraAB2016..jpg" width="148" height="238">&nbsp;&nbsp;&nbsp;
-			<img src="4.ElementiB.jpg"  width="221" height="240">
+			<img src="ARacquario.gif"      width="146" height="141" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="photo/Laura2020.jpg" width="250" height="277" alt="Laura Lencia - 2020">&nbsp;&nbsp;&nbsp;
+			<img src="4.ElementiB.jpg"     width="221" height="240" alt="Elementi">
 		</p>
 
-		<p class="sBlack sSmall sCenter">
-			<img src="email-box.gif"    width="35"  height="35">
+		<p class="sBlack sCenter">
+			<img src="email-box.gif"    width="35" height="35" alt="">
 			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
-			<img src="TelefonoC164.gif" width="35" height="35">&nbsp;
-			oppure Telefona: <strong>0125 631175 - Cell. 347 0417409<br><br>
-			Sei il visitatore n°&nbsp;</strong>
+			<img src="TelefonoC164.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+
+			<a href="index.html" class="sBold">Pagina iniziale <img src="favicon32.gif" width="32" height="32"> Home page</a>
+			&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+			<b>Sei il visitatore n°&nbsp;</b>
 		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220430342-tg8nn47" border=0></a>
-			&nbsp;(Contenuto Aggiornato 30/12/2017)<br><br>
-		</p>
-		<p class="sCenter">
-			<img src="A.Elementibarra.jpg" width="254" height="73">&nbsp;&nbsp; 
-			<img src="A.Elementibarra.jpg" width="254" height="73">&nbsp;&nbsp; 
-			<img src="A.Elementibarra.jpg" width="254" height="73">
+			&nbsp;(Contenuto Aggiornato <time datetime="2017-12-30">30/12/2017</time>)<br><br>
 		</p>
 
-		</TD></TR></TABLE></CENTER>
-	</TD></TR></TABLE></CENTER>
-</TD></TR></TABLE></CENTER>
-<p class="sXXSmall sBlack sBold sCenter">
-	<span class="sBGWhite"> Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati. 
+</TD></TR></TABLE>
+</TD></TR></TABLE>
+<footer>
+	<span class="sBGWhite"> Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
 	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.<span>
-</p>
-</BODY>
-</HTML>
+</footer>
+</body>
+</html>
