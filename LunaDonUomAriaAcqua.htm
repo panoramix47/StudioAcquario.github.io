@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <title>Luna in Aria e Acqua per Lei e Lui - Studio Acquario</title>
 <link rel="icon" type="image/gif" href="favicon32.gif">
-<META name="description" content="Studio Acquario: Luna nei segni d'Aria e Acqua per Lei e Lui">
-<meta name="keywords" content="studio, acquario, astrologia, luna, segni, aria, acqua, lei, lui">
+<META name="description" content="Studio Acquario: Luna nei segni d'Aria e Acqua per Lei e Lui (1a parte)">
+<meta name="keywords" lang="it" content="studio, acquario, astrologia, luna, segni, aria, acqua, lei, lui">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
 <meta name="language" content="it">
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="04/04/2020">
-<meta name="revised" content="04/09/2020">
+<meta name="revised" content="13/10/2020">
 
 <style type="text/css">
 body {
@@ -28,20 +28,24 @@ body {
 	/* background-attachment: fixed; */
 }
 a:link {
-		color: #3384FD; /* Dodger Blue */
+	color: #3384FD; /* New Midnight Blue */
 }
 a:visited {
-		color: #3384FD;
+	color: #3384FD;
 }
-img {
-	max-width: 100%;
-	height: auto;
+a:hover {
+	color: #FF0000;
+}
+a:active {
+	color: #3384FD;
 }
 h1 {
 	font-size: xx-large;
 	font-weight: bold;
 	color: #FFFFFF; /* White */
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
 	line-height: 150%;
 }
 h2 {
@@ -49,6 +53,8 @@ h2 {
 	font-weight: bold;
 	color: #FFFFFF; /* White */
 	text-align: center;
+	padding-left: 35px;
+	padding-right: 35px;
 	margin-top: 40px;
 }
 h3 {
@@ -56,25 +62,79 @@ h3 {
 	font-weight: bold;
 	color: #FFFFFF; /* White */
 	text-align: center;
+	padding-left: 35px;
+	padding-right: 35px;
 	margin-top: 30px;
 }
-.sLogoBanner {
+header {
 	font-size: xx-large;
 	font-weight: bold;
 	color: #FFFFFF; /* White */
 	text-shadow: 1px 1px 5px #0000FF; /* Blue */
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
 }
-.sBorder1s {
-				border-style: solid;
-				border-width: 1px;
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	/* text-shadow: 1px 1px 1px #0000FF; Blue #1A2B0A;*/
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
+}
+p {
+	font-size: small;
+	color: #FFFFFF; /* White */
+	text-align: justify;
+	padding-left: 35px;
+	padding-right: 35px;
+	line-height: 125%;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.sNavigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 180%;
+}
+.sNavigation a {
+	font-size: medium;
+	font-weight: bold;
+	padding:.42em;
+	color: #FFFFFF; /* White */
+	margin-left: 2px;
+	background: #0000FF;  /* Blue */
+	text-decoration: none;
+}
+.sNavigation a:hover {
+	color: #000000; /* Black */
+	background: #AFB6C9; /* Echo Blue */
+}
+#PagCorrente {
+	border-bottom: 2.5px solid #FF0000; /* Red */
+}
+.sHomeIcon {
+	vertical-align: bottom;
+	margin-bottom: 1px;
+	height: 25px;
+	width: 25px;
 }
 .sBorder2s {
 				border-style: solid;
 				border-width: 2px;
-}
-.sBlack {
-				color: #000000;
 }
 .sIrisBlue {
 				color: #00BFBF;
@@ -95,39 +155,11 @@ h3 {
 				color: #FFFF00;
 				text-shadow: 1px 1px 0px #DD8500; /* Tangerine */
 }
-.sWhite {
-				color: #FFFFFF;
-}
-.sBGPigPink {
-				background-color: #F6D2DE;
-}
-.sBGWhite {
-				background-color: #FFFFFF;
-}
 .sBold {
 				font-weight: bold;
 }
 .sCenter {
 				text-align: center;
-}
-.sJustify {
-				text-align: justify;
-}
-.sPadding {
-				padding-left: 40px;
-				padding-right: 40px;
-}
-.sLineH125 {
-				line-height: 125%;
-}
-.sXXSmall {
-				font-size: xx-small;
-}
-.sXSmall {
-				font-size: x-small;
-}
-.sSmall {
-				font-size: small;
 }
 .sMedium {
 				font-size: medium;
@@ -145,68 +177,67 @@ h3 {
 </head>
 
 <body>
-<p class="sLogoBanner">Studio di Astrologia "Acquario"</p>
+<header>Studio di Astrologia "Acquario"</header>
 
-<TABLE BACKGROUND="STfantasy4bk2.jpg" CELLSPACING="0" CELLPADDING="15" BORDERCOLOR="#5095FC" BORDERCOLORDARK="#083F92" width="95%" class="sBorder2s" align="center">
-<TR><TD>
+<TABLE BACKGROUND="STfantasy4bk2.jpg" CELLSPACING="0" CELLPADDING="15" BORDERCOLOR="#5095FC" BORDERCOLORDARK="#083F92" width="95%" class="sBorder2s" align=<TABLE BACKGROUND="STfantasy4bk2.jpg" CELLSPACING="14" CELLPADDING="3" border="1" class="sBorder2s" BORDERCOLOR="#5095FC" BORDERCOLORDARK="#083F92" width="95%" align="center">
+<TR><TD BACKGROUND="STfantasy4bk3.jpg">
 
-<TABLE BACKGROUND="STfantasy4bk3.jpg" CELLSPACING="0" CELLPADDING="2" BORDER="0" width="100%">
-<TR><TD>
-
-<TABLE BACKGROUND="STfantasy4bk4.jpg" CELLSPACING="5" CELLPADDING="5" width="100%" class="sBorder1s">
+<TABLE BACKGROUND="STfantasy4bk4.jpg" CELLSPACING="3" CELLPADDING="0" border="0" width="100%">
 <TR><TD>
 
 		<h1>LA <span class="sRed">LUNA</span> NEI SEGNI per <span class="sFuchsia">LEI</span> e <span class="sAqua">LUI</span><br>
-			1ª Parte <span class="sYellow">Aria</span> e <span class="sIrisBlue">Acqua</span></h1>
+			1ª Parte: <span class="sYellow">Aria</span> e <span class="sIrisBlue">Acqua</span></h1>
 
 		<p class="sCenter">
-			<img src="LunaxOrosc.jpg"  width="360" height="225"> <!-- orig 519 x 324 -->
-			<img src="A.BLuna.gif"     width="275" height="225"> <!-- orig 369 x 302 -->
-			<img src="LunaxOroscA.jpg" width="360" height="225"> <!-- orig 519 x 324 -->
+			<img src="LunaxOrosc.jpg"  width="360" height="225" alt="Mezza Luna che guarda a destra"> <!-- orig 519 x 324 -->
+			<img src="A.BLuna.gif"     width="275" height="225" alt="Mezza Luna dorata animata"> <!-- orig 369 x 302 -->
+			<img src="LunaxOroscA.jpg" width="360" height="225" alt="Mezza Luna che guarda a sinistra"> <!-- orig 519 x 324 -->
 		</p>
 
-		<p class="sBlack sSmall sCenter sBold sLineH125">
-			<br><span class="sBGWhite">&nbsp;</span><span class="sBGPigPink">
-			<a href="LunaDonUomAriaAcqua.htm"><span class="sBlack">Aria e Acqua</span></a> |</span><span class="sBGWhite">
-			<a href="LunaDonUomFuocoTerra.htm"><span class="sBlack">Fuoco e Terra</span></a> |
-			<a href="index.html"><span class="sBlack">Pagina&nbsp;Iniziale</span></a>&nbsp;</span><br>
-		</p>
-
-		<p class="sCenter">
+		<nav class="sLarge sCenter">
 			<br>
-			<img src="STStellina3.gif"   width="20"  height="19">&nbsp;&nbsp;&nbsp;
-			<img src="STfantasy4div.jpg" width="428" height="32">&nbsp;&nbsp;&nbsp;
-			<img src="STStellina3.gif"   width="20"  height="19">&nbsp;&nbsp;&nbsp;
-			<img src="STfantasy4div.jpg" width="428" height="32">&nbsp;&nbsp;&nbsp;
-			<img src="STStellina3.gif"   width="20"  height="19">
+			<ul class="sNavigation">
+				<li><a href="LunaDonUomAriaAcqua.htm" id="PagCorrente"><span class="sYellow">Aria</span> e <span class="sAqua">Acqua</span></a></li>
+				<li><a href="LunaDonUomFuocoTerra.htm"><span class="sRed">Fuoco</span> e <span class="sLime">Terra</span></a></li>
+				<li><a href="index.html"><img src="favicon32.gif" class="sHomeIcon" alt="Pagina Principale"></a></li>
+			</ul>
+			<br>
+		</nav>
+
+		<p class="sCenter">
+			<img src="STfantasy4div.jpg" width="428" height="32" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="STStellina3.gif"   width="20"  height="19" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="STStellina3.gif"   width="20"  height="19" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="STStellina3.gif"   width="20"  height="19" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="STfantasy4div.jpg" width="428" height="32" alt="">
 		</p>
 
 		<h2><span class="sRed">LUNA</span> nei Segni d'<span class="sYellow">ARIA</span> -
 			per l'<span class="sAqua">UOMO</span> e la <span class="sFuchsia">DONNA</span></h2>
 
-		<p class="sWhite sLarge sBold sCenter" >
+		<p class="sLarge sBold sCenter" >
 			<span class="sYellow">GEMELLI</span> - <span class="sYellow">BILANCIA</span> - <span class="sYellow">ACQUARIO</span>
 		</p>
 
 		<h3>L'<span class="sAqua">UOMO</span> CON LA <span class="sRed">LUNA</span> IN <span class="sYellow">GEMELLI</span> - L'intellettuale</h3>
-		<p class="sSmall sWhite sJustify sPadding sLineH125">
+		<p>
 			È un bambino irrequieto e precoce, impara a parlare e leggere molto presto, appena è possibile si rende indipendente e va a vivere per conto suo.
 			L'allontanamento dal nucleo familiare e soprattutto dalla madre, spesso percepita come troppo attiva e irrequieta, non crea particolari problemi
 			perché è consapevole che solo nel mondo esterno, appaga il bisogno di conoscenza e di conferma di cui ha bisogno. Da adulto è al pari della
-			donna, si nutre d'informazione e comunicazione è affascinato dai fatti che gli accadono dai quali può sempre imparare qualcosa di nuovo, 
+			donna, si nutre d'informazione e comunicazione è affascinato dai fatti che gli accadono dai quali può sempre imparare qualcosa di nuovo,
 			riuscendo ad arricchire di spunti interessanti la sua voglia di conoscere ogni sfumatura della natura umana. Nel complesso è un uomo affascinante
-			e imprevedibile, sempre pronto al cambiamento, è un uomo con il quale non ci si annoia mai, mentre lui ahimè si annoia spesso, specie in campo 
+			e imprevedibile, sempre pronto al cambiamento, è un uomo con il quale non ci si annoia mai, mentre lui ahimè si annoia spesso, specie in campo
 			sentimentale. Con questa <span class="sRed sBold">Luna</span> fa fatica a riconoscere un proprio linguaggio emotivo col quale tradurre
-			sensazioni e le emozioni che prova, e spesso i sentimenti aleggiano nell'aria come farfalle. In amore proprio per questa sua naturale tendenza 
+			sensazioni e le emozioni che prova, e spesso i sentimenti aleggiano nell'aria come farfalle. In amore proprio per questa sua naturale tendenza
 			all'instabilità e a un certo sperimentalismo, non si lascia sfuggire le occasioni: ha bisogno di mettere alla prova la sua capacità di seduzione.
-			È probabile che nella vita sia più che mai attratto da donne coinvolgenti, molto emotive e magnetiche, incompatibili però col suo modo di vivere 
+			È probabile che nella vita sia più che mai attratto da donne coinvolgenti, molto emotive e magnetiche, incompatibili però col suo modo di vivere
 			emozioni e sentimenti. All'inizio cerca di resistere ma poi pian piano, quando la donna lo caricherà di tutto il peso dei suoi bisogni affettivi,
-			si sentirà intrappolato annientato, messo alle strette e, con la velocità di una meteora, cercherà altrove chi, come lui, sia l'incarnazione 
+			si sentirà intrappolato annientato, messo alle strette e, con la velocità di una meteora, cercherà altrove chi, come lui, sia l'incarnazione
 			della libertà e con la velocità di una meteora, cercherà altrove chi, come lui, sia l'incarnazione della libertà e della volubilità affettiva.
 		</p>
 
 		<h3>LA <span class="sFuchsia">DONNA</span> CON LA <span class="sRed">LUNA</span> IN <span class="sYellow">GEMELLI</span> - L'estroversa</h3>
-		<p class="sSmall sWhite sJustify sPadding sLineH125">
+		<p>
 			Come un bambino si nutre di latte, così Lei si nutre di parole, mette in risalto lo spirito curioso, agile, intuitivo e brillante. È interessata
 			a tutto, versatile, intelligente, curiosa e attraverso le sue formidabili antenne, riesce a captare rapidamente ogni spunto o idea brillante che
 			possa arricchire le sue potenzialità future. Piace conversare con persone diverse, fare connessioni e mettere insieme i diversi frammenti delle
@@ -216,64 +247,64 @@ h3 {
 			caratteriale del <span class="sYellow sBold">Gemelli</span>, chi ha questa <span class="sRed sBold">Luna</span> è presente la strana sensazione
 			di appartenere a due diverse nature talvolta in contrasto tra loro. È proprio per questo suo carattere, così complesso, variabile e un po'
 			elusivo, che per molti uomini è una creatura affascinante. In genere, non è troppo protettiva, materna e casalinga, queste caratteristiche non
-			rientrano tra le sue priorità; l'immagine che meglio la rappresenta è quella di una donna libera, curiosa, estroversa e senza inibizioni. 
+			rientrano tra le sue priorità; l'immagine che meglio la rappresenta è quella di una donna libera, curiosa, estroversa e senza inibizioni.
 			Sente la necessità di avere uno spazio suo personale per sviluppare le proprie idee e un contatto sociale per scambiarle. La difficoltà maggiore
-			è considerare la propria dimensione emotiva come una parte di sé: le emozioni e i sentimenti che prova sono troppo rapidi, irrazionali e 
+			è considerare la propria dimensione emotiva come una parte di sé: le emozioni e i sentimenti che prova sono troppo rapidi, irrazionali e
 			sconcertanti. Talvolta è un po' frivola e civettuola, ma è comunque una donna disinvolta e senza complessi, e nei sentimenti preferisce un flirt
 			a un legame più profondo. Purtroppo le emozioni della <span class="sRed sBold">Luna</span> e l'analisi logica della mente non parlano la stessa
-			lingua e proprio per questo lei si sente spesso irrequieta, tesa e nervosa. Nei sentimenti c'è un leggero romanticismo, le piace parlare 
+			lingua e proprio per questo lei si sente spesso irrequieta, tesa e nervosa. Nei sentimenti c'è un leggero romanticismo, le piace parlare
 			d'amore, magari con frivolezza e un po' di umorismo. A volte quando all'improvviso tutto sembra oscurarsi, e la paura di un vuoto esistenziale
 			o l'ansia della solitudine la spaventa, sentirà anche il bisogno d'una solida spalla su cui poggiarsi. È una donna che in genere ha reazioni
-			emotive troppo cerebrali perché sia veramente una passionale, lei in una relazione non deve mai mancare un dialogo costante, cerca soprattutto 
+			emotive troppo cerebrali perché sia veramente una passionale, lei in una relazione non deve mai mancare un dialogo costante, cerca soprattutto
 			una compatibilità mentale.
 		</p>
 
 		<h3>L'<span class="sAqua">UOMO</span> CON LA <span class="sRed">LUNA</span> IN <span class="sYellow">BILANCIA</span> - L'amabile</h3>
-		<p class="sSmall sWhite sJustify sPadding sLineH125">
-			Questa <span class="sRed sBold">Luna</span> intuisce molto presto che per ottenere le cure e il sostegno di cui ha bisogno per sentirsi 
-			protetto e al sicuro, deve instaurare relazioni armoniose che soddisfino reciprocamente le parti. Compito facile perché ha un'inclinazione 
-			naturale per la diplomazia e l'intermediazione, che sa esprimere le proprie opinioni con moderazione, garbo e cordialità, e pur di non 
+		<p>
+			Questa <span class="sRed sBold">Luna</span> intuisce molto presto che per ottenere le cure e il sostegno di cui ha bisogno per sentirsi
+			protetto e al sicuro, deve instaurare relazioni armoniose che soddisfino reciprocamente le parti. Compito facile perché ha un'inclinazione
+			naturale per la diplomazia e l'intermediazione, che sa esprimere le proprie opinioni con moderazione, garbo e cordialità, e pur di non
 			contrapporsi agli altri in modo aggressivo, preferisce un pacifico accomodamento, anche a costo di apparire poco sincero, non tanto diretto e
 			molto indeciso. Peccato che questa <span class="sRed sBold">Luna</span> d'<span class="sYellow sBold">aria</span> abbia sempre la tendenza a
-			reprimere senza pietà le proprie emozioni, al punto che ha bisogno di essere parecchio incoraggiato affinché possa fidarsi delle sue. Messo 
+			reprimere senza pietà le proprie emozioni, al punto che ha bisogno di essere parecchio incoraggiato affinché possa fidarsi delle sue. Messo
 			sotto pressione può sentirsi minacciato emotivamente e decidere di isolarsi e di chiudere ogni contatto rifugiandosi a riflettere con la mente
-			altrove, perché questo è il suo modo di proteggersi dai dolori e dalle delusioni dei conflitti umani. In compenso sa investire una grande 
+			altrove, perché questo è il suo modo di proteggersi dai dolori e dalle delusioni dei conflitti umani. In compenso sa investire una grande
 			quantità di tempo ed energia nelle relazioni sentimentali che in genere sperimenta precocemente perché è un seduttore nato. L'amore è al centro
-			della vita, anche se ogni tanto nella continua ricerca, s'innamora più dell'idea di essere in coppia che della persona che gli è accanto. 
+			della vita, anche se ogni tanto nella continua ricerca, s'innamora più dell'idea di essere in coppia che della persona che gli è accanto.
 			È pieno di fascino, capace di conquistare la donna solo offrendo dei fiori, una poesia al chiaro di luna o una cena intima al lume di candela.
 			Sulla donna della vita proietta la sua mania per la bellezza, in fondo all'anima è un artista, e vorrà al suo fianco una donna intelligente,
-			elegante, raffinata dotata di buon gusto e di stile, impeccabile e perfetta nella forma e nelle idee con la quale condividere tutto: gusti 
+			elegante, raffinata dotata di buon gusto e di stile, impeccabile e perfetta nella forma e nelle idee con la quale condividere tutto: gusti
 			interessi, passioni, sogni e ideali.
 		</p>
 
 		<h3>LA <span class="sFuchsia">DONNA</span> CON LA <span class="sRed">LUNA</span> IN <span class="sYellow">BILANCIA</span> - La conciliante</h3>
-		<p class="sSmall sWhite sJustify sPadding sLineH125">
-			Poiché la <span class="sRed sBold">Luna</span> riflette i bisogni emotivi del segno in cui si trova, nella 
-			<span class="sYellow sBold">Bilancia</span>, segno di armonia, equilibrio e di giustizia, diventa essenziale confrontarsi con gli altri 
-			attraverso i contatti, gli scambi e i legami, sia personali sia sociali. Un po' simile alla <span class="sRed sBold">Luna</span> 
+		<p>
+			Poiché la <span class="sRed sBold">Luna</span> riflette i bisogni emotivi del segno in cui si trova, nella
+			<span class="sYellow sBold">Bilancia</span>, segno di armonia, equilibrio e di giustizia, diventa essenziale confrontarsi con gli altri
+			attraverso i contatti, gli scambi e i legami, sia personali sia sociali. Un po' simile alla <span class="sRed sBold">Luna</span>
 			<span class="sYellow sBold">Gemelli</span> ma non così mutevole e imprevedibile, prima di reagire d'istinto a qualsiasi esperienza della vita,
-			sente la necessità di soppesare sui piatti di un'immaginaria bilancia e da tutte le prospettive possibili, i pro e contro d'ogni situazione. 
-			È forte l'esigenza di controllare, attraverso il distacco e la razionalità della mente, le correnti emotive che si agitano dentro di lei. 
-			La donna con questa <span class="sRed sBold">Luna</span> di solito è una creatura che colpisce e affascina per la sua innata femminilità e 
-			per il suo charme. La <span class="sYellow sBold">Bilancia</span> è il segno delle relazioni e dei legami sentimentali e con questa 
-			<span class="sRed sBold">Luna</span>, la donna ha molte idee e teorie sulla natura dell'amore, sull'idea del matrimonio e su tutto quanto è 
-			legato ai rapporti e sentimenti affettivi, concetti che, nella realtà pratica, lei aspira a vivere secondo quella visione del mondo, tipica 
-			del segno, in cui ogni cosa deve essere bella, armoniosa, equilibrata in sostanza perfetta! Lei è più felice se può avere vicino un uomo con 
-			il quale instaurare un legame intimo, stabile e armonioso, in grado cioè di garantirle in un clima di autonomia e di reciproco rispetto, un 
-			rifugio nel quale sentirsi protetta e al sicuro. Aspira alla pace e alla moderazione e spesso, facilitata da una notevole capacità di ascolto 
+			sente la necessità di soppesare sui piatti di un'immaginaria bilancia e da tutte le prospettive possibili, i pro e contro d'ogni situazione.
+			È forte l'esigenza di controllare, attraverso il distacco e la razionalità della mente, le correnti emotive che si agitano dentro di lei.
+			La donna con questa <span class="sRed sBold">Luna</span> di solito è una creatura che colpisce e affascina per la sua innata femminilità e
+			per il suo charme. La <span class="sYellow sBold">Bilancia</span> è il segno delle relazioni e dei legami sentimentali e con questa
+			<span class="sRed sBold">Luna</span>, la donna ha molte idee e teorie sulla natura dell'amore, sull'idea del matrimonio e su tutto quanto è
+			legato ai rapporti e sentimenti affettivi, concetti che, nella realtà pratica, lei aspira a vivere secondo quella visione del mondo, tipica
+			del segno, in cui ogni cosa deve essere bella, armoniosa, equilibrata in sostanza perfetta! Lei è più felice se può avere vicino un uomo con
+			il quale instaurare un legame intimo, stabile e armonioso, in grado cioè di garantirle in un clima di autonomia e di reciproco rispetto, un
+			rifugio nel quale sentirsi protetta e al sicuro. Aspira alla pace e alla moderazione e spesso, facilitata da una notevole capacità di ascolto
 			che permette di guardare le cose anche dal punto di vista degli altri, è un'ottima intermediaria che, senza mai imporsi, riesce a creare intorno
-			a sé un'atmosfera carica di cordialità e di simpatia. La <span class="sRed sBold">Luna</span> in questa posizione può apparire una creatura 
+			a sé un'atmosfera carica di cordialità e di simpatia. La <span class="sRed sBold">Luna</span> in questa posizione può apparire una creatura
 			fragile, incerta e bisognosa di protezione, al suo interno racchiude una tempra dura e resistente come l'acciaio, che si porta dietro come una
 			ruota di scorta, utile solo nei momenti di difficoltà. In amore apprezza nell'uomo una certa classe, il buon gusto, l'educazione e il rispetto
-			di quelle regole di comportamento, fondamentali in un rapporto che si basano su di un equo scambio tra il dare e l'avere. Di contro un uomo 
-			che intenda raggiungere il suo cuore e fare breccia nelle sue emozioni fino a scioglierla del tutto, deve saper corteggiare il suo intelletto 
-			e apprezzare i suoi raffinati ragionamenti su quanto di leale ed equo c'è in una relazione, poi avvolgendola in un'atmosfera carica di 
+			di quelle regole di comportamento, fondamentali in un rapporto che si basano su di un equo scambio tra il dare e l'avere. Di contro un uomo
+			che intenda raggiungere il suo cuore e fare breccia nelle sue emozioni fino a scioglierla del tutto, deve saper corteggiare il suo intelletto
+			e apprezzare i suoi raffinati ragionamenti su quanto di leale ed equo c'è in una relazione, poi avvolgendola in un'atmosfera carica di
 			romanticismo farle dei doni: un fiore o un gioiello.
 		</p>
 
 		<h3>L'<span class="sAqua">UOMO</span> CON LA <span class="sRed">LUNA</span> IN <span class="sYellow">ACQUARIO</span> - L'individualista</h3>
-		<p class="sSmall sWhite sJustify sPadding sLineH125">
-			Eccentrico, originale e molto irrequieto, non vuole essere come gli altri ed è per questo spesso rifiuta e disprezza la morale corrente e i 
+		<p>
+			Eccentrico, originale e molto irrequieto, non vuole essere come gli altri ed è per questo spesso rifiuta e disprezza la morale corrente e i
 			valori tradizionali. Ha uno spirito molto indipendente e anche in gioventù, appena raggiunge l'autosufficienza, abbandona volentieri la propria
 			famiglia per scegliere precocemente la sua strada da seguire. Riesce a sentirsi a proprio agio solo se può distaccarsi da chiunque voglia
 			esercitare su di lui una influenza opprimente e cerchi di controllarlo imponendo regole o limitazioni alla sua libertà personale. Ha bisogno di
@@ -282,201 +313,205 @@ h3 {
 			migliori. L'<span class="sYellow sBold">Acquario</span> è un segno un po' rigido e poco adattabile e spesso, piuttosto che adeguarsi agli altri
 			è capace di dileguarsi all'improvviso senza lasciare traccia. Con questa <span class="sRed sBold">Luna</span> è difficile che cambi il proprio
 			modo di essere per andare incontro alle esigenze o ai desideri della propria donna, saprà ascoltarla come un meraviglioso amico e le darà dei
-			buoni consigli, ma non parteciperà al suo mondo emotivo, soprattutto se lei pretende quelle piccole e pressanti rassicurazioni d'affetto, o 
-			cerca di indagare più a fondo la natura dei suoi sentimenti. In amore non si accontenta facilmente, e ciò che cerca spesso è un mix di donne 
-			diverse: la moderna, libera da pregiudizi e convenzioni, anticonvenzionale, l'amante appassionata pronta a seguire le sue idee un po' 
+			buoni consigli, ma non parteciperà al suo mondo emotivo, soprattutto se lei pretende quelle piccole e pressanti rassicurazioni d'affetto, o
+			cerca di indagare più a fondo la natura dei suoi sentimenti. In amore non si accontenta facilmente, e ciò che cerca spesso è un mix di donne
+			diverse: la moderna, libera da pregiudizi e convenzioni, anticonvenzionale, l'amante appassionata pronta a seguire le sue idee un po'
 			stravaganti l'amica sincera e fedele che rispetta la sua indipendenza e infine la compagna, sempre pronta a dare calore e tenerezza purché si
 			accontenti di condividere idee, pensieri e parole piuttosto che emozioni.
 		</p>
 
 		<h3>LA <span class="sFuchsia">DONNA</span> CON LA <span class="sRed">LUNA</span> IN <span class="sYellow">ACQUARIO</span> - L'Eccentrica</h3>
-		<p class="sSmall sWhite sJustify sPadding sLineH125">
+		<p>
 			Anche nel terzo segno d'<span class="sYellow sBold">aria</span>, la <span class="sRed sBold">Luna</span> è a disagio e non si esprime al meglio
 			perché non reagisce subito agli stimoli ma tende a riflettere e ponderare. Per un segno come l'<span class="sYellow sBold">Acquario</span> solo
-			ciò che può essere compreso con la mente ed elaborato con la logica è veramente sicuro, mentre tutto quello che appartiene al mondo degli 
-			istinti e delle emozioni è pericoloso e come tale va tenuto a bada o perfino eliminato del tutto. La donna con la 
-			<span class="sRed sBold">Luna</span> in <span class="sYellow sBold">Acquario</span> non somiglia per niente allo stereotipo di una creatura 
-			indifesa, malleabile e in cerca di protezione ma piuttosto a una donna moderna, emancipata e anticonformista. Dotata di autocontrollo emotivo 
+			ciò che può essere compreso con la mente ed elaborato con la logica è veramente sicuro, mentre tutto quello che appartiene al mondo degli
+			istinti e delle emozioni è pericoloso e come tale va tenuto a bada o perfino eliminato del tutto. La donna con la
+			<span class="sRed sBold">Luna</span> in <span class="sYellow sBold">Acquario</span> non somiglia per niente allo stereotipo di una creatura
+			indifesa, malleabile e in cerca di protezione ma piuttosto a una donna moderna, emancipata e anticonformista. Dotata di autocontrollo emotivo
 			e alla perenne ricerca di un compromesso tra i doveri legati alla sfera della casa e famiglia, e le forti pulsioni verso una libertà personale
-			che le permetta di sviluppare le proprie capacità intellettuali e i propri interessi. Vi sono due tipologie di donne, la prima, guidata da 
+			che le permetta di sviluppare le proprie capacità intellettuali e i propri interessi. Vi sono due tipologie di donne, la prima, guidata da
 			<span class="sRed sBold">Saturno</span>, è una donna saggia, matura e con solide basi morali, forse un po' introversa e distaccata, ma molto
-			disciplinata e conscia dei doveri verso di sé e gli altri. La seconda ha un temperamento <span class="sRed sBold">uraniano</span> è 
+			disciplinata e conscia dei doveri verso di sé e gli altri. La seconda ha un temperamento <span class="sRed sBold">uraniano</span> è
 			un'originale, eccentrica e progressista, indipendente che trasmette la sensazione di non avere bisogno di nessuno e che, senza farsi troppi
 			scrupoli, ama sperimentare la vita in un clima di alta tensione. In entrambi i casi è una <span class="sRed sBold">Luna</span> che ha bisogno
-			di sentirsi socialmente coinvolta, poiché crede e dà molta importanza ai rapporti umani, agli ideali di amicizia, della tolleranza e 
-			comprensione. Sul piano emotivo le cose si complicano un po', non è facile per una donna che ha questa <span class="sRed sBold">Luna</span> 
+			di sentirsi socialmente coinvolta, poiché crede e dà molta importanza ai rapporti umani, agli ideali di amicizia, della tolleranza e
+			comprensione. Sul piano emotivo le cose si complicano un po', non è facile per una donna che ha questa <span class="sRed sBold">Luna</span>
 			entrare in contatto con la propria natura emotiva così complessa e profonda, che fa di tutto per analizzare e capire cosa sta sentendo! Prima
-			di tutto perché c'é una linea molto sottile che separa l'amore dall'amicizia con l'altro sesso, perché spesso, piuttosto che la passione ardente
+			di tutto perché c'è una linea molto sottile che separa l'amore dall'amicizia con l'altro sesso, perché spesso, piuttosto che la passione ardente
 			o tenerezza, nelle relazioni cerca scambi intellettuali che si basino su affinità elettive ma soprattutto sulla garanzia di un'autonomia di
 			pensiero e azione. È una donna che non vuole appartenere a nessuno e che mal sopporta i legami noiosi e vincolanti.
 		</p>
 
-		<p class="sWhite sXSmall sCenter">
+		<p class="sCenter">
 			<br>
-			<img src="STStellina3.gif"   width="20"  height="19">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="STStellina3.gif"   width="20"  height="19">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="STStellina3.gif"   width="20"  height="19">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="STfantasy4div.jpg" width="428" height="32">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="STStellina3.gif"   width="20"  height="19">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="STStellina3.gif"   width="20"  height="19">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="STStellina3.gif"   width="20"  height="19">
+			<img src="STStellina3.gif"   width="20"  height="19" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="STStellina3.gif"   width="20"  height="19" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="STStellina3.gif"   width="20"  height="19" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="STfantasy4div.jpg" width="428" height="32" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="STStellina3.gif"   width="20"  height="19" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="STStellina3.gif"   width="20"  height="19" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="STStellina3.gif"   width="20"  height="19" alt="">
 		</p>
 
 		<h2><span class="sRed">LUNA</span> nei Segni d'<span class="sIrisBlue">ACQUA</span> -
 			per l'<span class="sAqua">UOMO</span> e la <span class="sFuchsia">DONNA</span></h2>
 
-		<p class="sWhite sLarge sBold sCenter" >
+		<p class="sLarge sBold sCenter" >
 			<span class="sIrisBlue">CANCRO</span> - <span class="sIrisBlue">SCORPIONE</span> - <span class="sIrisBlue">PESCI</span>
 		</p>
 
 		<h3>L'<span class="sAqua">UOMO</span> CON LA <span class="sRed">LUNA</span> IN <span class="sIrisBlue">CANCRO</span> - Il Lunatico </h3>
-		<p class="sSmall sWhite sJustify sPadding sLineH125">
-			È una <span class="sRed sBold">Luna</span> che esprime un intuito quasi sovrumano, pochi comprendono le donne così bene come un uomo con la 
+		<p>
+			È una <span class="sRed sBold">Luna</span> che esprime un intuito quasi sovrumano, pochi comprendono le donne così bene come un uomo con la
 			<span class="sRed sBold">Luna</span> in <span class="sIrisBlue sBold">Cancro</span>, capace di intuire, più con l'istinto che con la testa, gli
-			umori, le incertezze e i desideri di un mondo femminile, per altri segni assai enigmatico e complesso. L'astro notturno della sensibilità, 
-			dell'immaginazione e della mutevolezza, tende ad amalgamarsi in un modo strano in una psiche maschile, specialmente se ha nel suo tema natale 
-			dei pianeti in segni virili e competitivi, troppo conflittuali e contrastanti con quel bisogno lunare di amabilità, dolcezza e comprensione. 
-			La meta che si prefigge nella vita è soddisfare il bisogno di sicurezza affettiva e materiale che persegue senza mai esporsi in modo aperto e 
-			aggressivo, come ad esempio farebbe un temerario <span class="sRedOrange sBold">Ariete</span> o un prepotente 
+			umori, le incertezze e i desideri di un mondo femminile, per altri segni assai enigmatico e complesso. L'astro notturno della sensibilità,
+			dell'immaginazione e della mutevolezza, tende ad amalgamarsi in un modo strano in una psiche maschile, specialmente se ha nel suo tema natale
+			dei pianeti in segni virili e competitivi, troppo conflittuali e contrastanti con quel bisogno lunare di amabilità, dolcezza e comprensione.
+			La meta che si prefigge nella vita è soddisfare il bisogno di sicurezza affettiva e materiale che persegue senza mai esporsi in modo aperto e
+			aggressivo, come ad esempio farebbe un temerario <span class="sRedOrange sBold">Ariete</span> o un prepotente
 			<span class="sRedOrange sBold">Leone</span>, ma in modo lento e sinuoso, con tutta la sottigliezza, la pressione insistente e la tenacia di cui
-			è dotato. Ben più difficile è comprenderlo, bisogna imparare l'alfabeto Morse per riuscire a decifrare e ad interpretare i diversi segnali che 
+			è dotato. Ben più difficile è comprenderlo, bisogna imparare l'alfabeto Morse per riuscire a decifrare e ad interpretare i diversi segnali che
 			quest'uomo invia sull'onda del proprio sentire: nervoso e intrattabile quando non si sente apprezzato, pigro e introverso quando è trascurato,
 			cupo e lagnoso se è triste e depresso ma anche amabile, appassionato e travolgente quando tutto va per il meglio e lui si sente appagato. In
 			amore, la posizione e gli aspetti della <span class="sRed sBold">Luna</span> nel tema ci indicheranno la qualità del rapporto che un uomo con
-			questa <span class="sRed sBold">Luna</span> ha avuto con la propria madre, figura ben radicata nel segno del 
-			<span class="sIrisBlue sBold">Cancro</span> e che spesso influenza le sue scelte sentimentali. La sua visione interiore del femminile potrebbe 
-			corrispondere a una doppia immagine: quella di una donna calda, rasserenante, materna e disposta sempre a comprenderlo e confortarlo, oppure 
+			questa <span class="sRed sBold">Luna</span> ha avuto con la propria madre, figura ben radicata nel segno del
+			<span class="sIrisBlue sBold">Cancro</span> e che spesso influenza le sue scelte sentimentali. La sua visione interiore del femminile potrebbe
+			corrispondere a una doppia immagine: quella di una donna calda, rasserenante, materna e disposta sempre a comprenderlo e confortarlo, oppure
 			una donna molto giovane, un po' infantile, immatura e bisognosa di protezione. </p>
 
 		<h3>LA <span class="sFuchsia">DONNA</span> CON LA <span class="sRed">LUNA</span> IN <span class="sIrisBlue">CANCRO</span> - L'Angelo del focolare</h3>
-		<p class="sSmall sWhite sJustify sPadding sLineH125">
-			La <span class="sRedOrange sBold">Luna</span> governa il segno del <span class="sIrisBlue sBold">Cancro</span>, con la sua influenza amplifica 
-			in modo considerevole l'intensa emotività e il suo forte intuito, meravigliose qualità che talvolta però, emergono in modo poco controllato. 
-			Segno difficile e complesso, è piena di contrasti ma è ricca di sorprendente profondità di sentimento e d'immaginazione. Per lei ogni incontro 
+		<p>
+			La <span class="sRedOrange sBold">Luna</span> governa il segno del <span class="sIrisBlue sBold">Cancro</span>, con la sua influenza amplifica
+			in modo considerevole l'intensa emotività e il suo forte intuito, meravigliose qualità che talvolta però, emergono in modo poco controllato.
+			Segno difficile e complesso, è piena di contrasti ma è ricca di sorprendente profondità di sentimento e d'immaginazione. Per lei ogni incontro
 			è pieno di significato e ogni esperienza di vita è vissuta con grande intensità e ricordata per sempre come impressione emotiva del sentimento.
 			Dolce e arrendevole, passionale e sognatrice, è una donna che accetta spesso, anche un ruolo di apparente passività, così tanto caro alla cultura
-			maschile e così affine al simbolo lunare del femminile. Del resto il passato per lei conta davvero tanto e spesso è un rifugio nel quale dare 
-			spazio alla nostalgia: l'infanzia, il rapporto coi genitori, la figura materna o certi luoghi, a lei cari sin da bambina, sono ancora vivi 
-			dentro di lei. Spesso è soggetta a sbalzi di umore, è troppo dipendente, nasconde, dietro un'apparente fragilità, un'incredibile tenacia e 
-			determinazione nel raggiungere, ciò che vuole. Un mondo fantastico e pieno di ricordi, reali o immaginari o reali, che lei assimila alle sue 
-			radici e che l'hanno nutrita affettivamente, sentire amata e protetta. In realtà tutto nasce dal bisogno di sicurezza e di protezione che questa 
-			<span class="sRed sBold">Luna</span> cerca istintivamente e che riesce a soddisfare prendendosi cura degli altri o lasciando che altri si 
-			prendano cura di lei. È suscettibile e capace di offendersi per uno sguardo, un gesto, una parola fraintesa o una critica; le sue antenne 
+			maschile e così affine al simbolo lunare del femminile. Del resto il passato per lei conta davvero tanto e spesso è un rifugio nel quale dare
+			spazio alla nostalgia: l'infanzia, il rapporto coi genitori, la figura materna o certi luoghi, a lei cari sin da bambina, sono ancora vivi
+			dentro di lei. Spesso è soggetta a sbalzi di umore, è troppo dipendente, nasconde, dietro un'apparente fragilità, un'incredibile tenacia e
+			determinazione nel raggiungere, ciò che vuole. Un mondo fantastico e pieno di ricordi, reali o immaginari o reali, che lei assimila alle sue
+			radici e che l'hanno nutrita affettivamente, sentire amata e protetta. In realtà tutto nasce dal bisogno di sicurezza e di protezione che questa
+			<span class="sRed sBold">Luna</span> cerca istintivamente e che riesce a soddisfare prendendosi cura degli altri o lasciando che altri si
+			prendano cura di lei. È suscettibile e capace di offendersi per uno sguardo, un gesto, una parola fraintesa o una critica; le sue antenne
 			funzionano meglio dei segnali luminosi di un radar e la mettono in guardia se percepisce un ambiente ostile, senza contare il suo speciale sesto
 			senso. Questa <span class="sRed sBold">Luna</span> riflette uno spiccato senso materno e diventare madre aiuta spesso a realizzarsi nella vita.
 			Nel complesso la vita è di sicuro impegnativa ma assai gratificante.
 		</p>
 
 		<h3>L'<span class="sAqua">UOMO</span> CON LA <span class="sRed">LUNA</span> IN <span class="sIrisBlue">SCORPIONE</span> - L'Estremista</h3>
-		<p class="sSmall sWhite sJustify sPadding sLineH125">
-			Nell'anima segreta di un uomo con <span class="sRed sBold">Luna</span> in <span class="sIrisBlue sBold">Scorpione</span>, gli elementi 
-			femminili e maschili sono sempre in lotta: sensibilità, intuizione e sentimento, si amalgamano con riluttanza con la mascolina durezza di 
-			<span class="sRed sBold">Marte</span> e l'ossessivo bisogno di potere di <span class="sRed sBold">Plutone</span>. Pertanto è facile immaginare 
+		<p>
+			Nell'anima segreta di un uomo con <span class="sRed sBold">Luna</span> in <span class="sIrisBlue sBold">Scorpione</span>, gli elementi
+			femminili e maschili sono sempre in lotta: sensibilità, intuizione e sentimento, si amalgamano con riluttanza con la mascolina durezza di
+			<span class="sRed sBold">Marte</span> e l'ossessivo bisogno di potere di <span class="sRed sBold">Plutone</span>. Pertanto è facile immaginare
 			come, da quest'ambiguo connubio, nasca l'immagine di un uomo sempre in conflitto, tormentato e irrequieto, per il quale essere in crisi equivale
 			al suo hobby preferito. Dotato di un grande fascino personale, all'inizio colpisce per la segretezza e riservatezza. In realtà sta tentando di
-			nascondere, dietro un'apparente tranquillità dei sentimenti potenti e profondi che, se non fossero da lui così sapientemente controllati, 
+			nascondere, dietro un'apparente tranquillità dei sentimenti potenti e profondi che, se non fossero da lui così sapientemente controllati,
 			potrebbero travolgerlo con la loro intensità. Non a caso lo <span class="sIrisBlue sBold">Scorpione</span> in amore batte tutti, ed è considerato
-			il più passionale, erotico, sessuale dello zodiaco, anche se il più delle volte, più che il corpo è l'anima ad avere bisogno di nutrimento 
+			il più passionale, erotico, sessuale dello zodiaco, anche se il più delle volte, più che il corpo è l'anima ad avere bisogno di nutrimento
 			affettivo. Del resto, l'uomo con questa <span class="sRed sBold">Luna</span> è molto diffidente, soprattutto nei sentimenti. La donna che colpirà
-			la sua attenzione dovrà superare delle prove che all'inizio la condurrà su una falsa pista per poi testare la sua intelligenza, le mostrerà i 
+			la sua attenzione dovrà superare delle prove che all'inizio la condurrà su una falsa pista per poi testare la sua intelligenza, le mostrerà i
 			suoi lati peggiori e, se nonostante tutto questo lei non scappa lui finalmente aprirà la porta del suo cuore. Ecco allora il ritratto della donna
-			che meglio incarna le sue suggestioni oniriche: è una femmina intensa, travolgente, sessualmente intrigante al punto da ottenebrare la sua 
+			che meglio incarna le sue suggestioni oniriche: è una femmina intensa, travolgente, sessualmente intrigante al punto da ottenebrare la sua
 			mente, molto astuta nel trascinarlo in un gioco amoroso dove senza esclusione di colpi possa finalmente perdere il controllo.
 		</p>
 
 		<h3>LA <span class="sFuchsia">DONNA</span> CON LA <span class="sRed">LUNA</span> IN <span class="sIrisBlue">SCORPIONE</span> - L'Incantatrice di serpenti</h3>
-		<p class="sSmall sWhite sJustify sPadding sLineH125">
+		<p>
 			Questa <span class="sRed sBold">Luna</span> sente le proprie intense correnti emotive costantemente in lotta dentro di sé. La sensibilità lunare
-			femminile e il sentimento di cui è capace un segno d'<span class="sIrisBlue sBold">acqua</span> come lo 
-			<span class="sIrisBlue sBold">Scorpione</span> si scontra, in una vera e propria battaglia interiore, con i valori maschili e sessuali di 
-			<span class="sRed sBold">Marte</span> e <span class="sRed sBold">Plutone</span>, i pianeti che rappresentano i valori dell'istinto aggressivo, 
-			dell'erotismo e del potere. È proprio questo mix di elementi femminili e maschili che caratterizza la donna con 
+			femminile e il sentimento di cui è capace un segno d'<span class="sIrisBlue sBold">acqua</span> come lo
+			<span class="sIrisBlue sBold">Scorpione</span> si scontra, in una vera e propria battaglia interiore, con i valori maschili e sessuali di
+			<span class="sRed sBold">Marte</span> e <span class="sRed sBold">Plutone</span>, i pianeti che rappresentano i valori dell'istinto aggressivo,
+			dell'erotismo e del potere. È proprio questo mix di elementi femminili e maschili che caratterizza la donna con
 			<span class="sRed sBold">Luna</span> <span class="sIrisBlue sBold">Scorpione</span>: una creatura enigmatica, intrigante e carica di magnetismo,
-			consapevole del proprio fascino e della sensualità ma anche audace, grintosa e determinata a raggiungere uno scopo e a lottare per ottenerlo 
-			con molto coraggio e orgoglio. Spesso preferisce passare per fredda e cinica, tanto la spaventa questo suo nucleo interiore così incandescente 
-			che lei con ferma determinazione cerca di non svelare, dando ad intendere di non avere bisogno di nulla e nessuno. Quando però trova la persona 
-			giusta alla quale offrirsi liberamente, può dedicare al rapporto la sua vita intera e trasformarlo in un legame quasi indissolubile. A patto 
-			però che trovi qualcuno disposto a essere emotivamente sincero con se stesso, pronto a scandagliare con lei la propria psiche, e disponibile a 
-			dare dimostrazioni di affetto, di sicurezza, lealtà e gratificazione sessuale e intellettuale. Tutto questo appaga il suo forte bisogno di 
-			controllo e accresce il suo disperato bisogno inconscio di sicurezza. È in queste occasioni che ha bisogno dell'aiuto di un compagno tenero e 
+			consapevole del proprio fascino e della sensualità ma anche audace, grintosa e determinata a raggiungere uno scopo e a lottare per ottenerlo
+			con molto coraggio e orgoglio. Spesso preferisce passare per fredda e cinica, tanto la spaventa questo suo nucleo interiore così incandescente
+			che lei con ferma determinazione cerca di non svelare, dando ad intendere di non avere bisogno di nulla e nessuno. Quando però trova la persona
+			giusta alla quale offrirsi liberamente, può dedicare al rapporto la sua vita intera e trasformarlo in un legame quasi indissolubile. A patto
+			però che trovi qualcuno disposto a essere emotivamente sincero con se stesso, pronto a scandagliare con lei la propria psiche, e disponibile a
+			dare dimostrazioni di affetto, di sicurezza, lealtà e gratificazione sessuale e intellettuale. Tutto questo appaga il suo forte bisogno di
+			controllo e accresce il suo disperato bisogno inconscio di sicurezza. È in queste occasioni che ha bisogno dell'aiuto di un compagno tenero e
 			comprensivo, che l'aiuti a trovare fiducia in se stessa e nelle sue motivazioni. Diffidente per natura e rancorosa, non dimentica facilmente un
 			torto subito e nei suoi peggiori momenti, quando la gelosia, la rabbia, il risentimento e l'amarezza la portano a vendicarsi. Una cosa è certa:
-			non sarà mai una donna superficiale e noiosa, e tanto meno facile da capire e da amare, a voi la scelta! Del resto se vi ha conquistato una 
+			non sarà mai una donna superficiale e noiosa, e tanto meno facile da capire e da amare, a voi la scelta! Del resto se vi ha conquistato una
 			ragione ci sarà, altrimenti avreste scelto lune più leggere, più frivole e spensierate!
 		</p>
 
 		<h3>L'<span class="sAqua">UOMO</span> CON LA <span class="sRed">LUNA</span> IN <span class="sIrisBlue">PESCI</span> - L'Empatico</h3>
-		<p class="sSmall sWhite sJustify sPadding sLineH125">
+		<p>
 			Un uomo con la <span class="sRed sBold">Luna</span> nei <span class="sIrisBlue sBold">Pesci</span> possiede una gentilezza e una sensibilità
-			naturali, una fervida e ricca immaginazione e, in alcuni casi un vero e proprio talento creativo. Percettivo e intuitivo come pochi, vive nel 
+			naturali, una fervida e ricca immaginazione e, in alcuni casi un vero e proprio talento creativo. Percettivo e intuitivo come pochi, vive nel
 			regno delle emozioni, anche se una certa porosità psichica non sempre gli permette di stabilire confini tra il suo sentire e le fluttuazioni
 			emotive dell'ambiente circostante, così a volte improvvisi sentimenti di tristezza o di felicità possono travolgerlo e sopraffarlo del tutto,
 			facendogli perdere il proprio punto di riferimento interno. Un'oasi di pace e di silenzio, che avrà bisogno di rivivere più volte nella vita
 			rifugiandosi in un mondo parallelo sconosciuto ai più, dove sognare ad occhi aperti, specie quando la realtà quotidiana e la condizione di
-			adulto, impegnato e responsabile, peseranno come una minaccia. La <span class="sRed sBold">Luna</span> in 
-			<span class="sIrisBlue sBold">Pesci</span> nell'uomo, può indebolirne il carattere, soprattutto se <span class="sRed sBold">Sole</span> o 
-			<span class="sRed sBold">Marte</span> sono in segni d'<span class="sIrisBlue sBold">acqua</span>, perché stimolano in lui la tendenza a 
+			adulto, impegnato e responsabile, peseranno come una minaccia. La <span class="sRed sBold">Luna</span> in
+			<span class="sIrisBlue sBold">Pesci</span> nell'uomo, può indebolirne il carattere, soprattutto se <span class="sRed sBold">Sole</span> o
+			<span class="sRed sBold">Marte</span> sono in segni d'<span class="sIrisBlue sBold">acqua</span>, perché stimolano in lui la tendenza a
 			prendere la via della minima resistenza, che è la scorciatoia meno faticosa, spesso costellata di sotterfugi, inganni e bugie. Fin da bambino
-			vive un rapporto di vera fusione con la madre una figura idealizzata dalla quale anche da adulto non riesce a svincolarsi del tutto. L'Io 
-			<span class="sRed sBold">Sole</span> vuole imporsi, come del resto gli suggerisce una cultura patriarcale, ma deve sempre scendere a patti 
+			vive un rapporto di vera fusione con la madre una figura idealizzata dalla quale anche da adulto non riesce a svincolarsi del tutto. L'Io
+			<span class="sRed sBold">Sole</span> vuole imporsi, come del resto gli suggerisce una cultura patriarcale, ma deve sempre scendere a patti
 			con <span class="sRed sBold">Luna</span> in <span class="sIrisBlue sBold">Pesci</span> che ha una sensibilità di tipo femminile, una sorta di
 			debolezza rispetto ai canoni maschili. Languido e sognante è un amante dolce, tenero e premuroso: aspetti che alla maggior parte delle donne
 			piacciono molto! La sua estrema sensibilità, per mezzo della quale riesce a percepire con largo anticipo le emozioni e le esigenze della propria
-			compagna, gli conferisce un fascino che è una marcia in più rispetto ai soliti maschi autoritari e prevaricatori. Attratto da donne capaci di 
+			compagna, gli conferisce un fascino che è una marcia in più rispetto ai soliti maschi autoritari e prevaricatori. Attratto da donne capaci di
 			grandi ideali molto sensibili, creative e fantasiose anche se un po' estraniate dalla vita reale quotidiana a volte distanti e inafferrabili.
 		</p>
 
 		<h3>LA <span class="sFuchsia">DONNA</span> CON LA <span class="sRed">LUNA</span> IN <span class="sIrisBlue">PESCI</span> - La Sensitiva</h3>
-		<p class="sSmall sWhite sJustify sPadding sLineH125">
-			La <span class="sRed sBold">Luna</span> nel creativo e idealista <span class="sIrisBlue sBold">Pesci</span>, racchiude in sé una infinita 
-			gamma di sensibilità e intensità emotiva, ma è incapace di distinguere i propri contenuti emotivi da quelli degli altri. La 
-			<span class="sRed sBold">Luna</span> in <span class="sIrisBlue sBold">Pesci</span> uno dei segni più sensibili e influenzabili dello Zodiaco, 
-			sia nell'influenza del governatore <span class="sRed sBold">Nettuno</span> che, attraverso divagazioni, sogni e visioni, trascina questa 
+		<p>
+			La <span class="sRed sBold">Luna</span> nel creativo e idealista <span class="sIrisBlue sBold">Pesci</span>, racchiude in sé una infinita
+			gamma di sensibilità e intensità emotiva, ma è incapace di distinguere i propri contenuti emotivi da quelli degli altri. La
+			<span class="sRed sBold">Luna</span> in <span class="sIrisBlue sBold">Pesci</span> uno dei segni più sensibili e influenzabili dello Zodiaco,
+			sia nell'influenza del governatore <span class="sRed sBold">Nettuno</span> che, attraverso divagazioni, sogni e visioni, trascina questa
 			<span class="sRed sBold">Luna</span> verso un regno illusorio, fantastico e mistico, ma è completamente al di fuori della realtà, ritenuta fin
 			troppo brutale e restrittiva. Con il fascino elusivo e la femminilità, a volte un po' infantile, attira spesso uomini desiderosi di proteggerla
 			e di plasmarla, che non sempre sanno come interpretare la sua imperscrutabilità fatta di lunghi silenzi, di umori mutevoli e poca chiarezza, in
-			particolare quando racconta se stessa. Spesso è sensibilissima ha una potente relazione simbiotica con la propria madre, dalla quale assorbe 
-			ogni più piccola sfumatura emotiva, vivendola come fosse propria. In alcuni casi è una donna che in età matura, quando compassione e saggezza 
-			si sono rafforzate e la pelle è diventata più dura, riesce a riconciliarsi con le proprie emozioni negative e con quelle ferite alla sua 
-			sensibilità che, in gioventù hanno dato vita a grandi scenate in cui sfogare la rabbia e il risentimento. Sentimentale, romantica e sognatrice 
-			è una donna sempre innamorata di un uomo che sia capace di farsi carico, con dolcezza e tenerezza, delle sue immersioni fantastiche, delle sue 
-			paure e dei suoi sogni, a volte però l'amore la compassione e la devozione racchiuse in lei, oltrepassano le porte di confini umani e giungono 
-			a dimensioni più alte, più mistiche, forse più sublimi e divine. Poiché, la <span class="sRed sBold">Luna</span> è sostegno e nutrimento 
+			particolare quando racconta se stessa. Spesso è sensibilissima ha una potente relazione simbiotica con la propria madre, dalla quale assorbe
+			ogni più piccola sfumatura emotiva, vivendola come fosse propria. In alcuni casi è una donna che in età matura, quando compassione e saggezza
+			si sono rafforzate e la pelle è diventata più dura, riesce a riconciliarsi con le proprie emozioni negative e con quelle ferite alla sua
+			sensibilità che, in gioventù hanno dato vita a grandi scenate in cui sfogare la rabbia e il risentimento. Sentimentale, romantica e sognatrice
+			è una donna sempre innamorata di un uomo che sia capace di farsi carico, con dolcezza e tenerezza, delle sue immersioni fantastiche, delle sue
+			paure e dei suoi sogni, a volte però l'amore la compassione e la devozione racchiuse in lei, oltrepassano le porte di confini umani e giungono
+			a dimensioni più alte, più mistiche, forse più sublimi e divine. Poiché, la <span class="sRed sBold">Luna</span> è sostegno e nutrimento
 			emotivo, questa forte connessione psichica a volte può essere opprimente da renderla insicura e incapace di vivere in modo autonomo un proprio
 			modo di essere donna.
 		</p>
 
-		<p class="sMedium sWhite sJustify sPadding sLineH125">
-			Tra tutte le <span class="sRed sBold">Lune</span> analizzate, questa è la più carica di profonda empatia perché, mentre nel 
+		<p class="sMedium">
+			Tra tutte le <span class="sRed sBold">Lune</span> analizzate, questa è la più carica di profonda empatia perché, mentre nel
 			<span class="sIrisBlue sBold">Cancro</span> le emozioni fluiscono in modo indifferenziato per un personale bisogno di fusione con l'altro, e
-			nello <span class="sIrisBlue sBold">Scorpione</span> la percezione emotiva serve per esercitare un controllo e un potere personale, nei 
+			nello <span class="sIrisBlue sBold">Scorpione</span> la percezione emotiva serve per esercitare un controllo e un potere personale, nei
 			<span class="sIrisBlue sBold">Pesci</span> la ricettività e la capacità di assorbimento delle correnti emotive altrui, abbracciano l'umanità
 			intera.
 		</p>
+
 		<p class="sCenter">
 			<br>
-			<img src="STStellina3.gif"   width="20"  height="19">&nbsp;&nbsp;&nbsp;
-			<img src="STfantasy4div.jpg" width="428" height="32">&nbsp;&nbsp;&nbsp;
-			<img src="STStellina3.gif"   width="20"  height="19">&nbsp;&nbsp;&nbsp;
-			<img src="STfantasy4div.jpg" width="428" height="32">&nbsp;&nbsp;&nbsp;
-			<img src="STStellina3.gif"   width="20"  height="19">
+			<img src="STStellina3.gif"   width="20"  height="19" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="STStellina3.gif"   width="20"  height="19" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="STStellina3.gif"   width="20"  height="19" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="STfantasy4div.jpg" width="428" height="32" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="STStellina3.gif"   width="20"  height="19" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="STStellina3.gif"   width="20"  height="19" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="STStellina3.gif"   width="20"  height="19" alt="">
 		</p>
-		<p class="sSmall sWhite sPadding sCenter">
-			<img src="email-box.gif"    width="35" height="35">
+
+		<p class="sCenter">
+			<img src="email-box.gif"    width="35" height="35" alt="">
 			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
-			<img src="TelefonoC164.gif" width="35" height="35">&nbsp;
-			oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a> - Cell.
-			<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
-			<strong>Sei il visitatore n°&nbsp;</strong>
+			<img src="TelefonoC164.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+
+			<b>Sei il visitatore n°&nbsp;</b>
 		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1559826597-99iaig4" border=0></a>
-			&nbsp;(Contenuto Aggiornato 04/04/2020)<br><br>
+			&nbsp;(Contenuto Aggiornato <time datetime="2020-04-04">04/04/2020</time>)<br><br>
 		</p>
-		</TD></TR></TABLE>
-	</TD></TR></TABLE>
+
 </TD></TR></TABLE>
-<p class="sXXSmall sWhite sBold sCenter">
+</TD></TR></TABLE>
+<footer>
 	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
 	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
-</p>
+</footer>
 </body>
 </html>
