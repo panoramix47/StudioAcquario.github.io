@@ -1,44 +1,54 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <title>Pianeti nei segni - Studio Acquario</title>
 <link rel="icon" type="image/gif" href="favicon32.gif">
-<meta name="description" content="Studio Acquario: Pianeti nei segni">
-<meta name="keywords" content="studio, acquario, astrologia, decani, spiriti, celesti, pianeti, segni">
+<meta name="description" content="Studio Acquario: Pianeti nei segni (Scoprire lo Zodiaco 3a Parte)">
+<meta name="keywords" lang="it" content="studio, acquario, astrologia, decani, spiriti, celesti, pianeti, segni">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
 <meta name="language" content="it">
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="15/05/2019">
-<meta name="revised" content="03/09/2020">
+<meta name="revised" content="13/10/2020">
 
 <style type="text/css">
 body {
-	scrollbar-face-color:#eff1f5;
-	scrollbar-base-color:#2d2e5e;
-	scrollbar-track-color:#eff1f5;
-	scrollbar-highlight-color:#eff1f5;
-	scrollbar-darkshadow-color:#eff1f5;
-	scrollbar-shadow-color:#2d2e5e;
-	scrollbar-arrow-color:#2d2e5e;
+	scrollbar-face-color:#EFF1F5;
+	scrollbar-base-color:#2D2E5E; /* Deep Koamaru */
+	scrollbar-track-color:#EFF1F5; /* Solitude */
+	scrollbar-highlight-color:#EFF1F5;
+	scrollbar-darkshadow-color:#EFF1F5;
+	scrollbar-shadow-color:#2D2E5E;
+	scrollbar-arrow-color:#2D2E5E;
 
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-	color: #2d2e5e; /* Deep Koamaru */
+	color: #2D2E5E; /* Deep Koamaru */
 	background-color: #9494AD; /* Santas Grey */
 	background-image: url('PSbg1.jpg');
 	/* background-attachment: fixed; */
 }
-img {
-  max-width: 100%;
-  height: auto;
+a:link {
+	color: #2D2E5E; /* Deep Koamaru */
+}
+a:visited {
+	color: #2D2E5E;
+}
+a:hover {
+	color: #FF0000;
+}
+a:active {
+	color: #2D2E5E;
 }
 h1 {
 	font-size: xx-large;
 	font-weight: bold;
 	color: #000000; /* Black */
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
 	line-height: 150%;
 }
 h2 {
@@ -46,26 +56,87 @@ h2 {
 	font-weight: bold;
 	color: #000000; /* Black */
 	text-align: center;
-	margin-top: 40px;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-top: 25px;
 }
 h3 {
+	/* clear: both;	disabilito float */
 	font-size: medium;
 	font-weight: normal;
 	font-style: italic;
 	color: #000080; /* Navy */
 	text-align: center;
+	padding-left: 35px;
+	padding-right: 35px;
 	margin-top: 25px;
 	margin-bottom: 0;
 }
-.sLogoBanner {
+header {
 	font-size: xx-large;
 	font-weight: bold;
 	color: #FFFFFF; /* White */
 	text-shadow: 1px 1px 5px #0000FF; /* Blue */
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
 }
-.sBlack {
-				color: #000000;
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	/* text-shadow: 1px 1px 1px #0000FF; Blue #1A2B0A;*/
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
+}
+p {
+	font-size: small;
+	color: #000000; /* Black */
+	text-align: justify;
+	padding-left: 35px;
+	padding-right: 35px;
+	line-height: 125%;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.sNavigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 180%;
+}
+.sNavigation a {
+	font-size: medium;
+	font-weight: bold;
+	padding:.42em;
+	color: #FFFFFF; /* White */
+	margin-left: 2px;
+	background: #0000FF;  /* Blue */
+	text-decoration: none;
+}
+.sNavigation a:hover {
+	color: #000000; /* Black */
+	background: #00FFFF; /* Aqua */
+}
+#PagCorrente {
+	border-bottom: 2.5px solid #FF0000; /* Red */
+}
+.sHomeIcon {
+	vertical-align: bottom;
+	margin-bottom: 1px;
+	height: 25px;
+	width: 25px;
 }
 .sBlue {
 				color: #0000FF;
@@ -83,39 +154,11 @@ h3 {
 .sRed {
 				color: #FF0000;
 }
-.sWhite {
-				color: #FFFFFF;
-}
-.sBGPigPink {
-				background-color: #F6D2DE;
-}
-.sBGWhite {
-				background-color: #FFFFFF;
-}
 .sBold {
 				font-weight: bold;
 }
 .sCenter {
 				text-align: center;
-}
-.sJustify {
-				text-align: justify;
-}
-.sPadding {
-				padding-left: 40px;
-				padding-right: 40px;
-}
-.sLineH125 {
-				line-height: 125%;
-}
-.sXXSmall {
-				font-size: xx-small;
-}
-.sXSmall {
-				font-size: x-small;
-}
-.sSmall {
-				font-size: small;
 }
 .sMedium {
 				font-size: medium;
@@ -135,38 +178,39 @@ h3 {
 </style>
 </head>
 
-<body link="#2d2e5e" vlink="#2d2e5e" alink="#2d2e5e">
-<p class="sLogoBanner">Studio di Astrologia "Acquario"</p>
+<body>
+<header>Studio di Astrologia "Acquario"</header>
 
-<table background="PSbg3.jpg" cellspacing="0" cellpadding="15" border="0" borderclass="#2d2e5e" width="95%" align="center">
+<table background="PSbg3.jpg" cellspacing="12" cellpadding="35" border="0" borderclass="#2d2e5e" width="95%" align="center">
+<tr><td background="PSbg5.jpg">
+
+<table bgcolor="#DDDDFF" cellspacing="0" cellpadding="0" border="0" borderclass="#2d2e5e" width="100%">
 <tr><td>
 
-<table background="PSbg5.jpg" cellspacing="0" cellpadding="40" border="0" borderclass="#2d2e5e" width="100%">
-<tr><td>
-
-<table bgcolor="#DDDDFF" cellspacing="5" cellpadding="5" border="0" borderclass="#2d2e5e" width="100%">
-<tr><td>
-
-		<h1>SCOPRIAMO I SEGRETI DELLO ZODIACO <span class="sRed">3ª</span> PARTE<br>I PIANETI NEI SEGNI</h1>
+		<h1>SCOPRIAMO I SEGRETI DELLO ZODIACO <span class="sRed">3ª</span> PARTE<br>
+			I Pianeti nei Segni</h1>
 
 		<p class="sCenter">
 			<br><br>
-			<img src="PianetiC.jpg" width="560" height="306">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="PS.AAstro.gif" width="298" height="246"><br>
+			<img src="PianetiC.jpg"  width="560" height="306" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="PS.AAstro.gif" width="298" height="246" alt=""><br>
 		</p>
 
 		<p class="sCenter">
-			<img src="pianetibarra.gif" width="510" height="35">
+			<img src="pianetibarra.gif" width="510" height="35" alt="">
 		</p>
 
-		<p class="sBlack sSmall sCenter sBold">
-			<br><span class="sBGWhite">&nbsp;
-			<a href="scoprireZodiaco.htm">Segni/Pianeti/Elementi</a> |
-			<a href="Ascendente.htm">Ascendente</a> |
-			<a href="Le12case.htm">Le 12 Case</a> |</span><span class="sBGPigPink">
-			<a href="pianetiSegni.htm">I Pianeti nei Segni</a> |</span><span class="sBGWhite">
-			<a href="index.html">Pagina&nbsp;Iniziale</a>&nbsp;</span><br>
-		</p>
+		<nav class="sLarge sCenter">
+			<br>
+			<ul class="sNavigation">
+				<li><a href="scoprireZodiaco.htm">Segni/Pianeti/Elementi</a></li>
+				<li><a href="Ascendente.htm">Ascendente</a></li>
+				<li><a href="pianetiSegni.htm" id="PagCorrente">I Pianeti nei Segni</a></li>
+				<li><a href="Le12case.htm">Le 12 Case</a></li>
+				<li><a href="index.html"><img src="favicon32.gif" class="sHomeIcon" alt="Pagina Principale"></a></li>
+			</ul>
+			<br>
+		</nav>
 
 		<p class="sMedium sRed sBold sCenter">
 			<br>
@@ -174,14 +218,14 @@ h3 {
 		</p>
 
 		<p class="sCenter">
-			<img src="pianetibarra.gif" width="510" height="35">
+			<img src="pianetibarra.gif" width="510" height="35" alt="Barra dei Pianeti">
 			<br>
 		</p>
 
-		<h2><img src="PS.luna2.gif" width="50" height="38">&nbsp;<span class="sRed">LUNA</span> NEI SEGNI: INTIMO, MEMORIA e MADRE</h2>
+		<h2><img src="PS.luna2.gif" width="50" height="38" alt="Luna">&nbsp;<span class="sRed">LUNA</span> NEI SEGNI: INTIMO, MEMORIA e MADRE</h2>
 
 		<h3><span class="sRed sBold">ARIETE</span> - Madre impulsiva ed energica, dominatrice, attiva, capricciosa ed estroversa</h3>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			Energia e forte personalità, spirito d'iniziativa e autosufficienza. Precoce distacco dalla famiglia, buone capacità nel lavoro. Indipendenza
 			di carattere, coraggio e autonomia, orgoglio e fierezza, impulsività e irascibilità, colpi di testa. Le sue emozioni sono espresse in modo
 			aggressivo e impetuoso piuttosto che in modo dolce. Sensibilità immediata, collera e audacia, non serba rancore a lungo. C'é molta impulsività
@@ -199,7 +243,7 @@ h3 {
 		</p>
 
 		<h3><span class="sGreen sBold">TORO</span> - Madre materna, oppressiva, devota al miglioramento della sua stirpe</h3>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			Affettuosità, dolcezza, pigrizia e golosità, tenacia e semplicità, testardaggine. Amore della musica, della pittura, il canto, la natura, idee
 			e sentimenti stabili, una buona memoria. Saggezza e bontà, abilità manuale, amore per la famiglia, aspirazione a possedere beni immobili e una
 			casa in campagna. È indice di bontà, devozione e fedeltà, un carattere pacifico e conciliante anche ostinato, natura conservatrice e rispettosa
@@ -217,7 +261,7 @@ h3 {
 		</p>
 
 		<h3><span class="sYellow sBold">GEMELLI</span> - Madre fredda, colta e giovanile, intelligente e molto aperta</h3>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			Simpatia, socievolezza e diplomazia, un facile eloquio, doni letterari e linguistici, due attività parallele, curiosità intellettuale, numerosi
 			viaggi per studio o lavoro. Manifesta delle reazioni emotive provocate da stimoli intellettuali, ma la sua sensibilità è piuttosto fredda, in
 			realtà c'é maggior nervosismo che sensibilità. Allegria, brio e umorismo, ha uno spirito giovanile anche in età avanzata. Attività a contatto
@@ -238,7 +282,7 @@ h3 {
 		</p>
 
 		<h3><span class="sBlue sBold">CANCRO</span> - Madre protettiva e lunatica, molto materna, esagera</h3>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			Amore per la casa, la famiglia, i figli, suscettibilità. Attaccamento ai ricordi e al passato, amore per i viaggi, della musica e la poesia.
 			La madre ha un'influenza molto importante e ci possono essere legami stretti che durano anche in età adulta. Socievolezza, dolcezza, devozione,
 			attività a contatto col pubblico. Ha grande sensibilità, emotività e intuizione, ma anche angosce e apprensione. Attrazione per le cose antiche,
@@ -256,7 +300,7 @@ h3 {
 		</p>
 
 		<h3><span class="sRed sBold">LEONE</span> - Madre autoritaria, affettuosa e positiva, imperatrice in famiglia</h3>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			Nobiltà d'animo, generoso, senso estetico, ambizione e orgoglio, fiero e pomposo. Grande bisogno d'ammirazione e di riconoscimento. Grandiosità
 			d'idee e di concezioni, ha la tendenza a proteggere gli altri. Ama il lusso, il gioco e tutto ciò che è bello, ha teatralità di gesti, ampiezza
 			di vedute, e slanci calorosi, ricerca del meglio in ogni campo. Indipendente, dal carattere forte, a volte è eccessivamente orgoglioso.<br>
@@ -272,7 +316,7 @@ h3 {
 		</p>
 
 		<h3><span class="sGreen sBold">VERGINE</span> - Madre ipercritica, restrittiva, poco affettiva, ma c'è</h3>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			Ha una sensibilità timida, riservata, la sua emotività è controllata dalla ragione che impedisce gli impulsi. Fonte di ansietà e di dubbio
 			continuo e d'insicurezza. Ha senso critico e analitico, logica, modestia, pignoleria e precisione, memoria, buone capacità intellettuali.
 			Abilità, attività a contatto col pubblico, medico, infermiere, segretario e nel commercio.<br>
@@ -287,7 +331,7 @@ h3 {
 		</p>
 
 		<h3><span class="sYellow sBold">BILANCIA</span> - Madre raffinata, esteta, debole e fragile</h3>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			Buone facoltà intellettuali e un giudizio corretto, indecisione con alti e bassi, amante della musica, poesia e il lusso. Desiderio di armonia
 			e attrazione verso i piaceri raffinati, eleganza e fascino, cortesia, gentilezza e bontà. Pacifico e conciliante con tendenza all'armonia e
 			propensione alle relazioni sociali. Sensibilità verso i valori estetici, della cura personale. Carattere sereno e amabile, simpatico e
@@ -306,7 +350,7 @@ h3 {
 		</p>
 
 		<h3><span class="sBlue sBold">SCORPIONE</span> - Madre emotiva, ansiosa, esigente, materna e sensibile</h3>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			Acuta sensibilità, lucida e penetrante, curiosità intellettuale, possessività, apprensione. Timido e diffidente, rancore, vendetta e gelosia.
 			Immaginazione attiva, combattiva, aggressività celata da un'apparente tranquillità. Una volontà ostinata e un intuito straordinario, doni
 			occulti, per l'astrologia e la magia. Spirito sagace e indagatore, segretezza, mistero, odio e amore.<br>
@@ -324,7 +368,7 @@ h3 {
 		</p>
 
 		<h3><span class="sRed sBold">SAGITTARIO</span> - Madre inquieta, dinamica e positiva</h3>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			Gioviale, socievole, loquace, bontà e fiducia in sé. Amore per i viaggi, lo sport, la natura, gli animali (cavalli, cani e gatti), libertà e
 			indipendenza. Bisogno di ampi spazi di autonomia, senso di giustizia, dotato di dinamismo fisico e intellettuale. Talento semplice e poco
 			amante delle complicazioni, un po' superficiale, ma generoso, pieno di buona volontà, con fede in se stesso e nel destino.<br>
@@ -342,7 +386,7 @@ h3 {
 		</p>
 
 		<h3><span class="sGreen sBold">CAPRICORNO</span> - Madre severa, fredda, poco affettiva, ma c'è</h3>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			È indice di un temperamento sfiduciato e prudente, che sta sulla difensiva. La sensibilità non è molto accentuata come neanche lo sono le doti
 			d'immaginazione, ricettività e intuizione, in cambio ha senso pratico e organizzativo. Ambizione, ascesa lenta, senso del dovere e di
 			responsabilità, riservatezza e pazienza. Perseveranza e concretezza, applicazione nel lavoro, praticità, serietà, capacità organizzative,
@@ -361,7 +405,7 @@ h3 {
 		</p>
 
 		<h3><span class="sYellow sBold">ACQUARIO</span> - Madre moderna, nervosa, estrosa, di poco aiuto</h3>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			Apertura mentale, vastità di mente e d'idee, originalità ed estrosità, senso dell'amicizia. La sua vita affettiva un po' complicata e tormentata
 			ha bisogno di dialogo, di contatti umani. Occupazione alle volte un po' strana e particolare, è attratto per le scienze moderne occulte,
 			astrologia e magia. Fisso nei sentimenti, utopia, passione dei viaggi, per l'aviazione, la politica.<br>
@@ -379,7 +423,7 @@ h3 {
 		</p>
 
 		<h3><span class="sBlue sBold">PESCI</span> - Madre sensibile, debole, distratta, emotiva e lunatica</h3>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			La sensibilità è intensa e delicata, la fantasia molto ricca come lo sono anche le facoltà intuitive e premonitive. Ha poco senso pratico
 			ma è caritatevole e umanitario, spirito socievole e conciliante, indeciso, pigro e dubbioso. Incline ai cambiamenti, è impressionabile e
 			suggestionabile. Amore per l'arte, la musica, la poesia e l'occultismo. Attività in laboratorio, albergo, asilo e ospedale.<br>
@@ -397,7 +441,7 @@ h3 {
 
 		<h2><img src="PS.mercurio.gif" width="54" height="55">&nbsp;<span class="sRed">MERCURIO</span> NEI SEGNI: TIPO D'INTELLIGENZA E ATTITUDINI</h2>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sRed sBold sLarger">ARIETE</span> - <u>L'intelligenza è brillante</u>, sveglia, immediata, vivace e pungente, pronta alla
 			discussione e al sarcasmo È sempre pronto a lanciarsi all'attacco grazie alle doti intellettuali e alla vivacità spirituale. Ha una grande
 			curiosità, intuizioni rapide e doti creative. Impara molto velocemente per associazione di idee e afferrando i punti essenziali, ma ha
@@ -408,7 +452,7 @@ h3 {
 			metallurgia. Il difetto principale di questa intelligenza è la mancanza di pazienza.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sGreen sBold sLarger">TORO</span> - <u>L'intelligenza è pratica realistica</u>, precisa, concreta, laboriosa e perseverante, con
 			scarso senso critico, poca la prontezza di riflessi. Non di rado sostenuta da una buona manualità. La calma è la sua dimensione abituale, può
 			essere noioso mentre parla, fatica a pensare e ad agire, piace la vita comoda e i piaceri. ma di lenta assimilazione, laboriosa, paziente, con
@@ -419,7 +463,7 @@ h3 {
 			il teatro, alla gestione finanziaria, all'impiego in banca, nel commercio, alle carriere artistiche buon senso negli affari.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sYellow sBold sLarger">GEMELLI</span> - <u>Intelligenza agile</u>, aperta, adattabile a ogni situazione, curiosa di apprendere con
 			senso dell'umorismo. Ingegnoso, eloquente, versatile e diplomatico. Dotato di un'intelligenza fuori del comune, conosce tutto di tutti, ma non
 			giudica, non essendo capace di gelosie, le basta osservare. Facilità di assimilazione, sa comunicare una grande quantità di informazioni e di
@@ -429,7 +473,7 @@ h3 {
 			e ironico, amante dei viaggi e dei cambiamenti, dotato per le lingue e il commercio.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sBlue sBold sLarger">CANCRO</span> - <u>L'intelligenza è sensibile</u>, intuitiva, fantasiosa, tradizionalista e conservatrice,
 			rivolta al passato più che al presente. Nello studio è aiutato da una memoria quasi fotografica e possono raggiungere risultati sorprendenti.
 			Trova difficile osservare la vita con obbiettività, i sentimenti saranno sempre più importanti dei fatti. Mente aperta alle suggestioni, e con
@@ -438,7 +482,7 @@ h3 {
 			l'archivista, bibliotecario, autore di romanzi storici. Ha qualità idonee per il commercio.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sRed sBold sLarger">LEONE</span> - <u>L'intelligenza è lucida</u> e radiosa, ha idee sintetiche chiare con ottime capacità
 			organizzative, buon giudizio, le idee sono stabili, improntate all'idealismo e all'entusiasmo. Mentalità logica e dialettica che fa presa sugli
 			altri, eloquenza brillante, rapida comprensione di ciò che è utile, capacità persuasiva notevole. Ha una grande apertura mentale, stabilità
@@ -448,7 +492,7 @@ h3 {
 			con alte personalità, onori, premi, amore dei bambini e divertimenti.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sGreen sBold sLarger">VERGINE</span> - <u>L'intelligenza è acuta</u>, analitica e pratica, spesso è coltissimo, è la migliore
 			posizione di <span class="sRed sBold">Mercurio</span> dal punto di vista del ragionamento. Facile assimilazione, forte memoria, mania del
 			dettaglio e abilità manuale. Ha uno spiccato senso organizzativo, facilità di assimilazione, un'ottima memoria e pignoleria, tendenze analitiche,
@@ -459,7 +503,7 @@ h3 {
 			morali e sociali.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sYellow sBold sLarger">BILANCIA</span> - <u>L'intelligenza è analitica</u> e sensibile, artistica, abile a osservare e a riflettere.
 			Spirito aperto, conciliante e tollerante, attitudini a confrontare, tendenza a sfuggire le responsabilità, erudizione considerevole. Possiede
 			delle grandi doti diplomatiche ed è in grado di giudicare con gran serenità e ampiezza di vedute. Facilità di espressione e di osservazione,
@@ -469,7 +513,7 @@ h3 {
 			responsabilità, erudizione considerevole.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sBlue sBold sLarger">SCORPIONE</span> - <u>L'intelligenza è profonda</u>, perspicace e acuta incline alla critica, lucida e curiosa.
 			Mente sensibile e penetrante, modo di esprimersi tagliente che può ferire, parola pronta caustica, acida e rude. Grande ingegnosità che si
 			manifesta nelle circostanze più difficili, un'intuizione quasi diabolica. Portato, per un suo particolare intuito, a decifrare enigmi e a
@@ -479,7 +523,7 @@ h3 {
 			poliziotto, avvocato, meccanico, avvocato e giudice.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sRed sBold sLarger">SAGITTARIO</span> - <u>L'intelligenza è volta verso il lontano</u>, lineare, piuttosto ingenua. La dialettica
 			verbale è simpatica e trascinante, le idee sono entusiaste e ottimistiche, buona volontà. Capacità analitica soddisfacente, anche se non
 			brillante. Dotato di vivacità di spirito, impulsivo e facilmente eccitabile, particolarmente comunicativo, irrequieto e volatile, ha sempre
@@ -491,7 +535,7 @@ h3 {
 			ricca sensibilità intuitiva.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sGreen sBold sLarger">CAPRICORNO</span> - <u>L'intelligenza è pratica</u>, razionale, sintetica, solida e riflessiva, concentrata,
 			organizzata, metodica, logica, penetrante e paziente, incline agli studi che richiedono precisione. Una mente da laboratorio, adatta per la
 			ricerca minuziosa, allo studio della matematica, parla poco ma ascolta molto gli altri, crede solo in ciò che è visibile e concreto. Mente aperta
@@ -501,7 +545,7 @@ h3 {
 			portato per le attività dove è necessario il calcolo e la concentrazione, gusto del particolare, il successo è tardivo.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sYellow sBold sLarger">ACQUARIO</span> - <u>L'intelligenza è sintetica</u> e originale, aperta, curiosa e progressista, di rapida
 			comprensione, dotata di una capacità di valutazione distaccata, d'inventiva e concentrazione. Il pensiero è aperto, dotato di fine intuizione,
 			a volte può essere un po' eccentrico, vivace, razionale, anticonformista, capace di polemica non sempre opportuna, inusuale e stravagante il modo
@@ -512,7 +556,7 @@ h3 {
 			capacità creative ed originalità. Comunica in modo chiaro, sincero, distaccato, imprevedibile. Incapace a stare fermo, un po' opportunista.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sBlue sBold sLarger">PESCI</span> - <u>L'intelligenza è fluida</u>, ricettiva, fantasiosa, vivace, romantica, medianica, intuitiva,
 			immaginativa, aperta nell'arte e nella creatività. Dono per la chiaroveggenza, impressionabile e facilmente influenzabile. Carattere dolce,
 			influenzato dal proprio entourage, buone capacità di adattamento, dà grande ricchezza d'idee, ma manca di logica e di coerenza mentale. Comunica
@@ -521,9 +565,9 @@ h3 {
 			liquidi. Interesse per l'occultismo, sensitivo o medium. Ama la musica classica e romantica.
 		</p>
 
-		<h2><img src="PS.venere.gif" width="63" height="52">&nbsp;<span class="sRed">VENERE</span> NEI SEGNI: MODO D'AMARE E ARTE</h2>
+		<h2><img src="PS.venere.gif" width="63" height="52" alt="Venere">&nbsp;<span class="sRed">VENERE</span> NEI SEGNI: MODO D'AMARE E ARTE</h2>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sRed sBold sLarger">ARIETE</span> - <u>Natura amorosa impulsiva</u>, focosa, ardente, passionale e molto affettuosa. Facile ai
 			colpi di fulmine e agli entusiasmi, possessiva, testarda, un po' gelosa, audacia nei confronti col sesso opposto. Gusto per le avventure e molti
 			successi sentimentali, intraprendenza amorosa. Carattere simpatico e brillante portato a slanci irriflessivi, a capricci sentimentali. Il
@@ -536,7 +580,7 @@ h3 {
 			a fior di pelle e molto spendaccione.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sGreen sBold sLarger">TORO</span> - <u>La natura amorosa è profonda</u>, esigente, gelosa, possessiva, sospettosa, fedele,
 			affettuosa con l'imperioso bisogno di amare e di essere amato. Bellezza fisica e fascino personale, amore per il cibo, i dolci, avido e ghiotto.
 			Favorevole al commercio di fiori e gioielli, il lusso, cure di bellezza, l'abbigliamento, il parrucchiere, l'albergatore, l'hostess. Attitudini
@@ -550,7 +594,7 @@ h3 {
 			e i suoi ritmi. Leale nei suoi affetti, può essere possessivo nei confronti del partner.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sYellow sBold sLarger">GEMELLI</span> - <u>Natura amorosa vivace</u>, spontanea e superficiale, gusto del flirt, ma leggerezza a
 			stringere rapporti di amore o amicizia. Legami affettivi numerosi e simultanei, attira gli altri con simpatia, fascino, amabilità e cortesia.
 			Facilità di eloquio, linguaggio piacevole e seducente, amore della verità, diplomazia, bontà, charme, una mentalità raffinata. Intelligenza
@@ -565,7 +609,7 @@ h3 {
 			Spesso un bisogno di stimolo mentale lo indurrà a voler superare il suo partner perché non è mai mosso esclusivamente dall'amore.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sBlue sBold sLarger">CANCRO</span> - <u>Natura amorosa molto dolce e romantica</u>, appassionata, devota con un grande bisogno di
 			tenerezza, di dare e ricevere affetto. Necessità di appoggiarsi agli altri, mutevole negli affetti, è facilmente influenzabile, timido e
 			trascurato, emotivo, goloso e pigro. Amore per la casa, la famiglia e i figli, la fotografia i film e i viaggi. Successo a contatto con il
@@ -580,7 +624,7 @@ h3 {
 			contraddetto, si risente facilmente, lamentandosi di non essere abbastanza amato. I suoi gusti estetici sono classici e romantici.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sRed sBold sLarger">LEONE</span> - <u>Natura amorosa intensa</u>, ardente e sincera, capace di dare molto affetto, ha slanci
 			impetuosi, grandiosi e ambiziosi. Carattere focoso, entusiasta e vanitoso, non sopporta ombre e gelosie. Tendenza ad idealizzare l'amore,
 			desiderio di essere adulato, ricerca di unioni prestigiose. Ha un atteggiamento un po' dispotico, esclusivista, i ncline alla fedeltà, sessualità
@@ -593,7 +637,7 @@ h3 {
 			e lui si concederà a lei con calore. Matrimonio che porta dei vantaggi finanziari.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sGreen sBold sLarger">VERGINE</span> - <u>Natura amorosa limitata</u>, riservata e pudica, timida nel rapporto sessuale. Scarso il
 			calore affettivo, la ragione domina i sentimenti e i sensi. Mancanza di espansione, amore per gli animali. Attività a contatto con l'arte, il
 			parrucchiere, estetista e modista, rappresentante di prodotti di bellezza, cura dei malati. La sessualità non manca ma è molto controllata,
@@ -606,7 +650,7 @@ h3 {
 			basteranno.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sYellow sBold sLarger">BILANCIA</span> - <u>Natura amorosa raffinata</u>, dolce e buona, affettuosa, romantica e sensibile. Dona
 			felicità e armonia nel rapporto con gli altri, l'amore è una delle cose più importanti della vita. Attraente, socievole e distinto, amabile e
 			gentile, rifugge da liti e discussioni, attitudini per le attività artistiche, musicali, teatrali. Matrimonio o associazioni serene e fortunate
@@ -619,7 +663,7 @@ h3 {
 			estetico. I gusti sono selettivi ed esigenti, gli stimoli estetici giocano un ruolo importante.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sBlue sBold sLarger">SCORPIONE</span> - <u>Natura amorosa poco comprensiva</u>, esclusiva e possessiva. Gusto per la seduzione, per
 			le situazioni insolite o complicate. Molto leale, dotato di sentimenti intensi e appassionati, è incline a perdere coloro che ama, per eccessiva
 			possessività. È difficile che l'amore venga vissuto con spensieratezza, non ispira simpatia. Amore e odio, egoismo e gelosia, ha forte
@@ -632,7 +676,7 @@ h3 {
 			sull'affiatamento sessuale. I suoi gusti estetici sono tenebrosi.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sRed sBold sLarger">SAGITTARIO</span> - <u>Natura amorosa gioiosa</u>, spontanea ed esuberante. L'affettività è improntata a grande
 			franchezza e generosità, allegria e sincerità. Sensibilità semplice, serena, tende a vedere il lato migliore delle cose. Idealismo, immaginazione
 			e intuito, gusti semplici. Amore del rischio e dell'avventura. Matrimonio a volte precoce con partner bello, incontri emozionanti con stranieri,
@@ -645,7 +689,7 @@ h3 {
 			che il rapporto sia duraturo.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sGreen sBold sLarger">CAPRICORNO</span> - <u>Natura amorosa fredda</u>, riservata, pudica e senza slancio ed entusiasmo. È indice
 			di nubilato o di celibato, scarso edonismo, molto prudente e previdente. Ha un'indole malinconica, triste e pensierosa, seria, con frequenti
 			pene d'amore. Matrimonio spesso tardivo o grande differenza di età in più o in meno. Stati d'animo cupi, desiderio di arrivare in alto.
@@ -658,7 +702,7 @@ h3 {
 			amore profondo e solido. Esteticamente piacciono donne che si notino per il loro gusto di semplicità esclusiva.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sYellow sBold sLarger">ACQUARIO</span> - <u>Natura amorosa indipendente</u>, liberale, disinvolta e senza possesso. Affetto
 			flessibile, comprensivo, basato su scambi intellettuali, fedele ma poco sentimentale, insofferenza verso legami doverosi che opprimono. Portato
 			ad idealizzare l'essere amato, ha gentilezza e fascino intellettuale, ricerca l'affinità spirituale e l'amicizia. È cordiale e affascinante,
@@ -671,7 +715,7 @@ h3 {
 			estetici sono stravaganti.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sBlue sBold sLarger">PESCI</span> - <u>Natura amorosa molto devota all'essere amato</u>, amore timido, dolce e romantico, manca
 			di combattività. Precocità sentimentale, sovente ha due affetti insieme, amori platonici e segreti. Attrazione per la musica, le arti e la
 			poesia, il successo è tardivo e difficile, spesso resta sconosciuto per la sua troppa modestia e timidezza. È molto ospitale e servizievole,
@@ -684,9 +728,9 @@ h3 {
 			aiutare chiunque ne abbia bisogno, la bontà è una sua caratteristica ed è capace di sacrificarsi come nessun altro.
 		</p>
 
-		<h2><img src="PS.marte.gif" width="54" height="60">&nbsp;<span class="sRed">MARTE</span> NEI SEGNI: VOLONTÀ, FORZA ED ENERGIA</h2>
+		<h2><img src="PS.marte.gif" width="54" height="60" alt="Marte">&nbsp;<span class="sRed">MARTE</span> NEI SEGNI: VOLONTÀ, FORZA ED ENERGIA</h2>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sRed sBold sLarger">ARIETE</span> - <u>Volontà che non conosce ostacoli</u>, il carattere è autoritario, energico e pieno di
 			iniziativa. Ha forza fisica, audacia e sicurezza di sé, scarsa riflessività prima di agire. Il temperamento è forte e ardito, violento e
 			litigioso. Ha delle qualità che lo porta a posizioni di comando, insieme a un grande entusiasmo nel modo di affrontare la vita. Inclinazione
@@ -700,7 +744,7 @@ h3 {
 			dallo spirito di conquista e si spegne se il rapporto cade nella banalità.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sGreen sBold sLarger">TORO</span> - <u>Volontà tesa al possesso</u>, determinata e costante alla ricerca del benessere, caparbietà
 			e grande tenacia, ostinazione e perseveranza, un carattere pacifico e poco combattivo. Attivo, deciso e calmo nel comportamento. Abilità pratica
 			e capacità organizzative, uso oculato delle energie. Molto indulgente e generoso, alle volte è geloso, tendenza all'invidia e al rancore.
@@ -714,7 +758,7 @@ h3 {
 			paziente. Anche se ha una forte volontà, piace essere dominata da lui.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sYellow sBold sLarger">GEMELLI</span> - <u>La volontà diventa movimento e irrequietezza</u>, alquanto incostante e mutevole,
 			nonostante sia sorretta da una lucida razionalità, diventa movimento e irrequietezza intellettuale. L'energia nervosa è soggetta a stress e
 			dispersione. Astuzia e ira infantile, curiosità, vivacità intellettuale e ingegnosità. Abilità nel parlare e nello scrivere, mente curiosa e
@@ -728,7 +772,7 @@ h3 {
 			verbalizzarle. A volte non è sicura dei suoi desideri e può essere sviata.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sBlue sBold sLarger">CANCRO</span> - <u>La volontà è tenace</u>, emotiva, rancorosa, sensibile e ambiziosa. Lotte famigliari,
 			difficoltà a dimenticare i torti subiti, collere capricciose a carattere stizzoso, ma spesso poco efficaci, incoerenti e irrazionali. Attività
 			legate all'acqua e alberghiere (ristoranti, bar, località balneari), meccanica e idraulica. Attrazione per gli sport acquatici, come: nuoto le
@@ -742,7 +786,7 @@ h3 {
 			persona amata è capace di grande coraggio.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sRed sBold sLarger">LEONE</span> - <u>Volontà autoritaria e dominatrice</u>, entusiasta, fiera e orgogliosa. Ha dei scoppi di
 			collera violenti e rancori tenaci, assolutismo, irriflessività, intransigenza e imprudenza. Audacia a volte un po' esagerata, coraggio e forza
 			realizzatrice. Indole affettuosa, amore accentuato dell'altro sesso, stabilità di sentimenti. Forte ambizione, senso di responsabilità e
@@ -755,7 +799,7 @@ h3 {
 			per esserne orgogliosa.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sGreen sBold sLarger">VERGINE</span> - <u>Volontà filtrata dalla mente</u>, amore per il dettaglio, spirito di contraddizione.
 			L'intelligenza è pronta, il pensiero logico, rapida comprensione, uno spiccato senso pratico, ragionevole. Irritabilità e possibili frustrazioni,
 			sottostima di sé, spirito vivo e collere vendicative, destrezza manuale e ingegnosità, ha ossessione per le diete e l'igiene. Attitudini alle
@@ -768,7 +812,7 @@ h3 {
 			il minimo indispensabile. La tendenza alla critica raffredda i suoi moti di passione. È molto disciplinata e arriva dritta ai suoi obiettivi.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sYellow sBold sLarger">BILANCIA</span> - <u>Volontà equilibrata e percettiva</u>, alti e bassi nel comportamento, alle volte è
 			incostante e mutevole. Amore per la vita sociale, lo spirito è pacifico e conciliante, scarsa energia e tendenza a riflettere e ragionare prima
 			di agire, sovente esitazioni, incertezze nel carattere. Facilità ad innamorarsi, ardore e spontaneità, forte attrazione per il sesso opposto.
@@ -781,7 +825,7 @@ h3 {
 			sul piano emotivo.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sBlue sBold sLarger">SCORPIONE</span> - <u>Volontà forte</u>, coraggio e ribellione, difficilmente si lascia convincere. Il
 			carattere è fermo, risoluto e coraggioso con una volontà indomabile. Ha grande energia e ambizione nel raggiungere la meta prefissa, un'acuta
 			intelligenza e fecondità creativa in ogni campo prescelto. Ha uno spirito molto combattivo, ingegnoso e intrepido, padronanza di sé. Tra le
@@ -795,7 +839,7 @@ h3 {
 			misterioso.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sRed sBold sLarger">SAGITTARIO</span> - <u>Volontà un po' ribelle</u>, dinamica, costruttiva con grandi energie. Spirito di
 			affermazione, è fiducioso e ottimista ma carente di astuzia. Leale, loquace, nobile di cuore buono e competitivo. Dotato di molta forza e zelo,
 			è un lavoratore indefesso, ma deve credere fermamente in ciò che fa e non lavorerà mai solo per denaro. Tendenza ad essere volubile tanto nei
@@ -809,7 +853,7 @@ h3 {
 			sentimentali, quanto nelle relazioni occasionali.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sGreen sBold sLarger">CAPRICORNO</span> - <u>Volontà rafforzata</u>, il carattere è forte, robusto, solido, costruttivo, ambizioso
 			e con un gran senso di responsabilità. Ha grande tenacia, fiducia in sé, serietà, tolleranza, perseveranza, resistenza nel lavoro. L'azione tende
 			all'elevazione, non teme mai di sporcarsi le mani, affronta ogni occupazione con industriosità ed entusiasmo. È dotato di una mente penetrante è
@@ -822,7 +866,7 @@ h3 {
 			in apparenza è fredda e riservata.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sYellow sBold sLarger">ACQUARIO</span> - <u>Volontà ed energia diventano creatività e originalità</u>, determinazione nella
 			conquista degli obiettivi. uno spirito sveglio e intuitivo acuto e inventivo. Impulsività e aggressività, esigenza di libertà, amore per le
 			novità. Abile inventiva nell'escogitare soluzione ai problemi, intelligenza attiva e curiosità, molto indipendente e altruista, dotato di una
@@ -836,7 +880,7 @@ h3 {
 			a causa dell'istintivo timore di essere intrappolata in rapporti sentimentali impegnativi.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sBlue sBold sLarger">PESCI</span> - <u>Volontà influenzabile e discontinua</u>, manca di energia, incapace di lottare. Spirito di
 			sacrificio, ma troppo indulgente con se stesso, trasognato e di umore mutevole. Carattere timido e introverso, emotivo e pigro, con la tendenza
 			alla lamentela, la sensibilità causa la facilità ad offendersi, suscettibilità, disposizione a lasciar correre. Tenerezza e devozione eccessiva,
@@ -849,9 +893,9 @@ h3 {
 			Si afferma con gentilezza, sensibilità e altruismo, spesso si sente vulnerabile. Cerca nel suo uomo un artista o una persona bisognosa di aiuto.
 		</p>
 
-		<h2><img src="PS.giove.gif" width="51" height="47">&nbsp;<span class="sRed">GIOVE</span> NEI SEGNI: FORTUNA, PROTEZIONE, BENESSERE</h2>
+		<h2><img src="PS.giove.gif" width="51" height="47" alt="Giove">&nbsp;<span class="sRed">GIOVE</span> NEI SEGNI: FORTUNA, PROTEZIONE, BENESSERE</h2>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sRed sBold sLarger">ARIETE</span> - Slancio ottimistico e costruttivo, maggiore costanza e altruismo, impulsività ben diretta,
 			qualità di leader. Personalità onesta e ambiziosa, dall'intelligenza brillante, ordinata e metodica, portata a svolgere ruoli di primo piano,
 			alla direzione d'affari, tendenza ad occupare impieghi di prestigio, a posti di responsabilità alla carriera militare, alla giurisprudenza,
@@ -860,7 +904,7 @@ h3 {
 			aperta, per lo sport, allo stesso tempo, accorda successo in società e negli affari.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sGreen sBold sLarger">TORO</span> - Tollerante, paziente, sensibile, vitale, fiducioso, attivo, deciso e calmo nel comportamento.
 			Espansione personale che si esprime con dolcezza, facilità ad entrare in contatto con gli altri. Ama le comodità, la calma, è conservatore,
 			stabile nelle idee e nelle opinioni, ha gioia di vivere e senso d giustizia. Soddisfazione nelle cose semplici, abilità finanziaria. Conferisce
@@ -869,7 +913,7 @@ h3 {
 			alimentari, all'allevamento, all'orticoltura, abilità economica che garantisce contro la povertà e porta al benessere.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sYellow sBold sLarger">GEMELLI</span> - Ordine e metodo uniti a una grande capacità intellettuale e apertura mentale, eloquenza
 			e vivacità. Intelligente e pieno di talenti, spesso il suo entusiasmo lo distrae dall'obiettivo primario. Profondità di spirito, bisogno di
 			comunicare agli altri la propria saggezza, riuscita negli studi, ingegnosità. Corre il rischio di perdere interesse per un argomento, parlandone
@@ -878,7 +922,7 @@ h3 {
 			vita. Amicizie utili e viaggi all'estero.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sBlue sBold sLarger">CANCRO</span> - Ricchezza di sentimenti, di gentilezza, ospitalità, socievolezza e generosità, infanzia
 			serena. Spirito conservatore, alti principi morali, fertile immaginazione, buon umore e grande emotività, natura affascinante e piena di bontà.
 			Onori e soddisfazioni finanziarie, maturità importante e agiatezza. Fecondità in tutti i campi e senso degli affari, favorite le attività
@@ -887,7 +931,7 @@ h3 {
 			favorevoli, sono favoriti sia il matrimonio e l'eredità.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sRed sBold sLarger">LEONE</span> - Espansione di sé grandiosa, fiduciosa, un po' esibizionista, altruista, generosa e ambiziosa.
 			Potere di socializzazione, fiducia in se stesso, capacità di attirare l'attenzione altrui. Idee di vasta portata, chiare elevate, che
 			riflettono una mente ordinata, sintetica, di grande capacità e vitalità. Leale, dignitoso e onesto, dotato di capacità smisurata nel dare.
@@ -896,7 +940,7 @@ h3 {
 			riuscita nella maturità.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sGreen sBold sLarger">VERGINE</span> - Abilità, efficienza, materialismo, critica, perfezione, metodo e ordine. Grande sottigliezza
 			e facoltà di analisi, senso pratico, laborioso, cosciente e scrupoloso nel lavoro lo rende un fedele e prezioso collaboratore. Volontà di
 			espansione limitata, organizzazione, capacità tecniche e scientifiche, edonismo attenuato, gusto per le piccole cose, per i rituali quotidiani,
@@ -905,7 +949,7 @@ h3 {
 			professionale e famigliare. Favorevole agli avvocati, insegnanti, medici, commercianti, attori, impieghi amministrativi, nella magistratura.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sYellow sBold sLarger">BILANCIA</span> - Profondo senso di giustizia, dell'onore, socievolezza, altruismo, simpatia, amabilità e
 			buon umore, colto e gentile. Mite e caritatevole, conciliante, capacità di giudizio e di equilibrio, adattabilità, attrazione per l'arte, la
 			musica, la letteratura, la pittura, il lusso e tutto ciò che è bello. Ama le comodità, i viaggi, importanti i valori estetici e formali. Tutto
@@ -914,7 +958,7 @@ h3 {
 			Riuscita nella maturità.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sBlue sBold sLarger">SCORPIONE</span> - Volontà, autorevolezza, inventiva, coraggio e fiducia in se stesso, natura potente.
 			Audacia nelle azioni, forte intuizione quasi profetica, inclinazione per i piaceri della tavola e del sesso. L'intelligenza è critica e
 			penetrante, ricca di talenti, indipendenza, anticonformismo, ambizioni originali, talento scientifico. Amore per lo spettacolo e tutto ciò che
@@ -923,7 +967,7 @@ h3 {
 			liberali. Fortuna nelle eredità.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sRed sBold sLarger">SAGITTARIO</span> - Spirito entusiasta, fiducioso e ingenuo, dotato di senso morale e religioso, candore e
 			umanità nei contatti con gli altri. Gusto del fasto e lealtà, ampiezza di vedute, ottimismo e generosità, tendenza a dare consigli. Idee chiare
 			e giudizio preciso, molto amato e rispettato, franco e aperto con tutti, amore dello sport e della vita libera e movimentata, molti viaggi
@@ -931,7 +975,7 @@ h3 {
 			nell'insegnamento, al commercio d'importazione esportazione, ai viaggi e all'estero. Seconda parte della vita è migliore.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sGreen sBold sLarger">CAPRICORNO</span> - Coscienza professionale, ingegnosità, ambizione, rigore mentale, forte senso di
 			responsabilità e tenacia. Favori e stima dei superiori, popolarità e successo nella vita pubblica, lungimiranza, concentrazione, grande senso
 			economico. Praticità veramente fuori dal comune, edonismo controllato, rimarchevole intelligenza politica e punti di vista di larga portata.
@@ -939,7 +983,7 @@ h3 {
 			cade in un cupo pessimismo che rallenta la sua corsa. Sincerità e attendibilità in ogni situazione, ricchezze immobiliari. Maturità importante.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sYellow sBold sLarger">ACQUARIO</span> - Amore della libertà abbinata a una grande attività mentale, attitudini intellettuali, un
 			idealismo ricco d'immaginazione. Altruista e originale ama stare al passo con i tempi, buon umore, sentimenti umanitari, grande abilità nel
 			comunicare. Ottimismo, tolleranza, comprensione, laboriosità, curiosità e simpatia, capacità d'astrazione, studi fuori dal comune. Creatività
@@ -947,7 +991,7 @@ h3 {
 			nell'occultismo, nell'amministrazione. Posizione importante in società. Successo insolito e popolarità.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sBlue sBold sLarger">PESCI</span> - Buono e socievole, caritatevole, sensibilità per i problemi sociali, emotività eccezionale,
 			senso di pietà, ospitale e altruista. Abbondanza e generosità, tolleranza e simpatia, influenzabilità, immaginazione, intuizione. Dolce e
 			gentile, un po' pigro, ambizione e desideri sono mutevoli, gusto dei propri comodi. Amicizie numerose e circostanze benefiche improvvise o
@@ -957,9 +1001,9 @@ h3 {
 			chimica, l'arte. Maturità più facile.
 		</p>
 
-		<h2><img src="PS.saturno.gif" width="65" height="50">&nbsp;<span class="sRed">SATURNO</span> NEI SEGNI: SPIRITO, RIUSCITA e CARRIERA</h2>
+		<h2><img src="PS.saturno.gif" width="65" height="50" alt="Saturno">&nbsp;<span class="sRed">SATURNO</span> NEI SEGNI: SPIRITO, RIUSCITA e CARRIERA</h2>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sRed sBold sLarger">ARIETE</span> - Spirito di contraddizione, testardaggine, piuttosto ruvido nella maniera di esprimersi.
 			Autoritario e risoluto, ambizioso e perseverante, ha forza di carattere e fiducia in sé. Capacità di concentrazione immediata ma senza
 			continuità, organizzazione, ambizione, prudenza, perseveranza, riservatezza e autocontrollo. Natura solitaria fredda, gli slanci sono repressi,
@@ -968,7 +1012,7 @@ h3 {
 			professioni libere.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sGreen sBold sLarger">TORO</span> - Spirito ponderato, prudente, realista, discreto e cauto. Capacità di concentrazione lenta,
 			gran bisogno di sicurezza, forza conservatrice, realismo produttivo e costruttivo. Solido buonsenso, lentezza nelle decisioni, idee ristrette
 			e ostinate, degno di fiducia, la razionalità è orientata verso scopi pratici e costruttivi, diffidenza per le novità e il rischio. Ricerca la
@@ -977,7 +1021,7 @@ h3 {
 			spiccato.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sYellow sBold sLarger">GEMELLI</span> - Spirito critico impietoso, ma ingegnoso e profondo. Diplomazia, ambizione, sottigliezza,
 			capacità di distacco umoristico e razionale, sdoppiamento della personalità, concentrazione eccessiva o inesistente, tatto e lucidità,
 			riflessione, dispersione mentale. Tendenza alla menzogna, all'invidia, discrezione, e a volte eccessiva freddezza. Favorisce la carriera
@@ -985,7 +1029,7 @@ h3 {
 			e all'occultismo. Carriera intellettuale, attitudine per la matematica e per le scienze, nella stampa ed editoria, doppia attività.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sBlue sBold sLarger">CANCRO</span> - Spirito sobrio e tradizionalista, amore della famiglia e delle abitudini. Sensibilità e
 			ragione sono in contrasto, tendenza all'economia e al risparmio, emozioni represse. Capacità di concentrazione sensibile, dono di coniugar
 			sogno e logica, necessità di protezione, lucidità precoce o mancanza di maturità, fantasia, memoria e immaginazione. Difficoltà e dolori nella
@@ -994,7 +1038,7 @@ h3 {
 			famigliare. Rifiuto di invecchiare, culto degli avi.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sRed sBold sLarger">LEONE</span> - Spirito forte e orgoglioso, arrivismo, scarsa generosità, non sopporta la solitudine. Senso
 			dell'autorità personale, superbia, avidità, aspirazioni esagerate. Capacità di concentrazione dominatrice e ambiziosa, volontà di potere, forza
 			di carattere, desiderio di trionfare sugli altri, prudenza, perseveranza, ambizione e sentimenti sereni e profondi ma difficoltà ad esternarli
@@ -1002,14 +1046,14 @@ h3 {
 			nell'esecuzione dei doveri. Carriera politica, alti impieghi pubblici, posti di fiducia, favorevole alle banche, alle operazioni finanziarie.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sGreen sBold sLarger">VERGINE</span> - Spirito scientifico, logico, cauto, solitario, brontolone. Capacità di concentrazione
 			precisa, metodica, ricerca minuziosa e approfondita della realtà. Senso analitico, analisi e cura dei dettagli, ama l'ordine, è pignolo serio,
 			modesto, ansioso con idee fisse, timidezza e visione ristretta dei problemi umani, pessimista. Capacità organizzative, lavoro regolare ma
 			contrario alle aspirazioni. Carriera nell'insegnamento, nella matematica, nella contabilità e nel commercio in genere.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sYellow sBold sLarger">BILANCIA</span> - Spirito di giustizia, equilibrio, integrità morale, prudenza, riservatezza. Senso del
 			dovere, gentile d'animo, capacità di concentrazione lucida, selettiva, profondità di giudizio, molto pignolo, indecisione cronica, culto della
 			scelta migliore. Le doti intellettuali sono in risalto, erudizione e successo nella maturità, matrimonio ritardato o con persona più matura.
@@ -1018,7 +1062,7 @@ h3 {
 			persona matura, carriera in politica, negli uffici ministeriali, studio delle leggi.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sBlue sBold sLarger">SCORPIONE</span> - Spirito d'introspezione, volontà di potere, coraggio e perseveranza. Capacità di
 			concentrazione intensa, determinata, audace, grande lucidità istintiva, gusto del rischio e della provocazione, machiavellica. Tenacia, astuzia
 			e diffidenza, capacità di difendersi e di attaccare, critico e aggressivo, prepotenza e litigiosità. Il carattere è forte ma duro, esigente,
@@ -1027,7 +1071,7 @@ h3 {
 			medicina, alla farmacia e chimica, nell'occultismo.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sRed sBold sLarger">SAGITTARIO</span> - Spirito filosofico/religioso, rispetto della legalità, uno spiccato senso di giustizia.
 			Natura franca e onesta, moralista e idealista, insofferenza della solitudine, bisogno di ordine e regole. Coerenza e semplicità, scarso
 			intellettualismo, indole umanitaria, ambizione, appoggi da persone mature, riuscita tardiva. Capacità di concentrazione sana e senza
@@ -1035,7 +1079,7 @@ h3 {
 			amministrativa e di responsabilità legata alle iniziative d'importazioni esportazione e ai viaggi.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sGreen sBold sLarger">CAPRICORNO</span> - Spirito metodico, serio, insensibile e sospettoso. Capacità di concentrazione intensa,
 			tenace e ambiziosa, logico, scettico, freddo, convinzioni incrollabili, fatalismo, pessimismo, eccesso di rigore. Razionalità e determinazione,
 			senso pratico che spinge verso scopi precisi e costruttivi. Carattere ambizioso, perseverante, riservato e riflessivo, poco amante
@@ -1044,7 +1088,7 @@ h3 {
 			nella gestione di affari fondiari, nelle amministrazioni e governative, nel campo della finanza o nel commercio.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sYellow sBold sLarger">ACQUARIO</span> - Spirito originale e inventivo, rigore scientifico, opportunismo ed eccentricità.
 			Razionalità fredda ma aperta alle idee, facilità d'assimilazione, amore per l'indipendenza, grande interesse per i problemi sociali. Capacità
 			di concentrazione dinamica sfruttata nell'immediato, senso del paradosso e dell'opportunità, carattere individualista, singolare, mancanza di
@@ -1053,7 +1097,7 @@ h3 {
 			favorevole agli scienziati e inventori, protezione da persone mature e influenti.
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sBlue sBold sLarger">PESCI</span> - Spirito di sacrificio, pazienza e sopportazione, scrupolosità, teme di sbagliarsi.
 			Servizievole, aiuta e fa del bene, senso di solidarietà, disponibilità verso gli altri. Capacità di concentrazione potente o instabile, dono
 			della preveggenza, carattere entusiasta, stupito, ingenuo, a volte pessimista e scoraggiato. Gusto per il lavoro di ricerca al servizio degli
@@ -1063,28 +1107,29 @@ h3 {
 
 		<p class="sCenter">
 			<br>
-			<img src="pianetibarra.gif"     width="510" height="35"><br>
-			<img src="sistemasolarehf1.jpg" width="724" height="230"><br>
+			<img src="pianetibarra.gif"     width="510" height="35"  alt="Barra dei Pianeti"><br>
+			<img src="sistemasolarehf1.jpg" width="724" height="230" alt="Sistema Solare"><br>
 			<br>
 		</p>
 
-		<p class="sSmall sBlack sPadding sCenter">
+		<p class="sCenter">
 			La posizione dei <span class="sRed">PIANETI</span> nelle case e negli aspetti del proprio Oroscopo o Carta del cielo, è disponibile a richiesta.
 			<br><br>
-			<img src="email-box.gif"    width="35" height="35">
+			<img src="email-box.gif"    width="35" height="35" alt="">
 			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
-			<img src="TelefonoC164.gif" width="35" height="35">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			<img src="TelefonoC164.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
 			- Cell. <a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
-			<strong>Sei il visitatore n°&nbsp;</strong>
+
+			<b>Sei il visitatore n°&nbsp;</b>
 		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220429873-xgvwh7y" border=0></a>
 			&nbsp;(Contenuto Aggiornato <time datetime="2019-05-15">15/05/2019</time>)<br><br>
 		</p>
-		</td></tr></table>
-	</td></tr></table>
+
 </td></tr></table>
-<p class="sXXSmall sWhite sBold sCenter">
+</td></tr></table>
+<footer>
 	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
 	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
-</p>
+</footer>
 </body>
 </html>

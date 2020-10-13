@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" dir="ltr">
 <head>
 <meta charset="UTF-8">
-<title>Le Dodici Case</title>
+<title>Le Dodici Case - Studio Acquario</title>
 <link rel="icon" type="image/gif" href="favicon32.gif">
 <meta name="description" content="Studio Acquario: Le dodici case (Scoprire lo Zodiaco 4a Parte)">
-<meta name="keywords" content="astrologia, scoprire, zodiaco, dodici, case">
+<meta name="keywords" lang="it" content="studio, acquario, astrologia, scoprire, zodiaco, dodici, case">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
 <meta name="language" content="it">
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="30/04/2019">
-<meta name="revised" content="30/08/2020">
+<meta name="revised" content="13/10/2020">
 
-<style type="text/css"> 
+<style type="text/css">
 body {
 	scrollbar-arrow-color: #E7D8C1;
 	scrollbar-base-color: #B18745; /* Marigold */
@@ -27,37 +27,105 @@ body {
 	background-color: #F4D9AC; /* Peach-Yellow */
 	/* background-attachment: fixed; */
 }
-a {
-		color: #800000;
+a:link {
+	color: #800000; /* Maroon */
 }
 a:visited {
-		color: #800000;
+	color: #800000;
+}
+a:hover {
+	color: #FF0000;
 }
 a:active {
-		color: #800000;
+	color: #800000;
+}
+h1 {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #362C16; /* Black Magick */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 150%;
 }
 h2 {
-		font-size: medium;
-		color: #362C16; 
-		font-weight: bold;
-		text-align: center;
-		margin-top: 25px;
-		padding-left: 40px;
-		padding-right: 40px;
+	font-size: medium;
+	font-weight: bold;
+	color: #362C16;  /* Black Magick */
+	text-align: center;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-top: 25px;
 }
-.sLogoBanner {
+header {
 	font-size: xx-large;
 	font-weight: bold;
 	color: #FFFFFF; /* White */
 	text-shadow: 1px 1px 5px #0000FF; /* Blue */
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
+}
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #FFFFFF; /* White */
+	text-shadow: 1px 1px 0px #0000FF; /* Blue #1A2B0A; =Pine Tree*/
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
+}
+p {
+	font-size: small;
+	color: #000000; /* Black */
+	text-align: justify;
+	padding-left: 35px;
+	padding-right: 35px;
+	line-height: 125%;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.sNavigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 180%;
+}
+.sNavigation a {
+	font-size: medium;
+	font-weight: bold;
+	padding:.42em;
+	color: #FFFFFF; /* White */
+	margin-left: 2px;
+	background: #0000FF;  /* Blue */
+	text-decoration: none;
+}
+.sNavigation a:hover {
+	color: #000000; /* Black */
+	background: #00FFFF; /* Aqua */
+}
+#PagCorrente {
+	border-bottom: 2.5px solid #FF0000; /* Red */
+}
+.sHomeIcon {
+	vertical-align: bottom;
+	margin-bottom: 1px;
+	height: 25px;
+	width: 25px;
 }
 .sBorder2s {
 				border-style: solid;
 				border-width: 2px;
-}
-.sBlack {
-				color: #000000;
 }
 .sBlue {
 				color: #0000FF;
@@ -65,49 +133,18 @@ h2 {
 .sGreen {
 				color: #008000;
 }
-.sBlackMagick {
-				color: #362C16; /* #2C2312 */
-}
-.sMaroon {
-				color: #800000;
-}
 .sRed {
 				color: #FF0000;
 }
 .sYellow {
-				color: #FFFF00; 
+				color: #FFFF00;
 				text-shadow: 1px 1px 0px #DD8500; /* Tangerine */
-}
-.sWhite {
-				color: #FFFFFF;
-}
-.sBGPigPink {
-				background-color: #F6D2DE;
-}
-.sBGWhite {
-				background-color: #FFFFFF;
 }
 .sBold {
 				font-weight: bold;
 }
 .sCenter {
 				text-align: center;
-}
-.sJustify {
-				text-align: justify;
-}
-.sPadding {
-				padding-left: 40px;
-				padding-right: 40px;
-}
-.sXXSmall {
-				font-size: xx-small;
-}
-.sXSmall {
-				font-size: x-small;
-}
-.sSmall {
-				font-size: small;
 }
 .sMedium {
 				font-size: medium;
@@ -123,247 +160,242 @@ h2 {
 }
 </style>
 </head>
- 
+
 <body>
-<p class="sLogoBanner">Studio di Astrologia "Acquario"</p>
+<header>Studio di Astrologia "Acquario"</header>
 
-<TABLE BACKGROUND="LUnature37bk2.jpg" CELLSPACING="0" CELLPADDING="25" BORDERCOLOR="#B28B4E" BORDERCOLORDARK="#745A30" width="95%" class="sBorder2s" align="center">
-<TR><TD>
+<TABLE BACKGROUND="LUnature37bk2.jpg" CELLSPACING="15" CELLPADDING="5" border="1" class="sBorder2s" BORDERCOLOR="#B28B4E" BORDERCOLORDARK="#745A30" width="95%" align="center">
+<TR><TD BACKGROUND="LUnature37bk4.jpg">
 
-<TABLE BACKGROUND="LUnature37bk4.jpg" CELLSPACING="0" CELLPADDING="0" BORDERCOLOR="#B28B4E" BORDERCOLORDARK="#745A30" BORDER="1" WIDTH="100%">
-<TR><TD class="sCenter">
+<TABLE BACKGROUND="LUnature37bk2.jpg" CELLSPACING="5" CELLPADDING="0" BORDER="0" WIDTH="100%">
+<TR><TD BACKGROUND="LUnature37bk4.jpg">
 
-<TABLE BACKGROUND="LUnature37bk2.jpg" CELLSPACING="0" CELLPADDING="0" BORDER="0" WIDTH="100%">
-<TR><TD>
+		<h1>SCOPRIAMO I SEGRETI DELLO ZODIACO <span class="sRed">4ª</span> PARTE<br>
+			Il Significato delle <span class="sRed">12</span> Case</h1>
 
-<TABLE BACKGROUND="LUnature37bk4.jpg" CELLSPACING="0" CELLPADDING="0" BORDER="0" WIDTH="100%">
-<TR><TD>
-
-		<p class="sXXLarge sBlackMagick sBold sCenter ">
-			SCOPRIAMO I SEGRETI DELLO ZODIACO <span class="sRed">4ª</span> PARTE
-		</p>
-		<p class="sXLarge sBlackMagick sBold sCenter">
-			IL SIGNIFICATO DELLE <span class="sRed ">12</span> CASE
-		</p>
 		<p class="sCenter">
-			<img src="LUCaseAstro.jpg" width="292" height="293">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="LUZodiacoB.jpg"  width="364" height="343">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="LUZodiaOro.jpg"  width="300" height="300">
+			<img src="LUCaseAstro.jpg" width="292" height="293" alt="Ruota delle Case Astrologiche">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="LUZodiacoB.jpg"  width="364" height="343" alt="Ruota dello Zodiaco">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="LUZodiaOro.jpg"  width="300" height="300" alt="Ruota dello Zodiaco Dorato">
 		</p>
 
-		<p class="sBlack sSmall sCenter sBold">
-			<br><span class="sBGWhite">&nbsp;
-			<a href="scoprireZodiaco.htm">Segni/Pianeti/Elementi</a> |
-			<a href="Ascendente.htm">Ascendente</a> |</span><span class="sBGPigPink">
-			<a href="Le12case.htm">Le 12 Case</a> |</span><span class="sBGWhite">
-			<a href="pianetiSegni.htm">I Pianeti nei Segni</a> |
-			<a href="index.html">Pagina&nbsp;Iniziale</a>&nbsp;</span><br>
-		</p>
-
-		<P class="sMedium sBlack sJustify sPadding">
+		<nav class="sLarge sCenter">
 			<br>
-			Il sistema delle Case è la proiezione terrestre dello Zodiaco, al momento della nascita. Ogni casa ha un suo significato che è in analogia ai 
-			Segni Zodiacali, a un settore della vita umana secondo una logica straordinaria. Se una persona è nata all'alba, avrà 
+			<ul class="sNavigation">
+				<li><a href="scoprireZodiaco.htm">Segni/Pianeti/Elementi</a></li>
+				<li><a href="Ascendente.htm">Ascendente</a></li>
+				<li><a href="pianetiSegni.htm">I Pianeti nei Segni</a></li>
+				<li><a href="Le12case.htm" id="PagCorrente">Le 12 Case</a></li>
+				<li><a href="index.html"><img src="favicon32.gif" class="sHomeIcon" alt="Pagina Principale"></a></li>
+			</ul>
+			<br>
+		</nav>
+
+		<P class="sMedium">
+			<br>
+			Il sistema delle Case è la proiezione terrestre dello Zodiaco, al momento della nascita. Ogni casa ha un suo significato che è in analogia ai
+			Segni Zodiacali, a un settore della vita umana secondo una logica straordinaria. Se una persona è nata all'alba, avrà
 			l'<span class="sRed sBold">Ascendente</span> nel segno uguale a quello di nascita. Ogni 2 ore l'<span class="sRed sBold">Ascendente</span> si
 			sposta nel segno successivo, si abbrevia in <span class="sRed sBold">ASC</span>.<br>
-			La <span class="sRed sBold">X</span> casa corrisponde al punto più alto del cielo <span class="sBlue sBold">Medio Cielo</span> che si abbrevia 
+			La <span class="sRed sBold">X</span> casa corrisponde al punto più alto del cielo <span class="sBlue sBold">Medio Cielo</span> che si abbrevia
 			in <span class="sBlue sBold">MC</span>.<br>
 		</p>
 
 		<p class="sCenter">
 			<br>
-			<IMG SRC="LUnature37div.jpg"  WIDTH="343" HEIGHT="37">&nbsp;&nbsp;&nbsp; 
-			<IMG SRC="LUnature37div2.jpg" WIDTH="151" HEIGHT="33">&nbsp;&nbsp;&nbsp; 
-			<IMG SRC="LUnature37div.jpg"  WIDTH="343" HEIGHT="37">
+			<IMG SRC="LUnature37div.jpg"  WIDTH="343" HEIGHT="37" alt="">&nbsp;&nbsp;&nbsp;
+			<IMG SRC="LUnature37div2.jpg" WIDTH="151" HEIGHT="33" alt="">&nbsp;&nbsp;&nbsp;
+			<IMG SRC="LUnature37div.jpg"  WIDTH="343" HEIGHT="37" alt="">
 			<br>
 		</p>
 
 		<h2><span class="sRed">1°</span> casa o <span class="sRed">ASC</span> = Voglio esistere, affermarmi e ottenere ciò che mi serve</h2>
-		<p class="sSmall sBlack sJustify sPadding" style="line-height: 125%"> 
-			La prima casa inizia con la linea dell'<span class="sRed sBold">Ascendente</span>, è cosignificante con il segno 
+		<p>
+			La prima casa inizia con la linea dell'<span class="sRed sBold">Ascendente</span>, è cosi significante con il segno
 			dell'<span class="sRed sBold">ARIETE</span>, per cui se ospita dei pianeti importanti dà caratteristiche <span class="sRed sBold">arietine</span>
-			al soggetto. È considerata la Casa più importante in quanto indica la costituzione fisica del soggetto, il suo carattere ed il temperamento. 
+			al soggetto. È considerata la Casa più importante in quanto indica la costituzione fisica del soggetto, il suo carattere ed il temperamento.
 			Sovente ha un significato ereditario perché corrisponde al segno dei genitori o dei nonni. È la parte più evidente della nostra personalità,
-			l'atteggiamento nei confronti del mondo. È l'<strong>Io</strong>, il comportamento, le attitudini del carattere, la forza di volontà, la
+			l'atteggiamento nei confronti del mondo. È l'<b>Io</b>, il comportamento, le attitudini del carattere, la forza di volontà, la
 			vitalità, la meta che si vuole raggiungere, le predisposizioni, il modo di affrontare la vita, l'indole, l'intelligenza e l'infanzia. La salute,
 			i difetti fisici, la costituzione, la figura e l'aspetto fisico.<BR>
 			Nel caso questa Casa occupi più segni il primo si riferisce al comportamento della prima giovinezza, il secondo all'età matura ed eventualmente
 			il terzo nella maturità avanzata.<BR>
-			Molti pianeti nel <span class="sRed sBold">I</span> campo generalmente indicano una personalità pronunciata che si comporta con indifferenza 
+			Molti pianeti nel <span class="sRed sBold">I</span> campo generalmente indicano una personalità pronunciata che si comporta con indifferenza
 			e superiorità nei confronti degli altri.
-			Se vi è il <span class="sRed sBold">Sole</span>, <span class="sRed sBold">Giove</span>, <span class="sRed sBold">Venere</span> e 
+			Se vi è il <span class="sRed sBold">Sole</span>, <span class="sRed sBold">Giove</span>, <span class="sRed sBold">Venere</span> e
 			<span class="sRed sBold">Mercurio</span> indica che la vita si svolge con una maggiore facilità e che gli ostacoli da superare sono piuttosto
-			limitati. Se invece nel <span class="sRed sBold">I</span> campo vengono a trovarsi pianeti come <span class="sRed sBold">Saturno</span>, 
-			<span class="sRed sBold">Urano</span> o <span class="sRed sBold">Nettuno</span> aumenta molto la probabilità d'impedimenti e di difficoltà.<BR>
-			<strong>Corrisponde</strong> al segno dell'<span class="sRed sBold">ARIETE</span>: testa, occhi, naso, orecchie, denti.  ---&gt; 
+			limitati. Se invece nel <span class="sRed sBold">I</span> campo vengono a trovarsi pianeti come <span class="sRed sBold">Saturno</span>,
+			<span class="sRed sBold">Urano</span> o <span class="sRed sBold">Nettuno</span> aumenta molto la probabilità di impedimenti e di difficoltà.<BR>
+			<b>Corrisponde</b> al segno dell'<span class="sRed sBold">ARIETE</span>: testa, occhi, naso, orecchie, denti.  ---&gt;
 			<span class="sRed sBold">LA PRIMA PARTE DELLA VITA</span>
 		</p>
-			
+
 		<h2><span class="sRed">2°</span> casa = Ho bisogno di mezzi per proteggermi, di sicurezze e di benessere e di darmi un valore</h2>
-		<p class="sSmall sBlack sJustify sPadding" style="line-height: 125%"> 
+		<p>
 			È un settore pratico attinente ai guadagni e alla ricchezza, ai profitti che hanno origine dal proprio lavoro. Indica il rapporto che si ha con
 			la materia, le possibilità di realizzare e di gestire i propri guadagni. Le banche, le finanze, la fortuna, le entrate, i debiti, i beni di
-			famiglia il senso del possesso. Si riferisce per estensione alla possessività e al bisogno di sicurezza, realizzata attraverso le cose e le 
-			persone. Competono gli interessi materiali del soggetto, ci chiarisce il suo atteggiamento nei confronti del denaro, il modo migliore di 
-			guadagnarlo, il lavoro e le sue rendite. La <strong>II</strong> Casa indica anche il successo economico dei figli e la loro professione ideale.
-			Quello che si possiede: energia, denaro e rimunerazione. I talenti particolari, le inclinazioni, le attitudini naturali, l'abilità al lavoro. 
-			Sono esclusi le eredità, le ipoteche, i prestiti a lunga scadenza che sono appannaggio della casa <strong>VIII</strong>.<br>
-			Nei temi di nascita di persone agiate spesso si riscontrano nel <strong>II</strong> campo pianeti come <span class="sRed sBold">Giove</span>,
+			famiglia il senso del possesso. Si riferisce per estensione alla possessività e al bisogno di sicurezza, realizzata attraverso le cose e le
+			persone. Competono gli interessi materiali del soggetto, ci chiarisce il suo atteggiamento nei confronti del denaro, il modo migliore di
+			guadagnarlo, il lavoro e le sue rendite. La <b>II</b> Casa indica anche il successo economico dei figli e la loro professione ideale.
+			Quello che si possiede: energia, denaro e rimunerazione. I talenti particolari, le inclinazioni, le attitudini naturali, l'abilità al lavoro.
+			Sono esclusi le eredità, le ipoteche, i prestiti a lunga scadenza che sono appannaggio della casa <b>VIII</b>.<br>
+			Nei temi di nascita di persone agiate spesso si riscontrano nel <b>II</b> campo pianeti come <span class="sRed sBold">Giove</span>,
 			<span class="sRed sBold">Venere</span> e <span class="sRed sBold">Marte</span>.<br>
-			<strong>Corrisponde</strong> al segno del <span class="sGreen sBold">TORO</span>: collo, gola, tiroide, laringe, naso. ---&gt; 
+			<b>Corrisponde</b> al segno del <span class="sGreen sBold">TORO</span>: collo, gola, tiroide, laringe, naso. ---&gt;
 			<span class="sRed sBold">LA SECONDA PARTE DELLA VITA</span>
 		</p>
 
 		<h2><span class="sRed">3°</span> casa = Voglio capire e interagire, e soprattutto voglio comunicare e dimostrare il mio valore</h2>
-		<p class="sSmall sBlack sJustify sPadding" style="line-height: 125%"> 
+		<p>
 			Rappresenta le qualità mentali e la socievolezza dell'individuo. Si riferisce ai legami con le persone più vicine a noi quindi parenti prossimi,
 			collaboratori e colleghi, ma anche al desiderio di conoscenza. Riflette i rapporti dell'uomo con l'ambiente immediato costituito da legami di
-			sangue: sorelle e fratelli. Indica quello che è l'orizzonte culturale ed interiore di un individuo, il modo con cui si esprime, come si 
-			estrinseca la sua personalità in ogni rapporto. È la Casa del contatto immediato con l'ambiente attraverso la parola la comunicazione, lo 
+			sangue: sorelle e fratelli. Indica quello che è l'orizzonte culturale ed interiore di un individuo, il modo con cui si esprime, come si
+			estrinseca la sua personalità in ogni rapporto. È la Casa del contatto immediato con l'ambiente attraverso la parola la comunicazione, lo
 			scambio d'idee. Simboleggia l'energia che deve condurre a scoprire e incontrare gli altri, tutto quello che si riferisce ai rapporti con
 			l'ambiente circostante, la comunicazione attraverso la parola gli scritti, gli studi inferiori, l'intelligenza, l'educazione, ai piccoli viaggi.
 			Il desiderio di sapere e la capacità di trovare le relazioni. I mezzi di telecomunicazione, di trasporto, i libri, gli amici, i colleghi, i
 			vicini, la corrispondenza, i brevi viaggi. Lo spirito pratico, la capacità di pensiero, gli interessi culturali, il carattere e destino dei parenti più stretti (fratelli, sorelle, cugini, cognati).<br>
-			<strong>Corrisponde</strong> al segno dei <span class="sYellow sBold">GEMELLI</span>: spalle, braccia, mani, trachea, bronchi.
-		</p>    
+			<b>Corrisponde</b> al segno dei <span class="sYellow sBold">GEMELLI</span>: spalle, braccia, mani, trachea, bronchi.
+		</p>
 
 		<h2><span class="sRed">4°</span> casa = Ho bisogno d'affetti, d'appartenenza, d'essere accettato e rassicurato, e poter dare forma e voce a ciò che sento</h2>
-		<p class="sSmall sBlack sJustify sPadding" style="line-height: 125%"> 
+		<p>
 			È la casa vera e propria, la terra, i beni immobiliari nonché la figura paterna. Significa l'inizio e la fine della vita, le origini, la
 			famiglia, i genitori, la casa paterna, la patria, le radici e l'eredità. Si riferisce anche alle condizioni di vita che il nativo avrà
 			nell’ultima parte dell'esistenza e alle sue potenzialità psichiche inconsce. È l'impronta genetica, psichica e affettiva di cui l'individuo è
-			portatore. I cambiamenti di residenza, è il padre per un uomo, la madre per una donna. L'ambiente da cui proviene, le tare ereditarie, gli 
-			antenati, le carenze, i disagi, le paure, le frustrazioni, gli affari famigliari, la fama dopo la morte, l'attaccamento alle tradizioni. Le 
-			situazioni e le circostanze della vita, il passato, il carattere e destino dei genitori, il gusto per l'arredamento, il confort nel proprio 
+			portatore. I cambiamenti di residenza, è il padre per un uomo, la madre per una donna. L'ambiente da cui proviene, le tare ereditarie, gli
+			antenati, le carenze, i disagi, le paure, le frustrazioni, gli affari famigliari, la fama dopo la morte, l'attaccamento alle tradizioni. Le
+			situazioni e le circostanze della vita, il passato, il carattere e destino dei genitori, il gusto per l'arredamento, il confort nel proprio
 			focolare, le abitudini e l'occultismo. Le caratteristiche della <span class="sRed sBold">quarta</span> casa rivelano la vita privata e
-			professionale del padre; i relativi indizi a volte si riferiscono anche alla madre, quando quest'ultima fa le veci del padre, o assume 
-			un'importanza decisiva nella vita del soggetto. La <span class="sRed sBold">IV</span> casa è anche il posto in cui ci rilassiamo dopo il 
+			professionale del padre; i relativi indizi a volte si riferiscono anche alla madre, quando quest'ultima fa le veci del padre, o assume
+			un'importanza decisiva nella vita del soggetto. La <span class="sRed sBold">IV</span> casa è anche il posto in cui ci rilassiamo dopo il
 			lavoro, da cui l'idea che simboleggi i parchi o altri luoghi di distensione. Qui si recuperano le forze fisiche e psichiche.<br>
-			<strong>Corrisponde</strong> al segno del <span class="sBlue sBold">CANCRO</span>: stomaco, petto, seno, gestazione, ulcera. ---&gt; 
+			<b>Corrisponde</b> al segno del <span class="sBlue sBold">CANCRO</span>: stomaco, petto, seno, gestazione, ulcera. ---&gt;
 			<span class="sRed sBold">ULTIMA PARTE DELLA VITA</span>
 		</p>
 
 		<h2><span class="sRed">5°</span> casa = Voglio agire come mi pare, esprimere ciò che sento, creare e far vedere chi sono</h2>
-		<p class="sSmall sBlack sJustify sPadding" style="line-height: 125%"> 
+		<p>
 			Riguarda il mondo affettivo, erotico e sessuale, i figli legittimi e illegittimi, gli affetti, gli abiti, i doni e i gioielli. La forza vitale,
 			l'istinto della procreazione, la gravidanza e il parto. È la casa in cui si nasconde il cuore dell'individuo, la sessualità, il potenziale
-			creativo, i suoi ideali. È detta la casa della fortuna perché indica il gioco, le realizzazioni in campo artistico, di esibizionismo del 
-			soggetto. La sensibilità per l'arte, il passatempo, il divertimento, il mondo dello spettacolo, la vita in società le feste. L'insegnamento, 
-			gli hobby, lo sport, il teatro, le scommesse, le lotterie. In questa <span class="sRed sBold">V</span> casa si può determinare, inoltre, 
-			il Karma (debito contratto nella vita precedente) d'ogni individuo. La gioia di vivere, la vita sessuale e amorosa, i piaceri mondani, 
+			creativo, i suoi ideali. È detta la casa della fortuna perché indica il gioco, le realizzazioni in campo artistico, di esibizionismo del
+			soggetto. La sensibilità per l'arte, il passatempo, il divertimento, il mondo dello spettacolo, la vita in società le feste. L'insegnamento,
+			gli hobby, lo sport, il teatro, le scommesse, le lotterie. In questa <span class="sRed sBold">V</span> casa si può determinare, inoltre,
+			il Karma (debito contratto nella vita precedente) d'ogni individuo. La gioia di vivere, la vita sessuale e amorosa, i piaceri mondani,
 			la creatività. Le tendenze pedagogiche.<br>
-			<strong>Corrisponde</strong> al segno del <span class="sRed sBold">LEONE</span>: cuore, spina dorsale, schiena, circolazione, pressione.
+			<b>Corrisponde</b> al segno del <span class="sRed sBold">LEONE</span>: cuore, spina dorsale, schiena, circolazione, pressione.
 		</p>
 
 		<h2><span class="sRed">6°</span> casa = Devo analizzare criticamente ogni cosa per decidere come adattarmi e cosa posso fare per assicurare la sopravvivenza mia e degli altri</h2>
-		<p class="sSmall sBlack sJustify sPadding" style="line-height: 125%"> 
-			È l'ultima casa sotto la linea dell'orizzonte che riguarda il lavoro e la salute, l'igiene, la cura del proprio corpo, le diete, la medicina, 
-			gli animali domestici, gli zii e zie. In <span class="sRed sBold">sesta</span> casa è indicato il rimedio contro eventuali malattie perché da 
+		<p>
+			È l'ultima casa sotto la linea dell'orizzonte che riguarda il lavoro e la salute, l'igiene, la cura del proprio corpo, le diete, la medicina,
+			gli animali domestici, gli zii e zie. In <span class="sRed sBold">sesta</span> casa è indicato il rimedio contro eventuali malattie perché da
 			queste dipendono tutte le attività terapeutiche. La casa copre le professioni domestiche, ivi compresi la cucina, il personale alberghiero o dei
 			ristoranti, l'alimentazione. Gli oggetti, l'abbigliamento, le restrizioni, il lavoro obbligato, il senso del dovere, la laboriosità, le fatiche
 			di ogni giorno. È il mondo in cui si vive la vita quotidiana, rappresenta l'insieme di attività pratiche e di doveri, di abitudini e di rapporti
 			cui non ci si può sottrarre. Rivela i rapporti dell'individuo con la vita materiale quotidiana, con il suo corpo, la predisposizione al lavoro,
 			la capacità di tutelare il benessere e la propria salute. Lo stato fisico le malattie cui si è predisposti, le infermità l'alimentazione.
-			L'abilità manuale, il bagaglio della vita, ciò che pesa nella vita, il rapporto con i collaboratori, i colleghi, dipendenti e superiori. 
-			Raffigura l'ambiente di lavoro, le dimensioni più modeste della vita, l'abilità manuale. L'occupazione, i servizi pubblici, la servitù, il 
-			lavoro dipendente. Le difficoltà della vita, la cura delle malattie, il bagaglio della vita, ciò che pesa nella vita, il rapporto con i 
+			L'abilità manuale, il bagaglio della vita, ciò che pesa nella vita, il rapporto con i collaboratori, i colleghi, dipendenti e superiori.
+			Raffigura l'ambiente di lavoro, le dimensioni più modeste della vita, l'abilità manuale. L'occupazione, i servizi pubblici, la servitù, il
+			lavoro dipendente. Le difficoltà della vita, la cura delle malattie, il bagaglio della vita, ciò che pesa nella vita, il rapporto con i
 			collaboratori, i colleghi, dipendenti e superiori.<br>
-			<strong>Corrisponde</strong> al segno della <span class="sGreen sBold">VERGINE</span>: intestino, ventre, appendicite, peritonite, calcoli.
+			<b>Corrisponde</b> al segno della <span class="sGreen sBold">VERGINE</span>: intestino, ventre, appendicite, peritonite, calcoli.
 		</p>
 
 		<h2><span class="sRed">7°</span> casa = Voglio misurarmi con gli altri (e con altre idee) creare relazioni per trovare ciò che mi manca per completarmi</h2>
-		<p class="sSmall sBlack sJustify sPadding" style="line-height: 125%"> 
-			L'<strong>Io</strong> incontra il <strong>tu</strong> alla ricerca del complementare, l'incontro con gli altri, l'esperienza del sociale le
+		<p>
+			L'<b>Io</b> incontra il <b>tu</b> alla ricerca del complementare, l'incontro con gli altri, l'esperienza del sociale le
 			unioni affettive, il matrimonio, le associazioni di qualsiasi genere, la definizione legale dei rapporti. Indica le tendenze caratteriali delle
 			persone cui ci si lega o con le quali si stabilisce attrazione reciproca, l'apertura verso il prossimo, il grado di socializzazione. La
 			giustizia, i contratti, le associazioni in affari, il coniuge, la convivenza, le relazioni. Il divorzio, la separazione, il processo, i nemici
 			scoperti, le collaborazioni, la politica. Importanti sono i pianeti in questa casa, in quanto se ne può dedurre se tende ad avere una vita di
 			coppia felice, oppure se la vita sarà dominata da conflitti che possono portare a divisioni e rotture.<br>
-			<strong>Corrisponde</strong> al segno della <span class="sYellow sBold">BILANCIA</span>: reni, fegato, vescica, lombi, pelle, appendice e diabete.
+			<b>Corrisponde</b> al segno della <span class="sYellow sBold">BILANCIA</span>: reni, fegato, vescica, lombi, pelle, appendice e diabete.
 		</p>
 
 		<h2><span class="sRed">8°</span> casa = Devo ottenere una rivincita su un senso d'impotenza e sconfiggere il male, in nome di valori superiori (al mio egoismo) e della Verità</h2>
-		<p class="sSmall sBlack sJustify sPadding" style="line-height: 125%"> 
+		<p>
 			Indica per estensione la morte e dà indicazioni sull'atteggiamento mentale che ha nei confronti della morte, può dare indicazioni sulla morte
-			(accidentale, violenta, misteriosa ecc), è complementare alla <strong>VI</strong> per valutare il grado di salute e le eventuali malattie che
+			(accidentale, violenta, misteriosa ecc), è complementare alla <b>VI</b> per valutare il grado di salute e le eventuali malattie che
 			precedono la morte. Rappresenta i pericoli, i lutti, le crisi esistenziali, le paure, il denaro degli altri, la pensione, le tasse, le perdite.
-			Per analogia rappresenta l'atteggiamento mentale nei confronti della politica e le professioni correlate al problema della vita e della morte (medici, notai, impresari di pompe funebri ecc.). I benefici che provengono dalla morte o da contratti, i valori materiali acquisiti con i 
-			propri meriti. L'eredità morale e materiale, la sessualità, la capacità di ripresa, il distacco dall'ambiente naturale, gli interventi 
+			Per analogia rappresenta l'atteggiamento mentale nei confronti della politica e le professioni correlate al problema della vita e della morte
+			(medici, notai, impresari di pompe funebri ecc.). I benefici che provengono dalla morte o da contratti, i valori materiali acquisiti con i
+			propri meriti. L'eredità morale e materiale, la sessualità, la capacità di ripresa, il distacco dall'ambiente naturale, gli interventi
 			chirurgici, la medicina, gli incidenti. La rinascita, l'occulto.<br>
-			<strong>Corrisponde</strong> al segno dello <span class="sBlue sBold">SCORPIONE</span>: vista (occhio sinistro), organi genitali interni ed
+			<b>Corrisponde</b> al segno dello <span class="sBlue sBold">SCORPIONE</span>: vista (occhio sinistro), organi genitali interni ed
 			esterni, naso, otite.
 		</p>
 
 		<h2><span class="sRed">9°</span> casa = Voglio conquistare nuove mete e territori, riuscire ed essere una guida per gli altri</h2>
-		<p class="sSmall sBlack sJustify sPadding" style="line-height: 125%"> 
-			L'<strong>Io</strong>, l'universo, gli studi superiori, l'università, l'insegnamento, l'intelligenza, il pensiero filosofico, la religione, 
+		<p>
+			L'<b>Io</b>, l'universo, gli studi superiori, l'università, l'insegnamento, l'intelligenza, il pensiero filosofico, la religione,
 			la fede, il sogno, le conoscenze superiori, la ricerca scientifica. È la Casa dei viaggi e dei successi ottenuti al di fuori del proprio mondo
 			d'origine. La politica, le lingue, la cultura, le scienze, le mete lontane i paesi stranieri. La magia, l'astrologia e le scoperte. È il settore
-			dell'intelligenza superiore, del pensiero filosofico e sociale, delle imprese di ogni tipo, dell'ingegno nella scienza e nella ricerca, 
+			dell'intelligenza superiore, del pensiero filosofico e sociale, delle imprese di ogni tipo, dell'ingegno nella scienza e nella ricerca,
 			dell'ispirazione creatrice nell'arte, nella grande impresa di un qualsiasi genere. L'ideale, le eredità materne e l'ottimismo.<br>
-			<strong>Corrisponde</strong> al segno del <span class="sRed sBold">SAGITTARIO</span>: gambe, cosce, femore, anche, diabete, fegato.
+			<b>Corrisponde</b> al segno del <span class="sRed sBold">SAGITTARIO</span>: gambe, cosce, femore, anche, diabete, fegato.
 		</p>
 
 		<h2><span class="sRed">10°</span> casa o <span class="sBlue">MC</span> = Bisogna dar seguito alle esigenze e alle leggi superiori, compiere il proprio dovere per distinguersi e meritare il riconoscimento degli altri</h2>
-		<p class="sSmall sBlack sJustify sPadding" style="line-height: 125%"> 
-			La carriera e l'ascesa. Il lavoro scelto per vocazione, il suo mestiere, la fama, le opere compiute, la professione, il rispetto degli altri. 
-			È la Casa del destino inteso come corso dell'esistenza determinato dalle proprie scelte oltre che dalle condizioni esterne. È opposta alla 
-			<strong>IV</strong> che rappresenta tradizionalmente il padre ma si riferisce alla madre. Successo nella vita sociale, il potere, i meriti, gli
-			onori, la propria posizione economica, l'affermazione individuale, l'ambizione, la riuscita, la reputazione, il culmine. Il 
-			<span class="sRed sBold">Sole</span> in questa casa è da considerarsi come indice d'una facile ascesa, e si trova spesso nei temi di nascita 
+		<p>
+			La carriera e l'ascesa. Il lavoro scelto per vocazione, il suo mestiere, la fama, le opere compiute, la professione, il rispetto degli altri.
+			È la Casa del destino inteso come corso dell'esistenza determinato dalle proprie scelte oltre che dalle condizioni esterne. È opposta alla
+			<b>IV</b> che rappresenta tradizionalmente il padre ma si riferisce alla madre. Successo nella vita sociale, il potere, i meriti, gli
+			onori, la propria posizione economica, l'affermazione individuale, l'ambizione, la riuscita, la reputazione, il culmine. Il
+			<span class="sRed sBold">Sole</span> in questa casa è da considerarsi come indice d'una facile ascesa, e si trova spesso nei temi di nascita
 			di molti personaggi eccelsi, che ebbero una parte preponderante nelle vicende della propria epoca.<br>
-			<strong>Corrisponde</strong> al segno del <span class="sGreen sBold">CAPRICORNO</span>: ginocchia, ossa, denti, pelle, spina dorsale,
+			<b>Corrisponde</b> al segno del <span class="sGreen sBold">CAPRICORNO</span>: ginocchia, ossa, denti, pelle, spina dorsale,
 			reumatismi.
 		</p>
 
 		<h2><span class="sRed">11°</span> casa = Voglio rompere legami e dipendenze, per dare forma ad una nuova realtà fantastica, che sia migliore di questa</h2>
-		<p class="sSmall sBlack sJustify sPadding" style="line-height: 125%"> 
+		<p>
 			È detta la Casa dell'equilibrio perché mostra attitudine a dare e a ricevere, la capacità di modificare i propri valori attraverso il contatto
 			interpersonale. L'autocontrollo, l'estroversione, la comprensione e l'obiettività. Indica anche la condizione economica del padre e della madre
-			ma anche il numero dei figli. Infine questa casa è importante per quanto riguarda le attitudini alla comunicazione, la possibilità di farsi 
+			ma anche il numero dei figli. Infine questa casa è importante per quanto riguarda le attitudini alla comunicazione, la possibilità di farsi
 			capire dagli altri. È indicativa di speranze e aspirazioni, le amicizie, i desideri, gli adempimenti e i progetti. Le protezioni, la pubblicità,
 			le relazioni amichevoli e mondane, l'aiuto che riceviamo dagli altri, i sogni ad occhi aperti, gli ideali. La radio, TV, telefono e computer.<br>
-			<strong>Corrisponde</strong> al segno dell'<span class="sYellow sBold">ACQUARIO</span>: circolazione, caviglie, vene, varici, pressione.
+			<b>Corrisponde</b> al segno dell'<span class="sYellow sBold">ACQUARIO</span>: circolazione, caviglie, vene, varici, pressione.
 		</p>
 
-		<h2><span class="sRed">12°</span> casa = Ho bisogno di sottrarmi a ciò che m'inibisce e m'imprigiona, vivendo in un'altra realtà a voi invisibile, 
+		<h2><span class="sRed">12°</span> casa = Ho bisogno di sottrarmi a ciò che m'inibisce e m'imprigiona, vivendo in un'altra realtà a voi invisibile,
 		in cui si trova ciò che è Bello, Giusto, Vero, Certo, (i miei Ideali)</h2>
-		<p class="sSmall sBlack sJustify sPadding" style="line-height: 125%"> 
-			Prove, rinunce e sacrifici. Solitudine, isolamento, dispiaceri, processi. I luoghi chiusi, ospedali le cliniche i carceri, gli alberghi, asili 
-			e laboratori. Tutto ciò che è nascosto e misterioso, il travaglio nel lasciare la vita, errori e sbagli. Oltre a questo la 
+		<p>
+			Prove, rinunce e sacrifici. Solitudine, isolamento, dispiaceri, processi. I luoghi chiusi, ospedali le cliniche i carceri, gli alberghi, asili
+			e laboratori. Tutto ciò che è nascosto e misterioso, il travaglio nel lasciare la vita, errori e sbagli. Oltre a questo la
 			<span class="sRed sBold">XII</span> casa indica come l'uomo nella vecchiaia saprà guardare indietro, e scoprire il cammino che ha fatto: se
 			riuscirà a dare un senso alla vita che ha trascorso. Riflette quindi la possibilità di raccoglimento e di una vita in solitudine e di
 			meditazione, fa pure pensare al rallentamento del processo vitale, a impedimenti fisici e sociali, in modo particolare a quelli dovuti alla
 			vecchiaia e all'infermità. Si può desumere il comportamento di un soggetto quando si ripiega su se stesso e tende all'isolamento, a staccarsi
 			dalle cose terrene. Riguarda le truffe, i dolori, la prigione, il bene e il male, le pene. L'occultismo, l'astrologia, la stregoneria, i nemici
 			nascosti, il suicidio, il Karma.<br>
-			<strong>Corrisponde</strong> al segno dei <span class="sBlue sBold">PESCI</span>: piedi, ghiandole, sistema linfatico, ansia, stress, diabete. 
+			<b>Corrisponde</b> al segno dei <span class="sBlue sBold">PESCI</span>: piedi, ghiandole, sistema linfatico, ansia, stress, diabete.
 			Malattie croniche.
 		</p>
-				
+
 		<p class="sCenter">
-			<IMG SRC="LUnature37div2.jpg" WIDTH="151" HEIGHT="33">
-			<IMG SRC="LUnature37div.jpg"  WIDTH="343" HEIGHT="37">
-			<IMG SRC="LUnature37div2.jpg" WIDTH="151" HEIGHT="33">
+			<IMG SRC="LUnature37div2.jpg" WIDTH="151" HEIGHT="33" alt="">
+			<IMG SRC="LUnature37div.jpg"  WIDTH="343" HEIGHT="37" alt="">
+			<IMG SRC="LUnature37div2.jpg" WIDTH="151" HEIGHT="33" alt="">
 		</p>
- 
-		<p class="sSmall sBlackMagick sCenter">
-			<img src="email-box.gif"    width="35"  height="35">
+
+		<p class="sCenter">
+			<img src="email-box.gif"    width="35" height="35" alt="">
 			Scrivi allo <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a>
 			se vuoi conoscere la posizione esatta delle tue case.<br><br>
-			<img src="TelefonoC164.gif" width="35" height="35">&nbsp;
-			oppure Telefona: <strong>0125 631175 - Cell. 347 0417409<br><br>
-			Sei il visitatore n°&nbsp;</strong>
+			<img src="TelefonoC164.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+
+			<b>Sei il visitatore n°&nbsp;</b>
 			<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220429794-vpk9u4gz3" border=0></a>
-			&nbsp;(Contenuto Aggiornato 30/04/2019)<br><br>
+			&nbsp;(Contenuto Aggiornato <time datetime="2019-04-30">30/04/2019</time>)<br>
 		</p>
-			</TD></TR></TABLE>
-		</TD></TR></TABLE>
-	</TD></TR></TABLE>
+
 </TD></TR></TABLE>
-<p class="sXXSmall sWhite sBold sCenter">
-	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati. 
+</TD></TR></TABLE>
+<footer>
+	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
 	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
-</p>
+</footer>
 </BODY>
 </HTML>

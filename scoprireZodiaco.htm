@@ -1,24 +1,20 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <title>Scorprire lo zodiaco - Studio Acquario</title>
 <link rel="icon" type="image/gif" href="favicon32.gif">
-<meta name="description" content="Studio Acquario: Scorprire lo zodiaco">
-<meta name="keywords" content="studio, acquario, astrologia, scoprire, zodiaco, segni, pianeti, elementi, oroscopo">
+<meta name="description" content="Studio Acquario: Scoprire lo zodiaco (Scoprire lo Zodiaco 1a Parte)">
+<meta name="keywords" lang="it" content="studio, acquario, astrologia, scoprire, zodiaco, segni, pianeti, elementi, oroscopo">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
 <meta name="language" content="it">
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="31/12/2018">
-<meta name="revised" content="30/08/2020">
-<meta property="og:title" content="Studio di Astrologia Acquario" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.studioacquario.it" />
-<meta property="og:image" content="https://www.studioacquario.it/I12Segni1.jpg" />
+<meta name="revised" content="13/10/2020">
 
-<style type="text/css"> 
+<style type="text/css">
 body {
 	scrollbar-arrow-color: #FFFFFF;
 	scrollbar-base-color: #9CCFFF; /* Columbia Blue */
@@ -31,12 +27,80 @@ body {
 	background-color: #EBF5FF; /* Alice Blue */
 	/* background-attachment: fixed; */
 }
-.sLogoBanner {
+h1 {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #000080; /* Navy */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 150%;
+}
+header {
 	font-size: xx-large;
 	font-weight: bold;
 	color: #FFFFFF; /* White */
 	text-shadow: 1px 1px 5px #0000FF; /* Blue */
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 25px;	/* vertical-align: middle; */
+	margin-bottom: 0;	/* vertical-align: middle; */
+	height: 70px;
+}
+footer {
+	font-size: xx-small;
+	font-weight: bold;
+	color: #000000; /* White */
+	text-shadow: 1px 1px 0px #FFFFFF; /* White */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
+}
+p {
+	font-size: small;
+	color: #000000; /* Black */
+	text-align: justify;
+	padding-left: 35px;
+	padding-right: 35px;
+	line-height: 125%;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.sNavigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 180%;
+}
+.sNavigation a {
+	font-size: medium;
+	font-weight: bold;
+	padding:.42em;
+	color: #FFFFFF; /* White */
+	margin-left: 2px;
+	background: #0000FF;  /* Blue */
+	text-decoration: none;
+}
+.sNavigation a:hover {
+	color: #000000; /* Black */
+	background: #00FFFF; /* Aqua */
+}
+#PagCorrente {
+	border-bottom: 2.5px solid #FF0000; /* Red */
+}
+.sHomeIcon {
+	vertical-align: bottom;
+	margin-bottom: 1px;
+	height: 25px;
+	width: 25px;
 }
 .sBorder1s {
 				border-style: solid;
@@ -44,9 +108,6 @@ body {
 }
 .sMonospace  {
 				font-family: 'Lucida Console', 'Courier New', Courier, Monaco, monospace;
-}
-.sBlack {
-				color: #000000;
 }
 .sNavy {
 				color: #000080;
@@ -66,39 +127,11 @@ body {
 .sRed {
 				color: #FF0000;
 }
-.sWhite {
-				color: #FFFFFF;
-}
-.sBGPigPink {
-				background-color: #F6D2DE;
-}
-.sBGWhite {
-				background-color: #FFFFFF;
-}
 .sBold {
 				font-weight: bold;
 }
 .sCenter {
 				text-align: center;
-}
-.sJustify {
-				text-align: justify;
-}
-.sPadding {
-				padding-left: 40px;
-				padding-right: 40px;
-}
-.sLineH125 {
-				line-height: 125%;
-}
-.sXXSmall {
-				font-size: xx-small;
-}
-.sXSmall {
-				font-size: x-small;
-}
-.sSmall {
-				font-size: small;
 }
 .sMedium {
 				font-size: medium;
@@ -113,111 +146,109 @@ body {
 				font-size: xx-large;
 }
 </style>
-</HEAD>
- 
-<BODY LINK="#5A9150" ALINK="#5A9150" VLINK="#5A9150">
-<p class="sLogoBanner">Studio di Astrologia "Acquario"</p>
+</head>
 
-<TABLE BACKGROUND="SZmiscellaneous61.jpg" CELLSPACING="8" CELLPADDING="0" BORDERCOLOR="#FFFFFF" BORDERCOLORDARK="#B1D7FB" WIDTH="95%" class="sBorder1s" align="center">
-<TR><TD>
+<body>
+<header>Studio di Astrologia "Acquario"</header>
 
-<TABLE BACKGROUND="SZmiscellaneous61strip2.jpg" CELLSPACING="8" CELLPADDING="0" BORDERCOLOR="#83BDF3" BORDERCOLORDARK="#3775AF" WIDTH="100%" BORDER="1">
-<TR><TD>
+<TABLE BACKGROUND="SZmiscellaneous61.jpg" CELLSPACING="8" CELLPADDING="8" class="sBorder1s"  BORDERCOLOR="#FFFFFF" BORDERCOLORDARK="#B1D7FB" WIDTH="95%"align="center">
+<TR><TD BACKGROUND="SZmiscellaneous61strip2.jpg">
 
-<TABLE BACKGROUND="SZmiscellaneous61.jpg" CELLSPACING="8" CELLPADDING="0" BORDERCOLOR="#FFFFFF" BORDERCOLORDARK="#B1D7FB" WIDTH="100%" BORDER="0">
-<TR><TD>
+<TABLE BACKGROUND="SZmiscellaneous61.jpg" CELLSPACING="8" CELLPADDING="5" BORDER="0" BORDERCOLOR="#FFFFFF" BORDERCOLORDARK="#B1D7FB" WIDTH="100%">
+<TR><TD background="SZmiscellaneous61tile.jpg">
 
-<table background="SZmiscellaneous61tile.jpg" cellspacing="5" cellpadding="0" bordercolordark="#F4A2CC" bordercolor="#FFFFFF" width="100%" border="0">
-<tr><td>
+		<h1>SCOPRIAMO I SEGRETI DELLO ZODIACO <span class="sRed">1ª</span> PARTE<br>
+			Segni, Pianeti ed Elementi</h1>
 
-		<p class="sXXLarge sNavy sBold sCenter">
-			SCOPRIAMO I SEGRETI DELLO ZODIACO <span class="sRed"> 1ª</span> PARTE
-		</p>
 		<p class="sCenter">
-			<img src="SZzodiac1.jpg"      width="356" height="358">&nbsp;
-			<img src="SZ.12SegniNeri.jpg" width="343" height="240">&nbsp;
-			<img src="SZzodiaco.jpg"      width="387" height="390">
+			<img src="SZzodiac1.jpg"      width="356" height="358" alt="Ruota Zodiaco 1">&nbsp;
+			<img src="SZ.12SegniNeri.jpg" width="343" height="240" alt="Segni Zodiacali Bianco e Nero">&nbsp;
+			<img src="SZzodiaco.jpg"      width="387" height="390" alt="Ruota Zodiaco 2">
 		</p>
 
-		<p class="sXLarge sNavy sBold sCenter sPadding">
+		<p class="sXLarge sNavy sBold sCenter">
 			<span class="sRed">12</span> SEGNI, <span class="sRed">10</span> PIANETI, <span class="sRed">4</span> ELEMENTI E DEI CALCOLI<br>
 			GEOMETRICI DAI QUALI DIPENDE UN POCO IL NOSTRO DESTINO
 		</p>
 
-		<p class="sBlack sSmall sCenter sBold">
-			<br><span class="sBGWhite">&nbsp;</span><span class="sBGPigPink">
-			<a href="scoprireZodiaco.htm">Segni/Pianeti/Elementi</a> |</span><span class="sBGWhite">
-			<a href="Ascendente.htm">Ascendente</a> |
-			<a href="Le12case.htm">Le 12 Case</a> |
-			<a href="pianetiSegni.htm">I Pianeti nei Segni</a> |
-			<a href="index.html">Pagina&nbsp;Iniziale</a>&nbsp;</span><br>
-		</p>
+		<nav class="sLarge sCenter">
+			<br>
+			<ul class="sNavigation">
+				<li><a href="scoprireZodiaco.htm" id="PagCorrente">Segni/Pianeti/Elementi</a></li>
+				<li><a href="Ascendente.htm">Ascendente</a></li>
+				<li><a href="pianetiSegni.htm">I Pianeti nei Segni</a></li>
+				<li><a href="Le12case.htm">Le 12 Case</a></li>
+				<li><a href="index.html"><img src="favicon32.gif" class="sHomeIcon" alt="Pagina Principale"></a></li>
+			</ul>
+			<br>
+		</nav>
 
-		<p class="sMedium sNavy sBold sCenter sPadding">
-			 Cosa significa la parola &quot;<span class="sRed">Oroscopo</span>&quot;  
+		<p class="sMedium sNavy sBold sCenter">
+			 Cosa significa la parola &quot;<span class="sRed">Oroscopo</span>&quot;
 		</p>
-		<p class="sSmall sBlack sJustify sPadding">
-			<span class="sRed sBold">Oroscopo</span> deriva dalla parola greca &quot;oroskòpos&quot; (che guarda l'ora), composto da: (tempo, ora) e 
+		<p>
+			<span class="sRed sBold">Oroscopo</span> deriva dalla parola greca &quot;oroskòpos&quot; (che guarda l'ora), composto da: (tempo, ora) e
 			&quot;skòpeo&quot; che guardo e osservo. <span class="sRed sBold">Oroscopo</span> è il segno zodiacale che sorge all'orizzonte nell'ora della
 			nostra nascita.<br>
-			Indica col termine <span class="sRed sBold">Oroscopo</span> la carta del cielo o tema natale. Al momento della nascita gli astri si trovano in 
-			una certa posizione in un segno zodiacale, formando fra di essi degli aspetti armoniosi o dissonanti. 
+			Indica col termine <span class="sRed sBold">Oroscopo</span> la carta del cielo o tema natale. Al momento della nascita gli astri si trovano in
+			una certa posizione in un segno zodiacale, formando fra di essi degli aspetti armoniosi o dissonanti.
 		</p>
-		<p class="sMedium sNavy sBold sCenter sPadding">
+		<p class="sMedium sNavy sBold sCenter">
 			<span class="sRed">ASCENDENTE</span> = Significato del nostro <span class="sRed">Io</span>
-		<p class="sSmall sBlack sJustify sPadding">
+		<p>
 			Delinea la <span class="sRed sBold">1°</span> casa, ogni casa a un significato particolare, l'<span class="sRed sBold">Ascendente</span> indica
 			come si affronta e si vive la vita, l'aspetto fisico e la costituzione.<br><br>
 			<span class="sMonospace"><span class="sRed sBold">I&nbsp;&nbsp;&nbsp;</span> Casa =</span> Vita, personalità e carattere, vitalità, volontà, costituzione fisica, aspetto esteriore.<br>
-			<span class="sMonospace"><strong>II&nbsp;&nbsp;</strong> Casa =</span> Beni materiali, patrimonio, guadagni, denaro, banca, abilità al lavoro, talento, fortuna.<br>
-			<span class="sMonospace"><strong>III&nbsp;</strong> Casa =</span> L'intelligenza, l'entourage, i piccoli viaggi, studi inferiori, comunicazione, parenti, vicini.<br>
+			<span class="sMonospace"><b>II&nbsp;&nbsp;</b> Casa =</span> Beni materiali, patrimonio, guadagni, denaro, banca, abilità al lavoro, talento, fortuna.<br>
+			<span class="sMonospace"><b>III&nbsp;</b> Casa =</span> L'intelligenza, l'entourage, i piccoli viaggi, studi inferiori, comunicazione, parenti, vicini.<br>
 			<span class="sMonospace"><span class="sRed sBold">IV&nbsp;&nbsp;</span> Casa =</span> La casa, famiglia d'origine, il destino genitori, il passato, inizio e fine della vita, le radici.<br>
-			<span class="sMonospace"><strong>V&nbsp;&nbsp;&nbsp;</strong> Casa =</span> Amore, figli, procreazione, sesso, svaghi, creatività, gioco, sport, hobby, insegnamento.<br>
-			<span class="sMonospace"><strong>VI&nbsp;&nbsp;</strong> Casa =</span> Salute, lavoro, quotidiano, collaboratori, colleghi, servitù, alimentazione, la medicina.<br>
-			<span class="sMonospace"><span class="sRed sBold">VII&nbsp;</span> Casa =</span> Matrimonio, coniuge, associazioni e contratti, convivenza, 
+			<span class="sMonospace"><b>V&nbsp;&nbsp;&nbsp;</b> Casa =</span> Amore, figli, procreazione, sesso, svaghi, creatività, gioco, sport, hobby, insegnamento.<br>
+			<span class="sMonospace"><b>VI&nbsp;&nbsp;</b> Casa =</span> Salute, lavoro, quotidiano, collaboratori, colleghi, servitù, alimentazione, la medicina.<br>
+			<span class="sMonospace"><span class="sRed sBold">VII&nbsp;</span> Casa =</span> Matrimonio, coniuge, associazioni e contratti, convivenza,
 			giustizia, società, gli altri.<br>
-			<span class="sMonospace"><strong>VIII</strong> Casa =</span> Morte, rinascita, eredità morale e materiale, pensione, perdite, segreti , occulto, incidenti.<br>
-			<span class="sMonospace"><strong>IX&nbsp;&nbsp;</strong> Casa =</span> L'estero, i lunghi viaggi, la religione, la politica, studi superiori, intelligenza, le lingue.<br>
+			<span class="sMonospace"><b>VIII</b> Casa =</span> Morte, rinascita, eredità morale e materiale, pensione, perdite, segreti , occulto, incidenti.<br>
+			<span class="sMonospace"><b>IX&nbsp;&nbsp;</b> Casa =</span> L'estero, i lunghi viaggi, la religione, la politica, studi superiori, intelligenza, le lingue.<br>
 			<span class="sMonospace"><span class="sRed sBold">X&nbsp;&nbsp;&nbsp;</span> Casa =</span> Carriera, destino, ascesa, potere, onori, lavoro scelto per vocazione. Padre e madre.<br>
-			<span class="sMonospace"><strong>XI&nbsp;&nbsp;</strong> Casa =</span> Equilibrio, amicizie, progetti, speranze, ideali, la radio, la TV, il telefono, la pubblicità.<br>
-			<span class="sMonospace"><strong>XII&nbsp;</strong> Casa =</span> Prove della vita, rinunce e sacrifici, malattie, luoghi chiusi, occultismo, nemici, Karma.<br><br>
-			Le case segnate in <span class="sRed sBold">rosso</span> sono di sostegno nel tema di nascita, quindi sono le più importanti 
-			nell'<span class="sRed sBold">OROSCOPO</span>.  
+			<span class="sMonospace"><b>XI&nbsp;&nbsp;</b> Casa =</span> Equilibrio, amicizie, progetti, speranze, ideali, la radio, la TV, il telefono, la pubblicità.<br>
+			<span class="sMonospace"><b>XII&nbsp;</b> Casa =</span> Prove della vita, rinunce e sacrifici, malattie, luoghi chiusi, occultismo, nemici, Karma.<br><br>
+			Le case segnate in <span class="sRed sBold">rosso</span> sono di sostegno nel tema di nascita, quindi sono le più importanti
+			nell'<span class="sRed sBold">OROSCOPO</span>.
 		</p>
 
-		<p class="sLarge sNavy sBold sCenter sPadding">
+		<p class="sLarge sNavy sBold sCenter">
 			<br>
 			I <span class="sRed">10</span> PIANETI: IN ORDINE DI DISTANZA DAL <span class="sRed">SOLE</span>
 		</p>
 		<p class="sCenter">
-			<img src="SZsolare.gif"     width="360" height="250">
-			<img src="SZpianeti.jpg"    width="406" height="293"><br><br>
-			<img src="pianetibarra.gif" width="510" height="35">
+			<img src="SZsolare.gif"     width="360" height="250" alt="Pianeti con Sole">
+			<img src="SZpianeti.jpg"    width="406" height="293" alt="Pianeti">
+			<br><br>
+			<img src="pianetibarra.gif" width="510" height="35"  alt="Barra dei Pianeti">
 		</p>
 
-		<p class="sSmall sBlack sJustify sPadding">
+		<p>
 			Il <span class="sRed sBold">SOLE</span> e la <span class="sRed sBold">LUNA</span> in Astrologia sono considerati dei pianeti e chiamati i
 			luminari, sono i più importanti in un <span class="sRed sBold">OROSCOPO</span>.
 		</p>
 
 		<p class="sMedium sRed sBold sCenter">SOLE</p>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sRed sBold">SOLE</span>: <span class="sNavy sBold">Io voglio</span> = <span class="sRed">La sua natura è calda e secca, costruttiva</span><br>
 			Simbolo della vita, della luce e calore. È l'Io reale psicologico, l'ambizione, l'orgoglio, la vitalità, l'espansione, la parte attiva e la
 			personalità. È la scelta che si compie nella vita, la consapevolezza di se, l'organizzazione, la creatività, il gioco, la gloria. L'uomo, il
 			padre, il marito, fratello maggiore, partner, socio, superiore.
 			&nbsp;--&gt;&nbsp;<span class="sNewMidnightBlue sBold">L'età adulta dai 30 ai 40 anni</span><br>
-			<span class="sRed sBold">SOLE</span> <span class="sBlue sBold">positivo</span>: generosità, digni tà, forza di volontà, coraggio fisico e 
+			<span class="sRed sBold">SOLE</span> <span class="sBlue sBold">positivo</span>: generosità, digni tà, forza di volontà, coraggio fisico e
 			morale, onestà. Distinzione ed eleganza, successo e benessere materiale, nobiltà di sentimenti, autorità. Intelligenza sintetica, grande fiducia
 			in se, doti innate di comando.<br>
-			<span class="sRed sBold">SOLE negativo</span>: indebolimento della personalità, vanità, egoismo, arroganza, dispotismo, lotte e bluff, 
+			<span class="sRed sBold">SOLE negativo</span>: indebolimento della personalità, vanità, egoismo, arroganza, dispotismo, lotte e bluff,
 			tirannia. Mania di grandezza, eccessivo orgoglio.<br>
 			<span class="sNewMidnightBlue sBold">GOVERNA</span>: il cuore, la colonna vertebrale, le arterie, la circolazione, la fronte, l'occhio sinistro
 			per la donna, l'occhio destro per l'uomo.
 		</p>
 
 		<p class="sMedium sRed sBold sCenter">LUNA</p>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sRed sBold">LUNA</span>: <span class="sNavy sBold">Io sento</span> = <span class="sRed">La natura è flemmatica, fredda e umida</span><br>
 			È l'Io sensibile, l'intuizione, la fantasia, il cambiamento, il romanticismo. L' emozione, l'intimo, la memoria, la sensibilità, l'immaginazione,
 			la ricettività, gli stati d'animo, la poesia, la dolcezza di carattere, la socievolezza, la genialità artistica. La vita amorosa, il sonno e il
@@ -225,83 +256,83 @@ body {
 			&nbsp;--&gt;&nbsp;<span class="sNewMidnightBlue sBold">L'età infantile dai 0 ai 6 anni</span><br>
 			<span class="sRed sBold">LUNA</span> <span class="sBlue sBold">positiva</span>: calma e tranquillità, simpatia e affettuosità, buona memoria,
 			tenacia. Bisogno di appoggio e di compagnia. Temperamento passivo, bonario, poco dinamico. Amore della famiglia, del focolare, della musica.<br>
-			<span class="sRed sBold">LUNA negativa</span>: timidezza, indolenza, volubilità, pigrizia, caos, ansietà e malinconia. Capricciosità, 
+			<span class="sRed sBold">LUNA negativa</span>: timidezza, indolenza, volubilità, pigrizia, caos, ansietà e malinconia. Capricciosità,
 			passività, suscettibilità e impressionabilità.<br>
 			<span class="sNewMidnightBlue sBold">GOVERNA</span>: stomaco, seno e utero, la digestione, gli umori del corpo, la gestazione. Occhio sinistro
 			per l'uomo, destro per la donna.
 		</p>
 
 		<p class="sMedium sRed sBold sCenter">MERCURIO</p>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sRed sBold">MERCURIO</span>: <span class="sNavy sBold">Io sono</span> = <span class="sRed">La natura è convertibile, fredda e secca</span><br>
-			È l'intelligenza, la mente, lo studio, la parola, l'astuzia, l'ingegno, il pensiero. La ragione, l'apprendimento, il commercio, la memoria, 
-			gli scritti, la stampa, l'abilità. la diplomazia, la curiosità, i viaggi. La gioventù, i fratelli minori, i cugini, compagni, vicini, 
+			È l'intelligenza, la mente, lo studio, la parola, l'astuzia, l'ingegno, il pensiero. La ragione, l'apprendimento, il commercio, la memoria,
+			gli scritti, la stampa, l'abilità. la diplomazia, la curiosità, i viaggi. La gioventù, i fratelli minori, i cugini, compagni, vicini,
 			collaboratori, viaggiatori.
 			&nbsp;--&gt;&nbsp;<span class="sNewMidnightBlue sBold">L'età scolare dai 6 ai 14 anni</span><br>
 			<span class="sRed sBold">MERCURIO</span> <span class="sBlue sBold">positivo</span>: versatilità, eloquenza, abilità mentale, ingegno, sveltezza.
 			Buona manualità, capacità oratorie, doni per le lingue e inventiva, aperto alle novità e ai nuovi orizzonti del sapere. Prontezza di riflessi,
 			doti per la letteratura, per il commercio, studi scientifici (Telefono, Radio, TV, Stampa).<br>
-			<span class="sRed sBold">MERCURIO negativo</span>: doppiezza, superficialità, menzogna, polemica, pettegolezzo, furbizia, astuzia, vanità. 
+			<span class="sRed sBold">MERCURIO negativo</span>: doppiezza, superficialità, menzogna, polemica, pettegolezzo, furbizia, astuzia, vanità.
 			Incapacità di esprimersi in modo coerente, cleptomania, calunnia, nervosismo, disonestà, scarsa onestà.<br>
-			<span class="sNewMidnightBlue sBold">GOVERNA</span>: il sistema nervoso, la lingua, l'intestino, il cervello, i riflessi, il tatto. 
+			<span class="sNewMidnightBlue sBold">GOVERNA</span>: il sistema nervoso, la lingua, l'intestino, il cervello, i riflessi, il tatto.
 			La respirazione, i bronchi e polmoni, spalle, braccia e mani.
 		</p>
 
 		<p class="sMedium sRed sBold sCenter">VENERE</p>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
-			<span class="sRed sBold">VENERE</span>: <span class="sNavy sBold">Io Amo</span> = <span class="sRed"><strong>Fortuna minor</strong>. La natura è moderata e umida</span><br>
-			È l'amore, la vita sentimentale, la simpatia, l'affabilità, il lusso, la gioia, il fascino, la grazia, la socievolezza, la dolcezza. 
-			È affettuosa, pacifica, gentile ed espressiva. Bellezza fisica, armonia, arte e voluttà. La vita mondana e gli svaghi. Per l'uomo è la donna 
+		<p>
+			<span class="sRed sBold">VENERE</span>: <span class="sNavy sBold">Io Amo</span> = <span class="sRed"><b>Fortuna minor</b>. La natura è moderata e umida</span><br>
+			È l'amore, la vita sentimentale, la simpatia, l'affabilità, il lusso, la gioia, il fascino, la grazia, la socievolezza, la dolcezza.
+			È affettuosa, pacifica, gentile ed espressiva. Bellezza fisica, armonia, arte e voluttà. La vita mondana e gli svaghi. Per l'uomo è la donna
 			verso cui è attirato, l'amante, le sorelle e le figlie, le amiche.
 			&nbsp;--&gt;&nbsp;<span class="sNewMidnightBlue sBold">L'età giovanile dai 14 ai 20 anni</span><br>
 			<span class="sRed sBold">VENERE</span> <span class="sBlue sBold">positiva</span>: dona raffinatezza, charme, tatto, buon gusto, un bell'aspetto,
 			talento artistico (poesia, musica, canto e teatro, pittura con Giove). Amabile, gioiosa e caritatevole. Attività nella moda. Buon matrimonio.<br>
-			<span class="sRed sBold">VENERE negativa</span>: frivolezza, leggerezza, vanità, pigrizia, gelosia, volubilità e indifferenza. Incapacità a 
+			<span class="sRed sBold">VENERE negativa</span>: frivolezza, leggerezza, vanità, pigrizia, gelosia, volubilità e indifferenza. Incapacità a
 			farsi amare.<br>
 			<span class="sNewMidnightBlue sBold">GOVERNA</span>: reni, ovaie, organi genitali interni. Ventre, gola, pelle, voce, capelli, il seno con
 			<span class="sRed sBold">Luna</span>. La tiroide, la circolazione venosa, la regione lombare.
 		</p>
 
-		<p class="sMedium sRed sBold sCenter">MARTE</p>  
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p class="sMedium sRed sBold sCenter">MARTE</p>
+		<p>
 			<span class="sRed sBold">MARTE</span>: <span class="sNavy sBold">Io agisco</span> = <span class="sRed">La natura è collerica, calda e secca</span><br>
-			Coraggio e aggressività, energia e grande volontà e forza fisica. Dinamismo, combattività, impulsività, audacia, franchezza, vitalità, agilità 
-			e slancio, lotta, azione, violenza, irruenza. Intraprendenza, prepotenza, passionalità e brama. Per una donna è l'uomo verso cui è attirata, 
-			l'uomo ideale. Il marito, il fratello maggiore, i militari, il rivale, gli sportivi, i poliziotti.      
+			Coraggio e aggressività, energia e grande volontà e forza fisica. Dinamismo, combattività, impulsività, audacia, franchezza, vitalità, agilità
+			e slancio, lotta, azione, violenza, irruenza. Intraprendenza, prepotenza, passionalità e brama. Per una donna è l'uomo verso cui è attirata,
+			l'uomo ideale. Il marito, il fratello maggiore, i militari, il rivale, gli sportivi, i poliziotti.
 			&nbsp;--&gt;&nbsp;<span class="sNewMidnightBlue sBold">L'età adulta dai 20 ai 30 anni</span><br>
 			<span class="sRed sBold">MARTE</span> <span class="sBlue sBold">positivo</span>: sicurezza, coraggio, franchezza, senso del comando, irruente,
-			battagliero, focoso, passionale. Amore della libertà, dello sport, dell'attività realizzatrice. Mente imperiosa, versatile, generosa. 
+			battagliero, focoso, passionale. Amore della libertà, dello sport, dell'attività realizzatrice. Mente imperiosa, versatile, generosa.
 			Autocontrollo e grande resistenza fisica. Potenza sessuale.<br>
-			<span class="sRed sBold">MARTE negativo</span>: temperamento iroso e violento fino alla crudeltà, furibondo e caparbio. Collera e ribellione, 
+			<span class="sRed sBold">MARTE negativo</span>: temperamento iroso e violento fino alla crudeltà, furibondo e caparbio. Collera e ribellione,
 			imprudenza e prepotenza, odio e gelosia, fanatismo. Spirito di contraddizione.<br>
-			<span class="sNewMidnightBlue sBold">GOVERNA</span>: il sistema muscolare, gli organi genitali esterni, le ghiandole surrenali, i globuli 
+			<span class="sNewMidnightBlue sBold">GOVERNA</span>: il sistema muscolare, gli organi genitali esterni, le ghiandole surrenali, i globuli
 			rossi, il sangue, la bile, la testa, il naso, i muscoli, la vescica, i reni con <span class="sRed sBold">Venere</span>.
 		</p>
 
-		<p class="sMedium sRed sBold sCenter">GIOVE</p>  
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
-			<span class="sRed sBold">GIOVE</span>: <span class="sNavy sBold">Io gioisco</span> = <span class="sRed"><strong>La grande fortuna</strong>. La natura elettrica, calda e umida</span><br>
-			a ricchezza, la bontà, la saggezza, la giustizia, l'altruismo. La lealtà, la gioia di vivere, il prestigio, l'ambizione, il successo, la 
+		<p class="sMedium sRed sBold sCenter">GIOVE</p>
+		<p>
+			<span class="sRed sBold">GIOVE</span>: <span class="sNavy sBold">Io gioisco</span> = <span class="sRed"><b>La grande fortuna</b>. La natura elettrica, calda e umida</span><br>
+			a ricchezza, la bontà, la saggezza, la giustizia, l'altruismo. La lealtà, la gioia di vivere, il prestigio, l'ambizione, il successo, la
 			generosità, l'equilibrio, la dignità, l'abbondanza, l'avventura, l'esplorazione i lunghi viaggi, gli studi superiori, l'università, la religione
-			gli stranieri. Lo zio, il tutore, il giudice, il prete, il cardinale, il vescovo, l'avvocato, il ministro.      
+			gli stranieri. Lo zio, il tutore, il giudice, il prete, il cardinale, il vescovo, l'avvocato, il ministro.
 			&nbsp;--&gt;&nbsp;<span class="sNewMidnightBlue sBold">L'età matura dai 40 ai 60 anni</span><br>
 			<span class="sRed sBold">GIOVE</span> <span class="sBlue sBold">positivo</span>: dona ottimismo, apertura mentale, protezione e dignità, lealtà.
 			Successo nella vita, stima e onori, ordine e misura, occasioni, riconoscimento e senso sociale, rispetto della forma.<br>
 			<span class="sRed sBold">GIOVE negativo</span>: presunzione, arroganza, suscettibilità, cieco ottimismo, orgoglio, sfiducia, golosità, eccessi
 			d'ogni genere, insoddisfazione, ostentazione, mania di grandezza, prodigalità, presunzione e auto indulgenza, ubriacone.<br>
-			<span class="sNewMidnightBlue sBold">GOVERNA</span>: sangue, circolazione arteriosa, fegato, l'oralità. Polmoni, costole, asma, voce con 
+			<span class="sNewMidnightBlue sBold">GOVERNA</span>: sangue, circolazione arteriosa, fegato, l'oralità. Polmoni, costole, asma, voce con
 			<span class="sRed sBold">Venere</span>, cosce, anche, femore. Adiposità e obesità, foruncoli, ascessi, cirrosi, diabete.
 		</p>
 
-		<p class="sMedium sRed sBold sCenter">SATURNO</p> 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p class="sMedium sRed sBold sCenter">SATURNO</p>
+		<p>
 			<span class="sRed sBold">SATURNO</span>: <span class="sNavy sBold">Io so</span> = <span class="sRed">La natura è fredda e secca è la grande sfortuna</span><br>
 			Il destino, la carriera, il tempo, il fato, i ritardi. La pazienza, le rinunce e gli ostacoli, la timidezza e la tristezza, la diffidenza e la
-			solitudine, le limitazioni, le difficoltà, il Karma, le prove. Rigore, sobrietà, severità e cautela. Il padre, il nonno, gli avi, i suoceri, 
-			il medico e il sacerdote, il minatore, il missionario.    
+			solitudine, le limitazioni, le difficoltà, il Karma, le prove. Rigore, sobrietà, severità e cautela. Il padre, il nonno, gli avi, i suoceri,
+			il medico e il sacerdote, il minatore, il missionario.
 			&nbsp;--&gt;&nbsp;<span class="sNewMidnightBlue sBold">L'età senile dai 60 anni in poi</span><br>
-			<span class="sRed sBold">SATURNO</span> <span class="sBlue sBold">positivo</span>: serietà, onestà, saggezza, laboriosità, concretezza, 
-			<em>self control</em>, prudenza, perseveranza. Molto logico, studioso, ragionatore e perfezionista, autoritario e coscienzioso, senso di 
+			<span class="sRed sBold">SATURNO</span> <span class="sBlue sBold">positivo</span>: serietà, onestà, saggezza, laboriosità, concretezza,
+			<em>self control</em>, prudenza, perseveranza. Molto logico, studioso, ragionatore e perfezionista, autoritario e coscienzioso, senso di
 			responsabilità. Preciso, costante, costruttivo, rigido nei giudizi, metodico e profondo.<br>
 			<span class="sRed sBold">SATURNO negativo</span>: introversione, freddezza, arrivismo, pessimismo, noie, difficoltà, malinconia e diffidenza,
 			intolleranza, testardaggine durezza e inibizione. Indifferenza per il prossimo e invidia.<br>
@@ -309,251 +340,261 @@ body {
 			Articolazioni, ginocchia, schiena, scheletro.
 		</p>
 
-		<p class="sMedium sRed sBold sCenter">URANO</p> 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p class="sMedium sRed sBold sCenter">URANO</p>
+		<p>
 			<span class="sRed sBold">URANO</span>: <span class="sNavy sBold">Io libero</span> = <span class="sRed">Natura eccentrica, elettrica e variabile</span><br>
-			Scienza moderna, originalità, invenzione e innovazione, la libertà e il progresso. La forza dinamica, Imprevisto, versatilità, indipendenza. 
+			Scienza moderna, originalità, invenzione e innovazione, la libertà e il progresso. La forza dinamica, Imprevisto, versatilità, indipendenza.
 			Astronomia, astrologia, psicologia, le scienze astratte, attività di ricerca, il computer, il cinema, nelle ferrovie, nella televisione, nella
-			radio. Lo spazio, la cosmonautica, l'elettronica, la fantascienza e internet, nelle telecomunicazioni. Gli amici, i colleghi, gli occultisti 
+			radio. Lo spazio, la cosmonautica, l'elettronica, la fantascienza e internet, nelle telecomunicazioni. Gli amici, i colleghi, gli occultisti
 			in genere, l'inventore, il solitario.<br>
 			<span class="sRed sBold">URANO</span> <span class="sBlue sBold">positivo</span>: spirito umanitario, generosità, genialità, gentilezza e
-			sincerità. Indipendenza, socievolezza e altruismo, decisionalità, idee progressiste e modi bruschi. Prontezza di riflessi, volontà, 
+			sincerità. Indipendenza, socievolezza e altruismo, decisionalità, idee progressiste e modi bruschi. Prontezza di riflessi, volontà,
 			insofferenza per le limitazioni. Interesse per la tecnica.<br>
 			<span class="sRed sBold">URANO negativo</span>: eccentricità, bizzosità, anticonformismo, disordine, impazienza, umore e opinioni instabili,
-			impulsività, squilibri nervosi (tic, spasmi). Deviazione sessuale, cambiamenti repentini. Follia, ribellione e stravaganza, indecisione e 
+			impulsività, squilibri nervosi (tic, spasmi). Deviazione sessuale, cambiamenti repentini. Follia, ribellione e stravaganza, indecisione e
 			violenza. Rinuncia nell'azione pratica.<br>
-			<span class="sNewMidnightBlue sBold">GOVERNA</span>: sistema nervoso, le caviglie (tendenza a slogature e crampi), anemia, ghiandole, ernie, 
+			<span class="sNewMidnightBlue sBold">GOVERNA</span>: sistema nervoso, le caviglie (tendenza a slogature e crampi), anemia, ghiandole, ernie,
 			interventi chirurgici a carattere improvviso.
 		</p>
 
-		<p class="sMedium sRed sBold sCenter">NETTUNO</p> 
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p class="sMedium sRed sBold sCenter">NETTUNO</p>
+		<p>
 			<span class="sRed sBold">NETTUNO</span>: <span class="sNavy sBold">Io credo</span> =  <span class="sRed">.</span><br>
 			È ispirazione, sacrificio, fede, pietà, sogno, illusione e sofferenza. La metamorfosi, il misticismo e il visionario. Sensibilità, romanticismo
-			e immaginazione, genialità, cambiamenti totali, tendenze dittatoriali, rassegnazione, confusione e caos. Occultista, medium, guaritore, 
+			e immaginazione, genialità, cambiamenti totali, tendenze dittatoriali, rassegnazione, confusione e caos. Occultista, medium, guaritore,
 			astrologo, i viaggi sull'acqua e per mare. Attività medica, albergatore, in ospedali e asili.<br>
 			<span class="sRed sBold">NETTUNO</span> <span class="sBlue sBold">positivo</span>: senso artistico, amor e della musica, poesia, pittura, danza,
 			canto, medianità, sensitività, medicina e politica. Amabile e disponibile un po' pigro fisicamente. Intuizione e ispirazione creativa vicina al
 			genio o chiaroveggenza. Interesse per le scienze occulte.<br>
 			<span class="sRed sBold">NETTUNO negativo</span>: falsità, sciatteria, ingenuità, disordine, manca d'energia, asocialità, apatia, timidezza.
 			Tendenza alle illusioni e ai miraggi, lunatico.<br>
-			<span class="sNewMidnightBlue sBold">GOVERNA</span>: piedi, midollo spinale, psiche, droga, alcool, tabacco, etere, farmaci, veleni. Il 
+			<span class="sNewMidnightBlue sBold">GOVERNA</span>: piedi, midollo spinale, psiche, droga, alcool, tabacco, etere, farmaci, veleni. Il
 			sonnambulismo, le intossicazioni.
 		</p>
 
 		<p class="sMedium sRed sBold sCenter">PLUTONE</p>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			<span class="sRed sBold">PLUTONE</span>: <span class="sNavy sBold">Io creo</span> =  <span class="sRed">.</span><br>
-			È il s imbolo della forza e della volontà creatrice. Violenza, distruzione e rigenerazione. L'evoluzione, la metamorfosi, il subconscio, le 
-			cose nascoste, la morte e la rinascita, le forze sotterranee, morte e rinascita, l'introversione e la sessualità psichica. Trasforma e cambia. 
+			È il simbolo della forza e della volontà creatrice. Violenza, distruzione e rigenerazione. L'evoluzione, la metamorfosi, il subconscio, le
+			cose nascoste, la morte e la rinascita, le forze sotterranee, morte e rinascita, l'introversione e la sessualità psichica. Trasforma e cambia.
 			Il capo, pioniere, il mago, il contestatore.<br>
 			<span class="sRed sBold">PLUTONE</span> <span class="sBlue sBold">positivo</span>: ambizione, magnetismo, tendenze dittatoriali, cambiamenti
 			totali, creatività e fecondità, poteri occulti, magia, medianità, ricchezza. Sete di potere ed energia, spirito pionieristico.<br>
-			<span class="sRed sBold">PLUTONE negativo</span>: autodistruzione, amore e morte, depressione, ribellione, sadismo, brutalità, tentazioni, 
+			<span class="sRed sBold">PLUTONE negativo</span>: autodistruzione, amore e morte, depressione, ribellione, sadismo, brutalità, tentazioni,
 			e sentimenti subdoli.<br>
 			<span class="sNewMidnightBlue sBold">GOVERNA</span>: il sesso i testicoli, gli ormoni androgeni ed estrogeni, le gonadi, le nevrosi il nucleo
 			delle cellule, le tossine.
 		</p>
 
-		<p class="sLarge sNavy sBold sCenter sPadding">
+		<p class="sLarge sNavy sBold sCenter">
 			<br>
 			I <span class="sRed">10</span> Segni dello Zodiaco si differenziano fra loro in un rapporto Binario e si basano sulla Polarità
 		</p>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
-			<strong><span class="sRed">FUOCO</span> - <span class="sMaroon">ARIA</span> = <span class="sNewMidnightBlue">Maschili</span> - 
+		<p>
+			<b><span class="sRed">FUOCO</span> - <span class="sMaroon">ARIA</span> = <span class="sNewMidnightBlue">Maschili</span> -
 			<span class="sRed">attivi</span> - <span class="sRed">positivi</span><br>
 			<span class="sRed">ARIETE</span> - <span class="sMaroon">GEMELLI</span> - <span class="sRed">LEONE</span> - <span class="sMaroon">BILANCIA</span> - <span class="sRed">SAGITTARIO</span> - <span class="sMaroon">ACQUARIO</span> = <span class="sNewMidnightBlue">Estroversione</span>.
-			Qualità: <span class="sRed">Attore</span></strong><br>
+			Qualità: <span class="sRed">Attore</span></b><br>
 			Reagisce con forza ed energia, positività e spontaneità, attivo, esuberante e sicuro della posizione nella vita, è dinamico e impulsivo, vivace,
-			elettrico, comunicativo, socievole e coraggioso. Curiosità, volontà di emergere. Spirito d'intraprendenza. Forte desiderio per le situazioni 
+			elettrico, comunicativo, socievole e coraggioso. Curiosità, volontà di emergere. Spirito d'intraprendenza. Forte desiderio per le situazioni
 			eccitanti, incline a dirigere le proprie energie verso il mondo esterno. Talento per l'azione, attitudini al comando.
 			<u>Reazione al Karma</u>, al destino e agli avvenimenti.
 		</p>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
-			<strong><span class="sGreen">TERRA</span> - <span class="sBlue">ACQUA</span> = <span class="sRed">Femminili</span> - 
+		<p>
+			<b><span class="sGreen">TERRA</span> - <span class="sBlue">ACQUA</span> = <span class="sRed">Femminili</span> -
 			<span class="sNewMidnightBlue">passivi</span> - <span class="sNewMidnightBlue">negativi</span><br>
 			<span class="sGreen">TORO</span> - <span class="sBlue">CANCRO</span> - <span class="sGreen">VERGINE</span> - <span class="sBlue">SCORPIONE</span>
 			- <span class="sGreen">CAPRICORNO</span> - <span class="sBlue">PESCI</span> = <span class="sNewMidnightBlue">Introversione</span>.
-			Qualità: <span class="sBlue">Spettatore</span></strong><br>
-			Pazienza, prudenza, diplomazia e discrezione, facile adattamento, elasticità e inerzia. Cautela, tendenza a controllare i propri sentimenti. 
-			Testardaggine, serietà e senso dell'opportunità, della misura e serietà. Calmo, ricettivo, magnetico, sensibile e altruista, si lascia 
-			influenzare dall'entourage e dalle circostanze. Vita meditativa e riservatezza, contemplativo, ha bisogno di osservare e di valutare le 
+			Qualità: <span class="sBlue">Spettatore</span></b><br>
+			Pazienza, prudenza, diplomazia e discrezione, facile adattamento, elasticità e inerzia. Cautela, tendenza a controllare i propri sentimenti.
+			Testardaggine, serietà e senso dell'opportunità, della misura e serietà. Calmo, ricettivo, magnetico, sensibile e altruista, si lascia
+			influenzare dall'entourage e dalle circostanze. Vita meditativa e riservatezza, contemplativo, ha bisogno di osservare e di valutare le
 			esperienze della vita. <u>Non reagisce al Karma</u>, tende a subire il destino e immagazzina impressioni.
 		</p>
-		<p class="sSmall sNewMidnightBlue sBold sCenter">
+		<p class="sNewMidnightBlue sBold sCenter">
 			La classificazione è formulata dalla ritmicità delle stagioni ed è basata sulla quadruplicità
 		</p>
+
 		<p class="sCenter">
-			<img src="AS.1ariete.jpg"   width="117" height="119">&nbsp;
-			<img src="AS.4cancro.gif"   width="109" height="102">&nbsp;
-			<img src="AS.7bilancia.gif" width="117" height="104">&nbsp;
-			<img src="AS.10caprico.gif" width="104" height="99">
+			<br>
+			<img src="AS.1ariete.jpg"   width="117" height="119" alt="Ariete">&nbsp;
+			<img src="AS.4cancro.gif"   width="109" height="102" alt="Cancro">&nbsp;
+			<img src="AS.7bilancia.gif" width="117" height="104" alt="Bilancia">&nbsp;
+			<img src="AS.10caprico.gif" width="104" height="99"  alt="Capricorno">
 		</p>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
-			<strong><span class="sNewMidnightBlue">CARDINALI</span> = <span class="sRed">ARIETE</span> - <span class="sBlue">CANCRO</span> - 
-			<span class="sMaroon">BILANCIA</span> - <span class="sGreen">CAPRICORNO</span>: <span class="sRed">Sentimento</span></strong><br>
+		<p>
+			<b><span class="sNewMidnightBlue">CARDINALI</span> = <span class="sRed">ARIETE</span> - <span class="sBlue">CANCRO</span> -
+			<span class="sMaroon">BILANCIA</span> - <span class="sGreen">CAPRICORNO</span>: <span class="sRed">Sentimento</span></b><br>
 			<u>Inizio di stagioni</u>. <u>Espressione diretta delle energie</u>.
 			&nbsp;--&gt;&nbsp;<span class="sNewMidnightBlue sBold">Perché non riesco a trovare pace ?</span><br>
-			<span class="sNewMidnightBlue sBold">Carattere</span> forte con tendenza a perdere molto presto la pazienza. È un segno acuto, audace, con 
-			spirito d'iniziativa, ama i contatti con il prossimo e odia le situazioni statiche. Cerca di ottenere dalla vita tutto quello che vuole, 
-			spingendosi ad una posizione di preminenza nell'attività e assicurandosi che la sua voce si distingua in un qualche modo tra la folla. 
-			Considerato come il motore d'avviamento, l'iniziatore dello zodiaco e spesso può sembrare egocentrico. Ha sempre delle iniziative per ciò che 
+			<span class="sNewMidnightBlue sBold">Carattere</span> forte con tendenza a perdere molto presto la pazienza. È un segno acuto, audace, con
+			spirito d'iniziativa, ama i contatti con il prossimo e odia le situazioni statiche. Cerca di ottenere dalla vita tutto quello che vuole,
+			spingendosi ad una posizione di preminenza nell'attività e assicurandosi che la sua voce si distingua in un qualche modo tra la folla.
+			Considerato come il motore d'avviamento, l'iniziatore dello zodiaco e spesso può sembrare egocentrico. Ha sempre delle iniziative per ciò che
 			riguarda la parte fisica dell'essere umano ma è anche impaziente, vuole ottenere le cose velocemente, ama la vita avventurosa. Si dimostra più
 			autoritario e interessato ai cambiamenti che influenzano l'ambiente. Tende ad imporsi in modo diverso, è quindi collocato più avanti rispetto
 			agli altri. In particolare l'<span class="sRed sBold">Ariete</span> che tende al comando e al potere. Il <span class="sBlue sBold">Cancro</span>
-			controlla emozioni, la famiglia e la casa. La <span class="sMaroon sBold">Bilancia</span> cerca il dominio nei rapporti a due e nel sociale. 
+			controlla emozioni, la famiglia e la casa. La <span class="sMaroon sBold">Bilancia</span> cerca il dominio nei rapporti a due e nel sociale.
 			Il <span class="sGreen sBold">Capricorno</span> controlla e sfrutta l'ambiente materiale.
 		</p>
+
 		<p class="sCenter">
-			<img src="AS.2toro.gif"     width="104" height="104">&nbsp;
-			<img src="AS.5leone.jpg"    width="106" height="109">&nbsp;
-			<img src="AS.8scorpio.gif"  width="104" height="97" >&nbsp;
-			<img src="AS.11AcquarA.jpg" width="97"  height="102">
+			<img src="AS.2toro.gif"     width="104" height="104" alt="Toro">&nbsp;
+			<img src="AS.5leone.jpg"    width="106" height="109" alt="Leone">&nbsp;
+			<img src="AS.8scorpio.gif"  width="104" height="97"  alt="Scorpione">&nbsp;
+			<img src="AS.11AcquarA.jpg" width="97"  height="102" alt="Acquario">
 		</p>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
-			<strong><span class="sNewMidnightBlue">FISSI</span> = <span class="sGreen">TORO</span> - <span class="sRed">LEONE</span> - 
-			<span class="sBlue">SCORPIONE</span> - <span class="sMaroon">ACQUARIO</span>: <span class="sRed">Forza</span></strong><br>
+		<p>
+			<b><span class="sNewMidnightBlue">FISSI</span> = <span class="sGreen">TORO</span> - <span class="sRed">LEONE</span> -
+			<span class="sBlue">SCORPIONE</span> - <span class="sMaroon">ACQUARIO</span>: <span class="sRed">Forza</span></b><br>
 			<u>Stagioni piene</u>. <u>Concentrazione delle energie</u>.
 			&nbsp;--&gt;&nbsp;<span class="sNewMidnightBlue sBold">Non voglio essere disturbato</span><br>
 			<span class="sNewMidnightBlue sBold">Carattere</span> orgoglioso, capacità di concentrazione, fermezza interiore, orgoglio e generosità. Ha un
 			grande rigore interiore e persegue i suoi scopi con fermezza e lungimiranza. Determinato, tenace, deciso, costante, attaccato alle origini, è
-			affidabile e all'altezza della sua fama, può essere molto ostinato, ha molta forza di volontà, un po' noioso e manca di flessibilità. D'altro 
+			affidabile e all'altezza della sua fama, può essere molto ostinato, ha molta forza di volontà, un po' noioso e manca di flessibilità. D'altro
 			canto è leale, assiduo, intenso, stabile, molto capace con un notevole acume per i buoni affari e per l'ambito amministrativo. Dotato di grande
 			volontà e di energia fisica e psichica, è poco influenzabile, orgoglioso e altrettanto vanitoso. Tendenza ad essere più stabile e indipendente,
 			pazienza o, al contrario, non si adatta a nulla, rivelando il massimo dell'inadattabilità. Il <span class="sGreen sBold">Toro</span> ha un
-			comportamento costante e pratico. Il <span  class="sRed sBold">Leone</span> non ama i modelli generali di comportamento. 
-			Lo <span class="sBlue sBold">Scorpione</span>, più che il materiale lo attraggono i problemi interiori. 
+			comportamento costante e pratico. Il <span  class="sRed sBold">Leone</span> non ama i modelli generali di comportamento.
+			Lo <span class="sBlue sBold">Scorpione</span>, più che il materiale lo attraggono i problemi interiori.
 			L'<span class="sMaroon sBold">Acquario</span>, si trova sovente alle prese con se stesso.
 		</p>
-		<p class="sCenter">
-			<img src="AS.3gemelli.gif" width="108" height="109">&nbsp;
-			<img src="AS.6vergine.gif" width="95"  height="97" >&nbsp;
-			<img src="AS.9sagitta.gif" width="114" height="104">&nbsp;
-			<img src="AS.12pesci.gif"  width="110" height="108">
-		</p>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
-			<strong><span class="sNewMidnightBlue">MOBILI</span> = <span class="sMaroon">GEMELLI</span> - <span class="sGreen">VERGINE</span> -
-			<span class="sRed">SAGITTARIO</span> - <span class="sBlue">PESCI</span>: <span class="sRed">Pensiero</span></strong><br>
-			<u>Fine stagioni</u>. <u>Dilatazione delle energie</u>. 
-			&nbsp;--&gt;&nbsp;<span class="sNewMidnightBlue sBold">Se solo sapessi il perché</span><br>
-			<span class="sNewMidnightBlue sBold">Carattere</span> instabile e incerto, mutevole, adattabile, comunicativo. Curioso di tutto, inquieto, 
-			distratto, indeciso, ha bisogno di vedere e di capire. Carente di concentrazione e profondità, molto intelligente, immaginativo con una grande
-			capacità di adattarsi alle più diverse situazioni. Mente veloce, impara rapidamente ma dimentica e perde interesse in fretta se non è 
-			sufficientemente stimolato. Possiede il dono di un'abilità innata a cambiare il proprio modo di vita, ha fluidità e movimento. Desiderio di
-			movimento verso l'esterno (<span class="sMaroon sBold">Gemelli</span> e <span class="sRed sBold">Sagittario</span>) o di chiusura 
-			(<span class="sGreen sBold">Vergine</span> e <span class="sBlue sBold">Pesci</span>). I quattro segni mobili proiettano la loro energia in
-			maniere diverse. Hanno molti interessi psicologici ma anche la tendenza alla doppia personalità e soprattutto alla suscettibilità. Il 
-			<span class="sMaroon sBold">Gemelli</span> cambia idea spesso. Il <span class="sGreen sBold">Vergine</span> tende a lasciarsi governare dall'ambiente. Il <span  class="sRed sBold">Sagittario</span> vede la sua vita sempre da punti di vista diversi. Il 
-			<span class="sBlue sBold">Pesci</span> si adatta solo superficialmente all'ambiente che lo circonda.
-			</p>
 
-		<p class="sLarge sNavy sBold sCenter sPadding">
+		<p class="sCenter">
+			<img src="AS.3gemelli.gif" width="108" height="109" alt="Gemelli">&nbsp;
+			<img src="AS.6vergine.gif" width="95"  height="97"  alt="Vergine">&nbsp;
+			<img src="AS.9sagitta.gif" width="114" height="104" alt="Sagittario">&nbsp;
+			<img src="AS.12pesci.gif"  width="110" height="108" alt="Pesci">
+		</p>
+
+		<p>
+			<b><span class="sNewMidnightBlue">MOBILI</span> = <span class="sMaroon">GEMELLI</span> - <span class="sGreen">VERGINE</span> -
+			<span class="sRed">SAGITTARIO</span> - <span class="sBlue">PESCI</span>: <span class="sRed">Pensiero</span></b><br>
+			<u>Fine stagioni</u>. <u>Dilatazione delle energie</u>.
+			&nbsp;--&gt;&nbsp;<span class="sNewMidnightBlue sBold">Se solo sapessi il perché</span><br>
+			<span class="sNewMidnightBlue sBold">Carattere</span> instabile e incerto, mutevole, adattabile, comunicativo. Curioso di tutto, inquieto,
+			distratto, indeciso, ha bisogno di vedere e di capire. Carente di concentrazione e profondità, molto intelligente, immaginativo con una grande
+			capacità di adattarsi alle più diverse situazioni. Mente veloce, impara rapidamente ma dimentica e perde interesse in fretta se non è
+			sufficientemente stimolato. Possiede il dono di un'abilità innata a cambiare il proprio modo di vita, ha fluidità e movimento. Desiderio di
+			movimento verso l'esterno (<span class="sMaroon sBold">Gemelli</span> e <span class="sRed sBold">Sagittario</span>) o di chiusura
+			(<span class="sGreen sBold">Vergine</span> e <span class="sBlue sBold">Pesci</span>). I quattro segni mobili proiettano la loro energia in
+			maniere diverse. Hanno molti interessi psicologici ma anche la tendenza alla doppia personalità e soprattutto alla suscettibilità. Il
+			<span class="sMaroon sBold">Gemelli</span> cambia idea spesso. Il <span class="sGreen sBold">Vergine</span> tende a lasciarsi governare dall'ambiente. Il <span  class="sRed sBold">Sagittario</span> vede la sua vita sempre da punti di vista diversi. Il
+			<span class="sBlue sBold">Pesci</span> si adatta solo superficialmente all'ambiente che lo circonda.
+		</p>
+
+		<p class="sLarge sNavy sBold sCenter">
 			<br>
 			I <span class="sRed">4</span> ELEMENTI O TRIPLICITA'
 		</p>
 
 		<p class="sCenter">
-			<img src="SZ.Elementix4.jpg"   width="254" height="293">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="SZ.FuoTerAriAcq.png" width="314" height="315"><br><br>
-			<img src="BS.1Ariete.gif" width="86" height="87"><img src="BS.5Leone.gif" width="76" height="93"><img src="BS.9Sagittario.gif" width="94" height="100">
+			<img src="SZ.Elementix4.jpg"   width="254" height="293" alt="Donne Elementi">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="SZ.FuoTerAriAcq.png" width="314" height="315" alt="Ruota Elementi">
 		</p>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
-			Appartengono al <span class="sRed sBold">FUOCO</span>: <span class="sRed sBold">ARIETE</span> - <span class="sRed sBold">LEONE</span> - 
+
+		<p class="sCenter">
+			<br>
+			<img src="BS.1Ariete.gif" width="86" height="87" alt="Ariete"><img src="BS.5Leone.gif" width="76" height="93" alt="Leone"><img src="BS.9Sagittario.gif" width="94" height="100" alt="Sagittario">
+		</p>
+		<p>
+			Appartengono al <span class="sRed sBold">FUOCO</span>: <span class="sRed sBold">ARIETE</span> - <span class="sRed sBold">LEONE</span> -
 			<span class="sRed sBold">SAGITTARIO</span> (Caldo/Secco)
 			&nbsp;--&gt;&nbsp;<span class="sNewMidnightBlue sBold">TEMPERAMENTO BILIOSO</span><br>
-			<span class="sNewMidnightBlue sBold">Carattere</span> dinamico, vivace, orgoglioso, entusiasta, irascibile, impulsivo, estroverso, vitale e 
+			<span class="sNewMidnightBlue sBold">Carattere</span> dinamico, vivace, orgoglioso, entusiasta, irascibile, impulsivo, estroverso, vitale e
 			avventuroso. È generoso come il <span class="sRed sBold">fuoco</span> che sprigiona in tutta la sua energia, ma spericolato. Ama la vita agiata,
-			desidera conquistarsi un posto al sole. È passionale e un po' geloso, ha un solo imperativo: vivere e lasciar vivere. È dinamico, socievole e 
+			desidera conquistarsi un posto al sole. È passionale e un po' geloso, ha un solo imperativo: vivere e lasciar vivere. È dinamico, socievole e
 			caloroso, ama donare e avere in cambio un sorriso. Il <span class="sRed sBold">fuoco</span> è sinonimo di amore, calore, perciò il karma sarà
-			tale da indurlo a maggiore altruismo. Slancio ed esuberanza caratterizzano l'agire. Spirito vitale, ottime capacità di comando e di 
-			organizzazione. Ha bisogno di libertà. Tende ad imporre la sua volontà agli altri. Nella vita affettiva è leale, ma instabile. 
-			L'<span class="sRed sBold">Ariete</span> è il <span class="sRed sBold">fuoco</span> esaltato, il fiammifero. 
-			Il <span class="sRed sBold">Leone</span> è il <span class="sRed sBold">fuoco</span> vitale, il falò, le sue fiamme ardono costanti e brillanti. Il <span class="sRed sBold">Sagittario</span> è il <span class="sRed sBold">fuoco</span> che cova sotto la cenere.    
+			tale da indurlo a maggiore altruismo. Slancio ed esuberanza caratterizzano l'agire. Spirito vitale, ottime capacità di comando e di
+			organizzazione. Ha bisogno di libertà. Tende ad imporre la sua volontà agli altri. Nella vita affettiva è leale, ma instabile.
+			L'<span class="sRed sBold">Ariete</span> è il <span class="sRed sBold">fuoco</span> esaltato, il fiammifero.
+			Il <span class="sRed sBold">Leone</span> è il <span class="sRed sBold">fuoco</span> vitale, il falò, le sue fiamme ardono costanti e brillanti. Il <span class="sRed sBold">Sagittario</span> è il <span class="sRed sBold">fuoco</span> che cova sotto la cenere.
 			&nbsp;--&gt;&nbsp;<span class="sNewMidnightBlue sBold">ORA SONO QUI, ANDIAMO AVANTI</span>
 		</p>
 
 		<p class="sCenter">
 			<br>
-			<img src="BS.2Toro.gif" width="81" height="89"><img src="BS.6Vergine.gif" width="111" height="113"><img src="BS.10Capricorno.gif" width="97" height="79">
+			<img src="BS.2Toro.gif" width="81" height="89" alt="Toro"><img src="BS.6Vergine.gif" width="111" height="113" alt="Vergine"><img src="BS.10Capricorno.gif" width="97" height="79" alt="Capricorno">
 		</p>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			Appartengono alla <span class="sGreen sBold">TERRA</span>: <span class="sGreen sBold">TORO</span> - <span class="sGreen sBold">VERGINE</span> - <span class="sGreen sBold">CAPRICORNO</span> (Secco/Freddo)
 			&nbsp;--&gt;&nbsp;<span class="sNewMidnightBlue sBold">TEMPERAMENTO NERVOSO</span><br>
 			<span class="sNewMidnightBlue sBold">Carattere</span> tenace, concreto, fermo, abile e perseverante. Affidabile, di buon senso, prudente,
 			riflessivo, pignolo e metodico, leale e professionale. Bisogno di sicurezza, di ordine e rispetto delle abitudini, ama la naturalezza, i conti
 			che tornano. Istinto di conservazione, non perde mai il contatto con la realtà della vita. È troppo serio e introverso, la sua intelligenza non
-			va di pari passo con il cuore. Ha una personalità complessa, la riuscita professionale, gli affetti e la stima degli altri sono molto 
-			importanti e gli sono di sostegno. La sua prova sta nell'accettare i valori spirituali ed essere più aperto verso il prossimo, non deve cedere 
+			va di pari passo con il cuore. Ha una personalità complessa, la riuscita professionale, gli affetti e la stima degli altri sono molto
+			importanti e gli sono di sostegno. La sua prova sta nell'accettare i valori spirituali ed essere più aperto verso il prossimo, non deve cedere
 			al pessimismo, dentro di lui c'è tanto amore. Negli anni potrà contare su molta serenità e sarà più ottimista. Raggiunge il successo, ed è
-			disposto al sacrificio per chi ama. Il <span class="sGreen sBold">Toro</span> è la <span class="sGreen sBold">terra</span> ricca e feconda, 
-			la <span class="sGreen sBold">Vergine</span> è la <span class="sGreen sBold">terra</span> spoglia e sterile, il 
+			disposto al sacrificio per chi ama. Il <span class="sGreen sBold">Toro</span> è la <span class="sGreen sBold">terra</span> ricca e feconda,
+			la <span class="sGreen sBold">Vergine</span> è la <span class="sGreen sBold">terra</span> spoglia e sterile, il
 			<span class="sGreen sBold">Capricorno</span> la <span class="sGreen sBold">terra</span> arida, pesante e gelata.
 			&nbsp;--&gt;&nbsp;<span class="sNewMidnightBlue sBold">ASPETTERÒ FINCHE' SAPRO' DI CHE SI TRATTA</span>
 		</p>
 
 		<p class="sCenter">
 			<br>
-			<img src="BS.3Gemelli.gif" width="99" height="100"><img src="BS.7Bilancia.gif" width="94" height="95"><img src="BS.11Acquario.gif" width="86" height="99">
+			<img src="BS.3Gemelli.gif" width="99" height="100" alt="Gemelli"><img src="BS.7Bilancia.gif" width="94" height="95" alt="Bilancia"><img src="BS.11Acquario.gif" width="86" height="99" alt="Acquario">
 		</p>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
+		<p>
 			Appartengono all'<span class="sMaroon sBold">ARIA</span>: <span class="sMaroon sBold">GEMELLI</span> - <span class="sMaroon sBold">BILANCIA</span> - <span class="sMaroon sBold">ACQUARIO</span> (Umido/Caldo)
 			&nbsp;--&gt;&nbsp;<span class="sNewMidnightBlue sBold">TEMPERAMENTO SANGUIGNO</span><br>
-			<span class="sNewMidnightBlue sBold">Carattere</span> estroverso, comunicativo, affascinante, pieno di talenti e risorse, versatile, duttile, 
-			espansivo, socievole e franco. Attività mentale, ottima intelligenza, spirito e capacità d'adattamento, esigenza di contatti umani e di 
-			rinnovamento. Ha un temperamento vivace ma poco tenace, tende ad iniziare molte cose, ma alcuni progetti svaniscono nel nulla. Agisce sempre 
-			basandosi sull'intelligenza, ha il dono della parola e le doti per insegnare, a cui si unisce talento artistico. La vita si dimostra benevola, 
-			deve imparare ad esserne grato. Incline alla riflessione, dono della parola, lo spirito spazia nell'infinito. 
-			L'<span class="sMaroon sBold">aria</span> dei <span class="sMaroon sBold">Gemelli</span> è calda di fine primavera, 
-			l'<span class="sMaroon sBold">aria</span> della <span class="sMaroon sBold">Bilancia</span> è dolce e fresca dell'autunno, 
-			l'<span class="sMaroon sBold">aria</span> dell'<span class="sMaroon sBold">Acquario</span> è celeste e glaciale, aerea della conoscenza.      
+			<span class="sNewMidnightBlue sBold">Carattere</span> estroverso, comunicativo, affascinante, pieno di talenti e risorse, versatile, duttile,
+			espansivo, socievole e franco. Attività mentale, ottima intelligenza, spirito e capacità d'adattamento, esigenza di contatti umani e di
+			rinnovamento. Ha un temperamento vivace ma poco tenace, tende ad iniziare molte cose, ma alcuni progetti svaniscono nel nulla. Agisce sempre
+			basandosi sull'intelligenza, ha il dono della parola e le doti per insegnare, a cui si unisce talento artistico. La vita si dimostra benevola,
+			deve imparare ad esserne grato. Incline alla riflessione, dono della parola, lo spirito spazia nell'infinito.
+			L'<span class="sMaroon sBold">aria</span> dei <span class="sMaroon sBold">Gemelli</span> è calda di fine primavera,
+			l'<span class="sMaroon sBold">aria</span> della <span class="sMaroon sBold">Bilancia</span> è dolce e fresca dell'autunno,
+			l'<span class="sMaroon sBold">aria</span> dell'<span class="sMaroon sBold">Acquario</span> è celeste e glaciale, aerea della conoscenza.
 			&nbsp;--&gt;&nbsp;<span class="sNewMidnightBlue sBold">DEVO SAPERE COSA STA SUCCEDENDO E PERCHÉ</span>
 		</p>
 
 		<p class="sCenter">
 			<br>
-			<img src="BS.4Cancro.gif" width="99" height="83"><img src="BS.8Scorpione.gif" width="88" height="100"><img src="BS.12Pesci.gif" width="93" height="94">
+			<img src="BS.4Cancro.gif" width="99" height="83" alt="Cancro"><img src="BS.8Scorpione.gif" width="88" height="100" alt="Scorpione"><img src="BS.12Pesci.gif" width="93" height="94" alt="Pesci">
 		</p>
-		<p class="sSmall sBlack sJustify sPadding sLineH125">
-			Appartengono all'<span class="sBlue sBold">ACQUA</span>: <span class="sBlue sBold">CANCRO</span> - <span class="sBlue sBold">SCORPIONE</span> - 
+		<p>
+			Appartengono all'<span class="sBlue sBold">ACQUA</span>: <span class="sBlue sBold">CANCRO</span> - <span class="sBlue sBold">SCORPIONE</span> -
 			<span class="sBlue sBold">PESCI</span> (Freddo/Umido)
 			&nbsp;--&gt;&nbsp;<span class="sNewMidnightBlue sBold">TEMPERAMENTO FLEMMATICO</span><br>
-			<span class="sNewMidnightBlue sBold">Carattere</span> insicuro, premuroso e affettuoso, introverso. Gentile, buono, sensibile e comprensivo, 
-			impressionabile. Vive nel mondo dei sogni, il sentimento, la mutevolezza e l'immaginazione arricchiscono la vita interiore. Calmo, pronto al 
-			sacrificio. La chiave per sentirsi vivo è l'amore, deve avere delle prove che esiste una corrente emotiva capace di rispondere alla sua 
-			sensibilità. Gli affetti stanno quindi al primo posto. È vulnerabile e manca di praticità, questo bagaglio non è il migliore. Di guida vi sono 
-			la bontà d'animo e il suo intuito, trova gioie negli affetti e in una professione che richieda attenzione verso i dolori altrui. Fantasia e 
-			interesse per l'occulto, la psicologia e l'astrologia. Il <span class="sBlue sBold">Cancro</span> è l'<span class="sBlue sBold">acqua</span> 
-			fresca delle sorgenti dei fiumi e laghi, nello <span class="sBlue sBold">Scorpione</span> è l'<span class="sBlue sBold">acqua</span> melmosa, 
-			stagnante e malsana delle paludi, nei <span class="sBlue sBold">Pesci</span> è l'<span class="sBlue sBold">acqua</span> infinita del mare e 
+			<span class="sNewMidnightBlue sBold">Carattere</span> insicuro, premuroso e affettuoso, introverso. Gentile, buono, sensibile e comprensivo,
+			impressionabile. Vive nel mondo dei sogni, il sentimento, la mutevolezza e l'immaginazione arricchiscono la vita interiore. Calmo, pronto al
+			sacrificio. La chiave per sentirsi vivo è l'amore, deve avere delle prove che esiste una corrente emotiva capace di rispondere alla sua
+			sensibilità. Gli affetti stanno quindi al primo posto. È vulnerabile e manca di praticità, questo bagaglio non è il migliore. Di guida vi sono
+			la bontà d'animo e il suo intuito, trova gioie negli affetti e in una professione che richieda attenzione verso i dolori altrui. Fantasia e
+			interesse per l'occulto, la psicologia e l'astrologia. Il <span class="sBlue sBold">Cancro</span> è l'<span class="sBlue sBold">acqua</span>
+			fresca delle sorgenti dei fiumi e laghi, nello <span class="sBlue sBold">Scorpione</span> è l'<span class="sBlue sBold">acqua</span> melmosa,
+			stagnante e malsana delle paludi, nei <span class="sBlue sBold">Pesci</span> è l'<span class="sBlue sBold">acqua</span> infinita del mare e
 			oceano.
 			&nbsp;--&gt;&nbsp;<span class="sNewMidnightBlue sBold">DEVO ASPETTARE PER SAPERE SE LA MIA IMPRESSIONE ERA GIUSTA</span>
 		</p>
 
 		<p class="sCenter">
 			<br>
-			<img border="0" src="pianetibarra.gif" width="510" height="35">
+			<img border="0" src="pianetibarra.gif" width="510" height="35" alt="Barra dei Pianeti">
 		</p>
 		<p class="sCenter">
-			<img src="SZ.FataAcquar.jpg" width="184" height="258">&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="LauraAA2016..jpg"  width="184" height="297">
+			<img src="SZ.FataAcquar.jpg"   width="184" height="258" alt="Fata Acquario">&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="photo/Laura2020.jpg" width="250" height="277" alt="Laura Lencia - 2020">
 		</p>
 
-		<p class="sSmall sNavy sCenter">
-			<img src="email-box.gif"    width="35" height="35">
-			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a>&nbsp;&nbsp;&nbsp;
+		<p class="sNavy sCenter">
+			<img src="email-box.gif"    width="35" height="35" alt="">
+			Scrivi allo <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a>&nbsp;&nbsp;&nbsp;
 			per conoscere il tuo Oroscopo<br><br>
-			<img src="TelefonoC164.gif" width="35" height="35">&nbsp;
-			oppure Telefona: <strong>0125 631175 - Cell. 347 0417409<br><br>Sei il visitatore n°&nbsp;</strong>
+			<img src="TelefonoC164.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
+			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+
+			<b>Sei il visitatore n°&nbsp;</b>
 		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220429557-75d72jsd" border=0></a>
-			&nbsp;(Contenuto Aggiornato 31/12/2018)<br>
+			&nbsp;(Contenuto Aggiornato <time datetime="2018-12-31">31/12/2018</time>)<br>
 		</p>
-			</TD></TR></TABLE>
-		</TD></TR></TABLE>
-	</TD></TR></TABLE>
+
 </TD></TR></TABLE>
-<p class="sXXSmall sBlack sBold sCenter">
+</TD></TR></TABLE>
+<footer>
 	Laura Lencia - Studio di Astrologia &quot;Acquario&quot;. Copyright © 1998-2020. Tutti i diritti sono riservati.
 	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
-</p>
+</footer>
 </body>
 </html>
