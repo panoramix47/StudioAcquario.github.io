@@ -2,7 +2,7 @@
 <html lang="it" dir="ltr">
 <head>
 <meta charset="UTF-8">
-<title>Studio Acquario: Benvenuto (Pagina Principale)</title>
+<title>Studio Acquario | Oroscopo, Zodiaco, Onomanzia, Numerologia</title>
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <meta name="description" content="Studio Acquario - Astrologia: lo Zodiaco, i Segni, i tarocchi, l'onomanzia, la numerologia, oroscopo cinese, bambini, cani e gatti, e tanto altro">
 <meta name="keywords" lang="it" content="studio acquario, astrologia, oroscopo, zodiaco, ascendente, luna, segni, pianeti, gradi, solari, mese, coppia, amore, case, giorno nascita, cuspidi, bambino, madre, moglie, tarocchi, numerologia, cinese, onomanzia, pellerossa, maya, arabo, celtico, animali, cani, gatti, elementi, affinità, lei, lui, gruppi sanguigni, segreto colori, colore, nome, giorni, settimana, pietre, zodiacali fortuna, costellazioni, ruota, vita, decani, spiriti, celesti, tavola, carta del cielo, carta natale, grafico, rivoluzione solare, cartomanzia, nodi, lunari, karmici, Chirone, significato, numeri, lettera, fiori, tema astrale">
@@ -13,13 +13,14 @@
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="25/01/2021">
-<meta name="revised" content="25/01/2021">
+<meta name="revised" content="28/02/2021">
+<meta name="robots" content="index,follow">
 
 <meta property="og:title" content="Studio di Astrologia Acquario" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://www.studioacquario.it" />
 <meta property="og:image" content="https://www.studioacquario.it/grafiche/Indice_12segni.jpg" />
-<meta property="og:description" content="Studio di Astrologia 'Acquario'. Astrologia: tutte le informazioni sullo Zodiaco i Segni, senza dimenticare i tarocchi, l'onomanzia e la numerologia, oroscopo cinese, bambini, cani e gatti, e ... tante altre rubriche." />
+<meta property="og:description" content="Studio di Astrologia 'Acquario'. Astrologia: tutte le informazioni sullo Zodiaco ed i Segni, senza dimenticare i tarocchi, l'onomanzia e la numerologia, oroscopo cinese, bambini, cani e gatti, e ... tante altre rubriche." />
 
 <style type="text/css">
 body {
@@ -39,6 +40,18 @@ a {
 }
 a:hover {
 	color: #FF0000;
+}
+h1 {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #CEC26C; /* Tacha */
+	text-align: center;
+}
+h2 {
+	font-size: medium;
+	font-weight: bold;
+	color: #CEC26C; /* Tacha */
+	text-align: center;
 }
 img {
 	max-width: 100%;
@@ -80,6 +93,9 @@ ul li {
 .sPaddingL {
 			padding-left: 10px;
 }
+.sLineHeight {
+			line-height: 140%;
+}
 .sBold {
 			font-weight: bold;
 }
@@ -91,6 +107,56 @@ ul li {
 }
 .sXXLarge {
 			font-size: xx-large;
+}
+.sBigDiv {
+		justify-content: center; 
+}
+.sColonna1 {
+		width: 100%;
+			margin-bottom: 7px;
+}
+.sColonna2 {
+		width: 100%;
+			margin-bottom: 7px;
+}
+.sColonna3 {
+		width: 100%;
+			margin-bottom: 7px;
+}
+@media screen and (min-width:500px) {
+   .sColonna1 {
+			float: left;
+			/* width: 50%; */
+			max-width: 49%;
+			margin-right: 5px;
+	}
+   .sColonna3 {
+			float: right;
+			/* width: 30%; */
+			max-width: 49%;
+			margin-right: 0;
+   }
+   .sColonna2 {
+			float: left;
+			/* width: 38%; */
+			max-width: 100%;
+   }
+}
+@media screen and (min-width:1000px) {
+   .sColonna1 {
+			float: left;
+			max-width: 30.5%;
+			margin-right: 8px;
+	}
+   .sColonna2 {
+			float: center;
+			max-width: 37.5%;
+			margin-right: 5px;
+   }
+   .sColonna3 {
+			float: right;
+			max-width: 30.5%;
+   }
 }
 </style>
 </head>
@@ -109,73 +175,72 @@ ul li {
 			<img src="grafiche/Indice_12segniB.jpg" width="425" height="302" alt="12 Segni">  <!-- originale 480x341 -->
 			<br>
 		</p>
-		<p class="sXXLarge sTacha sBold sCenter">
-			STUDIO DI ASTROLOGIA
-			<img src="grafiche/Indice_cuoreAnim.gif" width="43" height="35" alt="">
+		<h1>STUDIO DI ASTROLOGIA
+			<img src="grafiche/Indice_cuoreAnim.gif" width="43" height="35" alt="Cuore Animato">
 			ACQUARIO
-			<img src="grafiche/Indice_cuoreAnim.gif" width="43" height="35" alt="">
+			<img src="grafiche/Indice_cuoreAnim.gif" width="43" height="35" alt="Cuore Animato">
 			<br><br>
 			di <i>Laura Lencia</i><br>
-		</p>
+		</h1>
 
-		<table cellspacing="5" cellpadding="0" width="100%" border="0">
-		<tr><td valign="top" width="30%">
-
+	<!--table cellspacing="5" cellpadding="0" width="100%" border="0">
+	<tr><td valign="top" width="30%" -->
+	<div class="sBigDiv">
+		<div id="colonna1" class="sColonna1">
+		
 			<table background="grafiche/Indice_barraOriz.jpg" cellpadding="5" bordercolorlight="#1A3862" bordercolordark="#5082C8" width="100%" class="sBorder1s">
 			<tr><td background="grafiche/Indice_background.jpg" bgcolor="#1A3862" valign="top">
 
-				<p class="sMedium sTacha sCenter sBold">
-					PAGINE ASTROLOGICHE "CLASSICHE"
-				</p>
+				<h2>PAGINE ASTROLOGICHE "CLASSICHE"</h2>
 				<p class="sCenter">
-					<img src="grafiche/Indice_fogliaSin.gif" width="49" height="26" alt="">
-					<img src="grafiche/Indice_cuoreAnim.gif" width="43" height="35" alt="">
-					<img src="grafiche/Indice_fogliaDes.gif" width="49" height="26" alt="">
+					<img src="grafiche/Indice_fogliaSin.gif" width="49" height="26" alt="Foglia di Sinistra">
+					<img src="grafiche/Indice_cuoreAnim.gif" width="43" height="35" alt="Cuore Animato">
+					<img src="grafiche/Indice_fogliaDes.gif" width="49" height="26" alt="Foglia di Destra">
 				</p>
-				<ul class="sSmall sTacha sJustify sBold sPaddingR" style="line-height: 140%">
-					<li><a href="segni.htm">I Segni zodiacali e le poesie dei Segni / The Zodiac Signs and the Poems of Signs</a></li>
-					<li><a href="lunaM.htm">La Luna nei segni / The moon in each sign</a></li>
-					<li><a href="TabLuna.htm">Cerca la tua Luna / Find your moon</a></li>
-					<li><a href="asc.htm">Significato Ascendente / The Rising Sign</a></li>
-					<li><a href="TabAsc.htm">Cerca l'Ascendente / Find your rising sign</a></li>
+				<ul class="sSmall sTacha sJustify sBold sPaddingR sLineHeight">
+					<li><a href="segni.htm" title="Segni Zodiacali">I Segni zodiacali e le poesie dei Segni / The Zodiac Signs and the Poems of Signs</a></li>
+					<li><a href="lunaM.htm" title="Luna nei segni">La Luna nei segni / The moon in each sign</a></li>
+					<li><a href="TabLuna.htm" title="Cerca la tua Luna">Cerca la tua Luna / Find your moon</a></li>
+					<li><a href="asc.htm" title="Significato dell'Ascendente">Significato Ascendente / The Rising Sign</a></li>
+					<li><a href="TabAsc.htm" title="Cerca il tuo Ascendente">Cerca l'Ascendente / Find your rising sign</a></li>
 					<br>
-					<li><a href="Ascendente.htm">Conoscere l'Ascendente</a></li>
-					<li><a href="Le12case.htm">Le 12 case nei segni</a></li>
-					<li><a href="scoprireZodiaco.htm">Scoprire zodiaco</a></li>
-					<li><a href="Cuspidi.htm">I nati sulla cuspide</a></li>
-					<li><a href="pianetiSegni.htm">Pianeti nei segni</a></li>
+					<li><a href="Ascendente.htm" title="Conoscere l'Ascendente">Conoscere l'Ascendente</a></li>
+					<li><a href="Le12case.htm" title="12 case nei segni">Le 12 case nei segni</a></li>
+					<li><a href="scoprireZodiaco.htm" title="Scoprire lo Zodiaco">Scoprire lo Zodiaco</a></li>
+					<li><a href="Cuspidi.htm" title="Nati sulla cuspide">I nati sulla cuspide</a></li>
+					<li><a href="pianetiSegni.htm" title="Pianeti nei segni">I Pianeti nei segni</a></li>
 					<br>
-					<li><a href="SegnoMese1.htm" id="SegnoMese">Segno del Mese</a></li>
-					<li><a href="SoleLuna1.htm" id="SoleLuna">Sole e Luna del Mese</a></li>
-					<li><a href="OroscLuna.htm" id="OroscLuna">Oroscopo Luna del Mese</a></li>
-					<li><a href="GradiMese1.htm" id="GradiMese">Gradi del Mese</a></li>
-					<li><a href="GradiSolari1.htm" id="GradiSolari">Gradi Solari del Mese</a></li>
-					<li><a href="I12.ASC.Ariete.htm" id="I12ASC">Ascendenti del Mese</a></li>
-					<li><a href="CoppiaMese1.htm" id="CoppiaMese">La coppia del Mese</a></li>
+					<li><a href="SegnoMese1.htm" id="SegnoMese" title="Segno del Mese">Segno del Mese</a></li>
+					<li><a href="SoleLuna1.htm" id="SoleLuna" title="Sole e Luna del Mese">Sole e Luna del Mese</a></li>
+					<li><a href="OroscLuna.htm" id="OroscLuna" title="Oroscopo Luna del Mese">Oroscopo Luna del Mese</a></li>
+					<li><a href="GradiMese1.htm" id="GradiMese" title="Gradi del Mese">Gradi del Mese</a></li>
+					<li><a href="GradiSolari1.htm" id="GradiSolari" title="Gradi Solari del Mese">Gradi Solari del Mese</a></li>
+					<li><a href="I12.ASC.Ariete.htm" id="I12ASC" title="Ascendenti del Mese">Ascendenti del Mese</a></li>
+					<li><a href="CoppiaMese1.htm" id="CoppiaMese" title="Coppia del Mese">La coppia del Mese</a></li>
 					<br>
-					<li><a href="giorni.htm">Il giorno di nascita</a></li>
-					<li><a href="Ora.htm">A che ora sei nato</a></li>
-					<li><a href="bambino.htm">Oroscopo Bambino</a></li>
-					<li><a href="LunaMadreMoglie.htm">Luna come madre/moglie</a></li>
-					<li><a href="MammaSeiSarai.htm">Che mamma sei e sarai</a></li>
+					<li><a href="giorni.htm" title="Giorno di Nascita">Il giorno di nascita</a></li>
+					<li><a href="Ora.htm" title="A che ora sei Nato">A che ora sei nato</a></li>
+					<li><a href="bambino.htm" title="Oroscopo Bambino">Oroscopo del Bambino</a></li>
+					<li><a href="LunaMadreMoglie.htm" title="Luna come Madre/Moglie">Luna come Madre/Moglie</a></li>
+					<li><a href="MammaSeiSarai.htm" title="">Che mamma sei e sarai</a></li>
 					<br>
-					<li><a href="AffinitaCoppia1.htm" id="AffinitaCoppia">Affinità LEI e LUI</a></li>
-					<li><a href="AmoreSegni.htm">L'Amore nei segni</a></li>
-					<li><a href="ElementiCoppia.htm">Elementi nella Coppia</a></li>
-					<li><a href="LunaLeiLui.htm">Luna di LEI e LUI</a></li>
-					<li><a href="LunaDonUomFuocoTerra.htm">Luna LEI LUI /Fuoco Terra</a></li>
-					<li><a href="LunaDonUomAriaAcqua.htm">Luna LEI LUI /Aria Acqua</a></li>
+					<li><a href="AffinitaCoppia1.htm" id="AffinitaCoppia" title="Affinità Lei/Lui">Affinità LEI e LUI</a></li>
+					<li><a href="AmoreSegni.htm" title="Amore nei segni">L'Amore nei segni</a></li>
+					<li><a href="ElementiCoppia.htm" title="Elementi della Coppia">Elementi nella Coppia</a></li>
+					<li><a href="LunaLeiLui.htm" title="Luna Lei/Lui">Luna di LEI e LUI</a></li>
+					<li><a href="LunaDonUomFuocoTerra.htm" title="Luna Lei/Lui | Fuoco/Terra">Luna LEI LUI /Fuoco Terra</a></li>
+					<li><a href="LunaDonUomAriaAcqua.htm" title="Luna Lei/Lui | Aria/Acqua">Luna LEI LUI /Aria Acqua</a></li>
 					<br>
-					<li><a href="settimana.htm">I giorni della settimana</a></li>
-					<li><a href="Pietre.htm">Pietre zodiacali della fortuna</a></li>
-					<li><a href="Stelle.htm">Le stelle fisse</a></li>
-					<li><a href="costella.htm">Le costellazioni</a></li>
-					<li><a href="Decani.htm">Decani spiriti celesti</a></li>
-					<li><a href="ZodiaTavola.htm">Lo zodiaco a tavola</a></li>
+					<li><a href="settimana.htm" title="Giorni della Settimana">I giorni della Settimana</a></li>
+					<li><a href="Pietre.htm" title="Pietre della Fortuna">Pietre zodiacali della fortuna</a></li>
+					<li><a href="Stelle.htm" title="Stelle Fisse">Le stelle fisse</a></li>
+					<li><a href="costella.htm" title="Costellazioni">Le costellazioni</a></li>
+					<li><a href="Decani.htm" title="Decani Spiriti Celesti">Decani Spiriti Celesti</a></li>
+					<li><a href="ZodiaTavola.htm" title="Zodiaco a Tavola">Lo Zodiaco a Tavola</a></li>
 				</ul>
 				<p class="sCenter">
 					<br>
-					<img src="grafiche/Indice_linea.gif" width="108" height="22" alt="">&nbsp;&nbsp;&nbsp;
+					<img src="grafiche/Indice_linea.gif" width="108" height="22" alt="Separatore Rombo Blu">&nbsp;&nbsp;&nbsp;
 					<img src="grafiche/Indice_linea.gif" width="108" height="22" alt="">
 				</p>
 
@@ -194,124 +259,64 @@ ul li {
 					<li>Cartomanzia: la lettura e l'interpretazione dei Tarocchi Astrologici.</li>
 				</ul>
 				<br>
-			</td></tr></table>
-
-		</td>
-		<td valign="top" width="40%">
-			<table background="grafiche/Indice_barraOriz.jpg" cellpadding="5" bordercolorlight="#1A3862" bordercolordark="#5082C8" width="100%" class="sBorder1s" align="center">
-			<tr><td background="grafiche/Indice_background.jpg" bgcolor="#1A3862">
-				<p class="sTacha sMedium sCenter sBold">
-					PAGINE DELLA MIA FAMIGLIA<br>
-					in ITALIANO e in <a href="welcome.htm" class="sSandwisp">ENGLISH</a>
-				</p>
-
-				<p class="sCenter">
-					<img src="grafiche/Indice_fogliaSin.gif" width="49"  height="26" alt="">
-					<img src="grafiche/Indice_cuoreAnim.gif" width="43"  height="35" alt="">
-					<img src="grafiche/Indice_fogliaDes.gif" width="49"  height="26" alt="">
-					<br><br>
-
-					<a href="benvenut.htm"><img src="grafiche/Indice_porta.gif" width="187" height="237" alt="Porta verso la pagina della Famiglia"></a>
-				</p>
-				<p class="sMedium sHalfPearlLusta sBold sCenter" style="line-height: 140%">
-					<img src="grafiche/Indice_cuoricino.gif" width="12" height="11" alt="">&nbsp;<a href="benvenut.htm">LA MIA FAMIGLIA</a><br><br>
-					<img src="grafiche/Indice_cuoricino.gif" width="12" height="11" alt="">&nbsp;<a href="poesie1.htm">POESIE e PENSIERI</a>
-				</p>
-				<p class="sCenter">
-					<img src="grafiche/Indice_linea.gif" width="108" height="22" alt="">&nbsp;&nbsp;&nbsp;
-					<img src="grafiche/Indice_linea.gif" width="108" height="22" alt="">
-				</p>
-
-				<p class="sTacha sSmall sCenter">
-					<!-- img src="photo/Laura_2012Lug.jpg"    width="200" height="262">&nbsp;
-					<img src="grafiche/Indice_stella.gif" width="30"  height="30" >&nbsp;
-					<img src="photo/Laura_2016.jpg"       width="162" height="262" -->
-					<img src="photo/Laura2020.jpg"        width="250" height="277" alt="Laura Lencia - 2020">
-					<br><br><br>
-					<img src="grafiche/Indice_linea.gif"  width="108" height="22" align="top" alt="">&nbsp;&nbsp;&nbsp;
-					<img src="grafiche/Indice_linea.gif"  width="108" height="22" align="top" alt=""><br><br><br>
-
-					E-mail: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
-					Tel. <a href="tel:+390125631175" class="sBold">0125 631175</a> -
-					Cell. <a href="tel:+393470417409" class="sBold">347 0417409</a><br><br><br>
-
-					<img src="grafiche/Indice_linea.gif" width="108" height="22" align="top" alt="">&nbsp;&nbsp;&nbsp;
-					<img src="grafiche/Indice_linea.gif" width="108" height="22" align="top" alt=""><br><br>
-
-					<a href="http://www.facebook.com/StudioDiAstrologiaAquario" target="_blank">
-						<img src="grafiche/Indice_facebook.gif" width="146" height="45" border="0" alt="Facebook"></a>&nbsp;&nbsp;
-					<img src="grafiche/Indice_stella.gif" width="39" height="39" alt="">&nbsp;&nbsp;
-					<a href="https://twitter.com/AstriAcquario" target="_blank">
-						<img src="grafiche/Indice_twitter.jpg"  width="110" height="45" border="0" alt="Twitter"></a>
-					<br><br>
-				</p>
-				<p class="sTacha sSmall sCenter sBold">
-					Lascia un messaggio nel mio libro degli ospiti<br><br>
-					<img src="grafiche/Indice_fogliaSin.gif" width="49" height="26" alt="">
-					<img src="grafiche/Indice_cuoreAnim.gif" width="43" height="35" alt="">
-					<img src="grafiche/Indice_fogliaDes.gif" width="49" height="26" alt="">&nbsp;&nbsp;
-					<a href="http://users2.smartgb.com/g/g.php?a=s&amp;i=g26-21401-c4" target="_blank">
-						<img src="http://extras2.smartgb.com/b/gb_80x40.gif" width="87" height="43" border="0" alt="Libro Ospiti"></a>&nbsp;&nbsp;
-					<img src="grafiche/Indice_fogliaSin.gif" width="49" height="26" alt="">
-					<img src="grafiche/Indice_cuoreAnim.gif" width="43" height="35" alt="">
-					<img src="grafiche/Indice_fogliaDes.gif" width="49" height="26" alt="">
-				</p>
-			</td></tr></table>
-		</td>
-		<td valign="top" class="sCenter" width="30%">
+			</td></tr>
+			</table>
+		</div>
+		<!-- /td>
+		<td valign="top" class="sCenter" width="30%" -->
+		<div id="colonna3" class="sColonna3">
 			<table background="grafiche/Indice_barraOriz.jpg" cellpadding="5" bordercolorlight="#1A3862" bordercolordark="#5082C8" width="100%" class="sBorder1s">
 			<tr><td background="grafiche/Indice_background.jpg" bgcolor="#1A3862" valign="top">
-				<p class="sTacha sMediums sBold Center">
-					Altri Oroscopi / Numerologia <br> / Onomanzia / Tarocchi
-				</p>
+
+				<h2>Altri Oroscopi / Numerologia <br> / Onomanzia / Tarocchi</h2>
 				<p class="sCenter">
-					<img src="grafiche/Indice_fogliaSin.gif" width="49" height="26" alt="Foglia sinistra">
-					<img src="grafiche/Indice_cuoreAnim.gif" width="43" height="35" alt="cuore animato">
-					<img src="grafiche/Indice_fogliaDes.gif" width="49" height="26" alt="Foglia destra">
+					<img src="grafiche/Indice_fogliaSin.gif" width="49" height="26" alt="Foglia di Sinistra">
+					<img src="grafiche/Indice_cuoreAnim.gif" width="43" height="35" alt="Cuore Animato">
+					<img src="grafiche/Indice_fogliaDes.gif" width="49" height="26" alt="Foglia di Destra">
 				</p>
-				<ul class="sSmall sTacha sJustify sBold sPaddingR" style="line-height: 140%">
-					<li><a href="OroscCine_2021.html">Oroscopo Cinese 2021</a> <img src="grafiche/Icona_new.gif" width="38" height="24" alt="New"></li>
-					<li><a href="1ATopoAriete.htm">Oroscopo Cinese con segni zodiaco</a></li>
-					<li><a href="ZodiaCine.htm">Zodiaco Cinese</a></li>
-					<li><a href="AnimaliCinesi.htm">Animali Cinesi</a></li>
+				<ul class="sSmall sTacha sJustify sBold sPaddingR sLineHeight">
+					<li><a href="OroscCine_2021.html" title="Oroscopo Cinese 2021">Oroscopo Cinese 2021</a> <img src="grafiche/Icona_new.gif" width="38" height="24" alt="New"></li>
+					<li><a href="1ATopoAriete.htm" title="Oroscopo Cinese e lo Zodiaco">Oroscopo Cinese con segni zodiaco</a></li>
+					<li><a href="ZodiaCine.htm" title="Zodiaco Cinese">Lo Zodiaco Cinese</a></li>
+					<li><a href="AnimaliCinesi.htm" title="Animali Cinesi">Gli Animali Cinesi</a></li>
 					<br>
-					<li><a href="Celtico.htm">Oroscopo Celtico</a></li>
-					<li><a href="OrosAnimCeltici.htm">Oroscopo Animali Celtici</a></li>
-					<li><a href="OroscArabo.htm">Oroscopo Arabo</a></li>
-					<li><a href="OroscPellerossa.htm">Oroscopo Pellerossa</a></li>
-					<li><a href="OroscMaya.htm">Oroscopo Maya</a></span></li>
+					<li><a href="Celtico.htm" title="Oroscopo Celtico">Oroscopo Celtico</a></li>
+					<li><a href="OrosAnimCeltici.htm" title="Oroscopo Animali Celtici">Oroscopo Animali Celtici</a></li>
+					<li><a href="OroscArabo.htm" title="Oroscopo Arabo">Oroscopo Arabo</a></li>
+					<li><a href="OroscPellerossa.htm" title="Oroscopo Pellerossa">Oroscopo Pellerossa</a></li>
+					<li><a href="OroscMaya.htm" title="Oroscopo Maya">Oroscopo Maya</a></span></li>
 					<br>
-					<li><a href="NodiKarma.htm">Nodi Lunari Karmici</a></li>
-					<li><a href="Chirone.htm">Chirone nei segni</a></li>
-					<li><a href="Tarot.htm">Significato Tarocchi</a></li>
-					<li><a href="OroscTarot.htm">Oroscopo Tarocchi</a></li>
-					<li><a href="DataTarocchi.htm">Data nascita con Tarocchi</a></li>
+					<li><a href="NodiKarma.htm" title="Nodi Lunari Karmici">I Nodi Lunari Karmici</a></li>
+					<li><a href="Chirone.htm" title="Chirone nei segni">Chirone nei segni</a></li>
+					<li><a href="Tarot.htm" title="Significato Tarocchi">Il Significato dei Tarocchi</a></li>
+					<li><a href="OroscTarot.htm" title="Oroscopo Tarocchi">Oroscopo con i Tarocchi</a></li>
+					<li><a href="DataTarocchi.htm" title="Data nascita con Tarocchi">Data nascita con Tarocchi</a></li>
 					<br>
-					<li><a href="numerianno.htm">Oroscopo dei Numeri</a></li>
-					<li><a href="numerolo.htm">Numerologia</a></li>
-					<li><a href="NumeriAmore.htm">Numeri dell'amore</a></li>
-					<li><a href="Onomanzia1A.htm">1° lettera del Nome (come ami)</a></li>
-					<li><a href="Onomanzia.htm">1° lettera del Nome (come sei)</a></li>
-					<li><a href="Onomanzi.htm">Analisi di tutte le lettere del nome</a></li>
-					<li><a href="NomeNum.htm">Significato del Nome e Numero</a></li>
-					<li><a href="ColoreNome.htm">Il colore del nome</a></li>
+					<li><a href="numerianno.htm" title="Oroscopo dei Numeri">Oroscopo dei Numeri</a></li>
+					<li><a href="numerolo.htm" title="Numerologia">Numerologia</a></li>
+					<li><a href="NumeriAmore.htm" title="Numeri dell'amore">I Numeri dell'amore</a></li>
+					<li><a href="Onomanzia1A.htm" title="1° lettera del Nome (come ami)">1° lettera del Nome (come ami)</a></li>
+					<li><a href="Onomanzia.htm" title="1° lettera del Nome (come sei)">1° lettera del Nome (come sei)</a></li>
+					<li><a href="Onomanzi.htm" title="Le lettere del nome">Analisi di tutte le lettere del nome</a></li>
+					<li><a href="NomeNum.htm" title="Significato del Nome e Numero">Significato del Nome e Numero</a></li>
+					<li><a href="ColoreNome.htm" title="Colore del nome">Il colore del nome</a></li>
 					<br>
-					<li><a href="gruppi.htm">Gruppi sanguigni</a></li>
-					<li><a href="colore.htm">Il segreto dei colori</a></li>
-					<li><a href="Fiori.htm">Dillo con un fiore</a></li>
-					<li><a href="GattiCani.htm">Oroscopo di gatti e cani</a></li>
-					<li><a href="LaRuotaA.htm">La ruota della vita</a></li>
-					<li><a href="MioTema.htm">Il mio Tema astrale</a></li>
-					<li><a href="EsempioTema.htm">Esempio di Tema scritto</a></li>
+					<li><a href="gruppi.htm" title="Gruppi sanguigni">I Gruppi sanguigni</a></li>
+					<li><a href="colore.htm" title="Segreto dei colori">Il segreto dei colori</a></li>
+					<li><a href="Fiori.htm" title="Significato dei Fiori">Dillo con un fiore</a></li>
+					<li><a href="GattiCani.htm" title="Oroscopo di Gatti e Cani">Oroscopo di Gatti e Cani</a></li>
+					<li><a href="LaRuotaA.htm" title="Ruota della vita">La ruota della vita</a></li>
+					<li><a href="MioTema.htm" title="Tema Astrale di Laura">Il mio Tema Astrale</a></li>
+					<li><a href="EsempioTema.htm" title="Esempio di Tema scritto">Esempio di Tema scritto</a></li>
 				</ul>
 
 				<p class="sCenter">
 					<br>
-					<img src="grafiche/Indice_fogliaSin.gif" width="49" height="26" alt="">
-					<img src="grafiche/Indice_cuoreAnim.gif" width="43" height="35" alt="">
-					<img src="grafiche/Indice_fogliaDes.gif" width="49" height="26" alt=""><br><br>
+					<img src="grafiche/Indice_fogliaSin.gif" width="49" height="26" alt="Foglia di Sinistra">
+					<img src="grafiche/Indice_cuoreAnim.gif" width="43" height="35" alt="Cuore Animato">
+					<img src="grafiche/Indice_fogliaDes.gif" width="49" height="26" alt="Foglia di Destra"><br><br>
 
-					<img src="grafiche/Indice_linea.gif" width="108" height="22" alt="">&nbsp;&nbsp;&nbsp;
+					<img src="grafiche/Indice_linea.gif" width="108" height="22" alt="Separatore Rombo Blu">&nbsp;&nbsp;&nbsp;
 					<img src="grafiche/Indice_linea.gif" width="108" height="22" alt="">
 				</p>
 				<p class="sTacha sSmall sCenter sBold">
@@ -319,7 +324,7 @@ ul li {
 					 and Laura Lencia
 				</p>
 				<p class="sCenter">
-					<img src="grafiche/Indice_cuoricino.gif" width="12" height="11" alt="">
+					<img src="grafiche/Indice_cuoricino.gif" width="12" height="11" alt="Cuoricino">
 					<img src="grafiche/Indice_cuoricino.gif" width="12" height="11" alt="">
 					<img src="grafiche/Indice_cuoricino.gif" width="12" height="11" alt="">
 					<img src="grafiche/Indice_cuoricino.gif" width="12" height="11" alt="">
@@ -345,6 +350,7 @@ ul li {
 					clicca <a href="privacy.html" class="sBold"><u>qui</u></a>.
 				</p>
 				<p class="sCenter">
+					<img src="grafiche/Indice_cuoricino.gif" width="12" height="11" alt="Cuoricino">
 					<img src="grafiche/Indice_cuoricino.gif" width="12" height="11" alt="">
 					<img src="grafiche/Indice_cuoricino.gif" width="12" height="11" alt="">
 					<img src="grafiche/Indice_cuoricino.gif" width="12" height="11" alt="">
@@ -358,21 +364,84 @@ ul li {
 					<img src="grafiche/Indice_cuoricino.gif" width="12" height="11" alt="">
 					<img src="grafiche/Indice_cuoricino.gif" width="12" height="11" alt="">
 					<img src="grafiche/Indice_cuoricino.gif" width="12" height="11" alt="">
-					<img src="grafiche/Indice_cuoricino.gif" width="12" height="11" alt="">
-					<a href="Backup.html"><img src="grafiche/Indice_cuoricino.gif" width="12" height="11" alt=""></a>
+					<a href="Backup.html"><img src="grafiche/Indice_cuoricino.gif" width="12" height="11" alt="Cuoricino"></a>
 				</p>
 				<p class="sTacha sSmall sCenter">
 					<b>Sei il visitatore n°&nbsp;</b>
-					<a href="http://www.retecivica.milano.it" target="_blank"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1219675201-xwuked2" border=0></a>
+					<a href="http://www.retecivica.milano.it" target="_blank" title="Contatore Visite"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1219675201-xwuked2" border=0></a>
 					<br>(Contenuto Aggiornato <time datetime="2021-01-25">25/01/2021</time>)<br><br>
 				</p>
 				<p class="sCenter">
-					<a href="http://www.net-parade.it/attestato_riconoscimento.aspx?sito=www.studioacquario.it&amp;t=1" target="_blank">
+					<a href="http://www.net-parade.it/attestato_riconoscimento.aspx?sito=www.studioacquario.it&amp;t=1" target="_blank" title="Net Parade">
 						<img src="http://tools.net-parade.it/images/01_award_sito_in_classifica.png" border="0" alt="In classifica NetParade"></a>
 				</p>
 
+			</td></tr>
+			</table>
+		</div>
+		<!-- /td>
+		<!-- td valign="top" width="40%" -->
+		<div id="colonna2" class="sColonna2">
+			<table background="grafiche/Indice_barraOriz.jpg" cellpadding="5" bordercolorlight="#1A3862" bordercolordark="#5082C8" width="100%" class="sBorder1s" align="center">
+			<tr><td background="grafiche/Indice_background.jpg" bgcolor="#1A3862">
+
+				<h2>PAGINE DELLA MIA FAMIGLIA<br>
+					in ITALIANO e in <a href="welcome.htm" class="sSandwisp">ENGLISH</a>
+				</h2>
+
+				<p class="sCenter">
+					<img src="grafiche/Indice_fogliaSin.gif" width="49" height="26" alt="Foglia di Sinistra">
+					<img src="grafiche/Indice_cuoreAnim.gif" width="43" height="35" alt="Cuore Animato">
+					<img src="grafiche/Indice_fogliaDes.gif" width="49" height="26" alt="Foglia di Destra">
+					<br><br>
+
+					<a href="benvenut.htm" title="Pagine della mia Famiglia"><img src="grafiche/Indice_porta.gif" width="187" height="237" alt="Porta verso la pagina della Famiglia"></a>
+				</p>
+				<p class="sMedium sHalfPearlLusta sBold sCenter sLineHeight">
+					<img src="grafiche/Indice_cuoricino.gif" width="12" height="11" alt="Cuoricino">&nbsp;<a href="benvenut.htm" title="Famiglia">LA MIA FAMIGLIA</a><br><br>
+					<img src="grafiche/Indice_cuoricino.gif" width="12" height="11" alt="Cuoricino">&nbsp;<a href="poesie1.htm" title="Poesie e Pensieri">POESIE e PENSIERI</a>
+				</p>
+				<p class="sCenter">
+					<img src="grafiche/Indice_linea.gif" width="108" height="22" alt="Separatore Rombo Blu">&nbsp;&nbsp;&nbsp;
+					<img src="grafiche/Indice_linea.gif" width="108" height="22" alt="">
+				</p>
+
+				<p class="sTacha sSmall sCenter">
+					<img src="photo/Laura2020.jpg"        width="250" height="277" alt="Laura Lencia - 2020">
+					<br><br><br>
+					<img src="grafiche/Indice_linea.gif"  width="108" height="22" align="top" alt="Separatore Rombo Blu">&nbsp;&nbsp;&nbsp;
+					<img src="grafiche/Indice_linea.gif"  width="108" height="22" align="top" alt=""><br><br><br>
+
+					E-mail: <a href="mailto:studio.acquario@libero.it" class="sBold" title="scrivimi">studio.acquario@libero.it</a><br><br>
+					Tel. <a href="tel:+390125631175" class="sBold" title="chiamami">0125 631175</a> -
+					Cell. <a href="tel:+393470417409" class="sBold" title="chiamami">347 0417409</a><br><br><br>
+
+					<img src="grafiche/Indice_linea.gif" width="108" height="22" align="top" alt="Separatore Rombo Blu">&nbsp;&nbsp;&nbsp;
+					<img src="grafiche/Indice_linea.gif" width="108" height="22" align="top" alt=""><br><br>
+
+					<a href="http://www.facebook.com/StudioDiAstrologiaAquario" target="_blank" title="Facebook">
+						<img src="grafiche/Indice_facebook.gif" width="146" height="45" border="0" alt="Facebook"></a>&nbsp;&nbsp;
+					<img src="grafiche/Indice_stella.gif" width="39" height="39" alt="Stella Bianca fondo blu">&nbsp;&nbsp;
+					<a href="https://twitter.com/AstriAcquario" target="_blank" title="Twitter">
+						<img src="grafiche/Indice_twitter.jpg"  width="110" height="45" border="0" alt="Twitter"></a>
+					<br><br>
+				</p>
+				<p class="sTacha sSmall sCenter sBold">
+					Lascia un messaggio nel mio libro degli ospiti<br><br>
+					<img src="grafiche/Indice_fogliaSin.gif" width="49" height="26" alt="Foglia di Sinistra">
+					<img src="grafiche/Indice_cuoreAnim.gif" width="43" height="35" alt="Cuore Animato">
+					<img src="grafiche/Indice_fogliaDes.gif" width="49" height="26" alt="Foglia di Destra">&nbsp;&nbsp;
+					<a href="http://users2.smartgb.com/g/g.php?a=s&amp;i=g26-21401-c4" target="_blank">
+						<img src="http://extras2.smartgb.com/b/gb_80x40.gif" width="87" height="43" border="0" alt="Libro Ospiti"></a>&nbsp;&nbsp;
+					<img src="grafiche/Indice_fogliaSin.gif" width="49" height="26" alt="Foglia di Sinistra">
+					<img src="grafiche/Indice_cuoreAnim.gif" width="43" height="35" alt="Cuore Animato">
+					<img src="grafiche/Indice_fogliaDes.gif" width="49" height="26" alt="Foglia di Destra">
+				</p>
 			</td></tr></table>
-		</td></tr></table>
+		</div>
+	<!-- /td></tr></table -->
+	</div><br class="clear: both;" />
+
 	</td></tr></table>
 </td></tr></table>
 
