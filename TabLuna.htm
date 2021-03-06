@@ -5,15 +5,15 @@
 <title>Posizione della tua Luna - Studio Acquario</title>
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <meta name="description" content="Studio Acquario - Tabella calcolo posizione della tua Luna">
-<meta name="keywords" lang="it" content="studio acquario, astrologia, oroscopo, tabella, calcolo, posizione, luna, segni, trovare">
-<meta name="keywords" lang="en" content="studio acquario, astrology, horoscope, table, calculation, position, moon, signs, find">
+<meta name="keywords" lang="it" content="studio acquario, astrologia, oroscopo, tabella, calcolo, posizione, luna, segni, trovare, elementi">
+<meta name="keywords" lang="en" content="studio acquario, astrology, horoscope, table, calculation, position, moon, signs, find, elements">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
 <meta name="language" content="it, en">
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="content_updated" content="15/05/2019">
-<meta name="revised" content="05/03/2021">
+<meta name="content_updated" content="07/03/2021">
+<meta name="revised" content="07/03/2021">
 
 <style type="text/css">
 body {
@@ -42,6 +42,15 @@ h1 {
 	padding-left: 10px;
 	padding-right: 10px;
 	line-height: 150%;
+}
+h2 {
+	font-size: x-large;
+	font-weight: bold;
+	color: #F3F4F9; /* Ghost White */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 125%;
 }
 header {
 	font-size: xx-large;
@@ -77,17 +86,88 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+#tabella1 {
+	background-color: #ECF2F8;
+	border: medium solid blue;
+	border-collapse: collapse;
+	border-spacing: 2px;
+	vertical-align: center;
+	text-align: center;
+	color: #000000; /* Black */
+	font-size: 11pt;
+    outline: 7px solid #ECF2F8; /* Alice Blue */
+}
+#tabella1 tr {
+	border: 1px solid blue;
+}
+#tabella1 th {
+	border: 1px solid blue;
+}
+#tabella1 td {
+	border: 1px solid blue;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+#tabella2 {
+	background-color: #ECF2F8;
+	border: medium solid blue;
+	border-collapse: collapse;
+	border-spacing: 2px;
+	vertical-align: center;
+	text-align: center;
+	color: #000000; /* Black */
+	font-size: 11pt;
+    outline: 7px solid #ECF2F8; /* Alice Blue */
+}
+#tabella2 tr {
+	border: 1px solid blue;
+}
+#tabella2 th {
+	border: 1px solid blue;
+}
+#tabella2 td {
+	border: 1px solid blue;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+#tabella2 td a {
+	display: block;
+	text-decoration: none;
+	/*	padding-top: -4px;
+		padding-bottom: -4px; */
+}
+#tabella2 td a:hover {
+	background-color: #213E5C; /* Regal Blue */
+}
+.sBorderBottomDouble {
+			border-bottom-color: blue;
+			border-bottom-style: double;
+}
+.sBorderTopDouble {
+			border-top-color: blue;
+			border-top-style: double;
+}
+.sTxtDecNo {
+	text-decoration: none;
+}
+.sBlack {
+			color: #000000;
+}
 .sLime {
 			color: #00FF00;
+			text-shadow: 1px 1px 0px #00994D; /* Deep Sky Blue */
 }
 .sAqua {
 			color: #00FFFF;
+			text-shadow: 1px 1px 0px #0000FF; /* Blue */
 }
 .sRed {
 			color: #FF0000;
+			text-shadow: 1px 1px 0px #800000; /* Maroon */
 }
 .sYellow {
 			color: #FFFF00;
+			text-shadow: 1px 1px 0px #996600; /* Golden Brown */
 }
 .sBold {
 			font-weight: bold;
@@ -95,8 +175,20 @@ img {
 .sCenter {
 			text-align: center;
 }
+.sLeft {
+			text-align: left;
+}
+.sPaddingL10 {
+			padding-left: 10px;
+}
+.sLineHeight17 {
+			line-height: 17pt;
+}
 .sSmall {
 			font-size: small;
+}
+.sMedium {
+			font-size: medium;
 }
 .sLarge {
 			font-size: large;
@@ -110,6 +202,9 @@ img {
 .sVediImg2 {
 	display: inline;
 }
+.sVediImg3 {
+	display: inline;
+}
 @media screen and (max-width:1025px) {
 	.sVediImg1 {
 		display: none !important;
@@ -118,6 +213,11 @@ img {
 @media screen and (max-width:700px) {
 	p#Intestazione, h1 {
 		text-align: left;
+	}
+}
+@media screen and (max-width:606px) {
+	.sVediImg3 {
+		display: none !important;
 	}
 }
 @media screen and (max-width:500px) {
@@ -166,8 +266,8 @@ img {
 
 		<p>
 			Nella "Tabella 1" sottostante:<br>
-			- trova la <b>colonna</b> che corrisponde al tuo anno di nascita;<br>
-			- trova la <b>riga</b> che corrisponde al tuo mese di nascita;<br>
+			- trova la <b>riga</b> che corrisponde al tuo anno di nascita;<br>
+			- trova la <b>colonna</b> che corrisponde al tuo mese di nascita;<br>
 			- al numero che trovi all'<b>incrocio</b> della riga e della colonna, aggiungi il giorno di nascita;<br>
 			- nella "Tabella 2", il segno che trovi nella riga, dove si trova la somma ottenuta, è il segno zodiacale <u>approssimativo</u> della tua
 			<b>Luna</b>.<br><br>
@@ -181,14 +281,14 @@ img {
 
 		<p><i lang="en">
 			In the chart "Tabella 1" below:<br>
-			- find the <b>column</b> that corresponds to your birth year;<br>
-			- find the <b>row</b> that corresponds to your birth month;<br>
+			- find the <b>row</b> that matches to your birth year;<br>
+			- find the <b>column</b> that matches to your birth month;<br>
 			- the number you find at the <b>crossing</b> of the row and the column, add it to your day of birth;<br>
 			- in the chart "Tabella 2", the sign you find in the row where the total number is (between "DA" and "A"), is the <u>approximate</u> sign of your <b>Moon</b>.<br><br>
 			<b>EXAMPLE</b>: date of Birth July <b>3</b>, <b>1964</b><br>
 			- in "Tabella 1", the number found at the crossing of the month of July and the year <b>1964</b> is <span class="sAqua sBold">95</span>;<br>
 			- to <span class="sAqua sBold">95</span> add <b>3</b>, which is the day of birth. The total is <span class="sLime sBold">98</span>;<br>
-			- in "Tabella 2", number <span class="sLime sBold">98</span> correspond to the sign of <span class="sRed sBold">ARIES</span>.</i>
+			- in "Tabella 2", number <span class="sLime sBold">98</span> corresponds to the sign of <span class="sRed sBold">ARIES</span>.</i>
 		</p>
 
 		<p class="sCenter">
@@ -203,23 +303,1246 @@ img {
 			<img src="grafiche/Icona_luna.gif" width="32" height="34" alt="">
 			<img src="grafiche/Icona_luna.gif" width="32" height="34" alt="">
 			<img src="grafiche/Icona_luna.gif" width="32" height="34" alt="">
-			<img src="grafiche/Icona_luna.gif" width="32" height="34" alt="">
-			<img src="grafiche/Icona_luna.gif" width="32" height="34" alt="">
+			<img src="grafiche/Icona_luna.gif" class="sVediImg3" width="32" height="34" alt="">
+			<img src="grafiche/Icona_luna.gif" class="sVediImg3" width="32" height="34" alt="">
 		</p>
 
 		<p class="sLarge sBold sCenter">
 			Queste tabelle sono approssimative<br>
-			<i lang="en">These charts are approximate</i>
+			<i lang="en">These tables are approximate</i>
 		</p>
 
-		<p class="sXLarge sBold sCenter">
+		<h2>Tabella 1</h2>
+		<!-- p class="sXLarge sBold sCenter">
 			<img src="tabelle/TLuna_tabella1.jpg" width="836" height="931" alt="Posizione della Luna: Tabella 1">
-			<br><br>
-			Tabella 2<br>
-			<img src="tabelle/TLuna_tabella2.jpg" width="389" height="355" alt="Posizione della Luna: Tabella 2">
-		</p>
+		</p -->
 
-		<p class="sCenter">
+<table id="tabella1" align="center">
+<thead class="sBorderBottomDouble">
+	<tr class=" sBold">
+		<th width="50px;">Anno<br>Year</th>
+		<th width="45px;">Gen<br>Jan</th>
+		<th width="45px;">Feb</th>
+		<th width="45px;">Mar</th>
+		<th width="45px;">Apr</th>
+		<th width="45px;">Mag<br>May</th>
+		<th width="45px;">Giu<br>Jun</th>
+		<th width="45px;">Lug<br>Jul</th>
+		<th width="45px;">Ago<br>Aug</th>
+		<th width="45px;">Set<br>Sep</th>
+		<th width="45px;">Ott<br>Oct</th>
+		<th width="45px;">Nov</th>
+		<th width="45px;">Dic<br>Dec</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>1931</td>
+		<td>72</td>
+		<td>74</td>
+		<td>77</td>
+		<td>80</td>
+		<td>83</td>
+		<td>87</td>
+		<td>89</td>
+		<td>93</td>
+		<td>70</td>
+		<td>72</td>
+		<td>76</td>
+		<td>79</td>
+	</tr>
+	<tr>
+		<td>1932</td>
+		<td>82</td>
+		<td>86</td>
+		<td>88</td>
+		<td>91</td>
+		<td>94</td>
+		<td>70</td>
+		<td>73</td>
+		<td>77</td>
+		<td>80</td>
+		<td>83</td>
+		<td>87</td>
+		<td>89</td>
+	</tr>
+	<tr>
+		<td>1933</td>
+		<td>93</td>
+		<td>70</td>
+		<td>70</td>
+		<td>76</td>
+		<td>77</td>
+		<td>80</td>
+		<td>83</td>
+		<td>86</td>
+		<td>90</td>
+		<td>93</td>
+		<td>69</td>
+		<td>72</td>
+	</tr>
+	<tr>
+		<td>1934</td>
+		<td>76</td>
+		<td>79</td>
+		<td>80</td>
+		<td>83</td>
+		<td>86</td>
+		<td>90</td>
+		<td>92</td>
+		<td>69</td>
+		<td>73</td>
+		<td>75</td>
+		<td>79</td>
+		<td>82</td>
+	</tr>
+	<tr>
+		<td>1935</td>
+		<td>86</td>
+		<td>89</td>
+		<td>90</td>
+		<td>93</td>
+		<td>69</td>
+		<td>72</td>
+		<td>75</td>
+		<td>79</td>
+		<td>82</td>
+		<td>85</td>
+		<td>89</td>
+		<td>92</td>
+	</tr>
+	<tr>
+		<td>1936</td>
+		<td>95</td>
+		<td>72</td>
+		<td>73</td>
+		<td>77</td>
+		<td>79</td>
+		<td>83</td>
+		<td>86</td>
+		<td>90</td>
+		<td>93</td>
+		<td>69</td>
+		<td>73</td>
+		<td>75</td>
+	</tr>
+	<tr>
+		<td>1937</td>
+		<td>79</td>
+		<td>82</td>
+		<td>83</td>
+		<td>87</td>
+		<td>89</td>
+		<td>93</td>
+		<td>69</td>
+		<td>72</td>
+		<td>76</td>
+		<td>79</td>
+		<td>82</td>
+		<td>85</td>
+	</tr>
+	<tr>
+		<td>1938</td>
+		<td>89</td>
+		<td>92</td>
+		<td>93</td>
+		<td>69</td>
+		<td>72</td>
+		<td>76</td>
+		<td>78</td>
+		<td>82</td>
+		<td>86</td>
+		<td>88</td>
+		<td>92</td>
+		<td>95</td>
+	</tr>
+	<tr>
+		<td>1939</td>
+		<td>71</td>
+		<td>75</td>
+		<td>75</td>
+		<td>79</td>
+		<td>82</td>
+		<td>85</td>
+		<td>88</td>
+		<td>92</td>
+		<td>68</td>
+		<td>71</td>
+		<td>74</td>
+		<td>78</td>
+	</tr>
+	<tr>
+		<td>1940</td>
+		<td>81</td>
+		<td>85</td>
+		<td>86</td>
+		<td>90</td>
+		<td>93</td>
+		<td>69</td>
+		<td>72</td>
+		<td>75</td>
+		<td>79</td>
+		<td>82</td>
+		<td>85</td>
+		<td>88</td>
+	</tr>
+	<tr>
+		<td>1941</td>
+		<td>92</td>
+		<td>69</td>
+		<td>70</td>
+		<td>73</td>
+		<td>75</td>
+		<td>79</td>
+		<td>81</td>
+		<td>85</td>
+		<td>89</td>
+		<td>92</td>
+		<td>95</td>
+		<td>71</td>
+	</tr>
+	<tr>
+		<td>1942</td>
+		<td>68</td>
+		<td>78</td>
+		<td>79</td>
+		<td>82</td>
+		<td>85</td>
+		<td>89</td>
+		<td>91</td>
+		<td>95</td>
+		<td>71</td>
+		<td>74</td>
+		<td>78</td>
+		<td>80</td>
+	</tr>
+	<tr>
+		<td>1943</td>
+		<td>84</td>
+		<td>88</td>
+		<td>88</td>
+		<td>92</td>
+		<td>95</td>
+		<td>71</td>
+		<td>74</td>
+		<td>78</td>
+		<td>81</td>
+		<td>84</td>
+		<td>88</td>
+		<td>90</td>
+	</tr>
+	<tr>
+		<td>1944</td>
+		<td>94</td>
+		<td>70</td>
+		<td>72</td>
+		<td>76</td>
+		<td>78</td>
+		<td>82</td>
+		<td>85</td>
+		<td>89</td>
+		<td>92</td>
+		<td>95</td>
+		<td>71</td>
+		<td>74</td>
+	</tr>
+	<tr>
+		<td>1945</td>
+		<td>77</td>
+		<td>81</td>
+		<td>82</td>
+		<td>85</td>
+		<td>88</td>
+		<td>92</td>
+		<td>94</td>
+		<td>71</td>
+		<td>74</td>
+		<td>77</td>
+		<td>81</td>
+		<td>83</td>
+	</tr>
+	<tr>
+		<td>1946</td>
+		<td>87</td>
+		<td>90</td>
+		<td>92</td>
+		<td>95</td>
+		<td>71</td>
+		<td>74</td>
+		<td>77</td>
+		<td>80</td>
+		<td>84</td>
+		<td>87</td>
+		<td>91</td>
+		<td>93</td>
+	</tr>
+	<tr>
+		<td>1947</td>
+		<td>70</td>
+		<td>73</td>
+		<td>74</td>
+		<td>78</td>
+		<td>80</td>
+		<td>84</td>
+		<td>87</td>
+		<td>90</td>
+		<td>94</td>
+		<td>69</td>
+		<td>73</td>
+		<td>76</td>
+	</tr>
+	<tr>
+		<td>1948</td>
+		<td>79</td>
+		<td>83</td>
+		<td>85</td>
+		<td>88</td>
+		<td>91</td>
+		<td>95</td>
+		<td>70</td>
+		<td>74</td>
+		<td>78</td>
+		<td>80</td>
+		<td>84</td>
+		<td>87</td>
+	</tr>
+	<tr>
+		<td>1949</td>
+		<td>90</td>
+		<td>94</td>
+		<td>94</td>
+		<td>71</td>
+		<td>74</td>
+		<td>77</td>
+		<td>80</td>
+		<td>84</td>
+		<td>87</td>
+		<td>90</td>
+		<td>94</td>
+		<td>69</td>
+	</tr>
+	<tr>
+		<td>1950</td>
+		<td>73</td>
+		<td>77</td>
+		<td>77</td>
+		<td>81</td>
+		<td>83</td>
+		<td>87</td>
+		<td>90</td>
+		<td>93</td>
+		<td>70</td>
+		<td>73</td>
+		<td>76</td>
+		<td>79</td>
+	</tr>
+	<tr>
+		<td>1951</td>
+		<td>83</td>
+		<td>86</td>
+		<td>87</td>
+		<td>91</td>
+		<td>93</td>
+		<td>70</td>
+		<td>72</td>
+		<td>76</td>
+		<td>80</td>
+		<td>82</td>
+		<td>86</td>
+		<td>89</td>
+	</tr>
+	<tr>
+		<td>1952</td>
+		<td>92</td>
+		<td>69</td>
+		<td>71</td>
+		<td>74</td>
+		<td>77</td>
+		<td>81</td>
+		<td>83</td>
+		<td>87</td>
+		<td>91</td>
+		<td>93</td>
+		<td>70</td>
+		<td>72</td>
+	</tr>
+	<tr>
+		<td>1953</td>
+		<td>76</td>
+		<td>80</td>
+		<td>80</td>
+		<td>84</td>
+		<td>87</td>
+		<td>90</td>
+		<td>93</td>
+		<td>69</td>
+		<td>73</td>
+		<td>76</td>
+		<td>79</td>
+		<td>82</td>
+	</tr>
+	<tr>
+		<td>1954</td>
+		<td>86</td>
+		<td>89</td>
+		<td>90</td>
+		<td>94</td>
+		<td>69</td>
+		<td>73</td>
+		<td>76</td>
+		<td>79</td>
+		<td>83</td>
+		<td>85</td>
+		<td>89</td>
+		<td>92</td>
+	</tr>
+	<tr>
+		<td>1955</td>
+		<td>69</td>
+		<td>72</td>
+		<td>73</td>
+		<td>76</td>
+		<td>79</td>
+		<td>83</td>
+		<td>85</td>
+		<td>89</td>
+		<td>93</td>
+		<td>69</td>
+		<td>72</td>
+		<td>75</td>
+	</tr>
+	<tr>
+		<td>1956</td>
+		<td>78</td>
+		<td>82</td>
+		<td>83</td>
+		<td>87</td>
+		<td>90</td>
+		<td>93</td>
+		<td>69</td>
+		<td>73</td>
+		<td>76</td>
+		<td>79</td>
+		<td>83</td>
+		<td>85</td>
+	</tr>
+	<tr>
+		<td>1957</td>
+		<td>89</td>
+		<td>92</td>
+		<td>93</td>
+		<td>70</td>
+		<td>72</td>
+		<td>76</td>
+		<td>79</td>
+		<td>82</td>
+		<td>86</td>
+		<td>89</td>
+		<td>92</td>
+		<td>95</td>
+	</tr>
+	<tr>
+		<td>1958</td>
+		<td>72</td>
+		<td>75</td>
+		<td>76</td>
+		<td>80</td>
+		<td>82</td>
+		<td>86</td>
+		<td>89</td>
+		<td>92</td>
+		<td>69</td>
+		<td>71</td>
+		<td>75</td>
+		<td>78</td>
+	</tr>
+	<tr>
+		<td>1959</td>
+		<td>81</td>
+		<td>85</td>
+		<td>86</td>
+		<td>89</td>
+		<td>92</td>
+		<td>69</td>
+		<td>71</td>
+		<td>75</td>
+		<td>78</td>
+		<td>81</td>
+		<td>85</td>
+		<td>87</td>
+	</tr>
+	<tr>
+		<td>1960</td>
+		<td>91</td>
+		<td>95</td>
+		<td>69</td>
+		<td>73</td>
+		<td>76</td>
+		<td>79</td>
+		<td>82</td>
+		<td>85</td>
+		<td>89</td>
+		<td>92</td>
+		<td>68</td>
+		<td>71</td>
+	</tr>
+	<tr>
+		<td>1961</td>
+		<td>75</td>
+		<td>78</td>
+		<td>79</td>
+		<td>83</td>
+		<td>85</td>
+		<td>89</td>
+		<td>92</td>
+		<td>95</td>
+		<td>72</td>
+		<td>74</td>
+		<td>78</td>
+		<td>81</td>
+	</tr>
+	<tr>
+		<td>1962</td>
+		<td>84</td>
+		<td>89</td>
+		<td>89</td>
+		<td>93</td>
+		<td>95</td>
+		<td>72</td>
+		<td>74</td>
+		<td>78</td>
+		<td>81</td>
+		<td>84</td>
+		<td>88</td>
+		<td>91</td>
+	</tr>
+	<tr>
+		<td>1963</td>
+		<td>94</td>
+		<td>71</td>
+		<td>71</td>
+		<td>75</td>
+		<td>78</td>
+		<td>81</td>
+		<td>84</td>
+		<td>88</td>
+		<td>91</td>
+		<td>94</td>
+		<td>70</td>
+		<td>73</td>
+	</tr>
+	<tr>
+		<td>1964</td>
+		<td>77</td>
+		<td>80</td>
+		<td>82</td>
+		<td>86</td>
+		<td>88</td>
+		<td>92</td>
+		<td>95</td>
+		<td>71</td>
+		<td>75</td>
+		<td>78</td>
+		<td>81</td>
+		<td>84</td>
+	</tr>
+	<tr>
+		<td>1965</td>
+		<td>88</td>
+		<td>91</td>
+		<td>92</td>
+		<td>67</td>
+		<td>71</td>
+		<td>75</td>
+		<td>77</td>
+		<td>81</td>
+		<td>85</td>
+		<td>88</td>
+		<td>91</td>
+		<td>94</td>
+	</tr>
+	<tr>
+		<td>1966</td>
+		<td>71</td>
+		<td>74</td>
+		<td>75</td>
+		<td>79</td>
+		<td>81</td>
+		<td>84</td>
+		<td>87</td>
+		<td>92</td>
+		<td>95</td>
+		<td>71</td>
+		<td>74</td>
+		<td>76</td>
+	</tr>
+	<tr class="sBold">
+		<td>Anno<br>Year</th>
+		<td>Gen<br>Jan</th>
+		<td>Feb</th>
+		<td>Mar</th>
+		<td>Apr</th>
+		<td>Mag<br>May</th>
+		<td>Giu<br>Jun</th>
+		<td>Lug<br>Jul</th>
+		<td>Ago<br>Aug</th>
+		<td>Set<br>Sep</th>
+		<td>Ott<br>Oct</th>
+		<td>Nov</th>
+		<td>Dic<br>Dec</th>
+	</tr>
+	<tr>
+		<td>1967</td>
+		<td>81</td>
+		<td>84</td>
+		<td>84</td>
+		<td>89</td>
+		<td>91</td>
+		<td>94</td>
+		<td>70</td>
+		<td>74</td>
+		<td>77</td>
+		<td>80</td>
+		<td>83</td>
+		<td>86</td>
+	</tr>
+	<tr>
+		<td>1968</td>
+		<td>90</td>
+		<td>93</td>
+		<td>95</td>
+		<td>71</td>
+		<td>74</td>
+		<td>78</td>
+		<td>81</td>
+		<td>84</td>
+		<td>88</td>
+		<td>91</td>
+		<td>94</td>
+		<td>70</td>
+	</tr>
+	<tr>
+		<td>1969</td>
+		<td>73</td>
+		<td>77</td>
+		<td>78</td>
+		<td>81</td>
+		<td>84</td>
+		<td>88</td>
+		<td>90</td>
+		<td>94</td>
+		<td>70</td>
+		<td>73</td>
+		<td>77</td>
+		<td>80</td>
+	</tr>
+	<tr>
+		<td>1970</td>
+		<td>83</td>
+		<td>87</td>
+		<td>87</td>
+		<td>91</td>
+		<td>94</td>
+		<td>70</td>
+		<td>73</td>
+		<td>76</td>
+		<td>80</td>
+		<td>83</td>
+		<td>86</td>
+		<td>89</td>
+	</tr>
+	<tr>
+		<td>1971</td>
+		<td>93</td>
+		<td>69</td>
+		<td>70</td>
+		<td>74</td>
+		<td>76</td>
+		<td>80</td>
+		<td>82</td>
+		<td>86</td>
+		<td>90</td>
+		<td>92</td>
+		<td>69</td>
+		<td>72</td>
+	</tr>
+	<tr>
+		<td>1972</td>
+		<td>75</td>
+		<td>79</td>
+		<td>81</td>
+		<td>84</td>
+		<td>87</td>
+		<td>91</td>
+		<td>93</td>
+		<td>70</td>
+		<td>73</td>
+		<td>76</td>
+		<td>80</td>
+		<td>82</td>
+	</tr>
+	<tr>
+		<td>1973</td>
+		<td>86</td>
+		<td>90</td>
+		<td>90</td>
+		<td>94</td>
+		<td>70</td>
+		<td>73</td>
+		<td>76</td>
+		<td>80</td>
+		<td>83</td>
+		<td>86</td>
+		<td>90</td>
+		<td>92</td>
+	</tr>
+	<tr>
+		<td>1974</td>
+		<td>68</td>
+		<td>72</td>
+		<td>73</td>
+		<td>77</td>
+		<td>79</td>
+		<td>83</td>
+		<td>85</td>
+		<td>89</td>
+		<td>93</td>
+		<td>68</td>
+		<td>72</td>
+		<td>75</td>
+	</tr>
+	<tr>
+		<td>1975</td>
+		<td>78</td>
+		<td>82</td>
+		<td>83</td>
+		<td>86</td>
+		<td>89</td>
+		<td>93</td>
+		<td>68</td>
+		<td>72</td>
+		<td>75</td>
+		<td>78</td>
+		<td>82</td>
+		<td>84</td>
+	</tr>
+	<tr>
+		<td>1976</td>
+		<td>88</td>
+		<td>92</td>
+		<td>94</td>
+		<td>70</td>
+		<td>72</td>
+		<td>76</td>
+		<td>79</td>
+		<td>83</td>
+		<td>86</td>
+		<td>89</td>
+		<td>93</td>
+		<td>69</td>
+	</tr>
+	<tr>
+		<td>1977</td>
+		<td>72</td>
+		<td>76</td>
+		<td>76</td>
+		<td>80</td>
+		<td>82</td>
+		<td>86</td>
+		<td>89</td>
+		<td>92</td>
+		<td>69</td>
+		<td>72</td>
+		<td>75</td>
+		<td>78</td>
+	</tr>
+	<tr>
+		<td>1978</td>
+		<td>82</td>
+		<td>85</td>
+		<td>86</td>
+		<td>89</td>
+		<td>92</td>
+		<td>69</td>
+		<td>71</td>
+		<td>75</td>
+		<td>79</td>
+		<td>81</td>
+		<td>85</td>
+		<td>88</td>
+	</tr>
+	<tr>
+		<td>1979</td>
+		<td>92</td>
+		<td>95</td>
+		<td>68</td>
+		<td>72</td>
+		<td>75</td>
+		<td>78</td>
+		<td>81</td>
+		<td>85</td>
+		<td>88</td>
+		<td>91</td>
+		<td>95</td>
+		<td>70</td>
+	</tr>
+	<tr>
+		<td>1980</td>
+		<td>74</td>
+		<td>78</td>
+		<td>79</td>
+		<td>83</td>
+		<td>85</td>
+		<td>89</td>
+		<td>92</td>
+		<td>68</td>
+		<td>72</td>
+		<td>75</td>
+		<td>78</td>
+		<td>81</td>
+	</tr>
+	<tr>
+		<td>1981</td>
+		<td>85</td>
+		<td>88</td>
+		<td>89</td>
+		<td>92</td>
+		<td>68</td>
+		<td>72</td>
+		<td>75</td>
+		<td>78</td>
+		<td>82</td>
+		<td>84</td>
+		<td>88</td>
+		<td>90</td>
+	</tr>
+	<tr>
+		<td>1982</td>
+		<td>94</td>
+		<td>71</td>
+		<td>72</td>
+		<td>75</td>
+		<td>78</td>
+		<td>81</td>
+		<td>84</td>
+		<td>88</td>
+		<td>92</td>
+		<td>95</td>
+		<td>70</td>
+		<td>73</td>
+	</tr>
+	<tr>
+		<td>1983</td>
+		<td>77</td>
+		<td>81</td>
+		<td>81</td>
+		<td>85</td>
+		<td>88</td>
+		<td>91</td>
+		<td>94</td>
+		<td>71</td>
+		<td>74</td>
+		<td>77</td>
+		<td>80</td>
+		<td>83</td>
+	</tr>
+	<tr>
+		<td>1984</td>
+		<td>87</td>
+		<td>90</td>
+		<td>92</td>
+		<td>69</td>
+		<td>71</td>
+		<td>75</td>
+		<td>78</td>
+		<td>81</td>
+		<td>85</td>
+		<td>88</td>
+		<td>91</td>
+		<td>94</td>
+	</tr>
+	<tr>
+		<td>1985</td>
+		<td>70</td>
+		<td>74</td>
+		<td>75</td>
+		<td>78</td>
+		<td>81</td>
+		<td>85</td>
+		<td>87</td>
+		<td>91</td>
+		<td>95</td>
+		<td>70</td>
+		<td>74</td>
+		<td>76</td>
+	</tr>
+	<tr>
+		<td>1986</td>
+		<td>80</td>
+		<td>84</td>
+		<td>85</td>
+		<td>88</td>
+		<td>91</td>
+		<td>94</td>
+		<td>70</td>
+		<td>73</td>
+		<td>77</td>
+		<td>80</td>
+		<td>83</td>
+		<td>86</td>
+	</tr>
+	<tr>
+		<td>1987</td>
+		<td>70</td>
+		<td>94</td>
+		<td>94</td>
+		<td>71</td>
+		<td>73</td>
+		<td>77</td>
+		<td>80</td>
+		<td>83</td>
+		<td>87</td>
+		<td>90</td>
+		<td>93</td>
+		<td>69</td>
+	</tr>
+	<tr>
+		<td>1988</td>
+		<td>72</td>
+		<td>76</td>
+		<td>78</td>
+		<td>81</td>
+		<td>84</td>
+		<td>88</td>
+		<td>90</td>
+		<td>94</td>
+		<td>71</td>
+		<td>73</td>
+		<td>77</td>
+		<td>80</td>
+	</tr>
+	<tr>
+		<td>1989</td>
+		<td>83</td>
+		<td>87</td>
+		<td>88</td>
+		<td>91</td>
+		<td>94</td>
+		<td>70</td>
+		<td>73</td>
+		<td>77</td>
+		<td>80</td>
+		<td>83</td>
+		<td>87</td>
+		<td>89</td>
+	</tr>
+	<tr>
+		<td>1990</td>
+		<td>93</td>
+		<td>69</td>
+		<td>70</td>
+		<td>74</td>
+		<td>75</td>
+		<td>80</td>
+		<td>83</td>
+		<td>86</td>
+		<td>89</td>
+		<td>92</td>
+		<td>69</td>
+		<td>71</td>
+	</tr>
+	<tr>
+		<td>1991</td>
+		<td>76</td>
+		<td>79</td>
+		<td>80</td>
+		<td>83</td>
+		<td>88</td>
+		<td>90</td>
+		<td>92</td>
+		<td>69</td>
+		<td>72</td>
+		<td>75</td>
+		<td>79</td>
+		<td>82</td>
+	</tr>
+	<tr>
+		<td>1992</td>
+		<td>86</td>
+		<td>89</td>
+		<td>90</td>
+		<td>94</td>
+		<td>69</td>
+		<td>73</td>
+		<td>76</td>
+		<td>80</td>
+		<td>85</td>
+		<td>87</td>
+		<td>90</td>
+		<td>93</td>
+	</tr>
+	<tr>
+		<td>1993</td>
+		<td>69</td>
+		<td>72</td>
+		<td>73</td>
+		<td>75</td>
+		<td>80</td>
+		<td>84</td>
+		<td>85</td>
+		<td>89</td>
+		<td>94</td>
+		<td>69</td>
+		<td>72</td>
+		<td>74</td>
+	</tr>
+	<tr>
+		<td>1994</td>
+		<td>79</td>
+		<td>82</td>
+		<td>83</td>
+		<td>87</td>
+		<td>90</td>
+		<td>94</td>
+		<td>69</td>
+		<td>71</td>
+		<td>75</td>
+		<td>77</td>
+		<td>81</td>
+		<td>84</td>
+	</tr>
+	<tr>
+		<td>1995</td>
+		<td>88</td>
+		<td>92</td>
+		<td>93</td>
+		<td>70</td>
+		<td>72</td>
+		<td>75</td>
+		<td>78</td>
+		<td>81</td>
+		<td>85</td>
+		<td>88</td>
+		<td>92</td>
+		<td>68</td>
+	</tr>
+	<tr>
+		<td>1996</td>
+		<td>72</td>
+		<td>74</td>
+		<td>77</td>
+		<td>81</td>
+		<td>83</td>
+		<td>86</td>
+		<td>89</td>
+		<td>93</td>
+		<td>69</td>
+		<td>71</td>
+		<td>75</td>
+		<td>77</td>
+	</tr>
+	<tr>
+		<td>1997</td>
+		<td>81</td>
+		<td>84</td>
+		<td>86</td>
+		<td>89</td>
+		<td>91</td>
+		<td>69</td>
+		<td>71</td>
+		<td>75</td>
+		<td>79</td>
+		<td>81</td>
+		<td>85</td>
+		<td>87</td>
+	</tr>
+	<tr>
+		<td>1998</td>
+		<td>91</td>
+		<td>69</td>
+		<td>69</td>
+		<td>73</td>
+		<td>76</td>
+		<td>78</td>
+		<td>82</td>
+		<td>84</td>
+		<td>87</td>
+		<td>91</td>
+		<td>95</td>
+		<td>88</td>
+	</tr>
+	<tr>
+		<td>1999</td>
+		<td>75</td>
+		<td>78</td>
+		<td>78</td>
+		<td>82</td>
+		<td>85</td>
+		<td>87</td>
+		<td>92</td>
+		<td>95</td>
+		<td>72</td>
+		<td>75</td>
+		<td>78</td>
+		<td>80</td>
+	</tr>
+	<tr>
+		<td>2000</td>
+		<td>85</td>
+		<td>88</td>
+		<td>89</td>
+		<td>92</td>
+		<td>94</td>
+		<td>72</td>
+		<td>75</td>
+		<td>78</td>
+		<td>63</td>
+		<td>85</td>
+		<td>88</td>
+		<td>91</td>
+	</tr>
+	<tr>
+		<td>2001</td>
+		<td>94</td>
+		<td>71</td>
+		<td>72</td>
+		<td>75</td>
+		<td>88</td>
+		<td>82</td>
+		<td>84</td>
+		<td>89</td>
+		<td>92</td>
+		<td>95</td>
+		<td>70</td>
+		<td>73</td>
+	</tr>
+	<tr>
+		<td>2002</td>
+		<td>77</td>
+		<td>81</td>
+		<td>82</td>
+		<td>85</td>
+		<td>89</td>
+		<td>92</td>
+		<td>94</td>
+		<td>71</td>
+		<td>74</td>
+		<td>76</td>
+		<td>80</td>
+		<td>83</td>
+	</tr>
+</tbody>
+<tfoot class="sBorderTopDouble">
+	<tr class=" sBold">
+		<td>Anno<br>Year</th>
+		<td>Gen<br>Jan</th>
+		<td>Feb</th>
+		<td>Mar</th>
+		<td>Apr</th>
+		<td>Mag<br>May</th>
+		<td>Giu<br>Jun</th>
+		<td>Lug<br>Jul</th>
+		<td>Ago<br>Aug</th>
+		<td>Set<br>Sep</th>
+		<td>Ott<br>Oct</th>
+		<td>Nov</th>
+		<td>Dic<br>Dec</th>
+	</tr>
+</tfoot>
+</table>
+		<br>
+		<h2>Tabella 2</h2>
+		<!-- p class="sCenter">		
+			<img src="tabelle/TLuna_tabella2.jpg" width="389" height="355" alt="Posizione della Luna: Tabella 2">
+		</p -->
+<!-- table id="tabella2" bgcolor="#ecf2f8" style="margin: 50px;" cellspacing="0" cellpadding="0" border="1" class="sBorderSm sBorderCollapse" align="center" -->
+<table id="tabella2" align="center">
+<thead class="sBorderBottomDouble">
+	<tr class=" sBold">
+		<th width="90px;">da - a<br>from - to</th>
+		<th width="90px;">da - a<br>from - to</th>
+		<th width="90px;">da - a<br>from - to</th>
+		<th width="255px;" class="sMedium sLeft sPaddingL10">Segno / Sign</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>68 - 71</td>
+		<td>&nbsp;&nbsp;96 - &nbsp;&nbsp;98</td>
+		<td>123 - 125</td>
+		<td class="sLeft"><a href="OroscLuna.htm#LunaAriete" title="Luna in Ariete"><span class="sRed sBold sPaddingL10">ARIETE / ARIES</span></a></td>
+	</tr>
+	<tr>
+		<td>71 - 73</td>
+		<td>&nbsp;&nbsp;98 - 100</td>
+		<td>125 - 127</td>
+		<td class="sLeft"><a href="OroscLuna.htm#LunaToro" title="Luna in Toro"><span class="sLime sBold sPaddingL10">TORO / TAURUS</span></a></td>
+	</tr>
+	<tr>
+		<td>73 - 75</td>
+		<td>100 - 102</td>
+		<td>127 - 129</td>
+		<td class="sLeft"><a href="OroscLuna.htm#LunaGemelli" title="Luna in Gemelli"><span class="sYellow sBold sPaddingL10">GEMELLI / GEMINI</span></a></td>
+	</tr>
+	<tr>
+		<td>75 - 77</td>
+		<td>102 - 104</td>
+		<td>130 - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td class="sLeft"><a href="OroscLuna.htm#LunaCancro" title="Luna in Cancro"><span class="sAqua sBold sPaddingL10">CANCRO / CANCER</span></a></td>
+	</tr>
+	<tr>
+		<td>78 - 80</td>
+		<td>105 - 107</td>
+		<td> </td>
+		<td class="sLeft"><a href="OroscLuna.htm#LunaLeone" title="Luna in Leone"><span class="sRed sBold sPaddingL10">LEONE / LEO</span></a></td>
+	</tr>
+	<tr>
+		<td>80 - 82</td>
+		<td>107 - 109</td>
+		<td> </td>
+		<td class="sLeft"><a href="OroscLuna.htm#LunaVergine" title="Luna in Vergine"><span class="sLime sBold sPaddingL10">VERGINE / VIRGO</span></a></td>
+	</tr>
+	<tr>
+		<td>82 - 84</td>
+		<td>109 - 111</td>
+		<td> </td>
+		<td class="sLeft"><a href="OroscLuna.htm#LunaBilancia" title="Luna in Bilancia"><span class="sYellow sBold sPaddingL10">BILANCIA / LIBRA</span></a></td>
+	</tr>
+	<tr>
+		<td>85 - 87</td>
+		<td>112 - 114</td>
+		<td> </td>
+		<td class="sLeft"><a href="OroscLuna.htm#LunaScorpione" title="Luna in Scorpione"><span class="sAqua sBold sPaddingL10">SCORPIONE / SCORPIO</span></a></td>
+	</tr>
+	<tr>
+		<td>87 - 89</td>
+		<td>114 - 116</td>
+		<td> </td>
+		<td class="sLeft"><a href="OroscLuna.htm#LunaSagittario" title="Luna in Sagittario"><span class="sRed sBold sPaddingL10">SAGITTARIO / SAGITTARIUS</span></a></td>
+	</tr>
+	<tr>
+		<td>89 - 91</td>
+		<td>116 - 118</td>
+		<td> </td>
+		<td class="sLeft"><a href="OroscLuna.htm#LunaCapricorno" title="Luna in Capricorno"><span class="sLime sBold sPaddingL10">CAPRICORNO / CAPRICORN</span></a></td>
+	</tr>
+	<tr>
+		<td>91 - 93</td>
+		<td>118 - 120</td>
+		<td> </td>
+		<td class="sLeft"><a href="OroscLuna.htm#LunaAcquario" title="Luna in Acquario"><span class="sYellow sBold sPaddingL10">ACQUARIO / AQUARIUS</span></a></td>
+	</tr>
+	<tr>
+		<td>93 - 95</td>
+		<td>121 - 123</td>
+		<td> </td>
+		<td class="sLeft"><a href="OroscLuna.htm#LunaPesci" title="Luna in Pesci"><span class="sAqua sBold sPaddingL10">PESCI / PISCES</span></a></td>
+	</tr>
+</tbody>
+</table>
+
+		<!-- p class="sCenter">
+			<br>
 			<img src="grafiche/Icona_luna.gif" width="32" height="34" alt="Icona Luna">
 			<img src="grafiche/Icona_luna.gif" width="32" height="34" alt="">
 			<img src="grafiche/Icona_luna.gif" width="32" height="34" alt="">
@@ -233,19 +1556,22 @@ img {
 			<img src="grafiche/Icona_luna.gif" width="32" height="34" alt="">
 			<img src="grafiche/Icona_luna.gif" width="32" height="34" alt="">
 			<br>
-		</p>
+		</p -->
 
-		<p class="sBold sCenter">
+		<!-- p class="sBold sCenter">
 			<span class="sRed">ARIETE / ARIES</span> --- <span class="sRed">LEONE / LEO</span> --- <span class="sRed">SAGITTARIO / SAGITTARIUS</span><br>
 			<span class="sLime">TORO / TAURUS</span> --- <span class="sLime">VERGINE / VIRGO</span> --- <span class="sLime">CAPRICORNO / CAPRICORN</span><br>
 			<span class="sYellow">GEMELLI / GEMINI</span> --- <span class="sYellow">BILANCIA / LIBRA</span> --- <span class="sYellow">ACQUARIO / AQUARIUS</span><br>
 			<span class="sAqua">CANCRO / CANCER</span> --- <span class="sAqua">SCORPIONE / SCORPIO</span> --- <span class="sAqua">PESCI / PISCES</span>
-		</p>
+		</p -->
 
 		<p class="sBold sCenter">
-			I 4 elementi / <i lang="en">The 4 elements</i>:
-			<span class="sRed">FUOCO / FIRE</span> - <span class="sLime">TERRA / EARTH</span> -
-			<span class="sYellow">ARIA / AIR</span> - <span class="sAqua">ACQUA / WATER</span>
+			<br>
+			I 4 elementi / <i lang="en">The 4 elements</i>:<br>
+			<a href="OroscLuna.htm#LunaFuoco" title="Luna nei segni di Fuoco" class="sTxtDecNo"><span class="sRed">FUOCO / FIRE</span></a> - 
+			<a href="OroscLuna.htm#LunaTerra" title="Luna nei segni di Terra" class="sTxtDecNo"><span class="sLime">TERRA / EARTH</span></a> - 
+			<a href="OroscLuna.htm#LunaAria" title="Luna nei segni d'Aria" class="sTxtDecNo"><span class="sYellow">ARIA / AIR</span></a> - 
+			<a href="OroscLuna.htm#LunaAcqua" title="Luna nei segni d'Acqua" class="sTxtDecNo"><span class="sAqua">ACQUA / WATER</span></a>
 		</p>
 
 		<p class="sCenter">
@@ -260,8 +1586,8 @@ img {
 			<img src="grafiche/Icona_luna.gif" width="32" height="34" alt="">
 			<img src="grafiche/Icona_luna.gif" width="32" height="34" alt="">
 			<img src="grafiche/Icona_luna.gif" width="32" height="34" alt="">
-			<img src="grafiche/Icona_luna.gif" width="32" height="34" alt="">
-			<img src="grafiche/Icona_luna.gif" width="32" height="34" alt="">
+			<img src="grafiche/Icona_luna.gif" class="sVediImg3" width="32" height="34" alt="">
+			<img src="grafiche/Icona_luna.gif" class="sVediImg3" width="32" height="34" alt="">
 			<br>
 		</p>
 
@@ -274,8 +1600,10 @@ img {
 			<a href="index.html" class="sBold">Pagina iniziale <img src="favicon32.gif" width="32" height="32" alt=""> Home page</a>
 			&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
 			<b>Sei il visitatore n°&nbsp;</b>
-		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220428096-meixrahy" border="0"></a>
-			&nbsp;(Contenuto Aggiornato <time datetime="2019-05-15">15/05/2019</time>)<br><br>
+			<!-- Sostituito Counter il 07/03/2021 alle 00:05 quando aveva valore 12368 -->
+			<!-- a href="http://www.retecivica.milano.it" target="_blank"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220428096-meixrahy" border="0"></a -->
+			<a href="http://www.simplehitcounter.com" target="_blank" title="Contatore Visite SimpleHitCounter"><img src="http://simplehitcounter.com/hit.php?uid=3693454772387063248&f=0&b=16777215" border="0" height="18" width="83" alt="visit counter"></a>
+			&nbsp;(Contenuto Aggiornato <time datetime="2021-03-07">07/03/2021</time>)<br><br>
 		</p>
 
 </td></tr></TBODY></table>
