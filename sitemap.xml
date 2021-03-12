@@ -13,7 +13,7 @@
 </url>
 <url>
   <loc>https://www.studioacquario.it/index.html</loc>
-  <lastmod>2021-03-05T20:28:00+00:00</lastmod>
+  <lastmod>2021-03-12T21:58:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
@@ -402,8 +402,13 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://www.studioacquario.it/contatti.html</loc>
+  <lastmod>2021-03-12T21:45:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://www.studioacquario.it/privacy.html</loc>
-  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <lastmod>2021-03-12T21:45:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
