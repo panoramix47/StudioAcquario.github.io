@@ -13,7 +13,7 @@
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="12/03/2021">
-<meta name="revised" content="12/03/2021">
+<meta name="revised" content="24/03/2021">
 <meta name="robots" content="index,follow">
 
 <meta property="og:title" content="Studio di Astrologia Acquario" />
@@ -553,9 +553,16 @@ function SoleLuna() {
 	var segno = t_meseSegno [mese];
 	var cambioGiorno = t_cambioSegno [mese];
 
+// console.log("oggi=",oggi);
+// console.log("mese=",mese);
+// console.log("giorno=",giorno);
+// console.log("segno=",segno);
+// console.log("cambioGiorno=",cambioGiorno);
 GradiMese();
 GradiSolari();
 if ( giorno >= cambioGiorno ) { segno = segno + 1 };
+if (segno>12) { segno = 1 };
+// console.log("new segno=",segno);
 AffinitaCoppia();
 CoppiaMese();
 I12Asc();

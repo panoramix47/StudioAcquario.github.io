@@ -13,7 +13,7 @@
 </url>
 <url>
   <loc>https://www.studioacquario.it/index.html</loc>
-  <lastmod>2021-03-12T21:58:00+00:00</lastmod>
+  <lastmod>2021-03-23T23:07:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
@@ -67,9 +67,14 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/SegnoMese1.htm</loc>
+  <loc>https://www.studioacquario.it/SegnoMese.htm</loc>
   <lastmod>2021-01-25T19:26:00+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.studioacquario.it/SegnoMese1.htm</loc>
+  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.studioacquario.it/SegnoMese2.htm</loc>
@@ -127,9 +132,14 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/SoleLuna1.htm</loc>
+  <loc>https://www.studioacquario.it/SoleLuna.htm</loc>
   <lastmod>2021-01-25T19:26:00+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.studioacquario.it/SoleLuna1.htm</loc>
+  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.studioacquario.it/SoleLuna2.htm</loc>
@@ -187,9 +197,14 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/CoppiaMese1.htm</loc>
+  <loc>https://www.studioacquario.it/CoppiaMese.htm</loc>
   <lastmod>2021-01-25T19:26:00+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.studioacquario.it/CoppiaMese1.htm</loc>
+  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.studioacquario.it/CoppiaMese2.htm</loc>
@@ -252,9 +267,14 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/GradiMese1.htm</loc>
+  <loc>https://www.studioacquario.it/GradiMese.htm</loc>
   <lastmod>2021-01-25T19:26:00+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.studioacquario.it/GradiMese1.htm</loc>
+  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.studioacquario.it/GradiMese2.htm</loc>
@@ -312,9 +332,14 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/GradiSolari1.htm</loc>
+  <loc>https://www.studioacquario.it/GradiSolari.htm</loc>
   <lastmod>2021-01-25T19:26:00+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.studioacquario.it/GradiSolari1.htm</loc>
+  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.studioacquario.it/GradiSolari2.htm</loc>
@@ -372,9 +397,14 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/I12.ASC.Ariete.htm</loc>
+  <loc>https://www.studioacquario.it/I12.ASC.htm</loc>
   <lastmod>2021-01-25T19:26:00+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.studioacquario.it/I12.ASC.Ariete.htm</loc>
+  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.studioacquario.it/I12.ASC.Toro.htm</loc>
@@ -457,9 +487,14 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/AffinitaCoppia1.htm</loc>
+  <loc>https://www.studioacquario.it/AffinitaCoppia.htm</loc>
   <lastmod>2021-01-25T19:26:00+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.studioacquario.it/AffinitaCoppia1.htm</loc>
+  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.studioacquario.it/AffinitaCoppia2.htm</loc>
@@ -607,11 +642,6 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/benvenut.htm</loc>
-  <lastmod>2021-03-01T22:30:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://www.studioacquario.it/poesie1.htm</loc>
   <lastmod>2021-01-25T19:26:00+00:00</lastmod>
   <priority>0.80</priority>
@@ -667,72 +697,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/1ATopoAriete.htm</loc>
-  <lastmod>2021-03-23T23:40:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.studioacquario.it/2ABufaloAriete.htm</loc>
-  <lastmod>2021-03-23T23:40:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.studioacquario.it/3ATigreAriete.htm</loc>
-  <lastmod>2021-03-23T23:40:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.studioacquario.it/4ALepreAriete.htm</loc>
-  <lastmod>2021-03-23T23:40:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.studioacquario.it/5ADragoAriete.htm</loc>
-  <lastmod>2021-03-23T23:40:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.studioacquario.it/6ASerpenteAriete.htm</loc>
-  <lastmod>2021-03-23T23:40:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.studioacquario.it/7ACavalloAriete.htm</loc>
-  <lastmod>2021-03-23T23:40:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.studioacquario.it/8ACapraAriete.htm</loc>
-  <lastmod>2021-03-23T23:40:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.studioacquario.it/9AScimmiaAriete.htm</loc>
-  <lastmod>2021-03-23T23:40:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.studioacquario.it/10AGalloAriete.htm</loc>
-  <lastmod>2021-03-23T23:40:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.studioacquario.it/11ACaneAriete.htm</loc>
-  <lastmod>2021-03-23T23:40:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.studioacquario.it/12ACinghialeAriete.htm</loc>
-  <lastmod>2021-03-23T23:40:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
   <loc>https://www.studioacquario.it/OroscCine_2021.html</loc>
-  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.studioacquario.it/ZodiaCine.htm</loc>
   <lastmod>2021-01-25T19:26:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -765,6 +730,11 @@
   <loc>https://www.studioacquario.it/NodiKarma.htm</loc>
   <lastmod>2021-01-25T19:26:00+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.studioacquario.it/NodiAnni.htm</loc>
+  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.studioacquario.it/Chirone.htm</loc>
@@ -822,6 +792,51 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://www.studioacquario.it/Nomi1.htm</loc>
+  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.studioacquario.it/Nomi2.htm</loc>
+  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.studioacquario.it/Nomi3.htm</loc>
+  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.studioacquario.it/Nomi4.htm</loc>
+  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.studioacquario.it/Nomi5.htm</loc>
+  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.studioacquario.it/Nomi6.htm</loc>
+  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.studioacquario.it/Nomi7.htm</loc>
+  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.studioacquario.it/Nomi8.htm</loc>
+  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.studioacquario.it/Nomi9.htm</loc>
+  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://www.studioacquario.it/ColoreNome.htm</loc>
   <lastmod>2021-01-25T19:26:00+00:00</lastmod>
   <priority>0.80</priority>
@@ -867,68 +882,68 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/contatti.html</loc>
-  <lastmod>2021-03-12T21:45:00+00:00</lastmod>
+  <loc>https://www.studioacquario.it/ZodiaCine.htm</loc>
+  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/privacy.html</loc>
-  <lastmod>2021-03-12T21:45:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.studioacquario.it/index.htm</loc>
-  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <loc>https://www.studioacquario.it/1ATopoAriete.htm</loc>
+  <lastmod>2021-03-23T23:40:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/ricordi.htm</loc>
-  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <loc>https://www.studioacquario.it/2ABufaloAriete.htm</loc>
+  <lastmod>2021-03-23T23:40:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/gatti.htm</loc>
-  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <loc>https://www.studioacquario.it/3ATigreAriete.htm</loc>
+  <lastmod>2021-03-23T23:40:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/nipoti.htm</loc>
-  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <loc>https://www.studioacquario.it/4ALepreAriete.htm</loc>
+  <lastmod>2021-03-23T23:40:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/Figlie.htm</loc>
-  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <loc>https://www.studioacquario.it/5ADragoAriete.htm</loc>
+  <lastmod>2021-03-23T23:40:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/laura.htm</loc>
-  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <loc>https://www.studioacquario.it/6ASerpenteAriete.htm</loc>
+  <lastmod>2021-03-23T23:40:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/luciano.htm</loc>
-  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <loc>https://www.studioacquario.it/7ACavalloAriete.htm</loc>
+  <lastmod>2021-03-23T23:40:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/nostravita.htm</loc>
-  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <loc>https://www.studioacquario.it/8ACapraAriete.htm</loc>
+  <lastmod>2021-03-23T23:40:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/parenti.htm</loc>
-  <lastmod>2021-03-01T21:22:00+00:00</lastmod>
+  <loc>https://www.studioacquario.it/9AScimmiaAriete.htm</loc>
+  <lastmod>2021-03-23T23:40:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/Country.htm</loc>
-  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <loc>https://www.studioacquario.it/10AGalloAriete.htm</loc>
+  <lastmod>2021-03-23T23:40:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/OroscCine.htm</loc>
-  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <loc>https://www.studioacquario.it/11ACaneAriete.htm</loc>
+  <lastmod>2021-03-23T23:40:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.studioacquario.it/12ACinghialeAriete.htm</loc>
+  <lastmod>2021-03-23T23:40:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -1052,52 +1067,62 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/NodiAnni.htm</loc>
+  <loc>https://www.studioacquario.it/contatti.html</loc>
+  <lastmod>2021-03-12T21:45:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.studioacquario.it/privacy.html</loc>
+  <lastmod>2021-03-12T21:45:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.studioacquario.it/benvenut.htm</loc>
+  <lastmod>2021-03-01T22:30:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.studioacquario.it/ricordi.htm</loc>
   <lastmod>2021-01-25T19:26:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/Nomi1.htm</loc>
+  <loc>https://www.studioacquario.it/gatti.htm</loc>
   <lastmod>2021-01-25T19:26:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/Nomi2.htm</loc>
+  <loc>https://www.studioacquario.it/nipoti.htm</loc>
   <lastmod>2021-01-25T19:26:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/Nomi3.htm</loc>
+  <loc>https://www.studioacquario.it/Figlie.htm</loc>
   <lastmod>2021-01-25T19:26:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/Nomi4.htm</loc>
+  <loc>https://www.studioacquario.it/laura.htm</loc>
   <lastmod>2021-01-25T19:26:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/Nomi5.htm</loc>
+  <loc>https://www.studioacquario.it/luciano.htm</loc>
   <lastmod>2021-01-25T19:26:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/Nomi6.htm</loc>
+  <loc>https://www.studioacquario.it/nostravita.htm</loc>
   <lastmod>2021-01-25T19:26:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/Nomi7.htm</loc>
-  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <loc>https://www.studioacquario.it/parenti.htm</loc>
+  <lastmod>2021-03-01T21:22:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/Nomi8.htm</loc>
-  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.studioacquario.it/Nomi9.htm</loc>
+  <loc>https://www.studioacquario.it/Country.htm</loc>
   <lastmod>2021-01-25T19:26:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -1107,43 +1132,18 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/GradiSolari.htm</loc>
-  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.studioacquario.it/AffinitaCoppia.htm</loc>
-  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.studioacquario.it/CoppiaMese.htm</loc>
-  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.studioacquario.it/I12.ASC.htm</loc>
-  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.studioacquario.it/GradiMese.htm</loc>
-  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.studioacquario.it/SegnoMese.htm</loc>
-  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.studioacquario.it/SoleLuna.htm</loc>
-  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
   <loc>https://www.studioacquario.it/404.html</loc>
   <lastmod>2021-03-01T22:16:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.studioacquario.it/OroscCine.htm</loc>
+  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.studioacquario.it/index.htm</loc>
+  <lastmod>2021-01-25T19:26:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
