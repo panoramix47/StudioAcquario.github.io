@@ -11,8 +11,8 @@
 <meta name="language" content="it">
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="content_updated" content="31/12/2018">
-<meta name="revised" content="27/12/2020">
+<meta name="content_updated" content="02/04/2021"><!-- content="31/12/2018" -->
+<meta name="revised" content="02/04/2021">
 
 <style type="text/css">
 body {
@@ -41,6 +41,28 @@ h1 {
 	padding-left: 10px;
 	padding-right: 10px;
 	line-height: 150%;
+}
+h2 {
+	font-size: large;
+	font-weight: bold;
+	color: #000080; /* Navy */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 100%;
+	margin-top: 40px;
+	margin-bottom: 25px;
+}
+h3 {
+	font-size: medium;
+	font-weight: bold;
+	color: #FF0000; /* Red */
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 100%;
+	margin-top: 20px;
+	margin-bottom: 5px;
 }
 header {
 	font-size: xx-large;
@@ -133,6 +155,9 @@ img {
 .sRed {
 			color: #FF0000;
 }
+.sBGWhite {
+			background-color: #FFFFFF;
+}
 .sBold {
 			font-weight: bold;
 }
@@ -148,6 +173,66 @@ img {
 .sXLarge {
 			font-size: x-large;
 }
+.sVediImg1 {
+	display: inline;
+}
+.sVediImg2 {
+	display: inline;
+}
+.sVediImg3 {
+	display: inline;
+}
+.sVediImg4 {
+	max-width: 100%;
+	height: auto;
+}
+.sVediImg5 {
+	display: inline;
+}
+.sVediImg6 {
+	display: inline;
+}
+.sVediImg7 {
+	max-width: 100%;
+	height: auto;
+}
+@media screen and (max-width:1318px) {
+	.sVediImg1 {
+		display: none !important;
+	}
+}
+@media screen and (max-width:905px) {
+	.sVediImg1 {
+		display: none !important;
+	}
+	.sVediImg2 {
+		display: none !important;
+	}
+}
+@media screen and (max-width:972px) {
+	.sVediImg3 {
+		display: none !important;
+	}
+}
+@media screen and (max-width:790px) {
+	.sVediImg5 {
+		display: none !important;
+	}
+}
+@media screen and (max-width:660px) {
+	.sVediImg4 {
+		width: 20%;
+	}
+	.sVediImg6 {
+		display: none !important;
+	}
+}
+@media screen and (max-width:476px) {
+	.sVediImg7 {
+		width: 29%;
+	}
+}
+
 </style>
 </head>
 
@@ -164,9 +249,9 @@ img {
 			Segni, Pianeti ed Elementi</h1>
 
 		<p class="sCenter">
-			<img src="grafiche/Scoprire_ruotaZodiaco.jpg"  width="356" height="358" alt="Ruota Zodiaco 1">&nbsp;
-			<img src="grafiche/Scoprire_segniNeri.jpg"     width="343" height="240" alt="Segni Zodiacali Bianco e Nero">&nbsp;
-			<img src="grafiche/Scoprire_ruotaZodiaco2.jpg" width="387" height="390" alt="Ruota Zodiaco 2">
+			<img src="grafiche/Scoprire_ruotaZodiaco.jpg"  class="sVediImg2" width="356" height="358" alt="Ruota Zodiaco 1">&nbsp;
+			<img src="grafiche/Scoprire_segniNeri.jpg"                       width="343" height="240" alt="Segni Zodiacali Bianco e Nero">&nbsp;
+			<img src="grafiche/Scoprire_ruotaZodiaco2.jpg" class="sVediImg1" width="387" height="390" alt="Ruota Zodiaco 2">
 		</p>
 
 		<p class="sXLarge sNavy sBold sCenter">
@@ -218,13 +303,11 @@ img {
 			nell'<span class="sRed sBold">OROSCOPO</span>.
 		</p>
 
-		<p class="sLarge sNavy sBold sCenter">
-			<br>
-			I <span class="sRed">10</span> PIANETI: IN ORDINE DI DISTANZA DAL <span class="sRed">SOLE</span>
-		</p>
+		<h2>I <span class="sRed">10</span> PIANETI: IN ORDINE DI DISTANZA DAL <span class="sRed">SOLE</span></h2>
+		
 		<p class="sCenter">
-			<img src="grafiche/Scoprire_sistemaSolare.gif" width="360" height="250" alt="Pianeti con Sole">
-			<img src="grafiche/Scoprire_pianeti.jpg"       width="406" height="293" alt="Pianeti">
+			<img src="grafiche/Scoprire_sistemaSolare.gif"                   width="360" height="250" alt="Pianeti con Sole">
+			<img src="grafiche/Scoprire_pianeti.jpg"       class="sVediImg3" width="406" height="293" alt="Pianeti">
 			<br><br>
 			<img src="grafiche/Pianeti_barraPianeti.gif"   width="510" height="35"  alt="Barra dei Pianeti">
 		</p>
@@ -234,7 +317,7 @@ img {
 			luminari, sono i più importanti in un <span class="sRed sBold">OROSCOPO</span>.
 		</p>
 
-		<p class="sMedium sRed sBold sCenter">SOLE</p>
+		<h3><img src="grafiche/Pianeti_sole.gif" width="54" height="55" alt="Sole">SOLE</h3>
 		<p>
 			<span class="sRed sBold">SOLE</span>: <span class="sNavy sBold">Io voglio</span> = <span class="sRed">La sua natura è calda e secca, costruttiva</span><br>
 			Simbolo della vita, della luce e calore. È l'Io reale psicologico, l'ambizione, l'orgoglio, la vitalità, l'espansione, la parte attiva e la
@@ -250,7 +333,7 @@ img {
 			per la donna, l'occhio destro per l'uomo.
 		</p>
 
-		<p class="sMedium sRed sBold sCenter">LUNA</p>
+		<h3><img src="grafiche/Pianeti_luna.gif" width="55" height="55" alt="Luna">&nbsp;LUNA</h3>
 		<p>
 			<span class="sRed sBold">LUNA</span>: <span class="sNavy sBold">Io sento</span> = <span class="sRed">La natura è flemmatica, fredda e umida</span><br>
 			È l'Io sensibile, l'intuizione, la fantasia, il cambiamento, il romanticismo. L' emozione, l'intimo, la memoria, la sensibilità, l'immaginazione,
@@ -265,7 +348,7 @@ img {
 			per l'uomo, destro per la donna.
 		</p>
 
-		<p class="sMedium sRed sBold sCenter">MERCURIO</p>
+		<h3><img src="grafiche/Pianeti_mercurio.gif" width="55" height="55" alt="Mercurio">&nbsp;MERCURIO</h3>
 		<p>
 			<span class="sRed sBold">MERCURIO</span>: <span class="sNavy sBold">Io sono</span> = <span class="sRed">La natura è convertibile, fredda e secca</span><br>
 			È l'intelligenza, la mente, lo studio, la parola, l'astuzia, l'ingegno, il pensiero. La ragione, l'apprendimento, il commercio, la memoria,
@@ -281,7 +364,7 @@ img {
 			La respirazione, i bronchi e polmoni, spalle, braccia e mani.
 		</p>
 
-		<p class="sMedium sRed sBold sCenter">VENERE</p>
+		<h3><img src="grafiche/Pianeti_venere.gif" width="55" height="55" alt="Venere">&nbsp;VENERE</h3>
 		<p>
 			<span class="sRed sBold">VENERE</span>: <span class="sNavy sBold">Io Amo</span> = <span class="sRed"><b>Fortuna minor</b>. La natura è moderata e umida</span><br>
 			È l'amore, la vita sentimentale, la simpatia, l'affabilità, il lusso, la gioia, il fascino, la grazia, la socievolezza, la dolcezza.
@@ -296,7 +379,7 @@ img {
 			<span class="sRed sBold">Luna</span>. La tiroide, la circolazione venosa, la regione lombare.
 		</p>
 
-		<p class="sMedium sRed sBold sCenter">MARTE</p>
+		<h3><img src="grafiche/Pianeti_marte.gif" width="55" height="55" alt="Marte">&nbsp;MARTE</h3>
 		<p>
 			<span class="sRed sBold">MARTE</span>: <span class="sNavy sBold">Io agisco</span> = <span class="sRed">La natura è collerica, calda e secca</span><br>
 			Coraggio e aggressività, energia e grande volontà e forza fisica. Dinamismo, combattività, impulsività, audacia, franchezza, vitalità, agilità
@@ -312,7 +395,7 @@ img {
 			rossi, il sangue, la bile, la testa, il naso, i muscoli, la vescica, i reni con <span class="sRed sBold">Venere</span>.
 		</p>
 
-		<p class="sMedium sRed sBold sCenter">GIOVE</p>
+		<h3><img src="grafiche/Pianeti_giove.gif" width="55" height="55" alt="Giove">&nbsp;GIOVE</h3>
 		<p>
 			<span class="sRed sBold">GIOVE</span>: <span class="sNavy sBold">Io gioisco</span> = <span class="sRed"><b>La grande fortuna</b>. La natura elettrica, calda e umida</span><br>
 			a ricchezza, la bontà, la saggezza, la giustizia, l'altruismo. La lealtà, la gioia di vivere, il prestigio, l'ambizione, il successo, la
@@ -327,7 +410,7 @@ img {
 			<span class="sRed sBold">Venere</span>, cosce, anche, femore. Adiposità e obesità, foruncoli, ascessi, cirrosi, diabete.
 		</p>
 
-		<p class="sMedium sRed sBold sCenter">SATURNO</p>
+		<h3><img src="grafiche/Pianeti_saturno.gif" width="55" height="55" alt="Saturno">&nbsp;SATURNO</h3>
 		<p>
 			<span class="sRed sBold">SATURNO</span>: <span class="sNavy sBold">Io so</span> = <span class="sRed">La natura è fredda e secca è la grande sfortuna</span><br>
 			Il destino, la carriera, il tempo, il fato, i ritardi. La pazienza, le rinunce e gli ostacoli, la timidezza e la tristezza, la diffidenza e la
@@ -343,7 +426,7 @@ img {
 			Articolazioni, ginocchia, schiena, scheletro.
 		</p>
 
-		<p class="sMedium sRed sBold sCenter">URANO</p>
+		<h3><img src="grafiche/Pianeti_urano.gif" width="55" height="55" alt="Urano">&nbsp;URANO</h3>
 		<p>
 			<span class="sRed sBold">URANO</span>: <span class="sNavy sBold">Io libero</span> = <span class="sRed">Natura eccentrica, elettrica e variabile</span><br>
 			Scienza moderna, originalità, invenzione e innovazione, la libertà e il progresso. La forza dinamica, Imprevisto, versatilità, indipendenza.
@@ -360,7 +443,7 @@ img {
 			interventi chirurgici a carattere improvviso.
 		</p>
 
-		<p class="sMedium sRed sBold sCenter">NETTUNO</p>
+		<h3><img src="grafiche/Pianeti_nettuno.gif" width="47" height="55" alt="Nettuno">&nbsp;NETTUNO</h3>
 		<p>
 			<span class="sRed sBold">NETTUNO</span>: <span class="sNavy sBold">Io credo</span> =  <span class="sRed">.</span><br>
 			È ispirazione, sacrificio, fede, pietà, sogno, illusione e sofferenza. La metamorfosi, il misticismo e il visionario. Sensibilità, romanticismo
@@ -375,7 +458,7 @@ img {
 			sonnambulismo, le intossicazioni.
 		</p>
 
-		<p class="sMedium sRed sBold sCenter">PLUTONE</p>
+		<h3><img src="grafiche/Pianeti_plutone.gif" width="37" height="55" alt="Plutone">&nbsp;PLUTONE</h3>
 		<p>
 			<span class="sRed sBold">PLUTONE</span>: <span class="sNavy sBold">Io creo</span> =  <span class="sRed">.</span><br>
 			È il simbolo della forza e della volontà creatrice. Violenza, distruzione e rigenerazione. L'evoluzione, la metamorfosi, il subconscio, le
@@ -389,10 +472,7 @@ img {
 			delle cellule, le tossine.
 		</p>
 
-		<p class="sLarge sNavy sBold sCenter">
-			<br>
-			I <span class="sRed">10</span> Segni dello Zodiaco si differenziano fra loro in un rapporto Binario e si basano sulla Polarità
-		</p>
+		<h2>I <span class="sRed">10</span> Segni dello Zodiaco si differenziano fra loro in un rapporto Binario e si basano sulla Polarità</h2>
 		<p>
 			<b><span class="sRed">FUOCO</span> - <span class="sMaroon">ARIA</span> = <span class="sNewMidnightBlue">Maschili</span> -
 			<span class="sRed">attivi</span> - <span class="sRed">positivi</span><br>
@@ -420,10 +500,10 @@ img {
 
 		<p class="sCenter">
 			<br>
-			<img src="grafiche/Scoprire_ariete.jpg"      width="117" height="119" alt="Ariete">&nbsp;
-			<img src="grafiche/Scoprire_cancro2.gif"     width="109" height="102" alt="Cancro">&nbsp;
-			<img src="grafiche/Scoprire_bilancia2.gif"   width="117" height="104" alt="Bilancia">&nbsp;
-			<img src="grafiche/Scoprire_capricorno2.gif" width="104" height="99"  alt="Capricorno">
+			<img src="grafiche/Scoprire_ariete.jpg"      width="117" height="119" class="sVediImg4" alt="Ariete">&nbsp;
+			<img src="grafiche/Scoprire_cancro2.gif"     width="109" height="102" class="sVediImg4" alt="Cancro">&nbsp;
+			<img src="grafiche/Scoprire_bilancia2.gif"   width="117" height="104" class="sVediImg4" alt="Bilancia">&nbsp;
+			<img src="grafiche/Scoprire_capricorno2.gif" width="104" height="99"  class="sVediImg4" alt="Capricorno">
 		</p>
 		<p>
 			<b><span class="sNewMidnightBlue">CARDINALI</span> = <span class="sRed">ARIETE</span> - <span class="sBlue">CANCRO</span> -
@@ -442,10 +522,10 @@ img {
 		</p>
 
 		<p class="sCenter">
-			<img src="grafiche/Scoprire_toro2.gif"      width="104" height="104" alt="Toro">&nbsp;
-			<img src="grafiche/Scoprire_leone.jpg"      width="106" height="109" alt="Leone">&nbsp;
-			<img src="grafiche/Scoprire_scorpione2.gif" width="104" height="97"  alt="Scorpione">&nbsp;
-			<img src="grafiche/Scoprire_acquario.jpg"   width="97"  height="102" alt="Acquario">
+			<img src="grafiche/Scoprire_toro2.gif"      width="104" height="104" class="sVediImg4" alt="Toro">&nbsp;
+			<img src="grafiche/Scoprire_leone.jpg"      width="106" height="109" class="sVediImg4" alt="Leone">&nbsp;
+			<img src="grafiche/Scoprire_scorpione2.gif" width="104" height="97"  class="sVediImg4" alt="Scorpione">&nbsp;
+			<img src="grafiche/Scoprire_acquario.jpg"   width="97"  height="102" class="sVediImg4" alt="Acquario">
 		</p>
 		<p>
 			<b><span class="sNewMidnightBlue">FISSI</span> = <span class="sGreen">TORO</span> - <span class="sRed">LEONE</span> -
@@ -464,10 +544,10 @@ img {
 		</p>
 
 		<p class="sCenter">
-			<img src="grafiche/Scoprire_gemelli2.gif"    width="108" height="109" alt="Gemelli">&nbsp;
-			<img src="grafiche/Scoprire_vergine2.gif"    width="95"  height="97"  alt="Vergine">&nbsp;
-			<img src="grafiche/Scoprire_sagittario2.gif" width="114" height="104" alt="Sagittario">&nbsp;
-			<img src="grafiche/Scoprire_pesci2.gif"      width="110" height="108" alt="Pesci">
+			<img src="grafiche/Scoprire_gemelli2.gif"    width="108" height="109" class="sVediImg4" alt="Gemelli">&nbsp;
+			<img src="grafiche/Scoprire_vergine2.gif"    width="95"  height="97"  class="sVediImg4" alt="Vergine">&nbsp;
+			<img src="grafiche/Scoprire_sagittario2.gif" width="114" height="104" class="sVediImg4" alt="Sagittario">&nbsp;
+			<img src="grafiche/Scoprire_pesci2.gif"      width="110" height="108" class="sVediImg4" alt="Pesci">
 		</p>
 
 		<p>
@@ -486,19 +566,18 @@ img {
 			<span class="sBlue sBold">Pesci</span> si adatta solo superficialmente all'ambiente che lo circonda.
 		</p>
 
-		<p class="sLarge sNavy sBold sCenter">
-			<br>
-			I <span class="sRed">4</span> ELEMENTI O TRIPLICITA'
-		</p>
+		<h2>I <span class="sRed">4</span> ELEMENTI O TRIPLICITA'</h2>
 
 		<p class="sCenter">
-			<img src="grafiche/Scoprire_elementiDonne.jpg" width="254" height="293" alt="Donne Elementi">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="grafiche/Scoprire_ruotaElementi.png" width="314" height="315" alt="Ruota Elementi">
+			<img src="grafiche/Scoprire_elementiDonne.jpg"                   width="254" height="293" alt="Donne Elementi">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="grafiche/Scoprire_ruotaElementi.png" class="sVediImg5" width="314" height="315" alt="Ruota Elementi">
 		</p>
 
 		<p class="sCenter">
 			<br>
-			<img src="grafiche/Scoprire_ariete.gif" width="86" height="87" alt="Ariete"><img src="grafiche/Scoprire_leone.gif" width="76" height="93" alt="Leone"><img src="grafiche/Scoprire_sagittario.gif" width="94" height="100" alt="Sagittario">
+			<img src="grafiche/Scoprire_ariete.gif"     width="86" height="87"  class="sVediImg7" alt="Ariete">
+			<img src="grafiche/Scoprire_leone.gif"      width="76" height="93"  class="sVediImg7" alt="Leone">
+			<img src="grafiche/Scoprire_sagittario.gif" width="94" height="100" class="sVediImg7" alt="Sagittario">
 		</p>
 		<p>
 			Appartengono al <span class="sRed sBold">FUOCO</span>: <span class="sRed sBold">ARIETE</span> - <span class="sRed sBold">LEONE</span> -
@@ -517,7 +596,9 @@ img {
 
 		<p class="sCenter">
 			<br>
-			<img src="grafiche/Scoprire_toro.gif" width="81" height="89" alt="Toro"><img src="grafiche/Scoprire_vergine.gif" width="111" height="113" alt="Vergine"><img src="grafiche/Scoprire_capricorno.gif" width="97" height="79" alt="Capricorno">
+			<img src="grafiche/Scoprire_toro.gif"       width="81"  height="89"  class="sVediImg7" alt="Toro">
+			<img src="grafiche/Scoprire_vergine.gif"    width="111" height="113" class="sVediImg7" alt="Vergine">
+			<img src="grafiche/Scoprire_capricorno.gif" width="97"  height="79"  class="sVediImg7" alt="Capricorno">
 		</p>
 		<p>
 			Appartengono alla <span class="sGreen sBold">TERRA</span>: <span class="sGreen sBold">TORO</span> - <span class="sGreen sBold">VERGINE</span> - <span class="sGreen sBold">CAPRICORNO</span> (Secco/Freddo)
@@ -536,7 +617,9 @@ img {
 
 		<p class="sCenter">
 			<br>
-			<img src="grafiche/Scoprire_gemelli.gif" width="99" height="100" alt="Gemelli"><img src="grafiche/Scoprire_bilancia.gif" width="94" height="95" alt="Bilancia"><img src="grafiche/Scoprire_acquario.gif" width="86" height="99" alt="Acquario">
+			<img src="grafiche/Scoprire_gemelli.gif"  width="99" height="100" class="sVediImg7" alt="Gemelli">
+			<img src="grafiche/Scoprire_bilancia.gif" width="94" height="95"  class="sVediImg7" alt="Bilancia">
+			<img src="grafiche/Scoprire_acquario.gif" width="86" height="99"  class="sVediImg7" alt="Acquario">
 		</p>
 		<p>
 			Appartengono all'<span class="sMaroon sBold">ARIA</span>: <span class="sMaroon sBold">GEMELLI</span> - <span class="sMaroon sBold">BILANCIA</span> - <span class="sMaroon sBold">ACQUARIO</span> (Umido/Caldo)
@@ -554,7 +637,9 @@ img {
 
 		<p class="sCenter">
 			<br>
-			<img src="grafiche/Scoprire_cancro.gif" width="99" height="83" alt="Cancro"><img src="grafiche/Scoprire_scorpione.gif" width="88" height="100" alt="Scorpione"><img src="grafiche/Scoprire_pesci.gif" width="93" height="94" alt="Pesci">
+			<img src="grafiche/Scoprire_cancro.gif"    width="99" height="83"  class="sVediImg7" alt="Cancro">
+			<img src="grafiche/Scoprire_scorpione.gif" width="88" height="100" class="sVediImg7" alt="Scorpione">
+			<img src="grafiche/Scoprire_pesci.gif"     width="93" height="94"  class="sVediImg7" alt="Pesci">
 		</p>
 		<p>
 			Appartengono all'<span class="sBlue sBold">ACQUA</span>: <span class="sBlue sBold">CANCRO</span> - <span class="sBlue sBold">SCORPIONE</span> -
@@ -577,20 +662,21 @@ img {
 			<img src="grafiche/Pianeti_barraPianeti.gif"  width="510" height="35" alt="Barra dei Pianeti">
 		</p>
 		<p class="sCenter">
-			<img src="grafiche/Scoprire_fataAcquario.jpg" width="168" height="252" alt="Fata Acquario">&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="photo/Laura2020.jpg"                width="250" height="277" alt="Laura Lencia - 2020">
+			<img src="grafiche/Scoprire_fataAcquario.jpg" class="sVediImg1" width="168" height="252" alt="Fata Acquario">&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="photo/Laura2020.jpg"                                  width="250" height="277" alt="Laura Lencia - 2020">
 		</p>
 
 		<p class="sNavy sCenter">
 			<img src="IconaAnim_emailBox.gif" width="35" height="35" alt="">
-			Scrivi allo <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a>&nbsp;&nbsp;&nbsp;
+			Scrivi allo <a href="mailto:studio.acquario@libero.it" class="sBold" title="Scrivimi">studio.acquario@libero.it</a>&nbsp;&nbsp;&nbsp;
 			per conoscere il tuo Oroscopo<br><br>
-			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
-			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold" title="Telefonami">0125 631175</a> - Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
 
 			<b>Sei il visitatore n°&nbsp;</b>
-		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220429557-75d72jsd" border=0></a>
-			&nbsp;(Contenuto Aggiornato <time datetime="2018-12-31">31/12/2018</time>)<br>
+			<!-- Sostituito Counter il 02/04/2021 alle 23:04 quando aveva valore 3484 -->
+			<!-- a href="http://www.retecivica.milano.it" target="_blank" title="Contatore Visite"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220429557-75d72jsd" border=0></a -->
+			<a href="http://www.simplehitcounter.com" target="_blank" title="Contatore Visite SimpleHitCounter"><img src="http://simplehitcounter.com/hit.php?uid=3693454772387063739&f=0&b=16777215" border="0" height="18" width="83" alt="visit counter"></a>
+			&nbsp;(Contenuto Aggiornato <time datetime="2021-04-02">02/04/2021</time>)<br>
 		</p>
 
 </TD></TR></TABLE>
