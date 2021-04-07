@@ -11,8 +11,8 @@
 <meta name="language" content="it">
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="content_updated" content="18/12/2017">
-<meta name="revised" content="27/12/2020">
+<meta name="content_updated" content="07/04/2021"><!-- content="18/12/2017" -->
+<meta name="revised" content="07/04/2021">
 
 <style type="text/css">
 body {
@@ -41,6 +41,7 @@ h1 {
 	padding-right: 10px;
 }
 h2 {
+	clear: both; /* clear float */	
 	font-size: large;
 	color: #0000FF; /* Blu */
 	font-weight: bold;
@@ -132,6 +133,40 @@ img {
 .sMedium {
 			font-size: medium;
 }
+.sFloatL {
+			float: left;
+			padding: 0 20px 5px 0;
+			align: top;
+}
+.sFloatR {
+			float: right;
+			padding: 0 0 5px 20px;
+			align: top;
+}
+.sVediImg1 {
+	display: inline;
+}
+.sVediImg2 {
+	display: inline;
+}
+.sVediImg3 {
+	display: inline;
+}
+@media screen and (max-width:1090px) {
+	.sVediImg1 {
+		display: none !important;
+	}
+}
+@media screen and (max-width:950px) {
+	.sVediImg3 {
+		display: none !important;
+	}
+}
+@media screen and (max-width:830px) {
+	.sVediImg2 {
+		display: none !important;
+	}
+}
 </style>
 </head>
 
@@ -154,8 +189,8 @@ img {
 
 		<p class="sCenter">
 			<br>
-			<img src="grafiche/Tarot_Carte.gif" width="464" height="70" alt="Carte dei Tarocchi">
-			<img src="grafiche/Tarot_Carte.gif" width="464" height="70" alt="">
+			<img src="grafiche/Tarot_Carte.gif" width="464" height="70"                   alt="Carte dei Tarocchi">
+			<img src="grafiche/Tarot_Carte.gif" width="464" height="70" class="sVediImg1" alt="">
 			<br>
 		</p>
 
@@ -178,79 +213,79 @@ img {
 				<span class="sRed sBold">10</span> pianeti.
 			</p>
 
-			<table cellSpacing="0" cellPadding="5" border="0" width="80%" align="center">
-			<tbody class="sMedium sBlack sBold">
+			<table cellSpacing="0" cellPadding="5" border="0" width="90%" align="center">
+			<tbody class="sMedium sBlack sBold" style="vertical-align: top;">
 				<tr>
 					<td class="sRed" width="20%">ARIETE</td>
-					<td width="35%">IL BAGATTO n° 1</td>
+					<td width="35%">Il BAGATTO n°&nbsp;1</td>
 					<td class="sRed" width="20%">MARTE</td>
-					<td width="25%">IL CARRO n 7</td>
+					<td width="25%">Il CARRO n°&nbsp;7</td>
 				</tr>
 				<tr>
 					<td class="sGreen">TORO</td>
-					<td>IL MONDO n° 21</td>
+					<td>Il MONDO n°&nbsp;21</td>
 					<td class="sRed">VENERE</td>
-					<td>LE STELLE n° 17</td>
+					<td>Le STELLE n°&nbsp;17</td>
 				</tr>
 				<tr>
 					<td class="sMaroon">GEMELLI</td>
-					<td>L'IMPERATRICE n° 3</td>
+					<td>L'IMPERATRICE n°&nbsp;3</td>
 					<td class="sRed">MERCURIO</td>
-					<td>IL MATTO n° 22</td>
+					<td>Il MATTO n°&nbsp;22</td>
 				</tr>
 				<tr>
 					<td class="sBlue">CANCRO</td>
-					<td>LA LUNA n° 18</td>
+					<td>La LUNA n°&nbsp;18</td>
 					<td class="sRed">LUNA</td>
-					<td>LA PAPESSA n°2</td>
+					<td>La PAPESSA n°&nbsp;2</td>
 				</tr>
 				<tr>
 					<td class="sRed">LEONE</td>
-					<td>LA FORZA n° 11</td>
+					<td>La FORZA n°&nbsp;11</td>
 					<td class="sRed">SOLE</td>
-					<td>IL SOLE n° 19</td>
+					<td>Il SOLE n°&nbsp;19</td>
 				</tr>
 				<tr>
 					<td class="sGreen">VERGINE</td>
-					<td>GLI AMANTI n° 6</td>
+					<td>Gli AMANTI n°&nbsp;6</td>
 					<td class="sRed">MERCURIO</td>
-					<td>IL MATTO n° 22</td>
+					<td>Il MATTO n°&nbsp;22</td>
 				</tr>
 				<tr>
 					<td class="sMaroon">BILANCIA</td>
-					<td>LA GIUSTIZIA n° 8</td>
+					<td>La GIUSTIZIA n°&nbsp;8</td>
 					<td class="sRed">VENERE</td>
-					<td>LE STELLE n° 17</td>
+					<td>Le STELLE n°&nbsp;17</td>
 				</tr>
 				<tr>
 					<td class="sBlue">SCORPIONE</td>
-					<td>IL DIAVOLO n° 15</td>
+					<td>Il DIAVOLO n°&nbsp;15</td>
 					<td class="sRed">PLUTONE</td>
-					<td>LA MORTE n° 13</td>
+					<td>La MORTE n°&nbsp;13</td>
 				</tr>
 				<tr>
 					<td class="sRed">SAGITTARIO</td>
-					<td>L'IMPERATORE n° 4</td>
+					<td>L'IMPERATORE n°&nbsp;4</td>
 					<td class="sRed">GIOVE</td>
-					<td>IL PAPA n° 5</td>
+					<td>Il PAPA n°&nbsp;5</td>
 				</tr>
 				<tr>
 					<td class="sGreen">CAPRICORNO</td>
-					<td>LA RUOTA n° 10</td>
+					<td>La RUOTA n°&nbsp;10</td>
 					<td class="sRed">SATURNO</td>
-					<td>L'EREMITA n° 9</td>
+					<td>L'EREMITA n°&nbsp;9</td>
 				</tr>
 				<tr>
 					<td class="sMaroon">ACQUARIO</td>
-					<td>LA TEMPERANZA n° 14</td>
+					<td>La TEMPERANZA n°&nbsp;14</td>
 					<td class="sRed">URANO</td>
-					<td>LA TORRE n° 16</td>
+					<td>La TORRE n°&nbsp;16</td>
 				</tr>
 				<tr>
 					<td class="sBlue">PESCI</td>
-					<td>L'APPESO n° 12</td>
+					<td>L'APPESO n°&nbsp;12</td>
 					<td class="sRed">NETTUNO</td>
-					<td>Il GIUDIZIO n° 20</td>
+					<td>Il GIUDIZIO n°&nbsp;20</td>
 				</tr>
 			</tbody>
 			</table>
@@ -273,16 +308,16 @@ img {
 		</table>
 
 		<p class="sCenter">
-			<img src="grafiche/Tarot_linea.gif" width="331" height="46" alt="">&nbsp;&nbsp;&nbsp;
-			<img src="grafiche/Tarot_linea.gif" width="331" height="46" alt="">
+			<img src="grafiche/Tarot_linea.gif" width="331" height="46"                   alt="">&nbsp;&nbsp;&nbsp;
+			<img src="grafiche/Tarot_linea.gif" width="331" height="46" class="sVediImg2" alt="">
 		</p>
 
 		<table bgcolor="#FFF3E8" cellspacing="3" cellpadding="15" class="sBorder6d-SanguineBrown" width="96%" align="center">
-		<tbody class="sSmall sPersianPlum sJustify sPadding" valign="bottom">
-		<tr>
-			<td><img src="grafiche/Taro1.gif" width="100" height="200" alt="Tarocco 1"></td>
-			<td>
-				<h2><span class="sRed">1</span> - IL BAGATTO</h2>
+		<tbody class="sSmall sPersianPlum sJustify sPadding" valign="bottom"><tr><td>
+		
+			<h2><span class="sRed">1</span> - IL BAGATTO</h2>
+			<p>
+				<img src="grafiche/Taro1.gif" width="100" height="200" alt="Tarocco 1" class="sFloatL">
 				<span class="sRed sBold">GENERALE</span>: è un anno di sfida, di successo, di cambiamento, di raggiungimento dei tuoi obiettivi. In questo
 				anno sarai più grintoso e dinamico che mai, ti sentirai padrone assoluto del tuo destino. Preferirai misurarti attivamente con la realtà
 				e fronteggerai le prove con piglio deciso. Sarai molto coraggioso e intraprendente, ma attento! Perché la fretta con cui affronti persone
@@ -293,12 +328,11 @@ img {
             	<span class="sRed sBold">LAVORO</span>: buone notizie nel campo del lavoro, un'iniziativa può offrire nuove e insperate opportunità di
 				guadagno. Potrai fare un investimento, ma ti converrà azzardare anche a costo di richiedere dei finanziamenti esterni, contratti da
 				stipulare senza pensarci due volte. Non devi strafare disperdendo tempo ed energia.
-			</td>
-		</tr>
-		<tr>
-			<td><img src="grafiche/Taro2.gif" width="100" height="200" alt="Tarocco 2"></td>
-			<td>
-				<h2><span class="sRed">2</span> - LA PAPESSA</h2>
+			</p>
+
+			<h2><span class="sRed">2</span> - LA PAPESSA</h2>
+			<p>
+				<img src="grafiche/Taro2.gif" width="100" height="200" alt="Tarocco 2" class="sFloatR">
 				<span class="sRed sBold">GENERALE</span>: pazienza, costanza e cautela sono le armi segrete a cui dovrai ricorrere per ottenere il massimo.
 				I frutti ci saranno e li raccogli a piene mani. Realizzare un progetto a cui tieni molto sarà possibile a patto però d'incanalare
 				costruttivamente le emozioni. Nell'anno tutto cresce lentamente attraverso un profondo processo di trasformazione. Gli altri non devono
@@ -309,12 +343,11 @@ img {
 				<span class="sRed sBold">LAVORO</span>: prima di metterti in gioco cura di programmare le tue scelte e fai tesoro dei suggerimenti altrui,
 				in modo particolare se chi ti consiglia è una saggia e matura signora. Non sono da escludere qualche investimento proficuo, che tuttavia
 				maturerà lentamente. Non sperare nel colpo di fortuna, il successo quest'anno è subordinato dal tuo impegno.
-			</td>
-		</tr>
-		<tr>
-			<td><img src="grafiche/Taro3.gif" width="100" height="200" alt="Tarocco 3"></td>
-			<td>
-				<h2><span class="sRed">3</span> - L'IMPERATRICE</h2>
+			</p>
+
+			<h2><span class="sRed">3</span> - L'IMPERATRICE</h2>
+			<p>
+				<img src="grafiche/Taro3.gif" width="100" height="200" alt="Tarocco 3" class="sFloatL">
 				<span class="sRed sBold">GENERALE</span>: questo è un anno favoloso da vivere all'insegna dei dinamismo e della chiarezza d'idee.
 				Un eccellente risultato ottenuto grazie all'intelligenza, alla volontà e a un pizzico di charme. Tutto ciò che è stato deciso razionalmente
 				andrà a buon fine. La comunicazione primeggia in tutte le forme dal dialogo alla lettera, alla telefonata ai collegamenti informatici
@@ -327,12 +360,11 @@ img {
 				concorso. Se operi con intelligenza e metodo, il successo si presenta rapido e i tuoi meriti saranno riconosciuti con una promozione o
 				un aumento di stipendio. Un affare concluso con intelligenza e con abilità potrà garantirti benessere economico, progresso e un aumento
 				dei guadagni.
-			</td>
-		</tr>
-		<tr>
-			<td><img src="grafiche/Taro4.gif" width="100" height="200" alt="Tarocco 4"></td>
-			<td>
-				<h2><span class="sRed">4</span> - L'IMPERATORE</h2>
+			</p>
+
+			<h2><span class="sRed">4</span> - L'IMPERATORE</h2>
+			<p>
+				<img src="grafiche/Taro4.gif" width="100" height="200" alt="Tarocco 4" class="sFloatR">
 				<span class="sRed sBold">GENERALE</span>: tutto quello che inizia sotto gli auspici della sua forza e del suo equilibrio è destinato a
 				durare. Cammina diritto per la tua strada, sicuro del risultato, tanto più che favori e protezioni non ti verranno mai a mancare.
 				Impegno, rigore, lealtà: ecco gli unici imperativi cui non dovrai mai venire meno. Grazie alla volontà e al sangue freddo, puoi raggiungere
@@ -344,12 +376,11 @@ img {
 				in sospeso. Grazie al superamento di un esame o un concorso vedrai la tua posizione consolidarsi. Un problema può trovare una soluzione
 				all'improvviso grazie ad un' eredità o a una vincita. L'estero svolge un ruolo di primo piano, soprattutto per gli studi e le iniziative
 				professionali.
-			</td>
-		</tr>
-		<tr>
-			<td><img src="grafiche/Taro5.gif" width="100" height="200" alt="Tarocco 5"></td>
-			<td>
-				<h2><span class="sRed">5</span> - IL PAPA</h2>
+			</p>
+
+			<h2><span class="sRed">5</span> - IL PAPA</h2>
+			<p>
+				<img src="grafiche/Taro5.gif" width="100" height="200" alt="Tarocco 5" class="sFloatL">
 				<span class="sRed sBold">GENERALE</span>: quello che ti accade, di piacevole o meno, ha la sua ragione di essere e va rispettato e accettato.
 				Fidati delle influenze misteriose e benefiche del destino, grazie alle quali la questione più spinosa può essere chiarita. L'essenziale è
 				agire con serietà e dedizione, con il massimo impegno, senza quantificarne egoisticamente i risultati. Molto meglio se hai dalla tua parte
@@ -359,12 +390,11 @@ img {
 				di novità al ménage.<br>
 				<span class="sRed sBold">LAVORO</span>: grazie ad una persona influente, stai per raggiungere una posizione invidiabile. Sarà in modo
 				particolare negli affari dove un'occasione fortunata svelerà la sua portata soltanto col tempo.
-			</td>
-		</tr>
-		<tr>
-			<td><img src="grafiche/Taro6.gif" width="100" height="200" alt="Tarocco 6"></td>
-			<td>
-				<h2><span class="sRed">6</span> - GLI AMANTI</h2>
+			</p>
+
+			<h2><span class="sRed">6</span> - GLI AMANTI</h2>
+			<p>
+				<img src="grafiche/Taro6.gif" width="100" height="200" alt="Tarocco 6" class="sFloatR">
 				<span class="sRed sBold">GENERALE</span>: è l'anno della svolta imperniato su una scelta che non può essere rimandata. Potrebbe trattarsi
 				di una libera scelta da compiere in tutta calma, oppure di un dilemma non privo di contrasti e ripensamenti, proposto dal destino, può
 				chiedere coraggio e discernimento. Vivi sospeso in una parentesi d'attesa, con tutta la tensione che precede ogni inizio e ogni prova.
@@ -376,12 +406,11 @@ img {
 				<span class="sRed sBold">LAVORO</span>: sei alle prese con esami, concorsi, passaggi di livello e nonostante le tue idee brillanti, la
 				fatica è tanta. Hai dalla tua parte un ambiente professionale o scolastico cordiale e bello, capace di sostenerti nel momento di un
 				superlavoro. Punta tutto sull'arte e la fantasia, cerca utili alleanze sul piano pratico.
-			</td>
-		</tr>
-		<tr>
-			<td><img src="grafiche/Taro7.gif" width="100" height="200" alt="Tarocco 7"></td>
-			<td>
-				<h2><span class="sRed">7</span> - IL CARRO</h2>
+			</p>
+
+			<h2><span class="sRed">7</span> - IL CARRO</h2>
+			<p>
+				<img src="grafiche/Taro7.gif" width="100" height="200" alt="Tarocco 7" class="sFloatL">
 				<span class="sRed sBold">GENERALE</span>: maturato attraverso le scelte e le prove degli anni passati, ora sperimenti un'inedita condizione
 				di consapevolezza, di fiducia nelle tue capacità. Affronterai con coraggio le tue mete, che vivi con grande entusiasmo come sfide contro
 				te stesso. Per fortuna gli aiuti insperati, le protezioni e gli appoggi non ti verranno a mancare. Una nuova fase energica e attiva
@@ -393,12 +422,11 @@ img {
 				una riconciliazione.<br>
 				<span class="sRed sBold">LAVORO</span>: numerose saranno le occasioni favorevoli, da non lasciarsi scappare. Se sei ancora uno studente, buttati sugli esami più impegnativi e avrai il vento in poppa. Grazie alla grinta e al potere decisionale di cui stai dando prova, tutto
 				ti riesce alla perfezione. Non escludere qualche rischio.
-			</td>
-		</tr>
-		<tr>
-			<td><img src="grafiche/Taro8.gif" width="100" height="200" alt="Tarocco 8"></td>
-			<td>
-				<h2><span class="sRed">8</span> - LA GIUSTIZIA</h2>
+			</p>
+
+			<h2><span class="sRed">8</span> - LA GIUSTIZIA</h2>
+			<p>
+				<img src="grafiche/Taro8.gif" width="100" height="200" alt="Tarocco 8" class="sFloatR">
 				<span class="sRed sBold">GENERALE</span>: sia buono o a cattivo, ognuno raccoglie quello che ha seminato. Dalla qualità dell'anno che stai
 				vivendo potrai trarre conclusioni sulle tue scelte passate. Anche una situazione difficile può essere tenuta sotto controllo, se l'affronti
 				con onestà con rigore e spirito organizzativo. Abbandona gli atteggiamenti troppo conservatori, l'intolleranza i pregiudizi e la fortuna
@@ -411,12 +439,11 @@ img {
 				clausole, affari proficui, eredità e ricorsi legali fruttuosi. Attenzione alle truffe! Grazie ad un impegno portato avanti con metodo
 				non arrenderti di fronte ad un esame rinviato o ad una piccola sconfitta, significa solo che occorrerà lavorare ancora ad un progetto
 				per renderlo veramente perfetto.
-			</td>
-		</tr>
-		<tr>
-			<td><img src="grafiche/Taro9.gif" width="100" height="200" alt="Tarocco 9"></td>
-			<td>
-				<h2><span class="sRed">9</span> - L'EREMITA</h2>
+			</p>
+
+			<h2><span class="sRed">9</span> - L'EREMITA</h2>
+			<p>
+				<img src="grafiche/Taro9.gif" width="100" height="200" alt="Tarocco 9" class="sFloatL">
 				<span class="sRed sBold">GENERALE</span>: il momento non è dei migliori, l'evoluzione degli eventi è lenta e segreta ma profonda. Devi
 				agire con molta pazienza e discrezione, con prudenza e moderazione, tutte doti meravigliose anche se non brillanti. Grazie a una protezione
 				invisibile, ogni tentativo malvagio a tuo danno sarà sventato. Non temere questa temporanea battuta di arresto, i ritardi di oggi saranno
@@ -427,12 +454,11 @@ img {
 				<span class="sRed sBold">LAVORO</span>: i risultati non immediati ma confortanti t'invitano a perseverare nello studio e nel lavoro,
 				anche se sarà faticoso o poco remunerato, senza avanzare pretese azzardate. Punta su investimenti sicuri e non protestare se la necessità
 				di risparmiare t'impone uno stile di vita più semplice. Denaro in arrivo.
-			</td>
-		</tr>
-		<tr>
-			<td><img src="grafiche/Taro10.gif" width="100" height="200" alt="Tarocco 10"></td>
-			<td>
-				<h2><span class="sRed">10</span> - LA RUOTA DELLA FORTUNA</h2>
+			</p>
+
+			<h2><span class="sRed">10</span> - LA RUOTA DELLA FORTUNA</h2>
+			<p>
+				<img src="grafiche/Taro10.gif" width="100" height="200" alt="Tarocco 10" class="sFloatR">
 				<span class="sRed sBold">GENERALE</span>: circostanze esterne e un po' imprevedibili, ti spingono verso l'attività e l'avventura. Stai
 				vivendo una fase dinamica di mutamento, cui farai bene ad approfittare ora che la sorte ti offre tante occasioni di progresso. Una
 				misteriosa e sottile protezione ti affianca aiutandoti a superare gli ostacoli e a scansare i pericoli. Tieni conto, che l'abilità e
@@ -444,12 +470,11 @@ img {
 				che si riveleranno ricchi di frutti: successi, promozioni, avanzamenti di carriera. Tieni d'occhio gli eventi esterni che sono indipendenti
 				dalla tua volontà e sono responsabili di eventuali fluttuazioni. Con il favore della Dea bendata, guadagni e vincite si presentano
 				improvvisi e inattesi.
-			</td>
-		</tr>
-		<tr>
-			<td><img src="grafiche/Taro11.gif" width="100" height="200" alt="Tarocco 11"></td>
-			<td>
-				<h2><span class="sRed">11</span> - LA FORZA</h2>
+			</p>
+
+			<h2><span class="sRed">11</span> - LA FORZA</h2>
+			<p>
+				<img src="grafiche/Taro11.gif" width="100" height="200" alt="Tarocco 11" class="sFloatL">
 				<span class="sRed sBold">GENERALE</span>: sei protagonista della situazione con una volontà ben costruita in grado di dominare gli eventi e
 				i capricci del caso. Ricorda che per quanto numerosi e grossi siano gli ostacoli sarai sempre tu a spuntarla se accetterai la sfida,
 				affrontali con intelligenza, fermezza e coraggio. Dalla tua parte hai l'energia necessaria per andare avanti, perché sei ambizioso,
@@ -460,20 +485,22 @@ img {
 				<span class="sRed sBold">LAVORO</span>: la professione è destinata ad allargarsi con un'attività d'équipe. Devi attenderti momenti duri,
 				appesantiti da critiche e rivalità se però t'impegni al massimo, senza lasciare nulla d'intentato, riuscirai ad avere la meglio. Buone
 				le notizie sul fronte finanziario, il merito può scaturire da una tua speculazione fortunata o da una piccola vincita che interviene a riassettare la situazione.
-			</td>
-		</tr><tbody></table>
+			</p>
+		</td></tr><tbody>
+		</table>
 
 		<p class="sCenter">
-			<img src="grafiche/Tarot_linea.gif" width="331" height="46" alt="">&nbsp;&nbsp;&nbsp;
-			<img src="grafiche/Tarot_linea.gif" width="331" height="46" alt="">
+			<img src="grafiche/Tarot_linea.gif" width="331" height="46"                   alt="">&nbsp;&nbsp;&nbsp;
+			<img src="grafiche/Tarot_linea.gif" width="331" height="46" class="sVediImg2" alt="">
 		</p>
 
 		<table bgcolor="#FFF3E8" cellspacing="3" cellpadding="15" class="sBorder6d-SanguineBrown" width="96%" align="center">
 		<tbody class="sSmall sPersianPlum sJustify sPadding" valign="bottom">
-		<tr>
-			<td><img src="grafiche/Taro12.gif" width="100" height="200" alt="Tarocco 12"></td>
-			<td>
-				<h2><span class="sRed">12</span> - L'APPESO</h2>
+		<tr><td>
+
+			<h2><span class="sRed">12</span> - L'APPESO</h2>
+			<p>
+				<img src="grafiche/Taro12.gif" width="100" height="200" alt="Tarocco 12" class="sFloatR">
 				<span class="sRed sBold">GENERALE</span>: non è tempo di azione ma di attesa e di prudenza. Dovrai prendere tutto con calma e rivedere nei
 				dettagli le situazioni e i progetti. Qualsiasi ostacolo o ritardo ha una ragione nascosta e va interpretato come un felice avviso. Molto
 				dovrà essere sacrificato a una persona o ad una causa, senza aspettarsi in cambio ricompense, perché è la prova, il passaggio necessario
@@ -485,12 +512,11 @@ img {
 				<span class="sRed sBold">LAVORO</span>: ti senti arrivato a un punto morto e tuttavia fatica a metterti in discussione e ad accettare le
 				inevitabili responsabilità. Stretto da una serie infinita di dubbi e incertezze, tendi a preoccuparti più del dovuto. Quello attuale ti
 				va un po' stretto e vorresti ca mbiare l'ambiente professionale ma le occasioni sono poche e i progetti non abbastanza solidi.
-			</td>
-		</tr>
-		<tr>
-			<td><img src="grafiche/Taro13.gif" width="100" height="200" alt="Tarocco 13"></td>
-			<td>
-				<h2><span class="sRed">13</span> - LA MORTE</h2>
+			</p>
+
+			<h2><span class="sRed">13</span> - LA MORTE</h2>
+			<p>
+				<img src="grafiche/Taro13.gif" width="100" height="200" alt="Tarocco 13" class="sFloatL">
 				<span class="sRed sBold">GENERALE</span>: provieni probabilmente da una fase tutt'altro che facile. Ma ciò che doveva accadere è già
 				accaduto e ormai non ti resta più nulla da temere. Nuovi desideri e nuove sicurezze ti attendono, ma dopo che ti sarai sottomesso alla
 				necessaria trasformazione: un'evoluzione magari inattesa, un salto di qualità di fronte al quale ti senti impreparato. Rivolgi uno sguardo
@@ -503,12 +529,11 @@ img {
 				miravi, ma che non sei riuscito a portare avanti per mancanza di sicurezza in te stesso. Per i progetti che ritenevi irrealizzabili c'è
 				in serbo un'improvvisa e inattesa realizzazione. Non sono da escludere un cambiamento di residenza, di casa o un trasferimento per lavoro
 				o studio.
-			</td>
-		</tr>
-		<tr>
-			<td><img src="grafiche/Taro14.gif" width="100" height="200" alt="Tarocco 14"></td>
-			<td>
-				<h2><span class="sRed">14</span> - LA TEMPERANZA</h2>
+			</p>
+
+			<h2><span class="sRed">14</span> - LA TEMPERANZA</h2>
+			<p>
+				<img src="grafiche/Taro14.gif" width="100" height="200" alt="Tarocco 14" class="sFloatR">
 				<span class="sRed sBold">GENERALE</span>: ti senti ora appagato e in pace con te stesso, tolleranza e spirito d'adattamento alle situazioni
 				ecco su cosa dovrai puntare. Se una trasformazione repentina c'è già stata, adesso è il momento di goderti l'equilibrio raggiunto, ma se
 				stai ancora aspettando, magari sei un po' stanco di questo periodo di fiacca, preparati al miglioramento graduale a una rigenerazione dolce
@@ -519,12 +544,11 @@ img {
 				<span class="sRed sBold">LAVORO</span>: le circostanze sono favorevoli a nuove imprese, tanto più che puoi contare sull'appoggio dei colleghi
 				e dei superiori. Per migliorare la tua posizione, punta sulla professione libera, a contatto col pubblico, oppure impegnati a seguire corsi
 				specializzati magari in scienze della comunicazione o informatica.
-			</td>
-		</tr>
-		<tr>
-			<td><img src="grafiche/Taro15.gif" width="100" height="200" alt="Tarocco 15"></td>
-			<td>
-				<h2><span class="sRed">15</span> - IL DIAVOLO</h2>
+			</p>
+
+			<h2><span class="sRed">15</span> - IL DIAVOLO</h2>
+			<p>
+				<img src="grafiche/Taro15.gif" width="100" height="200" alt="Tarocco 15" class="sFloatL">
 				<span class="sRed sBold">GENERALE</span>: sai bene di esercitare sugli altri una forte attrazione e la sai sfruttare a tuo vantaggio
 				attingendo dall'oscurità della tua psiche eloquenza, carisma e capacità telepatiche. Con la complicità del destino in questo anno ti
 				diverrà possibile: eventi inattesi e misteriosi, bruschi mutamenti della situazione, imprevisti da cogliere al volo. Ma per quanto le forze
@@ -536,12 +560,11 @@ img {
 				strumento di potere e di conquista. Devi comunque fare i conti con molti no: critiche, rivalità e appoggi promessi e poi negati. Senza
 				contare i prestiti arrischiati, l'avidità e la fortuna al gioco che non guarda sempre dalla tua parte. Con la buona volontà indomita che
 				ti ritrovi puoi raggiungere qualsiasi obiettivo, più tutto d'ordine economico.
-			</td>
-		</tr>
-		<tr>
-			<td><img src="grafiche/Taro16.gif" width="100" height="200" alt="Tarocco 16"></td>
-			<td>
-				<h2><span class="sRed">16</span> - LA TORRE</h2>
+			</p>
+
+			<h2><span class="sRed">16</span> - LA TORRE</h2>
+			<p>
+				<img src="grafiche/Taro16.gif" width="100" height="200" alt="Tarocco 16" class="sFloatR">
 				<span class="sRed sBold">GENERALE</span>: potrebbe trattarsi di una punizione per aver mirato troppo in alto o più semplicemente di un
 				avviso di pericolo, che non deve essere sottovalutato. Può trattarsi di un conflitto doloroso ma necessario, uno sconvolgimento ai fini
 				di un futuro riassetto un risultato negativo che ti permette di ripartire con il piede giusto. Per uscire da una situazione critica divenuta
@@ -553,12 +576,11 @@ img {
 				<span class="sRed sBold">LAVORO</span>: da una sconfitta, che ti aiuterà a valutare meglio le tue potenzialità, nascerà un qualcosa di
 				valido. Può trattarsi della rottura d'un contratto o una brusca interruzione di un rapporto di lavoro o una delusione nella scalata al
 				successo, dalla quale puoi ripartire più pimpante che mai verso una direzione più soddisfacente.
-			</td>
-		</tr>
-		<tr>
-			<td><img src="grafiche/Taro17.gif" width="100" height="200" alt="Tarocco 17"></td>
-			<td>
-				<h2><span class="sRed">17</span> - LE STELLE</h2>
+			</p>
+
+			<h2><span class="sRed">17</span> - LE STELLE</h2>
+			<p>
+				<img src="grafiche/Taro17.gif" width="100" height="200" alt="Tarocco 17" class="sFloatL">
 				<span class="sRed sBold">GENERALE</span>: col favore delle stelle, uscirai vincente da una situazione difficile. Dopo una fase statica e
 				irta di contrasti, la strada verso la realizzazione appare sgombra. Si tratta forse della conclusione di una vicenda oppure d'un nuovo
 				inizio, ma tira un'aria di ottimismo e di allegria. Qualunque prova, affrontata con spirito romantico e altruista, ti lascia sempre aperta
@@ -570,12 +592,11 @@ img {
 				<span class="sRed sBold">LAVORO</span>: godi di tutte le prerogative offerte da una professione interessante, magari non molto ben
 				remunerata, che comunque svolgi con passione e con ottime possibilità di successo. Tanto più che davanti a te si spalancando nuove
 				opportunità e occasioni sociali grazie alle quali puoi mettere a frutto la tua raffinata vena creativa.
-			</td>
-		</tr>
-		<tr>
-			<td><img src="grafiche/Taro18.gif" width="100" height="200" alt="Tarocco 18"></td>
-			<td>
-				<h2><span class="sRed">18</span> - LA LUNA</h2>
+			</p>
+
+			<h2><span class="sRed">18</span> - LA LUNA</h2>
+			<p>
+				<img src="grafiche/Taro18.gif" width="100" height="200" alt="Tarocco 18" class="sFloatR">
 				<span class="sRed sBold">GENERALE</span>: il passato ritorna a farsi sentire, insieme alle forze segrete, alle antiche paure e a dei
 				desideri inconfessati. Forse hai ancora da liquidare un ricordo, un rimpianto legato ad una persona che non hai mai dimenticato. Risolvere
 				una questione di vecchia data diverrà possibile, se accetterai di affidarti all'intuito e se farai uno sforzo per liberarti dai pregiudizi
@@ -587,12 +608,11 @@ img {
 				<span class="sRed sBold">LAVORO</span>: il contatto col pubblico ti facilita la vita soprattutto se per lavoro hai a che fare con donne o
 				i bambini. Non super soddisfacenti sembrano gli altri settori, cerca di capire se la strada che hai preso è proprio quella giusta. Occhio
 				alle proposte finanziarie che appaiono troppo allettanti, ma che potrebbero nascondere un inganno. Situazioni economiche da risolvere.
-			</td>
-		</tr>
-		<tr>
-			<td><img src="grafiche/Taro19.gif" width="100" height="200" alt="Tarocco 19"></td>
-			<td>
-				<h2><span class="sRed">19</span> - IL SOLE</h2>
+			</p>
+
+			<h2><span class="sRed">19</span> - IL SOLE</h2>
+			<p>
+				<img src="grafiche/Taro19.gif" width="100" height="200" alt="Tarocco 19" class="sFloatL">
 				<span class="sRed sBold">GENERALE</span>: ecco un anno ricchissimo di successi e di conferme su tutti i fronti. Dalla tua parte hai la
 				meravigliosa capacità di accontentarti di quello che hai, e questo è il segreto della tua felicità che condividi ogni giorno con la persona
 				amata. Approfitta di questo momento magico e delle sorprese che il destino ha in serbo per te come: benessere, serenità, conquiste,
@@ -604,12 +624,11 @@ img {
 				con risvolti d'eccezione per la tua carriera. Novità entusiasmanti per gli studenti, in modo particolare se sono prossimi al diploma o
 				alla laurea e per gli artisti. Il successo può riguardarti in prima persona oppure coinvolgere il partner i figli. Affari e guadagni del
 				tutto meritati grande anche la situazione finanziaria, incrementata da vincite.
-			</td>
-		</tr>
-		<tr>
-			<td><img src="grafiche/Taro20.gif" width="100" height="200" alt="Tarocco 20"></td>
-			<td>
-				<h2><span class="sRed">20</span> - IL GIUDIZIO</h2>
+			</p>
+
+			<h2><span class="sRed">20</span> - IL GIUDIZIO</h2>
+			<p>
+				<img src="grafiche/Taro20.gif" width="100" height="200" alt="Tarocco 20" class="sFloatR">
 				<span class="sRed sBold">GENERALE</span>: è tempo di dare una svolta decisiva agli eventi, tanto che da una decisione immediata, non avrai
 				il tempo di vagliare, potranno dipendere le soddisfazioni future. L'inatteso sta per arrivare nella tua vita e ti creerà un piacevole
 				scompiglio. Può essere qualcosa che desideravi da tempo, ma in cui non speravi più. Cogli l'attimo fuggente e metti subito in piedi una
@@ -620,12 +639,11 @@ img {
 				<span class="sRed sBold">LAVORO</span>: hai del talento da mettere a frutto e ora i tempi sono maturi per la svolta. Puoi attenderti un
 				mutamento importante come promozione negli studi o nel lavoro ottenuta rispolverando vecchi progetti ormai ritenuti inservibili. Frequenti
 				viaggi in aereo per motivi di lavoro, un solo neo c'é la tendenza a prendere le situazioni un po' di petto.
-			</td>
-		</tr>
-		<tr>
-			<td><img src="grafiche/Taro21.gif" width="100" height="200" alt="Tarocco 21"></td>
-			<td>
-				<h2><span class="sRed">21</span> - IL MONDO</h2>
+			</p>
+
+			<h2><span class="sRed">21</span> - IL MONDO</h2>
+			<p>
+				<img src="grafiche/Taro21.gif" width="100" height="200" alt="Tarocco 21" class="sFloatL">
 				<span class="sRed sBold">GENERALE</span>: le situazioni si evolveranno a tuo favore, con la complicità di circostanze favorevoli, il
 				successo è completo e duraturo e la vittoria sugli ostacoli schiacciante. Tutti i tuoi desideri saranno pienamente appagati in un clima
 				di perfetto rilassamento di armonia e di dolcezza. Insomma, non avrai nulla da temere, la strada intrapresa appare la migliore. Devi solo
@@ -637,12 +655,11 @@ img {
 				<span class="sRed sBold">LAVORO</span>: ecco per te una situazione professionale solida e redditizia, tieni conto che la regolarità e
 				impegno saranno premiati. Se cerchi un orientamento, devi puntare su una professione a carattere finanziario, artistico o agricolo. Per
 				la realizzazione di un progetto, occorrerà ricorrere a dei mutui e finanziamenti, favoriti acquisti immobiliari e piccole vincite.
-			</td>
-		</tr>
-		<tr>
-			<td><img src="grafiche/Taro22.gif" width="100" height="200" alt="Tarocco 22"></td>
-			<td>
-				<h2><span class="sRed">22</span> - IL MATTO</h2>
+			</p>
+
+			<h2><span class="sRed">22</span> - IL MATTO</h2>
+			<p>
+				<img src="grafiche/Taro22.gif" width="100" height="200" alt="Tarocco 22" class="sFloatR">
 				<span class="sRed sBold">GENERALE</span>: c'è una sottile linea di confine che devi imparare a riconoscere, al di qua della quale sei un
 				saggio e al di là un folle. Per prima cosa non devi opporre resistenza e piegarti al cambiamento. Segui tutte le indicazioni del cuore,
 				forse le più illogiche ma sono quelle vincenti. Sai apprezzare le emozioni e i colpi di scena, in situazioni ancora tutte da costruire,
@@ -654,9 +671,10 @@ img {
 				<span class="sRed sBold">LAVORO</span>: si progetti sono molti e altrettante le opportunità. Pur avendo idee, coraggio e grinta da vendere,
 				rischi di deludere chi ha riposto la sua fiducia in te. Sforzati di fissare per tempo scadenze e obiettivi e fai tesoro delle critiche,
 				talvolta meritate che ti vengono mosse. Con autodisciplina in più realizzerai perfino l'impossibile.
-			</td>
-		</tr>
-		</tbody></table>
+			</p>
+			
+		</td></tr></tbody>
+		</table>
 
 		<p class="sCenter">
 			<br><br>
@@ -720,21 +738,22 @@ img {
 
 		<p class="sCenter">
 			<br><br>
-			<img src="grafiche/Tarot_linea2.gif" width="390" height="44" alt="Linea Tarocchi">&nbsp;&nbsp;&nbsp;
-			<img src="grafiche/Tarot_linea2.gif" width="390" height="44" alt="">
+			<img src="grafiche/Tarot_linea2.gif" width="390" height="44"                   alt="Linea Tarocchi">&nbsp;&nbsp;&nbsp;
+			<img src="grafiche/Tarot_linea2.gif" width="390" height="44" class="sVediImg3" alt="">
 		</p>
 
 		<p class="sSmall sEspresso sCenter">
 			<img src="IconaAnim_emailBox.gif" width="35" height="35" alt="">
-			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
-			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
-			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold" title="Scrivimi">studio.acquario@libero.it</a><br><br>
+			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold" title="Telefonami">0125 631175</a> - Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
 
 			<a href="index.html" class="sBold">Pagina iniziale <img src="favicon32.gif" width="32" height="32" alt=""> Home page</a>
 			&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
 			<b>Sei il visitatore n°&nbsp;</b>
-		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220429435-nyxibl" border=0></a>
-			&nbsp;(Contenuto Aggiornato <time datetime="2017-12-18">18/12/2017</time>)<br><br>
+			<!-- Sostituito Counter il 07/04/2021 alle 23:38 quando aveva valore 10953 -->
+			<!-- a href="http://www.retecivica.milano.it" target="_blank" title="Contatore Visite"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220429435-nyxibl" border=0></a -->
+			<a href="http://www.simplehitcounter.com" target="_blank" title="Contatore Visite SimpleHitCounter"><img src="http://simplehitcounter.com/hit.php?uid=3693454772387063830&f=0&b=16777215" border="0" height="18" width="83" alt="visit counter"></a>
+			&nbsp;(Contenuto Aggiornato <time datetime="2021-04-07">07/04/2021</time>)<br><br>
 		</p>
 
 </td></tr></TBODY></table>
@@ -744,7 +763,7 @@ img {
 <footer>
 	Laura Lencia - Studio di Astrologia "Acquario". Copyright © 1998-2021. Tutti i diritti sono riservati.
 	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
-	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html">qui</a>.
+	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html" style="text-shadow: 1px 0px 0px #FFFFFF;">qui</a>.
 </footer>
 </body>
 </html>
