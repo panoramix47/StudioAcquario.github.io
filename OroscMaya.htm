@@ -11,19 +11,19 @@
 <meta name="language" content="it">
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="content_updated" content="30/11/2018">
-<meta name="revised" content="27/12/2020">
+<meta name="content_updated" content="01/05/2021"><!-- content="30/11/2018" -->
+<meta name="revised" content="01/05/2021">
 
 <style type="text/css">
 BODY {
-	SCROLLBAR-FACE-COLOR: #b8b4d9;
-	SCROLLBAR-HIGHLIGHT-COLOR: #e5e2fd;
-	SCROLLBAR-SHADOW-COLOR: #e5e2fd;
-	SCROLLBAR-ARROW-COLOR: #e5e2fd;
-	SCROLLBAR-TRACK-COLOR: #C6C3E1; /* Lavender Grey ... più chiaro */
-	SCROLLBAR-BASE-COLOR: #B8B4D9; /* Lavender Grey */
-	scrollbar-3d-light-color: #B8B4D9;
-	scrollbar-dark-shadow-color: #E5E2FD;
+	/* SCROLLBAR-FACE-COLOR: #b8b4d9; */
+	/* SCROLLBAR-HIGHLIGHT-COLOR: #e5e2fd; */
+	/* SCROLLBAR-SHADOW-COLOR: #e5e2fd; */
+	/* SCROLLBAR-ARROW-COLOR: #e5e2fd; */
+	/* SCROLLBAR-TRACK-COLOR: #C6C3E1; Lavender Grey ... più chiaro */
+	/* SCROLLBAR-BASE-COLOR: #B8B4D9; Lavender Grey */
+	/* scrollbar-3d-light-color: #B8B4D9; */
+	/* scrollbar-dark-shadow-color: #E5E2FD; */
 
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 	color: #443F6B; /* Corn Flower Blue */
@@ -92,6 +92,7 @@ p {
 	padding-left: 35px;
 	padding-right: 35px;
 	line-height: 125%;
+	hyphens: auto;
 }
 img {
 	max-width: 100%;
@@ -125,6 +126,22 @@ img {
 			padding: 0 0 5px 20px;
 			align: top;
 }
+.sVediImg1 {
+	display: inline;
+}
+.sVediImg2 {
+	display: inline;
+}
+@media screen and (max-width:1124px) {
+	.sVediImg1 {
+		display: none !important;
+	}
+}
+@media screen and (max-width:996px) {
+	.sVediImg2 {
+		display: none !important;
+	}
+}
 </style>
 </head>
 
@@ -143,9 +160,9 @@ img {
 		<h1>OROSCOPO MAYA</h1>
 
 		<p class="sCenter">
-			<img src="grafiche/Maya_barraOriz.gif" width="366" height="50" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="grafiche/Maya_decoro.gif"    width="123" height="73" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="grafiche/Maya_barraOriz.gif" width="366" height="50" alt=""><br>
+			<img src="grafiche/Maya_barraOriz.gif" width="366" height="50"                   alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="grafiche/Maya_decoro.gif"    width="123" height="73" class="sVediImg1" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="grafiche/Maya_barraOriz.gif" width="366" height="50" class="sVediImg2" alt=""><br>
 		</p>
 
 		<h2>SCIMMIA</h2>
@@ -536,22 +553,23 @@ img {
 		</p>
 
 		<p class="sCenter">
-			<img src="grafiche/Maya_barraOriz.gif" width="366" height="50" border="0" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="grafiche/Maya_decoro.gif"    width="123" height="73" border="0" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="grafiche/Maya_barraOriz.gif" width="366" height="50" border="0" alt="">
+			<img src="grafiche/Maya_barraOriz.gif" width="366" height="50"                   alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="grafiche/Maya_decoro.gif"    width="123" height="73" class="sVediImg1" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="grafiche/Maya_barraOriz.gif" width="366" height="50" class="sVediImg2" alt="">
 		</p>
 
 		<p class="sCenter">
 			<img src="IconaAnim_emailBox.gif" width="35" height="35" alt="">
-			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
-			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
-			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold" title="Scrivimi">studio.acquario@libero.it</a><br><br>
+			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold" title="Telefonami">0125 631175</a> - Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
 
 			<a href="index.html" class="sBold">Pagina iniziale <img src="favicon32.gif" width="32" height="32"> Home page</a>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<b>Sei il visitatore n°&nbsp;</b>
-		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1447865356-71dzbxd18" border=0></a>
-			&nbsp;(Contenuto Aggiornato <time datetime="2018-11-30">30/11/2018</time>)<br><br>
+			<!-- Sostituito Counter il 01/05/2021 alle 22:43 quando aveva valore 542 -->
+			<!-- a href="http://www.retecivica.milano.it" target="_blank" title="Contatore Visite"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1447865356-71dzbxd18" border=0></a -->
+			<a href="http://www.simplehitcounter.com" target="_blank" title="Contatore Visite SimpleHitCounter"><img src="http://simplehitcounter.com/hit.php?uid=3693454772387064323&f=0&b=16777215" border="0" height="18" width="83" alt="visit counter"></a>
+			&nbsp;(Contenuto Aggiornato <time datetime="2021-05-01">01/05/2021</time>)<br><br>
 		</p>
 
 </td></tr></TBODY></table>
