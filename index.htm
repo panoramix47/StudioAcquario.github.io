@@ -2,7 +2,7 @@
 <html lang="it" dir="ltr">
 <head>
 <meta charset="UTF-8">
-<title>Studio Acquario: Old Home Page</title>
+<title>Studio Acquario | Old Home Page</title>
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <meta name="description" content="Studio Acquario: Old Home Page">
 <meta name="keywords" lang="it" content="studio acquario, astrologia, laura, lencia">
@@ -11,18 +11,18 @@
 <meta name="language" content="it">
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="content_updated" content="08/10/2020">
-<meta name="revised" content="27/12/2020">
+<meta name="content_updated" content="17/05/2021"><!-- content="19/03/2019" -->
+<meta name="revised" content="17/05/2021">
 
-<meta http-equiv="refresh" content="1; URL='index.html'" />
+<meta http-equiv="xxrefresh" content="2; URL='index.html'" />
 
 <style type="text/css">
 /* Questa pagina è chiamata solo da Backup.html, perché era presente da sempre (cambiando contenuto ogni mese) così la tengo con la "ridirezione" automatica */
 body {
-	scrollbar-arrow-color: #D9C671;
-	scrollbar-base-color: #1A3862;
-	scrollbar-dark-shadow-color: #1A3862;
-	scrollbar-track-color: #486081;
+	/* scrollbar-arrow-color: #D9C671; */
+	/* scrollbar-base-color: #1A3862; */
+	/* scrollbar-dark-shadow-color: #1A3862; */
+	/* scrollbar-track-color: #486081; */
 
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 	color: #DFD08A; /* Sandwisp */
@@ -31,14 +31,15 @@ body {
 }
 a {
 	color: #CEC26C; /* Tacha */
-	text-decoration: none;
+	/* text-decoration: none; */
 }
 a:hover {
-	color: #DFD08A; /* Sandwisp */
+	color: #FF0000; /* Sandwisp= #DFD08A; */
 }
 p {
 	color: #CEC26C; /* Tacha */
 	text-align: center;
+	hyphens: auto;
 }
 img {
 	max-width: 100%;
@@ -64,6 +65,30 @@ img {
 .sXXLarge {
 			font-size: xx-large;
 }
+.sVediImg1 {
+	display: inline;
+}
+.sVediImg2 {
+	display: inline;
+}
+.sVediImg3 {
+	display: inline;
+}
+@media screen and (max-width:1300px) {
+	.sVediImg1 {
+		display: none;
+	}
+}
+@media screen and (max-width:950px) {
+	.sVediImg2 {
+		display: none;
+	}
+}
+@media screen and (max-width:800px) {
+	.sVediImg3 {
+		display: none;
+	}
+}
 </style>
 </head>
 
@@ -76,19 +101,19 @@ img {
 <tr><td background="grafiche/Indice_background.jpg">
 
 		<p valign="middle">
-			<img src="grafiche/Indice_12segni.jpg"  width="425" height="302">	<!-- originale 600x426 -->
-			<img src="grafiche/Indice_pianeti.jpg"  width="325" height="257">	<!-- originale 385x304 -->
-			<img src="grafiche/Indice_12segniB.jpg" width="425" height="302">	<!-- originale 480x341 -->
+			<img src="grafiche/Indice_12segni.jpg"                    width="425" height="302">	<!-- originale 600x426 -->
+			<img src="grafiche/Indice_pianeti.jpg"  class="sVediImg1" width="325" height="257">	<!-- originale 385x304 -->
+			<img src="grafiche/Indice_12segniB.jpg" class="sVediImg2" width="425" height="302">	<!-- originale 480x341 -->
 			<br>
 		</p>
 
 		<p class="sXXLarge sBold">
 			STUDIO DI ASTROLOGIA
-			<img src="grafiche/Indice_cuoreAnim.gif" width="43" height="35">
+			<img src="grafiche/Indice_cuoreAnim.gif" class="sVediImg3" width="43" height="35">
 			ACQUARIO
-			<img src="grafiche/Indice_cuoreAnim.gif" width="43" height="35">
+			<img src="grafiche/Indice_cuoreAnim.gif" class="sVediImg3" width="43" height="35">
 			<br><br>
-			di <em>Laura Lencia</em><br>
+			di <i>Laura Lencia</i><br>
 		</p>
 
 		<p class="sXLarge sBold">
@@ -99,13 +124,14 @@ img {
 
 		<p class="sSmall">
 			<img src="IconaAnim_emailBox.gif" width="35" height="35" alt="">
-			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
-			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
-			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold" title="Scrivimi">studio.acquario@libero.it</a><br><br>
+			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold" title="Telefonami">0125 631175</a> - Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
 
 			<b>Sei il visitatore n°&nbsp;</b>
-		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1219675020-xsl3j8g2" border=0></a>
-			&nbsp;(Contenuto Aggiornato <time datetime="2020-10-08">08/10/2020</time>)<br><br>
+			<!-- Sostituito Counter il 17/05/2021 alle 22:15 quando aveva valore 19328 -->
+			<!-- a href="http://www.retecivica.milano.it" target="_blank" title="Contatore Visite"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1219675020-xsl3j8g2" border=0></a -->
+			<a href="https://www.hitwebcounter.com" target="_blank" title="Contatore Visite"><img src="https://hitwebcounter.com/counter/counter.php?page=7814022&style=0006&nbdigits=9&type=page&initCount=19328" title="Free Counter" Alt="web counter" border="0"/></a>  
+			&nbsp;(Contenuto Aggiornato <time datetime="2021-05-17">17/05/2021</time>)<br><br>
 		</p>
 
 </td></tr></table>
