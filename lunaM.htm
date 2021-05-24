@@ -12,15 +12,15 @@
 <meta name="language" content="it, en">
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="content_updated" content="30/11/2018">
-<meta name="revised" content="25/12/2020">
+<meta name="content_updated" content="24/05/2021"><!-- content="30/11/2018" -->
+<meta name="revised" content="24/05/2021">
 
 <style type="text/css">
 body {
-	scrollbar-face-color: #6f83a5;
-	scrollbar-shadow-color: #161c28;
-	scrollbar-arrow-color: #161c28;
-	scrollbar-track-color: #4d6184;
+	/* scrollbar-face-color: #6f83a5; */
+	/* scrollbar-shadow-color: #161c28; */
+	/* scrollbar-arrow-color: #161c28; */
+	/* scrollbar-track-color: #4d6184; */
 
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 	color: #161c28; /* Black Russian */
@@ -82,6 +82,7 @@ p {
 	padding-left: 35px;
 	padding-right: 35px;
 	line-height: 125%;
+	hyphens: auto;
 }
 img {
 	max-width: 100%;
@@ -114,13 +115,37 @@ img {
 }
 .sFloatL {
 			float: left;
-			padding: 0 20px 5px 0;
+			padding: 0 10px 5px 0;
 			align: top;
 }
 .sFloatR {
 			float: right;
-			padding: 0 0 5px 20px;
+			padding: 0 0 5px 10px;
 			align: top;
+}
+.sVediImg1 {
+	display: inline;
+}
+.sVediImg2 {
+	display: inline;
+}
+.sVediImg3 {
+	display: inline;
+}
+@media screen and (max-width:882px) {
+	.sVediImg1 {
+		display: none;
+	}
+}
+@media screen and (max-width:778px) {
+	.sVediImg2 {
+		display: none;
+	}
+}
+@media screen and (max-width:792px) {
+	.sVediImg3 {
+		display: none;
+	}
 }
 </style>
 </head>
@@ -140,9 +165,9 @@ img {
 		<h1>LA LUNA NEI SEGNI<br><i lang="en">THE MOON IN EACH SIGN</i></h1>
 
 		<p class="sCenter">
-			<img src="grafiche/Luna_donna1.jpg" width="234" height="316" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="grafiche/Luna_luna.gif"   width="100" height="126" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="grafiche/Luna_donna2.jpg" width="249" height="317" alt="">
+			<img src="grafiche/Luna_donna1.jpg" width="234" height="316"                   alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="grafiche/Luna_luna.gif"   width="100" height="126" class="sVediImg1" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="grafiche/Luna_donna2.jpg" width="249" height="317" class="sVediImg2" alt="">
 		</p>
 
 		<p class="sMedium sCenter sLineHeight">
@@ -153,8 +178,8 @@ img {
 		</p>
 
 		<p class="sCenter">
-			<img src="grafiche/Luna_linea.gif" width="274" height="36" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="grafiche/Luna_linea.gif" width="274" height="36" alt=""><br>
+			<img src="grafiche/Luna_linea.gif" width="274" height="36"                   alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="grafiche/Luna_linea.gif" width="274" height="36" class="sVediImg3" alt=""><br>
 		</p>
 
 		<h2><span class="sRed">ARIETE / <i lang="en">ARIES</i></h2>
@@ -295,22 +320,23 @@ img {
 
 		<p class="sCenter" style="clear: both;">
 			<br>
-			<IMG SRC="grafiche/Luna_linea2.gif" width="274" height="36" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<IMG SRC="grafiche/Luna_linea2.gif" width="274" height="36" alt="">
+			<IMG SRC="grafiche/Luna_linea2.gif" width="274" height="36"                   alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<IMG SRC="grafiche/Luna_linea2.gif" width="274" height="36" class="sVediImg3" alt="">
 			<br>
 		</p>
 
 		<p class="sCenter">
 			<img src="IconaAnim_emailBox.gif" width="35" height="35" alt="">
-			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
-			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
-			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold" title="Scrivimi">studio.acquario@libero.it</a><br><br>
+			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold" title="Telefonami">0125 631175</a> - Cell. <a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
 
 			<a href="index.html" class="sBold">Pagina iniziale <img src="favicon32.gif" width="32" height="32" alt=""> Home page</a>
 			&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
 			<b>Sei il visitatore n°&nbsp;</b>
-		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220427973-j7lf36" border=0></a>
-			&nbsp;(Contenuto Aggiornato <time datetime="2018-11-30">30/11/2018</time>)<br><br>
+			<!-- Sostituito Counter il 24/05/2021 alle 22:07 quando aveva valore 7281 -->
+			<!-- a href="http://www.retecivica.milano.it" target="_blank" title="Contatore Visite"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220427973-j7lf36" border=0></a -->
+			<a href="https://www.hitwebcounter.com" target="_blank" title="Contatore Visite"><img src="https://hitwebcounter.com/counter/counter.php?page=7816927&style=0006&nbdigits=9&type=page&initCount=7281" title="Free Counter" Alt="web counter" border="0" /></a>
+			&nbsp;(Contenuto Aggiornato <time datetime="2021-05-24">24/05/2021</time>)<br><br>
 		</p>
 
 </td></tr></table>
