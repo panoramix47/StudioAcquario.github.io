@@ -22,7 +22,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/Luna_nei_Segni.html</loc>
+  <loc>https://www.studioacquario.it/lunaM.htm</loc>
   <lastmod>2021-05-25T21:20:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -637,7 +637,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.studioacquario.it/welcome.html</loc>
+  <loc>https://www.studioacquario.it/welcome.htm</loc>
   <lastmod>2021-05-25T22:30:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -1147,4 +1147,5 @@
   <priority>0.64</priority>
 </url>
 
+</urlset>
 </urlset>
