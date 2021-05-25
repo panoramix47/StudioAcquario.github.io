@@ -1,5 +1,7 @@
 redirect 301 /lunaM.htm https://www.studioacquario.it/Luna_nei_Segni.html
+redirect permanent /lunaM.htm /Luna_nei_Segni.html
 
 redirect 301 /welcome.htm /welcome.html
+redirect permanent /welcome.htm /welcome.html
 
 ErrorDocument 404 /404.html
