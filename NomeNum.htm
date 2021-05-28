@@ -11,19 +11,19 @@
 <meta name="language" content="it">
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="content_updated" content="31/12/2019">
-<meta name="revised" content="26/12/2020">
+<meta name="content_updated" content="28/05/2021"><!-- content="31/12/2019" -->
+<meta name="revised" content="28/05/2021">
 
 <style type="text/css">
 body {
-	scrollbar-3d-light-color: #dfcfe1;
-	scrollbar-arrow-color: #71396c;
-	scrollbar-base-color: #dfcfe1;
-	scrollbar-dark-shadow-color: #887885;
-	scrollbar-face-color: #C7C0C8; /* Prelude */
-	scrollbar-highlight-color: #887885;
-	scrollbar-track-color: #D2CDD3; /* Thistle */
-	scrollbar-shadow-color: #887885;
+	/* scrollbar-3d-light-color: #dfcfe1; */
+	/* scrollbar-arrow-color: #71396c; */
+	/* scrollbar-base-color: #dfcfe1; */
+	/* scrollbar-dark-shadow-color: #887885; */
+	/* scrollbar-face-color: #C7C0C8; Prelude */
+	/* scrollbar-highlight-color: #887885; */
+	/* scrollbar-track-color: #D2CDD3; Thistle */
+	/* scrollbar-shadow-color: #887885; */
 
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 	/* color: #51427F; Gigas */
@@ -46,7 +46,7 @@ h1 {
 	padding-right: 10px;
 }
 h2 {
-	font-size: large;
+	font-size: x-large;
 	font-weight: bold;
 	color: #4E2749; /* Loulou */
 	text-align: center;
@@ -82,6 +82,7 @@ p {
 	padding-left: 35px;
 	padding-right: 35px;
 	line-height: 125%;
+	hyphens: auto;
 }
 img {
 	max-width: 100%;
@@ -95,7 +96,7 @@ img {
 	margin: 0;
 	padding-left: 10px;
 	padding-right: 10px;
-	line-height: 180%;
+	line-height: 245%; /* 180 */
 }
 .sNavigation a {
 	font-size: x-large;
@@ -144,6 +145,22 @@ img {
 .sLarge {
 			font-size: large;
 }
+.sVediImg1 {
+	display: inline;
+}
+.sVediImg2 {
+	display: inline;
+}
+@media screen and (max-width:817px) {
+	.sVediImg1 {
+		display: none;
+	}
+}
+@media screen and (max-width:1147px) {
+	.sVediImg2 {
+		display: none;
+	}
+}
 </style>
 </head>
 
@@ -182,8 +199,8 @@ img {
 
 		<p class="sCenter">
 			<br>
-			<img src="grafiche/Nome_linea.gif" width="309" height="32" alt="">&nbsp;&nbsp;&nbsp;
-			<img src="grafiche/Nome_linea.gif" width="309" height="32" alt="">
+			<img src="grafiche/Nome_linea.gif" width="309" height="32"                   alt="">&nbsp;&nbsp;&nbsp;
+			<img src="grafiche/Nome_linea.gif" width="309" height="32" class="sVediImg1" alt="">
 		</p>
 
 		<p>
@@ -249,8 +266,8 @@ img {
 		</p>
 
 		<p class="sCenter">
-			<img src="grafiche/Nome_linea.gif" width="309" height="32" alt="">&nbsp;&nbsp;&nbsp;
-			<img src="grafiche/Nome_linea.gif" width="309" height="32" alt="">
+			<img src="grafiche/Nome_linea.gif" width="309" height="32"                   alt="">&nbsp;&nbsp;&nbsp;
+			<img src="grafiche/Nome_linea.gif" width="309" height="32" class="sVediImg1" alt="">
 		</p>
 
 		<h2>I NOMI PIU' DIFFUSI</h2>
@@ -268,20 +285,21 @@ img {
 		</p>
 
 		<p class="sCenter">
-			<img src="grafiche/Nome_linea.gif" width="309" height="32" alt="">&nbsp;&nbsp;
-			<img src="grafiche/Nome_linea.gif" width="309" height="32" alt="">&nbsp;&nbsp;
-			<img src="grafiche/Nome_linea.gif" width="309" height="32" alt="">
+			<img src="grafiche/Nome_linea.gif" width="309" height="32"                   alt="">&nbsp;&nbsp;
+			<img src="grafiche/Nome_linea.gif" width="309" height="32" class="sVediImg1" alt="">&nbsp;&nbsp;
+			<img src="grafiche/Nome_linea.gif" width="309" height="32" class="sVediImg2" alt="">
 		</p>
 
 		<p class="sLoulou sCenter">
 			<img src="IconaAnim_emailBox.gif" width="35" height="35" alt="">
-			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
-			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
-			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold" title="Scrivimi">studio.acquario@libero.it</a><br><br>
+			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold" title="Telefonami">0125 631175</a> - Cell. <a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
 
 			<b>Sei il visitatore n°&nbsp;</b>
-		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1219676249-sdwhew" border=0></a>
-			&nbsp;(Contenuto Aggiornato <time datetime="2019-06-21">31/12/2019</time>)<br><br>
+			<!-- Sostituito Counter il 28/05/2021 alle 21:38 quando aveva valore 9879 -->
+			<!-- a href="http://www.retecivica.milano.it" target="_blank" title="Contatore Visite"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1219676249-sdwhew" border=0></a -->
+			<a href="https://www.hitwebcounter.com" target="_blank" title="Contatore Visite"><img src="https://hitwebcounter.com/counter/counter.php?page=7818593&style=0006&nbdigits=9&type=page&initCount=9879" title="Free Counter" Alt="web counter" border="0" /></a>        
+			&nbsp;(Contenuto Aggiornato <time datetime="2021-05-28">28/05/2021</time>)<br><br>
 		</p>
 
 </td></tr></table>
