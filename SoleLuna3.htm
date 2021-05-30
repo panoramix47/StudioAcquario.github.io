@@ -2,7 +2,7 @@
 <html lang="it" dir="ltr">
 <head>
 <meta charset="UTF-8">
-<title>Sole in Gemelli e Luna in ... - Studio Acquario</title>
+<title>Sole in Gemelli e Luna in ... | Studio Acquario</title>
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <meta name="description" content="Studio Acquario - Sole in Gemelli e Luna in ...">
 <meta name="keywords" lang="it" content="studio acquario, astrologia, sole, luna, gemelli">
@@ -11,18 +11,18 @@
 <meta name="language" content="it">
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="content_updated" content="21/05/2020">
-<meta name="revised" content="27/12/2020">
+<meta name="content_updated" content="30/05/2021"><!-- content="21/05/2020" -->
+<meta name="revised" content="30/05/2021">
 
 <style type="text/css">
 body {
-	scrollbar-face-color:#e1dfd0;
-	scrollbar-arrow-color:#736552;
-	scrollbar-track-color:#cec3b5;
-	scrollbar-shadow-color:#232D22;
-	scrollbar-darkshadow-Color:#736552;
-	scrollbar-highlight-color:#fff7e7;
-	scrollbar-3dlight-color:#736552;
+	/* scrollbar-face-color: #e1dfd0; */
+	/* scrollbar-arrow-color: #736552; */
+	/* scrollbar-track-color: #cec3b5; */
+	/* scrollbar-shadow-color: #232D22; */
+	/* scrollbar-darkshadow-Color: #736552; */
+	/* scrollbar-highlight-color: #fff7e7; */
+	/* scrollbar-3dlight-color: #736552; */
 
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 	color: #7E726C; /* Sand Dune */
@@ -83,6 +83,7 @@ p {
 	padding-left: 35px;
 	padding-right: 35px;
 	line-height: 125%;
+	hyphens: auto;
 }
 img {
 	max-width: 100%;
@@ -93,15 +94,14 @@ img {
 	flex-flow: row wrap;
 	justify-content: center;
 	list-style: none;
-	margin: 0;
-	padding-left: 10px;
-	padding-right: 10px;
-	line-height: 180%;
+	margin: 0px;
+	padding: 0px;
+	line-height: 225%;
 }
 .sNavigation a {
 	font-size: medium;
 	font-weight: bold;
-	padding:.42em;
+	padding: 6px;
 	color: black;
 	margin-left: 2px;
 	background: #CEC18C; /* Winter Hazel */
@@ -112,10 +112,10 @@ img {
 	background: #996D3D; /* Buttered Rum */
 }
 #PagCorrente {
-	border-bottom: 2.5px solid brown;
+	border-bottom: 3px solid brown;
 }
 .sHomeIcon {
-	vertical-align: bottom;
+	vertical-align: middle;
 	margin-bottom: 1px;
 	height: 25px;
 	width: 25px;
@@ -156,6 +156,22 @@ img {
 .sXLarge {
 			font-size: x-large; /* 18pt */
 }
+.sVediImg1 {
+	display: inline;
+}
+.sVediImg2 {
+	display: inline;
+}
+@media screen and (max-width:1015px) {
+	.sVediImg1 {
+		display: none;
+	}
+}
+@media screen and (max-width:768px) {
+	.sVediImg2 {
+		display: none;
+	}
+}
 </style>
 </head>
 
@@ -174,13 +190,14 @@ img {
 
 		<h1>IL <span class="sRedOrange">SOLE</span> in GEMELLI e la <span class="sRedOrange">LUNA</span> in ...</h1>
 		<p class="sXLarge sBold sCenter">
-			combinazione dei segni <span class="sRedOrange">Solari</span> e <span class="sRedOrange">Lunari</span></h1>
+			combinazione dei segni <span class="sRedOrange">Solari</span> e <span class="sRedOrange">Lunari</span>
+		</p>
 
 		<p class="sCenter">
 			<br>
-			<img src="grafiche/SoleLuna_lunaGrigia.jpg"  width="236" height="335" alt="Luna grigia">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="grafiche/SoleLuna_soleLuna.jpg"    width="272" height="288" alt="Sole e Luna">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="grafiche/SoleLuna_lunaAzzurra.jpg" width="239" height="335" alt="Luna azzurra">
+			<img src="grafiche/SoleLuna_lunaGrigia.jpg"  width="236" height="335" class="sVediImg1" alt="Luna grigia">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="grafiche/SoleLuna_soleLuna.jpg"    width="272" height="288"                   alt="Sole e Luna">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="grafiche/SoleLuna_lunaAzzurra.jpg" width="239" height="335" class="sVediImg2" alt="Luna azzurra">
 			<br>
 		</p>
 
@@ -189,7 +206,7 @@ img {
 			Il segno <span class="sRedOrange sBold">Solare</span> e quello <span class="sRedOrange sBold">Lunare</span> però non dice quale segno <span class="sRedOrange sBold">Solare</span> e quale <span class="sRedOrange sBold">Lunare</span> si tratti.
 		</p>
 
-		<nav class="sCenter">
+		<nav>
 			<br>
 			<ul class="sNavigation">
 				<li><a href="SoleLuna1.htm">Ariete</a></li>
@@ -315,13 +332,12 @@ img {
 
 		<p class="sCenter">
 			<img src="IconaAnim_emailBox.gif" width="35" height="35" alt="">
-			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
-			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
-			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold" title="Scrivimi">studio.acquario@libero.it</a><br><br>
+			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold" title="Telefonami">0125 631175</a> - Cell. <a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
 
 			<b>Sei il visitatore n°&nbsp;</b>
-		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1322750635-hf8yr2y7" border=0></a>
-			&nbsp;(Contenuto Aggiornato <time datetime="2020-05-21">21/05/2020</time>)<br><br>
+			<a href="http://www.retecivica.milano.it" target="_blank" title="Contatore Visite"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1322750635-hf8yr2y7" border=0></a>
+			&nbsp;(Contenuto Aggiornato <time datetime="2021-05-30">30/05/2021</time>)<br><br>
 		</p>
 
 </td></tr></table>
