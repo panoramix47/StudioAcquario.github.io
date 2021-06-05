@@ -100,55 +100,71 @@ img {
 	height: auto;
 }
 .sBorder2s-Mauve {
-				border: 2px solid #CC99FF;
+			border: 2px solid #CC99FF;
 }
 .sBorder2i-Mauve {
-				border: 2px inset #CC99FF;
+			border: 2px inset #CC99FF;
 }
 .sBlue {
-				color: #0000FF;
+			color: #0000FF;
 }
 .sGreen {
-				color: #008000;
+			color: #008000;
 }
 .sDodgerBlue {
-				color: #0092F2;
+			color: #0092F2;
 }
 .sPigmentGreen {
-				color: #00994D;
+			color: #00994D;
 }
 .sMaroon {
-				color: #800000;
+			color: #800000;
 }
 .sPurple {
-				color: #800080;
+			color: #800080;
 }
 .sGrey {
-				color: #808080;
+			color: #808080;
 }
 .sGoldenPoppy {
-				color: #EEBE00;
+			color: #EEBE00;
 }
 .sRed {
-				color: #FF0000;
+			color: #FF0000;
 }
 .sFuchsia {
-				color: #FF00FF;
+			color: #FF00FF;
 }
 .sBGWhite {
-				background-color: #FFFFFF;
+			background-color: #FFFFFF;
 }
 .sBold {
-				font-weight: bold;
+			font-weight: bold;
 }
 .sCenter {
-				text-align: center;
+			text-align: center;
+}
+.sXSmall {
+			font-size: x-small;
 }
 .sMedium {
-				font-size: medium;
+			font-size: medium;
 }
 .sLarge {
-				font-size: large;
+			font-size: large;
+}
+table.sTabella {
+			border: 1.5px solid #000000;
+			border-collapse: collapse;
+			background-color: #FFFFFF;
+			font-size: small;
+}
+table.sTabella thead tbody th tr td {
+			border: 1px solid #000000;
+			border-collapse: collapse;
+			padding: 2px 2px; /* 0.2em 0.5em; */
+			font-size: small;
+			text-align: center;
 }
 .sVediImg1 {
 	display: inline;
@@ -190,6 +206,38 @@ img {
 		display: none !important;
 	}
 }
+@media screen and (max-width: 1240px) {
+	table.sTabella th {
+			font-size: x-small; /* 10px */
+	}
+	table.sTabella td {
+			font-size: x-small; /* 10px */
+	}
+}
+@media screen and (max-width: 1100px) {
+	table.sTabella th {
+			font-size: xx-small; /* 9px */
+	}
+	table.sTabella td {
+			font-size: xx-small; /* 9px */
+	}
+}
+@media screen and (max-width: 1050px) {
+	table.sTabella th {
+			font-size: 8px;
+	}
+	table.sTabella td {
+			font-size: 8px;
+	}
+}
+@media screen and (max-width: 1000px) {
+	table.sTabella th {
+			font-size: 7px;
+	}
+	table.sTabella td {
+			font-size: 7px;
+	}
+}
 </style>
 </head>
 
@@ -214,10 +262,262 @@ img {
 			<b>Caratteristiche dei 12 ANIMALI CINESI</b><br><br>
 			La tabella, qui di seguito, ti aiuterà nella ricerca del tuo segno e del relativo elemento.
 		</p>
+
+		<h2>TABELLA dei SEGNI CINESI</h2>
 		<p class="sMedium sBold sCenter">
-			<br>TABELLA dei SEGNI CINESI<br><br>
-			<img src="tabelle/AnimaliC_tabella.gif" width="752" height="328" alt="Tabella dei segni cinesi">
+			Cerca nella tabella la tua data di nascita (giorno, mese, anno)<br>
+			<!-- img src="tabelle/AnimaliC_tabella.gif" width="752" height="328" alt="Tabella dei segni cinesi" -->
 		</p>
+
+		<table width="90%" align="center" class="sTabella">
+		<caption>anni del 1900</caption>
+		<thead>
+			<tr>
+				<th><b>Segno</b></th>
+				<th>dal &rarr; al&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+				<th>dal &rarr; al&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+				<th>dal &rarr; al&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+				<th>dal &rarr; al&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+				<th>dal &rarr; al&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+				<th>dal &rarr; al&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><b>Topo</b></td>
+				<td>05/02/24 &rarr; 21/01/25</td>
+				<td>24/01/36 &rarr; 10/02/37</td>
+				<td>10/02/48 &rarr; 28/01/49</td>
+				<td>28/01/60 &rarr; 14/02/61</td>
+				<td>16/01/72 &rarr; 02/02/73</td>
+				<td>02/02/84 &rarr; 19/01/85</td>
+			</tr>
+			<tr>
+				<td><b>Bufalo</b></td>
+				<td>22/01/25 &rarr; 12/02/26</td>
+				<td>11/02/37 &rarr; 30/01/38</td>
+				<td>29/01/49 &rarr; 16/02/50</td>
+				<td>15/02/61 &rarr; 04/02/62</td>
+				<td>03/02/73 &rarr; 22/01/74</td>
+				<td>20/01/85 &rarr; 08/02/86</td>
+			</tr>
+			<tr>
+				<td><b>Tigre</b></td>
+				<td>13/02/26 &rarr; 01/02/27</td>
+				<td>31/01/38 &rarr; 18/02/39</td>
+				<td>17/02/50 &rarr; 05/02/51</td>
+				<td>05/02/62 &rarr; 24/01/63</td>
+				<td>23/01/74 &rarr; 10/01/75</td>
+				<td>09/02/86 &rarr; 28/01/87</td>
+			</tr>
+			<tr>
+				<td><b>Coniglio</b></td>
+				<td>02/02/27 &rarr; 22/01/28</td>
+				<td>19/02/39 &rarr; 07/02/40</td>
+				<td>06/02/51 &rarr; 26/01/52</td>
+				<td>25/01/63 &rarr; 12/02/64</td>
+				<td>11/01/75 &rarr; 30/01/76</td>
+				<td>29/01/87 &rarr; 16/02/88</td>
+			</tr>
+			<tr>
+				<td><b>Drago</b></td>
+				<td>23/01/28 &rarr; 09/02/29</td>
+				<td>08/02/40 &rarr; 26/01/41</td>
+				<td>27/01/52 &rarr; 13/02/53</td>
+				<td>13/02/64 &rarr; 01/02/65</td>
+				<td>31/01/76 &rarr; 17/02/77</td>
+				<td>17/02/88 &rarr; 05/02/89</td>
+			</tr>
+			<tr>
+				<td><b>Serpente</b></td>
+				<td>10/02/29 &rarr; 29/01/30</td>
+				<td>27/01/41 &rarr; 14/02/42</td>
+				<td>14/02/53 &rarr; 02/02/54</td>
+				<td>02/02/65 &rarr; 20/01/66</td>
+				<td>18/02/77 &rarr; 06/02/78</td>
+				<td>06/02/89 &rarr; 26/01/90</td>
+			</tr>
+			<tr>
+				<td><b>Cavallo</b></td>
+				<td>30/01/30 &rarr; 16/02/31</td>
+				<td>15/02/42 &rarr; 04/02/43</td>
+				<td>03/02/54 &rarr; 23/01/55</td>
+				<td>21/01/66 &rarr; 14/02/67</td>
+				<td>07/02/78 &rarr; 27/01/79</td>
+				<td>27/01/90 &rarr; 08/02/91</td>
+			</tr>
+			<tr>
+				<td><b>Capra</b></td>
+				<td>17/02/31 &rarr; 05/02/32</td>
+				<td>05/02/43 &rarr; 24/01/44</td>
+				<td>24/01/55 &rarr; 11/02/56</td>
+				<td>09/02/67 &rarr; 29/01/68</td>
+				<td>28/01/79 &rarr; 15/02/80</td>
+				<td>15/02/91 &rarr; 03/02/92</td>
+			</tr>
+			<tr>
+				<td><b>Scimmia</b></td>
+				<td>06/02/32 &rarr; 25/01/33</td>
+				<td>25/01/44 &rarr; 12/02/45</td>
+				<td>12/02/56 &rarr; 30/01/57</td>
+				<td>30/01/68 &rarr; 16/02/69</td>
+				<td>16/02/80 &rarr; 04/02/81</td>
+				<td>04/02/92 &rarr; 22/01/93</td>
+			</tr>
+			<tr>
+				<td><b>Gallo</b></td>
+				<td>26/01/33 &rarr; 13/02/34</td>
+				<td>13/02/45 &rarr; 01/02/46</td>
+				<td>31/01/57 &rarr; 17/02/58</td>
+				<td>17/02/69 &rarr; 05/02/70</td>
+				<td>05/02/81 &rarr; 24/01/82</td>
+				<td>23/01/93 &rarr; 09/02/94</td>
+			</tr>
+			<tr>
+				<td><b>Cane</b></td>
+				<td>14/02/34 &rarr; 03/02/35</td>
+				<td>02/02/46 &rarr; 21/01/47</td>
+				<td>18/02/58 &rarr; 07/02/59</td>
+				<td>06/02/70 &rarr; 26/01/71</td>
+				<td>25/01/82 &rarr; 12/02/83</td>
+				<td>10/02/94 &rarr; 30/01/95</td>
+			</tr>
+			<tr>
+				<td><b>Maiale</b></td>
+				<td>04/02/35 &rarr; 23/01/36</td>
+				<td>22/01/47 &rarr; 09/02/48</td>
+				<td>08/02/59 &rarr; 27/01/60</td>
+				<td>27/01/71 &rarr; 15/01/72</td>
+				<td>13/02/83 &rarr; 01/02/84</td>
+				<td>31/01/95 &rarr; 18/02/96</td>
+			</tr>
+			</tbody>
+		</table>
+
+		<table width="90%" align="center" class="sTabella">
+		<caption><br>anni del 2000</caption>
+		<thead>
+			<tr>
+				<th><b>Segno</b></th>
+				<th>dal &rarr; al&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+				<th>dal &rarr; al&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+				<th>dal &rarr; al&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+				<th>dal &rarr; al&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+				<th>dal &rarr; al&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+				<th>dal &rarr; al&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><b>Topo</b></td>
+				<td>19/02/96 &rarr; 06/02/97</td>
+				<td>07/02/08 &rarr; 25/01/09</td>
+				<td>25/01/20 &rarr; 11/02/21</td>
+				<td>11/02/32 &rarr; 30/01/33</td>
+				<td>30/01/44 &rarr; 16/02/45</td>
+				<td>15/02/56 &rarr; 03/02/57</td>
+			</tr>
+			<tr>
+				<td><b>Bufalo</b></td>
+				<td>07/02/97 &rarr; 28/01/98</td>
+				<td>26/01/09 &rarr; 14/02/10</td>
+				<td>12/02/21 &rarr; 31/01/22</td>
+				<td>31/01/33 &rarr; 2034:</td>
+				<td>17/02/45 &rarr; 2046</td>
+				<td>04/02/57 &rarr; 2058</td>
+			</tr>
+			<tr>
+				<td><b>Tigre</b></td>
+				<td>28/01/98 &rarr; 15/02/99</td>
+				<td>14/02/10 &rarr; 02/02/11</td>
+				<td>01/02/22 &rarr; 21/01/23</td>
+				<td>2034 &rarr; 2035</td>
+				<td>2046 &rarr; 2047</td>
+				<td>2058 &rarr; 2059</td>
+			</tr>
+			<tr>
+				<td><b>Coniglio</b></td>
+				<td>16/02/99 &rarr; 04/02/00</td>
+				<td>03/02/11 &rarr; 22/01/12</td>
+				<td>22/01/23 &rarr; 09/02/24</td>
+				<td>2035 &rarr; 2036</td>
+				<td>2047 &rarr; 2048</td>
+				<td>2059 &rarr; 2060</td>
+			</tr>
+			<tr>
+				<td><b>Drago</b></td>
+				<td>05/02/00 &rarr; 23/01/01</td>
+				<td>23/01/12 &rarr; 09/02/13</td>
+				<td>10/02/24 &rarr; 28/01/25</td>
+				<td>2036 &rarr; 2037</td>
+				<td>2048 &rarr; 2049</td>
+				<td>2060 &rarr; 2061</td>
+			</tr>
+			<tr>
+				<td><b>Serpente</b></td>
+				<td>24/01/01 &rarr; 15/02/02</td>
+				<td>10/02/13 &rarr; 30/01/14</td>
+				<td>29/01/25 &rarr; 16/02/26</td>
+				<td>2037 &rarr; 03/01/38</td>
+				<td>2049 &rarr; 22/01/50</td>
+				<td>2061 &rarr; 08/02/62</td>
+			</tr>
+			<tr>
+				<td><b>Cavallo</b></td>
+				<td>12/02/02 &rarr; 31/01/03</td>
+				<td>31/01/14 &rarr; 18/02/15</td>
+				<td>17/02/26 &rarr; 05/02/27</td>
+				<td>04/01/38 &rarr; 23/01/39</td>
+				<td>23/01/50 &rarr; 10/02/51</td>
+				<td>09/02/62 &rarr; 28/01/63</td>
+			</tr>
+			<tr>
+				<td><b>Capra</b></td>
+				<td>01/02/03 &rarr; 21/01/04</td>
+				<td>19/02/15 &rarr; 07/02/16</td>
+				<td>06/02/27 &rarr; 25/01/28</td>
+				<td>24/01/39 &rarr; 2040</td>
+				<td>11/02/51 &rarr; 2052</td>
+				<td>29/01/63 &rarr; 2064</td>
+			</tr>
+			<tr>
+				<td><b>Scimmia</b></td>
+				<td>22/01/04 &rarr; 08/02/05</td>
+				<td>08/02/16 &rarr; 27/01/17</td>
+				<td>26/01/28 &rarr; 2029</td>
+				<td>2040 &rarr; 2041</td>
+				<td>2052 &rarr; 2053</td>
+				<td>2064 &rarr; 2065</td>
+			</tr>
+			<tr>
+				<td><b>Gallo</b></td>
+				<td>09/02/05 &rarr; 28/01/06</td>
+				<td>28/01/17 &rarr; 15/02/18</td>
+				<td>2029 &rarr; 2030</td>
+				<td>2041 &rarr; 2042</td>
+				<td>2053 &rarr; 2054</td>
+				<td>2065 &rarr; 2066</td>
+			</tr>
+			<tr>
+				<td><b>Cane</b></td>
+				<td>29/01/06 &rarr; 17/02/07</td>
+				<td>16/02/18 &rarr; 04/02/19</td>
+				<td>2030 &rarr; 22/01/31</td>
+				<td>2042 &rarr; 09/02/43</td>
+				<td>2054 &rarr; 27/01/55</td>
+				<td>2066 &rarr; 13/02/67</td>
+			</tr>
+			<tr>
+				<td><b>Maiale</b></td>
+				<td>18/02/07 &rarr; 06/02/08</td>
+				<td>05/02/19 &rarr; 24/01/20</td>
+				<td>23/01/31 &rarr; 10/02/32</td>
+				<td>10/02/43 &rarr; 29/01/44</td>
+				<td>28/01/55 &rarr; 14/02/56</td>
+				<td>14/02/67 &rarr; 02/02/68</td>
+			</tr>
+			</tbody>
+		</table>
 
 		<p class="sCenter">
 			<br>
@@ -692,8 +992,8 @@ img {
 			&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
 			<b>Sei il visitatore n°&nbsp;</b>
 			<!-- Sostituito Counter il 05/06/2021 alle 20:50 quando aveva valore 8762 -->
-			<!-- a href="http://www.retecivica.milano.it" target="_blank" title="Contatore Visite"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1317655797-u2ir9zup" border=0></a -->
-			<script type="text/javascript" src="//counter.websiteout.net/js/17/0/8761/0"></script>
+			<a href="http://www.retecivica.milano.it" target="_blank" title="Contatore Visite"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1317655797-u2ir9zup" border=0></a>
+			<!-- script type="text/javascript" src="//counter.websiteout.net/js/17/0/8761/0"></script -->
 			&nbsp;(Contenuto Aggiornato <time datetime="2021-06-05">05/06/2021</time>)<br><br>
 		</p>
 
