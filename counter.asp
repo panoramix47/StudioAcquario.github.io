@@ -1,11 +1,12 @@
 <%
 Response.Expires = 0
+conta=-1
 Set fs = CreateObject("Scripting.FileSystemObject")
-Path = server.mappath("conta.txt")
+Path = server.mappath("tabelle\conta.txt")
 Set a = fs.OpenTextFile(path)
 conta = CInt(a.ReadLine)
-If Session("conta") = "" then
-Session("conta") = conta
+If Session("tabelle\conta") = "" then
+Session("tabelle\conta") = conta
 conta = conta + 1
 a.close
 Set a = fs.CreateTextFile(path, True)
