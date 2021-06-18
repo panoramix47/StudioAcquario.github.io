@@ -2,7 +2,7 @@
 <html lang="it" dir="ltr">
 <head>
 <meta charset="UTF-8">
-<title>Pensieri - Studio Acquario</title>
+<title>Pensieri | Studio Acquario</title>
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <meta name="description" content="Studio Acquario - Pensieri">
 <meta name="keywords" lang="it" content="studio acquario, astrologia, poesie, pensieri">
@@ -11,15 +11,15 @@
 <meta name="language" content="it">
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="content_updated" content="18/12/2017">
-<meta name="revised" content="01/03/2021">
+<meta name="content_updated" content="18/06/2021"><!-- content="18/12/2017" -->
+<meta name="revised" content="18/06/2021">
 
 <style type="text/css">
 body {
-	scrollbar-arrow-color: #bf7b86;
-	scrollbar-base-color: #e3beb8;
-	scrollbar-dark-shadow-color: #ffffff;
-	scrollbar-track-color: #bf7b86;
+	/* scrollbar-arrow-color: #bf7b86; */
+	/* scrollbar-base-color: #e3beb8; */
+	/* scrollbar-dark-shadow-color: #ffffff; */
+	/* scrollbar-track-color: #bf7b86; */
 
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 	color: #B78385; /* Tapestry */
@@ -80,6 +80,7 @@ p {
 	padding-left: 35px;
 	padding-right: 35px;
 	line-height: 125%;
+	hyphens: auto;
 }
 img {
 	max-width: 100%;
@@ -90,15 +91,17 @@ img {
 	flex-flow: row wrap;
 	justify-content: center;
 	list-style: none;
-	margin: 0;
+	/* margin: 0;
 	padding-left: 10px;
-	padding-right: 10px;
-	line-height: 180%;
+	padding-right: 10px; */
+	margin: 0px;
+	padding: 0px;
+	line-height: 225%;
 }
 .sNavigation a {
 	font-size: small;
 	font-weight: bold;
-	padding: .42em;
+	padding: 6px; /* .42em; */
 	color: black;
 	margin-left: 2px;
 	background: #F2C6D5; /* Pink Lace */
@@ -108,7 +111,7 @@ img {
 	background: #FF66FF; /* Pink Flamingo */
 }
 #PagCorrente {
-	border-bottom: 2.5px solid red;
+	border-bottom: 3px solid red;
 }
 .sHomeIcon {
 	vertical-align: bottom;
@@ -119,6 +122,9 @@ img {
 .sBulgarianRose {
 			color: #462829;
 }
+.sBGWhite {
+			background-color: #FFFFFF;
+}
 .sBold {
 			font-weight: bold;
 }
@@ -127,6 +133,22 @@ img {
 }
 .sSmall {
 			font-size: small;
+}
+.sVediImg1 {
+	display: inline;
+}
+.sVediImg2 {
+	display: inline;
+}
+@media screen and (max-width: 1080px) {
+	.sVediImg1 {
+		display: none;
+	}
+}
+@media screen and (max-width: 894px) {
+	.sVediImg2 {
+		display: none;
+	}
 }
 </style>
 </head>
@@ -146,11 +168,11 @@ img {
 		<h1>I MIEI PENSIERI</h1>
 
 		<p class="sCenter">
-			<img src="grafiche/Pensieri_fiore.gif"         width="80"  height="64"  alt="">
-			<img src="grafiche/Animata_cuoriFarfalla.gif" width="90"  height="275" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="grafiche/Pensieri_angeli.gif"        width="450" height="269" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="grafiche/Pensieri_cuoriVert.gif"     width="75"  height="275" alt="">&nbsp;&nbsp;
-			<img src="grafiche/Pensieri_fiore.gif"         width="80"  height="64"  alt="">
+			<img src="grafiche/Pensieri_fiore.gif"        width="80"  height="64"  class="sVediImg1" alt="">
+			<img src="grafiche/Animata_cuoriFarfalla.gif" width="90"  height="275" class="sVediImg2" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="grafiche/Pensieri_angeli.gif"       width="450" height="269"                   alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="grafiche/Pensieri_cuoriVert.gif"    width="75"  height="275" class="sVediImg2" alt="">&nbsp;&nbsp;
+			<img src="grafiche/Pensieri_fiore.gif"        width="80"  height="64"  class="sVediImg1"  alt="">
 		</p>
 
 		<p class="sCenter">
@@ -265,22 +287,23 @@ img {
 
 		<p class="sSmall sBulgarianRose sCenter">
 			<img src="IconaAnim_emailBox.gif" width="35" height="35" alt="">
-			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
-			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
-			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold" title="Scrivimi">studio.acquario@libero.it</a><br><br>
+			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold" title="Telefonami">0125 631175</a> - Cell. <a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
 
 			<b>Sei il visitatore n°&nbsp;</b>
-		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1593431960-g5yl2x8" border=0></a>
-			&nbsp;(Contenuto Aggiornato <time datetime="2017-12-18">18/12/2017</time>)<br>
+			<!-- Sostituito Counter il 18/06/2021 alle 22:18 quando aveva valore 55 -->
+			<!-- a href="http://www.retecivica.milano.it" target="_blank" title="Contatore Visite"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1593431960-g5yl2x8" border=0></a -->
+			<a href="https://www.counter12.com" target="_blank" title="Contatore Visite"><img src="https://www.counter12.com/img-Yw77A6DyZ1051wx1-3.gif" border="0" alt="counter"></a><script type="text/javascript" src="https://www.counter12.com/ad.js?id=Yw77A6DyZ1051wx1"></script>
+			&nbsp;(Contenuto Aggiornato <time datetime="2021-06-18">18/06/2021</time>)<br>
 		</p>
 
 </td></tr></table>
 </td></tr></table>
 </td></tr></table>
 <footer>
-	Laura Lencia - Studio di Astrologia "Acquario". Copyright © 1998-2021. Tutti i diritti sono riservati.
+	<span class="sBGWhite">Laura Lencia - Studio di Astrologia "Acquario". Copyright © 1998-2021. Tutti i diritti sono riservati.
 	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
-	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html">qui</a>.
+	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html">qui</a>.</span>
 </footer>
 </body>
 </html>
