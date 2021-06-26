@@ -11,15 +11,15 @@
 <meta name="language" content="it">
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="content_updated" content="23/12/2019">
-<meta name="revised" content="26/12/2020">
+<meta name="content_updated" content="26/06/2021"><!-- content="23/12/2019" -->
+<meta name="revised" content="26/06/2021">
 
 <style type="text/css">
 body {
-	SCROLLBAR-ARROW-COLOR: #F6F7EB;
-	SCROLLBAR-FACE-COLOR: #205E5B;
-	SCROLLBAR-BASE-COLOR: #205E5B; /* Blue Stone */
-	SCROLLBAR-TRACK-COLOR: #4D7E7C; /* Breaker Bay */
+	/* SCROLLBAR-ARROW-COLOR: #F6F7EB; */
+	/* SCROLLBAR-FACE-COLOR: #205E5B; */
+	/* SCROLLBAR-BASE-COLOR: #205E5B; Blue Stone */
+	/* SCROLLBAR-TRACK-COLOR: #4D7E7C; Breaker Bay */
 
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 	color: #F6F7EB; /* Twilight Blue */
@@ -46,8 +46,8 @@ h2 {
 	font-weight: bold;
 	color: #FFFFFF; /* White */
 	text-align: center;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-top: 30px;
 }
 header {
@@ -76,9 +76,10 @@ p {
 	font-size: small;
 	color: #FFFFFF; /* White */
 	text-align: justify;
-	padding-left: 35px;
-	padding-right: 35px;
-	line-height: 125%;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 130%;
+	hyphens: auto;
 }
 img {
 	max-width: 100%;
@@ -89,30 +90,29 @@ img {
 	flex-flow: row wrap;
 	justify-content: center;
 	list-style: none;
-	margin: 0;
-	padding-left: 10px;
-	padding-right: 10px;
-	line-height: 180%;
+	margin: 0px;
+	padding: 0px;
+	line-height: 220%;
 }
 .sNavigation a {
 	font-size: medium;
 	font-weight: bold;
-	padding:.42em;
-	color: black;
+	padding: 5px; /* .42em; */
+	color: #000000; /* black */
 	margin-left: 2px;
 	background: #52BA8C; /* Silver Tree */
 	text-decoration: none;
 }
 .sNavigation a:hover {
-	color: white; /* White */
+	color: #FFFFFF; /* white */
 	background: #008000; /* Green */
 }
 #PagCorrente {
-	border-bottom: 2.5px solid lime;
+	border-bottom: 3px solid #00FF00; /* lime */
 }
 .sHomeIcon {
 	vertical-align: bottom;
-	margin-bottom: 1px;
+	margin-bottom: 2px;
 	height: 25px;
 	width: 25px;
 }
@@ -164,6 +164,38 @@ img {
 .sMedium {
 			font-size: medium; /* 12pt */
 }
+.sVediImg1 {
+	display: inline;
+}
+.sVediImg2 {
+	display: inline;
+}
+.sVediImg3 {
+	display: inline;
+}
+.sVediImg4 {
+	display: inline;
+}
+@media screen and (max-width: 833px) {
+	.sVediImg1 {
+		display: none;
+	}
+}
+@media screen and (max-width: 1008px) {
+	.sVediImg2 {
+		display: none;
+	}
+}
+@media screen and (max-width: 1068px) {
+	.sVediImg3 {
+		display: none;
+	}
+}
+@media screen and (max-width: 773px) {
+	.sVediImg4 {
+		display: none;
+	}
+}
 </style>
 </head>
 
@@ -179,8 +211,8 @@ img {
 		<h1>GLI ASCENDENTI DEL MESE: CAPRICORNO</h1>
 
 		<p class="sCenter">
-			<img src="grafiche/I12Asc_capricornoGlobo.gif" width="200" height="200" alt="Globo Capricorno">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="grafiche/I12Asc_capricorn.gif"       width="432" height="133" alt="Capricorno Animato">
+			<img src="grafiche/I12Asc_capricornoGlobo.gif" width="200" height="200" class="sVediImg1" alt="Globo Capricorno">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="grafiche/I12Asc_capricorn.gif"       width="432" height="133"                   alt="Capricorno Animato">
 		</p>
 
 		<nav class="sCenter">
@@ -209,8 +241,8 @@ img {
 
 		<p class="sCenter">
 			<br>
-			<img src="grafiche/I12Asc_lineaAstri.gif" width="400" height="48" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="grafiche/I12Asc_lineaAstri.gif" width="400" height="48" alt="">
+			<img src="grafiche/I12Asc_lineaAstri.gif" width="400" height="48"                   alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="grafiche/I12Asc_lineaAstri.gif" width="400" height="48" class="sVediImg2" alt="">
 		</p>
 
 		<h2><span class="sLime">CAPRICORNO</span> ASC <span class="sRed">ARIETE</span> (<span class="sLime">Terra</span> - <span class="sRed">Fuoco</span>)</h2>
@@ -275,20 +307,21 @@ img {
 
 		<p class="sCenter">
 			<br>
-			<img src="grafiche/I12Asc_linea.jpg" width="283" height="34" alt="">&nbsp;&nbsp;&nbsp;
-			<img src="grafiche/I12Asc_linea.jpg" width="283" height="34" alt="">&nbsp;&nbsp;&nbsp;
-			<img src="grafiche/I12Asc_linea.jpg" width="283" height="34" alt="">
+			<img src="grafiche/I12Asc_linea.jpg" width="283" height="34" class="sVediImg3" alt="">&nbsp;&nbsp;&nbsp;
+			<img src="grafiche/I12Asc_linea.jpg" width="283" height="34"                   alt="">&nbsp;&nbsp;&nbsp;
+			<img src="grafiche/I12Asc_linea.jpg" width="283" height="34" class="sVediImg4" alt="">
 		</p>
 
 		<p class="sCenter">
 			<img src="IconaAnim_emailBox.gif" width="35" height="35" alt="">
-			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold">studio.acquario@libero.it</a><br><br>
-			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold">0125 631175</a>
-			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold" title="Scrivimi">studio.acquario@libero.it</a><br><br>
+			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold" title="Telefonami">0125 631175</a> - Cell. <a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
 
 			<b>Sei il visitatore n°&nbsp;</b>
-		<a href="http://www.retecivica.milano.it"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220366648-xy63cj3" border=0></a>
-			&nbsp;(Contenuto Aggiornato <time datetime="2019-12-23">23/12/2019</time>)<br><br>
+			<!-- Sostituito Counter il 26/06/2021 alle 22:03 quando aveva valore 9824 (uguale per tutte e 12 le pagine) -->
+			<!-- a href="http://www.retecivica.milano.it" target="_blank" title="Contatore Visite"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220366648-xy63cj3" border=0></a -->
+			<a href="https://www.counter12.com" target="_blank" title="Contatore Visite"><img src="https://www.counter12.com/img-ZW3zdd8Z4d0YbxZ3-3.gif" border="0" alt="free web counter"></a><script type="text/javascript" src="https://www.counter12.com/ad.js?id=ZW3zdd8Z4d0YbxZ3"></script>
+			&nbsp;(Contenuto Aggiornato <time datetime="2021-06-26">26/06/2021</time>)<br><br>
 		</p>
 
 </td></tr></table>
