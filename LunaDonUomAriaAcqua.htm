@@ -12,7 +12,7 @@
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="11/06/2021"><!-- content="04/04/2020" -->
-<meta name="revised" content="11/06/2021">
+<meta name="revised" content="04/07/2021">
 
 <style type="text/css">
 body {
@@ -47,8 +47,8 @@ h2 {
 	font-weight: bold;
 	color: #FFFFFF; /* White */
 	text-align: center;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-top: 40px;
 }
 h3 {
@@ -56,8 +56,8 @@ h3 {
 	font-weight: bold;
 	color: #FFFFFF; /* White */
 	text-align: center;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-top: 30px;
 }
 header {
@@ -69,7 +69,7 @@ header {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-top: 25px;	/* vertical-align: middle; */
-	margin-bottom: 0;	/* vertical-align: middle; */
+	margin-bottom: 0px;	/* vertical-align: middle; */
 	height: 70px;
 }
 footer {
@@ -86,9 +86,9 @@ p {
 	font-size: small;
 	color: #FFFFFF; /* White */
 	text-align: justify;
-	padding-left: 35px;
-	padding-right: 35px;
-	line-height: 125%;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 130%;
 	hyphens: auto;
 }
 img {
@@ -100,15 +100,14 @@ img {
 	flex-flow: row wrap;
 	justify-content: center;
 	list-style: none;
-	margin: 0;
-	padding-left: 10px;
-	padding-right: 10px;
-	line-height: 180%;
+	margin: 0px;
+	padding: 0px;
+	line-height: 220%;
 }
 .sNavigation a {
 	font-size: medium;
 	font-weight: bold;
-	padding:.42em;
+	padding: 5px; /* .42em; */
 	color: #FFFFFF; /* White */
 	margin-left: 2px;
 	background: #0000FF;  /* Blue */
@@ -119,13 +118,20 @@ img {
 	background: #AFB6C9; /* Echo Blue */
 }
 #PagCorrente {
-	border-bottom: 2.5px solid #FF0000; /* Red */
+	border-bottom: 3px solid #FF0000; /* Red */
 }
 .sHomeIcon {
-	vertical-align: bottom;
-	margin-bottom: 1px;
+	vertical-align: middle;
+	margin-bottom: 0px;
 	height: 25px;
 	width: 25px;
+}
+#TornaSu {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	padding: 10px;
+	display: none;
 }
 .sBorder2s {
 			border-style: solid;
@@ -202,11 +208,27 @@ img {
 		display: none;
 	}
 }
+.sSegniSize {
+			text-align: center;
+			font-size: 22px;
+}
+.sSegniLink {
+			text-decoration: none;
+}
+.sSegniDesc {
+			text-align: center;
+			font-size: x-small;
+			color: #FFFFFF; /* White */
+			line-height: 100%;
+			padding: 0px;
+}
 </style>
 </head>
 
 <body>
 <header>Studio di Astrologia "Acquario"</header>
+<a name="Inizio"></a>
+<a href="#Inizio" title="Torna all'inizio della pagina"><div id="TornaSu"><img src= "TornaSu.png" width="40px" height="40px"></div></a>
 
 <TABLE BACKGROUND="grafiche/LunaLL_barraVert.jpg" CELLSPACING="14" CELLPADDING="3" border="1" class="sBorder2s" BORDERCOLOR="#5095FC" BORDERCOLORDARK="#083F92" width="96%" align="center">
 <TR><TD BACKGROUND="grafiche/LunaLL_barraVert2.jpg">
@@ -242,7 +264,15 @@ img {
 			<img src="grafiche/LunaLL_stellina.gif" width="17"  height="19"                   alt="">&nbsp;&nbsp;&nbsp;
 			<img src="grafiche/LunaLL_stellina.gif" width="17"  height="19"                   alt="">
 		</p>
+		<div class="sSegniSize">
+			<a href="#Aria" title="Aria" class="sSegniLink">&#128168;</a><a href="#Gemelli" title="Gemelli" class="sSegniLink">&#9802;</a><a href="#Bilancia" title="Bilancia" class="sSegniLink">&#9806;</a><a href="#Acquario" title="Acquario" class="sSegniLink">&#9810;</a>
+			<a href="#Acqua" title="Acqua" class="sSegniLink">&#128167;</a><a href="#Cancro" title="Cancro" class="sSegniLink">&#9803;</a><a href="#Scorpione" title="Scorpione" class="sSegniLink">&#9807;</a><a href="#Pesci" title="Pesci" class="sSegniLink">&#9811;</a>
+		</div>
+		<div class="sSegniDesc">
+			Clicca sul simbolo di un segno per passare alla sua descrizione
+		</div>
 
+<a name="Aria"></a>
 		<h2><span class="sRed">LUNA</span> nei Segni d'<span class="sYellow">ARIA</span> -
 			per l'<span class="sAqua">UOMO</span> e la <span class="sFuchsia">DONNA</span></h2>
 
@@ -250,6 +280,7 @@ img {
 			<span class="sYellow">GEMELLI</span> - <span class="sYellow">BILANCIA</span> - <span class="sYellow">ACQUARIO</span>
 		</p>
 
+<a name="Gemelli"></a>
 		<h3>L'<span class="sAqua">UOMO</span> CON LA <span class="sRed">LUNA</span> IN <span class="sYellow">GEMELLI</span> - L'intellettuale</h3>
 		<p>
 			È un bambino irrequieto e precoce, impara a parlare e leggere molto presto, appena è possibile si rende indipendente e va a vivere per conto suo.
@@ -290,6 +321,7 @@ img {
 			una compatibilità mentale.
 		</p>
 
+<a name="Bilancia"></a>
 		<h3>L'<span class="sAqua">UOMO</span> CON LA <span class="sRed">LUNA</span> IN <span class="sYellow">BILANCIA</span> - L'amabile</h3>
 		<p>
 			Questa <span class="sRed sBold">Luna</span> intuisce molto presto che per ottenere le cure e il sostegno di cui ha bisogno per sentirsi
@@ -333,6 +365,7 @@ img {
 			romanticismo farle dei doni: un fiore o un gioiello.
 		</p>
 
+<a name="Acquario"></a>
 		<h3>L'<span class="sAqua">UOMO</span> CON LA <span class="sRed">LUNA</span> IN <span class="sYellow">ACQUARIO</span> - L'individualista</h3>
 		<p>
 			Eccentrico, originale e molto irrequieto, non vuole essere come gli altri ed è per questo spesso rifiuta e disprezza la morale corrente e i
@@ -382,6 +415,7 @@ img {
 			<img src="grafiche/LunaLL_linea.jpg"    width="428" height="32" class="sVediImg5" alt="">
 		</p>
 
+<a name="Acqua"></a>
 		<h2><span class="sRed">LUNA</span> nei Segni d'<span class="sIrisBlue">ACQUA</span> -
 			per l'<span class="sAqua">UOMO</span> e la <span class="sFuchsia">DONNA</span></h2>
 
@@ -389,6 +423,7 @@ img {
 			<span class="sIrisBlue">CANCRO</span> - <span class="sIrisBlue">SCORPIONE</span> - <span class="sIrisBlue">PESCI</span>
 		</p>
 
+<a name="Cancro"></a>
 		<h3>L'<span class="sAqua">UOMO</span> CON LA <span class="sRed">LUNA</span> IN <span class="sIrisBlue">CANCRO</span> - Il Lunatico </h3>
 		<p>
 			È una <span class="sRed sBold">Luna</span> che esprime un intuito quasi sovrumano, pochi comprendono le donne così bene come un uomo con la
@@ -427,6 +462,7 @@ img {
 			Nel complesso la vita è di sicuro impegnativa ma assai gratificante.
 		</p>
 
+<a name="Scorpione"></a>
 		<h3>L'<span class="sAqua">UOMO</span> CON LA <span class="sRed">LUNA</span> IN <span class="sIrisBlue">SCORPIONE</span> - L'Estremista</h3>
 		<p>
 			Nell'anima segreta di un uomo con <span class="sRed sBold">Luna</span> in <span class="sIrisBlue sBold">Scorpione</span>, gli elementi
@@ -465,6 +501,7 @@ img {
 			ragione ci sarà, altrimenti avreste scelto lune più leggere, più frivole e spensierate!
 		</p>
 
+<a name="Pesci"></a>
 		<h3>L'<span class="sAqua">UOMO</span> CON LA <span class="sRed">LUNA</span> IN <span class="sIrisBlue">PESCI</span> - L'Empatico</h3>
 		<p>
 			Un uomo con la <span class="sRed sBold">Luna</span> nei <span class="sIrisBlue sBold">Pesci</span> possiede una gentilezza e una sensibilità
@@ -545,4 +582,5 @@ img {
 	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html">qui</a>.
 </footer>
 </body>
+<script src="TornaSu.js"></script>
 </html>
