@@ -13,7 +13,7 @@
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="25/04/2021"><!-- content="30/11/2018" -->
-<meta name="revised" content="11/06/2021">
+<meta name="revised" content="07/07/2021">
 
 <style type="text/css">
 body {
@@ -47,8 +47,8 @@ h2 {
 	font-weight: bold;
 	/* color: #000000; Black usa il default del BODY */
 	text-align: center;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-top: 35px;
 }
 header {
@@ -60,7 +60,7 @@ header {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-top: 25px;	/* vertical-align: middle; */
-	margin-bottom: 0;	/* vertical-align: middle; */
+	margin-bottom: 0px;
 	height: 70px;
 }
 footer {
@@ -77,14 +77,21 @@ p {
 	font-size: small;
 	/* color: #000000; Black usa il default del BODY */
 	text-align: justify;
-	padding-left: 35px;
-	padding-right: 35px;
-	line-height: 125%;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 130%;
 	hyphens: auto;
 }
 img {
 	max-width: 100%;
 	height: auto;
+}
+#TornaSu {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	padding: 10px;
+	display: none;
 }
 .sBorder1s {
 			border-style: solid;
@@ -110,12 +117,12 @@ img {
 }
 .sFloatL {
 			float: left;
-			padding: 0 20px 5px 0;
+			padding: 0px 15px 5px 0px;
 			align: top;
 }
 .sFloatR {
 			float: right;
-			padding: 0 0 5px 20px;
+			padding: 0px 0px 5px 15px;
 			align: top;
 }
 .sVediImg1 {
@@ -144,37 +151,37 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-@media screen and (max-width:1058px) {
+@media screen and (max-width: 1058px) {
 	.sVediImg1 {
 		display: none !important;
 	}
 }
-@media screen and (min-width:1167px) and (max-width:1312px) {
+@media screen and (min-width: 1167px) and (max-width: 1312px) {
 	.sVediImg2 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:1166px) {
+@media screen and (max-width: 1166px) {
 	.sVediImg3 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:460px) {
+@media screen and (max-width: 460px) {
 	.sVediImg4 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:1120px) {
+@media screen and (max-width: 1120px) {
 	.sVediImg5 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:1046px) {
+@media screen and (max-width: 1046px) {
 	.sVediImg6 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:561px) {
+@media screen and (max-width: 561px) {
 	.sVediImg7 {
 		width: 60%;
 	}
@@ -182,11 +189,27 @@ img {
 		width: 30%;
 	}
 }
+.sSegniSize {
+			text-align: center;
+			font-size: 22px;
+}
+.sSegniLink {
+			text-decoration: none;
+}
+.sSegniDesc {
+			text-align: center;
+			font-size: x-small;
+			/* color: #000000; Black usa il default del BODY */
+			line-height: 100%;
+			padding: 0px;
+}
 </style>
 </head>
 
 <body>
 <header>Studio di Astrologia "Acquario"</header>
+<a name="Inizio"></a>
+<a href="#Inizio" title="Torna all'inizio della pagina"><div id="TornaSu"><img src= "TornaSu.png" width="40px" height="40px"></div></a>
 
 <table background="grafiche/Segni_barraVert.jpg" cellSpacing="6" cellPadding="2" class="sBorder1s" bordercolorlight="#486479" bordercolordark="#13204A" width="96%" align="center">
 <TBODY><tr><td background="grafiche/Segni_barraVert2.jpg">
@@ -214,6 +237,14 @@ img {
 			<br>
 		</p>
 
+		<div class="sSegniSize">
+			<a href="#Ariete" title="Ariete" class="sSegniLink">&#9800;</a><a href="#Toro" title="Toro" class="sSegniLink">&#9801;</a><a href="#Gemelli" title="Gemelli" class="sSegniLink">&#9802;</a><a href="#Cancro" title="Cancro" class="sSegniLink">&#9803;</a><a href="#Leone" title="Leone" class="sSegniLink">&#9804;</a><a href="#Vergine" title="Vergine" class="sSegniLink">&#9805;</a><a href="#Bilancia" title="Bilancia" class="sSegniLink">&#9806;</a><a href="#Scorpione" title="Scorpione" class="sSegniLink">&#9807;</a><a href="#Sagittario" title="Sagittario" class="sSegniLink">&#9808;</a><a href="#Capricorno" title="Capricorno" class="sSegniLink">&#9809;</a><a href="#Acquario" title="Acquario" class="sSegniLink">&#9810;</a><a href="#Pesci" title="Pesci" class="sSegniLink">&#9811;</a>
+		</div>
+		<div class="sSegniDesc">
+			Clicca sul simbolo di un segno per passare alla sua poesia
+		</div>
+
+<a name="Ariete"></a>
 		<h2>Poesia dell'<span class="sRed">ARIETE</span></h2>
 		<p>
 			<img src="grafiche/Donna_aries.gif"  width="115" height="109" alt="" class="sFloatL">
@@ -229,6 +260,7 @@ img {
 			The character is energetic, combative, dinamic, impulsive, enthusiastic, passionate, bold, brave, violent, fiery, ambitious and extrovert.</i>
 		</p>
 
+<a name="Toro"></a>
 		<h2>Poesia del <span class="sLime">TORO</span></h2>
 		<p>
 			<img src="grafiche/Donna_taurus.gif" width="109" height="126" alt="" class="sFloatL">
@@ -242,6 +274,7 @@ img {
 			Calm, disposition, persverant, sensual, solid, possessive, resistant, concrete and stable, patient, persistent, lazy, jealous and stubborn.</i>
 		</p>
 
+<a name="Gemelli"></a>
 		<h2>Poesia dei <span class="sYellow">GEMELLI</span></h2>
 		<p>
 			<img src="grafiche/Donna_gemini.gif"  width="98"  height="112" alt="" class="sFloatL">
@@ -256,6 +289,7 @@ img {
 			Lively Temperament, instable, adaptable, clever and brilliant, cheerful and su perficial. Versatile and exuberant, talkative, restless.</i>
 		</p>
 
+<a name="Cancro"></a>
 		<h2>Poesia del <span class="sAqua">CANCRO</span></h2>
 		<p>
 			<img src="grafiche/Donna_cancer.gif" width="114" height="89"  alt="" class="sFloatL">
@@ -270,6 +304,7 @@ img {
 			Character uncertain, emotional, sensitive, dreamy, sentimental, riserved, sympathetic, affectionate, touchy and protective.</i>
 		</p>
 
+<a name="Leone"></a>
 		<h2>Poesia del <span class="sRed">LEONE</span></h2>
 		<p>
 			<img src="grafiche/Donna_leo.gif"   width="93"  height="95"  alt="" class="sFloatL">
@@ -284,6 +319,7 @@ img {
 			Of a very proud nature, authoritive, generous , loyal, selfish, expansive , creative , born boss and dominant, megalomaniac.</i>
 		</p>
 
+<a name="Vergine"></a>
 		<h2>Poesia della <span class="sLime">VERGINE</span></h2>
 		<p>
 			<img src="grafiche/Donna_virgo.gif"   width="106" height="143" alt="" class="sFloatL">
@@ -297,6 +333,7 @@ img {
 			Character methodic, precise, rayional, picky, critic, analithical, organanized, nervous, smart, keen, reserved.</i>
 		</p>
 
+<a name="Bilancia"></a>
 		<h2>Poesia della <span class="sYellow">BILANCIA</span></h2>
 		<p>
 			<img src="grafiche/Donna_libra.gif"    width="96"  height="141" alt="" class="sFloatL">
@@ -311,6 +348,7 @@ img {
 			The character is uncertain, refined, kind, sociable, attractive, superficial, artistic, just, likable, lazy, peaceful and balaced.</i>
 		</p>
 
+<a name="Scorpione"></a>
 		<h2>Poesia dello <span class="sAqua">SCORPIONE</span></h2>
 		<p>
 			<img src="grafiche/Donna_scorpio.gif"   width="96"  height="131" alt="" class="sFloatL">
@@ -325,6 +363,7 @@ img {
 			Aggressive and violent, passional, emotional, energetic, irritable, revengeful, piercing, jealous, tenacious and possessive.</i>
 		</p>
 
+<a name="Sagittario"></a>
 		<h2>Poesia del <span class="sRed">SAGITTARIO</span></h2>
 		<p>
 			<img src="grafiche/Donna_sagittarius.gif" width="120" height="153" alt="" class="sFloatL">
@@ -339,6 +378,7 @@ img {
 			Open temperament, expansive, jovial, restless, generous, loyal, prodigal, optimist, naive, fair, enthusiastic, idealistic and sportsman.</i>
 		</p>
 
+<a name="Capricorno"></a>
 		<h2>Poesia del <span class="sLime">CAPRICORNO</span></h2>
 		<p>
 			<img src="grafiche/Donna_capricorn.gif"  width="126" height="115" alt="" class="sFloatL">
@@ -353,6 +393,7 @@ img {
 			Ambitious nature, prudent, tenacious, serious, pratical, patient, realistic and industrious, frugal, dependabile, perseverant, worker.</i>
 		</p>
 
+<a name="Acquario"></a>
 		<h2>Poesia dell'<span class="sYellow">ACQUARIO</span></h2>
 		<p>
 			<img src="grafiche/Donna_aquarius.gif" width="88"  height="160" alt="" class="sFloatL">
@@ -366,6 +407,7 @@ img {
 			Original, inventive, indipendent, extrovert, friendly, rebel, intelligent, unconformist, umanitarian, generous, altruist.</i>
 		</p>
 
+<a name="Pesci"></a>
 		<h2>Poesia dei <span class="sAqua">PESCI</span></h2>
 		<p>
 			<img src="grafiche/Donna_pisces.gif" width="119" height="160" alt="" class="sFloatL">
@@ -391,7 +433,7 @@ img {
 		<p class="sCenter">
 			<img src="IconaAnim_emailBox.gif" width="35" height="35" alt="">
 			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold" title="Scrivimi">studio.acquario@libero.it</a><br><br>
-			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold" title="Telefonami">0125 631175</a> - Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold" title="Telefonami">0125 631175</a> - Cell. <a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
 
 			<a href="index.html" class="sBold">Pagina iniziale <img src="favicon32.gif" width="32" height="32" alt=""> Home page</a>
 			&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
@@ -413,4 +455,5 @@ img {
 	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html">qui</a>.
 </footer>
 </body>
+<script src="TornaSu.js"></script>
 </html>

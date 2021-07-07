@@ -12,7 +12,7 @@
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="25/04/2021"><!-- content="30/04/2019" -->
-<meta name="revised" content="11/06/2021">
+<meta name="revised" content="07/07/2021">
 
 <style type="text/css">
 body {
@@ -48,8 +48,8 @@ h2 {
 	font-weight: bold;
 	color: #FFFFFF; /* White */
 	text-align: center;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-top: 25px;
 }
 header {
@@ -61,7 +61,7 @@ header {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-top: 25px;	/* vertical-align: middle; */
-	margin-bottom: 0;	/* vertical-align: middle; */
+	margin-bottom: 0px;
 	height: 70px;
 }
 footer {
@@ -78,14 +78,21 @@ p {
 	font-size: small;
 	color: #FFFFFF; /* White */
 	text-align: justify;
-	padding-left: 35px;
-	padding-right: 35px;
-	line-height: 125%;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 130%;
 	hyphens: auto;
 }
 img {
 	max-width: 100%;
 	height: auto;
+}
+#TornaSu {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	padding: 10px;
+	display: none;
 }
 .sBorder1s {
 			border-style: solid;
@@ -116,12 +123,12 @@ img {
 }
 .sFloatL {
 			float: left;
-			padding: 0 18px 2px 0;
+			padding: 0px 18px 2px 0px;
 			align: top;
 }
 .sFloatR {
 			float: right;
-			padding: 0 0 2px 18px;
+			padding: 0px 0px 2px 18px;
 			align: top;
 }
 .sVediImg1 {
@@ -130,21 +137,37 @@ img {
 .sVediImg2 {
 	display: inline;
 }
-@media screen and (max-width:917px) {
+@media screen and (max-width: 917px) {
 	.sVediImg2 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:874px) {
+@media screen and (max-width: 874px) {
 	.sVediImg1 {
 		display: none !important;
 	}
+}
+.sSegniSize {
+			text-align: center;
+			font-size: 22px;
+}
+.sSegniLink {
+			text-decoration: none;
+}
+.sSegniDesc {
+			text-align: center;
+			font-size: x-small;
+			color: #FFFFFF; /* White */
+			line-height: 100%;
+			padding: 0px;
 }
 </style>
 </head>
 
 <body>
 <header>Studio di Astrologia "Acquario"</header>
+<a name="Inizio"></a>
+<a href="#Inizio" title="Torna all'inizio della pagina"><div id="TornaSu"><img src= "TornaSu.png" width="40px" height="40px"></div></a>
 
 <TABLE BACKGROUND="grafiche/Decani_barraVert.jpg" CELLSPACING="3" CELLPADDING="20" border="1" class="sBorder1s" BORDERCOLOR="#689AC8" BORDERCOLORDARK="#194065" width="96%" align="center">
 <TR><TD BACKGROUND="grafiche/Decani_barraVert2.jpg">
@@ -165,6 +188,14 @@ img {
 			<br>
 		</p>
 
+		<div class="sSegniSize">
+			<a href="#Ariete" title="Ariete" class="sSegniLink">&#9800;</a><a href="#Toro" title="Toro" class="sSegniLink">&#9801;</a><a href="#Gemelli" title="Gemelli" class="sSegniLink">&#9802;</a><a href="#Cancro" title="Cancro" class="sSegniLink">&#9803;</a><a href="#Leone" title="Leone" class="sSegniLink">&#9804;</a><a href="#Vergine" title="Vergine" class="sSegniLink">&#9805;</a><a href="#Bilancia" title="Bilancia" class="sSegniLink">&#9806;</a><a href="#Scorpione" title="Scorpione" class="sSegniLink">&#9807;</a><a href="#Sagittario" title="Sagittario" class="sSegniLink">&#9808;</a><a href="#Capricorno" title="Capricorno" class="sSegniLink">&#9809;</a><a href="#Acquario" title="Acquario" class="sSegniLink">&#9810;</a><a href="#Pesci" title="Pesci" class="sSegniLink">&#9811;</a>
+		</div>
+		<div class="sSegniDesc">
+			Clicca sul simbolo di un segno per passare ai suoi decani
+		</div>
+
+<a name="Ariete"></a>
 		<h2><span class="sRed">ARIETE</span> Come lui non c'è nessuno</h2>
 		<p>
 			<img src="grafiche/Decani_aries.gif" width="116" height="85" alt="Ariete Bordo animato" class="sFloatL">
@@ -200,6 +231,7 @@ img {
 			entusiasmo ed eleganza.
 		</p>
 
+<a name="Toro"></a>
 		<h2><span class="sLime">TORO</span> Ottiene sempre ciò che vuole</h2>
 		<p>
 			<img src="grafiche/Decani_taurus.gif" width="116" height="85" alt="Toro Bordo animato" class="sFloatR">
@@ -236,6 +268,7 @@ img {
 			senso. Avrà fortuna in età matura.
 		</p>
 
+<a name="Gemelli"></a>
 		<h2><span class="sYellow">GEMELLI</span> Brillante come lo champagne</h2>
 		<p>
 			<img src="grafiche/Decani_gemini.gif" width="116" height="85" alt="Gemelli Bordo animato" class="sFloatL">
@@ -273,6 +306,7 @@ img {
 			nell'editoria. Migliora con gli anni migliora e riesce a vincere la sua timidezza, ma resta in sostanza un solitario.
 		</p>
 
+<a name="Cancro"></a>
 		<h2><span class="sAqua">CANCRO</span> Un tipo tutto casa e mondanità</h2>
 		<p>
 			<img src="grafiche/Decani_cancer.gif" width="116" height="85" alt="Cancro Bordo animato" class="sFloatR">
@@ -306,6 +340,7 @@ img {
 			Molto attaccato alla famiglia e alle tradizioni, è anche fantasioso ricco di fascino e imprevedibile, chi l'ama deve armarsi di tanta pazienza.
 		</p>
 
+<a name="Leone"></a>
 		<h2><span class="sRed">LEONE</span> Una volontà di ferro</h2>
 		<p>
 			<img src="grafiche/Decani_leo.gif" width="116" height="85" alt="Leone Bordo animato" class="sFloatL">
@@ -342,6 +377,7 @@ img {
 			ostacoli necessitano di coraggio, coerenza e abilità politica. Amore della verità, la giustizia, la concordia, ma prima di tutto punta al potere.
 		</p>
 
+<a name="Vergine"></a>
 		<h2><span class="sLime">VERGINE</span> Si piega e non si spezza mai</h2>
 		<p>
 			<img src="grafiche/Decani_virgo.gif" width="116" height="85" alt="Vergine Bordo animato" class="sFloatR">
@@ -375,6 +411,7 @@ img {
 			lavoro, attore, mimo, ballerino.
 		</p>
 
+<a name="Bilancia"></a>
 		<h2><span class="sYellow">BILANCIA</span> La calma è la sua virtù</h2>
 		<p>
 			<img src="grafiche/Decani_libra.gif" width="116" height="85" alt="Bilancia Bordo animato" class="sFloatL">
@@ -410,6 +447,7 @@ img {
 			più belli della vita, un buon matrimonio e una bella famiglia. Lungo tutta la sua vita si presenteranno vari colpi di fortuna.
 		</p>
 
+<a name="Scorpione"></a>
 		<h2><span class="sAqua">SCORPIONE</span> Un adorabile malandrino</h2>
 		<p>
 			<img src="grafiche/Decani_scorpio.gif" width="116" height="85" alt="Scorpione Bordo animato" class="sFloatR">
@@ -444,6 +482,7 @@ img {
 			stimoli intellettuali e sessuali.
 		</p>
 
+<a name="Sagittario"></a>
 		<h2><span class="sRed">SAGITTARIO</span> Prima il piacere, poi il dovere</h2>
 		<p>
 			<img src="grafiche/Decani_sagittarius.gif" width="116" height="85" alt="Sagittario Bordo animato" class="sFloatL">
@@ -480,6 +519,7 @@ img {
 			fortissima attrazione, buon matrimonio, la sua posizione economica crescerà costantemente, portandogli serenità.
 		</p>
 
+<a name="Capricorno"></a>
 		<h2><span class="sLime">CAPRICORNO</span> È proprio un vulcano</h2>
 		<p>
 			<img src="grafiche/Decani_capricorn.gif" width="116" height="85" alt="Capricorno Bordo animato" class="sFloatR">
@@ -512,6 +552,7 @@ img {
 			I sacrifici non pesano, gli obblighi sì. Porta salute e longevità, ma è contrario ai viaggi, a volte ha una morte improvvisa.
 		</p>
 
+<a name="Acquario"></a>
 		<h2><span class="sYellow">ACQUARIO</span> Genio compreso e fortunato</h2>
 		<p>
 			<img src="grafiche/Decani_aquarius.gif" width="116" height="85" alt="Acquario Bordo animato" class="sFloatL">
@@ -548,6 +589,7 @@ img {
 			relazioni sociali.
 		</p>
 
+<a name="Pesci"></a>
 		<h2><span class="sAqua">PESCI</span> Un amico sincero e pronto a tutto</h2>
 		<p>
 			<img src="grafiche/Decani_pisces.gif" width="116" height="85" alt="Pesci Bordo animato" class="sFloatR">
@@ -598,8 +640,7 @@ img {
 		<p class="sCenter">
 			<img src="IconaAnim_emailBox.gif" width="35" height="35" alt="">
 			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold" title="Scrivimi">studio.acquario@libero.it</a><br><br>
-			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold" title="Telefonami">0125 631175</a>
-			- Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold" title="Telefonami">0125 631175</a> - Cell. <a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
 
 			<a href="index.html" class="sBold">Pagina iniziale <img src="favicon32.gif" width="32" height="32" alt=""> Home page</a>
 			&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
@@ -620,4 +661,5 @@ img {
 	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html">qui</a>.
 </footer>
 </body>
+<script src="TornaSu.js"></script>
 </html>
