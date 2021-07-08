@@ -12,7 +12,7 @@
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="18/04/2021"><!-- content="30/04/2019" -->
-<meta name="revised" content="11/06/2021">
+<meta name="revised" content="08/07/2021">
 
 <style type="text/css">
 body {
@@ -47,8 +47,8 @@ h2 {
 	font-weight: bold;
 	color: #362C16;  /* Black Magick */
 	text-align: center;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-top: 25px;
 }
 header {
@@ -60,7 +60,7 @@ header {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-top: 25px;	/* vertical-align: middle; */
-	margin-bottom: 0;	/* vertical-align: middle; */
+	margin-bottom: 0px;
 	height: 70px;
 }
 footer {
@@ -77,29 +77,35 @@ p {
 	font-size: small;
 	color: #000000; /* Black */
 	text-align: justify;
-	padding-left: 35px;
-	padding-right: 35px;
-	line-height: 125%;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 130%;
 	hyphens: auto;
 }
 img {
 	max-width: 100%;
 	height: auto;
 }
+#TornaSu {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	padding: 10px;
+	display: none;
+}
 .sNavigation {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 	list-style: none;
-	margin: 0;
-	padding-left: 10px;
-	padding-right: 10px;
-	line-height: 180%;
+	margin: 0px;
+	padding: 0px;
+	line-height: 185%;
 }
 .sNavigation a {
 	font-size: medium;
 	font-weight: bold;
-	padding:.42em;
+	padding: 5px; /* .42em; */
 	color: #FFFFFF; /* White */
 	margin-left: 2px;
 	background: #0000FF;  /* Blue */
@@ -110,11 +116,11 @@ img {
 	background: #00FFFF; /* Aqua */
 }
 #PagCorrente {
-	border-bottom: 2.5px solid #FF0000; /* Red */
+	border-bottom: 3px solid #FF0000; /* Red */
 }
 .sHomeIcon {
 	vertical-align: bottom;
-	margin-bottom: 1px;
+	margin-bottom: 2px;
 	height: 25px;
 	width: 25px;
 }
@@ -165,41 +171,58 @@ img {
 .sVediImg6 {
 	display: inline;
 }
-@media screen and (max-width:1205px) {
+@media screen and (max-width: 1205px) {
 	.sVediImg1 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:1072px) {
+@media screen and (max-width: 1072px) {
 	.sVediImg3 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:915px) {
+@media screen and (max-width: 915px) {
 	.sVediImg4 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:900px) {
+@media screen and (max-width: 900px) {
 	.sVediImg2 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:845px) {
+@media screen and (max-width: 845px) {
 	.sVediImg5 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:685px) {
+@media screen and (max-width: 685px) {
 	.sVediImg6 {
 		display: none !important;
 	}
+}
+.sSegniSize {
+			text-align: center;
+			font-size: 22px;
+}
+.sSegniLink {
+			color: #0000EE; /* Blue */
+			text-decoration: none;
+}
+.sSegniDesc {
+			text-align: center;
+			font-size: x-small;
+			color: #000000; /* Black */
+			line-height: 100%;
+			padding: 0px;
 }
 </style>
 </head>
 
 <body>
 <header>Studio di Astrologia "Acquario"</header>
+<a name="Inizio"></a>
+<a href="#Inizio" title="Torna all'inizio della pagina"><div id="TornaSu"><img src= "TornaSu.png" width="40px" height="40px"></div></a>
 
 <TABLE BACKGROUND="grafiche/Case_barraVert.jpg" CELLSPACING="15" CELLPADDING="5" border="1" class="sBorder2s" BORDERCOLOR="#B28B4E" BORDERCOLORDARK="#745A30" width="96%" align="center">
 <TR><TD BACKGROUND="grafiche/Case_background.jpg">
@@ -225,7 +248,6 @@ img {
 				<li><a href="Le12case.htm" id="PagCorrente">Le 12 Case</a></li>
 				<li><a href="index.html"><img src="favicon32.gif" class="sHomeIcon" title="Pagina Principale" alt="Pagina Principale"></a></li>
 			</ul>
-			<br>
 		</nav>
 
 		<P class="sMedium">
@@ -245,7 +267,25 @@ img {
 			<img src="grafiche/Case_lineaLunga.jpg" width="343" height="37" class="sVediImg4" alt="">
 			<br>
 		</p>
+		<div class="sSegniSize">
+			<a href="#Uno" title="1" class="sSegniLink">1</a>
+			<a href="#Due" title="2" class="sSegniLink">2</a>
+			<a href="#Tre" title="3" class="sSegniLink">3</a>
+			<a href="#Quattro" title="4" class="sSegniLink">4</a>
+			<a href="#Cinque" title="5" class="sSegniLink">5</a>
+			<a href="#Sei" title="6" class="sSegniLink">6</a>
+			<a href="#Sette" title="7" class="sSegniLink">7</a>
+			<a href="#Otto" title="8" class="sSegniLink">8</a>
+			<a href="#Nove" title="9" class="sSegniLink">9</a>
+			<a href="#Dieci" title="10" class="sSegniLink">10</a>
+			<a href="#Undici" title="11" class="sSegniLink">11</a>
+			<a href="#Dodici" title="12" class="sSegniLink">12</a>
+		</div>
+		<div class="sSegniDesc">
+			Clicca sul numero della casa per passare alla sua descrizione
+		</div>
 
+<a name="Uno"></a>
 		<h2><span class="sRed">1°</span> casa o <span class="sRed">ASC</span> = Voglio esistere, affermarmi e ottenere ciò che mi serve</h2>
 		<p>
 			La prima casa inizia con la linea dell'<span class="sRed sBold">Ascendente</span>, è cosi significante con il segno
@@ -254,9 +294,9 @@ img {
 			Sovente ha un significato ereditario perché corrisponde al segno dei genitori o dei nonni. È la parte più evidente della nostra personalità,
 			l'atteggiamento nei confronti del mondo. È l'<b>Io</b>, il comportamento, le attitudini del carattere, la forza di volontà, la
 			vitalità, la meta che si vuole raggiungere, le predisposizioni, il modo di affrontare la vita, l'indole, l'intelligenza e l'infanzia. La salute,
-			i difetti fisici, la costituzione, la figura e l'aspetto fisico.<BR>
+			i difetti fisici, la costituzione, la figura e l'aspetto fisico.<br>
 			Nel caso questa Casa occupi più segni il primo si riferisce al comportamento della prima giovinezza, il secondo all'età matura ed eventualmente
-			il terzo nella maturità avanzata.<BR>
+			il terzo nella maturità avanzata.<br>
 			Molti pianeti nel <span class="sRed sBold">I</span> campo generalmente indicano una personalità pronunciata che si comporta con indifferenza
 			e superiorità nei confronti degli altri.
 			Se vi è il <span class="sRed sBold">Sole</span>, <span class="sRed sBold">Giove</span>, <span class="sRed sBold">Venere</span> e
@@ -267,6 +307,7 @@ img {
 			<span class="sRed sBold">LA PRIMA PARTE DELLA VITA</span>
 		</p>
 
+<a name="Due"></a>
 		<h2><span class="sRed">2°</span> casa = Ho bisogno di mezzi per proteggermi, di sicurezze e di benessere e di darmi un valore</h2>
 		<p>
 			È un settore pratico attinente ai guadagni e alla ricchezza, ai profitti che hanno origine dal proprio lavoro. Indica il rapporto che si ha con
@@ -282,6 +323,7 @@ img {
 			<span class="sRed sBold">LA SECONDA PARTE DELLA VITA</span>
 		</p>
 
+<a name="Tre"></a>
 		<h2><span class="sRed">3°</span> casa = Voglio capire e interagire, e soprattutto voglio comunicare e dimostrare il mio valore</h2>
 		<p>
 			Rappresenta le qualità mentali e la socievolezza dell'individuo. Si riferisce ai legami con le persone più vicine a noi quindi parenti prossimi,
@@ -295,6 +337,7 @@ img {
 			<b>Corrisponde</b> al segno dei <span class="sYellow sBold">GEMELLI</span>: spalle, braccia, mani, trachea, bronchi.
 		</p>
 
+<a name="Quattro"></a>
 		<h2><span class="sRed">4°</span> casa = Ho bisogno d'affetti, d'appartenenza, d'essere accettato e rassicurato, e poter dare forma e voce a ciò che sento</h2>
 		<p>
 			È la casa vera e propria, la terra, i beni immobiliari nonché la figura paterna. Significa l'inizio e la fine della vita, le origini, la
@@ -311,6 +354,7 @@ img {
 			<span class="sRed sBold">ULTIMA PARTE DELLA VITA</span>
 		</p>
 
+<a name="Cinque"></a>
 		<h2><span class="sRed">5°</span> casa = Voglio agire come mi pare, esprimere ciò che sento, creare e far vedere chi sono</h2>
 		<p>
 			Riguarda il mondo affettivo, erotico e sessuale, i figli legittimi e illegittimi, gli affetti, gli abiti, i doni e i gioielli. La forza vitale,
@@ -323,6 +367,7 @@ img {
 			<b>Corrisponde</b> al segno del <span class="sRed sBold">LEONE</span>: cuore, spina dorsale, schiena, circolazione, pressione.
 		</p>
 
+<a name="Sei"></a>
 		<h2><span class="sRed">6°</span> casa = Devo analizzare criticamente ogni cosa per decidere come adattarmi e cosa posso fare per assicurare la sopravvivenza mia e degli altri</h2>
 		<p>
 			È l'ultima casa sotto la linea dell'orizzonte che riguarda il lavoro e la salute, l'igiene, la cura del proprio corpo, le diete, la medicina,
@@ -339,6 +384,7 @@ img {
 			<b>Corrisponde</b> al segno della <span class="sGreen sBold">VERGINE</span>: intestino, ventre, appendicite, peritonite, calcoli.
 		</p>
 
+<a name="Sette"></a>
 		<h2><span class="sRed">7°</span> casa = Voglio misurarmi con gli altri (e con altre idee) creare relazioni per trovare ciò che mi manca per completarmi</h2>
 		<p>
 			L'<b>Io</b> incontra il <b>tu</b> alla ricerca del complementare, l'incontro con gli altri, l'esperienza del sociale le
@@ -350,6 +396,7 @@ img {
 			<b>Corrisponde</b> al segno della <span class="sYellow sBold">BILANCIA</span>: reni, fegato, vescica, lombi, pelle, appendice e diabete.
 		</p>
 
+<a name="Otto"></a>
 		<h2><span class="sRed">8°</span> casa = Devo ottenere una rivincita su un senso d'impotenza e sconfiggere il male, in nome di valori superiori (al mio egoismo) e della Verità</h2>
 		<p>
 			Indica per estensione la morte e dà indicazioni sull'atteggiamento mentale che ha nei confronti della morte, può dare indicazioni sulla morte
@@ -363,6 +410,7 @@ img {
 			esterni, naso, otite.
 		</p>
 
+<a name="Nove"></a>
 		<h2><span class="sRed">9°</span> casa = Voglio conquistare nuove mete e territori, riuscire ed essere una guida per gli altri</h2>
 		<p>
 			L'<b>Io</b>, l'universo, gli studi superiori, l'università, l'insegnamento, l'intelligenza, il pensiero filosofico, la religione,
@@ -373,6 +421,7 @@ img {
 			<b>Corrisponde</b> al segno del <span class="sRed sBold">SAGITTARIO</span>: gambe, cosce, femore, anche, diabete, fegato.
 		</p>
 
+<a name="Dieci"></a>
 		<h2><span class="sRed">10°</span> casa o <span class="sBlue">MC</span> = Bisogna dar seguito alle esigenze e alle leggi superiori, compiere il proprio dovere per distinguersi e meritare il riconoscimento degli altri</h2>
 		<p>
 			La carriera e l'ascesa. Il lavoro scelto per vocazione, il suo mestiere, la fama, le opere compiute, la professione, il rispetto degli altri.
@@ -385,6 +434,7 @@ img {
 			reumatismi.
 		</p>
 
+<a name="Undici"></a>
 		<h2><span class="sRed">11°</span> casa = Voglio rompere legami e dipendenze, per dare forma ad una nuova realtà fantastica, che sia migliore di questa</h2>
 		<p>
 			È detta la Casa dell'equilibrio perché mostra attitudine a dare e a ricevere, la capacità di modificare i propri valori attraverso il contatto
@@ -395,6 +445,7 @@ img {
 			<b>Corrisponde</b> al segno dell'<span class="sYellow sBold">ACQUARIO</span>: circolazione, caviglie, vene, varici, pressione.
 		</p>
 
+<a name="Dodici"></a>
 		<h2><span class="sRed">12°</span> casa = Ho bisogno di sottrarmi a ciò che m'inibisce e m'imprigiona, vivendo in un'altra realtà a voi invisibile,
 		in cui si trova ciò che è Bello, Giusto, Vero, Certo, (i miei Ideali)</h2>
 		<p>
@@ -441,4 +492,5 @@ img {
 	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html">qui</a>.
 </footer>
 </body>
+<script src="TornaSu.js"></script>
 </html>

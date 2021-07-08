@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Oroscopo Celtico | Studio Acquario</title>
 <link rel="icon" href="favicon.ico" type="image/x-icon">
-<meta name="description" content="Studio Acquario - L'Oroscopo Celtico">
+<meta name="description" content="Studio Acquario - L'Oroscopo Celtico, detto anche Oroscopo degli alberi, creato dai Druidi antichi sacerdoti Celtici che abitavano la Gallia.">
 <meta name="keywords" lang="it" content="studio acquario, astrologia, oroscopo, celtico">
 <meta name="author" content="Laura Lencia, studio.acquario@libero.it">
 <meta name="owner" content="Laura Lencia">
@@ -12,7 +12,7 @@
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="14/04/2021"><!-- content="09/04/2020" -->
-<meta name="revised" content="11/06/2021">
+<meta name="revised" content="08/07/2021">
 
 <style type="text/css">
 body {
@@ -41,22 +41,22 @@ h1 {
 	padding-right: 10px;
 }
 h2 {
+	clear: both;	/* disabilita float precedenti */
 	font-size: large;
 	font-weight: bold;
 	color: #E6FFE7; /* Aqua Spring */
 	text-align: center;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-top: 30px;
-	clear: both;	/* disabilita float precedenti */
 }
 h3 {
 	font-size: medium;
 	font-weight: normal;
 	color: #E6FFE7; /* Aqua Spring */
 	text-align: center;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-top: 0px;
 }
 header {
@@ -68,7 +68,7 @@ header {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-top: 25px;	/* vertical-align: middle; */
-	margin-bottom: 0;	/* vertical-align: middle; */
+	margin-bottom: 0px;
 	height: 70px;
 }
 footer {
@@ -85,14 +85,21 @@ p {
 	font-size: small;
 	color: #FFF0D0; /* Varden */
 	text-align: justify;
-	padding-left: 35px;
-	padding-right: 35px;
-	line-height: 125%;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 130%;
 	hyphens: auto;
 }
 img {
 	max-width: 100%;
 	height: auto;
+}
+#TornaSu {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	padding: 10px;
+	display: none;
 }
 .sBorder2s {
 			border-width: 2px;
@@ -118,12 +125,12 @@ img {
 }
 .sFloatL {
 			float: left;
-			padding: 0 20px 5px 0;
+			padding: 0px 15px 5px 0px;
 			align: top;
 }
 .sFloatR {
 			float: right;
-			padding: 0 0 5px 20px;
+			padding: 0px 0px 5px 15px;
 			align: top;
 }
 .sVediImg1 {
@@ -153,33 +160,27 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-@media screen and (max-width:1220px) {
+@media screen and (max-width: 1220px) {
 	.sVediImg1 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:1155px) {
+@media screen and (max-width: 1155px) {
 	.sVediImg5 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:820px) {
-	.sVediImg1 {
-		display: none !important;
-	}
+@media screen and (max-width: 820px) {
 	.sVediImg2 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:625px) {
+@media screen and (max-width: 625px) {
 	.sVediImg3 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:505px) {
-	.sVediImg3 {
-		display: none !important;
-	}
+@media screen and (max-width: 505px) {
 	.sVediImg4 {
 		display: none !important;
 	}
@@ -187,14 +188,33 @@ img {
 		width: 40%;
 	}
 }
-@media screen and (max-width:720px) {
+@media screen and (max-width: 720px) {
 	.sVediImg7 {
 		width: 35%;
 	}
 }
-@media screen and (max-width:620px) {
+@media screen and (max-width: 620px) {
 	.sVediImg8 {
 		width: 11%;
+	}
+}
+.sSegniSize {
+			text-align: center;
+			font-size: 22px;
+}
+.sSegniLink {
+			text-decoration: none;
+}
+.sSegniDesc {
+			text-align: center;
+			font-size: x-small;
+			color: #FFF0D0; /* Varden */
+			line-height: 100%;
+			padding: 0px;
+}
+@media screen and (max-width: 850px) {
+	.sSegniSize {
+		font-size: 17.5px;
 	}
 }
 </style>
@@ -202,6 +222,8 @@ img {
 
 <body>
 <header>Studio di Astrologia "Acquario"</header>
+<a name="Inizio"></a>
+<a href="#Inizio" title="Torna all'inizio della pagina"><div id="TornaSu"><img src= "TornaSu.png" width="40px" height="40px"></div></a>
 
 <table background="grafiche/Celtico_vert.gif" cellspacing="5" cellpadding="3" bordercolordark="#2C391A" bordercolorlight="#8DAA69" width="96%" align="center">
 <tr><td background="grafiche/Celtico_barraOriz.jpg">
@@ -245,7 +267,48 @@ img {
 			<img src="grafiche/Celtico_barraAlberi1.gif" width="457" height="92"                    alt="Alberi banner 1">&nbsp;&nbsp;&nbsp;&nbsp;
 			<img src="grafiche/Celtico_barraAlberi2.gif" width="466" height="115" class="sVediImg5" alt="Alberi banner 2">
 		</p>
+		<div class="sSegniSize">
+			<a href="#Abete" title="Abete" class="sSegniLink">Ab</a>
+			<a href="#Olmo" title="Olmo" class="sSegniLink">Ol</a>
+			<a href="#Cipresso" title="Cipresso" class="sSegniLink">Ci</a>
+			<a href="#Pioppo" title="Pioppo" class="sSegniLink">Pi</a>
+			<a href="#Bagolaro" title="Bagolaro" class="sSegniLink">Ba</a>
+			<a href="#Pino" title="Pino" class="sSegniLink">Pn</a>
+			<a href="#Salice" title="Salice" class="sSegniLink">Sa</a>
+			<a href="#Tiglio" title="Tiglio" class="sSegniLink">Ti</a>
+			<a href="#Nocciolo" title="Nocciolo" class="sSegniLink">No</a>
+			<a href="#Sorbo" title="Sorbo" class="sSegniLink">So</a>
+			<a href="#Acero" title="Acero" class="sSegniLink">Ac</a>
+			<a href="#Noce" title="Noce" class="sSegniLink">Nc</a>
+			<a href="#Tasso" title="Tasso" class="sSegniLink">Ta</a>
+			<a href="#Castagno" title="Castagno" class="sSegniLink">Ca</a>
+			<a href="#Frassino" title="Frassino" class="sSegniLink">Fr</a>
+			<a href="#Carpino" title="Carpino" class="sSegniLink">Cr</a>
+			<a href="#Fico" title="Fico" class="sSegniLink">Fi</a>
+			<a href="#Melo" title="Melo" class="sSegniLink">Me</a>
+			<a href="#Quercia" title="Quercia" class="sSegniLink">Qu</a>
+			<a href="#Betulla" title="Betulla" class="sSegniLink">Be</a>
+			<a href="#Olivo" title="Olivo" class="sSegniLink">Ol</a>
+			<a href="#Faggio" title="Faggio" class="sSegniLink">Fa</a>
+			<br>
+			<a href="#Gennaio" title="Gennaio" class="sSegniLink">Ge</a>
+			<a href="#Febbraio" title="Febbraio" class="sSegniLink">Fe</a>
+			<a href="#Marzo" title="Marzo" class="sSegniLink">Ma</a>
+			<a href="#Aprile" title="Aprile" class="sSegniLink">Ap</a>
+			<a href="#Maggio" title="Maggio" class="sSegniLink">Mg</a>
+			<a href="#Giugno" title="Giugno" class="sSegniLink">Gi</a>
+			<a href="#Luglio" title="Luglio" class="sSegniLink">Lu</a>
+			<a href="#Agosto" title="Agosto" class="sSegniLink">Ag</a>
+			<a href="#Settembre" title="Settembre" class="sSegniLink">Se</a>
+			<a href="#Ottobre" title="Ottobre" class="sSegniLink">Ot</a>
+			<a href="#Novembre" title="Novembre" class="sSegniLink">No</a>
+			<a href="#Dicembre" title="Dicembre" class="sSegniLink">Di</a>			
+		</div>
+		<div class="sSegniDesc">
+			Clicca sulla sigla dell'albero o del mese per passare alla sua descrizione
+		</div>
 
+<a name="Abete"></a>
 		<h2>ABETE: <span class="sSmaller sSmallCaps">Bisbetico ma Appassionato</span></h2>
 		<h3>Dal <b>2</b> all'<b>11 gennaio</b>, dal <b>5</b> al <b>14 luglio</b></h3>
 		<p>
@@ -259,6 +322,7 @@ img {
 			al segno, e di fornire le spinte necessarie per migliorare e progredire.
 		</p>
 
+<a name="Olmo"></a>
 		<h2>OLMO: <span class="sSmaller sSmallCaps">Idealista e Moralista</span></h2>
 		<h3>Dal <b>12</b> al <b>24 gennaio</b>, dal <b>15</b> al <b>24 luglio</b></h3>
 		<p>
@@ -274,6 +338,7 @@ img {
 			e generoso. L'imponenza del <b>Fico</b> spesso spaventa l'<b>Olmo</b> che deve accostarsi ad esso con fiducia.
 		</p>
 
+<a name="Cipresso"></a>
 		<h2>CIPRESSO: <span class="sSmaller sSmallCaps">Rustico e Severo</span></h2>
 		<h3>Dal <b>25 gennaio</b> al <b>3 febbraio</b>, dal <b>26 luglio</b> al <b>4 agosto</b></h3>
 		<p>
@@ -290,6 +355,7 @@ img {
 			detesta la solitudine ed è molto passionale.
 		</p>
 
+<a name="Pioppo"></a>
 		<h2>PIOPPO: <span class="sSmaller sSmallCaps">Sensibile e Pessimista</span></h2>
 		<h3>Dal <b>4</b> al <b>8 febbraio</b>, dal <b>1°</b> al <b>14 maggio</b>,
 		dal <b>5</b> al <b>13 agosto</b>, dal <b>3</b> al <b>11 novembre</b></h3>
@@ -306,6 +372,7 @@ img {
 			rinchiudersi in se stesso, questo atteggiamento va combattuto frequentando il solido <b>Melo</b> che è ricco di energia.
 		</p>
 
+<a name="Bagolaro"></a>
 		<h2>BAGOLARO: <span class="sSmaller sSmallCaps">Inguaribile Ottimista</span></h2>
 		<h3>Dal <b>9</b> al <b>18 febbraio</b>, dal <b>14</b> al <b>23 agosto</b></h3>
 		<p>
@@ -321,6 +388,7 @@ img {
 			la calma rassicurante del <b>Frassino</b> può bilanciare in modo efficace la sua mente effervescente.
 		</p>
 
+<a name="Pino"></a>
 		<h2>PINO: <span class="sSmaller sSmallCaps">Perfezionista Raffinato</span></h2>
 		<h3>Dal <b>19</b> al <b>29 febbraio</b>, dal <b>24 agosto</b> al <b>2 settembre</b></h3>
 		<p>
@@ -336,6 +404,7 @@ img {
 			ideale fidato e pratico. Possiede un certo potere per trasformare la natura in meglio.
 		</p>
 
+<a name="Salice"></a>
 		<h2>SALICE: <span class="sSmaller sSmallCaps">Malinconico e Poetico</span></h2>
 		<h3>Dal <b>1°</b> al <b>10 marzo</b>, dal <b>3</b> al <b>12 settembre</b></h3>
 		<p>
@@ -352,6 +421,7 @@ img {
 			La vita sentimentale sarebbe tranquilla se non avesse il gusto perverso per gli amori complicati.
 		</p>
 
+<a name="Tiglio"></a>
 		<h2>TIGLIO: <span class="sSmaller sSmallCaps">Bugiardo e Insoddisfatto</span></h2>
 		<h3>Dall'<b>11</b> al <b>20 marzo</b>, dal <b>13</b> al <b>22 settembre</b></h3>
 		<p>
@@ -368,6 +438,7 @@ img {
 			lo riporti sulla terra.
 		</p>
 
+<a name="Nocciolo"></a>
 		<h2>NOCCIOLO: <span class="sSmaller sSmallCaps">Favoloso Istrione</span></h2>
 		<h3>Dal <b>21</b> al <b>31 marzo</b>, dal <b>23 settembre</b> al <b>3 ottobre</b></h3>
 		<p>
@@ -386,6 +457,7 @@ img {
 			senso di giudizio.
 		</p>
 
+<a name="Sorbo"></a>
 		<h2>SORBO: <span class="sSmaller sSmallCaps">Sensibile e Complicato</span></h2>
 		<h3>Dal <b>1°</b> al <b>10 aprile</b>, dal <b>4</b> al <b>13 ottobre</b></h3>
 		<p>
@@ -403,6 +475,7 @@ img {
 			perché non esita mai a ricominciare da capo anche in età avanzata.
 		</p>
 
+<a name="Acero"></a>
 		<h2>ACERO: <span class="sSmaller sSmallCaps">Cerebrale e Insaziabile</span></h2>
 		<h3>Dall'<b>11</b> al <b>20 aprile</b>, dal <b>14</b> al <b>23 ottobre</b></h3>
 		<p>
@@ -419,6 +492,7 @@ img {
 			il fortunato compagno.
 		</p>
 
+<a name="Noce"></a>
 		<h2>NOCE: <span class="sSmaller sSmallCaps">Stratega un po' Lunatico</span></h2>
 		<h3>Dal <b>21</b> al <b>30 aprile</b>, dal <b>24 ottobre</b> al <b>2 novembre</b></h3>
 		<p>
@@ -436,6 +510,7 @@ img {
 			una certa libertà e indipendenza e sapersi dimostrare discreto.
 		</p>
 
+<a name="Tasso"></a>
 		<h2>TASSO: <span class="sSmaller sSmallCaps">Sensibile e Complicato</span></h2>
 		<h3>Dal <b>1°</b> al <b>14 maggio</b>, dal <b>3</b> all'<b>11 novembre</b></h3>
 		<p>
@@ -459,6 +534,7 @@ img {
 			avventura, una passionalità e una leggerezza a dir poco inaspettate!
 		</p>
 
+<a name="Castagno"></a>
 		<h2>CASTAGNO: <span class="sSmaller sSmallCaps">Campione di Giustizia</span></h2>
 		<h3>Dal <b>15</b> al <b>24 maggio</b>, dal <b>12</b> al <b>21 novembre</b></h3>
 		<p>
@@ -475,6 +551,7 @@ img {
 			momenti difficili, che apprezzi la sua franchezza. L'idea di avere una grande famiglia piace e seduce.
 		</p>
 
+<a name="Frassino"></a>
 		<h2>FRASSINO: <span class="sSmaller sSmallCaps">Grande Fatalista</span></h2>
 		<h3>Dal <b>25 maggio</b> al <b>3 giugno</b>, dal <b>22 novembre</b> al <b>1° dicembre</b></h3>
 		<p>
@@ -492,6 +569,7 @@ img {
 			po' mago. Vuole una famiglia non troppo numerosa che lo lasci libero di agire come vuole.
 		</p>
 
+<a name="Carpino"></a>
 		<h2>CARPINO: <span class="sSmaller sSmallCaps">Sofisticato Esteta</span></h2>
 		<h3>Dal <b>4</b> al <b>13 giugno</b>, dal <b>2</b> all'<b>11 dicembre</b></h3>
 		<p>
@@ -510,6 +588,7 @@ img {
 			gesto che dal piacere. Piacciono molto i bambini.
 		</p>
 
+<a name="Fico"></a>
 		<h2>FICO: <span class="sSmaller sSmallCaps">Instabile e Sensibile</span></h2>
 		<h3>Dal <b>14</b> al <b>24 giugno</b>, dal <b>12</b> al <b>21 dicembre</b></h3>
 		<p>
@@ -526,6 +605,7 @@ img {
 			bene, qualche volta un po' troppo. Il <b>Fico</b> è molto amabile soprattutto con bambini e animali.
 		</p>
 
+<a name="Melo"></a>
 		<h2>MELO: <span class="sSmaller sSmallCaps">L'Incantatore</span></h2>
 		<h3>Dal <b>25 giugno</b> al <b>4 luglio</b>, dal <b>23 dicembre</b> al <b>1° gennaio</b></h3>
 		<p>
@@ -542,6 +622,7 @@ img {
 			ad essere amato, se per caso trova un partner della sua misura, sarà idilliaco.
 		</p>
 
+<a name="Quercia"></a>
 		<h2>QUERCIA: <span class="sSmaller sSmallCaps">Forza e Solidità</span></h2>
 		<h3><b>21 marzo</b> - <b>Equinozio di primavera</b></h3>
 		<p>
@@ -558,6 +639,7 @@ img {
 			radici ed è piuttosto conservatore.
 		</p>
 
+<a name="Betulla"></a>
 		<h2>BETULLA: <span class="sSmaller sSmallCaps">Sobria e Creativa</span></h2>
 		<h3>21 giugno</b> - <b>Solstizio d'estate</b></h3>
 		<p>
@@ -576,6 +658,7 @@ img {
 			la sensualità è misurata, fedele, può rendere felice il coniuge.
 		</p>
 
+<a name="Olivo"></a>
 		<h2>OLIVO: <span class="sSmaller sSmallCaps">Goffo e Pacifico</span></h2>
 		<h3><b>23 settembre</b> - <b>Equinozio d'autunno</b></h3>
 		<p>
@@ -594,6 +677,7 @@ img {
 			rassegnato, guarda la vita con serenità e fiducia.
 		</p>
 
+<a name="Faggio"></a>
 		<h2>FAGGIO: <span class="sSmaller sSmallCaps">Prospero e Orgoglioso</span></h2>
 		<h3><b>22 dicembre</b> - <b>Solstizio d'inverno</b></h3>
 		<p>
@@ -619,6 +703,7 @@ img {
 			<br><br>
 		</p>
 
+<a name="Gennaio"></a>
 		<h2>ABETE - NATI IN GENNAIO</h2>
 		<p>
 			<i>Tendenze psichiche</i>: L'<b>Abete</b> è una delle piante più signorili e raffinate, ama l'isolamento e la maestosità. Ama ogni
@@ -630,6 +715,7 @@ img {
 			La carriera è un po' lenta ma sicura. La scelta del partner è basata sull'aspetto fisico.
 		</p>
 
+<a name="Febbraio"></a>
 		<h2>MANDORLO - NATI IN FEBBRAIO</h2>
 		<p>
 			<i>Tendenze psichiche</i>: Il <b>Mandorlo</b> dà forza, longevità ma anche fragilità nervosa. Il suo fiore è il più precoce ed esige
@@ -641,6 +727,7 @@ img {
 			è allegro e dà senza nutrire personali aspettative, in pratica è sensibile e altruista.
 		</p>
 
+<a name="Marzo"></a>
 		<h2>MIMOSA - NATI IN MARZO</h2>
 		<p>
 			<i>Tendenze psichiche</i>: È una pianta sensitiva la cui foglia si ritrae al minimo urto, dona ai nati una natura molto suscettibile e delicata.
@@ -650,6 +737,7 @@ img {
 			travolgere da passioni fatali. La donna nella maternità si rivelerà dolcissima.
 		</p>
 
+<a name="Aprile"></a>
 		<h2>IPPOCASTANO - NATI IN APRILE</h2>
 		<p>
 			<i>Tendenze psichiche</i>: Questa bella pianta dal fusto alto diritto e robusto apporta vitalità e fierezza. I fiori sono maschili e femminili
@@ -660,6 +748,7 @@ img {
 			avanti, si lamenta spesso. In amore è molto geloso, ma leale. Lunghi viaggi ed esperienze sentimentali molto varie.
 		</p>
 
+<a name="Maggio"></a>
 		<h2>CILIEGIO - NATI IN MAGGIO</h2>
 		<p>
 			<i>Tendenze psichiche</i>: Il <b>Ciliegio</b> sa resistere ai climi più freddi, capace di difendersi dalle asprezze dell'esistenza.
@@ -670,6 +759,7 @@ img {
 			relazione, è degno di fiducia, fedele e prudente.
 		</p>
 
+<a name="Giugno"></a>
 		<h2>CASTAGNO - NATI IN GIUGNO</h2>
 		<p>
 			<i>Tendenze psichiche</i>: Il <b>Castagno</b> ha uno sviluppo lento, ma poi è molto longevo. Ha una infanzia difficile ma si
@@ -680,6 +770,7 @@ img {
 			Buona armonia nei rapporti famigliari e la capacità di educare i figli con criteri moderni.
 		</p>
 
+<a name="Luglio"></a>
 		<h2>TIGLIO - NATI IN LUGLIO</h2>
 		<p>
 			<i>Tendenze psichiche</i>: È una pianta maestosa ma un po' fragile, il profumato <b>Tiglio</b> sintetizza le principali qualità e
@@ -690,6 +781,7 @@ img {
 			della felicità, è una persona empatica ed emotiva, molto altruista. Fortuna nelle attività creative e improvvisate.
 		</p>
 
+<a name="Agosto"></a>
 		<h2>MELO - NATI IN AGOSTO</h2>
 		<p>
 			<i>Tendenze psichiche</i>: Il <b>Melo</b> sa infondere un notevole sex-appeal. Simbolo dell'amore e della bellezza. L'amore è la
@@ -700,6 +792,7 @@ img {
 			vivendo a contatto della natura. Alti e bassi economici, unioni precoci e fughe romantiche.
 		</p>
 
+<a name="Settembre"></a>
 		<h2>FICO - NATI IN SETTEMBRE</h2>
 		<p>
 			<i>Tendenze psichiche</i>: Per il suo fusto breve e i rami tortuosi, il <b>Fico</b> non attira l'attenzione; ma i suoi frutti sono
@@ -710,6 +803,7 @@ img {
 			lasciarsi andare alla pigrizia o allo scoraggiamento. Persona creativa e innovativa, sempre alla ricerca delle novità.
 		</p>
 
+<a name="Ottobre"></a>
 		<h2>ULIVO - NATI IN OTTOBRE</h2>
 		<p>
 			<i>Tendenze psichiche</i>: Pianta sempreverde, scultorea e robusta, che cerca tranquillità e un clima mite. Il nato è di costituzione forte
@@ -720,6 +814,7 @@ img {
 			figli. Troverà la stabilità solamente dopo la seconda giovinezza.
 		</p>
 
+<a name="Novembre"></a>
 		<h2>FAGGIO - NATI IN NOVEMBRE</h2>
 		<p>
 			<i>Tendenze psichiche</i>: È l'albero più bello e suggestivo del bosco. L'influsso dona una eleganza innata, attrazione erotica e un'arte
@@ -730,6 +825,7 @@ img {
 			leader e splendido compagno di vita.
 		</p>
 
+<a name="Dicembre"></a>
 		<h2>NOCE - NATI IN DICEMBRE</h2>
 		<p>
 			<i>Tendenze psichiche</i>: Il <b>Noce</b> è una pianta alta dalla scorza dura e dal legno pregiato, un frutto saporito chiuso nel
@@ -759,7 +855,7 @@ img {
 		<p class="sCenter">
 			<img src="IconaAnim_emailBox.gif" width="35" height="35" alt="">
 			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold" title="Scrivimi">studio.acquario@libero.it</a><br><br>
-			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold" title="Telefonami">0125 631175</a> - Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold" title="Telefonami">0125 631175</a> - Cell. <a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
 
 			<a href="index.html" class="sBold">Pagina iniziale <img src="favicon32.gif" width="32" height="32" alt=""> Home page</a>
 			&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
@@ -768,7 +864,7 @@ img {
 			<!-- a href="http://www.retecivica.milano.it" target="_blank" title="Contatore Visite"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220365762-d7ng91df" border=0></a -->
 			<!-- Sostituito Counter il 11/06/2021 alle 23:30 quando aveva valore 10185 -->
 			<!-- a href="http://www.simplehitcounter.com" target="_blank" title="Contatore Visite"><img src="http://simplehitcounter.com/hit.php?uid=3693454772387063965&f=0&b=16777215" border="0" height="18" width="83" alt="visit counter"></a -->
-			<a href="https://www.counter12.com" target="_blank" title="Contatore Visite"><img src="https://www.counter12.com/img-0ZDdZw532x273Ad7-3.gif" border="0" alt="counter"></a><script type="text/javascript" src="https://www.counter12.com/ad.js?id=0ZDdZw532x273Ad7"></script>
+			<a href="https://www.counter12.com" target="_blank" title="Contatore Visite"><img src="https://www.counter12.com/img-0ZDdZw532x273Ad7-3.gif" border="0" alt="free web counter"></a><script type="text/javascript" src="https://www.counter12.com/ad.js?id=0ZDdZw532x273Ad7"></script>
 			&nbsp;(Contenuto Aggiornato <time datetime="2021-04-14">14/04/2021</time>)<br><br>
 		</p>
 
@@ -781,4 +877,5 @@ img {
 	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html">qui</a>.
 </footer>
 </body>
+<script src="TornaSu.js"></script>
 </html>
