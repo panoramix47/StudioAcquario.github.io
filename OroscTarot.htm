@@ -12,7 +12,7 @@
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="07/04/2021"><!-- content="18/12/2017" -->
-<meta name="revised" content="12/06/2021">
+<meta name="revised" content="09/07/2021">
 
 <style type="text/css">
 body {
@@ -46,8 +46,8 @@ h2 {
 	color: #0000FF; /* Blu */
 	font-weight: bold;
 	text-align: center;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-top: 30px;
 }
 header {
@@ -59,7 +59,7 @@ header {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-top: 25px;	/* vertical-align: middle; */
-	margin-bottom: 0;	/* vertical-align: middle; */
+	margin-bottom: 0px;
 	height: 70px;
 }
 footer {
@@ -78,6 +78,13 @@ img {
 }
 p {
 	hyphens: auto;
+}
+#TornaSu {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	padding: 10px;
+	display: none;
 }
 .sBorder1s {
 			border-width: 1px;
@@ -124,8 +131,8 @@ p {
 			text-align: justify;
 }
 .sPadding {
-			padding-left: 35px;
-			padding-right: 35px;
+			padding-left: 20px;
+			padding-right: 20px;
 }
 .sBold {
 			font-weight: bold;
@@ -138,12 +145,12 @@ p {
 }
 .sFloatL {
 			float: left;
-			padding: 0 20px 5px 0;
+			padding: 0px 15px 5px 0px;
 			align: top;
 }
 .sFloatR {
 			float: right;
-			padding: 0 0 5px 20px;
+			padding: 0px 0px 5px 15px;
 			align: top;
 }
 .sVediImg1 {
@@ -155,26 +162,32 @@ p {
 .sVediImg3 {
 	display: inline;
 }
-@media screen and (max-width:1090px) {
+@media screen and (max-width: 1090px) {
 	.sVediImg1 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:950px) {
+@media screen and (max-width: 950px) {
 	.sVediImg3 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:830px) {
+@media screen and (max-width: 830px) {
 	.sVediImg2 {
 		display: none !important;
 	}
+}
+.sSegniLink {
+			text-decoration: none;
+			color: #000000; /* Black */
 }
 </style>
 </head>
 
 <body>
 <header>Studio di Astrologia "Acquario"</header>
+<a name="Inizio"></a>
+<a href="#Inizio" title="Torna all'inizio della pagina"><div id="TornaSu"><img src= "TornaSu.png" width="40px" height="40px"></div></a>
 
 <table background="grafiche/Tarot_barraVert.jpg" cellSpacing="10" cellPadding="2" class="sBorder1s" borderColorDark="#9E8F6F" borderColorLight="#F4E5C5" width="96%" align="center">
 <tr><td background="grafiche/Tarot_barraVert2.jpg">
@@ -213,82 +226,82 @@ p {
 
 			<p class="sMedium sBlack sJustify sPadding">
 				Ecco i <span class="sRed sBold">22</span> arcani maggiori abbinati ai <span class="sRed sBold">12</span> segni zodiacali e ai
-				<span class="sRed sBold">10</span> pianeti.
+				<span class="sRed sBold">10</span> pianeti (puoi cliccare sul nome della carta per passare alla sua descrizione).
 			</p>
 
-			<table cellSpacing="0" cellPadding="5" border="0" width="90%" align="center">
+			<table cellSpacing="0" cellPadding="4" border="0" width="90%" align="center">
 			<tbody class="sMedium sBlack sBold" style="vertical-align: top;">
 				<tr>
 					<td class="sRed" width="20%">ARIETE</td>
-					<td width="35%">Il BAGATTO n°&nbsp;1</td>
+					<td width="35%"><a href="#T01" class="sSegniLink">Il BAGATTO n°&nbsp;1;</a></td>
 					<td class="sRed" width="20%">MARTE</td>
-					<td width="25%">Il CARRO n°&nbsp;7</td>
+					<td width="25%"><a href="#T07" class="sSegniLink">Il CARRO n°&nbsp;7;</a></td>
 				</tr>
 				<tr>
 					<td class="sGreen">TORO</td>
-					<td>Il MONDO n°&nbsp;21</td>
+					<td><a href="#T21" class="sSegniLink">Il MONDO n°&nbsp;21;</a></td>
 					<td class="sRed">VENERE</td>
-					<td>Le STELLE n°&nbsp;17</td>
+					<td><a href="#T17" class="sSegniLink">Le STELLE n°&nbsp;17;</a></td>
 				</tr>
 				<tr>
 					<td class="sMaroon">GEMELLI</td>
-					<td>L'IMPERATRICE n°&nbsp;3</td>
+					<td><a href="#T03" class="sSegniLink">L'IMPERATRICE n°&nbsp;3;</a></td>
 					<td class="sRed">MERCURIO</td>
-					<td>Il MATTO n°&nbsp;22</td>
+					<td><a href="#T22" class="sSegniLink">Il MATTO n°&nbsp;22;</a></td>
 				</tr>
 				<tr>
 					<td class="sBlue">CANCRO</td>
-					<td>La LUNA n°&nbsp;18</td>
+					<td><a href="#T18" class="sSegniLink">La LUNA n°&nbsp;18;</a></td>
 					<td class="sRed">LUNA</td>
-					<td>La PAPESSA n°&nbsp;2</td>
+					<td><a href="#T02" class="sSegniLink">La PAPESSA n°&nbsp;2;</a></td>
 				</tr>
 				<tr>
 					<td class="sRed">LEONE</td>
-					<td>La FORZA n°&nbsp;11</td>
+					<td><a href="#T11" class="sSegniLink">La FORZA n°&nbsp;11;</a></td>
 					<td class="sRed">SOLE</td>
-					<td>Il SOLE n°&nbsp;19</td>
+					<td><a href="#T19" class="sSegniLink">Il SOLE n°&nbsp;19;</a></td>
 				</tr>
 				<tr>
 					<td class="sGreen">VERGINE</td>
-					<td>Gli AMANTI n°&nbsp;6</td>
+					<td><a href="#T06" class="sSegniLink">Gli AMANTI n°&nbsp;6;</a></td>
 					<td class="sRed">MERCURIO</td>
-					<td>Il MATTO n°&nbsp;22</td>
+					<td><a href="#T22" class="sSegniLink">Il MATTO n°&nbsp;22;</a></td>
 				</tr>
 				<tr>
 					<td class="sMaroon">BILANCIA</td>
-					<td>La GIUSTIZIA n°&nbsp;8</td>
+					<td><a href="#T08" class="sSegniLink">La GIUSTIZIA n°&nbsp;8;</a></td>
 					<td class="sRed">VENERE</td>
-					<td>Le STELLE n°&nbsp;17</td>
+					<td><a href="#T17" class="sSegniLink">Le STELLE n°&nbsp;17;</a></td>
 				</tr>
 				<tr>
 					<td class="sBlue">SCORPIONE</td>
-					<td>Il DIAVOLO n°&nbsp;15</td>
+					<td><a href="#T15" class="sSegniLink">Il DIAVOLO n°&nbsp;15;</a></td>
 					<td class="sRed">PLUTONE</td>
-					<td>La MORTE n°&nbsp;13</td>
+					<td><a href="#T13" class="sSegniLink">La MORTE n°&nbsp;13;</a></td>
 				</tr>
 				<tr>
 					<td class="sRed">SAGITTARIO</td>
-					<td>L'IMPERATORE n°&nbsp;4</td>
+					<td><a href="#T04" class="sSegniLink">L'IMPERATORE n°&nbsp;4;</a></td>
 					<td class="sRed">GIOVE</td>
-					<td>Il PAPA n°&nbsp;5</td>
+					<td><a href="#T05" class="sSegniLink">Il PAPA n°&nbsp;5;</a></td>
 				</tr>
 				<tr>
 					<td class="sGreen">CAPRICORNO</td>
-					<td>La RUOTA n°&nbsp;10</td>
+					<td><a href="#T10" class="sSegniLink">La RUOTA n°&nbsp;10;</a></td>
 					<td class="sRed">SATURNO</td>
-					<td>L'EREMITA n°&nbsp;9</td>
+					<td><a href="#T09" class="sSegniLink">L'EREMITA n°&nbsp;9;</a></td>
 				</tr>
 				<tr>
 					<td class="sMaroon">ACQUARIO</td>
-					<td>La TEMPERANZA n°&nbsp;14</td>
+					<td><a href="#T14" class="sSegniLink">La TEMPERANZA n°&nbsp;14;</a></td>
 					<td class="sRed">URANO</td>
-					<td>La TORRE n°&nbsp;16</td>
+					<td><a href="#T16" class="sSegniLink">La TORRE n°&nbsp;16;</a></td>
 				</tr>
 				<tr>
 					<td class="sBlue">PESCI</td>
-					<td>L'APPESO n°&nbsp;12</td>
+					<td><a href="#T12" class="sSegniLink">L'APPESO n°&nbsp;12;</a></td>
 					<td class="sRed">NETTUNO</td>
-					<td>Il GIUDIZIO n°&nbsp;20</td>
+					<td><a href="#T20" class="sSegniLink">Il GIUDIZIO n°&nbsp;20;</a></td>
 				</tr>
 			</tbody>
 			</table>
@@ -318,6 +331,7 @@ p {
 		<table bgcolor="#FFF3E8" cellspacing="3" cellpadding="15" class="sBorder6d-SanguineBrown" width="96%" align="center">
 		<tbody class="sSmall sPersianPlum sJustify sPadding" valign="bottom"><tr><td>
 		
+<a name="T01"></a>
 			<h2><span class="sRed">1</span> - IL BAGATTO</h2>
 			<p>
 				<img src="grafiche/Taro1.gif" width="100" height="200" alt="Tarocco 1" class="sFloatL">
@@ -333,6 +347,7 @@ p {
 				stipulare senza pensarci due volte. Non devi strafare disperdendo tempo ed energia.
 			</p>
 
+<a name="T02"></a>
 			<h2><span class="sRed">2</span> - LA PAPESSA</h2>
 			<p>
 				<img src="grafiche/Taro2.gif" width="100" height="200" alt="Tarocco 2" class="sFloatR">
@@ -348,6 +363,7 @@ p {
 				maturerà lentamente. Non sperare nel colpo di fortuna, il successo quest'anno è subordinato dal tuo impegno.
 			</p>
 
+<a name="T03"></a>
 			<h2><span class="sRed">3</span> - L'IMPERATRICE</h2>
 			<p>
 				<img src="grafiche/Taro3.gif" width="100" height="200" alt="Tarocco 3" class="sFloatL">
@@ -365,6 +381,7 @@ p {
 				dei guadagni.
 			</p>
 
+<a name="T04"></a>
 			<h2><span class="sRed">4</span> - L'IMPERATORE</h2>
 			<p>
 				<img src="grafiche/Taro4.gif" width="100" height="200" alt="Tarocco 4" class="sFloatR">
@@ -381,6 +398,7 @@ p {
 				professionali.
 			</p>
 
+<a name="T05"></a>
 			<h2><span class="sRed">5</span> - IL PAPA</h2>
 			<p>
 				<img src="grafiche/Taro5.gif" width="100" height="200" alt="Tarocco 5" class="sFloatL">
@@ -395,6 +413,7 @@ p {
 				particolare negli affari dove un'occasione fortunata svelerà la sua portata soltanto col tempo.
 			</p>
 
+<a name="T06"></a>
 			<h2><span class="sRed">6</span> - GLI AMANTI</h2>
 			<p>
 				<img src="grafiche/Taro6.gif" width="100" height="200" alt="Tarocco 6" class="sFloatR">
@@ -411,6 +430,7 @@ p {
 				superlavoro. Punta tutto sull'arte e la fantasia, cerca utili alleanze sul piano pratico.
 			</p>
 
+<a name="T07"></a>
 			<h2><span class="sRed">7</span> - IL CARRO</h2>
 			<p>
 				<img src="grafiche/Taro7.gif" width="100" height="200" alt="Tarocco 7" class="sFloatL">
@@ -427,6 +447,7 @@ p {
 				ti riesce alla perfezione. Non escludere qualche rischio.
 			</p>
 
+<a name="T08"></a>
 			<h2><span class="sRed">8</span> - LA GIUSTIZIA</h2>
 			<p>
 				<img src="grafiche/Taro8.gif" width="100" height="200" alt="Tarocco 8" class="sFloatR">
@@ -444,6 +465,7 @@ p {
 				per renderlo veramente perfetto.
 			</p>
 
+<a name="T09"></a>
 			<h2><span class="sRed">9</span> - L'EREMITA</h2>
 			<p>
 				<img src="grafiche/Taro9.gif" width="100" height="200" alt="Tarocco 9" class="sFloatL">
@@ -459,6 +481,7 @@ p {
 				di risparmiare t'impone uno stile di vita più semplice. Denaro in arrivo.
 			</p>
 
+<a name="T10"></a>
 			<h2><span class="sRed">10</span> - LA RUOTA DELLA FORTUNA</h2>
 			<p>
 				<img src="grafiche/Taro10.gif" width="100" height="200" alt="Tarocco 10" class="sFloatR">
@@ -475,6 +498,7 @@ p {
 				improvvisi e inattesi.
 			</p>
 
+<a name="T11"></a>
 			<h2><span class="sRed">11</span> - LA FORZA</h2>
 			<p>
 				<img src="grafiche/Taro11.gif" width="100" height="200" alt="Tarocco 11" class="sFloatL">
@@ -489,6 +513,7 @@ p {
 				appesantiti da critiche e rivalità se però t'impegni al massimo, senza lasciare nulla d'intentato, riuscirai ad avere la meglio. Buone
 				le notizie sul fronte finanziario, il merito può scaturire da una tua speculazione fortunata o da una piccola vincita che interviene a riassettare la situazione.
 			</p>
+			<br style="clear: both;">
 		</td></tr><tbody>
 		</table>
 
@@ -501,6 +526,7 @@ p {
 		<tbody class="sSmall sPersianPlum sJustify sPadding" valign="bottom">
 		<tr><td>
 
+<a name="T12"></a>
 			<h2><span class="sRed">12</span> - L'APPESO</h2>
 			<p>
 				<img src="grafiche/Taro12.gif" width="100" height="200" alt="Tarocco 12" class="sFloatR">
@@ -514,9 +540,10 @@ p {
 				rapporto di ripartire su basi più responsabili e mature.<br>
 				<span class="sRed sBold">LAVORO</span>: ti senti arrivato a un punto morto e tuttavia fatica a metterti in discussione e ad accettare le
 				inevitabili responsabilità. Stretto da una serie infinita di dubbi e incertezze, tendi a preoccuparti più del dovuto. Quello attuale ti
-				va un po' stretto e vorresti ca mbiare l'ambiente professionale ma le occasioni sono poche e i progetti non abbastanza solidi.
+				va un po' stretto e vorresti cambiare l'ambiente professionale ma le occasioni sono poche e i progetti non abbastanza solidi.
 			</p>
 
+<a name="T13"></a>
 			<h2><span class="sRed">13</span> - LA MORTE</h2>
 			<p>
 				<img src="grafiche/Taro13.gif" width="100" height="200" alt="Tarocco 13" class="sFloatL">
@@ -534,6 +561,7 @@ p {
 				o studio.
 			</p>
 
+<a name="T14"></a>
 			<h2><span class="sRed">14</span> - LA TEMPERANZA</h2>
 			<p>
 				<img src="grafiche/Taro14.gif" width="100" height="200" alt="Tarocco 14" class="sFloatR">
@@ -549,6 +577,7 @@ p {
 				specializzati magari in scienze della comunicazione o informatica.
 			</p>
 
+<a name="T15"></a>
 			<h2><span class="sRed">15</span> - IL DIAVOLO</h2>
 			<p>
 				<img src="grafiche/Taro15.gif" width="100" height="200" alt="Tarocco 15" class="sFloatL">
@@ -565,6 +594,7 @@ p {
 				ti ritrovi puoi raggiungere qualsiasi obiettivo, più tutto d'ordine economico.
 			</p>
 
+<a name="T16"></a>
 			<h2><span class="sRed">16</span> - LA TORRE</h2>
 			<p>
 				<img src="grafiche/Taro16.gif" width="100" height="200" alt="Tarocco 16" class="sFloatR">
@@ -581,6 +611,7 @@ p {
 				successo, dalla quale puoi ripartire più pimpante che mai verso una direzione più soddisfacente.
 			</p>
 
+<a name="T17"></a>
 			<h2><span class="sRed">17</span> - LE STELLE</h2>
 			<p>
 				<img src="grafiche/Taro17.gif" width="100" height="200" alt="Tarocco 17" class="sFloatL">
@@ -597,6 +628,7 @@ p {
 				opportunità e occasioni sociali grazie alle quali puoi mettere a frutto la tua raffinata vena creativa.
 			</p>
 
+<a name="T18"></a>
 			<h2><span class="sRed">18</span> - LA LUNA</h2>
 			<p>
 				<img src="grafiche/Taro18.gif" width="100" height="200" alt="Tarocco 18" class="sFloatR">
@@ -613,6 +645,7 @@ p {
 				alle proposte finanziarie che appaiono troppo allettanti, ma che potrebbero nascondere un inganno. Situazioni economiche da risolvere.
 			</p>
 
+<a name="T19"></a>
 			<h2><span class="sRed">19</span> - IL SOLE</h2>
 			<p>
 				<img src="grafiche/Taro19.gif" width="100" height="200" alt="Tarocco 19" class="sFloatL">
@@ -629,6 +662,7 @@ p {
 				tutto meritati grande anche la situazione finanziaria, incrementata da vincite.
 			</p>
 
+<a name="T20"></a>
 			<h2><span class="sRed">20</span> - IL GIUDIZIO</h2>
 			<p>
 				<img src="grafiche/Taro20.gif" width="100" height="200" alt="Tarocco 20" class="sFloatR">
@@ -644,6 +678,7 @@ p {
 				viaggi in aereo per motivi di lavoro, un solo neo c'é la tendenza a prendere le situazioni un po' di petto.
 			</p>
 
+<a name="T21"></a>
 			<h2><span class="sRed">21</span> - IL MONDO</h2>
 			<p>
 				<img src="grafiche/Taro21.gif" width="100" height="200" alt="Tarocco 21" class="sFloatL">
@@ -660,6 +695,7 @@ p {
 				la realizzazione di un progetto, occorrerà ricorrere a dei mutui e finanziamenti, favoriti acquisti immobiliari e piccole vincite.
 			</p>
 
+<a name="T22"></a>
 			<h2><span class="sRed">22</span> - IL MATTO</h2>
 			<p>
 				<img src="grafiche/Taro22.gif" width="100" height="200" alt="Tarocco 22" class="sFloatR">
@@ -771,4 +807,5 @@ p {
 	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html" style="text-shadow: 1px 0px 0px #FFFFFF;">qui</a>.
 </footer>
 </body>
+<script src="TornaSu.js"></script>
 </html>

@@ -12,7 +12,7 @@
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="13/04/2021"><!-- content="31/12/2018" -->
-<meta name="revised" content="11/06/2021">
+<meta name="revised" content="09/07/2021">
 
 <style type="text/css">
 body {
@@ -49,9 +49,9 @@ h2 {
 	text-align: center;
 	padding-left: 10px;
 	padding-right: 10px;
-	line-height: 100%;
 	margin-top: 40px;
 	margin-bottom: 25px;
+	line-height: 100%;
 }
 h3 {
 	font-size: medium;
@@ -60,9 +60,9 @@ h3 {
 	text-align: center;
 	padding-left: 10px;
 	padding-right: 10px;
-	line-height: 100%;
 	margin-top: 20px;
 	margin-bottom: 5px;
+	line-height: 100%;
 }
 header {
 	font-size: xx-large;
@@ -73,7 +73,7 @@ header {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-top: 25px;	/* vertical-align: middle; */
-	margin-bottom: 0;	/* vertical-align: middle; */
+	margin-bottom: 0px;	
 	height: 70px;
 }
 footer {
@@ -90,29 +90,35 @@ p {
 	font-size: small;
 	color: #000000; /* Black */
 	text-align: justify;
-	padding-left: 35px;
-	padding-right: 35px;
-	line-height: 125%;
+	padding-left: 2px;
+	padding-right: 20px;
+	line-height: 130%;
 	hyphens: auto;
 }
 img {
 	max-width: 100%;
 	height: auto;
 }
+#TornaSu {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	padding: 10px;
+	display: none;
+}
 .sNavigation {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 	list-style: none;
-	margin: 0;
-	padding-left: 10px;
-	padding-right: 10px;
+	margin: 0px;
+	padding: 0px;
 	line-height: 180%;
 }
 .sNavigation a {
 	font-size: medium;
 	font-weight: bold;
-	padding:.42em;
+	padding: 5px; /* .42em; */
 	color: #FFFFFF; /* White */
 	margin-left: 2px;
 	background: #0000FF;  /* Blue */
@@ -123,13 +129,20 @@ img {
 	background: #00FFFF; /* Aqua */
 }
 #PagCorrente {
-	border-bottom: 2.5px solid #FF0000; /* Red */
+	border-bottom: 3px solid #FF0000; /* Red */
 }
 .sHomeIcon {
 	vertical-align: bottom;
-	margin-bottom: 1px;
+	margin-bottom: 2px;
 	height: 25px;
 	width: 25px;
+}
+#TornaSu {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	padding: 10px;
+	display: none;
 }
 .sBorder1s {
 			border-style: solid;
@@ -203,9 +216,6 @@ img {
 	}
 }
 @media screen and (max-width:905px) {
-	.sVediImg1 {
-		display: none !important;
-	}
 	.sVediImg2 {
 		display: none !important;
 	}
@@ -233,11 +243,27 @@ img {
 		width: 29%;
 	}
 }
+.sSegniSize {
+			text-align: center;
+			font-size: 22px;
+}
+.sSegniLink {
+			text-decoration: none;
+}
+.sSegniDesc {
+			text-align: center;
+			font-size: x-small;
+			color: #6B0E27; /* Pohutukawa */
+			line-height: 100%;
+			padding: 0px;
+}
 </style>
 </head>
 
 <body>
 <header>Studio di Astrologia "Acquario"</header>
+<a name="Inizio"></a>
+<a href="#Inizio" title="Torna all'inizio della pagina"><div id="TornaSu"><img src= "TornaSu.png" width="40px" height="40px"></div></a>
 
 <TABLE BACKGROUND="grafiche/Scoprire_background.jpg" CELLSPACING="8" CELLPADDING="8" class="sBorder1s" BORDERCOLOR="#FFFFFF" BORDERCOLORDARK="#B1D7FB" WIDTH="96%"align="center">
 <TR><TD BACKGROUND="grafiche/Scoprire_barraVert.jpg">
@@ -270,6 +296,15 @@ img {
 			</ul>
 			<br>
 		</nav>
+		<div class="sSegniSize">
+			<a href="#Pianeti"  title="Pianeti"  class="sSegniLink">&#9798;</a>
+			<a href="#Segni"    title="Segni"    class="sSegniLink">&#9810;</a>
+			<a href="#Elementi" title="Elementi" class="sSegniLink">&#128293;</a>
+		</div>
+		<div class="sSegniDesc">
+			Clicca sul simbolo per passare al relativo paragrafo
+		</div>
+		<br>
 
 		<p class="sMedium sNavy sBold sCenter">
 			 Cosa significa la parola "<span class="sRed">Oroscopo</span>"
@@ -303,20 +338,38 @@ img {
 			nell'<span class="sRed sBold">OROSCOPO</span>.
 		</p>
 
+<a name="Pianeti"></a>
 		<h2>I <span class="sRed">10</span> PIANETI: IN ORDINE DI DISTANZA DAL <span class="sRed">SOLE</span></h2>
 		
 		<p class="sCenter">
+			<img src="grafiche/Pianeti_barraPianeti.gif"   width="510" height="35"  alt="Barra dei Pianeti">
+			<br><br>
 			<img src="grafiche/Scoprire_sistemaSolare.gif"                   width="360" height="250" alt="Pianeti con Sole">
 			<img src="grafiche/Scoprire_pianeti.jpg"       class="sVediImg3" width="406" height="293" alt="Pianeti">
-			<br><br>
-			<img src="grafiche/Pianeti_barraPianeti.gif"   width="510" height="35"  alt="Barra dei Pianeti">
 		</p>
+		<div class="sSegniSize" style="font-size: 30px;">
+			<a href="#Sole" title="Sole" class="sSegniLink">&#9737;</a>
+			<a href="#Luna" title="Luna" class="sSegniLink">&#9789;</a>
+			<a href="#Mercurio" title="Mercurio" class="sSegniLink">&#9791;</a>
+			<a href="#Venere" title="Venere" class="sSegniLink">&#9792;</a>
+			<a href="#Marte" title="Marte" class="sSegniLink">&#9794;</a>
+			<a href="#Giove" title="Giove" class="sSegniLink">&#9795;</a>
+			<a href="#Saturno" title="Saturno" class="sSegniLink">&#9796;</a>
+			<a href="#Urano" title="Urano" class="sSegniLink">&#9954;</a><!-- &#9797; -->
+			<a href="#Nettuno" title="Nettuno" class="sSegniLink">&#9798;</a>
+			<a href="#Plutone" title="Plutone" class="sSegniLink">&#9799;</a>
+		</div>
+		<div class="sSegniDesc">
+			Clicca sul simbolo di un pianeta per passare alla sua descrizione
+		</div>
+		<br>
 
 		<p>
 			Il <span class="sRed sBold">SOLE</span> e la <span class="sRed sBold">LUNA</span> in Astrologia sono considerati dei pianeti e chiamati i
 			luminari, sono i più importanti in un <span class="sRed sBold">OROSCOPO</span>.
 		</p>
 
+<a name="Sole"></a>
 		<h3><img src="grafiche/Pianeti_sole.gif" width="55" height="43" alt="Sole">SOLE</h3>
 		<p>
 			<span class="sRed sBold">SOLE</span>: <span class="sNavy sBold">Io voglio</span> = <span class="sRed">La sua natura è calda e secca, costruttiva</span><br>
@@ -333,6 +386,7 @@ img {
 			per la donna, l'occhio destro per l'uomo.
 		</p>
 
+<a name="Luna"></a>
 		<h3><img src="grafiche/Pianeti_luna.gif" width="55" height="55" alt="Luna">&nbsp;LUNA</h3>
 		<p>
 			<span class="sRed sBold">LUNA</span>: <span class="sNavy sBold">Io sento</span> = <span class="sRed">La natura è flemmatica, fredda e umida</span><br>
@@ -348,6 +402,7 @@ img {
 			per l'uomo, destro per la donna.
 		</p>
 
+<a name="Mercurio"></a>
 		<h3><img src="grafiche/Pianeti_mercurio.gif" width="55" height="55" alt="Mercurio">&nbsp;MERCURIO</h3>
 		<p>
 			<span class="sRed sBold">MERCURIO</span>: <span class="sNavy sBold">Io sono</span> = <span class="sRed">La natura è convertibile, fredda e secca</span><br>
@@ -364,6 +419,7 @@ img {
 			La respirazione, i bronchi e polmoni, spalle, braccia e mani.
 		</p>
 
+<a name="Venere"></a>
 		<h3><img src="grafiche/Pianeti_venere.gif" width="55" height="55" alt="Venere">&nbsp;VENERE</h3>
 		<p>
 			<span class="sRed sBold">VENERE</span>: <span class="sNavy sBold">Io Amo</span> = <span class="sRed"><b>Fortuna minor</b>. La natura è moderata e umida</span><br>
@@ -379,6 +435,7 @@ img {
 			<span class="sRed sBold">Luna</span>. La tiroide, la circolazione venosa, la regione lombare.
 		</p>
 
+<a name="Marte"></a>
 		<h3><img src="grafiche/Pianeti_marte.gif" width="55" height="55" alt="Marte">&nbsp;MARTE</h3>
 		<p>
 			<span class="sRed sBold">MARTE</span>: <span class="sNavy sBold">Io agisco</span> = <span class="sRed">La natura è collerica, calda e secca</span><br>
@@ -395,6 +452,7 @@ img {
 			rossi, il sangue, la bile, la testa, il naso, i muscoli, la vescica, i reni con <span class="sRed sBold">Venere</span>.
 		</p>
 
+<a name="Giove"></a>
 		<h3><img src="grafiche/Pianeti_giove.gif" width="55" height="55" alt="Giove">&nbsp;GIOVE</h3>
 		<p>
 			<span class="sRed sBold">GIOVE</span>: <span class="sNavy sBold">Io gioisco</span> = <span class="sRed"><b>La grande fortuna</b>. La natura elettrica, calda e umida</span><br>
@@ -410,6 +468,7 @@ img {
 			<span class="sRed sBold">Venere</span>, cosce, anche, femore. Adiposità e obesità, foruncoli, ascessi, cirrosi, diabete.
 		</p>
 
+<a name="Saturno"></a>
 		<h3><img src="grafiche/Pianeti_saturno.gif" width="55" height="55" alt="Saturno">&nbsp;SATURNO</h3>
 		<p>
 			<span class="sRed sBold">SATURNO</span>: <span class="sNavy sBold">Io so</span> = <span class="sRed">La natura è fredda e secca è la grande sfortuna</span><br>
@@ -426,6 +485,7 @@ img {
 			Articolazioni, ginocchia, schiena, scheletro.
 		</p>
 
+<a name="Urano"></a>
 		<h3><img src="grafiche/Pianeti_urano.gif" width="55" height="55" alt="Urano">&nbsp;URANO</h3>
 		<p>
 			<span class="sRed sBold">URANO</span>: <span class="sNavy sBold">Io libero</span> = <span class="sRed">Natura eccentrica, elettrica e variabile</span><br>
@@ -443,6 +503,7 @@ img {
 			interventi chirurgici a carattere improvviso.
 		</p>
 
+<a name="Nettuno"></a>
 		<h3><img src="grafiche/Pianeti_nettuno.gif" width="55" height="55" alt="Nettuno">&nbsp;NETTUNO</h3>
 		<p>
 			<span class="sRed sBold">NETTUNO</span>: <span class="sNavy sBold">Io credo</span> =  <span class="sRed">.</span><br>
@@ -458,6 +519,7 @@ img {
 			sonnambulismo, le intossicazioni.
 		</p>
 
+<a name="Plutone"></a>
 		<h3><img src="grafiche/Pianeti_plutone.gif" width="55" height="55" alt="Plutone">&nbsp;PLUTONE</h3>
 		<p>
 			<span class="sRed sBold">PLUTONE</span>: <span class="sNavy sBold">Io creo</span> =  <span class="sRed">.</span><br>
@@ -472,7 +534,8 @@ img {
 			delle cellule, le tossine.
 		</p>
 
-		<h2>I <span class="sRed">10</span> Segni dello Zodiaco si differenziano fra loro in un rapporto Binario e si basano sulla Polarità</h2>
+<a name="Segni"></a>
+		<h2>I <span class="sRed">12</span> Segni dello Zodiaco si differenziano fra loro in un rapporto Binario e si basano sulla Polarità</h2>
 		<p>
 			<b><span class="sRed">FUOCO</span> - <span class="sMaroon">ARIA</span> = <span class="sNewMidnightBlue">Maschili</span> -
 			<span class="sRed">attivi</span> - <span class="sRed">positivi</span><br>
@@ -495,9 +558,20 @@ img {
 			esperienze della vita. <u>Non reagisce al Karma</u>, tende a subire il destino e immagazzina impressioni.
 		</p>
 		<p class="sNewMidnightBlue sBold sCenter">
-			La classificazione è formulata dalla ritmicità delle stagioni ed è basata sulla quadruplicità
+			La classificazione è formulata dalla ritmicità delle stagioni ed è basata sulla quadruplicità. I Cardinali sono i segni che iniziano le stagioni. I Fissi sono i segni al centro delle stagioni. I Mobili sono i segni alla fine delle stagioni.
 		</p>
+		<br>
+		<div class="sSegniSize">
+			<a href="#Cardinali" title="Cardinali" class="sSegniLink">Ca</a>
+			<a href="#Fissi"     title="Fissi"     class="sSegniLink">Fi</a>
+			<a href="#Mobili"    title="Mobili"    class="sSegniLink">Mo</a>
+		</div>
+		<div class="sSegniDesc">
+			Clicca sulla sigla per passare alla sua descrizione
+		</div>
+		<br>
 
+<a name="Cardinali"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Scoprire_ariete.jpg"      width="117" height="119" class="sVediImg4" alt="Ariete">&nbsp;
@@ -521,7 +595,9 @@ img {
 			Il <span class="sGreen sBold">Capricorno</span> controlla e sfrutta l'ambiente materiale.
 		</p>
 
+<a name="Fissi"></a>
 		<p class="sCenter">
+			<br>
 			<img src="grafiche/Scoprire_toro2.gif"      width="104" height="104" class="sVediImg4" alt="Toro">&nbsp;
 			<img src="grafiche/Scoprire_leone.jpg"      width="106" height="109" class="sVediImg4" alt="Leone">&nbsp;
 			<img src="grafiche/Scoprire_scorpione2.gif" width="104" height="97"  class="sVediImg4" alt="Scorpione">&nbsp;
@@ -543,7 +619,9 @@ img {
 			L'<span class="sMaroon sBold">Acquario</span>, si trova sovente alle prese con se stesso.
 		</p>
 
+<a name="Mobili"></a>
 		<p class="sCenter">
+			<br>
 			<img src="grafiche/Scoprire_gemelli2.gif"    width="108" height="109" class="sVediImg4" alt="Gemelli">&nbsp;
 			<img src="grafiche/Scoprire_vergine2.gif"    width="95"  height="97"  class="sVediImg4" alt="Vergine">&nbsp;
 			<img src="grafiche/Scoprire_sagittario2.gif" width="114" height="104" class="sVediImg4" alt="Sagittario">&nbsp;
@@ -566,13 +644,24 @@ img {
 			<span class="sBlue sBold">Pesci</span> si adatta solo superficialmente all'ambiente che lo circonda.
 		</p>
 
+<a name="Elementi"></a>
 		<h2>I <span class="sRed">4</span> ELEMENTI O TRIPLICITA'</h2>
 
 		<p class="sCenter">
 			<img src="grafiche/Scoprire_elementiDonne.jpg"                   width="254" height="293" alt="Donne Elementi">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<img src="grafiche/Scoprire_ruotaElementi.png" class="sVediImg5" width="314" height="315" alt="Ruota Elementi">
 		</p>
+		<div class="sSegniSize">
+			<a href="#Fuoco" title="Fuoco" class="sSegniLink">&#128293;</a>
+			<a href="#Terra" title="Terra" class="sSegniLink">&#127757;</a>
+			<a href="#Aria"  title="Aria"  class="sSegniLink">&#128168;</a>
+			<a href="#Acqua" title="Acqua" class="sSegniLink">&#128167;</a>
+		</div>
+		<div class="sSegniDesc">
+			Clicca sull'elemento per passare alla sua descrizione
+		</div>
 
+<a name="Fuoco"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Scoprire_ariete.gif"     width="86" height="87"  class="sVediImg7" alt="Ariete">
@@ -594,6 +683,7 @@ img {
 			&nbsp;--&gt;&nbsp;<span class="sNewMidnightBlue sBold">ORA SONO QUI, ANDIAMO AVANTI</span>
 		</p>
 
+<a name="Terra"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Scoprire_toro.gif"       width="81"  height="89"  class="sVediImg7" alt="Toro">
@@ -615,6 +705,7 @@ img {
 			&nbsp;--&gt;&nbsp;<span class="sNewMidnightBlue sBold">ASPETTERÒ FINCHÈ SAPRÒ DI CHE SI TRATTA</span>
 		</p>
 
+<a name="Aria"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Scoprire_gemelli.gif"  width="99" height="100" class="sVediImg7" alt="Gemelli">
@@ -635,6 +726,7 @@ img {
 			&nbsp;--&gt;&nbsp;<span class="sNewMidnightBlue sBold">DEVO SAPERE COSA STA SUCCEDENDO E PERCHÉ</span>
 		</p>
 
+<a name="Acqua"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Scoprire_cancro.gif"    width="99" height="83"  class="sVediImg7" alt="Cancro">
@@ -662,8 +754,8 @@ img {
 			<img src="grafiche/Pianeti_barraPianeti.gif"  width="510" height="35" alt="Barra dei Pianeti">
 		</p>
 		<p class="sCenter">
-			<img src="grafiche/Scoprire_fataAcquario.jpg" class="sVediImg1" width="168" height="252" alt="Fata Acquario">&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="photo/Laura2020.jpg"                                  width="250" height="277" alt="Laura Lencia - 2020">
+			<img src="grafiche/Scoprire_fataAcquario.jpg" width="168" height="252" class="sVediImg1" alt="Fata Acquario">&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="photo/Laura2020.jpg"                width="250" height="277"                   alt="Laura Lencia - 2020">
 		</p>
 
 		<p class="sNavy sCenter">
@@ -677,7 +769,7 @@ img {
 			<!-- a href="http://www.retecivica.milano.it" target="_blank" title="Contatore Visite"><img src="http://www.retecivica.milano.it/counter/counter.php?link=1220429557-75d72jsd" border=0></a -->
 			<!-- Sostituito Counter il 11/06/2021 alle 23:38 quando aveva valore 3590 -->
 			<!-- a href="http://www.simplehitcounter.com" target="_blank" title="Contatore Visite"><img src="http://simplehitcounter.com/hit.php?uid=3693454772387063739&f=0&b=16777215" border="0" height="18" width="83" alt="visit counter"></a -->
-			<a href="https://www.counter12.com" target="_blank" title="Contatore Visite"><img src="https://www.counter12.com/img-BY1c1YYA5A2c6WCC-3.gif" border="0" alt="free counter"></a><script type="text/javascript" src="https://www.counter12.com/ad.js?id=BY1c1YYA5A2c6WCC"></script>
+			<a href="https://www.counter12.com" target="_blank" title="Contatore Visite"><img src="https://www.counter12.com/img-BY1c1YYA5A2c6WCC-3.gif" border="0" alt="free web counter"></a><script type="text/javascript" src="https://www.counter12.com/ad.js?id=BY1c1YYA5A2c6WCC"></script>
 			&nbsp;(Contenuto Aggiornato <time datetime="2021-04-13">13/04/2021</time>)<br>
 		</p>
 
@@ -689,4 +781,5 @@ img {
 	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html">qui</a>.
 </footer>
 </body>
+<script src="TornaSu.js"></script>
 </html>

@@ -12,7 +12,7 @@
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="06/04/2021"><!-- content="21/06/2020" -->
-<meta name="revised" content="12/06/2021">
+<meta name="revised" content="09/07/2021">
 
 <style type="text/css">
 body {
@@ -47,8 +47,8 @@ h2 {
 	font-weight: bold;
 	color: #420042; /* Mardi Gras */
 	text-align: center;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-top: 35px;
 }
 h3 {
@@ -56,8 +56,8 @@ h3 {
 	font-weight: bold;
 	color: #420042; /* Mardi Gras */
 	text-align: center;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-top: 25px;
 }
 header {
@@ -69,7 +69,7 @@ header {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-top: 25px;	/* vertical-align: middle; */
-	margin-bottom: 0;	/* vertical-align: middle; */
+	margin-bottom: 0px;
 	height: 70px;
 }
 footer {
@@ -86,14 +86,21 @@ p {
 	font-size: small;
 	color: #420042; /* Mardi Gras */
 	text-align: justify;
-	padding-left: 35px;
-	padding-right: 35px;
-	line-height: 125%;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 130%;
 	hyphens: auto;
 }
 img {
 	max-width: 100%;
 	height: auto;
+}
+#TornaSu {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	padding: 10px;
+	display: none;
 }
 .sBorder1s {
 			border-style: solid;
@@ -137,21 +144,37 @@ img {
 .sVediImg2 {
 	display: inline;
 }
-@media screen and (max-width:1050px) {
+@media screen and (max-width: 1050px) {
 	.sVediImg1 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:682px) {
+@media screen and (max-width: 682px) {
 	.sVediImg2 {
 		display: none !important;
 	}
+}
+.sSegniSize {
+			text-align: center;
+			font-size: 22px;
+}
+.sSegniLink {
+			text-decoration: none;
+}
+.sSegniDesc {
+			text-align: center;
+			font-size: x-small;
+			color: #420042; /* Mardi Gras */
+			line-height: 100%;
+			padding: 0px;
 }
 </style>
 </head>
 
 <body>
 <header>Studio di Astrologia "Acquario"</header>
+<a name="Inizio"></a>
+<a href="#Inizio" title="Torna all'inizio della pagina"><div id="TornaSu"><img src= "TornaSu.png" width="40px" height="40px"></div></a>
 
 <table background="grafiche/BarraVert5_Ecru.jpg" cellspacing="4" cellpadding="10" bordercolorlight="#DDD395" bordercolordark="#B8AC72" class="sBorder1s" width="96%" align="center">
 <tr><td background="grafiche/Cuspidi_barraVert2.jpg">
@@ -170,13 +193,21 @@ img {
 			<img src="grafiche/Cuspidi_linea.jpg" width="399" height="41" class="sVediImg1" alt="">
 		</p>
 
+		<div class="sSegniSize">
+			<a href="#Ariete" title="Ariete" class="sSegniLink">&#9800;</a><a href="#Toro" title="Toro" class="sSegniLink">&#9801;</a><a href="#Gemelli" title="Gemelli" class="sSegniLink">&#9802;</a><a href="#Cancro" title="Cancro" class="sSegniLink">&#9803;</a><a href="#Leone" title="Leone" class="sSegniLink">&#9804;</a><a href="#Vergine" title="Vergine" class="sSegniLink">&#9805;</a><a href="#Bilancia" title="Bilancia" class="sSegniLink">&#9806;</a><a href="#Scorpione" title="Scorpione" class="sSegniLink">&#9807;</a><a href="#Sagittario" title="Sagittario" class="sSegniLink">&#9808;</a><a href="#Capricorno" title="Capricorno" class="sSegniLink">&#9809;</a><a href="#Acquario" title="Acquario" class="sSegniLink">&#9810;</a><a href="#Pesci" title="Pesci" class="sSegniLink">&#9811;</a>
+		</div>
+		<div class="sSegniDesc">
+			Clicca sul simbolo di un segno per passare alla sua descrizione
+		</div>
+		<br>
+
+<a name="Ariete"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Cuspidi_ariete.jpg"     width="150" height="150" class="sVediImg2" alt="Ariete">&nbsp;
 			<img src="grafiche/Cuspidi_ArieteToro.png" width="179" height="161"                   alt="Ariete & Toro">&nbsp;
 			<img src="grafiche/Cuspidi_toro.jpg"       width="150" height="150" class="sVediImg2" alt="Toro">
 		</p>
-
 		<h2><span class="sRedOrange">ARIETE</span> - <span class="sGreen">TORO</span> (19 - 20 - 21 - 22 APRILE)</h2>
 		<h3>In equilibrio tra energia e creatività</h3>
 		<p>
@@ -196,6 +227,7 @@ img {
 			è colorato di rosso vivo della passione, ardente e pieno di fantasia un amante ideale.
 		</p>
 
+<a name="Toro"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Cuspidi_toro.jpg"        width="150" height="150" class="sVediImg2" alt="Toro">&nbsp;
@@ -222,6 +254,7 @@ img {
 			rivelare infelice.
 		</p>
 
+<a name="Gemelli"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Cuspidi_gemelli.jpg"       width="150" height="150" class="sVediImg2" alt="Gemelli">&nbsp;
@@ -246,6 +279,7 @@ img {
 			arriverà. In amore è disinvolto ma poco fedele, se ama, ama davvero.
 		</p>
 
+<a name="Cancro"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Cuspidi_cancro.jpg"      width="150" height="150" class="sVediImg2" alt="Cancro">&nbsp;
@@ -264,13 +298,14 @@ img {
 			semplice e comoda che dia la possibilità di essere lasciato in pace, quando non ha voglia di stare in mezzo alla gente. Quando ha in mente
 			qualcosa deve a tutti i costi ottenerla. Le tendenze del <span class="sRedOrange sBold">Leone</span> portano all'irritabilità, quelle del
 			<span class="sBlue sBold">Cancro</span> l'aiutano a controllarsi. Se prevale la tendenza del <span class="sRedOrange sBold">Leone</span>
-			gl'interessi si concentrano sulla vita sociale, perché vuole farsi conoscere ed essere al centro dell'attenzione valorizzando ogni atto, e si
+			gli interessi si concentrano sulla vita sociale, perché vuole farsi conoscere ed essere al centro dell'attenzione valorizzando ogni atto, e si
 			mostra magnanimo e comprensivo in grado di aiutare tutti. Nella vita affettiva può fare volte capolino la sua timidezza, si pone allora sulla
 			difensiva in attesa di un segno d'interesse del suo partner, che desidera sia sensibile e predisposto a rispondere alle sue manifestazioni
 			d'affetto alle volte un po' eccessive. La sua famiglia è molto importante per lui, sebbene ami anche uscire spesso e avere molti amici.
 			È portato per il piacere e l'amore, ma deve coltivare questa sua tendenza.
 		</p>
 
+<a name="Leone"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Cuspidi_leone.jpg"        width="150" height="150" class="sVediImg2" alt="Leone">&nbsp;
@@ -297,6 +332,7 @@ img {
 			sessuali.
 		</p>
 
+<a name="Vergine"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Cuspidi_vergine.jpg"         width="150" height="150" class="sVediImg2" alt="Vergine">&nbsp;
@@ -322,6 +358,7 @@ img {
 			troppo giovane. In amore è abile nel fuggire da ogni situazione di conflittualità e ha tendenza a sdrammatizzare i problemi che creano difficoltà.
 		</p>
 
+<a name="Bilancia"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Cuspidi_bilancia.jpg"          width="150" height="150" class="sVediImg2" alt="Bilancia">&nbsp;
@@ -348,6 +385,7 @@ img {
 			soddisfi queste sue esigenze, non sarà felice.
 		</p>
 
+<a name="Scorpione"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Cuspidi_scorpione.jpg"           width="150" height="150" class="sVediImg2" alt="Scorpione">&nbsp;
@@ -373,6 +411,7 @@ img {
 			libertà si aspetta che il suo partner gli sia fedele, se ciò non accade, diventa geloso e sta sulla difensiva.
 		</p>
 
+<a name="Sagittario"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Cuspidi_sagittario.jpg"           width="150" height="150" class="sVediImg2" alt="Sagittario">&nbsp;
@@ -401,6 +440,7 @@ img {
 			e più che intrecciare rapporti di amore, preferisce le relazioni di profonda amicizia.
 		</p>
 
+<a name="Capricorno"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Cuspidi_capricorno.jpg"         width="150" height="150" class="sVediImg2" alt="Capricorno">&nbsp;
@@ -429,6 +469,7 @@ img {
 			più sviluppata in direzione dell'amicizia, ama attorniarsi di tanti amici e cambiarli di continuo seguendo l'umore del momento.
 		</p>
 
+<a name="Acquario"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Cuspidi_acquario.jpg"      width="150" height="150" class="sVediImg2" alt="Acquario">&nbsp;
@@ -449,13 +490,14 @@ img {
 			profonda e potrà illuminare l'esistenza. Quando è in vena riesce ad essere più spontaneo ma a volte lo spirito indipendente e la sua
 			testardaggine gli procurerà guai se non sta molto attento. Nonostante insista per essere uno spirito libero c'è una parte che è inguaribilmente
 			romantica e vuole vivere una dolce storia d'amore tra le braccia di un amante speciale. L'amore per i viaggi porta molti vantaggi e delle
-			occasioni insolite, l'interessano in modo particolare la scienza, la filosofia e ogni tipo d'invenzioni. Ha davanti a sé una vita molto lunga,
+			occasioni insolite, l'interessano in modo particolare la scienza, la filosofia e ogni tipo di invenzioni. Ha davanti a sé una vita molto lunga,
 			prospera e utile, piena di eventi ma le probabilità di un matrimonio infelice sono forti. È un tranquillo e raffinato conversatore, non è mai
 			superficiale, spesso agisce in maniera affrettata. La disinvoltura in amore nasconde un animo sensibile a causa dell'influenza dei
 			<span class="sBlue sBold">Pesci</span>, che lo rende cordiale e amante del divertimento. A volte è un enigma anche per se stesso e non riesce
 			a capire i suoi reali sentimenti. Nella vita amorosa è portato alla gelosia e all'avventatezza.
 		</p>
 
+<a name="Pesci"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Cuspidi_pesci.jpg"       width="150" height="150" class="sVediImg2" alt="Pesci">&nbsp;
@@ -519,4 +561,5 @@ img {
 	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html">qui</a>.
 </footer>
 </body>
+<script src="TornaSu.js"></script>
 </html>

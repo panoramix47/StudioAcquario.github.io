@@ -12,7 +12,7 @@
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="08/04/2021"><!-- content="20/07/2020" -->
-<meta name="revised" content="11/06/2021">
+<meta name="revised" content="09/07/2021">
 
 <style type="text/css">
 body {
@@ -50,8 +50,8 @@ h2 {
 	font-weight: bold;
 	color: #FFFFFF;
 	text-align: center;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-top: 30px;
 }
 header {
@@ -63,7 +63,7 @@ header {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-top: 25px;	/* vertical-align: middle; */
-	margin-bottom: 0;	/* vertical-align: middle; */
+	margin-bottom: 0px;
 	height: 70px;
 }
 footer {
@@ -80,14 +80,21 @@ p {
 	font-size: small;
 	color: #FFFFFF; /* White */
 	text-align: justify;
-	padding-left: 35px;
-	padding-right: 35px;
-	line-height: 125%;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 130%;
 	hyphens: auto;
 }
 img {
 	max-width: 100%;
 	height: auto;
+}
+#TornaSu {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	padding: 10px;
+	display: none;
 }
 .sBorder2s {
 			border-style: solid;
@@ -134,12 +141,12 @@ img {
 .sVediImg2 {
 	display: inline;
 }
-@media screen and (max-width:1210px) {
+@media screen and (max-width: 1210px) {
 	.sVediImg1 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:865px) {
+@media screen and (max-width: 865px) {
 	.sVediImg2 {
 		display: none !important;
 	}
@@ -149,6 +156,8 @@ img {
 
 <body>
 <header>Studio di Astrologia "Acquario"</header>
+<a name="Inizio"></a>
+<a href="#Inizio" title="Torna all'inizio della pagina"><div id="TornaSu"><img src= "TornaSu.png" width="40px" height="40px"></div></a>
 
 <table background="grafiche/BarraVert10_Confetti.jpg" cellspacing="2" cellpadding="12" border="0" width="96%" align="center">
 <tr><td background="grafiche/Tema_riflesso4.jpg">
@@ -388,7 +397,7 @@ img {
 		<p class="sCenter">
 			<img src="IconaAnim_emailBox.gif" width="35" height="35" alt="">
 			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold" title="Scrivimi">studio.acquario@libero.it</a><br><br>
-			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold" title="Telefonami">0125 631175</a> - Cell.	<a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
+			<img src="IconaAnim_Telefono.gif" width="35" height="35" alt="">&nbsp;oppure Telefona: <a href="tel:+390125631175" class="sBold" title="Telefonami">0125 631175</a> - Cell. <a href="tel:+393470417409" class="sBold">347 0417409</a><br><br>
 
 			<a href="index.html" class="sBold">Pagina iniziale <img src="favicon32.gif" width="32" height="32" alt=""> Home page</a>
 			&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
@@ -410,4 +419,5 @@ img {
 	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html">qui</a>.
 </footer>
 </body>
+<script src="TornaSu.js"></script>
 </html>
