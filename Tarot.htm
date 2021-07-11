@@ -12,7 +12,7 @@
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="28/03/2021"><!-- content="18/12/2017" -->
-<meta name="revised" content="12/06/2021">
+<meta name="revised" content="11/07/2021">
 
 <style type="text/css">
 body {
@@ -45,16 +45,25 @@ h2 {
 	font-weight: bold;
 	color: #5F3030; /* Persian Plum */
 	text-align: center;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 h3 {
 	font-size: medium;
 	font-weight: bold;
 	color: #5F3030; /* Persian Plum */
 	text-align: center;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+h4 {
+	font-size: medium;
+	font-weight: normal;
+	/* color: #......; usa il default */
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 0px;
 }
 header {
 	font-size: xx-large;
@@ -65,7 +74,7 @@ header {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-top: 25px;	/* vertical-align: middle; */
-	margin-bottom: 0;	/* vertical-align: middle; */
+	margin-bottom: 0px;
 	height: 70px;
 }
 footer {
@@ -84,12 +93,19 @@ p {
 	text-align: justify;
 	padding-left: 20px;
 	padding-right: 20px;
-	line-height: 125%;
+	line-height: 130%;
 	hyphens: auto;
 }
 img {
 	max-width: 100%;
 	height: auto;
+}
+#TornaSu {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	padding: 10px;
+	display: none;
 }
 .sBorder1 {
 			border-width: 1px;
@@ -164,41 +180,58 @@ img {
 .sVediImg6 {
 	display: inline;
 }
-@media screen and (max-width:1125px) {
+@media screen and (max-width: 1125px) {
 	.sVediImg1 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:1110px) {
+@media screen and (max-width: 1110px) {
 	.sVediImg6 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:841px) {
+@media screen and (max-width: 841px) {
 	.sVediImg3 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:730px) {
+@media screen and (max-width: 730px) {
 	.sVediImg2 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:1292px) {
+@media screen and (max-width: 1292px) {
 	.sVediImg4 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:881px) {
+@media screen and (max-width: 881px) {
 	.sVediImg5 {
 		display: none !important;
 	}
+}
+.sSegniSize {
+			text-align: center;
+			font-size: 20px;
+}
+.sSegniLink {
+			color: #000000; /* black */
+			text-decoration: none;
+}
+.sSegniDesc {
+			text-align: center;
+			font-size: x-small;
+			/* color: #......; usa il default */
+			line-height: 100%;
+			padding: 0px;
 }
 </style>
 </head>
 
 <body>
 <header>Studio di Astrologia "Acquario"</header>
+<a name="Inizio"></a>
+<a href="#Inizio" title="Torna all'inizio della pagina"><div id="TornaSu"><img src= "TornaSu.png" width="40px" height="40px"></div></a>
 
 <table background="grafiche/Tarot_barraVert.jpg" cellspacing="5" cellPadding="2" class="sBorder1s" borderColorDark="#9E8F6F" borderColorLight="#F4E5C5" width="96%" align="center">
 <tr><td background="grafiche/Tarot_barraVert2.jpg">
@@ -223,18 +256,47 @@ img {
 		</p>
 
 		<p class="sLarge sPersianPlum sBold sCenter">
+			Dopo la spiegazione di ogni singolo tarocco, vi illustro come fare una divinazione.<br><br>
 			<span class="sRed">ATTENZIONE!</span> le carte segnate in <span class="sBlue">BLU</span> sono positive, quelle
 			<span class="sRed">ROSSE</span> sono negative.<br><br>
 
 			Visita <a href="OroscTarot.htm" title="Oroscopo con i Tarocchi">questa mia pagina</a> per fare una previsione dell'anno corrente.
 		</p>
 
+		<div class="sSegniSize">
+			<a href="#T01" title="1" class="sSegniLink">1</a>
+			<a href="#T02" title="2" class="sSegniLink">2</a>
+			<a href="#T03" title="3" class="sSegniLink">3</a>
+			<a href="#T04" title="4" class="sSegniLink">4</a>
+			<a href="#T05" title="5" class="sSegniLink">5</a>
+			<a href="#T06" title="6" class="sSegniLink">6</a>
+			<a href="#T07" title="7" class="sSegniLink">7</a>
+			<a href="#T08" title="8" class="sSegniLink">8</a>
+			<a href="#T09" title="9" class="sSegniLink">9</a>
+			<a href="#T10" title="10" class="sSegniLink">10</a>
+			<a href="#T11" title="11" class="sSegniLink">11</a>
+			<a href="#T12" title="12" class="sSegniLink">12</a>
+			<a href="#T13" title="13" class="sSegniLink">13</a>
+			<a href="#T14" title="14" class="sSegniLink">14</a>
+			<a href="#T15" title="15" class="sSegniLink">15</a>
+			<a href="#T16" title="16" class="sSegniLink">16</a>
+			<a href="#T17" title="17" class="sSegniLink">17</a>
+			<a href="#T18" title="18" class="sSegniLink">18</a>
+			<a href="#T19" title="19" class="sSegniLink">19</a>
+			<a href="#T20" title="20" class="sSegniLink">20</a>
+			<a href="#T21" title="21" class="sSegniLink">21</a>
+			<a href="#T22" title="22" class="sSegniLink">22</a>
+		</div>
+		<div class="sSegniDesc">
+			Clicca sul numero del tarocco per passare alla sua descrizione
+		</div>
+		<br>
+
 		<table cellspacing="1" cellpadding="5" class="sBorder2sRR sBGWhite" width="96%" align="center">
 		<tr><td class="sBorder2sRR sBGLinen">
-			<p class="sMedium sCenter">
-				<b>1 - <span class="sBlue">IL BAGATTO</span></b> = Volontà - iniziativa -
-				<span class="sRed sBold">ARIETE</span> - <b>1°</b> casa - Aprile - Martedì
-			</p>
+<a name="T01"></a>
+			<h4><b>1 - <span class="sBlue">IL BAGATTO</span></b> = Volontà - iniziativa -
+				<span class="sRed sBold">ARIETE</span> - <b>1°</b> casa - Aprile - Martedì</h4>
 			<p>
 				<b>Libero arbitrio</b>. Conquista, potere, riuscita completa, progresso, un buon esito, cambiamenti, azione, miglioramenti,
 				una nuova direzione da seguire. Intelligenza, abilità manuale, audacia, energia, studi concreti, entusiasmo, creatività.
@@ -245,10 +307,9 @@ img {
 				<span class="sRed sBold">Negativa</span>: febbre, occhi, agitazione, crisi cardiaca, nervosismo, infortunio al capo, poca vitalità.
 			</p>
 
-			<p class="sMedium sCenter">
-				<b>2 - <span class="sBlue">LA PAPESSA</span></b> = Scienza - attesa -
-				<span class="sRed sBold">LUNA</span> - <b>2°</b> casa - Maggio, Giugno - Lunedì
-			</p>
+<a name="T02"></a>
+			<h4><b>2 - <span class="sBlue">LA PAPESSA</span></b> = Scienza - attesa -
+				<span class="sRed sBold">LUNA</span> - <b>2°</b> casa - Maggio, Giugno - Lunedì</h4>
 			<p>
 				<b>Casa, coppia</b>. Buon senso, attendere con fede, cautela e fede, serenità, denaro che entra in casa. La verità trionfa,
 				non rivelare le proprie intenzioni. Pazienza, riserbo, saggezza, memoria, comprensione, Immaginazione, ispirazione, desiderio che viene
@@ -259,10 +320,9 @@ img {
 				<span class="sRed sBold">Negativa</span>: nevrosi, reni, seno, esami e controlli, la vitalità è un po' scarsa.
 			</p>
 
-			<p class="sMedium sCenter">
-				<b>3 - <span class="sBlue">L'IMPERATRICE</span></b> = Azione e mente -
-				<span class="sRed sBold">VENERE  SOLE</span> - <b>3°</b> casa - Venerdì, Domenica
-			</p>
+<a name="T03"></a>
+			<h4><b>3 - <span class="sBlue">L'IMPERATRICE</span></b> = Azione e mente -
+				<span class="sRed sBold">VENERE  SOLE</span> - <b>3°</b> casa - Venerdì, Domenica</h4>
 			<p>
 				<b>Progetti realizzabili</b>. Intelligenza, vicinanza, arrivo di notizie e lettere, una promozione, dialogo. Uscita dai dubbi,
 				un aiuto risolutore, usare la mente, fortuna e abbondanza. Progresso, avanzamento, buoni affari, maggior guadagno, riuscita, breve viaggio.
@@ -273,11 +333,10 @@ img {
 				<span class="sRed sBold">Negativa</span>: disturbi al cuore e alle arterie, gravidanza con problemi, aborto, esaurimento nervoso.
 			</p>
 
-			<p class="sMedium sCenter">
-				<b>4 - <span class="sBlue">L'IMPERATORE</span></b> = Realizzazione e potere -
+<a name="T04"></a>
+			<h4><b>4 - <span class="sBlue">L'IMPERATORE</span></b> = Realizzazione e potere -
 				<span class="sRed sBold">GIOVE</span> - <b>4°, 7°, 12°</b> casa - Marzo, Luglio, Dicembre - Giovedì - Inizio Primavera,
-				Estate, Fine Autunno
-			</p>
+				Estate, Fine Autunno</h4>
 			<p>
 				<b>Certezza</b>, qualcosa di buono in vista, azione vittoriosa, apporto di di beni e di denaro, sforzi coronati da successo,
 				protezione di qualcuno potente, appoggio, esito positivo. Accordo con soci, firma di un contratto, fermezza, persuasione, autorità,
@@ -290,10 +349,9 @@ img {
 				fegato, pancreas.
 			</p>
 
-			<p class="sMedium sCenter">
-				<b>5 - <span class="sBlue">IL PAPA</span></b> = Ispirazione e dovere -
-				<span class="sRed sBold">MERCURIO</span> - <b>5°</b> casa - Giugno, Settembre - Mercoledì - Estate
-			</p>
+<a name="T05"></a>
+			<h4><b>5 - <span class="sBlue">IL PAPA</span></b> = Ispirazione e dovere -
+				<span class="sRed sBold">MERCURIO</span> - <b>5°</b> casa - Giugno, Settembre - Mercoledì - Estate</h4>
 			<p>
 				<b>Protezione divina</b>, aiuto morale, conoscenza , bisogno di comprensione, una persona che dà dei buoni consigli, degna di
 				fiducia. Studi superiori, protezione intellettuale, affermazione. Punto di riferimento, situazioni che devono essere analizzate in
@@ -306,10 +364,9 @@ img {
 				<span class="sRed sBold">Negativa</span>: poca energia fisica, sistema nervoso e agitazione, respirazione, tendenza ad ingrassare, calcoli,
 				reumatismi.</p>
 
-			<p class="sMedium sCenter">
-				<b>6 - <span class="sBlue">GLI AMANTI</span></b> = Scelta e prova -
-				<span class="sMaroon sBold">GEMELLI</span> / <span class="sGreen sBold">VERGINE</span> - <b>6°</b> casa - Giugno, Settembre - Mercoledì
-			</p>
+<a name="T06"></a>
+			<h4><b>6 - <span class="sBlue">GLI AMANTI</span></b> = Scelta e prova -
+				<span class="sMaroon sBold">GEMELLI</span> / <span class="sGreen sBold">VERGINE</span> - <b>6°</b> casa - Giugno, Settembre - Mercoledì</h4>
 			<p>
 				<b>Libero arbitrio</b>, due possibilità, usare il cervello, bluff, dialogo, onestà, dubbio, vicinanza, incertezza, oscurità.
 				Figli, hobby, tempo libero, piccoli animali. Un affare da vagliare con cautela. Sdoppiamento, tentazione, timore di sbagliare.<br>
@@ -319,10 +376,9 @@ img {
 				<span class="sRed sBold">Negativa</span>: Fegato, alti e bassi, crisi depressive, esaurimento nervoso, bisogno di aiuto morale.
 			</p>
 
-			<p class="sMedium sCenter">
-				<b>7 - <span class="sBlue">IL CARRO</span></b> = Vittoria e trionfo -
-				<span class="sRed sBold">SAGITTARIO</span> - <b>9°</b> casa - Dicembre - Giovedì - Fine Autunno
-			</p>
+<a name="T07"></a>
+			<h4><b>7 - <span class="sBlue">IL CARRO</span></b> = Vittoria e trionfo -
+				<span class="sRed sBold">SAGITTARIO</span> - <b>9°</b> casa - Dicembre - Giovedì - Fine Autunno</h4>
 			<p>
 				<b>Aiuto divino</b>, conquista, riuscita, progresso, intensa attività. Una questione si risolve nel migliore dei modi, superamento
 				delle difficoltà. Ambizione, entusiasmo, viaggio per lavoro, onori, talento, meriti riconosciuti, successo. Laurea a pieni voti, piena
@@ -334,10 +390,9 @@ img {
 				<span class="sRed sBold">Negativa</span>: incidenti, squilibri, umore instabile, spreco di energie. Panico, impotenza sessuale.
 			</p>
 
-			<p class="sMedium sCenter">
-				<b>8 - <span class="sBlue">LA GIUSTIZIA</span></b> = Equilibrio e rigore -
-				<span class="sMaroon sBold">BILANCIA</span> - <b>7°</b> casa - Ottobre - Venerdì - Autunno
-			</p>
+<a name="T08"></a>
+			<h4><b>8 - <span class="sBlue">LA GIUSTIZIA</span></b> = Equilibrio e rigore -
+				<span class="sMaroon sBold">BILANCIA</span> - <b>7°</b> casa - Ottobre - Venerdì - Autunno</h4>
 			<p>
 				<b>Accordo</b>, contratto d'ogni genere, esito favorevole di una contestazione, causa vinta, la cosa richiesta è giusta, diploma
 				di studio. Fermezza di opinioni e di propositi, giuste scelte nel lavoro, assunzione, acquisti fortunati. Riuscita, concorso pubblico,
@@ -350,10 +405,9 @@ img {
 				<span class="sRed sBold">Negativa</span>: disturbi reni, vescica, prostata, febbre, obesità, bronchite.
 			</p>
 
-			<p class="sMedium sCenter">
-				<b>9 - <span class="sRed">L'EREMITA</span></b> = Tempo e prudenza -
-				<span class="sRed sBold">SATURNO</span> - Dicembre - Sabato - Inverno
-			</p>
+<a name="T09"></a>
+			<h4><b>9 - <span class="sRed">L'EREMITA</span></b> = Tempo e prudenza -
+				<span class="sRed sBold">SATURNO</span> - Dicembre - Sabato - Inverno</h4>
 			<p>
 				<b>Pazienza</b>, discrezione, riservatezza, saper aspettare, parlare di meno, impedimento, difficoltà, cautela e riflessione,
 				progetto che va portato avanti. Solitudine, isolamento, lentezza e rinuncia, esperienza, è meglio fidarsi di se stesso che degli altri,
@@ -366,10 +420,9 @@ img {
 				<span class="sRed sBold">Negativa</span>: disturbi cardiaci, circolazione, fratture ossa, artrite, pressione, reni, reumatismi.
 			</p>
 
-			<p class="sMedium sCenter">
-				<b>10 - <span class="sBlue">RUOTA della FORTUNA</span></b> =  Buona sorte -
-				<span class="sGreen sBold">CAPRICORNO</span> - <b>10°</b> casa - Gennaio - Sabato - Inverno
-			</p>
+<a name="T10"></a>
+			<h4><b>10 - <span class="sBlue">RUOTA della FORTUNA</span></b> =  Buona sorte -
+				<span class="sGreen sBold">CAPRICORNO</span> - <b>10°</b> casa - Gennaio - Sabato - Inverno</h4>
 			<p>
 				<b>Cambiamenti improvvisi</b>, ma buoni e fortunati, destino felice, vincite al gioco, viaggi di lavoro. Ascesa ostacoli
 				superati, inizio di un nuovo ciclo, dialogo, iniziative fortunate, alternativa, progresso, acume e astuzia, sorpresa. Aiuti non richiesti,
@@ -391,10 +444,9 @@ img {
 		<table class="sBorder2sRR sBGWhite" cellspacing="1" cellpadding="5" width="96%" align="center">
 		<tr><td class="sBorder2sRR sBGLinen">
 
-			<p class="sMedium sCenter">
-				<b>11 - <span class="sBlue">LA FORZA</span></b> = Energia e volontà -
-				<span class="sRed sBold">LEONE</span> - <b>5°</b> casa - Agosto - Domenica - Estate
-			</p>
+<a name="T11"></a>
+			<h4><b>11 - <span class="sBlue">LA FORZA</span></b> = Energia e volontà -
+				<span class="sRed sBold">LEONE</span> - <b>5°</b> casa - Agosto - Domenica - Estate</h4>
 			<p>
 				Fiducia nelle proprie azioni, coraggio, decisione, nobiltà d'animo, convinzione e sicurezza, dominio su qualcosa o
 				qualcuno. Non scoraggiarsi, potere di conquista, agire con coraggio e determinazione, forza d'animo e di carattere, agire da soli senza
@@ -408,10 +460,9 @@ img {
 				nervosismo, debolezza fisica.
 			</p>
 
-			<p class="sMedium sCenter">
-				<b>12 - <span class="sRed">L'APPESO</span></b> = Sacrificio e dubbio -
-				<span class="sRed sBold">NETTUNO</span> - <b>12°</b> casa - Sabato - Fine Inverno
-			</p>
+<a name="T12"></a>
+			<h4><b>12 - <span class="sRed">L'APPESO</span></b> = Sacrificio e dubbio -
+				<span class="sRed sBold">NETTUNO</span> - <b>12°</b> casa - Sabato - Fine Inverno</h4>
 			<p>
 				Rassegnazione, delusione, distacco, disagio e sofferenza, lacrime. Un prezzo da pagare, menzogna e inganno, esito negativo. Niente di
 				nuovo all'orizzonte, fuga, resa, rinuncia, tradimento, errore, insidia, intrigo, calvario, debiti. Situazione difficile da interrompere,
@@ -422,10 +473,9 @@ img {
 				<span class="sRed sBold">Negativa</span>: operazione, incidente, reni, lutto, abuso di droghe, alcool e fumo.
 			</p>
 
-			<p class="sMedium sCenter">
-				<b>13 - <span class="sRed">LA MORTE</span></b> = Trasformazione e fine -
-				<span class="sRed sBold">PLUTONE</span> - <b>8°</b> casa - Martedì - Autunno
-			</p>
+<a name="T12"></a>
+			<h4><b>13 - <span class="sRed">LA MORTE</span></b> = Trasformazione e fine -
+				<span class="sRed sBold">PLUTONE</span> - <b>8°</b> casa - Martedì - Autunno</h4>
 			<p>
 				Rinnovamento, fallimento, fatalità, delusione, dispiacere. Cambiamento radicale e inatteso. Un anno che deve passare, attendere in
 				silenzio, una sconfitta che porta con se una lezione utile. Fine o inizio di un ciclo, nuovi affari meno vincolanti e pesanti, salto di
@@ -439,10 +489,9 @@ img {
 				<span class="sRed sBold">Negativa</span>: Ossa, nervi scossi, salute malferma, lutto, pericolo di morte.
 			</p>
 
-			<p class="sMedium sCenter">
-				<b>14 - <span class="sBlue">LA TEMPERANZA</span></b> = Adattamento e iniziativa -
-				<span class="sMaroon sBold">ACQUARIO</span> - <b>11°</b> casa - Febbraio- Inverno
-			</p>
+<a name="T14"></a>
+			<h4><b>14 - <span class="sBlue">LA TEMPERANZA</span></b> = Adattamento e iniziativa -
+				<span class="sMaroon sBold">ACQUARIO</span> - <b>11°</b> casa - Febbraio- Inverno</h4>
 			<p>
 				Cambiamento, miglioramento di progetti e desideri, speranze che si realizzano, sorprese, appoggio, calma, fiducia e autocontrollo.
 				Una situazione può avere una doppia soluzione, una trasformazione. Moderazione, capacità e abilità nel lavoro, dei buoni appoggi, disponibilità, protezione, un imprevisto. Occorre battersi. Telefono, radio, televisione, elettricità. treno, automobile, aereo e spazio.<br>
@@ -451,10 +500,9 @@ img {
 				<span class="sRed sBold">Negativa</span>: circolazione, vene, caviglie, ossessione, apatia, tensione, nervosismo.
 			</p>
 
-			<p class="sMedium sCenter">
-				<b>15 - <span class="sRed"> IL DIAVOLO</span></b> =  Pericolo e imprevisto -
-				<b><span class="sRed">MARTE</span> / <span class="sBlue">SCORPIONE</span></b> - Martedì - Autunno
-			</p>
+<a name="T15"></a>
+			<h4><b>15 - <span class="sRed"> IL DIAVOLO</span></b> =  Pericolo e imprevisto -
+				<b><span class="sRed">MARTE</span> / <span class="sBlue">SCORPIONE</span></b> - Martedì - Autunno</h4>
 			<p>
 				Controversia, fatalità, difficoltà, complicazioni e guai in genere, violenza, inganno, errore. Ricchezza usata male, realizzazioni non
 				prive di ostacoli. Sete di potere, problemi e fastidi in arrivo, un periodo cruciale dell'esistenza. Timore di non farcela, egoismo,
@@ -467,10 +515,9 @@ img {
 				<span class="sRed sBold">Negativa</span>: complicazione di una malattia, esaurimento nervoso.
 			</p>
 
-			<p class="sMedium sCenter">
-				<b>16 - <span class="sRed">LA TORRE</span></b> = Rovina e crollo -
-				<span class="sRed sBold">URANO</span> - Tutte le stagione, ogni momento
-			</p>
+<a name="T16"></a>
+			<h4><b>16 - <span class="sRed">LA TORRE</span></b> = Rovina e crollo -
+				<span class="sRed sBold">URANO</span> - Tutte le stagione, ogni momento</h4>
 			<p>
 				Cattiva sorpresa, il periodo è negativo, calamità, disperazione. Angoscia, delusione, difficoltà, perdita di denaro o di lavoro. Fortuna
 				avversa, rischio di decisioni troppo affrettate, avvenimento imprevisto, furto. Crollo di progetti, timore giustificato, una situazione
@@ -483,10 +530,9 @@ img {
 				e di lavoro. Esaurimento nervoso, stanchezza, collasso, ictus, un lutto improvviso.
 			</p>
 
-			<p class="sMedium sCenter">
-				<b>17 - <span class="sBlue">LE STELLE</span></b> =  Riuscita e speranza -
-				<b><span class="sRed">VENERE</span> / <span class="sBlue">PESCI</b> - Venerdì - Fine Inverno
-			</p>
+<a name="T17"></a>
+			<h4><b>17 - <span class="sBlue">LE STELLE</span></b> =  Riuscita e speranza -
+				<b><span class="sRed">VENERE</span> / <span class="sBlue">PESCI</b> - Venerdì - Fine Inverno</h4>
 			<p>
 				Successo, benessere e abbondanza, prosperità, un roseo futuro, aiuto divino, promesse mantenute anche se non immediate. Verità, bontà,
 				bellezza, colpo di fortuna, chiarezza interiore, soddisfazione, nuove iniziative. Gratificazioni, il momento è propizio, dei sogni
@@ -509,10 +555,9 @@ img {
 		<table class="sBorder2sRR sBGWhite" cellspacing="1" cellpadding="5" width="96%" align="center">
 		<tr><td class="sBorder2sRR sBGLinen">
 
-			<p class="sMedium sCenter">
-				<b>18 - <span class="sRed">LA LUNA</span></b> = Delusione e pericolo -
-				<b><span class="sRed">LUNA</span> / <span class="sBlue">CANCRO</span></b> - Lunedì notte - Estate
-			</p>
+<a name="T18"></a>
+			<h4><b>18 - <span class="sRed">LA LUNA</span></b> = Delusione e pericolo -
+				<b><span class="sRed">LUNA</span> / <span class="sBlue">CANCRO</span></b> - Lunedì notte - Estate</h4>
 			<p>
 				Conquista faticosa, passato che ritorna, furti, menzogna, nemici sconosciuti. Sogni premonitori, ansia e sfiducia, pericolo di errori
 				o scelte sbagliate, avvenimenti non ancora ben definiti, il silenzio è d'oro. Non parlare dei propri problemi, immaginazione, intuizione,
@@ -527,10 +572,9 @@ img {
 				alle ovaie, esaurimento nervoso.
 			</p>
 
-			<p class="sMedium sCenter">
-				<b>19 - <span class="sBlue">IL SOLE</span></b> = Felicità e verità -
-				<b><span class="sRed">SOLE</span> / <span class="sMaroon">GEMELLI</span></b> - Giugno - Mercoledì - Domenica
-			</p>
+<a name="T19"></a>
+			<h4><b>19 - <span class="sBlue">IL SOLE</span></b> = Felicità e verità -
+				<b><span class="sRed">SOLE</span> / <span class="sMaroon">GEMELLI</span></b> - Giugno - Mercoledì - Domenica</h4>
 			<p>
 				Fortuna e successo, serenità, pace, onori, gloria, superamento degli ostacoli, situazione professionale brillante. Incarico di fiducia,
 				conquiste artistiche, un viaggio di lavoro. Esito positivo di una qualsiasi impresa. Chiarezza di pensiero e di giudizio, un consistente
@@ -541,9 +585,8 @@ img {
 				<span class="sRed sBold">Negativa</span>: disturbi cardiaci, occhi, scottature.
 			</p>
 
-			<p class="sMedium sCenter">
-				<b>20 - <span class="sBlue">IL GIUDIZIO</span></b> = Rinascita e rinnovamento - Febbraio - Sabato - Inverno
-			</p>
+<a name="T20"></a>
+			<h4><b>20 - <span class="sBlue">IL GIUDIZIO</span></b> = Rinascita e rinnovamento - Febbraio - Sabato - Inverno</h4>
 			<p>
 				Protezione divina, sorpresa, novità, buona notizia, fretta, lettera, visita, viaggio in aereo. Una svolta positiva, successo incredibile,
 				arrivo quasi immediato di qualcosa che si aspetta da lungo tempo. Un chiarimento di una situazione, una discussione, un contrasto, decisioni
@@ -556,10 +599,9 @@ img {
 				<span class="sRed sBold">Negativa</span>: bisogno di cure ricostituenti, di riposo, nervosismo, agitazione.
 			</p>
 
-			<p class="sMedium sCenter">
-				<b>21 - <span class="sBlue">IL MONDO</span></b> =  Espiazione e compimento -
-				<span class="sGreen sBold">TORO</span> - Maggio - Lunedì - Venerdì
-			</p>
+<a name="T21"></a>
+			<h4><b>21 - <span class="sBlue">IL MONDO</span></b> =  Espiazione e compimento -
+				<span class="sGreen sBold">TORO</span> - Maggio - Lunedì - Venerdì</h4>
 			<p>
 				Denaro, ricchezza, trionfo, riuscita totale, sogni che si avverano, professione sicura, successo, viaggio in luoghi lontani. Sforzi
 				ricompensati, colpo di fortuna, vincita al gioco, eredità, onori e gloria, buoni guadagni, premio. Coronamento dell'opera, obiettivi
@@ -572,10 +614,9 @@ img {
 				<span class="sRed sBold">Negativa</span>: problemi o disturbi della nutrizione, anoressia.
 			</p>
 
-			<p class="sMedium sCenter">
-				<b>22/0 - <span class="sRed">IL MATTO</span></b> =  Confusione e caos -
-				<span class="sBlue sBold">SCORPIONE</span> - Novembre - Martedì - Autunno
-			</p>
+<a name="T22"></a>
+			<h4><b>22/0 - <span class="sRed">IL MATTO</span></b> =  Confusione e caos -
+				<span class="sBlue sBold">SCORPIONE</span> - Novembre - Martedì - Autunno</h4>
 			<p>
 				Dubbio, follia, errore, colpo di testa, scelta sbagliata, decisione affrettata, cattivo incontro, cammino incerto. Incoscienza,
 				impulsività, rifiuto delle costrizioni, incognita, rischio. Un imprevisto, menzogna, invidia, inganno, tradimento, odio, ribellione.
@@ -703,4 +744,5 @@ img {
 	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html">qui</a>.
 </footer>
 </body>
+<script src="TornaSu.js"></script>
 </html>
