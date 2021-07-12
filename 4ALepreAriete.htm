@@ -12,7 +12,7 @@
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="05/06/2021"><!-- content="22/07/2017" -->
-<meta name="revised" content="12/06/2021">
+<meta name="revised" content="12/07/2021">
 
 <style type="text/css">
 body {
@@ -46,8 +46,8 @@ h2 {
 	font-weight: bold;
 	color: #450169; /* Indigo */
 	text-align: center;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-top: 30px;
 	/* margin-bottom: 0; */
 }
@@ -59,8 +59,8 @@ header {
 	text-align: center;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-top: 25px;	/* vertical-align: middle; */
-	margin-bottom: 0;	/* vertical-align: middle; */
+	margin-top: 25px; /* vertical-align: middle; */
+	margin-bottom: 0px;
 	height: 70px;
 }
 footer {
@@ -77,9 +77,9 @@ p {
 	font-size: small;
 	color: #450169; /* Indigo */
 	text-align: justify;
-	padding-left: 35px;
-	padding-right: 35px;
-	line-height: 125%;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 130%;
 	hyphens: auto;
 }
 img {
@@ -91,15 +91,14 @@ img {
 	flex-flow: row wrap;
 	justify-content: center;
 	list-style: none;
-	margin: 0;
-	padding-left: 10px;
-	padding-right: 10px;
-	line-height: 180%;
+	margin: 0px;
+	padding: 0px;
+	line-height: 220%;
 }
 .sNavigation a {
 	font-size: medium;
 	font-weight: bold;
-	padding:.42em;
+	padding: 5px; /* .42em; */
 	color: #FFFFFF; /* White */
 	margin-left: 2px;
 	background: #7C64CC; /* Slate Blue */
@@ -110,13 +109,20 @@ img {
 	background: #FF66FF; /* Pink Flamingo */
 }
 #PagCorrente {
-	border-bottom: 2.5px solid red;
+	border-bottom: 3px solid red;
 }
 .sHomeIcon {
 	vertical-align: bottom;
-	margin-bottom: 1px;
+	margin-bottom: 2px;
 	height: 25px;
 	width: 25px;
+}
+#TornaSu {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	padding: 10px;
+	display: none;
 }
 .sBlue {
 				color: #0000FF;
@@ -136,6 +142,9 @@ img {
 .sCenter {
 				text-align: center;
 }
+.sNoShadow {
+			text-shadow: 0px 0px 0px;
+}
 .sVediImg1 {
 	display: inline;
 }
@@ -148,31 +157,47 @@ img {
 .sVediImg4 {
 	display: inline;
 }
-@media screen and (max-width:1157px) {
+@media screen and (max-width: 1157px) {
 	.sVediImg3 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:955px) {
+@media screen and (max-width: 955px) {
 	.sVediImg1 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:645px) {
+@media screen and (max-width: 645px) {
 	.sVediImg2 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:712px) {
+@media screen and (max-width: 712px) {
 	.sVediImg4 {
 		display: none !important;
 	}
+}
+.sSegniSize {
+			text-align: center;
+			font-size: 22px;
+}
+.sSegniLink {
+			text-decoration: none;
+}
+.sSegniDesc {
+			text-align: center;
+			font-size: x-small;
+			color: #450169; /* Indigo */
+			line-height: 100%;
+			padding: 0px;
 }
 </style>
 </head>
 
 <body>
 <header>Studio di Astrologia "Acquario"</header>
+<a name="Inizio"></a>
+<a href="#Inizio" title="Torna all'inizio della pagina"><div id="TornaSu"><img src= "TornaSu.png" width="40px" height="40px"></div></a>
 
 <TABLE BACKGROUND="grafiche/CineZodi_barraVert.jpg" CELLSPACING="5"  CELLPADDING="10" BORDER="1" BORDERCOLOR="#DCD4F6" BORDERCOLORDARK="#7361AD" width="96%" align="center">
 <tr><td BACKGROUND="grafiche/CineZodi_barraVert2.jpg">
@@ -217,6 +242,14 @@ img {
 			<img src="grafiche/CineZodi_linea.jpg" class="sVediImg3" width="410" height="47" alt="Linea con Rosa">
 		</p>
 
+		<div class="sSegniSize">
+			<a href="#Ariete" title="Ariete" class="sSegniLink">&#9800;</a><a href="#Toro" title="Toro" class="sSegniLink">&#9801;</a><a href="#Gemelli" title="Gemelli" class="sSegniLink">&#9802;</a><a href="#Cancro" title="Cancro" class="sSegniLink">&#9803;</a><a href="#Leone" title="Leone" class="sSegniLink">&#9804;</a><a href="#Vergine" title="Vergine" class="sSegniLink">&#9805;</a><a href="#Bilancia" title="Bilancia" class="sSegniLink">&#9806;</a><a href="#Scorpione" title="Scorpione" class="sSegniLink">&#9807;</a><a href="#Sagittario" title="Sagittario" class="sSegniLink">&#9808;</a><a href="#Capricorno" title="Capricorno" class="sSegniLink">&#9809;</a><a href="#Acquario" title="Acquario" class="sSegniLink">&#9810;</a><a href="#Pesci" title="Pesci" class="sSegniLink">&#9811;</a>
+		</div>
+		<div class="sSegniDesc">
+			Clicca sul simbolo di un segno per passare alla sua descrizione
+		</div>
+
+<a name="Ariete"></a>
 		<h2>LEPRE - <span class="sRed">ARIETE</span></h2>
 		<p>
 			L'impeto irruento dell'<span class="sRed sBold">Ariete</span>, la sua impazienza, la mancanza di diplomazia e di tatto, trova nella
@@ -229,6 +262,7 @@ img {
 			e non tollera sgarberie e mancanza di tatto nel partner. Può essere infedele se l'atmosfera domestica è poco allegra.
 		</p>
 
+<a name="Toro"></a>
 		<h2>LEPRE - <span class="sGreen">TORO</span></h2>
 		<p>
 			Amante della vita comoda ma poco disposto a faticare troppo per procurarsi il benessere si presenta di regola gentile e dai modi suadenti.
@@ -240,6 +274,7 @@ img {
 			amore, soprattutto se ha figli nessuna nube può turbare il suo matrimonio.
 		</p>
 
+<a name="Gemelli"></a>
 		<h2>LEPRE - <span class="sGoldenBrown">GEMELLI</span></h2>
 		<p>
 			La più agile e inafferrabile fra le <b>Lepri</b>. L'idealismo della <b>Lepre</b> si fonde bene con le caratteristiche
@@ -251,6 +286,7 @@ img {
 			di gran lunga un rapporto sereno e stimolante sul piano mentale e in questo caso è un partner delizioso ma infedele.
 		</p>
 
+<a name="Cancro"></a>
 		<h2>LEPRE - <span class="sBlue">CANCRO</span></h2>
 		<p>
 			Al <span class="sBlue sBold">Cancro</span> piace la sicurezza economica, la <b>Lepre</b> morirebbe senza tutte quelle piccole
@@ -263,6 +299,7 @@ img {
 			fedele, pieno di fantasia e di intuito, con il quale è difficile annoiarsi.
 		</p>
 
+<a name="Leone"></a>
 		<h2>LEPRE - <span class="sRed">LEONE</span></h2>
 		<p>
 			In generale di umore eguale e socievole, la <b>Lepre</b> <span class="sRed sBold">Leone</span> adora ricevere. Diplomatico, di
@@ -274,6 +311,7 @@ img {
 			tradizioni. Affettivamente è leale e appassionato, ma piuttosto esclusivo.
 		</p>
 
+<a name="Vergine"></a>
 		<h2>LEPRE - <span class="sGreen">VERGINE</span></h2>
 		<p>
 			La delicatezza della <b>Lepre</b>, il suo amore per tutto quanto è raffinato, il suo rifiuto di scontrarsi con il prossimo,
@@ -285,6 +323,7 @@ img {
 			collettive e la banalità. La sua famiglia occupa un posto importante. In amore è fedele ma, al tempo stesso dà molto e pretende molto.
 		</p>
 
+<a name="Bilancia"></a>
 		<h2>LEPRE - <span class="sGoldenBrown">BILANCIA</span></h2>
 		<p>
 			Il fascino della <span class="sGoldenBrown sBold">Bilancia</span> trova nella dolcezza della <b>Lepre</b> un supporto non sempre
@@ -297,6 +336,7 @@ img {
 			però non rinuncia per loro alla sua vita privata, sociale e alla carriera.
 		</p>
 
+<a name="Scorpione"></a>
 		<h2>LEPRE - <span class="sBlue">SCORPIONE</span></h2>
 		<p>
 			La <b>Lepre</b> addolcisce il ben noto "caratteraccio" dello <span class="sBlue sBold">Scorpione</span>, gli dà il
@@ -309,6 +349,7 @@ img {
 			pretenzioso con le persone che gli stanno vicino. Deve ricordare che in amore non si può solo pretendere, ma si deve saper donare.
 		</p>
 
+<a name="Sagittario"></a>
 		<h2>LEPRE - <span class="sRed">SAGITTARIO</span></h2>
 		<p>
 			Al <span class="sRed sBold">Sagittario</span> idealista e pratico la <b>Lepre</b> regala socievolezza e molto equilibrio. Ottimista,
@@ -320,6 +361,7 @@ img {
 			sempre fedele sa farsi perdonare le eventuali scappatelle.
 		</p>
 
+<a name="Capricorno"></a>
 		<h2>LEPRE - <span class="sGreen">CAPRICORNO</span></h2>
 		<p>
 			Metodico, abitudinario, fornito di gusti semplici ma amante al tempo stesso della vita confortevole, percorre a passi lenti e decisi la
@@ -331,6 +373,7 @@ img {
 			collaudata tradizione, è con il compagno di vita e gli eventuali figli che utilizza le sue riserve di tenerezza nascosta.
 		</p>
 
+<a name="Acquario"></a>
 		<h2>LEPRE - <span class="sGoldenBrown">ACQUARIO</span></h2>
 		<p>
 			Estremamente socievole la <b>Lepre</b> <span class="sGoldenBrown sBold">Acquario</span>, è sempre pronto a offrire la sua amicizia e ad
@@ -342,6 +385,7 @@ img {
 			esige che il rapporto sia un'autentica comunione di anime, alla stima e al rispetto reciproco.
 		</p>
 
+<a name="Pesci"></a>
 		<h2>LEPRE - <span class="sBlue">PESCI</span></h2>
 		<p>
 			Di indole mite, amabile, molto sensibile la <b>Lepre</b> <span class="sBlue sBold">Pesci</span> si lascia volentieri guidare da
@@ -379,7 +423,8 @@ img {
 <footer>
 	Laura Lencia - Studio di Astrologia "Acquario". Copyright © 1998-2021. Tutti i diritti sono riservati.
 	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
-	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html" style="text-shadow:0 0 0;">qui</a>.
+	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html" class="sNoShadow sBlue">qui</a>.
 </footer>
 </body>
+<script src="TornaSu.js"></script>
 </html>

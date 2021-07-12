@@ -12,7 +12,7 @@
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="15/06/2021"><!-- content="30/04/2019" -->
-<meta name="revised" content="15/06/2021">
+<meta name="revised" content="12/07/2021">
 
 <style type="text/css">
 body {
@@ -47,16 +47,16 @@ h2 {
 	font-weight: bold;
 	color: #551C00; /* sBakerChoc */
 	text-align: center;
-	padding-left: 35px;
-	padding-right: 35px;
-	margin-top: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 25px;
 }
 h3 {
 	font-size: medium;
 	color: #551C00; /* sBakerChoc */
 	text-align: center;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-top: 0;
 }
 header {
@@ -67,8 +67,8 @@ header {
 	text-align: center;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-top: 25px;	/* vertical-align: middle; */
-	margin-bottom: 0;	/* vertical-align: middle; */
+	margin-top: 25px; /* vertical-align: middle; */
+	margin-bottom: 0px;
 	height: 70px;
 }
 footer {
@@ -85,14 +85,21 @@ p {
 	font-size: small;
 	color: #000000; /* Black */
 	text-align: justify;
-	padding-left: 35px;
-	padding-right: 35px;
-	line-height: 125%;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 130%;
 	hyphens: auto;
 }
 img {
 	max-width: 100%;
 	height: auto;
+}
+#TornaSu {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	padding: 10px;
+	display: none;
 }
 .sBorder1s {
 			border-style: solid;
@@ -143,6 +150,9 @@ img {
 .sWhite {
 			color: #FFFFFF;
 }
+.sNoLink {
+			text-decoration: none;
+}
 .sCenter {
 			text-align: center;
 }
@@ -174,11 +184,20 @@ img {
 		display: none !important;
 	}
 }
+.sSegniDesc {
+			text-align: center;
+			font-size: x-small;
+			color: #6B0E27; /* Pohutukawa */
+			line-height: 100%;
+			padding: 0px;
+}
 </style>
 </head>
 
 <body>
 <header>Studio di Astrologia "Acquario"</header>
+<a name="Inizio"></a>
+<a href="#Inizio" title="Torna all'inizio della pagina"><div id="TornaSu"><img src= "TornaSu.png" width="40px" height="40px"></div></a>
 
 <TABLE BACKGROUND="grafiche/ColoreN_rettangolo.jpg" CELLSPACING="20" CELLPADDING="15" class="sBorder2s" BORDERCOLOR="#CD8B19" BORDERCOLORDARK="#4C3100" width="96%" align="center">
 <tr><td BACKGROUND="grafiche/ColoreN_barraVert2.jpg">
@@ -188,8 +207,8 @@ img {
 
 		<h1>IL COLORE DEL NOME</h1>
 		<p class="sCenter">
-			<IMG SRC="grafiche/ColoreN_lineaCorta.jpg" width="479" height="30"                   alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<IMG SRC="grafiche/ColoreN_lineaCorta.jpg" width="479" height="30" class="sVediImg1" alt="">
+			<img SRC="grafiche/ColoreN_lineaCorta.jpg" width="479" height="30"                   alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img SRC="grafiche/ColoreN_lineaCorta.jpg" width="479" height="30" class="sVediImg1" alt="">
 		</p>
 
 		<p class="sBakerChoc sLarge">
@@ -200,44 +219,48 @@ img {
 			molte volte) ciò significa che siete un tipo misto. Leggete i testi relativi ai due o più colori.<br><br>
 			Mio esempio:<b>
 			<span class="sRed">L</span><span class="sWhite">A</span><span class="sRed">U</span><span class="sBlack">R</span><span class="sWhite">A</span> <span class="sRed">L</span><span class="sYellow">EN</span><span class="sRed">C</span><span class="sBlack">I</span><span class="sWhite">A</span>
-			--&gt; 4 <span class="sRed">Rossi</span> (L, U, L, C) e 3 <span class="sWhite">Bianchi</span> (A, A, A).</b><br><br>
+			--&gt; 4 <span class="sRed">Rossi</span> (L, U, L, C) e 3 <span class="sWhite">Bianchi</span> (A, A, A).</b>
+			<br><br>
 		</p>
 
 		<table cellpadding="4" cellspacing="0" class="sBorder4s" bordercolor="#800000" bordercolordark="#800000" bordercolorlight="#800000" align="center">
-		<TBODY class="sXLarge sBold" style="height: 45px">
+		<tbody class="sXLarge sBold" style="height: 45px;">
 		<tr>
-			<td width="11%" class="sWhite">A</td>
-			<td width="11%" class="sDeepMagenta">B</td>
-			<td width="11%" class="sRed">C</td>
-			<td width="11%" class="sNeonCarot">D</td>
-			<td width="11%" class="sYellow">E</td>
-			<td height="20" class="sMaroon">F</td>
-			<td width="11%" class="sGreen">G</td>
-			<td width="11%" class="sBlue">H</td>
-			<td width="11%" class="sBlack">I</td>
+			<td width="11%"><a href="#Bianco" class="sWhite sNoLink">A</a></td>
+			<td width="11%"><a href="#Viola" class="sDeepMagenta sNoLink">B</a></td>
+			<td width="11%"><a href="#Rosso" class="sRed sNoLink">C</a></td>
+			<td width="11%"><a href="#Arancione" class="sNeonCarot sNoLink">D</a></td>
+			<td width="11%"><a href="#Giallo" class="sYellow sNoLink">E</a></td>
+			<td height="20"><a href="#Marrone" class="sMaroon sNoLink">F</a></td>
+			<td width="11%"><a href="#Verde" class="sGreen sNoLink">G</a></td>
+			<td width="11%"><a href="#Blu" class="sBlue sNoLink">H</a></td>
+			<td width="11%"><a href="#Nero" class="sBlack sNoLink">I</a></td>
 		</tr>
 		<tr>
-			<td class="sWhite">J</td>
-			<td class="sDeepMagenta">K</td>
-			<td class="sRed">L</td>
-			<td class="sNeonCarot">M</td>
-			<td class="sYellow">N</td>
-			<td class="sMaroon">O</td>
-			<td class="sGreen">P</td>
-			<td class="sBlue">Q</td>
-			<td class="sBlack">R</tr>
+			<td><a href="#Bianco" class="sWhite sNoLink">J</a></td>
+			<td><a href="#Viola" class="sDeepMagenta sNoLink">K</a></td>
+			<td><a href="#Rosso" class="sRed sNoLink">L</a></td>
+			<td><a href="#Arancione" class="sNeonCarot sNoLink">M</a></td>
+			<td><a href="#Giallo" class="sYellow sNoLink">N</a></td>
+			<td><a href="#Marrone" class="sMaroon sNoLink">O</a></td>
+			<td><a href="#Verde" class="sGreen sNoLink">P</a></td>
+			<td><a href="#Blu" class="sBlue sNoLink">Q</a></td>
+			<td><a href="#Nero" class="sBlack sNoLink">R</a></td>
 		<tr>
-			<td class="sWhite">S</td>
-			<td class="sDeepMagenta">T</td>
-			<td class="sRed">U</td>
-			<td class="sNeonCarot">V</td>
-			<td class="sYellow">W</td>
-			<td class="sMaroon">X</td>
-			<td class="sGreen">Y</td>
-			<td class="sBlue">Z</td>
-			<td class="sBlack">&nbsp;</tr>
+			<td><a href="#Bianco" class="sWhite sNoLink">S</a></td>
+			<td><a href="#Viola" class="sDeepMagenta sNoLink">T</a></td>
+			<td><a href="#Rosso" class="sRed sNoLink">U</a></td>
+			<td><a href="#Arancione" class="sNeonCarot sNoLink">V</a></td>
+			<td><a href="#Giallo" class="sYellow sNoLink">W</a></td>
+			<td><a href="#Marrone" class="sMaroon sNoLink">X</a></td>
+			<td><a href="#Verde" class="sGreen sNoLink">Y</a></td>
+			<td><a href="#Blu" class="sBlue sNoLink">Z</a></td>
+			<td class="sBlack">&nbsp;</td>
 		</tr>
-		</TBODY></table>
+		</tbody></table>
+		<div class="sSegniDesc">
+			Clicca sulla lettera per passare alla sua descrizione
+		</div>
 
 		<P class="sCenter">
 			<br>
@@ -246,6 +269,7 @@ img {
 			<BR>
 		</p>
 
+<a name="Bianco"></a>
 		<h2><span class="sWhite">BIANCO</span> = <span class="sWhite">A</span> - <span class="sWhite">J</span> - <span class="sWhite">S</span></h2>
 		<h3>Un' anima lieve</h3>
 		<p>
@@ -257,6 +281,7 @@ img {
 			con serenità e giovanile innocenza.
 		</p>
 
+<a name="Viola"></a>
 		<h2><span class="sDeepMagenta">VIOLA</span> = <span class="sDeepMagenta">B</span> - <span class="sDeepMagenta">K</span> - <span class="sDeepMagenta">T</span></h2>
 		<h3>La chiara forza del carisma</h3>
 		<p>
@@ -269,6 +294,7 @@ img {
 			piace esercitare il suo fascino e sedurre.
 		</p>
 
+<a name="Rosso"></a>
 		<h2><span class="sRed">ROSSO</span> = <span class="sRed">C</span> - <span class="sRed">L</span> - <span class="sRed">U</span></h2>
 		<h3>Un soggetto "iper" in ogni campo</h3>
 		<p>
@@ -281,6 +307,7 @@ img {
 			coraggio e la bravura.
 		</p>
 
+<a name="Arancione"></a>
 		<h2><span class="sMangoTango">ARANCIONE</span> = <span class="sMangoTango">D</span> - <span class="sMangoTango">M</span> - <span class="sMangoTango">V</span></h2>
 		<h3>Viva la vita spesa con gioia e generosità</h3>
 		<p>
@@ -291,6 +318,7 @@ img {
 			la slealtà e l'imbroglio, se si trova davanti a queste situazioni diventa un nemico pauroso.
 		</p>
 
+<a name="Giallo"></a>
 		<h2><span class="sYellow">GIALLO</span> = <span class="sYellow">E</span> - <span class="sYellow">N</span> - <span class="sYellow">W</span></h2>
 		<h3>Luminoso e caldo come il sole</h3>
 		<p>
@@ -302,6 +330,7 @@ img {
 			Tende all'infedeltà, perché ha bisogno di essere cercato, desiderato, sempre al centro dell'attenzione.
 		</p>
 
+<a name="Marrone"></a>
 		<h2><span class="sMaroon">MARRONE</span> = <span class="sMaroon">F</span> - <span class="sMaroon">O</span> - <span class="sMaroon">X</span></h2>
 		<h3>Con i piedi ben piantati per terra</h3>
 		<p>
@@ -313,6 +342,7 @@ img {
 			sensoriali forti per sentirsi vitale.
 		</p>
 
+<a name="Verde"></a>
 		<h2><span class="sGreen">VERDE</span> = <span class="sGreen">G</span> - <span class="sGreen">P</span> - <span class="sGreen">Y</span></h2>
 		<h3>Grande capacità di rinnovamento</h3>
 		<p>
@@ -325,6 +355,7 @@ img {
 			come una persona diversa, perché ama rinnovarsi.
 		</p>
 
+<a name="Blu"></a>
 		<h2><span class="sBlue">BLU</span> = <span class="sBlue">H</span> - <span class="sBlue">Q</span> - <span class="sBlue">Z</span></h2>
 		<h3>Qui regnano lealtà e armonia</h3>
 		<p>
@@ -336,6 +367,7 @@ img {
 			intorno. Ha una particolare attenzione per le persone fragili, alle quali ama fare da maestro.
 		</p>
 
+<a name="Nero"></a>
 		<h2><span class="sBlack">NERO</span> = <span class="sBlack">I</span> - <span class="sBlack">R</span></h2>
 		<h3>Il fascino della notte e del mistero</h3>
 		<p>
@@ -367,12 +399,13 @@ img {
 			&nbsp;(Contenuto Aggiornato <time datetime="2021-06-15">15/06/2021</time>)<br><br>
 		</p>
 
-</TD></TR></TABLE>
-</TD></TR></TABLE>
+</TD></TR></table>
+</TD></TR></table>
 <footer>
 	Laura Lencia - Studio di Astrologia "Acquario". Copyright © 1998-2021. Tutti i diritti sono riservati.
 	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
 	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html">qui</a>.
 </footer>
-</BODY>
-</HTML>
+</body>
+<script src="TornaSu.js"></script>
+</html>

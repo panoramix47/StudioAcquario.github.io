@@ -12,7 +12,7 @@
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="05/06/2021"><!-- content="01/02/2019" -->
-<meta name="revised" content="12/06/2021">
+<meta name="revised" content="12/07/2021">
 
 <style type="text/css">
 body {
@@ -46,8 +46,8 @@ h2 {
 	font-weight: bold;
 	color: #450169; /* Indigo */
 	text-align: center;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-top: 30px;
 	/* margin-bottom: 0; */
 }
@@ -59,8 +59,8 @@ header {
 	text-align: center;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-top: 25px;	/* vertical-align: middle; */
-	margin-bottom: 0;	/* vertical-align: middle; */
+	margin-top: 25px; /* vertical-align: middle; */
+	margin-bottom: 0px;
 	height: 70px;
 }
 footer {
@@ -77,9 +77,9 @@ p {
 	font-size: small;
 	color: #450169; /* Indigo */
 	text-align: justify;
-	padding-left: 35px;
-	padding-right: 35px;
-	line-height: 125%;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 130%;
 	hyphens: auto;
 }
 img {
@@ -91,15 +91,14 @@ img {
 	flex-flow: row wrap;
 	justify-content: center;
 	list-style: none;
-	margin: 0;
-	padding-left: 10px;
-	padding-right: 10px;
-	line-height: 180%;
+	margin: 0px;
+	padding: 0px;
+	line-height: 220%;
 }
 .sNavigation a {
 	font-size: medium;
 	font-weight: bold;
-	padding:.42em;
+	padding: 5px; /* .42em; */
 	color: #FFFFFF; /* White */
 	margin-left: 2px;
 	background: #7C64CC; /* Slate Blue */
@@ -110,13 +109,20 @@ img {
 	background: #FF66FF; /* Pink Flamingo */
 }
 #PagCorrente {
-	border-bottom: 2.5px solid red;
+	border-bottom: 3px solid red;
 }
 .sHomeIcon {
 	vertical-align: bottom;
-	margin-bottom: 1px;
+	margin-bottom: 2px;
 	height: 25px;
 	width: 25px;
+}
+#TornaSu {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	padding: 10px;
+	display: none;
 }
 .sBlue {
 			color: #0000FF;
@@ -136,6 +142,9 @@ img {
 .sCenter {
 			text-align: center;
 }
+.sNoShadow {
+			text-shadow: 0px 0px 0px;
+}
 .sVediImg1 {
 	display: inline;
 }
@@ -148,31 +157,47 @@ img {
 .sVediImg4 {
 	display: inline;
 }
-@media screen and (max-width:1157px) {
+@media screen and (max-width: 1157px) {
 	.sVediImg3 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:995px) {
+@media screen and (max-width: 995px) {
 	.sVediImg1 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:700px) {
+@media screen and (max-width: 700px) {
 	.sVediImg2 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:712px) {
+@media screen and (max-width: 712px) {
 	.sVediImg4 {
 		display: none !important;
 	}
+}
+.sSegniSize {
+			text-align: center;
+			font-size: 22px;
+}
+.sSegniLink {
+			text-decoration: none;
+}
+.sSegniDesc {
+			text-align: center;
+			font-size: x-small;
+			color: #450169; /* Indigo */
+			line-height: 100%;
+			padding: 0px;
 }
 </style>
 </head>
 
 <body>
 <header>Studio di Astrologia "Acquario"</header>
+<a name="Inizio"></a>
+<a href="#Inizio" title="Torna all'inizio della pagina"><div id="TornaSu"><img src= "TornaSu.png" width="40px" height="40px"></div></a>
 
 <TABLE BACKGROUND="grafiche/CineZodi_barraVert.jpg" CELLSPACING="5"  CELLPADDING="10" BORDER="1" BORDERCOLOR="#DCD4F6" BORDERCOLORDARK="#7361AD" width="96%" align="center">
 <tr><td BACKGROUND="grafiche/CineZodi_barraVert2.jpg">
@@ -217,6 +242,14 @@ img {
 			<img src="grafiche/CineZodi_linea.jpg" width="410" height="47" class="sVediImg3" alt="Linea con Rosa">
 		</p>
 
+		<div class="sSegniSize">
+			<a href="#Ariete" title="Ariete" class="sSegniLink">&#9800;</a><a href="#Toro" title="Toro" class="sSegniLink">&#9801;</a><a href="#Gemelli" title="Gemelli" class="sSegniLink">&#9802;</a><a href="#Cancro" title="Cancro" class="sSegniLink">&#9803;</a><a href="#Leone" title="Leone" class="sSegniLink">&#9804;</a><a href="#Vergine" title="Vergine" class="sSegniLink">&#9805;</a><a href="#Bilancia" title="Bilancia" class="sSegniLink">&#9806;</a><a href="#Scorpione" title="Scorpione" class="sSegniLink">&#9807;</a><a href="#Sagittario" title="Sagittario" class="sSegniLink">&#9808;</a><a href="#Capricorno" title="Capricorno" class="sSegniLink">&#9809;</a><a href="#Acquario" title="Acquario" class="sSegniLink">&#9810;</a><a href="#Pesci" title="Pesci" class="sSegniLink">&#9811;</a>
+		</div>
+		<div class="sSegniDesc">
+			Clicca sul simbolo di un segno per passare alla sua descrizione
+		</div>
+
+<a name="Ariete"></a>
 		<h2>GALLO - <span class="sRed">ARIETE</span></h2>
 		<p>
 			Il <b>Gallo</b> <span class="sRed sBold">Ariete</span> ha un carattere forte, un'intelligenza viva, è coraggioso e pieno di
@@ -229,6 +262,7 @@ img {
 			in amore non sa esprimere i sentimenti che non sente profondamente.
 		</p>
 
+<a name="Toro"></a>
 		<h2>GALLO - <span class="sGreen">TORO</span></h2>
 		<p>
 			Il <b>Gallo</b> <span class="sGreen sBold">Toro</span> è coraggioso, energico, stabile e caloroso, degno di fiducia per le sue
@@ -240,6 +274,7 @@ img {
 			socievole. Nei confronti del partner è pronto a sostenerlo e per la sua famiglia non teme sacrifici e rinunce.
 		</p>
 
+<a name="Gemelli"></a>
 		<h2>GALLO - <span class="sGoldenBrown">GEMELLI</span></h2>
 		<p>
 			Il <b>Gallo</b> battagliero e polemico rafforza in parte il temperamento dispersivo del
@@ -252,6 +287,7 @@ img {
 			è molto importante e il suo attaccamento per i figli, sebbene disinvolto e amichevole all'apparenza, è autentico e profondo.
 		</p>
 
+<a name="Cancro"></a>
 		<h2>GALLO - <span class="sBlue">CANCRO</span></h2>
 		<p>
 			Il <b>Gallo</b> <span class="sBlue sBold">Cancro</span> ha qualità di tenacia, forza interiore è sensibile e suscettibile.
@@ -264,6 +300,7 @@ img {
 			riesce ad aprire il suo cuore e a rilassarsi.
 		</p>
 
+<a name="Leone"></a>
 		<h2>GALLO - <span class="sRed">LEONE</span></h2>
 		<p>
 			Il <b>Gallo</b> <span class="sRed sBold">Leone</span> è di temperamento fiero, polemico ed eccentrico riesce ad imporsi grazie
@@ -276,6 +313,7 @@ img {
 			ed è difficile nella scelta del partner, che potrebbe sentirsi intimidito di fronte a una personalità tanto energica.
 		</p>
 
+<a name="Vergine"></a>
 		<h2>GALLO - <span class="sGreen">VERGINE</span></h2>
 		<p>
 			Il <b>Gallo</b> <span class="sGreen sBold">Vergine</span> ha una notevole forza di volontà, buone capacità lavorative sebbene
@@ -287,6 +325,7 @@ img {
 			serenità, raramente si butta alla conquista, preferisce che siano gli altri a conquistare lui.
 		</p>
 
+<a name="Bilancia"></a>
 		<h2>GALLO - <span class="sGoldenBrown">BILANCIA</span></h2>
 		<p>
 			Il <b>Gallo</b> <span class="sGoldenBrown sBold">Bilancia</span> è pacifico e diplomatico, in ogni situazione della vita cerca il
@@ -298,6 +337,7 @@ img {
 			momenti di scontentezza e di evasione o di mostrarsi poco comprensivo nei confronti del partner.
 		</p>
 
+<a name="Scorpione"></a>
 		<h2>GALLO - <span class="sBlue">SCORPIONE</span></h2>
 		<p>
 			Di temperamento infiammabile, rancoroso e vendicativo il <b>Gallo</b> <span class="sBlue sBold">Scorpione</span> non ha un
@@ -311,6 +351,7 @@ img {
 			sull'altro sesso.
 		</p>
 
+<a name="Sagittario"></a>
 		<h2>GALLO - <span class="sRed">SAGITTARIO</span></h2>
 		<p>
 			Il <b>Gallo</b> <span class="sRed sBold">Sagittario</span> è caloroso, rilassato, indipendente, ha molto fascino, ma ha bisogno della libertà
@@ -322,6 +363,7 @@ img {
 			affettuosità, a condizione che il partner gli lasci piena libertà d'azione.
 		</p>
 
+<a name="Capricorno"></a>
 		<h2>GALLO - <span class="sGreen">CAPRICORNO</span></h2>
 		<p>
 			Spesso freddo e altero all'apparenza, ma nasconde un carattere appassionato e battagliero. Onesto e coscienzioso, critico e perfezionista è capace di sobbarcarsi molte fatiche senza batter ciglio, però non sopporta la menzogna, l'ipocrisia, la meschinità. Il <b>Gallo</b>
@@ -333,6 +375,7 @@ img {
 			patrimonio non solo materiale ma anche morale fatto di insegnamenti e ricordi.
 		</p>
 
+<a name="Acquario"></a>
 		<h2>GALLO - <span class="sGoldenBrown">ACQUARIO</span></h2>
 		<p>
 			È socievole, eloquente e simpatico pronto a sacrificarsi per chi ama. Il <b>Gallo</b> è fiero e introverso frena la socialità
@@ -345,6 +388,7 @@ img {
 			esige la dedizione totale del suo partner.
 		</p>
 
+<a name="Pesci"></a>
 		<h2>GALLO - <span class="sBlue">PESCI</span></h2>
 		<p>
 			Il <b>Gallo</b> <span class="sBlue sBold">Pesci</span> è sensibile, umano e devoto ma inafferrabile. Ha successo in società,
@@ -384,7 +428,8 @@ img {
 <footer>
 	Laura Lencia - Studio di Astrologia "Acquario". Copyright © 1998-2021. Tutti i diritti sono riservati.
 	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
-	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html">qui</a>.
+	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html" class="sNoShadow sBlue">qui</a>.
 </footer>
 </body>
+<script src="TornaSu.js"></script>
 </html>

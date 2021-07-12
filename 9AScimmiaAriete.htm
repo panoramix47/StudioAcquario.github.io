@@ -12,7 +12,7 @@
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="05/06/2021"><!-- content="22/07/2017" -->
-<meta name="revised" content="12/06/2021">
+<meta name="revised" content="12/07/2021">
 
 <style type="text/css">
 body {
@@ -46,8 +46,8 @@ h2 {
 	font-weight: bold;
 	color: #450169; /* Indigo */
 	text-align: center;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-top: 30px;
 	/* margin-bottom: 0; */
 }
@@ -59,8 +59,8 @@ header {
 	text-align: center;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-top: 25px;	/* vertical-align: middle; */
-	margin-bottom: 0;	/* vertical-align: middle; */
+	margin-top: 25px; /* vertical-align: middle; */
+	margin-bottom: 0px;
 	height: 70px;
 }
 footer {
@@ -77,9 +77,9 @@ p {
 	font-size: small;
 	color: #450169; /* Indigo */
 	text-align: justify;
-	padding-left: 35px;
-	padding-right: 35px;
-	line-height: 125%;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 130%;
 	hyphens: auto;
 }
 img {
@@ -91,15 +91,14 @@ img {
 	flex-flow: row wrap;
 	justify-content: center;
 	list-style: none;
-	margin: 0;
-	padding-left: 10px;
-	padding-right: 10px;
-	line-height: 180%;
+	margin: 0px;
+	padding: 0px;
+	line-height: 220%;;
 }
 .sNavigation a {
 	font-size: medium;
 	font-weight: bold;
-	padding:.42em;
+	padding: 5px; /* .42em; */
 	color: #FFFFFF; /* White */
 	margin-left: 2px;
 	background: #7C64CC; /* Slate Blue */
@@ -110,13 +109,20 @@ img {
 	background: #FF66FF; /* Pink Flamingo */
 }
 #PagCorrente {
-	border-bottom: 2.5px solid red;
+	border-bottom: 3px solid red;
 }
 .sHomeIcon {
 	vertical-align: bottom;
-	margin-bottom: 1px;
+	margin-bottom: 2px;
 	height: 25px;
 	width: 25px;
+}
+#TornaSu {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	padding: 10px;
+	display: none;
 }
 .sBlue {
 			color: #0000FF;
@@ -136,6 +142,9 @@ img {
 .sCenter {
 			text-align: center;
 }
+.sNoShadow {
+			text-shadow: 0px 0px 0px;
+}
 .sVediImg1 {
 	display: inline;
 }
@@ -148,31 +157,47 @@ img {
 .sVediImg4 {
 	display: inline;
 }
-@media screen and (max-width:1157px) {
+@media screen and (max-width: 1157px) {
 	.sVediImg3 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:1037px) {
+@media screen and (max-width: 1037px) {
 	.sVediImg1 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:724px) {
+@media screen and (max-width: 724px) {
 	.sVediImg2 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:712px) {
+@media screen and (max-width: 712px) {
 	.sVediImg4 {
 		display: none !important;
 	}
+}
+.sSegniSize {
+			text-align: center;
+			font-size: 22px;
+}
+.sSegniLink {
+			text-decoration: none;
+}
+.sSegniDesc {
+			text-align: center;
+			font-size: x-small;
+			color: #450169; /* Indigo */
+			line-height: 100%;
+			padding: 0px;
 }
 </style>
 </head>
 
 <body>
 <header>Studio di Astrologia "Acquario"</header>
+<a name="Inizio"></a>
+<a href="#Inizio" title="Torna all'inizio della pagina"><div id="TornaSu"><img src= "TornaSu.png" width="40px" height="40px"></div></a>
 
 <TABLE BACKGROUND="grafiche/CineZodi_barraVert.jpg" CELLSPACING="5"  CELLPADDING="10" BORDER="1" BORDERCOLOR="#DCD4F6" BORDERCOLORDARK="#7361AD" width="96%" align="center">
 <tr><td BACKGROUND="grafiche/CineZodi_barraVert2.jpg">
@@ -217,6 +242,14 @@ img {
 			<img src="grafiche/CineZodi_linea.jpg" width="410" height="47" class="sVediImg3" alt="Linea con Rosa">
 		</p>
 
+		<div class="sSegniSize">
+			<a href="#Ariete" title="Ariete" class="sSegniLink">&#9800;</a><a href="#Toro" title="Toro" class="sSegniLink">&#9801;</a><a href="#Gemelli" title="Gemelli" class="sSegniLink">&#9802;</a><a href="#Cancro" title="Cancro" class="sSegniLink">&#9803;</a><a href="#Leone" title="Leone" class="sSegniLink">&#9804;</a><a href="#Vergine" title="Vergine" class="sSegniLink">&#9805;</a><a href="#Bilancia" title="Bilancia" class="sSegniLink">&#9806;</a><a href="#Scorpione" title="Scorpione" class="sSegniLink">&#9807;</a><a href="#Sagittario" title="Sagittario" class="sSegniLink">&#9808;</a><a href="#Capricorno" title="Capricorno" class="sSegniLink">&#9809;</a><a href="#Acquario" title="Acquario" class="sSegniLink">&#9810;</a><a href="#Pesci" title="Pesci" class="sSegniLink">&#9811;</a>
+		</div>
+		<div class="sSegniDesc">
+			Clicca sul simbolo di un segno per passare alla sua descrizione
+		</div>
+
+<a name="Ariete"></a>
 		<h2>SCIMMIA - <span class="sRed">ARIETE</span></h2>
 		<p>
 			La <b>Scimmia</b> <span class="sRed sBold">Ariete</span> è brillante, diretto, seducente, astuto e intelligente, pieno di energia
@@ -228,9 +261,10 @@ img {
 			grandi storie romantiche, ma a volte sono di difficile scelta del compagno di vita.
 		</p>
 
+<a name="Toro"></a>
 		<h2>SCIMMIA - <span class="sGreen">TORO</span></h2>
 		<p>
-			La <b>Scimmia</b> <span class="sGreen sBold">Toro</span></b> è socievole e allegra, accorta e cauta, con una natura dolce quasi
+			La <b>Scimmia</b> <span class="sGreen sBold">Toro</span> è socievole e allegra, accorta e cauta, con una natura dolce quasi
 			infantile. Ama la vita ed è comprensivo e tollerante verso i difetti altrui. Ricco di fascino, dotato di molto senso estetico non
 			accetterebbe mai qualcuno che lo faccia sfigurare. L'ambizione è decisamente notevole: pretende infatti di essere il numero uno in
 			qualsiasi impresa, ha capacità lavorative eccezionali e non si fa fermare da nessun ostacolo. Possiede un'intelligenza pratica e
@@ -239,6 +273,7 @@ img {
 			quasi sempre serena, sa essere fedele e affettuoso, anche se è un po' geloso ma lo sa nascondere bene.
 		</p>
 
+<a name="Gemelli"></a>
 		<h2>SCIMMIA - <span class="sGoldenBrown">GEMELLI</span></h2>
 		<p>
 			La <b>Scimmia</b> <span class="sGoldenBrown sBold">Gemelli</span> è di spirito vivace, eclettica, sveglia, intelligente, eloquente,
@@ -251,6 +286,7 @@ img {
 			l'incostanza in amore e può passare facilmente da un partner all'altro, stancandosi rapidamente.
 		</p>
 
+<a name="Cancro"></a>
 		<h2>SCIMMIA - <span class="sBlue">CANCRO</span></h2>
 		<p>
 			La <b>Scimmia</b> <span class="sBlue sBold">Cancro</span> è di umore variabile, instabile, il suo carattere è piuttosto chiuso
@@ -262,6 +298,7 @@ img {
 			anche in buona fede il partner. È per contro tenerissimo con i figli e ha un fortissimo senso materno.
 		</p>
 
+<a name="Leone"></a>
 		<h2>SCIMMIA - <span class="sRed">LEONE</span></h2>
 		<p>
 			La <b>Scimmia</b> <span class="sRed sBold">Leone</span> ha una personalità molto forte, è brillante, intelligente, determinata
@@ -274,6 +311,7 @@ img {
 			può anche accadere che scelga invece un partner modesto che lo adori e viva nella sua ombra.
 		</p>
 
+<a name="Vergine"></a>
 		<h2>SCIMMIA - <span class="sGreen">VERGINE</span></h2>
 		<p>
 			La <b>Scimmia</b> <span class="sGreen sBold">Vergine</span>è calma, affidabile, molto equilibrata, presenta tuttavia alcune
@@ -286,6 +324,7 @@ img {
 			teneramente.
 		</p>
 
+<a name="Bilancia"></a>
 		<h2>SCIMMIA - <span class="sGoldenBrown">BILANCIA</span></h2>
 		<p>
 			La <b>Scimmia</b> <span class="sGoldenBrown sBold">Bilancia</span> è socievole, aperta, amabile, eloquente, innamorata della vita e di tutte
@@ -298,6 +337,7 @@ img {
 			con i figli ma preferisce delegare il compito della loro educazione al compagno di vita.
 		</p>
 
+<a name="Scorpione"></a>
 		<h2>SCIMMIA - <span class="sBlue">SCORPIONE</span></h2>
 		<p>
 			La <b>Scimmia</b> <span class="sBlue sBold">Scorpione</span> è dotata di una brillante intelligenza, una curiosità senza
@@ -310,6 +350,7 @@ img {
 			desto il suo interesse. Come genitore è incline a viziare i figli e colmarli di attenzioni.
 		</p>
 
+<a name="Sagittario"></a>
 		<h2>SCIMMIA - <span class="sRed">SAGITTARIO</span></h2>
 		<p>
 			La <b>Scimmia</b> <span class="sRed sBold">Sagittario</span> è ambiziosa, idealista, simpatica, leale e fedele. Innamorato della
@@ -321,6 +362,7 @@ img {
 			lui i contatti umani sono necessari, lo vivificano gli insegnano tante cose.
 		</p>
 
+<a name="Capricorno"></a>
 		<h2>SCIMMIA - <span class="sGreen">CAPRICORNO</span></h2>
 		<p>
 			La <b>Scimmia</b> <span class="sGreen sBold">Capricorno</span> è inquieta, socievole, diffidente e nervosa, ma anche molto
@@ -333,6 +375,7 @@ img {
 			una persona equilibrata e sensibile.
 		</p>
 
+<a name="Acquario"></a>
 		<h2>SCIMMIA - <span class="sGoldenBrown">ACQUARIO</span></h2>
 		<p>
 			La <b>Scimmia</b> <span class="sGoldenBrown sBold">Acquario</span> è dotata di una notevole ingegnosità e di un'inventiva fuori del
@@ -344,6 +387,7 @@ img {
 			non mancano le conquiste, i momenti di passione, ma anche in questo settore può trovarsi a un certo punto solo per la sua instabilità.
 		</p>
 
+<a name="Pesci"></a>
 		<h2>SCIMMIA - <span class="sBlue">PESCI</span></h2>
 		<p>
 			La <b>Scimmia</b> <span class="sBlue sBold">Pesci</span> è creativa, fantasiosa, sensibile, buona d'animo, sa come usare il suo
@@ -378,12 +422,15 @@ img {
 			&nbsp;(Contenuto Aggiornato <time datetime="2021-06-05">05/06/2021</time>)<br><br>
 		</p>
 
-</td></tr></table>
-</td></tr></table>
+	</td></tr>
+	</table>
+</td></tr>
+</table>
 <footer>
 	Laura Lencia - Studio di Astrologia "Acquario". Copyright © 1998-2021. Tutti i diritti sono riservati.
 	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
-	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html">qui</a>.
+	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html" class="sNoShadow sBlue">qui</a>.
 </footer>
 </body>
+<script src="TornaSu.js"></script>
 </html>

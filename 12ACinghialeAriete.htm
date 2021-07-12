@@ -12,7 +12,7 @@
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="05/06/2021"><!-- content="01/02/2019" -->
-<meta name="revised" content="12/06/2021">
+<meta name="revised" content="12/07/2021">
 
 <style type="text/css">
 body {
@@ -46,8 +46,8 @@ h2 {
 	font-weight: bold;
 	color: #450169; /* Indigo */
 	text-align: center;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-top: 30px;
 	/* margin-bottom: 0; */
 }
@@ -59,8 +59,8 @@ header {
 	text-align: center;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-top: 25px;	/* vertical-align: middle; */
-	margin-bottom: 0;	/* vertical-align: middle; */
+	margin-top: 25px; /* vertical-align: middle; */
+	margin-bottom: 0px;
 	height: 70px;
 }
 footer {
@@ -77,9 +77,9 @@ p {
 	font-size: small;
 	color: #450169; /* Indigo */
 	text-align: justify;
-	padding-left: 35px;
-	padding-right: 35px;
-	line-height: 125%;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 130%;
 	hyphens: auto;
 }
 img {
@@ -91,15 +91,14 @@ img {
 	flex-flow: row wrap;
 	justify-content: center;
 	list-style: none;
-	margin: 0;
-	padding-left: 10px;
-	padding-right: 10px;
-	line-height: 180%;
+	margin: 0px;
+	padding: 0px;
+	line-height: 220%;
 }
 .sNavigation a {
 	font-size: medium;
 	font-weight: bold;
-	padding:.42em;
+	padding: 5px; /* .42em; */
 	color: #FFFFFF; /* White */
 	margin-left: 2px;
 	background: #7C64CC; /* Slate Blue */
@@ -110,13 +109,20 @@ img {
 	background: #FF66FF; /* Pink Flamingo */
 }
 #PagCorrente {
-	border-bottom: 2.5px solid red;
+	border-bottom: 3px solid red;
 }
 .sHomeIcon {
 	vertical-align: bottom;
-	margin-bottom: 1px;
+	margin-bottom: 2px;
 	height: 25px;
 	width: 25px;
+}
+#TornaSu {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	padding: 10px;
+	display: none;
 }
 .sBlue {
 			color: #0000FF;
@@ -135,6 +141,9 @@ img {
 }
 .sCenter {
 			text-align: center;
+}
+.sNoShadow {
+			text-shadow: 0px 0px 0px;
 }
 .sVediImg1 {
 	display: inline;
@@ -168,11 +177,27 @@ img {
 		display: none !important;
 	}
 }
+.sSegniSize {
+			text-align: center;
+			font-size: 22px;
+}
+.sSegniLink {
+			text-decoration: none;
+}
+.sSegniDesc {
+			text-align: center;
+			font-size: x-small;
+			color: #450169; /* Indigo */
+			line-height: 100%;
+			padding: 0px;
+}
 </style>
 </head>
 
 <body>
 <header>Studio di Astrologia "Acquario"</header>
+<a name="Inizio"></a>
+<a href="#Inizio" title="Torna all'inizio della pagina"><div id="TornaSu"><img src= "TornaSu.png" width="40px" height="40px"></div></a>
 
 <TABLE BACKGROUND="grafiche/CineZodi_barraVert.jpg" CELLSPACING="5"  CELLPADDING="10" BORDER="1" BORDERCOLOR="#DCD4F6" BORDERCOLORDARK="#7361AD" width="96%" align="center">
 <tr><td BACKGROUND="grafiche/CineZodi_barraVert2.jpg">
@@ -217,6 +242,14 @@ img {
 			<img src="grafiche/CineZodi_linea.jpg" width="410" height="47" class="sVediImg3" alt="Linea con Rosa">
 		</p>
 
+		<div class="sSegniSize">
+			<a href="#Ariete" title="Ariete" class="sSegniLink">&#9800;</a><a href="#Toro" title="Toro" class="sSegniLink">&#9801;</a><a href="#Gemelli" title="Gemelli" class="sSegniLink">&#9802;</a><a href="#Cancro" title="Cancro" class="sSegniLink">&#9803;</a><a href="#Leone" title="Leone" class="sSegniLink">&#9804;</a><a href="#Vergine" title="Vergine" class="sSegniLink">&#9805;</a><a href="#Bilancia" title="Bilancia" class="sSegniLink">&#9806;</a><a href="#Scorpione" title="Scorpione" class="sSegniLink">&#9807;</a><a href="#Sagittario" title="Sagittario" class="sSegniLink">&#9808;</a><a href="#Capricorno" title="Capricorno" class="sSegniLink">&#9809;</a><a href="#Acquario" title="Acquario" class="sSegniLink">&#9810;</a><a href="#Pesci" title="Pesci" class="sSegniLink">&#9811;</a>
+		</div>
+		<div class="sSegniDesc">
+			Clicca sul simbolo di un segno per passare alla sua descrizione
+		</div>
+
+<a name="Ariete"></a>
 		<h2>CINGHIALE - <span class="sRed">ARIETE</span></h2>
 		<p>
 			Il <b>Cinghiale</b> <span class="sRed sBold">Ariete</span> è combattivo, impulsivo e allegro, sensuale, epicureo e pieno di fiducia e di
@@ -229,6 +262,7 @@ img {
 			In amore è appassionato e possessivo di gusti semplici. Non serba rancore ma non tollera le bugie e gli inganni.
 		</p>
 
+<a name="Toro"></a>
 		<h2>CINGHIALE - <span class="sGreen">TORO</span></h2>
 		<p>
 			Il <b>Cinghiale</b> <span class="sGreen sBold">Toro</span> è caloroso, accogliente e gaudente. Piuttosto semplice, dotato di
@@ -241,6 +275,7 @@ img {
 			l'amore platonico non sa proprio che farsene. Desideroso d'affetto può facilmente sbagliare nella scelta del partner.
 		</p>
 
+<a name="Gemelli"></a>
 		<h2>CINGHIALE - <span class="sGoldenBrown">GEMELLI</span></h2>
 		<p>
 			Il <b>Cinghiale</b> <span class="sGoldenBrown sBold">Gemelli</span> è socievole, adattabile, flessibile, vivace, curioso e intelligente.
@@ -253,6 +288,7 @@ img {
 			è un ottimo genitore.
 		</p>
 
+<a name="Cancro"></a>
 		<h2>CINGHIALE - <span class="sBlue">CANCRO</span></h2>
 		<p>
 			Il <b>Cinghiale</b><span class="sBlue sBold">Cancro</span> è indulgente, sensibile, pigro e sognante, impressionabile e facilmente influenzabile.
@@ -264,6 +300,7 @@ img {
 			casa che riempie volentieri di amici.
 		</p>
 
+<a name="Leone"></a>
 		<h2>CINGHIALE - <span class="sRed">LEONE</span></h2>
 		<p>
 			Il <b>Cinghiale</b> <span class="sRed sBold">Leone</span> è pieno di energia e di temperamento gioviale, affronta con una
@@ -275,6 +312,7 @@ img {
 			e detesta le difficoltà. Vero patriarca all'interno della famiglia, non permette a nessuno di attaccare uno dei suoi cari.
 		</p>
 
+<a name="Vergine"></a>
 		<h2>CINGHIALE - <span class="sGreen">VERGINE</span></h2>
 		<p>
 			Il <b>Cinghiale</b> <span class="sGreen sBold">Vergine</span> è tranquillo e virtuoso, pacato in tutte le sue manifestazioni,
@@ -286,6 +324,7 @@ img {
 			un grande bisogno di appoggio e tenerezza. Fedele e affettuoso dal partner si aspetta dedizione e molta lealtà.
 		</p>
 
+<a name="Bilancia"></a>
 		<h2>CINGHIALE - <span class="sGoldenBrown">BILANCIA</span></h2>
 		<p>
 			Il <b>Cinghiale</b> <span class="sGoldenBrown sBold">Bilancia</span> è tollerante, idealista, sognatore, affettuoso cerca sempre
@@ -298,6 +337,7 @@ img {
 			e festosa. In amore rincorre alla seduzione più per civetteria che per vantarsi.
 		</p>
 
+<a name="Scorpione"></a>
 		<h2>CINGHIALE - <span class="sBlue">SCORPIONE</span></h2>
 		<p>
 			Alla bonarietà, il candore e la gioiosa voglia di vivere del solido <b>Cinghiale</b>, lo <span class="sBlue sBold">Scorpione</span> tende ad
@@ -309,6 +349,7 @@ img {
 			e madre, non indietreggia di fronte a nessuna fatica per il bene dei suoi cari.
 		</p>
 
+<a name="Sagittario"></a>
 		<h2>CINGHIALE - <span class="sRed">SAGITTARIO</span></h2>
 		<p>
 			Il <b>Cinghiale</b> <span class="sRed sBold">Sagittario</span> è ospitale e cortese, attivo e ottimista. È generoso e si può ottenere tutto da
@@ -321,6 +362,7 @@ img {
 			secondariamente l'attrazione fisica.
 		</p>
 
+<a name="Capricorno"></a>
 		<h2>CINGHIALE - <span class="sGreen">CAPRICORNO</span></h2>
 		<p>
 			Il <b>Cinghiale</b> <span class="sGreen sBold">Capricorno</span> è serio, onesto, rigoroso e scrupoloso. È introverso e ci vuole
@@ -332,6 +374,7 @@ img {
 			serio e responsabile, con poche concessioni al divertimento e alla tenerezza. Solo dopo anni di prove diventa affabile e comprensivo.
 		</p>
 
+<a name="Acquario"></a>
 		<h2>CINGHIALE - <span class="sGoldenBrown">ACQUARIO</span></h2>
 		<p>
 			Il <b>Cinghiale</b> <span class="sGoldenBrown sBold">Acquario</span> è affascinante, dinamico, battagliero, polemico. Ha interessi umanitari
@@ -343,6 +386,7 @@ img {
 			sa essere fedele e tenero in amore, non è tagliato per le grandi passioni, ha una visione un po' rosea della vita a due.
 		</p>
 
+<a name="Pesci"></a>
 		<h2>CINGHIALE - <span class="sBlue">PESCI</span></h2>
 		<p>
 			Il <b>Cinghiale</b> <span class="sBlue sBold">Pesci</span> è gentile, tranquillo, ospitale, pacifico, accomodante. È abile, cortese e
@@ -381,7 +425,8 @@ img {
 <footer>
 	Laura Lencia - Studio di Astrologia "Acquario". Copyright © 1998-2021. Tutti i diritti sono riservati.
 	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
-	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html">qui</a>.
+	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html" class="sNoShadow sBlue">qui</a>.
 </footer>
 </body>
+<script src="TornaSu.js"></script>
 </html>

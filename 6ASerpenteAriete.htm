@@ -12,7 +12,7 @@
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="05/06/2021"><!-- content="22/07/2017" -->
-<meta name="revised" content="12/06/2021">
+<meta name="revised" content="12/07/2021">
 
 <style type="text/css">
 body {
@@ -46,8 +46,8 @@ h2 {
 	font-weight: bold;
 	color: #450169; /* Indigo */
 	text-align: center;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-top: 30px;
 	/* margin-bottom: 0; */
 }
@@ -59,8 +59,8 @@ header {
 	text-align: center;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-top: 25px;	/* vertical-align: middle; */
-	margin-bottom: 0;	/* vertical-align: middle; */
+	margin-top: 25px; /* vertical-align: middle; */
+	margin-bottom: 0px;
 	height: 70px;
 }
 footer {
@@ -77,9 +77,9 @@ p {
 	font-size: small;
 	color: #450169; /* Indigo */
 	text-align: justify;
-	padding-left: 35px;
-	padding-right: 35px;
-	line-height: 125%;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 130%;
 	hyphens: auto;
 }
 img {
@@ -91,15 +91,14 @@ img {
 	flex-flow: row wrap;
 	justify-content: center;
 	list-style: none;
-	margin: 0;
-	padding-left: 10px;
-	padding-right: 10px;
-	line-height: 180%;
+	margin: 0px;
+	padding: 0px;
+	line-height: 220%;
 }
 .sNavigation a {
 	font-size: medium;
 	font-weight: bold;
-	padding:.42em;
+	padding: 5px; /* .42em; */
 	color: #FFFFFF; /* White */
 	margin-left: 2px;
 	background: #7C64CC; /* Slate Blue */
@@ -110,13 +109,20 @@ img {
 	background: #FF66FF; /* Pink Flamingo */
 }
 #PagCorrente {
-	border-bottom: 2.5px solid red;
+	border-bottom: 3px solid red;
 }
 .sHomeIcon {
 	vertical-align: bottom;
-	margin-bottom: 1px;
+	margin-bottom: 2px;
 	height: 25px;
 	width: 25px;
+}
+#TornaSu {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	padding: 10px;
+	display: none;
 }
 .sBlue {
 			color: #0000FF;
@@ -136,6 +142,9 @@ img {
 .sCenter {
 			text-align: center;
 }
+.sNoShadow {
+			text-shadow: 0px 0px 0px;
+}
 .sVediImg1 {
 	display: inline;
 }
@@ -148,31 +157,47 @@ img {
 .sVediImg4 {
 	display: inline;
 }
-@media screen and (max-width:1157px) {
+@media screen and (max-width: 1157px) {
 	.sVediImg3 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:1021px) {
+@media screen and (max-width: 1021px) {
 	.sVediImg1 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:707px) {
+@media screen and (max-width: 707px) {
 	.sVediImg2 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:712px) {
+@media screen and (max-width: 712px) {
 	.sVediImg4 {
 		display: none !important;
 	}
+}
+.sSegniSize {
+			text-align: center;
+			font-size: 22px;
+}
+.sSegniLink {
+			text-decoration: none;
+}
+.sSegniDesc {
+			text-align: center;
+			font-size: x-small;
+			color: #450169; /* Indigo */
+			line-height: 100%;
+			padding: 0px;
 }
 </style>
 </head>
 
 <body>
 <header>Studio di Astrologia "Acquario"</header>
+<a name="Inizio"></a>
+<a href="#Inizio" title="Torna all'inizio della pagina"><div id="TornaSu"><img src= "TornaSu.png" width="40px" height="40px"></div></a>
 
 <TABLE BACKGROUND="grafiche/CineZodi_barraVert.jpg" CELLSPACING="5"  CELLPADDING="10" BORDER="1" BORDERCOLOR="#DCD4F6" BORDERCOLORDARK="#7361AD" width="96%" align="center">
 <tr><td BACKGROUND="grafiche/CineZodi_barraVert2.jpg">
@@ -217,6 +242,14 @@ img {
 			<img src="grafiche/CineZodi_linea.jpg" class="sVediImg3" width="410" height="47" alt="Linea con Rosa">
 		</p>
 
+		<div class="sSegniSize">
+			<a href="#Ariete" title="Ariete" class="sSegniLink">&#9800;</a><a href="#Toro" title="Toro" class="sSegniLink">&#9801;</a><a href="#Gemelli" title="Gemelli" class="sSegniLink">&#9802;</a><a href="#Cancro" title="Cancro" class="sSegniLink">&#9803;</a><a href="#Leone" title="Leone" class="sSegniLink">&#9804;</a><a href="#Vergine" title="Vergine" class="sSegniLink">&#9805;</a><a href="#Bilancia" title="Bilancia" class="sSegniLink">&#9806;</a><a href="#Scorpione" title="Scorpione" class="sSegniLink">&#9807;</a><a href="#Sagittario" title="Sagittario" class="sSegniLink">&#9808;</a><a href="#Capricorno" title="Capricorno" class="sSegniLink">&#9809;</a><a href="#Acquario" title="Acquario" class="sSegniLink">&#9810;</a><a href="#Pesci" title="Pesci" class="sSegniLink">&#9811;</a>
+		</div>
+		<div class="sSegniDesc">
+			Clicca sul simbolo di un segno per passare alla sua descrizione
+		</div>
+
+<a name="Ariete"></a>
 		<h2>SERPENTE - <span class="sRed">ARIETE</span></h2>
 		<p>
 			Il <b>Serpente</b> <span class="sRed sBold">Ariete</span> ha saggezza, calma, riflessività e una certa dose di indolenza. Per essere felice
@@ -228,6 +261,7 @@ img {
 			sa essere incantevole, passionale e imprevedibile, tanto da far girare la testa.
 		</p>
 
+<a name="Toro"></a>
 		<h2>SERPENTE - <span class="sGreen">TORO</span></h2>
 		<p>
 			Vivere in armonia con il prossimo, godersi la vita, accrescere il patrimonio di famiglia, e avere tempo per le gioie dell'amore, sono tratti
@@ -239,6 +273,7 @@ img {
 			partner, non ammette di venire trascurato in nessun modo, e tende a soffocare i figli con affettuosa possessività.
 		</p>
 
+<a name="Gemelli"></a>
 		<h2>SERPENTE - <span class="sGoldenBrown">GEMELLI</span></h2>
 		<p>
 			La lentezza del <b>Serpente</b> è benefica per l'irrequietezza del <span class="sGoldenBrown sBold">Gemelli</span>, raggiunge così un
@@ -251,6 +286,7 @@ img {
 			scettico, ha bisogno di un punto di riferimento sicuro ed è molto attaccato alla sua famiglia.
 		</p>
 
+<a name="Cancro"></a>
 		<h2>SERPENTE - <span class="sBlue">CANCRO</span></h2>
 		<p>
 			Il <b>Serpente</b> <span class="sBlue sBold">Cancro</span> è sensibile, suscettibile, egocentrico, accomodante e gentile, pieno di fantasia e
@@ -262,6 +298,7 @@ img {
 			In amore regna l'armonia, sa rendere la vita gaia alla persona che ama ed è molto attaccato alla sua famiglia di origine.
 		</p>
 
+<a name="Leone"></a>
 		<h2>SERPENTE - <span class="sRed">LEONE</span></h2>
 		<p>
 			Il <b>Serpente</b> <span class="sRed sBold">Leone</span> è di buon consiglio, molto orgoglioso, sempre sicuro, ottimista e
@@ -273,6 +310,7 @@ img {
 			Nella vita affettiva è affettuoso e sollecito nei confronti del partner, a patto che sia in adorazione davanti a lui.
 		</p>
 
+<a name="Vergine"></a>
 		<h2>SERPENTE - <span class="sGreen">VERGINE</span></h2>
 		<p>
 			Il <b>Serpente</b> <span class="sGreen sBold">Vergine</span> è allegro e simpatico, brilla per il senso dell'organizzazione, è spesso un
@@ -283,6 +321,7 @@ img {
 			l'apparente calma si nasconde un temperamento sensuale e un po' perverso, motivo per cui i suoi amori sono spesso complicati e un po' misteriosi.
 		</p>
 
+<a name="Bilancia"></a>
 		<h2>SERPENTE - <span class="sGoldenBrown">BILANCIA</span></h2>
 		<p>
 			È un concentrato di fascino, sensualità ed edonismo, è attraente e sprizza <i>sex-appeal</i> da tutti i pori. Il <b>Serpente</b>
@@ -294,6 +333,7 @@ img {
 			buon compagno.
 		</p>
 
+<a name="Scorpione"></a>
 		<h2>SERPENTE - <span class="sBlue">SCORPIONE</span></h2>
 		<p>
 			Il tenebroso <span class="sBlue sBold">Scorpione</span> si addolcisce a contatto con la raffinatezza del <b>Serpente</b>, ma
@@ -305,6 +345,7 @@ img {
 			vivere storie complicate fuori dalle pareti domestiche, anche se non sempre giunge a rompere il matrimonio.
 		</p>
 
+<a name="Sagittario"></a>
 		<h2>SERPENTE - <span class="sRed">SAGITTARIO</span></h2>
 		<p>
 			Il <b>Serpente</b> <span class="sRed sBold">Sagittario</span> è ambizioso, gioviale, cortese e ottimista, di mentalità aperta,
@@ -317,6 +358,7 @@ img {
 			non è facile vivere con lui, deve evitare di legarsi a una persona con un carattere troppo tranquillo o convenzionale.
 		</p>
 
+<a name="Capricorno"></a>
 		<h2>SERPENTE - <span class="sGreen">CAPRICORNO</span></h2>
 		<p>
 			Le difficoltà sono state create apposta per essere risolte da lui, sia le sue e sia quelle degli altri, gli piace molto misurare forza d'animo
@@ -328,6 +370,7 @@ img {
 			formidabile. La fortuna in amore dipende molto da lui, da quanto impara ad essere più elastico mentalmente e anche sentimentalmente.
 		</p>
 
+<a name="Acquario"></a>
 		<h2>SERPENTE - <span class="sGoldenBrown">ACQUARIO</span></h2>
 		<p>
 			Il <b>Serpente</b> <span class="sGoldenBrown sBold">Acquario</span> è intelligentissimo e irrequieto, freddo e sensuale al tempo stesso,
@@ -340,6 +383,7 @@ img {
 			abitudini o, peggio a perdere la sua preziosa libertà per amore.
 		</p>
 
+<a name="Pesci"></a>
 		<h2>SERPENTE - <span class="sBlue">PESCI</span></h2>
 		<p>
 			Il <b>Serpente</b> <span class="sBlue sBold">Pesci</span> è molto sensibile e altruista. Poco combattivo e timoroso di fare brutte figure o non
@@ -378,7 +422,8 @@ img {
 <footer>
 	Laura Lencia - Studio di Astrologia "Acquario". Copyright © 1998-2021. Tutti i diritti sono riservati.
 	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
-	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html" style="text-shadow:0 0 0;">qui</a>.
+	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html" class="sNoShadow sBlue">qui</a>.
 </footer>
 </body>
+<script src="TornaSu.js"></script>
 </html>

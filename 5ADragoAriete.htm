@@ -12,7 +12,7 @@
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="05/06/2021"><!-- content="22/07/2017" -->
-<meta name="revised" content="12/06/2021">
+<meta name="revised" content="12/07/2021">
 
 <style type="text/css">
 body {
@@ -46,8 +46,8 @@ h2 {
 	font-weight: bold;
 	color: #450169; /* Indigo */
 	text-align: center;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-top: 30px;
 	/* margin-bottom: 0; */
 }
@@ -59,8 +59,8 @@ header {
 	text-align: center;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-top: 25px;	/* vertical-align: middle; */
-	margin-bottom: 0;	/* vertical-align: middle; */
+	margin-top: 25px; /* vertical-align: middle; */
+	margin-bottom: 0px;
 	height: 70px;
 }
 footer {
@@ -77,9 +77,9 @@ p {
 	font-size: small;
 	color: #450169; /* Indigo */
 	text-align: justify;
-	padding-left: 35px;
-	padding-right: 35px;
-	line-height: 125%;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 130%;
 	hyphens: auto;
 }
 img {
@@ -91,15 +91,14 @@ img {
 	flex-flow: row wrap;
 	justify-content: center;
 	list-style: none;
-	margin: 0;
-	padding-left: 10px;
-	padding-right: 10px;
-	line-height: 180%;
+	margin: 0px;
+	padding: 0px;
+	line-height: 220%;
 }
 .sNavigation a {
 	font-size: medium;
 	font-weight: bold;
-	padding:.42em;
+	padding: 5px; /* .42em; */
 	color: #FFFFFF; /* White */
 	margin-left: 2px;
 	background: #7C64CC; /* Slate Blue */
@@ -110,13 +109,20 @@ img {
 	background: #FF66FF; /* Pink Flamingo */
 }
 #PagCorrente {
-	border-bottom: 2.5px solid red;
+	border-bottom: 3px solid red;
 }
 .sHomeIcon {
 	vertical-align: bottom;
-	margin-bottom: 1px;
+	margin-bottom: 2px;
 	height: 25px;
 	width: 25px;
+}
+#TornaSu {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	padding: 10px;
+	display: none;
 }
 .sBlue {
 			color: #0000FF;
@@ -136,6 +142,9 @@ img {
 .sCenter {
 			text-align: center;
 }
+.sNoShadow {
+			text-shadow: 0px 0px 0px;
+}
 .sVediImg1 {
 	display: inline;
 }
@@ -148,31 +157,47 @@ img {
 .sVediImg4 {
 	display: inline;
 }
-@media screen and (max-width:1157px) {
+@media screen and (max-width: 1157px) {
 	.sVediImg3 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:1021px) {
+@media screen and (max-width: 1021px) {
 	.sVediImg1 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:707px) {
+@media screen and (max-width: 707px) {
 	.sVediImg2 {
 		display: none !important;
 	}
 }
-@media screen and (max-width:712px) {
+@media screen and (max-width: 712px) {
 	.sVediImg4 {
 		display: none !important;
 	}
+}
+.sSegniSize {
+			text-align: center;
+			font-size: 22px;
+}
+.sSegniLink {
+			text-decoration: none;
+}
+.sSegniDesc {
+			text-align: center;
+			font-size: x-small;
+			color: #450169; /* Indigo */
+			line-height: 100%;
+			padding: 0px;
 }
 </style>
 </head>
 
 <body>
 <header>Studio di Astrologia "Acquario"</header>
+<a name="Inizio"></a>
+<a href="#Inizio" title="Torna all'inizio della pagina"><div id="TornaSu"><img src= "TornaSu.png" width="40px" height="40px"></div></a>
 
 <TABLE BACKGROUND="grafiche/CineZodi_barraVert.jpg" CELLSPACING="5"  CELLPADDING="10" BORDER="1" BORDERCOLOR="#DCD4F6" BORDERCOLORDARK="#7361AD" width="96%" align="center">
 <tr><td BACKGROUND="grafiche/CineZodi_barraVert2.jpg">
@@ -217,6 +242,14 @@ img {
 			<img src="grafiche/CineZodi_linea.jpg" class="sVediImg3" width="410" height="47" alt="Linea con Rosa">
 		</p>
 
+		<div class="sSegniSize">
+			<a href="#Ariete" title="Ariete" class="sSegniLink">&#9800;</a><a href="#Toro" title="Toro" class="sSegniLink">&#9801;</a><a href="#Gemelli" title="Gemelli" class="sSegniLink">&#9802;</a><a href="#Cancro" title="Cancro" class="sSegniLink">&#9803;</a><a href="#Leone" title="Leone" class="sSegniLink">&#9804;</a><a href="#Vergine" title="Vergine" class="sSegniLink">&#9805;</a><a href="#Bilancia" title="Bilancia" class="sSegniLink">&#9806;</a><a href="#Scorpione" title="Scorpione" class="sSegniLink">&#9807;</a><a href="#Sagittario" title="Sagittario" class="sSegniLink">&#9808;</a><a href="#Capricorno" title="Capricorno" class="sSegniLink">&#9809;</a><a href="#Acquario" title="Acquario" class="sSegniLink">&#9810;</a><a href="#Pesci" title="Pesci" class="sSegniLink">&#9811;</a>
+		</div>
+		<div class="sSegniDesc">
+			Clicca sul simbolo di un segno per passare alla sua descrizione
+		</div>
+
+<a name="Ariete"></a>
 		<h2>DRAGO - <span class="sRed">ARIETE</span></h2>
 		<p>
 			L'impulsività dell'<span class="sRed sBold">Ariete</span> unita alla sicurezza del <b>Drago</b> lo rende fin troppo sicuro. Ottimista ad
@@ -228,6 +261,7 @@ img {
 			sincero e leale, ma niente affatto delicato, né previdente.
 		</p>
 
+<a name="Toro"></a>
 		<h2>DRAGO - <span class="sGreen">TORO</span></h2>
 		<p>
 			Il realismo del <span class="sGreen sBold">Toro</span>, il suo aspetto paziente, pragmatico e costruttivo non può che essere positivo per il
@@ -240,6 +274,7 @@ img {
 			grandissimo.
 		</p>
 
+<a name="Gemelli"></a>
 		<h2>DRAGO - <span class="sGoldenBrown">GEMELLI</span></h2>
 		<p>
 			Brillante, curioso di tutto, scanzonato, inafferrabile, superficiale, dà a volte l'impressione di non prendere nulla veramente sul serio.
@@ -251,6 +286,7 @@ img {
 			chi lo ama, ma non bisogna contare molto sulla sua dedizione, ma con un partner adatto può essere un compagno di vita davvero piacevole.
 		</p>
 
+<a name="Cancro"></a>
 		<h2>DRAGO - <span class="sBlue">CANCRO</span></h2>
 		<p>
 			La sicurezza del <b>Drago</b> è la sua fortuna, unita al <span class="sBlue sBold">Cancro</span> gli dona un carattere forte che niente può
@@ -263,6 +299,7 @@ img {
 			e la famiglia. In amore è un po' freddo e riservato.
 		</p>
 
+<a name="Leone"></a>
 		<h2>DRAGO - <span class="sRed">LEONE</span></h2>
 		<p>
 			Ecco un "Re" che adora esercitare il potere a qualsiasi livello, farà di tutto per spiccare il balzo verso le mete più ambite,
@@ -274,6 +311,7 @@ img {
 			è imprevedibile e il partner trova sempre un'altra sfaccettatura del suo carattere, sa anche amare con fervore e passione.
 		</p>
 
+<a name="Vergine"></a>
 		<h2>DRAGO - <span class="sGreen">VERGINE</span></h2>
 		<p>
 			Unione benefica che può portare lontano, alla prudenza e ai mille dubbi della <span class="sGreen sBold">Vergine</span> si oppone la fermezza
@@ -285,6 +323,7 @@ img {
 			esteriore rimarrà sempre altero e staccato.
 		</p>
 
+<a name="Bilancia"></a>
 		<h2>DRAGO - <span class="sGoldenBrown">BILANCIA</span></h2>
 		<p>
 			La forza del <b>Drago</b> si amalgama armoniosamente con il senso dell'armonia e l'equilibrio della
@@ -297,6 +336,7 @@ img {
 			con degli aspetti incerti, sovente non sa neppure cosa desidera e chi desidera, non sa scegliere ma adora essere amato.
 		</p>
 
+<a name="Scorpione"></a>
 		<h2>DRAGO - <span class="sBlue">SCORPIONE</span></h2>
 		<p>
 			Il <b>Drago</b> <span class="sBlue sBold">Scorpione</span> è dotato di un eccezionale magnetismo, un conquistatore nato, può
@@ -308,6 +348,7 @@ img {
 			sentire importante, sa essere molto dolce e conciliante. È fedele solo se davvero innamorato.
 		</p>
 
+<a name="Sagittario"></a>
 		<h2>DRAGO - <span class="sRed">SAGITTARIO</span></h2>
 		<p>
 			È dotato di un sano ottimismo e di una fiducia illimitata nelle proprie capacità, il <b>Drago</b>
@@ -320,6 +361,7 @@ img {
 			forte come il suo.
 		</p>
 
+<a name="Capricorno"></a>
 		<h2>LEPRE - <span class="sGreen">CAPRICORNO</span></h2>
 		<p>
 			Serio, metodico, perseverante e ambizioso ma senza nulla concedere all'esibizionismo, il <b>Drago</b>
@@ -331,6 +373,7 @@ img {
 			felice il partner che però, prima deve sciogliere il ghiaccio di cui si circonda, poiché anche se non lo ammette lui non desidera altro.
 		</p>
 
+<a name="Acquario"></a>
 		<h2>DRAGO - <span class="sGoldenBrown">ACQUARIO</span></h2>
 		<p>
 			Idealista e tollerante, dotato di una profonda umanità, il <b>Drago</b> <span class="sGoldenBrown sBold">Acquario</span> è di regola
@@ -343,6 +386,7 @@ img {
 			e il matrimonio è quasi sempre armonioso.
 		</p>
 
+<a name="Pesci"></a>
 		<h2>DRAGO - <span class="sBlue">PESCI</span></h2>
 		<p>
 			La sensibilità, l'immaginazione e la creatività del <span class="sBlue sBold">Pesci</span> è dinamizzata e illuminata dal calore che si
@@ -381,7 +425,8 @@ img {
 <footer>
 	Laura Lencia - Studio di Astrologia "Acquario". Copyright © 1998-2021. Tutti i diritti sono riservati.
 	Senza il consenso dell'autrice, è vietata ogni riproduzione parziale o totale dei contenuti.
-	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html" style="text-shadow:0 0 0;">qui</a>.
+	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html" class="sNoShadow sBlue">qui</a>.
 </footer>
 </body>
+<script src="TornaSu.js"></script>
 </html>
