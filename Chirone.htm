@@ -12,7 +12,7 @@
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="15/06/2021"><!-- content="21/06/2020" -->
-<meta name="revised" content="15/06/2021">
+<meta name="revised" content="16/07/2021">
 
 <style type="text/css">
 body {
@@ -51,8 +51,8 @@ h2 {
 	font-weight: bold;
 	color: #000000;
 	text-align: center;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-top: 30px;
 }
 header {
@@ -63,8 +63,8 @@ header {
 	text-align: center;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-top: 25px;	/* vertical-align: middle; */
-	margin-bottom: 0;	/* vertical-align: middle; */
+	margin-top: 25px; /* vertical-align: middle; */
+	margin-bottom: 0px;
 	height: 70px;
 }
 footer {
@@ -81,47 +81,57 @@ p {
 	font-size: small;
 	color: #000000; /* Black */
 	text-align: justify;
-	padding-left: 35px;
-	padding-right: 35px;
-	line-height: 125%;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 130%;
 	hyphens: auto;
 }
 img {
 	max-width: 100%;
 	height: auto;
 }
+#TornaSu {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	padding: 10px;
+	display: none;
+}
 .sBorder3s-Navy {
-				border: 3px solid #000080;
+			border: 3px solid #000080;
 }
 .sBlue {
-				color: #0000FF;
+			color: #0000FF;
 }
 .sGreen {
-				color: #008000;
+			color: #008000;
 }
 .sPalatinatePurple {
-				color: #7C1F5E;
+			color: #7C1F5E;
 }
 .sRed {
-				color: #FF0000;
+			color: #FF0000;
 }
 .sGoldenPoppy {
-				color: #EEBE00;
+			color: #EEBE00;
 }
 .sBGWhite {
-				background-color: #FFFFFF;
+			background-color: #FFFFFF;
 }
 .sBold {
-				font-weight: bold;
+			font-weight: bold;
 }
 .sCenter {
-				text-align: center;
+			text-align: center;
 }
 .sMedium {
-				font-size: medium;
+			font-size: medium;
+}
+.sSmall {
+			font-size: small;
 }
 .sLarger {
-				font-size: larger;
+			font-size: larger;
 }
 .sVediImg1 {
 	display: inline;
@@ -141,12 +151,12 @@ img {
 }
 @media screen and (max-width: 1002px) {
 	.sVediImg1 {
-		display: none !important;
+		display: none;
 	}
 }
 @media screen and (max-width: 705px) {
 	.sVediImg2 {
-		display: none !important;
+		display: none;
 	}
 }
 @media screen and (max-width: 500px) {
@@ -156,19 +166,38 @@ img {
 }
 @media screen and (max-width: 776px) {
 	.sVediImg4 {
-		display: none !important;
+		display: none;
 	}
 }
 @media screen and (max-width: 619px) {
 	.sVediImg5 {
-		display: none !important;
+		display: none;
 	}
+}
+#TabChirone {
+	display: none;
+}
+.sSegniSize {
+			text-align: center;
+			font-size: 22px;
+}
+.sSegniLink {
+			text-decoration: none;
+}
+.sSegniDesc {
+			text-align: center;
+			font-size: x-small;
+			color: #000000; /* Black */
+			line-height: 100%;
+			padding: 0px;
 }
 </style>
 </head>
 
 <body>
 <header>Studio di Astrologia "Acquario"</header>
+<a name="Inizio"></a>
+<a href="#Inizio" title="Torna all'inizio della pagina"><div id="TornaSu"><img src= "TornaSu.png" width="40px" height="40px"></div></a>
 
 <table bgcolor="#FFFFFF" cellspacing="3" cellpadding="0" class="sBorder3s-Navy" width="96%" align="center">
 <tr><td class="sBorder3s-Navy">
@@ -192,17 +221,321 @@ img {
 			l'apprendimento, l'iniziazione, le idee d'avanguardia, la medicina cara a <span class="sPalatinatePurple sBold">Chirone</span> è quella
 			olistica. <span class="sPalatinatePurple sBold">Chirone</span> trascorre circa quattro anni in ogni segno zodiacale. Rappresenta un periodo
 			non facile per voi e per tutti i vostri coetanei.<br><br>
-			Nella tabella qui di seguito, cerca la posizione di <span class="sPalatinatePurple sBold">Chirone</span> nel tuo anno di nascita.
+			Nella tabella qui di seguito, cerca la posizione di <span class="sPalatinatePurple sBold">Chirone</span> della tua data di nascita.
 		</p>
 
-		<p class="sCenter">
+		<!-- p class="sCenter">
 			<br>
 			<img src="tabelle/Chirone_tabella.jpg" width="937" height="494" alt="Tabella Posizioni di Chirone">
-			<br><br>
+		</p -->
+
+		<div class="sCenter">
+			<button onclick="myChirone()" class="sMedium">Mostra/Nascondi la tabella</button>
+		</div>
+		<table id="TabChirone" cellspacing=0 cellpadding="2" border="1" width="300px" align="center">
+		<caption class="sMedium sCenter"><b>Tabella delle Posizioni di Chirone</b></caption>
+		<tbody class="sSmall sCenter" style="height: 25px; width: 300px;" align="center">
+			<tr>
+				<th width="32%">Dal</th>
+				<th width="32%">Al</th>
+				<th width="36%">Segno</th>
+			</tr>
+			<tr>
+				<td>21/10/1926</td>
+				<td>25/03/1927</td>
+				<td>Ariete</td>
+			</tr>
+			<tr>
+				<td>26/03/1927</td>
+				<td>07/06/1933</td>
+				<td>Toro</td>
+			</tr>
+			<tr>
+				<td>08/06/1933</td>
+				<td>22/12/1933</td>
+				<td>Gemelli</td>
+			</tr>
+			<tr>
+				<td>23/12/1933</td>
+				<td>23/03/1934</td>
+				<td>Toro</td>
+			</tr>
+			<tr>
+				<td>24/03/1934</td>
+				<td>27/08/1937</td>
+				<td>Gemelli</td>
+			</tr>
+			<tr>
+				<td>28/08/1937</td>
+				<td>23/11/1937</td>
+				<td>Cancro</td>
+			</tr>
+			<tr>
+				<td>24/11/1937</td>
+				<td>28/05/1938</td>
+				<td>Gemelli</td>
+			</tr>
+			<tr>
+				<td>29/05/1938</td>
+				<td>30/09/1940</td>
+				<td>Cancro</td>
+			</tr>
+			<tr>
+				<td>01/10/1940</td>
+				<td>27/12/1940</td>
+				<td>Leone</td>
+			</tr>
+			<tr>
+				<td>28/12/1940</td>
+				<td>16/06/1941</td>
+				<td>Cancro</td>
+			</tr>
+			<tr>
+				<td>17/06/1941</td>
+				<td>26/07/1943</td>
+				<td>Leone</td>
+			</tr>
+			<tr>
+				<td>27/07/1943</td>
+				<td>18/11/1944</td>
+				<td>Vergine</td>
+			</tr>
+			<tr>
+				<td>19/11/1944</td>
+				<td>24/03/1945</td>
+				<td>Bilancia</td>
+			</tr>
+			<tr>
+				<td>25/03/1945</td>
+				<td>22/07/1945</td>
+				<td>Vergine</td>
+			</tr>
+			<tr>
+				<td>23/07/1945</td>
+				<td>10/11/1946</td>
+				<td>Bilancia</td>
+			</tr>
+			<tr>
+				<td>11/11/1946</td>
+				<td>28/11/1948</td>
+				<td>Scorpione</td>
+			</tr>
+			<tr>
+				<td>29/11/1948</td>
+				<td>09/02/1951</td>
+				<td>Sagittario</td>
+			</tr>
+			<tr>
+				<td>10/02/1951</td>
+				<td>18/06/1951</td>
+				<td>Capricorno</td>
+			</tr>
+			<tr>
+				<td>19/06/1951</td>
+				<td>08/11/1951</td>
+				<td>Sagittario</td>
+			</tr>
+			<tr>
+				<td>09/11/1951</td>
+				<td>27/01/1955</td>
+				<td>Capricorno</td>
+			</tr>
+			<tr>
+				<td>28/01/1955</td>
+				<td>26/03/1960</td>
+				<td>Acquario</td>
+			</tr>
+			<tr>
+				<td>27/03/1960</td>
+				<td>19/08/1960</td>
+				<td>Pesci</td>
+			</tr>
+			<tr>
+				<td>20/08/1960</td>
+				<td>21/01/1961</td>
+				<td>Acquario</td>
+			</tr>
+			<tr>
+				<td>22/01/1961</td>
+				<td>01/04/1968</td>
+				<td>Pesci</td>
+			</tr>
+			<tr>
+				<td>02/04/1968</td>
+				<td>18/10/1968</td>
+				<td>Ariete</td>
+			</tr>
+			<tr>
+				<td>19/10/1968</td>
+				<td>30/01/1969</td>
+				<td>Pesci</td>
+			</tr>
+			<tr>
+				<td>31/01/1969</td>
+				<td>28/05/1976</td>
+				<td>Ariete</td>
+			</tr>
+			<tr>
+				<td>29/05/1976</td>
+				<td>13/10/1976</td>
+				<td>Toro</td>
+			</tr>
+			<tr>
+				<td>14/10/1976</td>
+				<td>28/03/1977</td>
+				<td>Ariete</td>
+			</tr>
+			<tr>
+				<td>29/03/1977</td>
+				<td>21/06/1983</td>
+				<td>Toro</td>
+			</tr>
+			<tr>
+				<td>22/06/1983</td>
+				<td>29/11/1983</td>
+				<td>Gemelli</td>
+			</tr>
+			<tr>
+				<td>30/11/1983</td>
+				<td>11/04/1984</td>
+				<td>Toro</td>
+			</tr>
+			<tr>
+				<td>12/04/1984</td>
+				<td>21/06/1988</td>
+				<td>Gemelli</td>
+			</tr>
+			<tr>
+				<td>22/06/1988</td>
+				<td>21/07/1991</td>
+				<td>Cancro</td>
+			</tr>
+			<tr>
+				<td>22/07/1991</td>
+				<td>03/09/1993</td>
+				<td>Leone</td>
+			</tr>
+			<tr>
+				<td>04/09/1993</td>
+				<td>09/09/1995</td>
+				<td>Vergine</td>
+			</tr>
+			<tr>
+				<td>10/09/1995</td>
+				<td>29/12/1996</td>
+				<td>Bilancia</td>
+			</tr>
+			<tr>
+				<td>30/12/1996</td>
+				<td>04/04/1997</td>
+				<td>Scorpione</td>
+			</tr>
+			<tr>
+				<td>05/04/1997</td>
+				<td>03/09/1997</td>
+				<td>Bilancia</td>
+			</tr>
+			<tr>
+				<td>04/09/1997</td>
+				<td>07/01/1999</td>
+				<td>Scorpione</td>
+			</tr>
+			<tr>
+				<td>08/01/1999</td>
+				<td>01/06/1999</td>
+				<td>Sagittario</td>
+			</tr>
+			<tr>
+				<td>02/06/1999</td>
+				<td>22/09/1999</td>
+				<td>Scorpione</td>
+			</tr>
+			<tr>
+				<td>23/09/1999</td>
+				<td>11/12/2001</td>
+				<td>Sagittario</td>
+			</tr>
+			<tr>
+				<td>12/12/2001</td>
+				<td>21/02/2005</td>
+				<td>Capricorno</td>
+			</tr>
+			<tr>
+				<td>22/02/2005</td>
+				<td>01/08/2005</td>
+				<td>Acquario</td>
+			</tr>
+			<tr>
+				<td>02/08/2005</td>
+				<td>06/12/2005</td>
+				<td>Capricorno</td>
+			</tr>
+			<tr>
+				<td>07/12/2005</td>
+				<td>20/04/2010</td>
+				<td>Acquario</td>
+			</tr>
+			<tr>
+				<td>21/04/2010</td>
+				<td>20/07/2010</td>
+				<td>Pesci</td>
+			</tr>
+			<tr>
+				<td>21/07/2010</td>
+				<td>08/02/2011</td>
+				<td>Acquario</td>
+			</tr>
+			<tr>
+				<td>09/02/2011</td>
+				<td>17/04/2018</td>
+				<td>Pesci</td>
+			</tr>
+			<tr>
+				<td>18/04/2018</td>
+				<td>26/09/2018</td>
+				<td>Ariete</td>
+			</tr>
+			<tr>
+				<td>27/09/2018</td>
+				<td>18/02/2019</td>
+				<td>Pesci</td>
+			</tr>
+			<tr>
+				<td>19/02/2019</td>
+				<td>19/06/2026</td>
+				<td>Ariete</td>
+			</tr>
+			<tr>
+				<td>20/06/2026</td>
+				<td>18/09/2026</td>
+				<td>Toro</td>
+			</tr>
+			<tr>
+				<td>19/09/2026</td>
+				<td>14/04/2027</td>
+				<td>Ariete</td>
+			</tr>
+			<tr>
+				<td>15/04/2027</td>
+				<td>19/07/2033</td>
+				<td>Toro</td>
+			</tr><!-- https://it.astro-seek.com/astro-effemeridi-online-tabelle-luglio-2033 controllato tutto fino qui -->
+		</tbody>
+		</table>
+
+		<p class="sCenter">
 			<img src="grafiche/Chirone_linea.jpg"  width="570" height="10"  alt="">
 			<br>
 		</p>
 
+		<div class="sSegniSize">
+			<a href="#Ariete" title="Ariete" class="sSegniLink">&#9800;</a><a href="#Toro" title="Toro" class="sSegniLink">&#9801;</a><a href="#Gemelli" title="Gemelli" class="sSegniLink">&#9802;</a><a href="#Cancro" title="Cancro" class="sSegniLink">&#9803;</a><a href="#Leone" title="Leone" class="sSegniLink">&#9804;</a><a href="#Vergine" title="Vergine" class="sSegniLink">&#9805;</a><a href="#Bilancia" title="Bilancia" class="sSegniLink">&#9806;</a><a href="#Scorpione" title="Scorpione" class="sSegniLink">&#9807;</a><a href="#Sagittario" title="Sagittario" class="sSegniLink">&#9808;</a><a href="#Capricorno" title="Capricorno" class="sSegniLink">&#9809;</a><a href="#Acquario" title="Acquario" class="sSegniLink">&#9810;</a><a href="#Pesci" title="Pesci" class="sSegniLink">&#9811;</a>
+		</div>
+		<div class="sSegniDesc">
+			Clicca sul simbolo di un segno per passare alla sua descrizione
+		</div>
+
+<a name="Ariete"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Chirone_chirone2.jpg" width="135" height="184" class="sVediImg3" alt="Chirone">&nbsp;&nbsp;&nbsp;
@@ -225,6 +558,7 @@ img {
 			che finisce spesso con il diventare anche delle figure di riferimento per la loro vita, veri e propri modelli.
 		</p>
 
+<a name="Toro"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Chirone_chirone2.jpg" width="135" height="184" class="sVediImg3" alt="Chirone">&nbsp;&nbsp;&nbsp;
@@ -246,6 +580,7 @@ img {
 			sono dei problemi col denaro o i beni, questi molto probabilmente non sono il vero problema. Il senso di autostima è la chiave.
 		</p>
 
+<a name="Gemelli"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Chirone_chirone2.jpg" width="135" height="184" class="sVediImg3" alt="Chirone">&nbsp;&nbsp;&nbsp;
@@ -262,6 +597,7 @@ img {
 			<span class="sLarger sPalatinatePurple sBold">CHIRONE</span> in <b>3°</b> casa: se non si hanno fratelli o sorelle, è possibile che denoti una mancanza, un vuoto nella vita. Se li si hanno, allora ci potrebbero essere problemi continui almeno con un fratello. Si tratta di una buona posizione per un insegnante di canto o un logopedista. È probabile che si sarà in grado di insegnare agli altri a parlare meglio di lui. Questa posizione tende ad aumentare il rischio di problemi di comunicazione di un tipo o un altro. È proprio la sua diversità di pensiero quello che potrà caratterizzarlo e farlo accedere a piani della conoscenza che altrimenti resterebbero sigillatati ermeticamente, impedendo così di poter sperimentare cose, situazioni, esperienze che si è scelto al momento dell'attuale incarnazione e che sono in perfetta sintonia con il percorso evolutivo - spirituale che ha scelto di percorrere.
 		</p>
 
+<a name="Cancro"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Chirone_chirone2.jpg" width="135" height="184" class="sVediImg3" alt="Chirone">&nbsp;&nbsp;&nbsp;
@@ -285,6 +621,7 @@ img {
 			senz'altro a meno.
 		</p>
 
+<a name="Leone"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Chirone_chirone2.jpg" width="135" height="184" class="sVediImg3" alt="Chirone">&nbsp;&nbsp;&nbsp;
@@ -295,6 +632,7 @@ img {
 			<span class="sLarger sPalatinatePurple sBold">CHIRONE</span> in <b>5°</b> casa: indica che è bravissimo con i bambini, o che ha problemi cronici con i propri figli o non ne ha proprio. La sfida esistenziale consiste proprio nel dare ascolto alle intuizioni e a procedere allineandovi secondo quelli che sono i canoni del vostro cuore. È importante che nel corso della vita mantenga sempre un atteggiamento di grande apertura verso gli altri e il mondo emotivo, evitando di chiudersi o peggio ancora di congelare le emozioni. Più sarà elastico e disponibile, più sarà longevo nella creatività e anche in tarda età manterrà una luce ed entusiasmo da adolescente. L'amore, la passione e la vita vissuta in tutte le possibilità è il terreno in cui può fare le esperienze più importanti e apprendere gli insegnamenti più autentici e utili della sua vita. Lezione da apprendere: mantenere costantemente allenato il proprio cuore a provare emozioni.
 		</p>
 
+<a name="Vergine"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Chirone_chirone2.jpg" width="135" height="184" class="sVediImg3" alt="Chirone">&nbsp;&nbsp;&nbsp;
@@ -305,6 +643,7 @@ img {
 			<span class="sLarger sPalatinatePurple sBold">CHIRONE</span> in <b>6°</b> casa: è sempre possibile aiutare o istruire i colleghi a fare il lavoro meglio di quanto lo può fare lui. Forse è un mago nell'aiutare gli altri a restare in buona salute mentre lui ancora fuma e mangia cibo spazzatura. La sfida esistenziale con la quale gli capiterà spesso di confrontarsi è data dal doversi relazionare con chi tende a mettere in dubbio le sue idee, e con chi cerca di metterlo in secondo piano tentando di farlo passare per una persona priva di qualità. Ma nessuno può metterlo davvero a disagio se lui non gliene da la possibilità. Qualcuno potrebbe esigere che tutti gli altri siano al suo servizio, e di solito non è mai soddisfatto. Ovviamente questo causa problemi. Lezione da apprendere: riuscire a credere maggiormente in se stesso e nel proprio potenziale.
 		</p>
 
+<a name="Bilancia"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Chirone_chirone2.jpg" width="135" height="184" class="sVediImg3" alt="Chirone">&nbsp;&nbsp;&nbsp;
@@ -315,6 +654,7 @@ img {
 			<span class="sLarger sPalatinatePurple sBold">CHIRONE</span> in <span class="sRed sBold">VII</span> casa: è probabile che passi la maggior parte del tempo a prendersi cura di un partner che ha un problema fisico o comunque ha bisogno di cure e assistenza. Questa casa rappresenta anche le società in ambito lavorativo. Ci si può prendere cura di un socio e insegnargli come fare affari meglio di quanto lui potrebbe mai fare. Attenzione a non essere proprio lui a pagarne le conseguenze però: una volta che l'allievo ha imparato da lui tutto il possibile, potrebbe soppiantarlo! I rapporti umani sono un vero e proprio banco di prova poiché vi permettono di imparare e di accedere a differenti modelli di pensiero e di comportamento a cui ben difficilmente riuscirebbe ad approdare da solo.
 		</p>
 
+<a name="Scorpione"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Chirone_chirone2.jpg"  width="135" height="184" class="sVediImg3" alt="Chirone">&nbsp;&nbsp;&nbsp;
@@ -331,6 +671,7 @@ img {
 			<span class="sLarger sPalatinatePurple sBold">CHIRONE</span> in <b>8°</b> casa: lo scenario più probabile è che c'è la possibilità di tirare fuori il meglio dal lato sessuale in un partner romantico. La casa non parla solo di sesso, potrebbe trattarsi di eredità sue o del partner che sa gestire abilmente, o dei suoi beni che un partner troppo premuroso gestisce per lui. È troppo dipendente dal denaro che altri gli offrono per aiutarlo nel momento del bisogno, o è lui che destina troppi soldi guadagnati al supporto di altri. Si potrebbe tendere ad accettare i valori di altre persone (la famiglia, il gruppo la società) troppo facilmente. Il mito di <b>Chirone</b> può effettivamente prendere vita con questa posizione. Si può avere un talento per la guarigione o nel riabilitare gli altri, ma non sé stessi.
 		</p>
 
+<a name="Sagittario"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Chirone_chirone2.jpg"   width="135" height="184" class="sVediImg3" alt="Chirone">&nbsp;&nbsp;&nbsp;
@@ -345,6 +686,7 @@ img {
 			<span class="sLarger sPalatinatePurple sBold">CHIRONE</span> in <b>9°</b> casa: ha capacità di interessarsi di mille cose e riuscire a diventare eccelso, sicuramente un abile conoscitore è una delle sue più grandi qualità, e teoricamente non ci sarebbe settore della vita nel quale potersi cimentare senza che possa cogliere anche un qualche minimo successo. La sfida esistenziale a cui è sottoposto è quella relativa al ruolo di leader apripista in grado di aiutare gli altri a fare percorsi che risultano essere impervi o talmente fuori dall'ordinario, da essere ritenuti folli se non pericolosi. Ha grande capacità di rendere facile ciò che arduo e difficilmente sbaglia nel centrare l'obiettivo prefissato.
 		</p>
 
+<a name="Capricorno"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Chirone_chirone2.jpg"   width="135" height="184" class="sVediImg3" alt="Chirone">&nbsp;&nbsp;&nbsp;
@@ -355,6 +697,7 @@ img {
 			<span class="sLarger sPalatinatePurple sBold">CHIRONE</span> in <span class="sRed sBold">X</span> casa: questa è un'ottima posizione per un dirigente di una organizzazione in campo medico o di guarigione, ma spesso non importa quale sia la carriera. Possiede un naturale tatto terapeutico con il quale l'aiuta molto spesso a dire e fare le cose giuste al momento opportuno, dono che gli permette poi di far star bene anche le persone che vivono accanto. Infatti in lui c'è una speciale capacità di occuparsi degli altri, che spesso diventa una vera e propria professione, tale da farlo apparire come persona saggia, capace di aiutare chi ha bisogno, soprattutto talmente empatica che a volte non c'è neppure bisogno di sentirsi chiedere aiuto per poter intervenire e ad agire.
 		</p>
 
+<a name="Acquario"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Chirone_chirone2.jpg" width="135" height="184" class="sVediImg3" alt="Chirone">&nbsp;&nbsp;&nbsp;
@@ -365,6 +708,7 @@ img {
 			<span class="sLarger sPalatinatePurple sBold">CHIRONE</span> in <b>11°</b> casa: i suoi problemi sono le amicizie, le speranze ed i desideri. Da un lato, ci potrebbero essere difficoltà di avere o aggrapparsi agli amici o la paura di folle o gruppi. Potrebbe trovare molti amici che si approfittano di lui e poi lo scaricano. Più spesso si dà molto agli amici che lo vogliano o no perché questo gli dà una sensazione di controllo. La sfida esistenziale consiste nel mantenere ben saldo il bisogno di libertà, da mettere subito in chiaro, a rischio di deludere e ferire chi ha dinanzi, e magari rischiare di essere lasciato da solo, che è vitale per lui avere spazi di totale autonomia e solitudine nei quali nessuno può entrarvi. Scelta di sicuro difficile da attuare, ma che alla lunga non mancherà di dare i suoi generosi frutti.
 		</p>
 
+<a name="Pesci"></a>
 		<p class="sCenter">
 			<br>
 			<img src="grafiche/Chirone_chirone2.jpg" width="135" height="184" class="sVediImg3" alt="Chirone">&nbsp;&nbsp;&nbsp;
@@ -417,4 +761,15 @@ img {
 	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html">qui</a>.</span>
 </footer>
 </body>
+<script src="TornaSu.js"></script>
+<script>
+function myChirone() {
+  var x = document.getElementById("TabChirone");
+  if (x.style.display == "table") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "table";
+  }
+}
+</script>
 </html>
