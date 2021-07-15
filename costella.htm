@@ -12,7 +12,7 @@
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="content_updated" content="16/06/2021"><!-- content="21/06/2020" -->
-<meta name="revised" content="16/06/2021">
+<meta name="revised" content="15/07/2021">
 
 <style type="text/css">
 body {
@@ -47,17 +47,17 @@ h2 {
 	font-weight: bold;
 	color: #000000;
 	text-align: center;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-top: 35px;
 }
 h3 {
-	font-size: medium;
+	font-size: large;
 	font-weight: bold;
 	color: #000000;
 	text-align: center;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-top: 25px;
 }
 header {
@@ -68,8 +68,8 @@ header {
 	text-align: center;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-top: 25px;	/* vertical-align: middle; */
-	margin-bottom: 0;	/* vertical-align: middle; */
+	margin-top: 25px; /* vertical-align: middle; */
+	margin-bottom: 0px;
 	height: 70px;
 }
 footer {
@@ -86,14 +86,21 @@ p {
 	font-size: small;
 	color: #000000; /* Black */
 	text-align: justify;
-	padding-left: 35px;
-	padding-right: 35px;
-	line-height: 125%;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 130%;
 	hyphens: auto;
 }
 img {
 	max-width: 100%;
 	height: auto;
+}
+#TornaSu {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	padding: 10px;
+	display: none;
 }
 .sBlue {
 			color: #0000FF;
@@ -124,11 +131,27 @@ img {
 		display: none !important;
 	}
 }
+.sSegniSize {
+			text-align: center;
+			font-size: 22px;
+}
+.sSegniLink {
+			text-decoration: none;
+}
+.sSegniDesc {
+			text-align: center;
+			font-size: x-small;
+			color: #000000; /* Black */
+			line-height: 100%;
+			padding: 0px;
+}
 </style>
 </head>
 
 <body>
 <header>Studio di Astrologia "Acquario"</header>
+<a name="Inizio"></a>
+<a href="#Inizio" title="Torna all'inizio della pagina"><div id="TornaSu"><img src= "TornaSu.png" width="40px" height="40px"></div></a>
 
 <table background="grafiche/Costella_background.jpg" cellspacing="5" cellpadding="15" border="1" borderColorDark="#000000" bordercolorlight="#000000" width="96%" align="center">
 <tr><td background="grafiche/Costella_background2.jpg">
@@ -142,7 +165,14 @@ img {
 			<img src="grafiche/Costella_zodiaco.jpg"   width="884" height="304" alt=""><br><br>
 			<img src="grafiche/Costella_barraOriz.jpg" width="400" height="21"  alt="">
 		</p>
+		<div class="sSegniSize">
+			<a href="#Ariete" title="Ariete" class="sSegniLink">&#9800;</a><a href="#Toro" title="Toro" class="sSegniLink">&#9801;</a><a href="#Gemelli" title="Gemelli" class="sSegniLink">&#9802;</a><a href="#Cancro" title="Cancro" class="sSegniLink">&#9803;</a><a href="#Leone" title="Leone" class="sSegniLink">&#9804;</a><a href="#Vergine" title="Vergine" class="sSegniLink">&#9805;</a><a href="#Bilancia" title="Bilancia" class="sSegniLink">&#9806;</a><a href="#Scorpione" title="Scorpione" class="sSegniLink">&#9807;</a><a href="#Sagittario" title="Sagittario" class="sSegniLink">&#9808;</a><a href="#Capricorno" title="Capricorno" class="sSegniLink">&#9809;</a><a href="#Acquario" title="Acquario" class="sSegniLink">&#9810;</a><a href="#Pesci" title="Pesci" class="sSegniLink">&#9811;</a>
+		</div>
+		<div class="sSegniDesc">
+			Clicca sul simbolo di un segno per passare alle sue costellazioni
+		</div>
 
+<a name="Ariete"></a>
 		<h2><img src="grafiche/Costella_ariete.gif" width="160" height="160" alt="Ariete"> <span class="sRed">ARIETE</span></h2>
 
 		<h3><span class="sRed">CAPRA</span>: 21 - 30 Marzo</h3>
@@ -167,6 +197,7 @@ img {
 			Negli occhi si legge malinconia e dolcezza.
 		</p>
 
+<a name="Toro"></a>
 		<h2><img src="grafiche/Costella_toro.gif" width="160" height="160" alt="Toro"> <span class="sGreen">TORO</span></h2>
 
 		<h3><span class="sGreen">LEPRE</span>: 20 - 29 Aprile</h3>
@@ -193,6 +224,7 @@ img {
 			nobilitare anche quella dell'altra persona.
 		</p>
 
+<a name="Gemelli"></a>
 		<h2><img src="grafiche/Costella_gemelli.gif" width="160" height="160" alt="Gemelli"> <span class="sMaroon">GEMELLI</span></h2>
 
 		<h3><span class="sMaroon">TRIANGOLI</span>: 21 - 30 Maggio</h3>
@@ -219,6 +251,7 @@ img {
 			voler sempre avere ragione.
 		</p>
 
+<a name="Cancro"></a>
 		<h2><img src="grafiche/Costella_cancro.gif" width="160" height="160" alt="Cancro"> <span class="sBlue">CANCRO</span></h2>
 
 		<h3><span class="sBlue">UNICORNO</span>: 21 Giugno al 1 Luglio</h3>
@@ -244,6 +277,7 @@ img {
 			lo sguardo. È prodigo e ama fare bella figura.
 		</p>
 
+<a name="Leone"></a>
 		<h2><img src="grafiche/Costella_leone.gif" width="160" height="160" alt="Leone"> <span class="sRed">LEONE</span></h2>
 
 		<h3><span class="sRed">COLOMBA</span>: dal 22 Luglio al 2 Agosto</h3>
@@ -262,7 +296,7 @@ img {
 			sicurezza. Amministra il denaro con una grande oculatezza non disdegna qualche speculazione. In amore amore è un po' timido e chiuso.
 		</p>
 
-		<h3><span class="sRed">IDRA</span> 13 - 22 Agosto</h3>
+		<h3><span class="sRed">IDRA</span>: 13 - 22 Agosto</h3>
 		<p>
 			Il nativo ha un carattere un sfaccettato. Il mostro a cui s'ispira il nome della costellazione ha molte teste, e quindi dà giudizi e opinioni
 			diverse secondo le circostanze. Conviene averlo come amico, perché ha la tendenza a soffocare i nemici in una rete di maldicenze. Si sa adattare
@@ -270,9 +304,10 @@ img {
 			né la fine. In amore è infedele ma molto appassionato, sa coinvolgere il partner in una atmosfera ricca di suggestioni.
 		</p>
 
+<a name="Vergine"></a>
 		<h2><img src="grafiche/Costella_vergine.gif" width="160" height="160" alt="Vergine"> <span class="sGreen">VERGINE</span></h2>
 
-		<h3><span class="sGreen">GRU</span>: 23 Agosto al 2 Settembre</h3>
+		<h3><span class="sGreen">GRU</span>: dal 23 Agosto al 2 Settembre</h3>
 		<p>
 			Il nativo ha un temperamento solitario. È molto intuitivo e portato ad avere delle premonizione di alcuni avvenimenti, ma anche a pescare nel
 			torbido, la conseguenza di questa peculiarità sarà lo spirito caustico e insieme pratico che unito alla tenacia lo rende un po' pesante da
@@ -295,9 +330,10 @@ img {
 			In amore sa dare molto, è senza pregiudizi, è sessualmente disinibito.
 		</p>
 
+<a name="Bilancia"></a>
 		<h2><img src="grafiche/Costella_bilancia.gif" width="160" height="160" alt="Bilancia"> <span class="sMaroon">BILANCIA</span></h2>
 
-		<h3><span class="sMaroon">LEVRIERI</span>: 23 Settembre al 2 Ottobre</h3>
+		<h3><span class="sMaroon">LEVRIERI</span>: dal 23 Settembre al 2 Ottobre</h3>
 		<p>
 			Il nato ha un carattere dolce e fedele, amante della giustizia. Mostra delle ottime capacità d'adattamento ad ogni ambiente. Reagisce
 			nascondendo la sua solitudine sotto una patina di mondanità. È molto fragile e un nonnulla può turbare il suo equilibrio può diventare
@@ -305,7 +341,7 @@ img {
 			amministratore molto prudente. In amore non sopporta il tradimento.
 		</p>
 
-		<h3><span class="sMaroon">CORVO</span>: 3 al 12 Ottobre</h3>
+		<h3><span class="sMaroon">CORVO</span>: 3 - 12 Ottobre</h3>
 		<p>
 			Il nativo ha un carattere indipendente, intuitivo e intelligente. È portato alla riflessione e allo studio, con il passare degli anni può
 			maturare una vera saggezza. Nella vita conosce vicende alterne per le quali alle volte è costretto a rinunciare agli affetti. In amore è
@@ -320,9 +356,10 @@ img {
 			saggiamente il suo patrimonio e quello altrui. Ama la ricerca e l'insegnamento. In amore si comporta con passione e prudenza.
 		</p>
 
+<a name="Scorpione"></a>
 		<h2><img src="grafiche/Costella_scorpione.gif" width="160" height="160" alt="Scorpione"> <span class="sBlue">SCORPIONE</span></h2>
 
-		<h3><span class="sBlue">CROCE DEL SUD</span>: 23 Ottobre al 2 Novembre</h3>
+		<h3><span class="sBlue">CROCE DEL SUD</span>: dal 23 Ottobre al 2 Novembre</h3>
 		<p>
 			Il nato ha un temperamento operoso e preciso. Col dinamismo attira stima e simpatia il destino gli riserva una vita serena. Molte volte dà
 			l'impressione d'essere troppo riservato questo può allontanare le persone. Si procura denaro con solide e proficue relazioni d'affari. In amore
@@ -346,9 +383,10 @@ img {
 			della scontrosità.
 		</p>
 
+<a name="Sagittario"></a>
 		<h2><img src="grafiche/Costella_sagittario.gif" width="160" height="160" alt="Sagittario"> <span class="sRed">SAGITTARIO</span></h2>
 
-		<h3><span class="sRed">ERCOLE</span>: 22 Novembre al 1 Dicembre</h3>
+		<h3><span class="sRed">ERCOLE</span>: dal 22 Novembre al 1 Dicembre</h3>
 		<p>
 			Il nativo ha un carattere forte e prudente. Dà sempre grande prova di destrezza in tutte le situazioni ed il rischio sarà sempre la sua grande
 			tentazione. Molto combattivo e portato ad affrontare i nemici a viso aperto, spesso si immischia in lotte che non lo riguardano. In amore non
@@ -363,7 +401,7 @@ img {
 			trovare subito il tallone d'Achille della persona di cui s'innamora.
 		</p>
 
-		<h3><span class="sRed">PAVONE</span>: 12 -21 Dicembre</h3>
+		<h3><span class="sRed">PAVONE</span>: 12 - 21 Dicembre</h3>
 		<p>
 			Il nativo ha un carattere astuto. Ha grandi capacità di penetrazione, doti che rappresentano le sue armi migliori. Ha uno stile molto personale
 			che si rivela fin nei minimi dettagli. Molto ambizioso sa valorizzare la sua immagine circondandosi di oggetti costosi e raffinati. Ottiene a
@@ -371,9 +409,10 @@ img {
 			relazioni un po' pericolose.
 		</p>
 
+<a name="Capricorno"></a>
 		<h2><img src="grafiche/Costella_capricorno.gif" width="160" height="160" alt="Capricorno"> <span class="sGreen">CAPRICORNO</span></h2>
 
-		<h3><span class="sGreen">FRECCIA</span>: 22 al 31 Dicembre</h3>
+		<h3><span class="sGreen">FRECCIA</span>: 22 - 31 Dicembre</h3>
 		<p>
 			Il nativo ha un carattere dai riflessi pronti e l'agilità mentale, che sono d'aiuto a cogliere al volo persone e situazioni che lo porta sempre
 			a colpire nel segno. Il denaro non gli manca anzi lo guadagna con molta fatica. In amore è timido e riservato ma solo in quelle relazioni che
@@ -396,6 +435,7 @@ img {
 			ai problemi degli altri, riportando il sereno ovunque.
 		</p>
 
+<a name="Acquario"></a>
 		<h2><img src="grafiche/Costella_acquario.gif" width="160" height="160" alt="Acquario"> <span class="sMaroon">ACQUARIO</span></h2>
 
 		<h3><span class="sMaroon">PEGASO</span>: 21 - 30 Gennaio</h3>
@@ -406,7 +446,7 @@ img {
 			rinunciare alla sua libertà e conserva sempre uno spazio personale inviolabile.
 		</p>
 
-		<h3><span class="sMaroon">LUPO</span>: 31 Gennaio al 9 Febbraio</h3>
+		<h3><span class="sMaroon">LUPO</span>: dal 31 Gennaio al 9 Febbraio</h3>
 		<p>
 			Il nativo è molto abile a rimescolare le carte in tavola. Ma non architetta veri e propri inganni, sa come utilizzare al meglio le argomentazioni
 			e le belle parole ha sempre la battuta pronta e giusta. Il denaro proviene spesso dalle doti di astuzia e imbonimenti. In amore questa sua
@@ -422,6 +462,7 @@ img {
 			il rapporto se non è stabile.
 		</p>
 
+<a name="Pesci"></a>
 		<h2><img src="grafiche/Costella_pesci.gif" width="160" height="160" alt="Pesci"> <span class="sBlue">PESCI</span></h2>
 
 		<h3><span class="sBlue">BALENA</span>: 19 - 28 Febbraio</h3>
@@ -458,7 +499,7 @@ img {
 			<img src="grafiche/Costella_costellazioni.gif" width="250" height="250" class="sVediImg1" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<img src="photo/Laura2020.jpg"                 width="250" height="277"                   alt="Laura Lencia - 2020">
 			<br><br>
-			Nata il 22 gennaio Acquario<br><br>
+			Nata il 22 gennaio: Acquario, Pegaso<br><br>
 
 			<img src="IconaAnim_emailBox.gif" width="35" height="35" alt="">
 			Scrivimi: <a href="mailto:studio.acquario@libero.it" class="sBold" title="Scrivimi">studio.acquario@libero.it</a><br><br>
@@ -481,4 +522,5 @@ img {
 	Per l'informativa sulla Privacy e Cookie, clicca <a href="privacy.html">qui</a>.
 </footer>
 </body>
+<script src="TornaSu.js"></script>
 </html>
